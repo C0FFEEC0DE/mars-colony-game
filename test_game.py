@@ -15,7 +15,9 @@ def test_python_syntax():
     print("🐍 Testing Python syntax...")
     errors = []
     py_files = list(Path('.').rglob('*.py'))
-    py_files = [f for f in py_files if '__pycache__' not in str(f)]
+    # Exclude common non-source directories
+    exclude_dirs = {'__pycache__', 'venv', '.venv', 'env', '.env', '.git', 'node_modules', '.pytest_cache'}
+    py_files = [f for f in py_files if not any(excl in str(f) for excl in exclude_dirs)]
 
     for py_file in py_files:
         try:
@@ -43,10 +45,13 @@ def test_json_validity():
     print("\n📋 Testing JSON validity...")
     errors = []
     json_files = list(Path('.').rglob('*.json'))
+    # Exclude common non-source directories
+    exclude_dirs = {'__pycache__', 'venv', '.venv', 'env', '.env', '.git', 'node_modules'}
+    json_files = [f for f in json_files if not any(excl in str(f) for excl in exclude_dirs)]
 
     for json_file in json_files:
         try:
-            with open(json_file, 'r') as f:
+            with open(json_file, 'r', encoding='utf-8') as f:
                 json.load(f)
         except json.JSONDecodeError as e:
             errors.append(f"{json_file}: {e}")
@@ -102,7 +107,7 @@ def test_game_logic():
 
     # Test world_state.json structure
     try:
-        with open('world_state.json', 'r') as f:
+        with open('world_state.json', 'r', encoding='utf-8') as f:
             world = json.load(f)
         required_keys = ['day', 'solar_activity', 'events_log']
         for key in required_keys:
@@ -154,7 +159,7 @@ def test_github_actions():
     import yaml
     for wf_file in workflow_files:
         try:
-            with open(wf_file, 'r') as f:
+            with open(wf_file, 'r', encoding='utf-8') as f:
                 yaml.safe_load(f)
         except Exception as e:
             errors.append(f"{wf_file}: {e}")
