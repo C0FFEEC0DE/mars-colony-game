@@ -38,10 +38,23 @@ def color(text, color_name):
     return f"{COLORS.get(color_name, '')}{text}{COLORS['reset']}"
 
 def header():
-    """Display beautiful header"""
+    """Display beautiful header with ASCII art"""
     print("\n" + "=" * 70)
-    print(color("  🚀  R E D   P L A N E T  🚀", 'red') + color("  v1.0", 'cyan'))
-    print(color("  Multiplayer game on GitHub", 'yellow'))
+    print(color("""
+     _____  ______ ____  _____ _______ ______
+    |  __ \\|  ____|  _ \\|  __ \\__   __|  ____|
+    | |__) | |__  | |_) | |__) | | |  | |__
+    |  _  /|  __| |  _ <|  __ /  | |  |  __|
+    | | \\ \\| |____| |_) | |      | |  | |____
+    |_|  \\_\\______|____/|_|      |_|  |______|
+
+         🔴 MARS COLONY SURVIVAL GAME 🔴
+    """, 'red'))
+    print(color("""
+        🚀  Uses GitHub as Game Server  🚀
+        🤖  Runs Inside Claude Code  🤖
+        ⚡  Git Commands = Game Mechanics  ⚡
+    """, 'cyan'))
     print("=" * 70 + "\n")
 
 def load_player_data():
