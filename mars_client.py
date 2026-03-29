@@ -262,6 +262,99 @@ def sync_with_server():
         print(color("⚠️  Sync conflict!", 'red'))
         print(color("   Someone else made a move. Resolve conflict manually.", 'yellow'))
 
+def send_drone():
+    """Send autonomous drone - Agent tool as exploration mechanic"""
+    player = load_player_data()
+    if not player:
+        print(color("❌ Register first!", 'red'))
+        return
+
+    print(color("\n🤖 AUTONOMOUS DRONE (Agent)", 'cyan'))
+    print(color("In Claude Code: This would use the Agent tool to autonomously explore", 'yellow'))
+    print(color("and find resources without player interaction!", 'yellow'))
+    print()
+    print(color("📡 Launching drone...", 'blue'))
+    time.sleep(1)
+
+    # Simulate drone exploration
+    found = random.choice([
+        ("ice", random.randint(5, 20)),
+        ("minerals", random.randint(3, 10)),
+        ("anomaly", 1),
+        ("nothing", 0)
+    ])
+
+    if found[0] == "ice":
+        player['resources']['water'] += found[1]
+        print(color(f"✅ Drone found ice deposit: +{found[1]} water", 'green'))
+    elif found[0] == "minerals":
+        player['resources']['materials'] += found[1]
+        print(color(f"✅ Drone found mineral vein: +{found[1]} materials", 'green'))
+    elif found[0] == "anomaly":
+        print(color("🛸 Drone detected unusual signal... needs investigation!", 'magenta'))
+    else:
+        print(color("⚠️ Drone found nothing in this sector", 'yellow'))
+
+    player['resources']['energy'] -= 10
+    save_player_data(player)
+    commit_action(f"DRONE: exploration by {player['name']}")
+
+def setup_cron():
+    """Setup resource reminders - CronCreate as life support mechanic"""
+    print(color("\n⏰ RESOURCE MONITORING (CronCreate)", 'cyan'))
+    print(color("In Claude Code: This would use CronCreate to schedule reminders", 'yellow'))
+    print(color("when oxygen/food/water are critically low!", 'yellow'))
+    print()
+    print(color("Available reminders:", 'green'))
+    print("  1. Oxygen alert (every 4 hours)")
+    print("  2. Food check (daily)")
+    print("  3. Water monitoring (every 6 hours)")
+    print("  4. Cancel all reminders")
+
+    choice = input(color("\nSelect reminder (1-4): ", 'yellow'))
+
+    if choice == '1':
+        print(color("\n✅ Cron job scheduled: 'Check oxygen levels'", 'green'))
+        print(color("   Command: CronCreate - cron '0 */4 * * *'", 'cyan'))
+        print(color("   Reminder: 🫁 Check oxygen - colonists need to breathe!", 'cyan'))
+    elif choice == '2':
+        print(color("\n✅ Cron job scheduled: 'Daily food check'", 'green'))
+        print(color("   Command: CronCreate - cron '0 9 * * *'", 'cyan'))
+        print(color("   Reminder: 🍎 Check food supplies for colonists", 'cyan'))
+    elif choice == '3':
+        print(color("\n✅ Cron job scheduled: 'Water monitoring'", 'green'))
+        print(color("   Command: CronCreate - cron '0 */6 * * *'", 'cyan'))
+        print(color("   Reminder: 💧 Check water - hydroponics need it!", 'cyan'))
+    elif choice == '4':
+        print(color("\n✅ All cron reminders cancelled", 'green'))
+    else:
+        print(color("❌ Invalid choice", 'red'))
+
+def view_tasks():
+    """View construction queue - TaskList as colony management"""
+    print(color("\n📋 CONSTRUCTION QUEUE (TaskList)", 'cyan'))
+    print(color("In Claude Code: This would use TaskCreate to manage", 'yellow'))
+    print(color("build queue and track research progress!", 'yellow'))
+    print()
+
+    # Load or create tasks
+    tasks_file = 'players/tasks.json'
+    if os.path.exists(tasks_file):
+        with open(tasks_file, 'r') as f:
+            tasks = json.load(f)
+    else:
+        tasks = []
+
+    if not tasks:
+        print(color("📭 Queue is empty", 'yellow'))
+        print(color("\nTo add tasks, use:", 'cyan'))
+        print(color("  TaskCreate --subject 'Build Solar Panel' --description 'Need 10 materials'", 'green'))
+    else:
+        print(color(f"📋 Active tasks ({len(tasks)}):", 'green'))
+        for i, task in enumerate(tasks, 1):
+            status = task.get('status', 'pending')
+            print(f"  {i}. [{status}] {task.get('subject', 'Unknown')}")
+
 def show_help():
     """Show help"""
     print(color("\n📖 HELP", 'cyan'))
@@ -270,6 +363,7 @@ def show_help():
 ABOUT:
   Red Planet is a multiplayer survival strategy.
   GitHub repository is the game server.
+  Uses Claude Code tools in unintended ways!
 
 COMMANDS:
   status  - Show colony status
@@ -277,22 +371,32 @@ COMMANDS:
   mine    - Mine materials
   build   - Build structure
   sync    - Sync with server
+  drone   - Send autonomous drone (Agent)
+  cron    - Setup resource reminders (CronCreate)
+  tasks   - View construction queue (TaskList)
   help    - This help
   quit    - Exit
 
+CLAUDE TOOLS AS GAME MECHANICS:
+  CronCreate  - Schedule oxygen/water consumption reminders
+  TaskList    - Construction and research queue
+  Agent       - Autonomous drone explorers
+  Read/Edit   - Colony sensors/repairs
+  Bash        - Git operations as game moves
+
 GAME CYCLE:
-  1. Make a move (dig/mine/build)
+  1. Make a move (dig/mine/build/drone)
   2. Commit auto-saves locally
   3. git push sends move to server
   4. GitHub Actions process events
   5. git pull gets world updates
 
 RESOURCES:
-  🫁 Oxygen - consumed each turn
-  💧 Water - for food and building
-  ⚡ Energy - for all actions
-  🍎 Food - keeps colonists alive
-  🧱 Materials - for construction
+  [O2] Oxygen - consumed each turn
+  [H2O] Water - for food and building
+  [E] Energy - for all actions
+  [F] Food - keeps colonists alive
+  [M] Materials - for construction
 """, 'green'))
 
 def main():
@@ -319,16 +423,23 @@ def main():
 
     # Main loop
     while True:
-        print(color("\n┌─────────────────────────────────────────┐", 'cyan'))
-        print(color("│  COMMANDS: status | dig | mine | build│", 'white'))
-        print(color("│           sync | help | quit          │", 'white'))
-        print(color("└─────────────────────────────────────────┘", 'cyan'))
+        print(color("\n┌─────────────────────────────────────────────┐", 'cyan'))
+        print(color("│  COMMANDS: status | dig | mine | build     │", 'white'))
+        print(color("│           sync | drone | cron | tasks      │", 'white'))
+        print(color("│           help | quit                      │", 'white'))
+        print(color("└─────────────────────────────────────────────┘", 'cyan'))
 
         cmd = input(color("\n➜ ", 'green')).lower().strip()
 
         if cmd in ['quit', 'exit', 'q']:
             print(color("\n👋 See you on Mars!", 'cyan'))
             break
+        elif cmd == 'drone':
+            send_drone()
+        elif cmd == 'cron':
+            setup_cron()
+        elif cmd == 'tasks':
+            view_tasks()
         elif cmd == 'status':
             player = load_player_data()
             world = load_world_state()

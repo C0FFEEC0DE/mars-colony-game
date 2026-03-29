@@ -98,8 +98,13 @@ The game client runs **inside Claude Code** and uses its built-in tools in compl
 | `AskUserQuestion` | Clarify requirements | Critical life-or-death decisions |
 | `Glob` | Find files | Scan terrain for resources |
 | `Grep` | Search code | Find specific resources |
+| **CronCreate** | Schedule tasks | **Life support reminders (O₂/food/water)** |
+| **TaskList** | Track work items | **Construction queue & research** |
+| **Agent** | Delegate tasks | **Autonomous drone explorers** |
 
 **The player plays by chatting with Claude!**
+
+**NEW:** Send autonomous drones (`drone`), schedule resource alerts (`cron`), manage build queue (`tasks`)!
 
 ## 🌟 Events
 
