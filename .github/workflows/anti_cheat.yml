@@ -1,0 +1,39 @@
+name: 🛡️ Anti-Cheat
+# Validates all commits for fairness
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  anti-cheat:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history for checking
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 🔍 Check for cheating
+        run: |
+          echo "🕵️ Checking recent commits..."
+          python3 game/server/anticheat/validate.py
+
+      - name: 📊 Statistics check
+        run: |
+          echo "📈 Analyzing game statistics..."
+          python3 game/server/anticheat/stats_check.py
+
+      - name: 🚫 Ban if detected
+        if: failure()
+        run: |
+          echo "🚫 CHEATER DETECTED!"
+          python3 game/server/anticheat/ban.py --player ${{ github.actor }}

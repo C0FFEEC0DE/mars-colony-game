@@ -1,0 +1,350 @@
+#!/usr/bin/env python3
+"""
+╔═══════════════════════════════════════════════════════════════════════╗
+║  🚀 RED PLANET - Game Client for Claude Code                           ║
+║  Uses Claude's built-in tools "unintended"                              ║
+╚═══════════════════════════════════════════════════════════════════════╝
+
+LAUNCH:
+    python3 mars_client.py
+
+REQUIREMENTS:
+    - Claude Code with access to all tools
+    - Git repository configured as remote origin
+"""
+
+import json
+import os
+import sys
+import random
+import time
+from datetime import datetime
+
+# ANSI colors for beautiful output
+COLORS = {
+    'red': '\033[91m',
+    'green': '\033[92m',
+    'yellow': '\033[93m',
+    'blue': '\033[94m',
+    'magenta': '\033[95m',
+    'cyan': '\033[96m',
+    'white': '\033[97m',
+    'reset': '\033[0m',
+    'bold': '\033[1m'
+}
+
+def color(text, color_name):
+    """Colorize text"""
+    return f"{COLORS.get(color_name, '')}{text}{COLORS['reset']}"
+
+def header():
+    """Display beautiful header"""
+    print("\n" + "=" * 70)
+    print(color("  🚀  R E D   P L A N E T  🚀", 'red') + color("  v1.0", 'cyan'))
+    print(color("  Multiplayer game on GitHub", 'yellow'))
+    print("=" * 70 + "\n")
+
+def load_player_data():
+    """Load player data"""
+    player_file = 'players/current_player.json'
+    if os.path.exists(player_file):
+        with open(player_file, 'r') as f:
+            return json.load(f)
+    return None
+
+def load_world_state():
+    """Load world state"""
+    world_file = 'world_state.json'
+    if os.path.exists(world_file):
+        with open(world_file, 'r') as f:
+            return json.load(f)
+    return {"error": "Sync with server first: git pull"}
+
+def save_player_data(data):
+    """Save player data"""
+    os.makedirs('players', exist_ok=True)
+    with open('players/current_player.json', 'w') as f:
+        json.dump(data, f, indent=2)
+
+def register_player():
+    """Register new colonist"""
+    print(color("\n👤 NEW COLONIST REGISTRATION", 'cyan'))
+    print("-" * 50)
+
+    name = input(color("Enter colonist name: ", 'yellow'))
+    corp = input(color("Corporation name: ", 'yellow'))
+
+    player = {
+        "name": name,
+        "corporation": corp,
+        "resources": {
+            "oxygen": 100,
+            "water": 50,
+            "energy": 100,
+            "food": 50,
+            "materials": 20
+        },
+        "buildings": ["habitat_module"],
+        "colonists": 5,
+        "last_login": datetime.now().isoformat(),
+        "turns_today": 0
+    }
+
+    save_player_data(player)
+
+    print(color(f"\n✅ Welcome to Mars, {name}!"))
+    print(color(f"   Corporation: {corp}", 'green'))
+    print(color(f"   Starting resources: {player['resources']}", 'cyan'))
+
+    # Create first commit
+    print(color("\n📝 Creating first base...", 'yellow'))
+    os.system(f'git add players/current_player.json')
+    os.system(f'git commit -m "NEW_COLONIST: {name} from {corp}"')
+    print(color("✅ Done! Now run: git push", 'green'))
+
+    return player
+
+def show_status(player, world):
+    """Show colony status"""
+    print(color("\n📊 COLONY STATUS", 'cyan'))
+    print("-" * 50)
+
+    if player:
+        print(color(f"👤 Colonist: {player['name']} ({player['corporation']})", 'green'))
+        print(color(f"👥 Population: {player['colonists']} people", 'yellow'))
+
+        print(color("\n💎 RESOURCES:", 'cyan'))
+        for res, val in player['resources'].items():
+            status_color = 'green' if val > 50 else 'yellow' if val > 20 else 'red'
+            bar = '█' * int(val / 5) + '░' * (20 - int(val / 5))
+            print(f"  {res.capitalize():12} [{color(bar, status_color)}] {val}")
+
+        print(color(f"\n🏗️  Buildings: {', '.join(player['buildings'])}", 'blue'))
+
+    if world and 'day' in world:
+        print(color(f"\n🌍 Mars Day: #{world['day']}", 'magenta'))
+        print(color(f"☀️  Solar Activity: {world.get('solar_activity', 'N/A')}%", 'yellow'))
+
+        if world.get('current_event'):
+            print(color(f"\n⚠️  ACTIVE EVENT: {world['current_event']}", 'red'))
+
+def dig_ice():
+    """Dig for ice (converts to water)"""
+    player = load_player_data()
+    if not player:
+        print(color("❌ Register first!", 'red'))
+        return
+
+    found = random.randint(3, 15)
+    energy_cost = 5
+
+    if player['resources']['energy'] < energy_cost:
+        print(color("❌ Not enough energy!", 'red'))
+        return
+
+    player['resources']['energy'] -= energy_cost
+    player['resources']['water'] += found
+    player['turns_today'] += 1
+
+    save_player_data(player)
+
+    print(color(f"\n🧊 Digging for ice...", 'cyan'))
+    time.sleep(0.5)
+    print(color(f"✅ Found: {found} kg water", 'green'))
+    print(color(f"⚡ Spent: {energy_cost} energy", 'yellow'))
+
+    commit_action(f"DIG_ICE: +{found}kg water by {player['name']}")
+
+def mine_materials():
+    """Mine materials"""
+    player = load_player_data()
+    if not player:
+        print(color("❌ Register first!", 'red'))
+        return
+
+    found = random.randint(2, 8)
+    energy_cost = 8
+
+    if player['resources']['energy'] < energy_cost:
+        print(color("❌ Not enough energy!", 'red'))
+        return
+
+    player['resources']['energy'] -= energy_cost
+    player['resources']['materials'] += found
+    player['turns_today'] += 1
+
+    save_player_data(player)
+
+    print(color(f"\n⛏️  Mining materials...", 'cyan'))
+    time.sleep(0.5)
+    print(color(f"✅ Found: {found} units of materials", 'green'))
+
+    commit_action(f"MINE: +{found} materials by {player['name']}")
+
+def build():
+    """Build new structure"""
+    player = load_player_data()
+    if not player:
+        print(color("❌ Register first!", 'red'))
+        return
+
+    buildings = {
+        "1": {"name": "solar_panel", "cost": {"materials": 10}, "output": "+20 energy/turn"},
+        "2": {"name": "greenhouse", "cost": {"materials": 15, "water": 20}, "output": "+10 food/turn"},
+        "3": {"name": "oxygen_generator", "cost": {"materials": 20, "energy": 30}, "output": "+15 oxygen/turn"},
+        "4": {"name": "habitat", "cost": {"materials": 25, "energy": 20, "water": 10}, "output": "+5 colonists"},
+        "5": {"name": "research_lab", "cost": {"materials": 30, "energy": 50}, "output": "research"},
+    }
+
+    print(color("\n🏗️  CONSTRUCTION", 'cyan'))
+    print("-" * 50)
+    for key, b in buildings.items():
+        cost_str = ', '.join([f"{k}={v}" for k, v in b['cost'].items()])
+        print(f"  {key}. {b['name']}")
+        print(f"     Cost: {cost_str}")
+        print(f"     Effect: {b['output']}\n")
+
+    choice = input(color("Select building (1-5) or Enter to cancel: ", 'yellow'))
+
+    if choice not in buildings:
+        return
+
+    building = buildings[choice]
+
+    # Check resources
+    for res, cost in building['cost'].items():
+        if player['resources'].get(res, 0) < cost:
+            print(color(f"❌ Not enough {res}!", 'red'))
+            return
+
+    # Deduct resources
+    for res, cost in building['cost'].items():
+        player['resources'][res] -= cost
+
+    player['buildings'].append(building['name'])
+    player['turns_today'] += 1
+
+    save_player_data(player)
+
+    print(color(f"\n✅ Built: {building['name']}!"))
+    print(color(f"   Effect: {building['output']}", 'green'))
+
+    commit_action(f"BUILD: {building['name']} by {player['name']}")
+
+def commit_action(message):
+    """Create git commit with action"""
+    print(color(f"\n📝 Saving to server...", 'yellow'))
+    os.system('git add players/current_player.json world_state.json 2>/dev/null')
+    result = os.system(f'git commit -m "{message}" --quiet 2>/dev/null')
+    if result == 0:
+        print(color("✅ Saved locally", 'green'))
+        print(color("   Run git push to send to server!", 'cyan'))
+    else:
+        print(color("⚠️  No changes to save", 'yellow'))
+
+def sync_with_server():
+    """Sync with server via git"""
+    print(color("\n🔄 SYNCING WITH SERVER", 'cyan'))
+    print("-" * 50)
+
+    print(color("   git fetch origin...", 'yellow'))
+    os.system('git fetch origin --quiet')
+
+    print(color("   git pull origin main...", 'yellow'))
+    result = os.system('git pull origin main --quiet 2>/dev/null')
+
+    if result == 0:
+        print(color("✅ Sync completed!", 'green'))
+        world = load_world_state()
+        if world.get('current_event'):
+            print(color(f"\n⚠️  WARNING: {world['current_event']}", 'red'))
+    else:
+        print(color("⚠️  Sync conflict!", 'red'))
+        print(color("   Someone else made a move. Resolve conflict manually.", 'yellow'))
+
+def show_help():
+    """Show help"""
+    print(color("\n📖 HELP", 'cyan'))
+    print("-" * 50)
+    print(color("""
+ABOUT:
+  Red Planet is a multiplayer survival strategy.
+  GitHub repository is the game server.
+
+COMMANDS:
+  status  - Show colony status
+  dig     - Dig for ice (water)
+  mine    - Mine materials
+  build   - Build structure
+  sync    - Sync with server
+  help    - This help
+  quit    - Exit
+
+GAME CYCLE:
+  1. Make a move (dig/mine/build)
+  2. Commit auto-saves locally
+  3. git push sends move to server
+  4. GitHub Actions process events
+  5. git pull gets world updates
+
+RESOURCES:
+  🫁 Oxygen - consumed each turn
+  💧 Water - for food and building
+  ⚡ Energy - for all actions
+  🍎 Food - keeps colonists alive
+  🧱 Materials - for construction
+""", 'green'))
+
+def main():
+    """Main game loop"""
+    header()
+
+    # Check git repository
+    if not os.path.exists('.git'):
+        print(color("❌ ERROR: This is not a git repository!", 'red'))
+        print(color("   First: git init && git remote add origin <URL>", 'yellow'))
+        sys.exit(1)
+
+    # Check registration
+    player = load_player_data()
+    if not player:
+        print(color("🚀 Welcome to Mars!", 'green'))
+        print(color("   You've been chosen to build the first colony.", 'yellow'))
+        player = register_player()
+    else:
+        print(color(f"🚀 Welcome back, {player['name']}!"))
+
+    world = load_world_state()
+    show_status(player, world)
+
+    # Main loop
+    while True:
+        print(color("\n┌─────────────────────────────────────────┐", 'cyan'))
+        print(color("│  COMMANDS: status | dig | mine | build│", 'white'))
+        print(color("│           sync | help | quit          │", 'white'))
+        print(color("└─────────────────────────────────────────┘", 'cyan'))
+
+        cmd = input(color("\n➜ ", 'green')).lower().strip()
+
+        if cmd in ['quit', 'exit', 'q']:
+            print(color("\n👋 See you on Mars!", 'cyan'))
+            break
+        elif cmd == 'status':
+            player = load_player_data()
+            world = load_world_state()
+            show_status(player, world)
+        elif cmd == 'dig':
+            dig_ice()
+        elif cmd == 'mine':
+            mine_materials()
+        elif cmd == 'build':
+            build()
+        elif cmd == 'sync':
+            sync_with_server()
+        elif cmd == 'help':
+            show_help()
+        else:
+            print(color("❌ Unknown command. Type 'help' for help.", 'red'))
+
+if __name__ == "__main__":
+    main()

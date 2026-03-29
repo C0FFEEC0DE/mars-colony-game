@@ -1,0 +1,54 @@
+name: 💰 Colony Economy
+# Economic cycle every 15 minutes
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+jobs:
+  economy-tick:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 💧 Resource consumption
+        run: |
+          echo "🫁 Colonists breathing..."
+          python3 game/server/economy/consumption.py
+
+      - name: 🌱 Production (hydroponics)
+        run: |
+          echo "🍎 Harvesting crops..."
+          python3 game/server/economy/production.py
+
+      - name: ⚡ Energy generation
+        run: |
+          echo "☀️ Solar panels working..."
+          python3 game/server/economy/energy.py
+
+      - name: 🔧 Building degradation
+        run: |
+          echo "🔨 Checking integrity..."
+          python3 game/server/economy/maintenance.py
+
+      - name: 📊 Price update
+        run: |
+          python3 game/server/economy/market.py
+
+      - name: 💾 Save
+        run: |
+          git config user.name 'Mars Server'
+          git config user.email 'mars@red-planet.game'
+          git add world_state.json players/
+          git diff --staged --quiet || git commit -m "💰 Economy: $(date +%H:%M)"
+          git push

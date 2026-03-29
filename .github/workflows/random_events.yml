@@ -1,0 +1,67 @@
+name: ⚡ Random Events
+# Martian events: meteorites, discoveries, disasters
+
+on:
+  schedule:
+    # Every hour with chance of event
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  random-event:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 🎲 Generate random event
+        id: event
+        run: |
+          EVENT_TYPE=$((RANDOM % 10))
+
+          case $EVENT_TYPE in
+            0)
+              echo "🌠 METEOR SHOWER!"
+              python3 game/server/events/meteor_shower.py
+              ;;
+            1)
+              echo "🔍 DISCOVERY!"
+              python3 game/server/events/discovery.py
+              ;;
+            2)
+              echo "🌪️ SANDSTORM!"
+              python3 game/server/events/sandstorm.py
+              ;;
+            3)
+              echo "💧 UNDERGROUND ICE!"
+              python3 game/server/events/ice_discovery.py
+              ;;
+            4)
+              echo "⚡ SOLAR FLARE!"
+              python3 game/server/events/solar_flare.py
+              ;;
+            5)
+              echo "🛸 TRADERS!"
+              python3 game/server/events/traders.py
+              ;;
+            *)
+              echo "📅 Quiet day on Mars"
+              ;;
+          esac
+
+      - name: 💾 Save
+        run: |
+          git config user.name 'Mars Server'
+          git config user.email 'mars@red-planet.game'
+          git add world_state.json events/
+          git diff --staged --quiet || git commit -m "⚡ Event: $(date)"
+          git push

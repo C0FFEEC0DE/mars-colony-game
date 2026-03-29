@@ -1,0 +1,49 @@
+name: 🚀 Mars Day Cycle
+# Runs every 4 hours (Martian sol ~24h 39min)
+# Main game loop - resources, events, checks
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  mars-day-cycle:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 📊 Update world state
+        run: |
+          python3 game/server/day_cycle.py
+
+      - name: 🌍 Check weather
+        run: |
+          echo "🌡️ Checking weather conditions..."
+          python3 game/server/weather.py
+
+      - name: 💨 Check sandstorms
+        run: |
+          echo "🌪️ Checking meteorological conditions..."
+          python3 game/server/storms.py
+
+      - name: 📈 Update leaderboard
+        run: |
+          python3 game/server/leaderboard.py
+
+      - name: 💾 Save changes
+        run: |
+          git config user.name 'Mars Server'
+          git config user.email 'mars@red-planet.game'
+          git add world_state.json events/
+          git diff --staged --quiet || git commit -m "🌅 Mars Day $(date +%s)"
+          git push

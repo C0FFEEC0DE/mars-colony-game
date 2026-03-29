@@ -1,0 +1,15 @@
+# Игровые файлы которые не коммитятся
+*.log
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+
+# Локальные настройки (игроки коммитят только свой файл)
+players/*.json
+!players/.gitkeep
+
+# Временные файлы
+*.tmp
+.cache/

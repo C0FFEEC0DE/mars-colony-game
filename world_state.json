@@ -1,0 +1,20 @@
+{
+  "day": 1,
+  "mars_date": "Sol 1",
+  "season": "Early Spring",
+  "solar_activity": 85,
+  "dust_storm_active": false,
+  "temperature": -60,
+  "active_colonists": 0,
+  "total_buildings": 0,
+  "current_event": null,
+  "last_updated": "2026-03-28T00:00:00Z",
+  "global_resources": {
+    "oxygen": 1000,
+    "water": 500,
+    "energy": 1000,
+    "food": 300
+  },
+  "leaderboard": [],
+  "events_log": []
+}
