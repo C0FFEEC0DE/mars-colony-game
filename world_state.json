@@ -20,7 +20,7 @@
   "market": {
     "oxygen_price": 0,
     "water_price": 0,
-    "food_price": 1,
-    "materials_price": 4
+    "food_price": 0,
+    "materials_price": 3
   }
 }
