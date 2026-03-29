@@ -355,6 +355,47 @@ def view_tasks():
             status = task.get('status', 'pending')
             print(f"  {i}. [{status}] {task.get('subject', 'Unknown')}")
 
+def memory_log():
+    """Log game events to memory - Memory tool as colony history"""
+    print(color("\n🧠 COLONY HISTORY (Memory)", 'cyan'))
+    print(color("In Claude Code: This would use the Memory tool to save", 'yellow'))
+    print(color("important events, player strategies, and survival notes", 'yellow'))
+    print(color("that persist across game sessions!", 'yellow'))
+    print()
+
+    player = load_player_data()
+    if not player:
+        print(color("❌ Register first!", 'red'))
+        return
+
+    print(color("Available memory actions:", 'green'))
+    print("  1. Save important discovery")
+    print("  2. Log rival colony intel")
+    print("  3. Record survival tip")
+    print("  4. View memory log")
+
+    choice = input(color("\nSelect action (1-4): ", 'yellow'))
+
+    if choice == '1':
+        note = input(color("What did you discover? ", 'cyan'))
+        print(color(f"\n✅ Saved to Memory: '{note}'", 'green'))
+        print(color("   This would be stored in: ~/.claude/projects/.../memory/", 'cyan'))
+        print(color("   And persist across Claude sessions!", 'cyan'))
+    elif choice == '2':
+        player_name = input(color("Rival colony name: ", 'cyan'))
+        intel = input(color("What did you learn? ", 'cyan'))
+        print(color(f"\n✅ Intel on '{player_name}' saved to Memory", 'green'))
+    elif choice == '3':
+        tip = input(color("Survival tip: ", 'cyan'))
+        print(color(f"\n✅ Tip saved: '{tip}'", 'green'))
+    elif choice == '4':
+        print(color("\n📜 Memory would show saved entries from previous sessions", 'cyan'))
+        print(color("   - Last discovery: Underground ice at sector 7", 'white'))
+        print(color("   - Rival intel: Player 'MarsKing' low on oxygen", 'white'))
+        print(color("   - Survival tip: Always build solar panels first!", 'white'))
+    else:
+        print(color("❌ Invalid choice", 'red'))
+
 def show_help():
     """Show help"""
     print(color("\n📖 HELP", 'cyan'))
@@ -374,10 +415,12 @@ COMMANDS:
   drone   - Send autonomous drone (Agent)
   cron    - Setup resource reminders (CronCreate)
   tasks   - View construction queue (TaskList)
+  memory  - Colony history log (Memory)
   help    - This help
   quit    - Exit
 
 CLAUDE TOOLS AS GAME MECHANICS:
+  Memory      - Colony history that persists across sessions
   CronCreate  - Schedule oxygen/water consumption reminders
   TaskList    - Construction and research queue
   Agent       - Autonomous drone explorers
@@ -423,11 +466,11 @@ def main():
 
     # Main loop
     while True:
-        print(color("\n┌─────────────────────────────────────────────┐", 'cyan'))
-        print(color("│  COMMANDS: status | dig | mine | build     │", 'white'))
-        print(color("│           sync | drone | cron | tasks      │", 'white'))
-        print(color("│           help | quit                      │", 'white'))
-        print(color("└─────────────────────────────────────────────┘", 'cyan'))
+        print(color("\n┌──────────────────────────────────────────────────┐", 'cyan'))
+        print(color("│  COMMANDS: status | dig | mine | build          │", 'white'))
+        print(color("│           sync | drone | cron | tasks | memory │", 'white'))
+        print(color("│           help | quit                           │", 'white'))
+        print(color("└──────────────────────────────────────────────────┘", 'cyan'))
 
         cmd = input(color("\n➜ ", 'green')).lower().strip()
 
@@ -440,6 +483,8 @@ def main():
             setup_cron()
         elif cmd == 'tasks':
             view_tasks()
+        elif cmd == 'memory':
+            memory_log()
         elif cmd == 'status':
             player = load_player_data()
             world = load_world_state()
