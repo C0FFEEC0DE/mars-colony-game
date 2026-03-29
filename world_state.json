@@ -16,5 +16,11 @@
     "food": 300
   },
   "leaderboard": [],
-  "events_log": []
+  "events_log": [],
+  "market": {
+    "oxygen_price": 0,
+    "water_price": 2,
+    "food_price": 2,
+    "materials_price": 5
+  }
 }
