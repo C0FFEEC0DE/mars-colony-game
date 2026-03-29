@@ -19,8 +19,8 @@
   "events_log": [],
   "market": {
     "oxygen_price": 0,
-    "water_price": 1,
-    "food_price": 2,
-    "materials_price": 5
+    "water_price": 0,
+    "food_price": 1,
+    "materials_price": 4
   }
 }
