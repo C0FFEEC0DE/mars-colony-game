@@ -2,10 +2,10 @@
   "name": "Zoya Kade",
   "corporation": "Ares Systems",
   "resources": {
-    "oxygen": 140,
-    "water": 40,
-    "energy": 95,
-    "food": 24,
+    "oxygen": 145,
+    "water": 38,
+    "energy": 100,
+    "food": 19,
     "materials": 46
   },
   "buildings": [
