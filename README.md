@@ -1,12 +1,12 @@
 ## LIVE WORLD SNAPSHOT
 
 <!-- WORLD_SUMMARY:START -->
-_Auto-updated daily. Last world update: 2026-03-30T11:17:57.131433_
+_Auto-updated daily. Last world update: 2026-03-30T11:22:44.682010_
 
 ```text
 ╔═══════════════════ LIVE WORLD SNAPSHOT ════════════════════╗
-║ [SOL] Sol 3   [SEASON] Early Spring                        ║
-║ [TEMP] -43C   [SUN] 94%   [STORM] NO                       ║
+║ [SOL] Sol 4   [SEASON] Early Spring                        ║
+║ [TEMP] -78C   [SUN] 94%   [STORM] YES                      ║
 ║ [EVENT] None                                               ║
 ║ [POP] 18   [BLD] 9   [PLY] 3                               ║
 ║ [O2] 1000   [H2O] 500   [E] 1000                           ║
@@ -28,18 +28,22 @@ _Auto-updated daily. Last world update: 2026-03-30T11:17:57.131433_
 
 ╔═════════════════════ COLONY STANDINGS ═════════════════════╗
 ║ RK NAME             CORP                 POP BLD SCORE     ║
-║  1 Marco Quinn      Dustline Agro          7   3  1558     ║
-║  2 Zoya Kade        Ares Systems           5   4  1347     ║
-║  3 Irina Vale       Helios Prospecting     6   2  1311     ║
+║  1 Marco Quinn      Dustline Agro          7   3  1529     ║
+║  2 Zoya Kade        Ares Systems           5   4  1310     ║
+║  3 Irina Vale       Helios Prospecting     6   2  1261     ║
 ╚════════════════════════════════════════════════════════════╝
 
 ╔══════════════════════ RECENT EVENTS ═══════════════════════╗
+║ 2026-03-30T11:22:44.726538 | 🌪️ Dust storm damaged         ║
+║ colonies!                                                  ║
+║ 2026-03-30T11:22:44.682023 | Martian day 4 has begun       ║
 ║ 2026-03-30T11:17:57.131451 | Martian day 3 has begun       ║
 ║ 2026-03-30T11:05:03.630608 | Martian day 2 has begun       ║
 ╚════════════════════════════════════════════════════════════╝
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
