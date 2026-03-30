@@ -2,10 +2,10 @@
   "name": "Marco Quinn",
   "corporation": "Dustline Agro",
   "resources": {
-    "oxygen": 74,
-    "water": 86,
-    "energy": 88,
-    "food": 88,
+    "oxygen": 60,
+    "water": 78,
+    "energy": 106,
+    "food": 91,
     "materials": 22
   },
   "buildings": [
