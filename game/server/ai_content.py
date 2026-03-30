@@ -649,6 +649,31 @@ def clear_event_flavor(world):
     ai["event_flavor"] = {}
 
 
+def build_healthcheck_prompt():
+    """Create a minimal JSON-only prompt for a live inference check."""
+    return """
+Return only compact JSON:
+{
+  "status": "ok",
+  "message": "short acknowledgement"
+}
+""".strip()
+
+
+def run_health_check():
+    """Ping GitHub Models without changing world state."""
+    system_prompt = "Return only JSON for a health check."
+    payload, diagnostics = call_github_models(system_prompt, build_healthcheck_prompt())
+    log_diagnostics("AI health check", diagnostics)
+    if payload is None:
+        print("AI health check failed")
+        return 1
+
+    message = " ".join(str(payload.get("message", "ok")).split())
+    print(f"AI health check succeeded: {snippet(message, 120)}")
+    return 0
+
+
 def run_daily_pipeline():
     """CLI entrypoint for the daily AI refresh."""
     players = load_players()
@@ -662,7 +687,11 @@ def main():
     """Run the daily AI stage."""
     parser = argparse.ArgumentParser()
     parser.add_argument("--daily", action="store_true", help="Generate daily AI content")
+    parser.add_argument("--healthcheck", action="store_true", help="Run a GitHub Models connectivity check")
     args = parser.parse_args()
+
+    if args.healthcheck:
+        raise SystemExit(run_health_check())
 
     if args.daily or not any(vars(args).values()):
         run_daily_pipeline()

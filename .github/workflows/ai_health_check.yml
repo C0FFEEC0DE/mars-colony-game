@@ -1,0 +1,26 @@
+name: 🤖 AI Health Check
+
+on:
+  workflow_dispatch:
+
+jobs:
+  ai-health-check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      models: read
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v5
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: 🤖 Run GitHub Models health check
+        run: |
+          python3 game/server/ai_content.py --healthcheck
