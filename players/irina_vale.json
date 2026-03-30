@@ -2,10 +2,10 @@
   "name": "Irina Vale",
   "corporation": "Helios Prospecting",
   "resources": {
-    "oxygen": 74,
-    "water": 63,
+    "oxygen": 62,
+    "water": 60,
     "energy": 100,
-    "food": 45,
+    "food": 39,
     "materials": 29
   },
   "buildings": [
