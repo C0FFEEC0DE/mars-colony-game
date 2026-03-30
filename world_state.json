@@ -4,11 +4,11 @@
   "season": "Early Spring",
   "solar_activity": 76,
   "dust_storm_active": false,
-  "temperature": -68,
+  "temperature": -74,
   "active_colonists": 18,
   "total_buildings": 9,
   "current_event": null,
-  "last_updated": "2026-03-30T12:31:36.184950",
+  "last_updated": "2026-03-30T12:31:37.314795",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -67,6 +67,10 @@
     {
       "time": "2026-03-30T12:31:36.184965",
       "event": "Martian day 5 has begun"
+    },
+    {
+      "time": "2026-03-30T12:31:37.314795",
+      "event": "AI directive: Operations drift into a new rhythm"
     }
   ],
   "market": {
@@ -78,28 +82,28 @@
   "ai": {
     "daily_event": {
       "headline": "Operations drift into a new rhythm",
-      "summary": "Sol 4 opens with thin margins, nervous operators, and one narrow chance to shift the colony balance before the next weather swing.",
+      "summary": "Sol 5 opens with thin margins, nervous operators, and one narrow chance to shift the colony balance before the next weather swing.",
       "effect": {
-        "type": "water_cache",
-        "magnitude": 45,
+        "type": "cold_snap",
+        "magnitude": 6,
         "result": {
-          "label": "Emergency water cache",
-          "target": "water",
-          "delta": 45,
-          "before": 500,
-          "after": 545
+          "label": "Cold snap",
+          "target": "temperature",
+          "delta": -6,
+          "before": -68,
+          "after": -74
         }
       },
       "source": "fallback",
-      "generated_at": "2026-03-30T14:26:48.016025"
+      "generated_at": "2026-03-30T12:31:37.314795"
     },
     "missions": [
       {
-        "title": "Secure ridge ice cores",
-        "briefing": "Survey drones marked a shallow ice seam outside the main habitat ring.",
-        "objective": "Bring back intact samples before the sun angle drops.",
-        "reward_hint": "Water and science prestige",
-        "risk": "Moderate exposure and rover wear"
+        "title": "Recover a silent beacon",
+        "briefing": "A relay beacon stopped broadcasting west of the colony.",
+        "objective": "Reach the site, recover telemetry, and mark salvageable parts.",
+        "reward_hint": "Materials and map intel",
+        "risk": "Navigation errors in dust"
       },
       {
         "title": "Patch the thermal grid",
@@ -109,11 +113,11 @@
         "risk": "Low risk, high urgency"
       },
       {
-        "title": "Recover a silent beacon",
-        "briefing": "A relay beacon stopped broadcasting west of the colony.",
-        "objective": "Reach the site, recover telemetry, and mark salvageable parts.",
-        "reward_hint": "Materials and map intel",
-        "risk": "Navigation errors in dust"
+        "title": "Secure ridge ice cores",
+        "briefing": "Survey drones marked a shallow ice seam outside the main habitat ring.",
+        "objective": "Bring back intact samples before the sun angle drops.",
+        "reward_hint": "Water and science prestige",
+        "risk": "Moderate exposure and rover wear"
       }
     ],
     "npc_transmissions": [
@@ -128,9 +132,9 @@
         "message": "Your telemetry is the cleanest on the planet today. Do not waste that advantage."
       }
     ],
-    "news_summary": "Sol 4 begins in Early Spring with 3 active colonies. Temperature holds near -78C, solar activity sits at 94%, and the current leaders are Marco Quinn:1529, Zoya Kade:1310, Irina Vale:1261.",
+    "news_summary": "Sol 5 begins in Early Spring with 3 active colonies. Temperature holds near -68C, solar activity sits at 76%, and the current leaders are Marco Quinn:1487, Zoya Kade:1317, Irina Vale:1244.",
     "event_flavor": {},
-    "last_generated": "2026-03-30T14:26:48.016025",
-    "last_generated_sol": "Sol 4"
+    "last_generated": "2026-03-30T12:31:37.314795",
+    "last_generated_sol": "Sol 5"
   }
 }
