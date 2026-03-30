@@ -1,11 +1,8 @@
 name: ⚡ Random Events
-# Martian events: meteorites, discoveries, disasters
+# Reusable random event stage for the main game loop
 
 on:
-  schedule:
-    # Twice per day with chance of event
-    - cron: '0 */12 * * *'
-  workflow_dispatch:
+  workflow_call:
 
 jobs:
   random-event:
@@ -17,6 +14,9 @@ jobs:
     steps:
       - name: 📥 Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5

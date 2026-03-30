@@ -1,11 +1,8 @@
 name: 🚀 Mars Day Cycle
-# Runs once per day to keep the concept cheap
-# Main game loop - resources, events, checks
+# Reusable Mars Day stage for the main game loop
 
 on:
-  schedule:
-    - cron: '0 6 * * *'
-  workflow_dispatch:  # Manual trigger
+  workflow_call:
 
 jobs:
   mars-day-cycle:
@@ -16,6 +13,9 @@ jobs:
     steps:
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5

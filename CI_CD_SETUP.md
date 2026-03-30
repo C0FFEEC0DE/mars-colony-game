@@ -59,10 +59,11 @@ Settings → Actions → General:
 
 | Workflow | File | Triggers |
 |----------|------|----------|
-| 🚀 Mars Day | `mars_day.yml` | Daily at 06:00 UTC |
-| ⚡ Random Events | `random_events.yml` | Every 12 hours (chance) |
-| 💰 Economy | `economy.yml` | Every 6 hours |
-| 📘 World Summary | `world_summary.yml` | Daily at 00:00 UTC |
+| 🪐 Game Loop | `game_loop.yml` | Every 6 hours and manual runs |
+| 💰 Economy | `economy.yml` | Reusable stage, called by Game Loop |
+| ⚡ Random Events | `random_events.yml` | Reusable stage, called by Game Loop |
+| 🚀 Mars Day | `mars_day.yml` | Reusable stage, called by Game Loop |
+| 📘 World Summary | `world_summary.yml` | Reusable stage, called by Game Loop |
 | 🧪 Tests | `tests.yml` | Push/PR, except game-state-only updates |
 | 🛡️ Anti-Cheat | `anti_cheat.yml` | Push/PR, except game-state-only updates |
 
@@ -95,23 +96,14 @@ In workflow files change cron:
 ```yaml
 on:
   schedule:
-    - cron: '0 6 * * *'  # Every day at 06:00 UTC
+    - cron: '0 */6 * * *'  # Every 6 hours
 ```
 
 Current defaults in this repo:
 
 ```yaml
-# economy.yml
+# game_loop.yml
 - cron: '0 */6 * * *'
-
-# random_events.yml
-- cron: '0 */12 * * *'
-
-# mars_day.yml
-- cron: '0 6 * * *'
-
-# world_summary.yml
-- cron: '0 0 * * *'
 ```
 
 Cron format:
@@ -123,9 +115,15 @@ minute hour day_of_month month day_of_week
 0 6 * * *     = every day at 06:00 UTC
 ```
 
+Inside the orchestrator:
+- economy runs every 6 hours
+- random events run on the 00:00 and 12:00 UTC ticks
+- Mars day runs on the 06:00 UTC tick
+- world summary runs on the 00:00 UTC tick
+
 ### Disable Processes
 
-Delete file from `.github/workflows/` or comment out:
+Disable the scheduler in `game_loop.yml` or comment out the cron:
 
 ```yaml
 # on:

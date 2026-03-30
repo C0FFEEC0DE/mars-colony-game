@@ -1,10 +1,8 @@
 name: 💰 Colony Economy
-# Economic cycle every 6 hours
+# Reusable economy stage for the main game loop
 
 on:
-  schedule:
-    - cron: '0 */6 * * *'
-  workflow_dispatch:
+  workflow_call:
 
 jobs:
   economy-tick:
@@ -15,6 +13,9 @@ jobs:
     steps:
       - name: 📥 Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5

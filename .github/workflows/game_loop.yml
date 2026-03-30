@@ -1,0 +1,92 @@
+name: 🪐 Game Loop
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: mars-game-loop-main
+  cancel-in-progress: false
+
+jobs:
+  determine-schedule:
+    runs-on: ubuntu-latest
+    outputs:
+      hour: ${{ steps.clock.outputs.hour }}
+      run_random: ${{ steps.flags.outputs.run_random }}
+      run_mars_day: ${{ steps.flags.outputs.run_mars_day }}
+      run_summary: ${{ steps.flags.outputs.run_summary }}
+    steps:
+      - name: 🕒 Compute UTC schedule flags
+        id: clock
+        run: |
+          echo "hour=$(date -u +%H)" >> "$GITHUB_OUTPUT"
+      - name: 🧮 Set stage flags
+        id: flags
+        run: |
+          hour="${{ steps.clock.outputs.hour }}"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run_random=true" >> "$GITHUB_OUTPUT"
+            echo "run_mars_day=true" >> "$GITHUB_OUTPUT"
+            echo "run_summary=true" >> "$GITHUB_OUTPUT"
+          else
+            if [ $((10#$hour % 12)) -eq 0 ]; then
+              echo "run_random=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "run_random=false" >> "$GITHUB_OUTPUT"
+            fi
+
+            if [ "$hour" = "06" ]; then
+              echo "run_mars_day=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "run_mars_day=false" >> "$GITHUB_OUTPUT"
+            fi
+
+            if [ "$hour" = "00" ]; then
+              echo "run_summary=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "run_summary=false" >> "$GITHUB_OUTPUT"
+            fi
+          fi
+
+  economy:
+    needs: determine-schedule
+    uses: ./.github/workflows/economy.yml
+    secrets: inherit
+
+  random-events:
+    needs:
+      - determine-schedule
+      - economy
+    if: ${{ needs.determine-schedule.outputs.run_random == 'true' }}
+    uses: ./.github/workflows/random_events.yml
+    secrets: inherit
+
+  mars-day:
+    needs:
+      - determine-schedule
+      - economy
+      - random-events
+    if: >-
+      ${{
+        needs.determine-schedule.outputs.run_mars_day == 'true' &&
+        (needs.random-events.result == 'success' || needs.random-events.result == 'skipped')
+      }}
+    uses: ./.github/workflows/mars_day.yml
+    secrets: inherit
+
+  world-summary:
+    needs:
+      - determine-schedule
+      - economy
+      - random-events
+      - mars-day
+    if: >-
+      ${{
+        needs.determine-schedule.outputs.run_summary == 'true' &&
+        (needs.random-events.result == 'success' || needs.random-events.result == 'skipped') &&
+        (needs.mars-day.result == 'success' || needs.mars-day.result == 'skipped')
+      }}
+    uses: ./.github/workflows/world_summary.yml
+    secrets: inherit
