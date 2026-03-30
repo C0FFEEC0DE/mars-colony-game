@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      models: read
 
     steps:
       - name: 📥 Checkout repository
@@ -36,6 +37,7 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "run_random=true" >> "$GITHUB_OUTPUT"
             echo "run_mars_day=true" >> "$GITHUB_OUTPUT"
+            echo "run_ai_daily=true" >> "$GITHUB_OUTPUT"
             echo "run_summary=true" >> "$GITHUB_OUTPUT"
           else
             if [ $((10#$hour % 12)) -eq 0 ]; then
@@ -48,6 +50,12 @@ jobs:
               echo "run_mars_day=true" >> "$GITHUB_OUTPUT"
             else
               echo "run_mars_day=false" >> "$GITHUB_OUTPUT"
+            fi
+
+            if [ "$hour" = "00" ]; then
+              echo "run_ai_daily=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "run_ai_daily=false" >> "$GITHUB_OUTPUT"
             fi
 
             if [ "$hour" = "00" ]; then
@@ -133,6 +141,23 @@ jobs:
           git add world_state.json players/
           if ! git diff --staged --quiet; then
             git commit -m "🌅 Mars Day $(date +%s)"
+            git pull --rebase origin main
+            git push
+          fi
+
+      - name: 🤖 Daily AI stage
+        if: ${{ steps.schedule.outputs.run_ai_daily == 'true' }}
+        run: |
+          python3 game/server/ai_content.py --daily
+
+      - name: 💾 Save daily AI stage
+        if: ${{ steps.schedule.outputs.run_ai_daily == 'true' }}
+        run: |
+          git config user.name 'Mars Server'
+          git config user.email 'mars@red-planet.game'
+          git add world_state.json
+          if ! git diff --staged --quiet; then
+            git commit -m "🤖 AI daily briefing: $(date +%F)"
             git pull --rebase origin main
             git push
           fi

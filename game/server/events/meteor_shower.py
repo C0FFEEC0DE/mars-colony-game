@@ -6,7 +6,15 @@
 import json
 import os
 import random
+import sys
 from datetime import datetime
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).resolve().parents[3]
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
+from game.server.ai_content import attach_event_flavor
 
 def load_world():
     with open('world_state.json', 'r') as f:
@@ -28,9 +36,7 @@ def main():
     world = load_world()
 
     event_msg = "🌠 METEOR SHOWER!"
-    print(event_msg)
-
-    world['current_event'] = event_msg
+    facts = [event_msg]
 
     # Findings
     if not os.path.exists('players'):
@@ -46,18 +52,23 @@ def main():
                     materials = random.randint(5, 20)
                     player['resources']['materials'] += materials
                     print(f"   💎 {player['name']} found {materials} materials in meteorites!")
+                    facts.append(f"{player['name']} salvaged +{materials} materials")
 
                 # Chance of damage
                 if random.random() < 0.2 and player.get('buildings'):
                     print(f"   ⚠️ {player['name']}: buildings damaged!")
+                    facts.append(f"{player['name']} reported building damage")
 
                 save_player(filename, player)
             except:
                 pass
 
+    flavor = attach_event_flavor(world, "meteor_shower", facts)
+    print(flavor["headline"])
+
     world['events_log'].append({
         'time': datetime.now().isoformat(),
-        'event': event_msg
+        'event': flavor["broadcast"]
     })
 
     save_world(world)

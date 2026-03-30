@@ -6,7 +6,15 @@ Updates global world state
 
 import json
 import random
+import sys
 from datetime import datetime
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).resolve().parents[2]
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
+from game.server.ai_content import clear_event_flavor
 
 def load_world():
     with open('world_state.json', 'r') as f:
@@ -33,6 +41,7 @@ def main():
     # Clear old events
     if world.get('current_event'):
         world['current_event'] = None
+    clear_event_flavor(world)
 
     # Log the day
     world['events_log'].append({

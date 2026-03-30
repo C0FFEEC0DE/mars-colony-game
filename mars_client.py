@@ -225,6 +225,30 @@ def show_status(player, world):
         if world.get('current_event'):
             print(color(f"\n⚠️  ACTIVE EVENT: {world['current_event']}", 'red'))
 
+        ai = world.get('ai', {})
+        daily_event = ai.get('daily_event', {})
+        if daily_event:
+            print(color(f"\n🤖 AI DIRECTIVE: {daily_event.get('headline', 'Pending')}", 'cyan'))
+            print(color(f"   {daily_event.get('summary', 'No summary available.')}", 'white'))
+
+        missions = ai.get('missions', [])[:3]
+        if missions:
+            print(color("\n🎯 MISSION BOARD:", 'cyan'))
+            for idx, mission in enumerate(missions, 1):
+                print(color(f"  {idx}. {mission.get('title', 'Untitled')}", 'green'))
+                print(color(f"     Objective: {mission.get('objective', 'Stand by')}", 'white'))
+                print(color(f"     Reward: {mission.get('reward_hint', 'Unknown')}", 'yellow'))
+
+        transmissions = ai.get('npc_transmissions', [])[:2]
+        if transmissions:
+            print(color("\n📡 NPC TRANSMISSIONS:", 'cyan'))
+            for transmission in transmissions:
+                sender = transmission.get('sender', 'Mars Control')
+                recipient = transmission.get('recipient', 'All colonies')
+                message = transmission.get('message', 'No message')
+                print(color(f"  {sender} -> {recipient}", 'magenta'))
+                print(color(f"     {message}", 'white'))
+
 def dig_ice():
     """Dig for ice (converts to water)"""
     player = load_player_data()

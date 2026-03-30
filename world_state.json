@@ -8,10 +8,10 @@
   "active_colonists": 18,
   "total_buildings": 9,
   "current_event": "\ud83c\udf20 METEOR SHOWER!",
-  "last_updated": "2026-03-30T11:22:44.682010",
+  "last_updated": "2026-03-30T14:26:48.016025",
   "global_resources": {
     "oxygen": 1000,
-    "water": 500,
+    "water": 545,
     "energy": 1000,
     "food": 300,
     "materials": 0
@@ -59,6 +59,10 @@
     {
       "time": "2026-03-30T12:16:44.991521",
       "event": "\ud83c\udf20 METEOR SHOWER!"
+    },
+    {
+      "time": "2026-03-30T14:26:48.016025",
+      "event": "AI directive: Operations drift into a new rhythm"
     }
   ],
   "market": {
@@ -66,5 +70,63 @@
     "water_price": 0,
     "food_price": 0,
     "materials_price": 0
+  },
+  "ai": {
+    "daily_event": {
+      "headline": "Operations drift into a new rhythm",
+      "summary": "Sol 4 opens with thin margins, nervous operators, and one narrow chance to shift the colony balance before the next weather swing.",
+      "effect": {
+        "type": "water_cache",
+        "magnitude": 45,
+        "result": {
+          "label": "Emergency water cache",
+          "target": "water",
+          "delta": 45,
+          "before": 500,
+          "after": 545
+        }
+      },
+      "source": "fallback",
+      "generated_at": "2026-03-30T14:26:48.016025"
+    },
+    "missions": [
+      {
+        "title": "Secure ridge ice cores",
+        "briefing": "Survey drones marked a shallow ice seam outside the main habitat ring.",
+        "objective": "Bring back intact samples before the sun angle drops.",
+        "reward_hint": "Water and science prestige",
+        "risk": "Moderate exposure and rover wear"
+      },
+      {
+        "title": "Patch the thermal grid",
+        "briefing": "Heat loss is climbing in the outer utility corridor.",
+        "objective": "Repair or reinforce one weak point before the next cold cycle.",
+        "reward_hint": "Energy stability and spare materials",
+        "risk": "Low risk, high urgency"
+      },
+      {
+        "title": "Recover a silent beacon",
+        "briefing": "A relay beacon stopped broadcasting west of the colony.",
+        "objective": "Reach the site, recover telemetry, and mark salvageable parts.",
+        "reward_hint": "Materials and map intel",
+        "risk": "Navigation errors in dust"
+      }
+    ],
+    "npc_transmissions": [
+      {
+        "sender": "Mars Control",
+        "recipient": "All colonies",
+        "message": "Keep your reports short and your seals tighter. Conditions are changing faster than forecast."
+      },
+      {
+        "sender": "Orbital Relay",
+        "recipient": "Irina Vale",
+        "message": "Your telemetry is the cleanest on the planet today. Do not waste that advantage."
+      }
+    ],
+    "news_summary": "Sol 4 begins in Early Spring with 3 active colonies. Temperature holds near -78C, solar activity sits at 94%, and the current leaders are Marco Quinn:1529, Zoya Kade:1310, Irina Vale:1261.",
+    "event_flavor": {},
+    "last_generated": "2026-03-30T14:26:48.016025",
+    "last_generated_sol": "Sol 4"
   }
 }

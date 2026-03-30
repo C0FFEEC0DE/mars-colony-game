@@ -6,7 +6,15 @@
 import json
 import os
 import random
+import sys
 from datetime import datetime
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).resolve().parents[3]
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
+from game.server.ai_content import attach_event_flavor
 
 def load_player(filename):
     with open(f'players/{filename}', 'r') as f:
@@ -28,9 +36,7 @@ def main():
     world = load_world()
 
     event_msg = "💧 UNDERGROUND ICE DISCOVERED!"
-    print(event_msg)
-
-    world['current_event'] = event_msg
+    facts = [event_msg]
 
     # All players get water
     if os.path.exists('players'):
@@ -41,13 +47,17 @@ def main():
                     water = random.randint(20, 50)
                     player['resources']['water'] += water
                     print(f"   💧 {player['name']}: +{water} water")
+                    facts.append(f"{player['name']} received +{water} water")
                     save_player(filename, player)
                 except:
                     pass
 
+    flavor = attach_event_flavor(world, "ice_discovery", facts)
+    print(flavor["headline"])
+
     world['events_log'].append({
         'time': datetime.now().isoformat(),
-        'event': event_msg
+        'event': flavor["broadcast"]
     })
 
     save_world(world)

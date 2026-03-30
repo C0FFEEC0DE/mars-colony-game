@@ -59,7 +59,7 @@ Settings → Actions → General:
 
 | Workflow | File | Triggers |
 |----------|------|----------|
-| 🪐 Game Loop | `game_loop.yml` | Every 6 hours and manual runs |
+| 🪐 Game Loop | `game_loop.yml` | Every 6 hours, with a daily AI/news pass at 00:00 UTC |
 | 💰 Economy | `economy.yml` | Stage logic used by the Game Loop |
 | ⚡ Random Events | `random_events.yml` | Stage logic used by the Game Loop |
 | 🚀 Mars Day | `mars_day.yml` | Stage logic used by the Game Loop |
@@ -74,6 +74,13 @@ Any workflow can be triggered manually:
 1. GitHub → Actions → [Select workflow]
 2. Click "Run workflow"
 3. Runs on main branch
+
+The Game Loop job also contains a daily AI stage that generates:
+- a safe AI directive with a validated world effect
+- a mission board for players
+- colony news for the README
+- NPC transmissions
+- flavor text for deterministic random events
 
 ## Monitoring
 

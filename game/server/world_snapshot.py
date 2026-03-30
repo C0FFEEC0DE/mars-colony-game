@@ -111,6 +111,12 @@ def render_world_summary(world, players):
     mars_date = world.get("mars_date") or f"Sol {world.get('day', '?')}"
     resources = world.get("global_resources", {})
     market = world.get("market", {})
+    ai = world.get("ai", {})
+    daily_event = ai.get("daily_event", {})
+    missions = ai.get("missions", [])
+    transmissions = ai.get("npc_transmissions", [])
+    news_summary = ai.get("news_summary", "")
+    event_flavor = ai.get("event_flavor", {})
     recent_events = list(reversed(world.get("events_log", [])[-5:]))
     headline_rows = [
         f"[SOL] {mars_date}   [SEASON] {world.get('season', 'Unknown')}",
@@ -120,6 +126,12 @@ def render_world_summary(world, players):
         f"[O2] {resources.get('oxygen', 0)}   [H2O] {resources.get('water', 0)}   [E] {resources.get('energy', 0)}",
         f"[FOOD] {resources.get('food', 0)}   [MAT] {resources.get('materials', 0)}",
     ]
+    if daily_event:
+        effect = daily_event.get("effect", {})
+        result = effect.get("result", {})
+        headline_rows.append(
+            f"[AI] {daily_event.get('headline', 'Pending')} | {result.get('target', 'directive')} {result.get('delta', 0):+}"
+        )
     reserve_rows = [
         f"OXYGEN    {resources.get('oxygen', 0)}",
         f"WATER     {resources.get('water', 0)}",
@@ -148,6 +160,36 @@ def render_world_summary(world, players):
     if len(standings_rows) == 1:
         standings_rows = ["NO REGISTERED PLAYERS"]
 
+    ai_event_rows = [
+        daily_event.get("headline", "AI directive pending"),
+        daily_event.get("summary", "No AI directive generated yet."),
+    ]
+    if daily_event:
+        effect = daily_event.get("effect", {})
+        result = effect.get("result", {})
+        ai_event_rows.append(
+            f"EFFECT {effect.get('type', 'unknown')} | {result.get('target', 'n/a')} {result.get('delta', 0):+}"
+        )
+
+    mission_rows = []
+    for idx, mission in enumerate(missions[:3], start=1):
+        mission_rows.append(
+            f"{idx}. {mission.get('title', 'Untitled')} | REWARD {mission.get('reward_hint', 'Unknown')}"
+        )
+        mission_rows.append(f"   OBJ {mission.get('objective', 'Stand by')}")
+        mission_rows.append(f"   RISK {mission.get('risk', 'Unknown')}")
+    if not mission_rows:
+        mission_rows = ["MISSION BOARD OFFLINE"]
+
+    transmission_rows = [
+        f"{item.get('sender', 'Mars Control')} -> {item.get('recipient', 'All')} | {item.get('message', '')}"
+        for item in transmissions[:3]
+    ] or ["NO TRANSMISSIONS"]
+
+    news_rows = [news_summary] if news_summary else ["No colony news generated yet."]
+    if world.get("current_event") and event_flavor:
+        news_rows.append(event_flavor.get("broadcast", ""))
+
     event_rows = [
         f"{entry.get('time', 'unknown')} | {entry.get('event', 'unknown')}"
         for entry in recent_events
@@ -164,7 +206,15 @@ def render_world_summary(world, players):
         "",
         _box("MARKET PRICES", market_rows),
         "",
+        _box("AI DAILY DIRECTIVE", ai_event_rows),
+        "",
         _box("COLONY STANDINGS", standings_rows),
+        "",
+        _box("MISSION BOARD", mission_rows),
+        "",
+        _box("NPC TRANSMISSIONS", transmission_rows),
+        "",
+        _box("COLONY NEWS FEED", news_rows),
         "",
         _box("RECENT EVENTS", event_rows),
         "```",

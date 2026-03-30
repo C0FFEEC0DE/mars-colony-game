@@ -57,7 +57,7 @@ That is the file you commit and push to become an active player.
 
 | Command | Description |
 |---------|-------------|
-| `status` | Show colony status |
+| `status` | Show colony status, AI directives, missions, and transmissions |
 | `dig` | Dig for ice → water |
 | `mine` | Mine materials |
 | `build` | Build structure |
@@ -130,6 +130,13 @@ If two players move simultaneously:
 - **🌠 Meteorites** - resources but damage risk
 - **💧 Discoveries** - random resource bonuses
 - **🛸 Traders** - global resources
+
+### AI Layer
+
+- A daily AI director generates a world directive with a validated safe effect
+- The mission board offers 1-3 fresh text missions
+- NPC transmissions add faction chatter and Mars Control pressure
+- Random events keep deterministic mechanics, but their flavor text can be AI-written
 
 ## Tips
 

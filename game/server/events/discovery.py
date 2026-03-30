@@ -5,7 +5,15 @@
 
 import json
 import random
+import sys
 from datetime import datetime
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).resolve().parents[3]
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
+from game.server.ai_content import attach_event_flavor
 
 def load_world():
     with open('world_state.json', 'r') as f:
@@ -27,12 +35,12 @@ def main():
     ]
 
     discovery = random.choice(discoveries)
-    print(discovery)
+    flavor = attach_event_flavor(world, "discovery", [discovery])
+    print(flavor["headline"])
 
-    world['current_event'] = discovery
     world['events_log'].append({
         'time': datetime.now().isoformat(),
-        'event': discovery
+        'event': flavor["broadcast"]
     })
 
     save_world(world)
