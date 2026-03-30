@@ -8,17 +8,17 @@
 ## LIVE WORLD SNAPSHOT
 
 <!-- WORLD_SUMMARY:START -->
-_Auto-updated daily. Last world update: 2026-03-30T14:26:48.016025_
+_Auto-updated daily. Last world update: 2026-03-30T12:31:37.314795_
 
 ```text
 ╔═══════════════════ LIVE WORLD SNAPSHOT ════════════════════╗
-║ [SOL] Sol 4   [SEASON] Early Spring                        ║
-║ [TEMP] -78C   [SUN] 94%   [STORM] YES                      ║
+║ [SOL] Sol 5   [SEASON] Early Spring                        ║
+║ [TEMP] -74C   [SUN] 76%   [STORM] NO                       ║
 ║ [EVENT] None                                               ║
 ║ [POP] 18   [BLD] 9   [PLY] 3                               ║
 ║ [O2] 1000   [H2O] 545   [E] 1000                           ║
 ║ [FOOD] 300   [MAT] 0                                       ║
-║ [AI] Operations drift into a new rhythm | water +45        ║
+║ [AI] Operations drift into a new rhythm | temperature -6   ║
 ╚════════════════════════════════════════════════════════════╝
 
 ╔════════════════════ RESOURCE RESERVES ═════════════════════╗
@@ -36,35 +36,35 @@ _Auto-updated daily. Last world update: 2026-03-30T14:26:48.016025_
 
 ╔════════════════════ AI DAILY DIRECTIVE ════════════════════╗
 ║ Operations drift into a new rhythm                         ║
-║ Sol 4 opens with thin margins, nervous operators, and one  ║
+║ Sol 5 opens with thin margins, nervous operators, and one  ║
 ║ narrow chance to shift the colony balance before the next  ║
 ║ weather swing.                                             ║
-║ EFFECT water_cache | water +45                             ║
+║ EFFECT cold_snap | temperature -6                          ║
 ╚════════════════════════════════════════════════════════════╝
 
 ╔═════════════════════ COLONY STANDINGS ═════════════════════╗
 ║ RK NAME             CORP                 POP BLD SCORE     ║
-║  1 Marco Quinn      Dustline Agro          7   3  1529     ║
-║  2 Zoya Kade        Ares Systems           5   4  1310     ║
-║  3 Irina Vale       Helios Prospecting     6   2  1261     ║
+║  1 Marco Quinn      Dustline Agro          7   3  1487     ║
+║  2 Zoya Kade        Ares Systems           5   4  1317     ║
+║  3 Irina Vale       Helios Prospecting     6   2  1244     ║
 ╚════════════════════════════════════════════════════════════╝
 
 ╔══════════════════════ MISSION BOARD ═══════════════════════╗
-║ 1. Secure ridge ice cores | REWARD Water and science       ║
-║ prestige                                                   ║
-║    OBJ Bring back intact samples before the sun angle      ║
-║ drops.                                                     ║
-║    RISK Moderate exposure and rover wear                   ║
+║ 1. Recover a silent beacon | REWARD Materials and map      ║
+║ intel                                                      ║
+║    OBJ Reach the site, recover telemetry, and mark         ║
+║ salvageable parts.                                         ║
+║    RISK Navigation errors in dust                          ║
 ║ 2. Patch the thermal grid | REWARD Energy stability and    ║
 ║ spare materials                                            ║
 ║    OBJ Repair or reinforce one weak point before the next  ║
 ║ cold cycle.                                                ║
 ║    RISK Low risk, high urgency                             ║
-║ 3. Recover a silent beacon | REWARD Materials and map      ║
-║ intel                                                      ║
-║    OBJ Reach the site, recover telemetry, and mark         ║
-║ salvageable parts.                                         ║
-║    RISK Navigation errors in dust                          ║
+║ 3. Secure ridge ice cores | REWARD Water and science       ║
+║ prestige                                                   ║
+║    OBJ Bring back intact samples before the sun angle      ║
+║ drops.                                                     ║
+║    RISK Moderate exposure and rover wear                   ║
 ╚════════════════════════════════════════════════════════════╝
 
 ╔════════════════════ NPC TRANSMISSIONS ═════════════════════╗
@@ -76,24 +76,26 @@ _Auto-updated daily. Last world update: 2026-03-30T14:26:48.016025_
 ╚════════════════════════════════════════════════════════════╝
 
 ╔═════════════════════ COLONY NEWS FEED ═════════════════════╗
-║ Sol 4 begins in Early Spring with 3 active colonies.       ║
-║ Temperature holds near -78C, solar activity sits at 94%,   ║
-║ and the current leaders are Marco Quinn:1529, Zoya         ║
-║ Kade:1310, Irina Vale:1261.                                ║
+║ Sol 5 begins in Early Spring with 3 active colonies.       ║
+║ Temperature holds near -68C, solar activity sits at 76%,   ║
+║ and the current leaders are Marco Quinn:1487, Zoya         ║
+║ Kade:1317, Irina Vale:1244.                                ║
 ╚════════════════════════════════════════════════════════════╝
 
 ╔══════════════════════ RECENT EVENTS ═══════════════════════╗
+║ 2026-03-30T12:31:37.314795 | AI directive: Operations      ║
+║ drift into a new rhythm                                    ║
+║ 2026-03-30T12:31:36.184965 | Martian day 5 has begun       ║
 ║ 2026-03-30T14:26:48.016025 | AI directive: Operations      ║
 ║ drift into a new rhythm                                    ║
+║ 2026-03-30T12:16:44.991521 | 🌠 METEOR SHOWER!              ║
 ║ 2026-03-30T11:22:44.726538 | 🌪️ Dust storm damaged         ║
 ║ colonies!                                                  ║
-║ 2026-03-30T11:22:44.682023 | Martian day 4 has begun       ║
-║ 2026-03-30T11:17:57.131451 | Martian day 3 has begun       ║
-║ 2026-03-30T11:05:03.630608 | Martian day 2 has begun       ║
 ╚════════════════════════════════════════════════════════════╝
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
