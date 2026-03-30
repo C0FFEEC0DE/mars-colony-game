@@ -6,6 +6,7 @@ Utilities for aggregating world state and rendering README summaries.
 from __future__ import annotations
 
 import json
+import textwrap
 from pathlib import Path
 
 WORLD_FILE = Path("world_state.json")
@@ -84,10 +85,15 @@ def _md(value):
 
 def _box(title, rows):
     title_text = f" {title} "
-    content_width = max(len(title_text), *(len(row) for row in rows))
-    top = "╔" + title_text.center(content_width, "═") + "╗"
-    body = [f"║ {row.ljust(content_width)} ║" for row in rows]
-    bottom = "╚" + ("═" * content_width) + "╝"
+    content_width = max(58, len(title_text))
+    wrapped_rows = []
+    for row in rows:
+        segments = textwrap.wrap(str(row), width=content_width) or [""]
+        wrapped_rows.extend(segments)
+
+    top = "╔" + title_text.center(content_width + 2, "═") + "╗"
+    body = [f"║ {row.ljust(content_width)} ║" for row in wrapped_rows]
+    bottom = "╚" + ("═" * (content_width + 2)) + "╝"
     return "\n".join([top, *body, bottom])
 
 
@@ -105,10 +111,30 @@ def render_world_summary(world, players):
         f"[O2] {resources.get('oxygen', 0)}   [H2O] {resources.get('water', 0)}   [E] {resources.get('energy', 0)}",
         f"[FOOD] {resources.get('food', 0)}   [MAT] {resources.get('materials', 0)}",
     ]
+    reserve_rows = [
+        f"OXYGEN    {resources.get('oxygen', 0)}",
+        f"WATER     {resources.get('water', 0)}",
+        f"ENERGY    {resources.get('energy', 0)}",
+        f"FOOD      {resources.get('food', 0)}",
+        f"MATERIALS {resources.get('materials', 0)}",
+    ]
     market_rows = [
         f"[O2] {market.get('oxygen_price', 0)}   [H2O] {market.get('water_price', 0)}",
         f"[FOOD] {market.get('food_price', 0)}   [MAT] {market.get('materials_price', 0)}",
     ]
+    standings_rows = []
+    for rank, entry in enumerate(world.get("leaderboard", []), start=1):
+        standings_rows.append(f"{rank:>2}. {entry.get('name', 'Unknown')}  SCORE {entry.get('score', 0)}")
+        standings_rows.append(
+            f"    {entry.get('corp', 'Unknown')} | POP {entry.get('colonists', 0)} | BLD {entry.get('buildings', 0)}"
+        )
+    if not standings_rows:
+        standings_rows = ["NO REGISTERED PLAYERS"]
+
+    event_rows = [
+        f"{entry.get('time', 'unknown')} | {entry.get('event', 'unknown')}"
+        for entry in recent_events
+    ] or ["NO WORLD EVENTS LOGGED"]
 
     lines = [
         README_START,
@@ -117,61 +143,15 @@ def render_world_summary(world, players):
         "```text",
         _box("LIVE WORLD SNAPSHOT", headline_rows),
         "",
+        _box("RESOURCE RESERVES", reserve_rows),
+        "",
         _box("MARKET PRICES", market_rows),
+        "",
+        _box("COLONY STANDINGS", standings_rows),
+        "",
+        _box("RECENT EVENTS", event_rows),
         "```",
-        "",
-        "### World Metrics",
-        "",
-        "| Metric | Value |",
-        "|---|---|",
-        f"| Martian day | {_md(mars_date)} |",
-        f"| Season | {_md(world.get('season', 'Unknown'))} |",
-        f"| Temperature | {_md(world.get('temperature', 'Unknown'))}°C |",
-        f"| Solar activity | {_md(world.get('solar_activity', 'Unknown'))}% |",
-        f"| Dust storm | {'Yes' if world.get('dust_storm_active') else 'No'} |",
-        f"| Active event | {_md(event)} |",
-        f"| Active colonists | {_md(world.get('active_colonists', 0))} |",
-        f"| Total buildings | {_md(world.get('total_buildings', 0))} |",
-        f"| Registered players | {_md(len(players))} |",
-        "",
-        "### Resource Reserves",
-        "",
-        "| Oxygen | Water | Energy | Food | Materials |",
-        "|---|---|---|---|---|",
-        f"| {_md(resources.get('oxygen', 0))} | {_md(resources.get('water', 0))} | {_md(resources.get('energy', 0))} | {_md(resources.get('food', 0))} | {_md(resources.get('materials', 0))} |",
-        "",
-        "### Market Prices",
-        "",
-        "| Oxygen | Water | Food | Materials |",
-        "|---|---|---|---|",
-        f"| {_md(market.get('oxygen_price', 0))} | {_md(market.get('water_price', 0))} | {_md(market.get('food_price', 0))} | {_md(market.get('materials_price', 0))} |",
-        "",
-        "### Colony Standings",
-        "",
     ]
-
-    if world.get("leaderboard"):
-        lines.extend(
-            [
-                "| Rank | Colonist | Corporation | Colonists | Buildings | Score |",
-                "|---|---|---|---|---|---|",
-            ]
-        )
-        for rank, entry in enumerate(world["leaderboard"], start=1):
-            lines.append(
-                f"| {rank} | {_md(entry.get('name', 'Unknown'))} | {_md(entry.get('corp', 'Unknown'))} | {_md(entry.get('colonists', 0))} | {_md(entry.get('buildings', 0))} | {_md(entry.get('score', 0))} |"
-            )
-    else:
-        lines.append("_No registered players yet._")
-
-    lines.extend(["", "### Recent Events", ""])
-
-    if recent_events:
-        lines.extend(["| Time | Event |", "|---|---|"])
-        for entry in recent_events:
-            lines.append(f"| {_md(entry.get('time', 'unknown'))} | {_md(entry.get('event', 'unknown'))} |")
-    else:
-        lines.append("_No world events logged yet._")
 
     lines.extend(["", README_END, ""])
     return "\n".join(lines)
