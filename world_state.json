@@ -1,14 +1,14 @@
 {
-  "day": 1,
-  "mars_date": "Sol 1",
+  "day": 2,
+  "mars_date": "Sol 2",
   "season": "Early Spring",
-  "solar_activity": 85,
+  "solar_activity": 90,
   "dust_storm_active": false,
-  "temperature": -60,
+  "temperature": -39,
   "active_colonists": 18,
   "total_buildings": 9,
   "current_event": null,
-  "last_updated": "2026-03-28T00:00:00Z",
+  "last_updated": "2026-03-30T11:05:03.630596",
   "global_resources": {
     "oxygen": 1000,
     "water": 500,
@@ -39,7 +39,12 @@
       "buildings": 2
     }
   ],
-  "events_log": [],
+  "events_log": [
+    {
+      "time": "2026-03-30T11:05:03.630608",
+      "event": "Martian day 2 has begun"
+    }
+  ],
   "market": {
     "oxygen_price": 0,
     "water_price": 0,
