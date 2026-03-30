@@ -82,16 +82,45 @@ def _md(value):
     return text.replace("|", "\\|").replace("\n", " ")
 
 
+def _box(title, rows):
+    title_text = f" {title} "
+    content_width = max(len(title_text), *(len(row) for row in rows))
+    top = "╔" + title_text.center(content_width, "═") + "╗"
+    body = [f"║ {row.ljust(content_width)} ║" for row in rows]
+    bottom = "╚" + ("═" * content_width) + "╝"
+    return "\n".join([top, *body, bottom])
+
+
 def render_world_summary(world, players):
     event = world.get("current_event") or "None"
     mars_date = world.get("mars_date") or f"Sol {world.get('day', '?')}"
     resources = world.get("global_resources", {})
     market = world.get("market", {})
     recent_events = list(reversed(world.get("events_log", [])[-5:]))
+    headline_rows = [
+        f"[SOL] {mars_date}   [SEASON] {world.get('season', 'Unknown')}",
+        f"[TEMP] {world.get('temperature', 'Unknown')}C   [SUN] {world.get('solar_activity', 'Unknown')}%   [STORM] {'YES' if world.get('dust_storm_active') else 'NO'}",
+        f"[EVENT] {event}",
+        f"[POP] {world.get('active_colonists', 0)}   [BLD] {world.get('total_buildings', 0)}   [PLY] {len(players)}",
+        f"[O2] {resources.get('oxygen', 0)}   [H2O] {resources.get('water', 0)}   [E] {resources.get('energy', 0)}",
+        f"[FOOD] {resources.get('food', 0)}   [MAT] {resources.get('materials', 0)}",
+    ]
+    market_rows = [
+        f"[O2] {market.get('oxygen_price', 0)}   [H2O] {market.get('water_price', 0)}",
+        f"[FOOD] {market.get('food_price', 0)}   [MAT] {market.get('materials_price', 0)}",
+    ]
 
     lines = [
         README_START,
         f"_Auto-updated daily. Last world update: {_md(world.get('last_updated', 'unknown'))}_",
+        "",
+        "```text",
+        _box("LIVE WORLD SNAPSHOT", headline_rows),
+        "",
+        _box("MARKET PRICES", market_rows),
+        "```",
+        "",
+        "### World Metrics",
         "",
         "| Metric | Value |",
         "|---|---|",
@@ -105,7 +134,7 @@ def render_world_summary(world, players):
         f"| Total buildings | {_md(world.get('total_buildings', 0))} |",
         f"| Registered players | {_md(len(players))} |",
         "",
-        "### Global Resources",
+        "### Resource Reserves",
         "",
         "| Oxygen | Water | Energy | Food | Materials |",
         "|---|---|---|---|---|",
