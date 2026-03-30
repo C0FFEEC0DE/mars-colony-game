@@ -43,6 +43,7 @@ def ensure_ai_state(world):
     ai.setdefault("npc_transmissions", [])
     ai.setdefault("news_summary", "")
     ai.setdefault("event_flavor", {})
+    ai.setdefault("last_diagnostics", {})
     return ai
 
 
@@ -120,11 +121,77 @@ def decode_message_content(payload):
     return str(message)
 
 
+def snippet(value, limit=220):
+    """Trim diagnostic strings for logs and world state."""
+    text = " ".join(str(value or "").split())
+    if len(text) > limit:
+        return text[: limit - 1] + "…"
+    return text
+
+
+def build_diagnostics(**kwargs):
+    """Create a compact diagnostics object."""
+    diagnostics = {
+        "provider": "github_models",
+        "model": DEFAULT_MODEL,
+        "api_url": API_URL,
+        "disabled": os.getenv("MARS_DISABLE_GITHUB_MODELS") == "1",
+        "token_present": False,
+        "token_source": "none",
+        "status": "unknown",
+        "http_status": None,
+        "reason": "",
+        "response_excerpt": "",
+    }
+    diagnostics.update(kwargs)
+    return diagnostics
+
+
+def get_models_token():
+    """Prefer an explicit token, fall back to Actions GITHUB_TOKEN."""
+    explicit = os.getenv("MARS_AI_TOKEN")
+    if explicit:
+        return explicit, "MARS_AI_TOKEN"
+
+    inherited = os.getenv("GITHUB_TOKEN")
+    if inherited:
+        return inherited, "GITHUB_TOKEN"
+
+    return "", "none"
+
+
+def log_diagnostics(prefix, diagnostics):
+    """Print one compact diagnostic line for workflow logs."""
+    reason = diagnostics.get("reason") or "ok"
+    status = diagnostics.get("status", "unknown")
+    http_status = diagnostics.get("http_status")
+    token_source = diagnostics.get("token_source", "none")
+    message = (
+        f"{prefix}: provider={diagnostics.get('provider')} "
+        f"status={status} http={http_status} token={token_source} reason={reason}"
+    )
+    print(snippet(message, 280))
+    excerpt = diagnostics.get("response_excerpt")
+    if excerpt:
+        print(snippet(f"{prefix} response: {excerpt}", 280))
+
+
 def call_github_models(system_prompt, user_prompt):
-    """Call GitHub Models, returning parsed JSON or None on any failure."""
-    token = os.getenv("GITHUB_TOKEN")
-    if not token or os.getenv("MARS_DISABLE_GITHUB_MODELS") == "1":
-        return None
+    """Call GitHub Models, returning parsed JSON and diagnostics."""
+    token, token_source = get_models_token()
+    diagnostics = build_diagnostics(
+        token_present=bool(token),
+        token_source=token_source,
+    )
+    if diagnostics["disabled"]:
+        diagnostics["status"] = "disabled"
+        diagnostics["reason"] = "MARS_DISABLE_GITHUB_MODELS=1"
+        return None, diagnostics
+
+    if not token:
+        diagnostics["status"] = "skipped"
+        diagnostics["reason"] = "missing token in env; set GITHUB_TOKEN or MARS_AI_TOKEN"
+        return None, diagnostics
 
     body = {
         "model": DEFAULT_MODEL,
@@ -150,14 +217,39 @@ def call_github_models(system_prompt, user_prompt):
 
     try:
         with request.urlopen(req, timeout=20) as response:
-            payload = json.loads(response.read().decode("utf-8"))
-    except (error.URLError, error.HTTPError, TimeoutError, json.JSONDecodeError):
-        return None
+            raw = response.read().decode("utf-8")
+            diagnostics["http_status"] = getattr(response, "status", 200)
+            payload = json.loads(raw)
+    except error.HTTPError as exc:
+        raw = exc.read().decode("utf-8", errors="replace")
+        diagnostics["status"] = "http_error"
+        diagnostics["http_status"] = exc.code
+        diagnostics["reason"] = snippet(exc.reason or "HTTP error", 140)
+        diagnostics["response_excerpt"] = raw
+        return None, diagnostics
+    except error.URLError as exc:
+        diagnostics["status"] = "network_error"
+        diagnostics["reason"] = snippet(getattr(exc, "reason", exc), 140)
+        return None, diagnostics
+    except TimeoutError:
+        diagnostics["status"] = "timeout"
+        diagnostics["reason"] = "request timed out"
+        return None, diagnostics
+    except json.JSONDecodeError as exc:
+        diagnostics["status"] = "decode_error"
+        diagnostics["reason"] = snippet(exc, 140)
+        return None, diagnostics
 
     try:
-        return extract_json(decode_message_content(payload))
-    except (KeyError, ValueError, TypeError, json.JSONDecodeError):
-        return None
+        result = extract_json(decode_message_content(payload))
+        diagnostics["status"] = "ok"
+        diagnostics["reason"] = "request succeeded"
+        return result, diagnostics
+    except (KeyError, ValueError, TypeError, json.JSONDecodeError) as exc:
+        diagnostics["status"] = "invalid_response"
+        diagnostics["reason"] = snippet(exc, 140)
+        diagnostics["response_excerpt"] = payload
+        return None, diagnostics
 
 
 def fallback_daily_payload(world, players):
@@ -398,16 +490,26 @@ def generate_daily_content(world, players):
     ai = ensure_ai_state(world)
     current_sol = world.get("mars_date", f"Sol {world.get('day', '?')}")
     if ai.get("last_generated_sol") == current_sol and ai.get("daily_event"):
+        ai["last_diagnostics"] = build_diagnostics(
+            status="cached",
+            reason=f"daily content already generated for {current_sol}",
+        )
+        log_diagnostics("AI diagnostics", ai["last_diagnostics"])
         return "cached", ai["daily_event"]
 
     system_prompt = (
         "You are a mission director for a Mars colony simulation. "
         "Return only compact JSON. Do not include markdown."
     )
-    payload = call_github_models(system_prompt, build_daily_prompt(world, players))
+    payload, diagnostics = call_github_models(system_prompt, build_daily_prompt(world, players))
     source = "github_models" if payload is not None else "fallback"
     if payload is None:
         payload = fallback_daily_payload(world, players)
+        diagnostics["fallback"] = True
+    else:
+        diagnostics["fallback"] = False
+    ai["last_diagnostics"] = diagnostics
+    log_diagnostics("AI diagnostics", diagnostics)
 
     clean = validate_daily_payload(payload, world, players)
     effect_result = apply_effect(
@@ -516,10 +618,14 @@ def attach_event_flavor(world, event_key, facts):
         "You write short mission-control bulletins for a Mars survival sim. "
         "Return only JSON."
     )
-    payload = call_github_models(system_prompt, build_event_prompt(world, event_key, facts))
+    payload, diagnostics = call_github_models(system_prompt, build_event_prompt(world, event_key, facts))
     source = "github_models" if payload is not None else "fallback"
     if payload is None:
         payload = fallback_event_payload(event_key, facts)
+        diagnostics["fallback"] = True
+    else:
+        diagnostics["fallback"] = False
+    log_diagnostics(f"AI flavor diagnostics [{event_key}]", diagnostics)
 
     headline = trim_text(payload.get("headline"), 72, fallback_event_payload(event_key, facts)["headline"])
     broadcast = trim_text(payload.get("broadcast"), 220, fallback_event_payload(event_key, facts)["broadcast"])
@@ -531,6 +637,7 @@ def attach_event_flavor(world, event_key, facts):
         "broadcast": broadcast,
         "source": source,
         "generated_at": datetime.now().isoformat(),
+        "diagnostics": diagnostics,
     }
     world["current_event"] = headline
     return ai["event_flavor"]
