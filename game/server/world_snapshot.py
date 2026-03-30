@@ -83,9 +83,9 @@ def _md(value):
     return text.replace("|", "\\|").replace("\n", " ")
 
 
-def _box(title, rows):
+def _box_lines(title, rows, content_width=34):
     title_text = f" {title} "
-    content_width = max(58, len(title_text))
+    content_width = max(content_width, len(title_text))
     wrapped_rows = []
     for row in rows:
         segments = textwrap.wrap(str(row), width=content_width) or [""]
@@ -94,7 +94,23 @@ def _box(title, rows):
     top = "╔" + title_text.center(content_width + 2, "═") + "╗"
     body = [f"║ {row.ljust(content_width)} ║" for row in wrapped_rows]
     bottom = "╚" + ("═" * (content_width + 2)) + "╝"
-    return "\n".join([top, *body, bottom])
+    return [top, *body, bottom]
+
+
+def _box(title, rows, content_width=34):
+    return "\n".join(_box_lines(title, rows, content_width=content_width))
+
+
+def _merge_boxes(left_lines, right_lines, gap="  "):
+    height = max(len(left_lines), len(right_lines))
+    left_width = max(len(line) for line in left_lines)
+    right_width = max(len(line) for line in right_lines)
+    padded_left = left_lines + ([" " * left_width] * (height - len(left_lines)))
+    padded_right = right_lines + ([" " * right_width] * (height - len(right_lines)))
+    return "\n".join(
+        f"{left.ljust(left_width)}{gap}{right.ljust(right_width)}"
+        for left, right in zip(padded_left, padded_right)
+    )
 
 
 def _fit(text, width):
@@ -104,6 +120,13 @@ def _fit(text, width):
     if width <= 1:
         return text[:width]
     return text[: width - 1] + "…"
+
+
+def _short(text, width):
+    text = str(text).replace("\n", " ")
+    if len(text) <= width:
+        return text
+    return textwrap.shorten(text, width=width, placeholder="…")
 
 
 def render_world_summary(world, players):
@@ -119,12 +142,13 @@ def render_world_summary(world, players):
     event_flavor = ai.get("event_flavor", {})
     recent_events = list(reversed(world.get("events_log", [])[-5:]))
     headline_rows = [
-        f"[SOL] {mars_date}   [SEASON] {world.get('season', 'Unknown')}",
-        f"[TEMP] {world.get('temperature', 'Unknown')}C   [SUN] {world.get('solar_activity', 'Unknown')}%   [STORM] {'YES' if world.get('dust_storm_active') else 'NO'}",
+        f"[SOL] {mars_date} | [SEASON] {world.get('season', 'Unknown')}",
+        f"[TEMP] {world.get('temperature', 'Unknown')}C | [SUN] {world.get('solar_activity', 'Unknown')}% | [STORM] {'YES' if world.get('dust_storm_active') else 'NO'}",
         f"[EVENT] {event}",
-        f"[POP] {world.get('active_colonists', 0)}   [BLD] {world.get('total_buildings', 0)}   [PLY] {len(players)}",
-        f"[O2] {resources.get('oxygen', 0)}   [H2O] {resources.get('water', 0)}   [E] {resources.get('energy', 0)}",
-        f"[FOOD] {resources.get('food', 0)}   [MAT] {resources.get('materials', 0)}",
+        f"[POP] {world.get('active_colonists', 0)} | [BLD] {world.get('total_buildings', 0)} | [PLY] {len(players)}",
+        f"[O2] {resources.get('oxygen', 0)} | [H2O] {resources.get('water', 0)} | [E] {resources.get('energy', 0)}",
+        f"[FOOD] {resources.get('food', 0)} | [MAT] {resources.get('materials', 0)}",
+        f"[MKT] O2 {market.get('oxygen_price', 0)} H2O {market.get('water_price', 0)} F {market.get('food_price', 0)} M {market.get('materials_price', 0)}",
     ]
     if daily_event:
         effect = daily_event.get("effect", {})
@@ -139,25 +163,15 @@ def render_world_summary(world, players):
         f"FOOD      {resources.get('food', 0)}",
         f"MATERIALS {resources.get('materials', 0)}",
     ]
-    market_rows = [
-        f"[O2] {market.get('oxygen_price', 0)}   [H2O] {market.get('water_price', 0)}",
-        f"[FOOD] {market.get('food_price', 0)}   [MAT] {market.get('materials_price', 0)}",
-    ]
-    standings_rows = ["RK NAME             CORP                 POP BLD SCORE"]
+    standings_rows = []
     for rank, entry in enumerate(world.get("leaderboard", []), start=1):
-        standings_rows.append(
-            " ".join(
-                [
-                    f"{rank:>2}",
-                    _fit(entry.get("name", "Unknown"), 16),
-                    _fit(entry.get("corp", "Unknown"), 20),
-                    f"{entry.get('colonists', 0):>3}",
-                    f"{entry.get('buildings', 0):>3}",
-                    f"{entry.get('score', 0):>5}",
-                ]
-            )
+        standings_rows.extend(
+            [
+                f"{rank}. {_short(entry.get('name', 'Unknown'), 28)}",
+                f"   {_short(entry.get('corp', 'Unknown'), 14)} | P{entry.get('colonists', 0)} B{entry.get('buildings', 0)} | S{entry.get('score', 0)}",
+            ]
         )
-    if len(standings_rows) == 1:
+    if not standings_rows:
         standings_rows = ["NO REGISTERED PLAYERS"]
 
     ai_event_rows = [
@@ -173,16 +187,14 @@ def render_world_summary(world, players):
 
     mission_rows = []
     for idx, mission in enumerate(missions[:3], start=1):
-        mission_rows.append(
-            f"{idx}. {mission.get('title', 'Untitled')} | REWARD {mission.get('reward_hint', 'Unknown')}"
-        )
-        mission_rows.append(f"   OBJ {mission.get('objective', 'Stand by')}")
-        mission_rows.append(f"   RISK {mission.get('risk', 'Unknown')}")
+        mission_rows.append(f"{idx}. {_short(mission.get('title', 'Untitled'), 30)}")
+        mission_rows.append(f"   {_short(mission.get('objective', 'Stand by'), 31)}")
     if not mission_rows:
         mission_rows = ["MISSION BOARD OFFLINE"]
 
     transmission_rows = [
-        f"{item.get('sender', 'Mars Control')} -> {item.get('recipient', 'All')} | {item.get('message', '')}"
+        f"{_short(item.get('sender', 'Mars Control'), 14)} -> {_short(item.get('recipient', 'All'), 10)}"
+        f" | {_short(item.get('message', ''), 34)}"
         for item in transmissions[:3]
     ] or ["NO TRANSMISSIONS"]
 
@@ -191,32 +203,35 @@ def render_world_summary(world, players):
         news_rows.append(event_flavor.get("broadcast", ""))
 
     event_rows = [
-        f"{entry.get('time', 'unknown')} | {entry.get('event', 'unknown')}"
+        f"{str(entry.get('time', 'unknown'))[11:16]} | {_short(entry.get('event', 'unknown'), 28)}"
         for entry in recent_events
     ] or ["NO WORLD EVENTS LOGGED"]
+
+    dashboard_rows = [
+        _merge_boxes(
+            _box_lines("LIVE WORLD SNAPSHOT", headline_rows),
+            _box_lines("AI DAILY DIRECTIVE", ai_event_rows),
+        ),
+        _merge_boxes(
+            _box_lines("COLONY STANDINGS", standings_rows),
+            _box_lines("MISSION BOARD", mission_rows),
+        ),
+        _merge_boxes(
+            _box_lines("RESOURCE RESERVES", reserve_rows),
+            _box_lines("NPC TRANSMISSIONS", transmission_rows),
+        ),
+        _merge_boxes(
+            _box_lines("COLONY NEWS FEED", news_rows),
+            _box_lines("RECENT EVENTS", event_rows),
+        ),
+    ]
 
     lines = [
         README_START,
         f"_Auto-updated daily. Last world update: {_md(world.get('last_updated', 'unknown'))}_",
         "",
         "```text",
-        _box("LIVE WORLD SNAPSHOT", headline_rows),
-        "",
-        _box("RESOURCE RESERVES", reserve_rows),
-        "",
-        _box("MARKET PRICES", market_rows),
-        "",
-        _box("AI DAILY DIRECTIVE", ai_event_rows),
-        "",
-        _box("COLONY STANDINGS", standings_rows),
-        "",
-        _box("MISSION BOARD", mission_rows),
-        "",
-        _box("NPC TRANSMISSIONS", transmission_rows),
-        "",
-        _box("COLONY NEWS FEED", news_rows),
-        "",
-        _box("RECENT EVENTS", event_rows),
+        "\n\n".join(dashboard_rows),
         "```",
     ]
 
