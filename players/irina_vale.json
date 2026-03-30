@@ -6,7 +6,7 @@
     "water": 63,
     "energy": 100,
     "food": 45,
-    "materials": 18
+    "materials": 29
   },
   "buildings": [
     "habitat_module",
