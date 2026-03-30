@@ -79,6 +79,8 @@ def test_imports():
         'game.server.day_cycle',
         'game.server.weather',
         'game.server.leaderboard',
+        'game.server.world_snapshot',
+        'game.server.update_readme',
         'game.server.economy.consumption',
         'game.server.economy.production',
         'game.server.economy.energy',

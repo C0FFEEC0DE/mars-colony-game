@@ -1,0 +1,19 @@
+{
+  "name": "Marco Quinn",
+  "corporation": "Dustline Agro",
+  "resources": {
+    "oxygen": 88,
+    "water": 94,
+    "energy": 70,
+    "food": 85,
+    "materials": 22
+  },
+  "buildings": [
+    "habitat_module",
+    "greenhouse",
+    "solar_panel"
+  ],
+  "colonists": 7,
+  "last_login": "2026-03-30T08:25:00",
+  "turns_today": 2
+}

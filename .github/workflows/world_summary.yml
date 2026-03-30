@@ -1,0 +1,33 @@
+name: 📘 Daily World Summary
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  refresh-summary:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 📘 Build daily README snapshot
+        run: |
+          python3 game/server/update_readme.py
+
+      - name: 💾 Save
+        run: |
+          git config user.name 'Mars Server'
+          git config user.email 'mars@red-planet.game'
+          git add README.md world_state.json
+          git diff --staged --quiet || git commit -m "📘 Daily world summary: $(date +%F)"
+          git push

@@ -1,11 +1,19 @@
 name: 🛡️ Anti-Cheat
-# Validates all commits for fairness
+# Validates code/config changes for fairness, skips pure game-state updates
 
 on:
   push:
     branches: [main, master]
+    paths-ignore:
+      - 'world_state.json'
+      - 'README.md'
+      - 'players/**'
   pull_request:
     branches: [main, master]
+    paths-ignore:
+      - 'world_state.json'
+      - 'README.md'
+      - 'players/**'
 
 jobs:
   anti-cheat:

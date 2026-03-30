@@ -50,6 +50,9 @@ On first launch you'll be asked to enter:
 - **Colonist name** - your in-game name
 - **Corporation** - your company name
 
+The client creates your personal file as `players/<colonist>.json`.
+That is the file you commit and push to become an active player.
+
 ### Commands
 
 | Command | Description |
@@ -75,6 +78,8 @@ On first launch you'll be asked to enter:
    ↓
 5. git pull gets other players' updates
 ```
+
+The local session pointer lives in `.mars/current_player` and is not committed.
 
 ### Resources
 
@@ -109,6 +114,8 @@ claude → sync
 claude → [make move]
 # Then: git push origin main
 ```
+
+Each player should only edit their own `players/<colonist>.json` file.
 
 ### Conflicts
 

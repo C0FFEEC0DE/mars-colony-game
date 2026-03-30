@@ -15,6 +15,8 @@ REQUIREMENTS:
 
 import json
 import os
+import re
+import shlex
 import sys
 import random
 import time
@@ -33,9 +35,73 @@ COLORS = {
     'bold': '\033[1m'
 }
 
+PLAYERS_DIR = 'players'
+LOCAL_STATE_DIR = '.mars'
+CURRENT_PLAYER_POINTER = os.path.join(LOCAL_STATE_DIR, 'current_player')
+LOCAL_TASKS_FILE = os.path.join(LOCAL_STATE_DIR, 'tasks.json')
+
 def color(text, color_name):
     """Colorize text"""
     return f"{COLORS.get(color_name, '')}{text}{COLORS['reset']}"
+
+def ensure_local_state_dir():
+    """Create local-only state directory"""
+    os.makedirs(LOCAL_STATE_DIR, exist_ok=True)
+
+def sanitize_player_slug(name):
+    """Create a filesystem-safe player slug"""
+    slug = re.sub(r'[^\w-]+', '_', name.strip().lower(), flags=re.UNICODE)
+    slug = slug.strip('._')
+    return slug or 'player'
+
+def player_file_from_name(name):
+    """Build player file path from colonist name"""
+    return os.path.join(PLAYERS_DIR, f'{sanitize_player_slug(name)}.json')
+
+def unique_player_file(name):
+    """Find a unique player file path"""
+    base_slug = sanitize_player_slug(name)
+    candidate = os.path.join(PLAYERS_DIR, f'{base_slug}.json')
+    suffix = 2
+
+    while os.path.exists(candidate):
+        candidate = os.path.join(PLAYERS_DIR, f'{base_slug}_{suffix}.json')
+        suffix += 1
+
+    return candidate
+
+def save_current_player_pointer(player_file):
+    """Persist local pointer to the active player profile"""
+    ensure_local_state_dir()
+    with open(CURRENT_PLAYER_POINTER, 'w', encoding='utf-8') as f:
+        f.write(player_file)
+
+def migrate_legacy_player_file():
+    """Move legacy shared player file to a per-player filename"""
+    legacy_file = os.path.join(PLAYERS_DIR, 'current_player.json')
+    if not os.path.exists(legacy_file):
+        return None
+
+    try:
+        with open(legacy_file, 'r', encoding='utf-8') as f:
+            player = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return None
+
+    player_file = unique_player_file(player.get('name', 'player'))
+    os.replace(legacy_file, player_file)
+    save_current_player_pointer(player_file)
+    return player_file
+
+def get_current_player_file():
+    """Resolve the local player profile path"""
+    if os.path.exists(CURRENT_PLAYER_POINTER):
+        with open(CURRENT_PLAYER_POINTER, 'r', encoding='utf-8') as f:
+            player_file = f.read().strip()
+        if player_file and os.path.exists(player_file):
+            return player_file
+
+    return migrate_legacy_player_file()
 
 def header():
     """Display beautiful header with ASCII art"""
@@ -59,9 +125,9 @@ def header():
 
 def load_player_data():
     """Load player data"""
-    player_file = 'players/current_player.json'
-    if os.path.exists(player_file):
-        with open(player_file, 'r') as f:
+    player_file = get_current_player_file()
+    if player_file and os.path.exists(player_file):
+        with open(player_file, 'r', encoding='utf-8') as f:
             return json.load(f)
     return None
 
@@ -73,18 +139,35 @@ def load_world_state():
             return json.load(f)
     return {"error": "Sync with server first: git pull"}
 
-def save_player_data(data):
+def save_player_data(data, player_file=None):
     """Save player data"""
-    os.makedirs('players', exist_ok=True)
-    with open('players/current_player.json', 'w') as f:
+    os.makedirs(PLAYERS_DIR, exist_ok=True)
+    player_file = player_file or get_current_player_file()
+    if not player_file:
+        raise RuntimeError("Current player file is not configured")
+
+    with open(player_file, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2)
+
+    save_current_player_pointer(player_file)
 
 def register_player():
     """Register new colonist"""
     print(color("\n👤 NEW COLONIST REGISTRATION", 'cyan'))
     print("-" * 50)
 
-    name = input(color("Enter colonist name: ", 'yellow'))
+    while True:
+        name = input(color("Enter colonist name: ", 'yellow')).strip()
+        if not name:
+            print(color("❌ Colonist name cannot be empty!", 'red'))
+            continue
+
+        player_file = player_file_from_name(name)
+        if os.path.exists(player_file):
+            print(color(f"❌ Colonist name already taken: {player_file}", 'red'))
+            continue
+        break
+
     corp = input(color("Corporation name: ", 'yellow'))
 
     player = {
@@ -103,15 +186,16 @@ def register_player():
         "turns_today": 0
     }
 
-    save_player_data(player)
+    save_player_data(player, player_file)
 
     print(color(f"\n✅ Welcome to Mars, {name}!"))
     print(color(f"   Corporation: {corp}", 'green'))
+    print(color(f"   Player file: {player_file}", 'cyan'))
     print(color(f"   Starting resources: {player['resources']}", 'cyan'))
 
     # Create first commit
     print(color("\n📝 Creating first base...", 'yellow'))
-    os.system(f'git add players/current_player.json')
+    os.system(f'git add {shlex.quote(player_file)}')
     os.system(f'git commit -m "NEW_COLONIST: {name} from {corp}"')
     print(color("✅ Done! Now run: git push", 'green'))
 
@@ -247,7 +331,12 @@ def build():
 def commit_action(message):
     """Create git commit with action"""
     print(color(f"\n📝 Saving to server...", 'yellow'))
-    os.system('git add players/current_player.json world_state.json 2>/dev/null')
+    player_file = get_current_player_file()
+    if not player_file:
+        print(color("❌ No active player profile found", 'red'))
+        return
+
+    os.system(f'git add {shlex.quote(player_file)} world_state.json 2>/dev/null')
     result = os.system(f'git commit -m "{message}" --quiet 2>/dev/null')
     if result == 0:
         print(color("✅ Saved locally", 'green'))
@@ -351,9 +440,10 @@ def view_tasks():
     print()
 
     # Load or create tasks
-    tasks_file = 'players/tasks.json'
+    ensure_local_state_dir()
+    tasks_file = LOCAL_TASKS_FILE
     if os.path.exists(tasks_file):
-        with open(tasks_file, 'r') as f:
+        with open(tasks_file, 'r', encoding='utf-8') as f:
             tasks = json.load(f)
     else:
         tasks = []

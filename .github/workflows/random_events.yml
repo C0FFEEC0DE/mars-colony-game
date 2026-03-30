@@ -3,8 +3,8 @@ name: ⚡ Random Events
 
 on:
   schedule:
-    # Every hour with chance of event
-    - cron: '0 * * * *'
+    # Twice per day with chance of event
+    - cron: '0 */12 * * *'
   workflow_dispatch:
 
 jobs:
@@ -62,6 +62,6 @@ jobs:
         run: |
           git config user.name 'Mars Server'
           git config user.email 'mars@red-planet.game'
-          git add world_state.json events/
+          git add world_state.json players/
           git diff --staged --quiet || git commit -m "⚡ Event: $(date)"
           git push

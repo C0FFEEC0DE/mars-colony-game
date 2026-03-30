@@ -32,6 +32,51 @@ See [PLAYER_INSTRUCTIONS.md](PLAYER_INSTRUCTIONS.md)
 
 See [CI_CD_SETUP.md](CI_CD_SETUP.md)
 
+## 🌍 Live World Snapshot
+
+<!-- WORLD_SUMMARY:START -->
+_Auto-updated daily. Last world update: 2026-03-28T00:00:00Z_
+
+| Metric | Value |
+|---|---|
+| Martian day | Sol 1 |
+| Season | Early Spring |
+| Temperature | -60°C |
+| Solar activity | 85% |
+| Dust storm | No |
+| Active event | None |
+| Active colonists | 18 |
+| Total buildings | 9 |
+| Registered players | 3 |
+
+### Global Resources
+
+| Oxygen | Water | Energy | Food | Materials |
+|---|---|---|---|---|
+| 1000 | 500 | 1000 | 300 | 0 |
+
+### Market Prices
+
+| Oxygen | Water | Food | Materials |
+|---|---|---|---|
+| 0 | 1 | 2 | 5 |
+
+### Colony Standings
+
+| Rank | Colonist | Corporation | Colonists | Buildings | Score |
+|---|---|---|---|---|---|
+| 1 | Marco Quinn | Dustline Agro | 7 | 3 | 1561 |
+| 2 | Zoya Kade | Ares Systems | 5 | 4 | 1353 |
+| 3 | Irina Vale | Helios Prospecting | 6 | 2 | 1329 |
+
+### Recent Events
+
+_No world events logged yet._
+
+<!-- WORLD_SUMMARY:END -->
+
+
+
 ## 🏗️ Architecture
 
 ```
@@ -44,7 +89,7 @@ See [CI_CD_SETUP.md](CI_CD_SETUP.md)
        │                                  │
        └──────────────────────────←───────┘
                   world_state.json
-                  players/*.json
+                  players/<colonist>.json
                   events/
 ```
 
@@ -55,19 +100,22 @@ mars_colony_game/
 ├── mars_client.py          # 🎮 Game client
 ├── world_state.json        # 🌍 Global state
 ├── .github/workflows/      # ⚙️ Game processes
-│   ├── mars_day.yml        # Day cycle (every 4h)
-│   ├── random_events.yml   # Random events
-│   ├── economy.yml         # Economy (every 15m)
+│   ├── mars_day.yml        # Day cycle (daily)
+│   ├── random_events.yml   # Random events (every 12h)
+│   ├── economy.yml         # Economy (every 6h)
+│   ├── world_summary.yml   # README world snapshot (daily)
 │   └── anti_cheat.yml      # Fairness check
 ├── game/server/            # 🖥️ Server scripts
 │   ├── day_cycle.py
 │   ├── weather.py
 │   ├── events/
-│   └── economy/
+│   ├── economy/
+│   ├── world_snapshot.py
+│   └── update_readme.py
 ├── players/                # 👤 Player data
-└── docs/
-    ├── PLAYER_INSTRUCTIONS.md
-    └── CI_CD_SETUP.md
+├── .mars/                  # 🏠 Local player pointer/tasks (not committed)
+├── PLAYER_INSTRUCTIONS.md  # 🧑‍🚀 Player guide
+└── CI_CD_SETUP.md          # ⚙️ Admin guide
 ```
 
 ## 🎯 Features
@@ -81,10 +129,11 @@ mars_colony_game/
 
 ### GitHub Actions as World
 
-- **Martian sol** = Cron every 4 hours
-- **Sandstorms** = Random events
-- **Economy** = Automatic calculations
-- **Anti-cheat** = Push validation
+- **Martian sol** = Cron once per day
+- **Random events** = Cron every 12 hours
+- **Economy** = Cron every 6 hours
+- **README snapshot** = Daily world summary
+- **Anti-cheat** = Validation for code/config pushes
 
 ### Claude Code Tools as Game Systems ("Abuse")
 

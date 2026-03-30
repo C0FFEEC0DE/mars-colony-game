@@ -1,10 +1,10 @@
 name: 🚀 Mars Day Cycle
-# Runs every 4 hours (Martian sol ~24h 39min)
+# Runs once per day to keep the concept cheap
 # Main game loop - resources, events, checks
 
 on:
   schedule:
-    - cron: '0 */4 * * *'
+    - cron: '0 6 * * *'
   workflow_dispatch:  # Manual trigger
 
 jobs:
@@ -44,6 +44,6 @@ jobs:
         run: |
           git config user.name 'Mars Server'
           git config user.email 'mars@red-planet.game'
-          git add world_state.json events/
+          git add world_state.json players/
           git diff --staged --quiet || git commit -m "🌅 Mars Day $(date +%s)"
           git push

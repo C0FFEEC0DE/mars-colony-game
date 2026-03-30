@@ -59,10 +59,12 @@ Settings → Actions → General:
 
 | Workflow | File | Triggers |
 |----------|------|----------|
-| 🚀 Mars Day | `mars_day.yml` | Every 4 hours |
-| ⚡ Random Events | `random_events.yml` | Every hour (chance) |
-| 💰 Economy | `economy.yml` | Every 15 minutes |
-| 🛡️ Anti-Cheat | `anti_cheat.yml` | On every push |
+| 🚀 Mars Day | `mars_day.yml` | Daily at 06:00 UTC |
+| ⚡ Random Events | `random_events.yml` | Every 12 hours (chance) |
+| 💰 Economy | `economy.yml` | Every 6 hours |
+| 📘 World Summary | `world_summary.yml` | Daily at 00:00 UTC |
+| 🧪 Tests | `tests.yml` | Push/PR, except game-state-only updates |
+| 🛡️ Anti-Cheat | `anti_cheat.yml` | Push/PR, except game-state-only updates |
 
 ## Manual Launch
 
@@ -93,15 +95,32 @@ In workflow files change cron:
 ```yaml
 on:
   schedule:
-    - cron: '0 */4 * * *'  # Every 4 hours
+    - cron: '0 6 * * *'  # Every day at 06:00 UTC
+```
+
+Current defaults in this repo:
+
+```yaml
+# economy.yml
+- cron: '0 */6 * * *'
+
+# random_events.yml
+- cron: '0 */12 * * *'
+
+# mars_day.yml
+- cron: '0 6 * * *'
+
+# world_summary.yml
+- cron: '0 0 * * *'
 ```
 
 Cron format:
 ```
 minute hour day_of_month month day_of_week
-*/15 * * * *  = every 15 minutes
-0 */4 * * *   = every 4 hours
-0 * * * *     = every hour
+0 */6 * * *   = every 6 hours
+0 */12 * * *  = every 12 hours
+0 0 * * *     = every day at 00:00 UTC
+0 6 * * *     = every day at 06:00 UTC
 ```
 
 ### Disable Processes
@@ -111,7 +130,7 @@ Delete file from `.github/workflows/` or comment out:
 ```yaml
 # on:
 #   schedule:
-#     - cron: '*/15 * * * *'
+#     - cron: '0 */6 * * *'
 ```
 
 ## Security
@@ -130,6 +149,9 @@ Workflow `anti_cheat.yml` checks:
 - Negative resources
 - Suspiciously high values
 - Impossible building counts
+
+To reduce GitHub Actions usage, `tests.yml` and `anti_cheat.yml` ignore commits
+that only change `world_state.json`, `players/**`, or `README.md`.
 
 On detection:
 1. Workflow fails with error

@@ -1,11 +1,19 @@
 name: 🧪 Automated Tests
-# Run automated tests on every push and PR
+# Run on push/PR, but skip pure game-state updates to save Actions minutes
 
 on:
   push:
     branches: [main, master]
+    paths-ignore:
+      - 'world_state.json'
+      - 'README.md'
+      - 'players/**'
   pull_request:
     branches: [main, master]
+    paths-ignore:
+      - 'world_state.json'
+      - 'README.md'
+      - 'players/**'
 
 jobs:
   test:

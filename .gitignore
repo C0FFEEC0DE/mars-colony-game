@@ -6,9 +6,8 @@ __pycache__/
 .pytest_cache/
 .env
 
-# Локальные настройки (игроки коммитят только свой файл)
-players/*.json
-!players/.gitkeep
+# Локальные настройки
+.mars/
 
 # Временные файлы
 *.tmp
