@@ -2,13 +2,13 @@
   "day": 7,
   "mars_date": "Sol 7",
   "season": "Early Spring",
-  "solar_activity": 84,
+  "solar_activity": 89,
   "dust_storm_active": false,
   "temperature": -31,
   "active_colonists": 18,
   "total_buildings": 9,
   "current_event": null,
-  "last_updated": "2026-03-30T12:45:27.759574",
+  "last_updated": "2026-03-30T12:45:35.810976",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -87,6 +87,10 @@
     {
       "time": "2026-03-30T12:45:27.759588",
       "event": "Martian day 7 has begun"
+    },
+    {
+      "time": "2026-03-30T12:45:35.810976",
+      "event": "AI directive: Solar Activity Boosts Power Systems"
     }
   ],
   "market": {
@@ -97,61 +101,73 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Operations drift into a new rhythm",
-      "summary": "Sol 6 opens with thin margins, nervous operators, and one narrow chance to shift the colony balance before the next weather swing.",
+      "headline": "Solar Activity Boosts Power Systems",
+      "summary": "Solar activity has increased to 84%, providing a temporary surge in energy generation across all colonies.",
       "effect": {
         "type": "solar_boost",
-        "magnitude": 15,
+        "magnitude": 5,
         "result": {
           "label": "Solar boost",
           "target": "solar_activity",
-          "delta": 15,
-          "before": 68,
-          "after": 83
+          "delta": 5,
+          "before": 84,
+          "after": 89
         }
       },
-      "source": "fallback",
-      "generated_at": "2026-03-30T12:39:58.394061"
+      "source": "github_models",
+      "generated_at": "2026-03-30T12:45:35.810976"
     },
     "missions": [
       {
-        "title": "Secure ridge ice cores",
-        "briefing": "Survey drones marked a shallow ice seam outside the main habitat ring.",
-        "objective": "Bring back intact samples before the sun angle drops.",
-        "reward_hint": "Water and science prestige",
-        "risk": "Moderate exposure and rover wear"
+        "title": "Expand Water Extraction",
+        "briefing": "With moderate temperatures and stable conditions, now is an ideal time to increase water extraction capacity.",
+        "objective": "Deploy and activate additional water extraction units near Helios Prospecting.",
+        "reward_hint": "Gain increased water reserves for your colony.",
+        "risk": "Potential mechanical failure due to harsh terrain."
       },
       {
-        "title": "Patch the thermal grid",
-        "briefing": "Heat loss is climbing in the outer utility corridor.",
-        "objective": "Repair or reinforce one weak point before the next cold cycle.",
-        "reward_hint": "Energy stability and spare materials",
-        "risk": "Low risk, high urgency"
+        "title": "Optimize Energy Storage",
+        "briefing": "Leverage the solar activity surge by upgrading energy storage systems to avoid waste during peak generation.",
+        "objective": "Install enhanced battery modules at Dustline Agro facilities.",
+        "reward_hint": "Improved energy storage capacity.",
+        "risk": "Installation delays may cause missed energy gains."
       },
       {
-        "title": "Recover a silent beacon",
-        "briefing": "A relay beacon stopped broadcasting west of the colony.",
-        "objective": "Reach the site, recover telemetry, and mark salvageable parts.",
-        "reward_hint": "Materials and map intel",
-        "risk": "Navigation errors in dust"
+        "title": "Food Supply Recon",
+        "briefing": "Early spring conditions allow scouting for new arable zones to increase food production.",
+        "objective": "Survey and report viable agricultural sites near Ares Systems.",
+        "reward_hint": "Potential increase in food resources.",
+        "risk": "Exposure to cold may impact scouting team health."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
-        "recipient": "All colonies",
-        "message": "Keep your reports short and your seals tighter. Conditions are changing faster than forecast."
+        "recipient": "all colonies",
+        "message": "Solar activity elevated; optimize energy harvesting to capitalize on increased power."
       },
       {
-        "sender": "Orbital Relay",
-        "recipient": "Irina Vale",
-        "message": "Your telemetry is the cleanest on the planet today. Do not waste that advantage."
+        "sender": "Helios Prospecting",
+        "recipient": "Mars Control",
+        "message": "Request assistance for additional water extraction units to support expanding operations."
       }
     ],
-    "news_summary": "Sol 6 begins in Early Spring with 3 active colonies. Temperature holds near -63C, solar activity sits at 68%, and the current leaders are Marco Quinn:1481, Zoya Kade:1308, Irina Vale:1223.",
+    "news_summary": "On Sol 7 of early spring, Mars experiences a significant solar activity boost enhancing energy production. Colonies are advised to optimize resource extraction and storage to maximize benefits. Conditions remain stable with no dust storms reported.",
     "event_flavor": {},
-    "last_generated": "2026-03-30T12:39:58.394061",
-    "last_generated_sol": "Sol 6",
-    "last_diagnostics": {}
+    "last_generated": "2026-03-30T12:45:35.810976",
+    "last_generated_sol": "Sol 7",
+    "last_diagnostics": {
+      "provider": "github_models",
+      "model": "openai/gpt-4.1-mini",
+      "api_url": "https://models.github.ai/inference/chat/completions",
+      "disabled": false,
+      "token_present": true,
+      "token_source": "GITHUB_TOKEN",
+      "status": "ok",
+      "http_status": 200,
+      "reason": "request succeeded",
+      "response_excerpt": "",
+      "fallback": false
+    }
   }
 }
