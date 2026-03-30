@@ -15,8 +15,6 @@ jobs:
     permissions:
       contents: write
       models: read
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: 📥 Checkout repository
@@ -88,6 +86,8 @@ jobs:
 
       - name: ⚡ Random event stage
         if: ${{ steps.schedule.outputs.run_random == 'true' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           EVENT_TYPE=$((RANDOM % 10))
 
@@ -149,6 +149,8 @@ jobs:
 
       - name: 🤖 Daily AI stage
         if: ${{ steps.schedule.outputs.run_ai_daily == 'true' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 game/server/ai_content.py --daily
 

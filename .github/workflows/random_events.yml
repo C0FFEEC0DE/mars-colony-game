@@ -11,8 +11,6 @@ jobs:
       contents: write
       issues: write
       models: read
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: 📥 Checkout
@@ -28,6 +26,8 @@ jobs:
 
       - name: 🎲 Generate random event
         id: event
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           EVENT_TYPE=$((RANDOM % 10))
 
