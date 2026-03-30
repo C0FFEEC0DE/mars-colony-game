@@ -45,5 +45,8 @@ jobs:
           git config user.name 'Mars Server'
           git config user.email 'mars@red-planet.game'
           git add world_state.json players/
-          git diff --staged --quiet || git commit -m "🌅 Mars Day $(date +%s)"
-          git push
+          if ! git diff --staged --quiet; then
+            git commit -m "🌅 Mars Day $(date +%s)"
+            git pull --rebase origin main
+            git push
+          fi
