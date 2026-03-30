@@ -60,10 +60,10 @@ Settings → Actions → General:
 | Workflow | File | Triggers |
 |----------|------|----------|
 | 🪐 Game Loop | `game_loop.yml` | Every 6 hours and manual runs |
-| 💰 Economy | `economy.yml` | Reusable stage, called by Game Loop |
-| ⚡ Random Events | `random_events.yml` | Reusable stage, called by Game Loop |
-| 🚀 Mars Day | `mars_day.yml` | Reusable stage, called by Game Loop |
-| 📘 World Summary | `world_summary.yml` | Reusable stage, called by Game Loop |
+| 💰 Economy | `economy.yml` | Stage logic used by the Game Loop |
+| ⚡ Random Events | `random_events.yml` | Stage logic used by the Game Loop |
+| 🚀 Mars Day | `mars_day.yml` | Stage logic used by the Game Loop |
+| 📘 World Summary | `world_summary.yml` | Stage logic used by the Game Loop |
 | 🧪 Tests | `tests.yml` | Push/PR, except game-state-only updates |
 | 🛡️ Anti-Cheat | `anti_cheat.yml` | Push/PR, except game-state-only updates |
 

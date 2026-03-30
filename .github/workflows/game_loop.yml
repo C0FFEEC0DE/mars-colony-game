@@ -10,22 +10,29 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  determine_schedule:
+  game-loop:
     runs-on: ubuntu-latest
-    outputs:
-      hour: ${{ steps.clock.outputs.hour }}
-      run_random: ${{ steps.flags.outputs.run_random }}
-      run_mars_day: ${{ steps.flags.outputs.run_mars_day }}
-      run_summary: ${{ steps.flags.outputs.run_summary }}
+    permissions:
+      contents: write
+
     steps:
-      - name: 🕒 Compute UTC schedule flags
-        id: clock
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 🕒 Compute schedule flags
+        id: schedule
         run: |
-          echo "hour=$(date -u +%H)" >> "$GITHUB_OUTPUT"
-      - name: 🧮 Set stage flags
-        id: flags
-        run: |
-          hour="${{ steps.clock.outputs.hour }}"
+          hour=$(date -u +%H)
+          echo "hour=$hour" >> "$GITHUB_OUTPUT"
+
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "run_random=true" >> "$GITHUB_OUTPUT"
             echo "run_mars_day=true" >> "$GITHUB_OUTPUT"
@@ -50,43 +57,99 @@ jobs:
             fi
           fi
 
-  economy:
-    needs: determine_schedule
-    uses: ./.github/workflows/economy.yml
-    secrets: inherit
+      - name: 💰 Economy stage
+        run: |
+          python3 game/server/economy/consumption.py
+          python3 game/server/economy/production.py
+          python3 game/server/economy/energy.py
+          python3 game/server/economy/maintenance.py
+          python3 game/server/economy/market.py
 
-  random_events:
-    needs:
-      - determine_schedule
-      - economy
-    if: ${{ needs.determine_schedule.outputs.run_random == 'true' }}
-    uses: ./.github/workflows/random_events.yml
-    secrets: inherit
+      - name: 💾 Save economy stage
+        run: |
+          git config user.name 'Mars Server'
+          git config user.email 'mars@red-planet.game'
+          git add world_state.json players/
+          if ! git diff --staged --quiet; then
+            git commit -m "💰 Economy: $(date +%H:%M)"
+            git pull --rebase origin main
+            git push
+          fi
 
-  mars_day:
-    needs:
-      - determine_schedule
-      - economy
-      - random_events
-    if: >-
-      ${{
-        needs.determine_schedule.outputs.run_mars_day == 'true' &&
-        (needs.random_events.result == 'success' || needs.random_events.result == 'skipped')
-      }}
-    uses: ./.github/workflows/mars_day.yml
-    secrets: inherit
+      - name: ⚡ Random event stage
+        if: ${{ steps.schedule.outputs.run_random == 'true' }}
+        run: |
+          EVENT_TYPE=$((RANDOM % 10))
 
-  world_summary:
-    needs:
-      - determine_schedule
-      - economy
-      - random_events
-      - mars_day
-    if: >-
-      ${{
-        needs.determine_schedule.outputs.run_summary == 'true' &&
-        (needs.random_events.result == 'success' || needs.random_events.result == 'skipped') &&
-        (needs.mars_day.result == 'success' || needs.mars_day.result == 'skipped')
-      }}
-    uses: ./.github/workflows/world_summary.yml
-    secrets: inherit
+          case $EVENT_TYPE in
+            0)
+              python3 game/server/events/meteor_shower.py
+              ;;
+            1)
+              python3 game/server/events/discovery.py
+              ;;
+            2)
+              python3 game/server/events/sandstorm.py
+              ;;
+            3)
+              python3 game/server/events/ice_discovery.py
+              ;;
+            4)
+              python3 game/server/events/solar_flare.py
+              ;;
+            5)
+              python3 game/server/events/traders.py
+              ;;
+            *)
+              echo "Quiet day on Mars"
+              ;;
+          esac
+
+      - name: 💾 Save random event stage
+        if: ${{ steps.schedule.outputs.run_random == 'true' }}
+        run: |
+          git config user.name 'Mars Server'
+          git config user.email 'mars@red-planet.game'
+          git add world_state.json players/
+          if ! git diff --staged --quiet; then
+            git commit -m "⚡ Event: $(date)"
+            git pull --rebase origin main
+            git push
+          fi
+
+      - name: 🚀 Mars day stage
+        if: ${{ steps.schedule.outputs.run_mars_day == 'true' }}
+        run: |
+          python3 game/server/day_cycle.py
+          python3 game/server/weather.py
+          python3 game/server/storms.py
+          python3 game/server/leaderboard.py
+
+      - name: 💾 Save Mars day stage
+        if: ${{ steps.schedule.outputs.run_mars_day == 'true' }}
+        run: |
+          git config user.name 'Mars Server'
+          git config user.email 'mars@red-planet.game'
+          git add world_state.json players/
+          if ! git diff --staged --quiet; then
+            git commit -m "🌅 Mars Day $(date +%s)"
+            git pull --rebase origin main
+            git push
+          fi
+
+      - name: 📘 World summary stage
+        if: ${{ steps.schedule.outputs.run_summary == 'true' }}
+        run: |
+          python3 game/server/update_readme.py
+
+      - name: 💾 Save world summary stage
+        if: ${{ steps.schedule.outputs.run_summary == 'true' }}
+        run: |
+          git config user.name 'Mars Server'
+          git config user.email 'mars@red-planet.game'
+          git add README.md world_state.json
+          if ! git diff --staged --quiet; then
+            git commit -m "📘 Daily world summary: $(date +%F)"
+            git pull --rebase origin main
+            git push
+          fi

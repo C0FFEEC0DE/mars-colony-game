@@ -64,5 +64,5 @@ _Auto-updated daily. Last world update: 2026-03-30T11:05:03.630596_
 - [World State](world_state.json)
 - [Workflows](.github/workflows/)
 
-The scheduled game loop runs through one orchestrator workflow and calls the economy,
-random events, Mars day, and README summary stages in sequence.
+The scheduled game loop runs through one orchestrator workflow and executes the
+economy, random events, Mars day, and README summary stages in sequence.
