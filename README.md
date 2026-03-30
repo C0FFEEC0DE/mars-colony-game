@@ -136,3 +136,7 @@ _Auto-updated daily. Last world update: 2026-03-30T12:45:35.810976_
 The scheduled game loop runs through one orchestrator workflow and executes the
 economy, random events, Mars day, daily AI content, and README summary stages in
 sequence.
+
+Manual live diagnostics are available through the `AI Health Check` workflow.
+GitHub Models run in Actions via the built-in `GITHUB_TOKEN`; deterministic
+fallback content is used only when live inference is unavailable.

@@ -32,19 +32,25 @@ GitHub Actions are already configured in `.github/workflows/`. Just enable:
 2. Select "Read and write permissions" for Workflow permissions
 3. Save
 
-### 4. Setup Personal Token
+### 4. GitHub Models Access
 
-For automated commits on behalf of server:
+This repo uses **GitHub Models** directly from GitHub Actions.
 
-1. Settings → Developer settings → Personal access tokens → Tokens (classic)
-2. Generate new token
-3. Scopes: `repo` (all sub-items)
-4. Copy token
+Required:
 
-5. In repository: Settings → Secrets and variables → Actions
-6. New repository secret:
-   - Name: `GITHUB_TOKEN`
-   - Value: your token
+- repository Actions workflow permissions must allow read/write access
+- workflows that call models need `permissions: models: read`
+- the repository or organization must allow GitHub Models
+
+The built-in `secrets.GITHUB_TOKEN` is enough for:
+- automated commits
+- GitHub Models inference in Actions
+
+You do **not** need to create a separate repository secret named `GITHUB_TOKEN`.
+
+Optional:
+- if you want to run model calls outside Actions, the code also supports `MARS_AI_TOKEN`
+- this is an override, not a normal requirement
 
 ### 5. Allow Push for Actions
 
@@ -64,6 +70,7 @@ Settings → Actions → General:
 | ⚡ Random Events | `random_events.yml` | Stage logic used by the Game Loop |
 | 🚀 Mars Day | `mars_day.yml` | Stage logic used by the Game Loop |
 | 📘 World Summary | `world_summary.yml` | Stage logic used by the Game Loop |
+| 🤖 AI Health Check | `ai_health_check.yml` | Manual live check for GitHub Models access |
 | 🧪 Tests | `tests.yml` | Push/PR, except game-state-only updates |
 | 🛡️ Anti-Cheat | `anti_cheat.yml` | Push/PR, except game-state-only updates |
 
@@ -81,6 +88,12 @@ The Game Loop job also contains a daily AI stage that generates:
 - colony news for the README
 - NPC transmissions
 - flavor text for deterministic random events
+
+The `AI Health Check` workflow performs one live GitHub Models request without
+changing world state. Use it to confirm:
+- GitHub Models access is enabled
+- `GITHUB_TOKEN` reaches the AI step
+- inference is live, not fallback
 
 ## Monitoring
 
@@ -126,6 +139,7 @@ Inside the orchestrator:
 - economy runs every 6 hours
 - random events run on the 00:00 and 12:00 UTC ticks
 - Mars day runs on the 06:00 UTC tick
+- daily AI content runs on the 00:00 UTC tick
 - world summary runs on the 00:00 UTC tick
 
 ### Disable Processes
@@ -139,6 +153,13 @@ Disable the scheduler in `game_loop.yml` or comment out the cron:
 ```
 
 ## Security
+
+### Token Handling
+
+- AI workflows use the built-in `secrets.GITHUB_TOKEN`
+- the token is scoped only to AI-related steps, not the whole job
+- logs show the token only as `***`
+- diagnostics report the token source as `GITHUB_TOKEN` but never print the value
 
 ### Branch Protection
 
@@ -206,11 +227,18 @@ python3 game/server/day_cycle.py
 
 # Check economy
 python3 game/server/economy/consumption.py
+
+# Check AI locally without Actions token
+python3 game/server/ai_content.py --healthcheck
 ```
 
 ### GitHub Actions Logs
 
-Download artifacts (if configured) or view in console.
+Useful checks:
+- `🪐 Game Loop` should show `AI diagnostics: ... status=ok http=200`
+- `🤖 AI Health Check` should succeed without changing repo files
+- if models are unavailable, diagnostics will tell you whether it is a token,
+  HTTP, timeout, or response-format problem
 
 ---
 

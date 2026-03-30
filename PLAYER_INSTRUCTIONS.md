@@ -137,6 +137,16 @@ If two players move simultaneously:
 - The mission board offers 1-3 fresh text missions
 - NPC transmissions add faction chatter and Mars Control pressure
 - Random events keep deterministic mechanics, but their flavor text can be AI-written
+- Live GitHub Models are used in Actions when available
+- If live inference is unavailable, the server falls back to safe deterministic content
+
+### What You Can See After Sync
+
+The `status` screen can show:
+- the active AI directive
+- the mission board
+- NPC transmissions
+- shared world flavor from recent AI-assisted events
 
 ## Tips
 
