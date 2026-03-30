@@ -27,12 +27,10 @@ _Auto-updated daily. Last world update: 2026-03-28T00:00:00Z_
 ╚════════════════════════════════════════════════════════════╝
 
 ╔═════════════════════ COLONY STANDINGS ═════════════════════╗
-║  1. Marco Quinn  SCORE 1561                                ║
-║     Dustline Agro | POP 7 | BLD 3                          ║
-║  2. Zoya Kade  SCORE 1353                                  ║
-║     Ares Systems | POP 5 | BLD 4                           ║
-║  3. Irina Vale  SCORE 1329                                 ║
-║     Helios Prospecting | POP 6 | BLD 2                     ║
+║ RK NAME             CORP                 POP BLD SCORE     ║
+║  1 Marco Quinn      Dustline Agro          7   3  1561     ║
+║  2 Zoya Kade        Ares Systems           5   4  1353     ║
+║  3 Irina Vale       Helios Prospecting     6   2  1329     ║
 ╚════════════════════════════════════════════════════════════╝
 
 ╔══════════════════════ RECENT EVENTS ═══════════════════════╗
@@ -48,6 +46,7 @@ _Auto-updated daily. Last world update: 2026-03-28T00:00:00Z_
 
 
 
+
 ```text
 ┌──────────────────────────────────────────────────────────────┐
 │ MARS COLONY REPO                                            │
@@ -56,18 +55,7 @@ _Auto-updated daily. Last world update: 2026-03-28T00:00:00Z_
 └──────────────────────────────────────────────────────────────┘
 ```
 
-## ACCESS
-
-```text
-[DOCS]
-  [1] Player Instructions
-  [2] CI/CD Setup
-
-[FILES]
-  [3] Game Client
-  [4] World State
-  [5] Workflows
-```
+## QUICK LINKS
 
 - [Player Instructions](PLAYER_INSTRUCTIONS.md)
 - [CI/CD Setup](CI_CD_SETUP.md)

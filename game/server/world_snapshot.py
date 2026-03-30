@@ -97,6 +97,15 @@ def _box(title, rows):
     return "\n".join([top, *body, bottom])
 
 
+def _fit(text, width):
+    text = str(text)
+    if len(text) <= width:
+        return text.ljust(width)
+    if width <= 1:
+        return text[:width]
+    return text[: width - 1] + "…"
+
+
 def render_world_summary(world, players):
     event = world.get("current_event") or "None"
     mars_date = world.get("mars_date") or f"Sol {world.get('day', '?')}"
@@ -122,13 +131,21 @@ def render_world_summary(world, players):
         f"[O2] {market.get('oxygen_price', 0)}   [H2O] {market.get('water_price', 0)}",
         f"[FOOD] {market.get('food_price', 0)}   [MAT] {market.get('materials_price', 0)}",
     ]
-    standings_rows = []
+    standings_rows = ["RK NAME             CORP                 POP BLD SCORE"]
     for rank, entry in enumerate(world.get("leaderboard", []), start=1):
-        standings_rows.append(f"{rank:>2}. {entry.get('name', 'Unknown')}  SCORE {entry.get('score', 0)}")
         standings_rows.append(
-            f"    {entry.get('corp', 'Unknown')} | POP {entry.get('colonists', 0)} | BLD {entry.get('buildings', 0)}"
+            " ".join(
+                [
+                    f"{rank:>2}",
+                    _fit(entry.get("name", "Unknown"), 16),
+                    _fit(entry.get("corp", "Unknown"), 20),
+                    f"{entry.get('colonists', 0):>3}",
+                    f"{entry.get('buildings', 0):>3}",
+                    f"{entry.get('score', 0):>5}",
+                ]
+            )
         )
-    if not standings_rows:
+    if len(standings_rows) == 1:
         standings_rows = ["NO REGISTERED PLAYERS"]
 
     event_rows = [
