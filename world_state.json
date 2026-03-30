@@ -1,14 +1,14 @@
 {
-  "day": 5,
-  "mars_date": "Sol 5",
+  "day": 6,
+  "mars_date": "Sol 6",
   "season": "Early Spring",
-  "solar_activity": 76,
+  "solar_activity": 68,
   "dust_storm_active": false,
-  "temperature": -74,
+  "temperature": -63,
   "active_colonists": 18,
   "total_buildings": 9,
-  "current_event": "Research teams report a discovery worth a second look",
-  "last_updated": "2026-03-30T12:31:37.314795",
+  "current_event": null,
+  "last_updated": "2026-03-30T12:39:57.598837",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 1487,
+      "score": 1481,
       "colonists": 7,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 1317,
+      "score": 1308,
       "colonists": 5,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 1244,
+      "score": 1223,
       "colonists": 6,
       "buildings": 2
     }
@@ -75,6 +75,10 @@
     {
       "time": "2026-03-30T12:39:56.762403",
       "event": "Science crews are locking the site down for analysis: \ud83d\udce1 Strange signal on 1420 MHz detected."
+    },
+    {
+      "time": "2026-03-30T12:39:57.598851",
+      "event": "Martian day 6 has begun"
     }
   ],
   "market": {
@@ -137,13 +141,7 @@
       }
     ],
     "news_summary": "Sol 5 begins in Early Spring with 3 active colonies. Temperature holds near -68C, solar activity sits at 76%, and the current leaders are Marco Quinn:1487, Zoya Kade:1317, Irina Vale:1244.",
-    "event_flavor": {
-      "event_key": "discovery",
-      "headline": "Research teams report a discovery worth a second look",
-      "broadcast": "Science crews are locking the site down for analysis: \ud83d\udce1 Strange signal on 1420 MHz detected.",
-      "source": "fallback",
-      "generated_at": "2026-03-30T12:39:56.762390"
-    },
+    "event_flavor": {},
     "last_generated": "2026-03-30T12:31:37.314795",
     "last_generated_sol": "Sol 5"
   }
