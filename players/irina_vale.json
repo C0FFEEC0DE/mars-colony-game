@@ -3,16 +3,16 @@
   "corporation": "Helios Prospecting",
   "resources": {
     "oxygen": 0,
-    "water": 42,
-    "energy": 199,
-    "food": 3,
+    "water": 40,
+    "energy": 216,
+    "food": 0,
     "materials": 29
   },
   "buildings": [
     "habitat_module",
     "solar_panel"
   ],
-  "colonists": 4,
+  "colonists": 1,
   "last_login": "2026-03-30T08:10:00",
   "turns_today": 1
 }
