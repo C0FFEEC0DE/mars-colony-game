@@ -2,17 +2,17 @@
   "name": "Irina Vale",
   "corporation": "Helios Prospecting",
   "resources": {
-    "oxygen": 2,
-    "water": 45,
-    "energy": 182,
-    "food": 9,
+    "oxygen": 0,
+    "water": 42,
+    "energy": 199,
+    "food": 3,
     "materials": 29
   },
   "buildings": [
     "habitat_module",
     "solar_panel"
   ],
-  "colonists": 6,
+  "colonists": 4,
   "last_login": "2026-03-30T08:10:00",
   "turns_today": 1
 }
