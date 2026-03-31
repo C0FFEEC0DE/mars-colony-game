@@ -1,14 +1,14 @@
 {
-  "day": 7,
-  "mars_date": "Sol 7",
+  "day": 8,
+  "mars_date": "Sol 8",
   "season": "Early Spring",
   "solar_activity": 89,
   "dust_storm_active": false,
-  "temperature": -31,
-  "active_colonists": 14,
+  "temperature": -78,
+  "active_colonists": 11,
   "total_buildings": 9,
-  "current_event": "Unexpected Microbial Life Detected in Soil",
-  "last_updated": "2026-03-30T12:45:35.810976",
+  "current_event": null,
+  "last_updated": "2026-03-31T06:27:38.996512",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,22 +20,22 @@
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 1286,
-      "colonists": 5,
+      "score": 1182,
+      "colonists": 4,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 1165,
+      "score": 1146,
       "colonists": 6,
       "buildings": 2
     },
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 1100,
-      "colonists": 3,
+      "score": 926,
+      "colonists": 1,
       "buildings": 3
     }
   ],
@@ -95,6 +95,10 @@
     {
       "time": "2026-03-31T00:18:31.724240",
       "event": "On Sol 7, analysis revealed unknown bacteria in the Martian soil sample. This discovery may provide new insights into Mars' past habitability."
+    },
+    {
+      "time": "2026-03-31T06:27:38.996531",
+      "event": "Martian day 8 has begun"
     }
   ],
   "market": {
@@ -157,26 +161,7 @@
       }
     ],
     "news_summary": "On Sol 7 of early spring, Mars experiences a significant solar activity boost enhancing energy production. Colonies are advised to optimize resource extraction and storage to maximize benefits. Conditions remain stable with no dust storms reported.",
-    "event_flavor": {
-      "event_key": "discovery",
-      "headline": "Unexpected Microbial Life Detected in Soil",
-      "broadcast": "On Sol 7, analysis revealed unknown bacteria in the Martian soil sample. This discovery may provide new insights into Mars' past habitability.",
-      "source": "github_models",
-      "generated_at": "2026-03-31T00:18:31.724228",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-03-30T12:45:35.810976",
     "last_generated_sol": "Sol 7",
     "last_diagnostics": {
