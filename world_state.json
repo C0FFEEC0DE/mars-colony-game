@@ -5,7 +5,7 @@
   "solar_activity": 89,
   "dust_storm_active": false,
   "temperature": -31,
-  "active_colonists": 18,
+  "active_colonists": 14,
   "total_buildings": 9,
   "current_event": "Unexpected Microbial Life Detected in Soil",
   "last_updated": "2026-03-30T12:45:35.810976",
@@ -18,25 +18,25 @@
   },
   "leaderboard": [
     {
-      "name": "Marco Quinn",
-      "corp": "Dustline Agro",
-      "score": 1476,
-      "colonists": 7,
-      "buildings": 3
-    },
-    {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 1300,
+      "score": 1286,
       "colonists": 5,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 1203,
+      "score": 1165,
       "colonists": 6,
       "buildings": 2
+    },
+    {
+      "name": "Marco Quinn",
+      "corp": "Dustline Agro",
+      "score": 1100,
+      "colonists": 3,
+      "buildings": 3
     }
   ],
   "events_log": [
