@@ -184,13 +184,12 @@
       "model": "openai/gpt-4.1-mini",
       "api_url": "https://models.github.ai/inference/chat/completions",
       "disabled": false,
-      "token_present": true,
-      "token_source": "GITHUB_TOKEN",
-      "status": "ok",
-      "http_status": 200,
-      "reason": "request succeeded",
-      "response_excerpt": "",
-      "fallback": false
+      "token_present": false,
+      "token_source": "none",
+      "status": "cached",
+      "http_status": null,
+      "reason": "daily content already generated for Sol 7",
+      "response_excerpt": ""
     }
   }
 }
