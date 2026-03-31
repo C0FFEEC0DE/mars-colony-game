@@ -3,9 +3,9 @@
   "corporation": "Dustline Agro",
   "resources": {
     "oxygen": 0,
-    "water": 38,
-    "energy": 128,
-    "food": 106,
+    "water": 31,
+    "energy": 145,
+    "food": 111,
     "materials": 22
   },
   "buildings": [
@@ -13,7 +13,7 @@
     "greenhouse",
     "solar_panel"
   ],
-  "colonists": 5,
+  "colonists": 3,
   "last_login": "2026-03-30T08:25:00",
   "turns_today": 2
 }
