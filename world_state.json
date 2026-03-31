@@ -7,14 +7,14 @@
   "temperature": -78,
   "active_colonists": 11,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Trading Ship Arrives with Vital Supplies",
   "last_updated": "2026-03-31T06:27:38.996512",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
     "energy": 1000,
-    "food": 300,
-    "materials": 0
+    "food": 400,
+    "materials": 50
   },
   "leaderboard": [
     {
@@ -99,6 +99,10 @@
     {
       "time": "2026-03-31T06:27:38.996531",
       "event": "Martian day 8 has begun"
+    },
+    {
+      "time": "2026-03-31T12:16:53.197174",
+      "event": "A trading ship from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's reserves. This shipment bolsters our survival resources as Sol 8 unfolds under stable conditions."
     }
   ],
   "market": {
@@ -161,7 +165,26 @@
       }
     ],
     "news_summary": "On Sol 7 of early spring, Mars experiences a significant solar activity boost enhancing energy production. Colonies are advised to optimize resource extraction and storage to maximize benefits. Conditions remain stable with no dust storms reported.",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "traders",
+      "headline": "Trading Ship Arrives with Vital Supplies",
+      "broadcast": "A trading ship from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's reserves. This shipment bolsters our survival resources as Sol 8 unfolds under stable conditions.",
+      "source": "github_models",
+      "generated_at": "2026-03-31T12:16:53.197162",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-03-30T12:45:35.810976",
     "last_generated_sol": "Sol 7",
     "last_diagnostics": {
