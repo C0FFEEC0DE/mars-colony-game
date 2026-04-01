@@ -2,9 +2,9 @@
   "name": "Zoya Kade",
   "corporation": "Ares Systems",
   "resources": {
-    "oxygen": 181,
-    "water": 27,
-    "energy": 141,
+    "oxygen": 192,
+    "water": 26,
+    "energy": 148,
     "food": 0,
     "materials": 46
   },
@@ -14,7 +14,7 @@
     "oxygen_generator",
     "research_lab"
   ],
-  "colonists": 2,
+  "colonists": 1,
   "last_login": "2026-03-30T08:40:00",
   "turns_today": 3
 }
