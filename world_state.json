@@ -2,13 +2,13 @@
   "day": 8,
   "mars_date": "Sol 8",
   "season": "Early Spring",
-  "solar_activity": 89,
+  "solar_activity": 94,
   "dust_storm_active": false,
   "temperature": -78,
   "active_colonists": 11,
   "total_buildings": 9,
   "current_event": "Trading Ship Arrives with Vital Supplies",
-  "last_updated": "2026-03-31T06:27:38.996512",
+  "last_updated": "2026-04-01T00:20:13.640812",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -103,6 +103,10 @@
     {
       "time": "2026-03-31T12:16:53.197174",
       "event": "A trading ship from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's reserves. This shipment bolsters our survival resources as Sol 8 unfolds under stable conditions."
+    },
+    {
+      "time": "2026-04-01T00:20:13.640812",
+      "event": "AI directive: Solar Activity Boosts Power Grid"
     }
   ],
   "market": {
@@ -113,8 +117,8 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Activity Boosts Power Systems",
-      "summary": "Solar activity has increased to 84%, providing a temporary surge in energy generation across all colonies.",
+      "headline": "Solar Activity Boosts Power Grid",
+      "summary": "Solar activity has increased to 89%, enhancing energy generation capabilities across all colonies.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
@@ -122,49 +126,49 @@
           "label": "Solar boost",
           "target": "solar_activity",
           "delta": 5,
-          "before": 84,
-          "after": 89
+          "before": 89,
+          "after": 94
         }
       },
       "source": "github_models",
-      "generated_at": "2026-03-30T12:45:35.810976"
+      "generated_at": "2026-04-01T00:20:13.640812"
     },
     "missions": [
       {
-        "title": "Expand Water Extraction",
-        "briefing": "With moderate temperatures and stable conditions, now is an ideal time to increase water extraction capacity.",
-        "objective": "Deploy and activate additional water extraction units near Helios Prospecting.",
-        "reward_hint": "Gain increased water reserves for your colony.",
-        "risk": "Potential mechanical failure due to harsh terrain."
+        "title": "Optimize Solar Arrays",
+        "briefing": "With increased solar activity, fine-tune your solar panels to maximize energy output.",
+        "objective": "Adjust and calibrate solar arrays to increase energy generation by 10%.",
+        "reward_hint": "Improved energy reserves",
+        "risk": "Potential minor equipment strain"
       },
       {
-        "title": "Optimize Energy Storage",
-        "briefing": "Leverage the solar activity surge by upgrading energy storage systems to avoid waste during peak generation.",
-        "objective": "Install enhanced battery modules at Dustline Agro facilities.",
-        "reward_hint": "Improved energy storage capacity.",
-        "risk": "Installation delays may cause missed energy gains."
+        "title": "Water Conservation Initiative",
+        "briefing": "Early spring conditions demand careful water usage to maintain colony sustainability.",
+        "objective": "Implement water-saving protocols and reduce water consumption by 15%.",
+        "reward_hint": "Preserved water resources",
+        "risk": "Reduced comfort for colonists"
       },
       {
-        "title": "Food Supply Recon",
-        "briefing": "Early spring conditions allow scouting for new arable zones to increase food production.",
-        "objective": "Survey and report viable agricultural sites near Ares Systems.",
-        "reward_hint": "Potential increase in food resources.",
-        "risk": "Exposure to cold may impact scouting team health."
+        "title": "Materials Recovery",
+        "briefing": "Identify and salvage unused material stockpiles from previous missions to bolster your supplies.",
+        "objective": "Recover at least 10 units of materials from known caches near the colony.",
+        "reward_hint": "Increased material stockpile",
+        "risk": "Exposure to harsh terrain"
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity elevated; optimize energy harvesting to capitalize on increased power."
+        "message": "Solar activity is currently high; all colonies are advised to optimize energy systems accordingly."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Mars Control",
-        "message": "Request assistance for additional water extraction units to support expanding operations."
+        "recipient": "all colonies",
+        "message": "Sharing water conservation techniques developed on Sol 7 to improve resource efficiency."
       }
     ],
-    "news_summary": "On Sol 7 of early spring, Mars experiences a significant solar activity boost enhancing energy production. Colonies are advised to optimize resource extraction and storage to maximize benefits. Conditions remain stable with no dust storms reported.",
+    "news_summary": "On Sol 8 of early spring, Mars experiences a surge in solar activity, enhancing energy production capabilities. Colonies focus on optimizing their solar arrays and conserving vital water resources. Efforts to recover materials continue to support sustainable operations amid chal\u2026",
     "event_flavor": {
       "event_key": "traders",
       "headline": "Trading Ship Arrives with Vital Supplies",
@@ -185,19 +189,20 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-03-30T12:45:35.810976",
-    "last_generated_sol": "Sol 7",
+    "last_generated": "2026-04-01T00:20:13.640812",
+    "last_generated_sol": "Sol 8",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
       "api_url": "https://models.github.ai/inference/chat/completions",
       "disabled": false,
-      "token_present": false,
-      "token_source": "none",
-      "status": "cached",
-      "http_status": null,
-      "reason": "daily content already generated for Sol 7",
-      "response_excerpt": ""
+      "token_present": true,
+      "token_source": "GITHUB_TOKEN",
+      "status": "ok",
+      "http_status": 200,
+      "reason": "request succeeded",
+      "response_excerpt": "",
+      "fallback": false
     }
   }
 }
