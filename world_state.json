@@ -2,12 +2,12 @@
   "day": 9,
   "mars_date": "Sol 9",
   "season": "Early Spring",
-  "solar_activity": 75,
+  "solar_activity": 150,
   "dust_storm_active": false,
   "temperature": -55,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Massive Solar Flare Detected",
   "last_updated": "2026-04-01T06:33:07.786229",
   "global_resources": {
     "oxygen": 1000,
@@ -111,6 +111,10 @@
     {
       "time": "2026-04-01T06:33:07.786243",
       "event": "Martian day 9 has begun"
+    },
+    {
+      "time": "2026-04-01T12:16:43.821239",
+      "event": "A powerful solar flare is impacting Mars with 150% solar activity. Energy levels rise by 50% next turn; all personnel must seek radiation shelter immediately."
     }
   ],
   "market": {
@@ -173,7 +177,26 @@
       }
     ],
     "news_summary": "On Sol 8 of early spring, Mars experiences a surge in solar activity, enhancing energy production capabilities. Colonies focus on optimizing their solar arrays and conserving vital water resources. Efforts to recover materials continue to support sustainable operations amid chal\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "solar_flare",
+      "headline": "Massive Solar Flare Detected",
+      "broadcast": "A powerful solar flare is impacting Mars with 150% solar activity. Energy levels rise by 50% next turn; all personnel must seek radiation shelter immediately.",
+      "source": "github_models",
+      "generated_at": "2026-04-01T12:16:43.821228",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-01T00:20:13.640812",
     "last_generated_sol": "Sol 8",
     "last_diagnostics": {
