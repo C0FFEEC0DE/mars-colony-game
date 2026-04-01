@@ -5,7 +5,7 @@
   "solar_activity": 94,
   "dust_storm_active": false,
   "temperature": -78,
-  "active_colonists": 11,
+  "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Trading Ship Arrives with Vital Supplies",
   "last_updated": "2026-04-01T00:20:13.640812",
@@ -18,25 +18,25 @@
   },
   "leaderboard": [
     {
+      "name": "Marco Quinn",
+      "corp": "Dustline Agro",
+      "score": 1028,
+      "colonists": 1,
+      "buildings": 3
+    },
+    {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 1182,
-      "colonists": 4,
+      "score": 922,
+      "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 1146,
-      "colonists": 6,
-      "buildings": 2
-    },
-    {
-      "name": "Marco Quinn",
-      "corp": "Dustline Agro",
-      "score": 926,
+      "score": 658,
       "colonists": 1,
-      "buildings": 3
+      "buildings": 2
     }
   ],
   "events_log": [
