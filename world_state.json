@@ -1,14 +1,14 @@
 {
-  "day": 8,
-  "mars_date": "Sol 8",
+  "day": 9,
+  "mars_date": "Sol 9",
   "season": "Early Spring",
-  "solar_activity": 94,
+  "solar_activity": 75,
   "dust_storm_active": false,
-  "temperature": -78,
+  "temperature": -55,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Trading Ship Arrives with Vital Supplies",
-  "last_updated": "2026-04-01T00:20:13.640812",
+  "current_event": null,
+  "last_updated": "2026-04-01T06:33:07.786229",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 1028,
+      "score": 1063,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 922,
+      "score": 943,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 658,
+      "score": 676,
       "colonists": 1,
       "buildings": 2
     }
@@ -107,6 +107,10 @@
     {
       "time": "2026-04-01T00:20:13.640812",
       "event": "AI directive: Solar Activity Boosts Power Grid"
+    },
+    {
+      "time": "2026-04-01T06:33:07.786243",
+      "event": "Martian day 9 has begun"
     }
   ],
   "market": {
@@ -169,26 +173,7 @@
       }
     ],
     "news_summary": "On Sol 8 of early spring, Mars experiences a surge in solar activity, enhancing energy production capabilities. Colonies focus on optimizing their solar arrays and conserving vital water resources. Efforts to recover materials continue to support sustainable operations amid chal\u2026",
-    "event_flavor": {
-      "event_key": "traders",
-      "headline": "Trading Ship Arrives with Vital Supplies",
-      "broadcast": "A trading ship from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's reserves. This shipment bolsters our survival resources as Sol 8 unfolds under stable conditions.",
-      "source": "github_models",
-      "generated_at": "2026-03-31T12:16:53.197162",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-04-01T00:20:13.640812",
     "last_generated_sol": "Sol 8",
     "last_diagnostics": {
