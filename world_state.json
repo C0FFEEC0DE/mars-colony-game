@@ -8,7 +8,7 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Underground Ice Deposit Found on Sol 9",
-  "last_updated": "2026-04-01T06:33:07.786229",
+  "last_updated": "2026-04-02T00:17:05.132851",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -119,6 +119,10 @@
     {
       "time": "2026-04-02T00:16:57.829923",
       "event": "Team members Irina Vale, Marco Quinn, and Zoya Kade have secured vital water reserves, gaining 42, 20, and 47 units respectively, boosting colony sustainability."
+    },
+    {
+      "time": "2026-04-02T00:17:05.132851",
+      "event": "AI directive: Solar Activity Surge Powers Up Systems"
     }
   ],
   "market": {
@@ -129,58 +133,58 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Activity Boosts Power Grid",
-      "summary": "Solar activity has increased to 89%, enhancing energy generation capabilities across all colonies.",
+      "headline": "Solar Activity Surge Powers Up Systems",
+      "summary": "Solar activity has peaked at 150%, boosting energy generation across the colony. Systems relying on solar panels are operating at enhanced capacity today.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
         "result": {
           "label": "Solar boost",
           "target": "solar_activity",
-          "delta": 5,
-          "before": 89,
-          "after": 94
+          "delta": 0,
+          "before": 150,
+          "after": 150
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-01T00:20:13.640812"
+      "generated_at": "2026-04-02T00:17:05.132851"
     },
     "missions": [
       {
-        "title": "Optimize Solar Arrays",
-        "briefing": "With increased solar activity, fine-tune your solar panels to maximize energy output.",
-        "objective": "Adjust and calibrate solar arrays to increase energy generation by 10%.",
-        "reward_hint": "Improved energy reserves",
-        "risk": "Potential minor equipment strain"
+        "title": "Optimize Solar Array Alignment",
+        "briefing": "With the solar surge, adjusting panel angles can maximize energy intake.",
+        "objective": "Recalibrate solar arrays to increase energy efficiency by 10%.",
+        "reward_hint": "Gain a temporary energy boost.",
+        "risk": "Minor power fluctuation during recalibration."
       },
       {
-        "title": "Water Conservation Initiative",
-        "briefing": "Early spring conditions demand careful water usage to maintain colony sustainability.",
-        "objective": "Implement water-saving protocols and reduce water consumption by 15%.",
-        "reward_hint": "Preserved water resources",
-        "risk": "Reduced comfort for colonists"
+        "title": "Water Recycling System Maintenance",
+        "briefing": "Water reserves are stable but need upkeep to ensure long-term supply.",
+        "objective": "Inspect and repair water recycling units to prevent future leaks.",
+        "reward_hint": "Improve water conservation efficiency.",
+        "risk": "Potential small water loss during maintenance."
       },
       {
-        "title": "Materials Recovery",
-        "briefing": "Identify and salvage unused material stockpiles from previous missions to bolster your supplies.",
-        "objective": "Recover at least 10 units of materials from known caches near the colony.",
-        "reward_hint": "Increased material stockpile",
-        "risk": "Exposure to harsh terrain"
+        "title": "Prospect for Local Materials",
+        "briefing": "Early spring conditions allow safe short-range exploration for building materials.",
+        "objective": "Collect at least 10 units of raw materials near the colony perimeter.",
+        "reward_hint": "Increase material stockpile.",
+        "risk": "Exposure to cold and terrain hazards."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity is currently high; all colonies are advised to optimize energy systems accordingly."
+        "message": "Solar activity has increased, expect enhanced solar power availability today. Optimize energy use accordingly."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "all colonies",
-        "message": "Sharing water conservation techniques developed on Sol 7 to improve resource efficiency."
+        "recipient": "Irina Vale",
+        "message": "Report from field teams indicate promising material deposits nearby. Consider scheduling a scouting mission."
       }
     ],
-    "news_summary": "On Sol 8 of early spring, Mars experiences a surge in solar activity, enhancing energy production capabilities. Colonies focus on optimizing their solar arrays and conserving vital water resources. Efforts to recover materials continue to support sustainable operations amid chal\u2026",
+    "news_summary": "On Sol 9 of Early Spring, Mars experiences a solar activity surge enhancing energy generation. Colonies are encouraged to optimize their solar arrays to capitalize on this boost. Water systems require routine maintenance while conditions permit safe material prospecting near set\u2026",
     "event_flavor": {
       "event_key": "ice_discovery",
       "headline": "Underground Ice Deposit Found on Sol 9",
@@ -201,8 +205,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-01T00:20:13.640812",
-    "last_generated_sol": "Sol 8",
+    "last_generated": "2026-04-02T00:17:05.132851",
+    "last_generated_sol": "Sol 9",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
