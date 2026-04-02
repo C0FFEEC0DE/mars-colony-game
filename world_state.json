@@ -7,7 +7,7 @@
   "temperature": -55,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Massive Solar Flare Detected",
+  "current_event": "Underground Ice Deposit Found on Sol 9",
   "last_updated": "2026-04-01T06:33:07.786229",
   "global_resources": {
     "oxygen": 1000,
@@ -115,6 +115,10 @@
     {
       "time": "2026-04-01T12:16:43.821239",
       "event": "A powerful solar flare is impacting Mars with 150% solar activity. Energy levels rise by 50% next turn; all personnel must seek radiation shelter immediately."
+    },
+    {
+      "time": "2026-04-02T00:16:57.829923",
+      "event": "Team members Irina Vale, Marco Quinn, and Zoya Kade have secured vital water reserves, gaining 42, 20, and 47 units respectively, boosting colony sustainability."
     }
   ],
   "market": {
@@ -178,11 +182,11 @@
     ],
     "news_summary": "On Sol 8 of early spring, Mars experiences a surge in solar activity, enhancing energy production capabilities. Colonies focus on optimizing their solar arrays and conserving vital water resources. Efforts to recover materials continue to support sustainable operations amid chal\u2026",
     "event_flavor": {
-      "event_key": "solar_flare",
-      "headline": "Massive Solar Flare Detected",
-      "broadcast": "A powerful solar flare is impacting Mars with 150% solar activity. Energy levels rise by 50% next turn; all personnel must seek radiation shelter immediately.",
+      "event_key": "ice_discovery",
+      "headline": "Underground Ice Deposit Found on Sol 9",
+      "broadcast": "Team members Irina Vale, Marco Quinn, and Zoya Kade have secured vital water reserves, gaining 42, 20, and 47 units respectively, boosting colony sustainability.",
       "source": "github_models",
-      "generated_at": "2026-04-01T12:16:43.821228",
+      "generated_at": "2026-04-02T00:16:57.829911",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
