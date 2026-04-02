@@ -7,7 +7,7 @@
   "temperature": -66,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Sol 10 Meteor Shower Yields Valuable Salvage",
   "last_updated": "2026-04-02T06:24:55.181555",
   "global_resources": {
     "oxygen": 1000,
@@ -127,6 +127,10 @@
     {
       "time": "2026-04-02T06:24:55.181577",
       "event": "Martian day 10 has begun"
+    },
+    {
+      "time": "2026-04-02T12:16:29.319116",
+      "event": "A meteor shower passed Mars today with no hazards reported. Marco Quinn and Zoya Kade successfully recovered 35 units of materials from impact sites."
     }
   ],
   "market": {
@@ -189,7 +193,26 @@
       }
     ],
     "news_summary": "On Sol 9 of Early Spring, Mars experiences a solar activity surge enhancing energy generation. Colonies are encouraged to optimize their solar arrays to capitalize on this boost. Water systems require routine maintenance while conditions permit safe material prospecting near set\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "meteor_shower",
+      "headline": "Sol 10 Meteor Shower Yields Valuable Salvage",
+      "broadcast": "A meteor shower passed Mars today with no hazards reported. Marco Quinn and Zoya Kade successfully recovered 35 units of materials from impact sites.",
+      "source": "github_models",
+      "generated_at": "2026-04-02T12:16:29.319106",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-02T00:17:05.132851",
     "last_generated_sol": "Sol 9",
     "last_diagnostics": {
