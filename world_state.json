@@ -8,11 +8,11 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Massive Solar Flare Boosts Energy Output",
-  "last_updated": "2026-04-02T06:24:55.181555",
+  "last_updated": "2026-04-03T00:19:49.705594",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
-    "energy": 1000,
+    "energy": 1020,
     "food": 400,
     "materials": 50
   },
@@ -135,6 +135,10 @@
     {
       "time": "2026-04-03T00:19:42.120851",
       "event": "A powerful solar flare has increased energy levels by 50% for the next cycle. Ensure all crew take appropriate radiation shielding measures immediately."
+    },
+    {
+      "time": "2026-04-03T00:19:49.705594",
+      "event": "AI directive: Solar Flare Boosts Energy Output"
     }
   ],
   "market": {
@@ -145,58 +149,51 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Activity Surge Powers Up Systems",
-      "summary": "Solar activity has peaked at 150%, boosting energy generation across the colony. Systems relying on solar panels are operating at enhanced capacity today.",
+      "headline": "Solar Flare Boosts Energy Output",
+      "summary": "Increased solar activity has temporarily enhanced solar panel efficiency, providing a modest energy surge across all colonies.",
       "effect": {
-        "type": "solar_boost",
-        "magnitude": 5,
+        "type": "energy_surge",
+        "magnitude": 20,
         "result": {
-          "label": "Solar boost",
-          "target": "solar_activity",
-          "delta": 0,
-          "before": 150,
-          "after": 150
+          "label": "Grid surge",
+          "target": "energy",
+          "delta": 20,
+          "before": 1000,
+          "after": 1020
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-02T00:17:05.132851"
+      "generated_at": "2026-04-03T00:19:49.705594"
     },
     "missions": [
       {
-        "title": "Optimize Solar Array Alignment",
-        "briefing": "With the solar surge, adjusting panel angles can maximize energy intake.",
-        "objective": "Recalibrate solar arrays to increase energy efficiency by 10%.",
-        "reward_hint": "Gain a temporary energy boost.",
-        "risk": "Minor power fluctuation during recalibration."
+        "title": "Optimize Solar Arrays",
+        "briefing": "With the current solar flare, solar arrays can be tuned for maximum efficiency.",
+        "objective": "Adjust and recalibrate solar panels to increase energy yield by 10%.",
+        "reward_hint": "Gain additional energy reserves.",
+        "risk": "Minor risk of equipment overheating."
       },
       {
-        "title": "Water Recycling System Maintenance",
-        "briefing": "Water reserves are stable but need upkeep to ensure long-term supply.",
-        "objective": "Inspect and repair water recycling units to prevent future leaks.",
-        "reward_hint": "Improve water conservation efficiency.",
-        "risk": "Potential small water loss during maintenance."
-      },
-      {
-        "title": "Prospect for Local Materials",
-        "briefing": "Early spring conditions allow safe short-range exploration for building materials.",
-        "objective": "Collect at least 10 units of raw materials near the colony perimeter.",
-        "reward_hint": "Increase material stockpile.",
-        "risk": "Exposure to cold and terrain hazards."
+        "title": "Water Recycling System Check",
+        "briefing": "Early spring temperatures and increased energy availability allow for a system check to improve water recycling efficiency.",
+        "objective": "Inspect and repair water recycling units to reduce water loss by 5%.",
+        "reward_hint": "Conserve valuable water resources.",
+        "risk": "Potential brief system downtime."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity has increased, expect enhanced solar power availability today. Optimize energy use accordingly."
+        "message": "Solar activity is elevated; monitor energy systems closely to capitalize on increased output."
       },
       {
         "sender": "Helios Prospecting",
         "recipient": "Irina Vale",
-        "message": "Report from field teams indicate promising material deposits nearby. Consider scheduling a scouting mission."
+        "message": "Coordinate with local teams to optimize resource usage during the solar surge."
       }
     ],
-    "news_summary": "On Sol 9 of Early Spring, Mars experiences a solar activity surge enhancing energy generation. Colonies are encouraged to optimize their solar arrays to capitalize on this boost. Water systems require routine maintenance while conditions permit safe material prospecting near set\u2026",
+    "news_summary": "Sol 10 marks a boost in solar energy due to heightened solar activity, allowing colonies to improve energy production. Early spring conditions remain harsh at -66C but stable with no dust storms. Colonies focus on optimizing energy and water systems to sustain growth and resourc\u2026",
     "event_flavor": {
       "event_key": "solar_flare",
       "headline": "Massive Solar Flare Boosts Energy Output",
@@ -217,8 +214,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-02T00:17:05.132851",
-    "last_generated_sol": "Sol 9",
+    "last_generated": "2026-04-03T00:19:49.705594",
+    "last_generated_sol": "Sol 10",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
