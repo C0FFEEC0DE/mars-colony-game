@@ -7,7 +7,7 @@
   "temperature": -50,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Subsurface Ice Deposit Located on Sol 11",
   "last_updated": "2026-04-03T06:24:39.317657",
   "global_resources": {
     "oxygen": 1000,
@@ -143,6 +143,10 @@
     {
       "time": "2026-04-03T06:24:39.317676",
       "event": "Martian day 11 has begun"
+    },
+    {
+      "time": "2026-04-03T12:11:04.572300",
+      "event": "Underground ice was confirmed today, boosting water reserves for Irina (+39), Marco (+46), and Zoya (+44). This discovery enhances our hydration capacity amid -50\u00b0C conditions."
     }
   ],
   "market": {
@@ -198,7 +202,26 @@
       }
     ],
     "news_summary": "Sol 10 marks a boost in solar energy due to heightened solar activity, allowing colonies to improve energy production. Early spring conditions remain harsh at -66C but stable with no dust storms. Colonies focus on optimizing energy and water systems to sustain growth and resourc\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "ice_discovery",
+      "headline": "Subsurface Ice Deposit Located on Sol 11",
+      "broadcast": "Underground ice was confirmed today, boosting water reserves for Irina (+39), Marco (+46), and Zoya (+44). This discovery enhances our hydration capacity amid -50\u00b0C conditions.",
+      "source": "github_models",
+      "generated_at": "2026-04-03T12:11:04.572286",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-03T00:19:49.705594",
     "last_generated_sol": "Sol 10",
     "last_diagnostics": {
