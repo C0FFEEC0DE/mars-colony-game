@@ -2,12 +2,12 @@
   "day": 10,
   "mars_date": "Sol 10",
   "season": "Early Spring",
-  "solar_activity": 94,
+  "solar_activity": 150,
   "dust_storm_active": false,
   "temperature": -66,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Sol 10 Meteor Shower Yields Valuable Salvage",
+  "current_event": "Massive Solar Flare Boosts Energy Output",
   "last_updated": "2026-04-02T06:24:55.181555",
   "global_resources": {
     "oxygen": 1000,
@@ -131,6 +131,10 @@
     {
       "time": "2026-04-02T12:16:29.319116",
       "event": "A meteor shower passed Mars today with no hazards reported. Marco Quinn and Zoya Kade successfully recovered 35 units of materials from impact sites."
+    },
+    {
+      "time": "2026-04-03T00:19:42.120851",
+      "event": "A powerful solar flare has increased energy levels by 50% for the next cycle. Ensure all crew take appropriate radiation shielding measures immediately."
     }
   ],
   "market": {
@@ -194,11 +198,11 @@
     ],
     "news_summary": "On Sol 9 of Early Spring, Mars experiences a solar activity surge enhancing energy generation. Colonies are encouraged to optimize their solar arrays to capitalize on this boost. Water systems require routine maintenance while conditions permit safe material prospecting near set\u2026",
     "event_flavor": {
-      "event_key": "meteor_shower",
-      "headline": "Sol 10 Meteor Shower Yields Valuable Salvage",
-      "broadcast": "A meteor shower passed Mars today with no hazards reported. Marco Quinn and Zoya Kade successfully recovered 35 units of materials from impact sites.",
+      "event_key": "solar_flare",
+      "headline": "Massive Solar Flare Boosts Energy Output",
+      "broadcast": "A powerful solar flare has increased energy levels by 50% for the next cycle. Ensure all crew take appropriate radiation shielding measures immediately.",
       "source": "github_models",
-      "generated_at": "2026-04-02T12:16:29.319106",
+      "generated_at": "2026-04-03T00:19:42.120838",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
