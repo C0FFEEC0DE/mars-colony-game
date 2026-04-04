@@ -2,13 +2,13 @@
   "day": 11,
   "mars_date": "Sol 11",
   "season": "Early Spring",
-  "solar_activity": 83,
+  "solar_activity": 88,
   "dust_storm_active": false,
   "temperature": -50,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Underground Ice Deposits Confirmed on Sol 11",
-  "last_updated": "2026-04-03T06:24:39.317657",
+  "last_updated": "2026-04-04T00:17:29.593831",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -151,6 +151,10 @@
     {
       "time": "2026-04-04T00:17:25.820114",
       "event": "Excavation teams led by Irina, Marco, and Zoya have successfully extracted significant underground ice, boosting water reserves by 114 units total."
+    },
+    {
+      "time": "2026-04-04T00:17:29.593831",
+      "event": "AI directive: Solar Flare Boosts Power Systems"
     }
   ],
   "market": {
@@ -161,51 +165,51 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Flare Boosts Energy Output",
-      "summary": "Increased solar activity has temporarily enhanced solar panel efficiency, providing a modest energy surge across all colonies.",
+      "headline": "Solar Flare Boosts Power Systems",
+      "summary": "A moderate solar flare has increased solar panel efficiency, providing a temporary energy surge across Mars colonies.",
       "effect": {
-        "type": "energy_surge",
-        "magnitude": 20,
+        "type": "solar_boost",
+        "magnitude": 5,
         "result": {
-          "label": "Grid surge",
-          "target": "energy",
-          "delta": 20,
-          "before": 1000,
-          "after": 1020
+          "label": "Solar boost",
+          "target": "solar_activity",
+          "delta": 5,
+          "before": 83,
+          "after": 88
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-03T00:19:49.705594"
+      "generated_at": "2026-04-04T00:17:29.593831"
     },
     "missions": [
       {
         "title": "Optimize Solar Arrays",
-        "briefing": "With the current solar flare, solar arrays can be tuned for maximum efficiency.",
-        "objective": "Adjust and recalibrate solar panels to increase energy yield by 10%.",
-        "reward_hint": "Gain additional energy reserves.",
-        "risk": "Minor risk of equipment overheating."
+        "briefing": "The recent solar flare has increased solar panel output. Adjust and optimize your arrays to maximize energy gain before the effect fades.",
+        "objective": "Recalibrate solar panels to increase energy collection by 10%",
+        "reward_hint": "Energy reserves boost",
+        "risk": "Equipment overheating if not monitored"
       },
       {
-        "title": "Water Recycling System Check",
-        "briefing": "Early spring temperatures and increased energy availability allow for a system check to improve water recycling efficiency.",
-        "objective": "Inspect and repair water recycling units to reduce water loss by 5%.",
-        "reward_hint": "Conserve valuable water resources.",
-        "risk": "Potential brief system downtime."
+        "title": "Secure Water Reserves",
+        "briefing": "With rising temperatures in early spring, water reservoirs risk contamination. Conduct inspections and secure water storage to prevent losses.",
+        "objective": "Inspect and reinforce water storage units",
+        "reward_hint": "Water reserve stability",
+        "risk": "Potential minor resource loss if delayed"
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity is elevated; monitor energy systems closely to capitalize on increased output."
+        "message": "Solar flare detected. Take advantage of increased energy output, but monitor systems closely for overheating."
       },
       {
         "sender": "Helios Prospecting",
         "recipient": "Irina Vale",
-        "message": "Coordinate with local teams to optimize resource usage during the solar surge."
+        "message": "Resource analysis shows stable water deposits near your location. Consider expanding extraction efforts."
       }
     ],
-    "news_summary": "Sol 10 marks a boost in solar energy due to heightened solar activity, allowing colonies to improve energy production. Early spring conditions remain harsh at -66C but stable with no dust storms. Colonies focus on optimizing energy and water systems to sustain growth and resourc\u2026",
+    "news_summary": "On Sol 11 during early spring, Mars colonies experience a solar flare increasing solar energy output by 83%, providing a temporary energy boost. Temperatures remain cold at -50C but stable, and no dust storms are present. Colonies are advised to optimize solar arrays and secure\u2026",
     "event_flavor": {
       "event_key": "ice_discovery",
       "headline": "Underground Ice Deposits Confirmed on Sol 11",
@@ -226,8 +230,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-03T00:19:49.705594",
-    "last_generated_sol": "Sol 10",
+    "last_generated": "2026-04-04T00:17:29.593831",
+    "last_generated_sol": "Sol 11",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
