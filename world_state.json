@@ -1,14 +1,14 @@
 {
-  "day": 11,
-  "mars_date": "Sol 11",
+  "day": 12,
+  "mars_date": "Sol 12",
   "season": "Early Spring",
-  "solar_activity": 88,
+  "solar_activity": 61,
   "dust_storm_active": false,
-  "temperature": -50,
+  "temperature": -37,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Underground Ice Deposits Confirmed on Sol 11",
-  "last_updated": "2026-04-04T00:17:29.593831",
+  "current_event": null,
+  "last_updated": "2026-04-04T06:20:20.949236",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 1709,
+      "score": 1743,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 1556,
+      "score": 1576,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 1147,
+      "score": 1164,
       "colonists": 1,
       "buildings": 2
     }
@@ -155,6 +155,10 @@
     {
       "time": "2026-04-04T00:17:29.593831",
       "event": "AI directive: Solar Flare Boosts Power Systems"
+    },
+    {
+      "time": "2026-04-04T06:20:20.949253",
+      "event": "Martian day 12 has begun"
     }
   ],
   "market": {
@@ -210,26 +214,7 @@
       }
     ],
     "news_summary": "On Sol 11 during early spring, Mars colonies experience a solar flare increasing solar energy output by 83%, providing a temporary energy boost. Temperatures remain cold at -50C but stable, and no dust storms are present. Colonies are advised to optimize solar arrays and secure\u2026",
-    "event_flavor": {
-      "event_key": "ice_discovery",
-      "headline": "Underground Ice Deposits Confirmed on Sol 11",
-      "broadcast": "Excavation teams led by Irina, Marco, and Zoya have successfully extracted significant underground ice, boosting water reserves by 114 units total.",
-      "source": "github_models",
-      "generated_at": "2026-04-04T00:17:25.820100",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-04-04T00:17:29.593831",
     "last_generated_sol": "Sol 11",
     "last_diagnostics": {
