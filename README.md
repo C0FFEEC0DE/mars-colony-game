@@ -8,60 +8,62 @@
 ## LIVE WORLD SNAPSHOT
 
 <!-- WORLD_SUMMARY:START -->
-_Auto-updated daily. Last world update: 2026-04-04T00:17:29.593831_
+_Auto-updated daily. Last world update: 2026-04-05T00:18:39.728217_
 
 ```text
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
-║ [SOL] Sol 11 | [SEASON] Early      ║  ║ Solar Flare Boosts Power Systems   ║
-║ Spring                             ║  ║ A moderate solar flare has         ║
-║ [TEMP] -50C | [SUN] 88% | [STORM]  ║  ║ increased solar panel efficiency,  ║
-║ NO                                 ║  ║ providing a temporary energy surge ║
-║ [EVENT] Underground Ice Deposits   ║  ║ across Mars colonies.              ║
-║ Confirmed on Sol 11                ║  ║ EFFECT solar_boost |               ║
-║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ solar_activity +5                  ║
+║ [SOL] Sol 12 | [SEASON] Early      ║  ║ Persistent Dust Storm Limits Solar ║
+║ Spring                             ║  ║ Power                              ║
+║ [TEMP] -40C | [SUN] 0% | [STORM]   ║  ║ A strong dust storm continues to   ║
+║ YES                                ║  ║ blanket the colony regions,        ║
+║ [EVENT] Massive Sandstorm Shuts    ║  ║ severely reducing solar energy     ║
+║ Down Solar Arrays                  ║  ║ generation and visibility.         ║
+║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT cold_snap | temperature -3  ║
 ║ [O2] 1000 | [H2O] 545 | [E] 1020   ║  ╚════════════════════════════════════╝
 ║ [FOOD] 400 | [MAT] 50              ║                                        
 ║ [MKT] O2 0 H2O 0 F 0 M 0           ║                                        
-║ [AI] Solar Flare Boosts Power      ║                                        
-║ Systems | solar_activity +5        ║                                        
+║ [AI] Persistent Dust Storm Limits  ║                                        
+║ Solar Power | temperature -3       ║                                        
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
-║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Arrays           ║
-║    Dustline Agro | P1 B3 | S1709   ║  ║    Recalibrate solar panels to…    ║
-║ 2. Zoya Kade                       ║  ║ 2. Secure Water Reserves           ║
-║    Ares Systems | P1 B4 | S1556    ║  ║    Inspect and reinforce water…    ║
+║ 1. Marco Quinn                     ║  ║ 1. Reinforce Solar Panel Shields   ║
+║    Dustline Agro | P1 B3 | S1830   ║  ║    Deploy protective shields on…   ║
+║ 2. Zoya Kade                       ║  ║ 2. Water Recycling Optimization    ║
+║    Ares Systems | P1 B4 | S1621    ║  ║    Upgrade water filtration and…   ║
 ║ 3. Irina Vale                      ║  ╚════════════════════════════════════╝
-║    Helios… | P1 B2 | S1147         ║                                        
+║    Helios… | P1 B2 | S1200         ║                                        
 ╚════════════════════════════════════╝                                        
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
-║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Solar flare ║
-║ WATER     545                      ║  ║ detected. Take…                    ║
-║ ENERGY    1020                     ║  ║ Helios… -> Irina Vale | Resource   ║
-║ FOOD      400                      ║  ║ analysis shows stable…             ║
+║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Dust storm  ║
+║ WATER     545                      ║  ║ forecast extended for…             ║
+║ ENERGY    1020                     ║  ║ Helios… -> Marco… | Offer to share ║
+║ FOOD      400                      ║  ║ materials for…                     ║
 ║ MATERIALS 50                       ║  ╚════════════════════════════════════╝
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ On Sol 11 during early spring,     ║  ║ 00:17 | AI directive: Solar Flare… ║
-║ Mars colonies experience a solar   ║  ║ 00:17 | Excavation teams led by…   ║
-║ flare increasing solar energy      ║  ║ 12:11 | Underground ice was…       ║
-║ output by 83%, providing a         ║  ║ 06:24 | Martian day 11 has begun   ║
-║ temporary energy boost.            ║  ║ 00:19 | AI directive: Solar Flare… ║
-║ Temperatures remain cold at -50C   ║  ╚════════════════════════════════════╝
-║ but stable, and no dust storms are ║                                        
-║ present. Colonies are advised to   ║                                        
-║ optimize solar arrays and secure…  ║                                        
-║ Excavation teams led by Irina,     ║                                        
-║ Marco, and Zoya have successfully  ║                                        
-║ extracted significant underground  ║                                        
-║ ice, boosting water reserves by    ║                                        
-║ 114 units total.                   ║                                        
+║ Sol 12 sees a persistent dust      ║  ║ 00:18 | AI directive: Persistent…  ║
+║ storm severely limiting solar      ║  ║ 00:18 | A severe dust storm on     ║
+║ energy production and visibility   ║  ║ Sol…                               ║
+║ across Mars colonies. Water        ║  ║ 06:20 | Martian day 12 has begun   ║
+║ recycling and solar panel          ║  ║ 00:17 | AI directive: Solar Flare… ║
+║ maintenance missions are           ║  ║ 00:17 | Excavation teams led by…   ║
+║ prioritized to mitigate resource   ║  ╚════════════════════════════════════╝
+║ strain. Mars Control urges all     ║                                        
+║ settlements to conserve energy and ║                                        
+║ minimize…                          ║                                        
+║ A severe dust storm on Sol 12 has  ║                                        
+║ forced all solar panels offline    ║                                        
+║ for the next 6 hours. Power        ║                                        
+║ conservation protocols are now in  ║                                        
+║ effect.                            ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
