@@ -2,12 +2,12 @@
   "day": 12,
   "mars_date": "Sol 12",
   "season": "Early Spring",
-  "solar_activity": 61,
-  "dust_storm_active": false,
+  "solar_activity": 0,
+  "dust_storm_active": true,
   "temperature": -37,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Massive Sandstorm Shuts Down Solar Arrays",
   "last_updated": "2026-04-04T06:20:20.949236",
   "global_resources": {
     "oxygen": 1000,
@@ -159,6 +159,10 @@
     {
       "time": "2026-04-04T06:20:20.949253",
       "event": "Martian day 12 has begun"
+    },
+    {
+      "time": "2026-04-05T00:18:34.946177",
+      "event": "A severe dust storm on Sol 12 has forced all solar panels offline for the next 6 hours. Power conservation protocols are now in effect."
     }
   ],
   "market": {
@@ -214,7 +218,26 @@
       }
     ],
     "news_summary": "On Sol 11 during early spring, Mars colonies experience a solar flare increasing solar energy output by 83%, providing a temporary energy boost. Temperatures remain cold at -50C but stable, and no dust storms are present. Colonies are advised to optimize solar arrays and secure\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "sandstorm",
+      "headline": "Massive Sandstorm Shuts Down Solar Arrays",
+      "broadcast": "A severe dust storm on Sol 12 has forced all solar panels offline for the next 6 hours. Power conservation protocols are now in effect.",
+      "source": "github_models",
+      "generated_at": "2026-04-05T00:18:34.946167",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-04T00:17:29.593831",
     "last_generated_sol": "Sol 11",
     "last_diagnostics": {
