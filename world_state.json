@@ -7,7 +7,7 @@
   "temperature": -52,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Meteor Shower Strikes Colony",
   "last_updated": "2026-04-06T06:35:16.018464",
   "global_resources": {
     "oxygen": 1000,
@@ -179,6 +179,10 @@
     {
       "time": "2026-04-06T06:35:16.018482",
       "event": "Martian day 14 has begun"
+    },
+    {
+      "time": "2026-04-06T12:15:21.533632",
+      "event": "On Sol 14, a meteor shower resulted in +16 materials salvaged by Zoya Kade, who also reported structural damage to habitat modules."
     }
   ],
   "market": {
@@ -234,7 +238,26 @@
       }
     ],
     "news_summary": "On Sol 13 of Early Spring, Mars experiences a beneficial solar boost enhancing energy production. Colonies are encouraged to optimize solar arrays and explore potential water caches exposed by seasonal changes. Resources remain stable with no dust storms active.",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "meteor_shower",
+      "headline": "Meteor Shower Strikes Colony",
+      "broadcast": "On Sol 14, a meteor shower resulted in +16 materials salvaged by Zoya Kade, who also reported structural damage to habitat modules.",
+      "source": "github_models",
+      "generated_at": "2026-04-06T12:15:21.533619",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-06T00:19:05.622637",
     "last_generated_sol": "Sol 13",
     "last_diagnostics": {
