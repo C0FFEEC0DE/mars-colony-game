@@ -2,13 +2,13 @@
   "day": 13,
   "mars_date": "Sol 13",
   "season": "Early Spring",
-  "solar_activity": 70,
+  "solar_activity": 75,
   "dust_storm_active": false,
   "temperature": -62,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": null,
-  "last_updated": "2026-04-05T06:25:14.818945",
+  "last_updated": "2026-04-06T00:19:05.622637",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -171,6 +171,10 @@
     {
       "time": "2026-04-05T06:25:14.818964",
       "event": "Martian day 13 has begun"
+    },
+    {
+      "time": "2026-04-06T00:19:05.622637",
+      "event": "AI directive: Unexpected Solar Boost Enhances Energy Output"
     }
   ],
   "market": {
@@ -181,54 +185,54 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Persistent Dust Storm Limits Solar Power",
-      "summary": "A strong dust storm continues to blanket the colony regions, severely reducing solar energy generation and visibility.",
+      "headline": "Unexpected Solar Boost Enhances Energy Output",
+      "summary": "Solar activity has increased to 70%, providing a temporary boost in energy generation across all colonies.",
       "effect": {
-        "type": "cold_snap",
-        "magnitude": 3,
+        "type": "solar_boost",
+        "magnitude": 5,
         "result": {
-          "label": "Cold snap",
-          "target": "temperature",
-          "delta": -3,
-          "before": -37,
-          "after": -40
+          "label": "Solar boost",
+          "target": "solar_activity",
+          "delta": 5,
+          "before": 70,
+          "after": 75
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-05T00:18:39.728217"
+      "generated_at": "2026-04-06T00:19:05.622637"
     },
     "missions": [
       {
-        "title": "Reinforce Solar Panel Shields",
-        "briefing": "The ongoing dust storm is damaging solar panel efficiency. Immediate repairs and shield reinforcement are required to stabilize energy output.",
-        "objective": "Deploy protective shields on all solar panels and perform maintenance checks.",
-        "reward_hint": "Improved energy stability post-storm.",
-        "risk": "Exposure to storm debris during outdoor work."
+        "title": "Optimize Solar Panel Arrays",
+        "briefing": "With increased solar activity, colonies can maximize energy intake by recalibrating solar panels.",
+        "objective": "Calibrate solar arrays to increase energy efficiency by 10%.",
+        "reward_hint": "Gain extra energy reserves",
+        "risk": "Minor equipment strain during recalibration"
       },
       {
-        "title": "Water Recycling Optimization",
-        "briefing": "Water reserves are limited and the dust storm hampers extraction. Optimizing recycling processes can extend current water supplies.",
-        "objective": "Upgrade water filtration and recycling systems to increase efficiency by 10%.",
-        "reward_hint": "Increased usable water reserves.",
-        "risk": "System malfunction causing temporary water loss."
+        "title": "Scout Nearby Water Cache",
+        "briefing": "Early Spring melting may expose small water caches near Helios Prospecting.",
+        "objective": "Send a team to verify and secure accessible water deposits within 5 km radius.",
+        "reward_hint": "Increase water reserves",
+        "risk": "Exposure to cold and potential terrain hazards"
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Dust storm forecast extended for three more sols. Conserve energy and limit external activity."
+        "message": "Solar activity spike detected; recommend optimizing power systems immediately."
       },
       {
-        "sender": "Helios Prospecting",
-        "recipient": "Marco Quinn",
-        "message": "Offer to share materials for solar panel repairs if you provide water reserves."
+        "sender": "Ares Systems HQ",
+        "recipient": "Zoya Kade",
+        "message": "Monitoring your water resource levels; advise prioritizing water cache scouting."
       }
     ],
-    "news_summary": "Sol 12 sees a persistent dust storm severely limiting solar energy production and visibility across Mars colonies. Water recycling and solar panel maintenance missions are prioritized to mitigate resource strain. Mars Control urges all settlements to conserve energy and minimize\u2026",
+    "news_summary": "On Sol 13 of Early Spring, Mars experiences a beneficial solar boost enhancing energy production. Colonies are encouraged to optimize solar arrays and explore potential water caches exposed by seasonal changes. Resources remain stable with no dust storms active.",
     "event_flavor": {},
-    "last_generated": "2026-04-05T00:18:39.728217",
-    "last_generated_sol": "Sol 12",
+    "last_generated": "2026-04-06T00:19:05.622637",
+    "last_generated_sol": "Sol 13",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
