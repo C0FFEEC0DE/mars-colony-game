@@ -2,13 +2,13 @@
   "day": 14,
   "mars_date": "Sol 14",
   "season": "Early Spring",
-  "solar_activity": 60,
+  "solar_activity": 65,
   "dust_storm_active": false,
   "temperature": -52,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Meteor Shower Strikes Colony",
-  "last_updated": "2026-04-06T06:35:16.018464",
+  "last_updated": "2026-04-07T00:19:30.234090",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -183,6 +183,10 @@
     {
       "time": "2026-04-06T12:15:21.533632",
       "event": "On Sol 14, a meteor shower resulted in +16 materials salvaged by Zoya Kade, who also reported structural damage to habitat modules."
+    },
+    {
+      "time": "2026-04-07T00:19:30.234090",
+      "event": "AI directive: Early Spring Solar Boost"
     }
   ],
   "market": {
@@ -193,8 +197,8 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Unexpected Solar Boost Enhances Energy Output",
-      "summary": "Solar activity has increased to 70%, providing a temporary boost in energy generation across all colonies.",
+      "headline": "Early Spring Solar Boost",
+      "summary": "Solar activity has increased to 60%, providing a moderate energy surge for all colonies.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
@@ -202,42 +206,54 @@
           "label": "Solar boost",
           "target": "solar_activity",
           "delta": 5,
-          "before": 70,
-          "after": 75
+          "before": 60,
+          "after": 65
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-06T00:19:05.622637"
+      "generated_at": "2026-04-07T00:19:30.234090"
     },
     "missions": [
       {
         "title": "Optimize Solar Panel Arrays",
-        "briefing": "With increased solar activity, colonies can maximize energy intake by recalibrating solar panels.",
-        "objective": "Calibrate solar arrays to increase energy efficiency by 10%.",
-        "reward_hint": "Gain extra energy reserves",
-        "risk": "Minor equipment strain during recalibration"
+        "briefing": "With increased solar activity, it's critical to maximize energy capture from your solar arrays.",
+        "objective": "Recalibrate and clean solar panels to increase energy output by 10%.",
+        "reward_hint": "Improved energy reserves for your colony.",
+        "risk": "Minimal risk from dust and equipment handling."
       },
       {
-        "title": "Scout Nearby Water Cache",
-        "briefing": "Early Spring melting may expose small water caches near Helios Prospecting.",
-        "objective": "Send a team to verify and secure accessible water deposits within 5 km radius.",
-        "reward_hint": "Increase water reserves",
-        "risk": "Exposure to cold and potential terrain hazards"
+        "title": "Water Conservation Drill",
+        "briefing": "Water supplies are moderate; preparing for seasonal temperature drops is necessary.",
+        "objective": "Implement water-saving protocols and repair minor leaks in storage tanks.",
+        "reward_hint": "Preserve water resources for upcoming sols.",
+        "risk": "Low risk; requires careful inspection."
+      },
+      {
+        "title": "Spring Crop Planning",
+        "briefing": "Early spring conditions allow for potential planting of fast-growing crops to supplement food supplies.",
+        "objective": "Set up hydroponic beds and plant selected crops within 2 sols.",
+        "reward_hint": "Increased food production in coming weeks.",
+        "risk": "Moderate risk due to temperature fluctuations and resource\u2026"
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity spike detected; recommend optimizing power systems immediately."
+        "message": "Solar activity is currently favorable. Maximize energy harvesting and report any anomalies."
       },
       {
-        "sender": "Ares Systems HQ",
+        "sender": "Helios Prospecting",
+        "recipient": "Marco Quinn",
+        "message": "Irina reports stable water reserves. Consider leveraging your agro facilities to balance food shortages."
+      },
+      {
+        "sender": "Ares Systems",
         "recipient": "Zoya Kade",
-        "message": "Monitoring your water resource levels; advise prioritizing water cache scouting."
+        "message": "Power levels are sufficient but keep monitoring systems closely during temperature drops."
       }
     ],
-    "news_summary": "On Sol 13 of Early Spring, Mars experiences a beneficial solar boost enhancing energy production. Colonies are encouraged to optimize solar arrays and explore potential water caches exposed by seasonal changes. Resources remain stable with no dust storms active.",
+    "news_summary": "Early spring on Mars brings a moderate solar boost that benefits all colonies with increased energy potential. Colonies are advised to maximize solar panel efficiency, conserve water resources, and begin early crop planting to improve food stocks. Communications between factions\u2026",
     "event_flavor": {
       "event_key": "meteor_shower",
       "headline": "Meteor Shower Strikes Colony",
@@ -258,8 +274,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-06T00:19:05.622637",
-    "last_generated_sol": "Sol 13",
+    "last_generated": "2026-04-07T00:19:30.234090",
+    "last_generated_sol": "Sol 14",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
