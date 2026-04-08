@@ -8,11 +8,11 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": null,
-  "last_updated": "2026-04-07T06:29:47.921837",
+  "last_updated": "2026-04-08T00:20:10.568475",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
-    "energy": 1020,
+    "energy": 1040,
     "food": 400,
     "materials": 50
   },
@@ -195,6 +195,10 @@
     {
       "time": "2026-04-07T06:29:47.977616",
       "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
+    },
+    {
+      "time": "2026-04-08T00:20:10.568475",
+      "event": "AI directive: Dust Storm Disrupts Solar Arrays"
     }
   ],
   "market": {
@@ -205,66 +209,66 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Early Spring Solar Boost",
-      "summary": "Solar activity has increased to 60%, providing a moderate energy surge for all colonies.",
+      "headline": "Dust Storm Disrupts Solar Arrays",
+      "summary": "The ongoing dust storm reduces solar panel efficiency, impacting energy generation across all colonies.",
       "effect": {
-        "type": "solar_boost",
-        "magnitude": 5,
+        "type": "energy_surge",
+        "magnitude": 20,
         "result": {
-          "label": "Solar boost",
-          "target": "solar_activity",
-          "delta": 5,
-          "before": 60,
-          "after": 65
+          "label": "Grid surge",
+          "target": "energy",
+          "delta": 20,
+          "before": 1020,
+          "after": 1040
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-07T00:19:30.234090"
+      "generated_at": "2026-04-08T00:20:10.568475"
     },
     "missions": [
       {
-        "title": "Optimize Solar Panel Arrays",
-        "briefing": "With increased solar activity, it's critical to maximize energy capture from your solar arrays.",
-        "objective": "Recalibrate and clean solar panels to increase energy output by 10%.",
-        "reward_hint": "Improved energy reserves for your colony.",
-        "risk": "Minimal risk from dust and equipment handling."
+        "title": "Dust Removal from Solar Panels",
+        "briefing": "The dust storm has severely reduced solar panel efficiency. Immediate cleaning is necessary to restore energy production.",
+        "objective": "Deploy rover or crew to clear dust from solar arrays within 24 hours.",
+        "reward_hint": "Boost energy reserves by 50 units.",
+        "risk": "Exposure to dust particles may damage equipment or harm per\u2026"
       },
       {
-        "title": "Water Conservation Drill",
-        "briefing": "Water supplies are moderate; preparing for seasonal temperature drops is necessary.",
-        "objective": "Implement water-saving protocols and repair minor leaks in storage tanks.",
-        "reward_hint": "Preserve water resources for upcoming sols.",
-        "risk": "Low risk; requires careful inspection."
+        "title": "Water Recycling System Check",
+        "briefing": "Water resources are limited and critical. Perform maintenance on recycling systems to maximize water recovery during the dust storm.",
+        "objective": "Inspect and repair water recycling units to improve efficiency by 10%.",
+        "reward_hint": "Increase water availability by 20 units.",
+        "risk": "Complex systems may fail during repairs, causing temporary\u2026"
       },
       {
-        "title": "Spring Crop Planning",
-        "briefing": "Early spring conditions allow for potential planting of fast-growing crops to supplement food supplies.",
-        "objective": "Set up hydroponic beds and plant selected crops within 2 sols.",
-        "reward_hint": "Increased food production in coming weeks.",
-        "risk": "Moderate risk due to temperature fluctuations and resource\u2026"
+        "title": "Emergency Oxygen Supply Calibration",
+        "briefing": "Oxygen levels are stable but could be compromised if dust infiltrates habitat filters. Conduct system checks to ensure safe air quality.",
+        "objective": "Test and calibrate oxygen filtration and distribution systems.",
+        "reward_hint": "Prevent oxygen loss and improve habitat safety.",
+        "risk": "Malfunctions could cause temporary oxygen shortages."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity is currently favorable. Maximize energy harvesting and report any anomalies."
+        "message": "Dust storm alert: prioritize maintenance on solar arrays and life support systems. Report status every six hours."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Marco Quinn",
-        "message": "Irina reports stable water reserves. Consider leveraging your agro facilities to balance food shortages."
+        "recipient": "Mars Control",
+        "message": "Requesting additional filters and repair kits due to dust infiltration in oxygen systems."
       },
       {
-        "sender": "Ares Systems",
-        "recipient": "Zoya Kade",
-        "message": "Power levels are sufficient but keep monitoring systems closely during temperature drops."
+        "sender": "Dustline Agro",
+        "recipient": "Mars Control",
+        "message": "Energy reserves critically low; cleaning underway but extra support may be needed."
       }
     ],
-    "news_summary": "Early spring on Mars brings a moderate solar boost that benefits all colonies with increased energy potential. Colonies are advised to maximize solar panel efficiency, conserve water resources, and begin early crop planting to improve food stocks. Communications between factions\u2026",
+    "news_summary": "Sol 15 features a persistent dust storm disrupting solar power generation and threatening resource stability. Colonies focus on critical maintenance missions to secure energy, water, and oxygen supplies. Communication remains active to coordinate responses and minimize impact on\u2026",
     "event_flavor": {},
-    "last_generated": "2026-04-07T00:19:30.234090",
-    "last_generated_sol": "Sol 14",
+    "last_generated": "2026-04-08T00:20:10.568475",
+    "last_generated_sol": "Sol 15",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
