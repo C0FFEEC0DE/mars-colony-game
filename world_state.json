@@ -2,12 +2,12 @@
   "day": 17,
   "mars_date": "Sol 17",
   "season": "Early Spring",
-  "solar_activity": 94,
+  "solar_activity": 150,
   "dust_storm_active": false,
   "temperature": -80,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Massive Solar Flare Detected",
   "last_updated": "2026-04-09T06:31:17.750793",
   "global_resources": {
     "oxygen": 1000,
@@ -215,6 +215,10 @@
     {
       "time": "2026-04-09T06:31:17.750811",
       "event": "Martian day 17 has begun"
+    },
+    {
+      "time": "2026-04-09T12:18:34.449439",
+      "event": "A massive solar flare is increasing energy levels by 50% for the next cycle. Ensure all personnel take shelter to minimize radiation exposure."
     }
   ],
   "market": {
@@ -277,7 +281,26 @@
       }
     ],
     "news_summary": "The Mars colonies benefit from a surge in solar activity boosting energy efficiency. Water conservation remains critical due to limited reserves, while materials supplies require careful management. Colonies are advised to optimize resource use to maintain stability during the e\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "solar_flare",
+      "headline": "Massive Solar Flare Detected",
+      "broadcast": "A massive solar flare is increasing energy levels by 50% for the next cycle. Ensure all personnel take shelter to minimize radiation exposure.",
+      "source": "github_models",
+      "generated_at": "2026-04-09T12:18:34.449427",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-09T00:16:26.524042",
     "last_generated_sol": "Sol 16",
     "last_diagnostics": {
