@@ -2,13 +2,13 @@
   "day": 16,
   "mars_date": "Sol 16",
   "season": "Early Spring",
-  "solar_activity": 90,
+  "solar_activity": 95,
   "dust_storm_active": false,
   "temperature": -46,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Underground Ice Deposit Located on Sol 16",
-  "last_updated": "2026-04-08T06:30:45.760150",
+  "last_updated": "2026-04-09T00:16:26.524042",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -207,6 +207,10 @@
     {
       "time": "2026-04-09T00:16:19.135630",
       "event": "Teams led by Irina Vale, Marco Quinn, and Zoya Kade have extracted a combined total of 102 units of water from subsurface ice deposits, bolstering colony reserves."
+    },
+    {
+      "time": "2026-04-09T00:16:26.524042",
+      "event": "AI directive: Solar Activity Boosts Energy Output"
     }
   ],
   "market": {
@@ -217,63 +221,58 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Dust Storm Disrupts Solar Arrays",
-      "summary": "The ongoing dust storm reduces solar panel efficiency, impacting energy generation across all colonies.",
+      "headline": "Solar Activity Boosts Energy Output",
+      "summary": "Solar activity has surged to 90%, enhancing energy capture efficiency across colonies.",
       "effect": {
-        "type": "energy_surge",
-        "magnitude": 20,
+        "type": "solar_boost",
+        "magnitude": 5,
         "result": {
-          "label": "Grid surge",
-          "target": "energy",
-          "delta": 20,
-          "before": 1020,
-          "after": 1040
+          "label": "Solar boost",
+          "target": "solar_activity",
+          "delta": 5,
+          "before": 90,
+          "after": 95
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-08T00:20:10.568475"
+      "generated_at": "2026-04-09T00:16:26.524042"
     },
     "missions": [
       {
-        "title": "Dust Removal from Solar Panels",
-        "briefing": "The dust storm has severely reduced solar panel efficiency. Immediate cleaning is necessary to restore energy production.",
-        "objective": "Deploy rover or crew to clear dust from solar arrays within 24 hours.",
-        "reward_hint": "Boost energy reserves by 50 units.",
-        "risk": "Exposure to dust particles may damage equipment or harm per\u2026"
+        "title": "Optimize Solar Panels",
+        "briefing": "With increased solar activity, adjust solar arrays to maximize energy intake.",
+        "objective": "Calibrate all solar panels to improve energy efficiency by 10%.",
+        "reward_hint": "Energy reserves boost",
+        "risk": "Potential minor equipment strain during recalibration"
       },
       {
-        "title": "Water Recycling System Check",
-        "briefing": "Water resources are limited and critical. Perform maintenance on recycling systems to maximize water recovery during the dust storm.",
-        "objective": "Inspect and repair water recycling units to improve efficiency by 10%.",
-        "reward_hint": "Increase water availability by 20 units.",
-        "risk": "Complex systems may fail during repairs, causing temporary\u2026"
+        "title": "Water Conservation Drill",
+        "briefing": "Water supplies are limited. Implement conservation protocols to stretch resources.",
+        "objective": "Reduce water usage colony-wide by 15% over the next 3 sols.",
+        "reward_hint": "Preserved water stores",
+        "risk": "Reduced comfort and productivity"
       },
       {
-        "title": "Emergency Oxygen Supply Calibration",
-        "briefing": "Oxygen levels are stable but could be compromised if dust infiltrates habitat filters. Conduct system checks to ensure safe air quality.",
-        "objective": "Test and calibrate oxygen filtration and distribution systems.",
-        "reward_hint": "Prevent oxygen loss and improve habitat safety.",
-        "risk": "Malfunctions could cause temporary oxygen shortages."
+        "title": "Material Inventory Assessment",
+        "briefing": "Materials are low; perform a thorough inventory and identify salvage opportunities.",
+        "objective": "Complete a materials audit and locate at least 5 new usable material units.",
+        "reward_hint": "Materials stock increase",
+        "risk": "Time-consuming, minimal physical risk"
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Dust storm alert: prioritize maintenance on solar arrays and life support systems. Report status every six hours."
+        "message": "Solar activity levels are peaking; advise all teams to optimize energy harvesting systems."
       },
       {
         "sender": "Helios Prospecting",
         "recipient": "Mars Control",
-        "message": "Requesting additional filters and repair kits due to dust infiltration in oxygen systems."
-      },
-      {
-        "sender": "Dustline Agro",
-        "recipient": "Mars Control",
-        "message": "Energy reserves critically low; cleaning underway but extra support may be needed."
+        "message": "Request guidance on improving oxygen production; current reserves critically low."
       }
     ],
-    "news_summary": "Sol 15 features a persistent dust storm disrupting solar power generation and threatening resource stability. Colonies focus on critical maintenance missions to secure energy, water, and oxygen supplies. Communication remains active to coordinate responses and minimize impact on\u2026",
+    "news_summary": "The Mars colonies benefit from a surge in solar activity boosting energy efficiency. Water conservation remains critical due to limited reserves, while materials supplies require careful management. Colonies are advised to optimize resource use to maintain stability during the e\u2026",
     "event_flavor": {
       "event_key": "ice_discovery",
       "headline": "Underground Ice Deposit Located on Sol 16",
@@ -294,8 +293,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-08T00:20:10.568475",
-    "last_generated_sol": "Sol 15",
+    "last_generated": "2026-04-09T00:16:26.524042",
+    "last_generated_sol": "Sol 16",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
