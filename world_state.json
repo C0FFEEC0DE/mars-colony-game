@@ -1,14 +1,14 @@
 {
-  "day": 16,
-  "mars_date": "Sol 16",
+  "day": 17,
+  "mars_date": "Sol 17",
   "season": "Early Spring",
-  "solar_activity": 95,
+  "solar_activity": 94,
   "dust_storm_active": false,
-  "temperature": -46,
+  "temperature": -80,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Underground Ice Deposit Located on Sol 16",
-  "last_updated": "2026-04-09T00:16:26.524042",
+  "current_event": null,
+  "last_updated": "2026-04-09T06:31:17.750793",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 2158,
+      "score": 2194,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 1964,
+      "score": 1986,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 1400,
+      "score": 1419,
       "colonists": 1,
       "buildings": 2
     }
@@ -211,6 +211,10 @@
     {
       "time": "2026-04-09T00:16:26.524042",
       "event": "AI directive: Solar Activity Boosts Energy Output"
+    },
+    {
+      "time": "2026-04-09T06:31:17.750811",
+      "event": "Martian day 17 has begun"
     }
   ],
   "market": {
@@ -273,26 +277,7 @@
       }
     ],
     "news_summary": "The Mars colonies benefit from a surge in solar activity boosting energy efficiency. Water conservation remains critical due to limited reserves, while materials supplies require careful management. Colonies are advised to optimize resource use to maintain stability during the e\u2026",
-    "event_flavor": {
-      "event_key": "ice_discovery",
-      "headline": "Underground Ice Deposit Located on Sol 16",
-      "broadcast": "Teams led by Irina Vale, Marco Quinn, and Zoya Kade have extracted a combined total of 102 units of water from subsurface ice deposits, bolstering colony reserves.",
-      "source": "github_models",
-      "generated_at": "2026-04-09T00:16:19.135620",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-04-09T00:16:26.524042",
     "last_generated_sol": "Sol 16",
     "last_diagnostics": {
