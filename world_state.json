@@ -7,7 +7,7 @@
   "temperature": -46,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Underground Ice Deposit Located on Sol 16",
   "last_updated": "2026-04-08T06:30:45.760150",
   "global_resources": {
     "oxygen": 1000,
@@ -203,6 +203,10 @@
     {
       "time": "2026-04-08T06:30:45.760166",
       "event": "Martian day 16 has begun"
+    },
+    {
+      "time": "2026-04-09T00:16:19.135630",
+      "event": "Teams led by Irina Vale, Marco Quinn, and Zoya Kade have extracted a combined total of 102 units of water from subsurface ice deposits, bolstering colony reserves."
     }
   ],
   "market": {
@@ -270,7 +274,26 @@
       }
     ],
     "news_summary": "Sol 15 features a persistent dust storm disrupting solar power generation and threatening resource stability. Colonies focus on critical maintenance missions to secure energy, water, and oxygen supplies. Communication remains active to coordinate responses and minimize impact on\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "ice_discovery",
+      "headline": "Underground Ice Deposit Located on Sol 16",
+      "broadcast": "Teams led by Irina Vale, Marco Quinn, and Zoya Kade have extracted a combined total of 102 units of water from subsurface ice deposits, bolstering colony reserves.",
+      "source": "github_models",
+      "generated_at": "2026-04-09T00:16:19.135620",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-08T00:20:10.568475",
     "last_generated_sol": "Sol 15",
     "last_diagnostics": {
