@@ -219,6 +219,10 @@
     {
       "time": "2026-04-09T12:18:34.449439",
       "event": "A massive solar flare is increasing energy levels by 50% for the next cycle. Ensure all personnel take shelter to minimize radiation exposure."
+    },
+    {
+      "time": "2026-04-10T00:18:56.489740",
+      "event": "A massive solar flare is impacting Mars with 150% solar activity. Increase radiation shielding protocols and limit EVA exposure during the next cycle."
     }
   ],
   "market": {
@@ -284,9 +288,9 @@
     "event_flavor": {
       "event_key": "solar_flare",
       "headline": "Massive Solar Flare Detected",
-      "broadcast": "A massive solar flare is increasing energy levels by 50% for the next cycle. Ensure all personnel take shelter to minimize radiation exposure.",
+      "broadcast": "A massive solar flare is impacting Mars with 150% solar activity. Increase radiation shielding protocols and limit EVA exposure during the next cycle.",
       "source": "github_models",
-      "generated_at": "2026-04-09T12:18:34.449427",
+      "generated_at": "2026-04-10T00:18:56.489729",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
