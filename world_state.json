@@ -2,12 +2,12 @@
   "day": 18,
   "mars_date": "Sol 18",
   "season": "Early Spring",
-  "solar_activity": 74,
-  "dust_storm_active": false,
+  "solar_activity": 0,
+  "dust_storm_active": true,
   "temperature": -32,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Massive Sandstorm Shuts Down Solar Arrays",
   "last_updated": "2026-04-10T06:35:08.854215",
   "global_resources": {
     "oxygen": 1000,
@@ -231,6 +231,10 @@
     {
       "time": "2026-04-10T06:35:08.854233",
       "event": "Martian day 18 has begun"
+    },
+    {
+      "time": "2026-04-10T12:15:07.001182",
+      "event": "Sol 18: A severe dust storm is active, forcing all solar panels offline for the next 6 hours. Expect reduced power availability during this period."
     }
   ],
   "market": {
@@ -293,7 +297,26 @@
       }
     ],
     "news_summary": "On Sol 17 of early spring, Mars experiences a solar activity surge at 150%, enhancing energy generation opportunities. Colonies focus on maximizing solar power while conserving water amid low temperatures. Exploration for materials in accessible rocky areas is underway to suppor\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "sandstorm",
+      "headline": "Massive Sandstorm Shuts Down Solar Arrays",
+      "broadcast": "Sol 18: A severe dust storm is active, forcing all solar panels offline for the next 6 hours. Expect reduced power availability during this period.",
+      "source": "github_models",
+      "generated_at": "2026-04-10T12:15:07.001170",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-10T00:19:04.203200",
     "last_generated_sol": "Sol 17",
     "last_diagnostics": {
