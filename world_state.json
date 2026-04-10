@@ -8,7 +8,7 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Massive Solar Flare Detected",
-  "last_updated": "2026-04-09T06:31:17.750793",
+  "last_updated": "2026-04-10T00:19:04.203200",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -223,6 +223,10 @@
     {
       "time": "2026-04-10T00:18:56.489740",
       "event": "A massive solar flare is impacting Mars with 150% solar activity. Increase radiation shielding protocols and limit EVA exposure during the next cycle."
+    },
+    {
+      "time": "2026-04-10T00:19:04.203200",
+      "event": "AI directive: Solar Activity Peaks at 150%"
     }
   ],
   "market": {
@@ -233,58 +237,58 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Activity Boosts Energy Output",
-      "summary": "Solar activity has surged to 90%, enhancing energy capture efficiency across colonies.",
+      "headline": "Solar Activity Peaks at 150%",
+      "summary": "The solar activity on Sol 17 has surged to 150%, increasing energy generation potential across all colonies.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
         "result": {
           "label": "Solar boost",
           "target": "solar_activity",
-          "delta": 5,
-          "before": 90,
-          "after": 95
+          "delta": 0,
+          "before": 150,
+          "after": 150
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-09T00:16:26.524042"
+      "generated_at": "2026-04-10T00:19:04.203200"
     },
     "missions": [
       {
-        "title": "Optimize Solar Panels",
-        "briefing": "With increased solar activity, adjust solar arrays to maximize energy intake.",
-        "objective": "Calibrate all solar panels to improve energy efficiency by 10%.",
-        "reward_hint": "Energy reserves boost",
-        "risk": "Potential minor equipment strain during recalibration"
+        "title": "Optimize Solar Arrays",
+        "briefing": "With increased solar activity, now is the time to maximize energy capture.",
+        "objective": "Upgrade and calibrate solar panels to increase energy output by 10%.",
+        "reward_hint": "Boost energy reserves significantly",
+        "risk": "Minor equipment wear during upgrades"
       },
       {
-        "title": "Water Conservation Drill",
-        "briefing": "Water supplies are limited. Implement conservation protocols to stretch resources.",
-        "objective": "Reduce water usage colony-wide by 15% over the next 3 sols.",
-        "reward_hint": "Preserved water stores",
-        "risk": "Reduced comfort and productivity"
+        "title": "Water Conservation Protocol",
+        "briefing": "Temperatures remain low in early spring, risking water loss through sublimation.",
+        "objective": "Implement water-saving measures to reduce daily water consumption by 15%.",
+        "reward_hint": "Preserve critical water supplies",
+        "risk": "Reduced colony comfort due to rationing"
       },
       {
-        "title": "Material Inventory Assessment",
-        "briefing": "Materials are low; perform a thorough inventory and identify salvage opportunities.",
-        "objective": "Complete a materials audit and locate at least 5 new usable material units.",
-        "reward_hint": "Materials stock increase",
-        "risk": "Time-consuming, minimal physical risk"
+        "title": "Prospect for Materials in Warm Zones",
+        "briefing": "Early spring temperatures open access to rocky outcrops for resource gathering.",
+        "objective": "Send a scouting party to collect at least 10 units of raw materials.",
+        "reward_hint": "Increase materials stockpile",
+        "risk": "Exposure to cold and terrain hazards"
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity levels are peaking; advise all teams to optimize energy harvesting systems."
+        "message": "Solar flare activity is at an elevated level; all colonies should maximize energy harvesting and monitor systems."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Mars Control",
-        "message": "Request guidance on improving oxygen production; current reserves critically low."
+        "recipient": "all colonies",
+        "message": "We have located promising mineral veins near the equatorial region. Coordination on resource extraction could benefit all."
       }
     ],
-    "news_summary": "The Mars colonies benefit from a surge in solar activity boosting energy efficiency. Water conservation remains critical due to limited reserves, while materials supplies require careful management. Colonies are advised to optimize resource use to maintain stability during the e\u2026",
+    "news_summary": "On Sol 17 of early spring, Mars experiences a solar activity surge at 150%, enhancing energy generation opportunities. Colonies focus on maximizing solar power while conserving water amid low temperatures. Exploration for materials in accessible rocky areas is underway to suppor\u2026",
     "event_flavor": {
       "event_key": "solar_flare",
       "headline": "Massive Solar Flare Detected",
@@ -305,8 +309,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-09T00:16:26.524042",
-    "last_generated_sol": "Sol 16",
+    "last_generated": "2026-04-10T00:19:04.203200",
+    "last_generated_sol": "Sol 17",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
