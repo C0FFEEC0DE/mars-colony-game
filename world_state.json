@@ -4,11 +4,11 @@
   "season": "Early Spring",
   "solar_activity": 0,
   "dust_storm_active": true,
-  "temperature": -32,
+  "temperature": -35,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Massive Sandstorm Shuts Down Solar Arrays",
-  "last_updated": "2026-04-10T06:35:08.854215",
+  "last_updated": "2026-04-11T00:18:01.024695",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -235,6 +235,10 @@
     {
       "time": "2026-04-10T12:15:07.001182",
       "event": "Sol 18: A severe dust storm is active, forcing all solar panels offline for the next 6 hours. Expect reduced power availability during this period."
+    },
+    {
+      "time": "2026-04-11T00:18:01.024695",
+      "event": "AI directive: Persistent Dust Storm Limits Solar Power"
     }
   ],
   "market": {
@@ -245,58 +249,51 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Activity Peaks at 150%",
-      "summary": "The solar activity on Sol 17 has surged to 150%, increasing energy generation potential across all colonies.",
+      "headline": "Persistent Dust Storm Limits Solar Power",
+      "summary": "A severe dust storm continues to blanket the colony, reducing solar energy generation and straining resource management.",
       "effect": {
-        "type": "solar_boost",
-        "magnitude": 5,
+        "type": "cold_snap",
+        "magnitude": 3,
         "result": {
-          "label": "Solar boost",
-          "target": "solar_activity",
-          "delta": 0,
-          "before": 150,
-          "after": 150
+          "label": "Cold snap",
+          "target": "temperature",
+          "delta": -3,
+          "before": -32,
+          "after": -35
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-10T00:19:04.203200"
+      "generated_at": "2026-04-11T00:18:01.024695"
     },
     "missions": [
       {
-        "title": "Optimize Solar Arrays",
-        "briefing": "With increased solar activity, now is the time to maximize energy capture.",
-        "objective": "Upgrade and calibrate solar panels to increase energy output by 10%.",
-        "reward_hint": "Boost energy reserves significantly",
-        "risk": "Minor equipment wear during upgrades"
+        "title": "Deploy Dust Shields",
+        "briefing": "Protect solar panels from dust accumulation to improve energy intake during the storm.",
+        "objective": "Install dust shields on solar arrays at Helios Prospecting and Dustline Agro.",
+        "reward_hint": "Increased energy efficiency for affected colonies.",
+        "risk": "Exposure to harsh storm conditions may damage equipment."
       },
       {
-        "title": "Water Conservation Protocol",
-        "briefing": "Temperatures remain low in early spring, risking water loss through sublimation.",
-        "objective": "Implement water-saving measures to reduce daily water consumption by 15%.",
-        "reward_hint": "Preserve critical water supplies",
-        "risk": "Reduced colony comfort due to rationing"
-      },
-      {
-        "title": "Prospect for Materials in Warm Zones",
-        "briefing": "Early spring temperatures open access to rocky outcrops for resource gathering.",
-        "objective": "Send a scouting party to collect at least 10 units of raw materials.",
-        "reward_hint": "Increase materials stockpile",
-        "risk": "Exposure to cold and terrain hazards"
+        "title": "Water Recycling Optimization",
+        "briefing": "Maximize water recovery from current reserves during the resource strain caused by the storm.",
+        "objective": "Upgrade water recycling systems at Ares Systems base.",
+        "reward_hint": "Improved water availability for colony use.",
+        "risk": "System upgrades may temporarily reduce water output."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar flare activity is at an elevated level; all colonies should maximize energy harvesting and monitor systems."
+        "message": "Dust storm persists; prioritize energy conservation and safety protocols."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "all colonies",
-        "message": "We have located promising mineral veins near the equatorial region. Coordination on resource extraction could benefit all."
+        "recipient": "Mars Control",
+        "message": "Requesting assistance with dust shield materials; current stock critically low."
       }
     ],
-    "news_summary": "On Sol 17 of early spring, Mars experiences a solar activity surge at 150%, enhancing energy generation opportunities. Colonies focus on maximizing solar power while conserving water amid low temperatures. Exploration for materials in accessible rocky areas is underway to suppor\u2026",
+    "news_summary": "Sol 18 on Mars is marked by a relentless dust storm severely impacting solar energy production. Colonies are focusing on protective measures and optimizing water recycling to sustain their operations. Resource management remains critical as temperatures remain low during early s\u2026",
     "event_flavor": {
       "event_key": "sandstorm",
       "headline": "Massive Sandstorm Shuts Down Solar Arrays",
@@ -317,8 +314,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-10T00:19:04.203200",
-    "last_generated_sol": "Sol 17",
+    "last_generated": "2026-04-11T00:18:01.024695",
+    "last_generated_sol": "Sol 18",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
