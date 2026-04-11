@@ -2,12 +2,12 @@
   "day": 19,
   "mars_date": "Sol 19",
   "season": "Early Spring",
-  "solar_activity": 79,
+  "solar_activity": 150,
   "dust_storm_active": false,
   "temperature": -68,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Massive Solar Flare Detected",
   "last_updated": "2026-04-11T06:21:23.705795",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-04-11T06:21:23.705815",
       "event": "Martian day 19 has begun"
+    },
+    {
+      "time": "2026-04-11T12:08:59.877409",
+      "event": "Solar activity spiked to 150%, triggering a massive flare. All personnel must take immediate radiation shelter; energy output increased by 50% for the next cycle."
     }
   ],
   "market": {
@@ -298,7 +302,26 @@
       }
     ],
     "news_summary": "Sol 18 on Mars is marked by a relentless dust storm severely impacting solar energy production. Colonies are focusing on protective measures and optimizing water recycling to sustain their operations. Resource management remains critical as temperatures remain low during early s\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "solar_flare",
+      "headline": "Massive Solar Flare Detected",
+      "broadcast": "Solar activity spiked to 150%, triggering a massive flare. All personnel must take immediate radiation shelter; energy output increased by 50% for the next cycle.",
+      "source": "github_models",
+      "generated_at": "2026-04-11T12:08:59.877398",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-11T00:18:01.024695",
     "last_generated_sol": "Sol 18",
     "last_diagnostics": {
