@@ -8,60 +8,64 @@
 ## LIVE WORLD SNAPSHOT
 
 <!-- WORLD_SUMMARY:START -->
-_Auto-updated daily. Last world update: 2026-04-11T00:18:01.024695_
+_Auto-updated daily. Last world update: 2026-04-12T00:20:18.865288_
 
 ```text
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
-║ [SOL] Sol 18 | [SEASON] Early      ║  ║ Persistent Dust Storm Limits Solar ║
-║ Spring                             ║  ║ Power                              ║
-║ [TEMP] -35C | [SUN] 0% | [STORM]   ║  ║ A severe dust storm continues to   ║
-║ YES                                ║  ║ blanket the colony, reducing solar ║
-║ [EVENT] Massive Sandstorm Shuts    ║  ║ energy generation and straining    ║
-║ Down Solar Arrays                  ║  ║ resource management.               ║
-║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT cold_snap | temperature -3  ║
+║ [SOL] Sol 19 | [SEASON] Early      ║  ║ Unexpected Solar Boost Increases   ║
+║ Spring                             ║  ║ Energy Yield                       ║
+║ [TEMP] -68C | [SUN] 150% | [STORM] ║  ║ Solar activity has surged to 150%, ║
+║ NO                                 ║  ║ providing a significant energy     ║
+║ [EVENT] Massive Solar Flare        ║  ║ bonus for all colonies today.      ║
+║ Detected                           ║  ║ EFFECT solar_boost |               ║
+║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ solar_activity +0                  ║
 ║ [O2] 1000 | [H2O] 545 | [E] 1040   ║  ╚════════════════════════════════════╝
 ║ [FOOD] 400 | [MAT] 50              ║                                        
 ║ [MKT] O2 0 H2O 0 F 0 M 0           ║                                        
-║ [AI] Persistent Dust Storm Limits  ║                                        
-║ Solar Power | temperature -3       ║                                        
+║ [AI] Unexpected Solar Boost        ║                                        
+║ Increases Energy Yield |           ║                                        
+║ solar_activity +0                  ║                                        
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
-║ 1. Marco Quinn                     ║  ║ 1. Deploy Dust Shields             ║
-║    Dustline Agro | P1 B3 | S2395   ║  ║    Install dust shields on solar…  ║
-║ 2. Zoya Kade                       ║  ║ 2. Water Recycling Optimization    ║
-║    Ares Systems | P1 B4 | S2129    ║  ║    Upgrade water recycling…        ║
-║ 3. Irina Vale                      ║  ╚════════════════════════════════════╝
-║    Helios… | P1 B2 | S1541         ║                                        
-╚════════════════════════════════════╝                                        
+║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Arrays           ║
+║    Dustline Agro | P1 B3 | S2458   ║  ║    Adjust and recalibrate solar…   ║
+║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System…         ║
+║    Ares Systems | P1 B4 | S2216    ║  ║    Perform diagnostics and…        ║
+║ 3. Irina Vale                      ║  ║ 3. Scout Nearby Material Deposits  ║
+║    Helios… | P1 B2 | S1616         ║  ║    Explore designated zones to…    ║
+╚════════════════════════════════════╝  ╚════════════════════════════════════╝
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
-║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Dust storm  ║
-║ WATER     545                      ║  ║ persists; prioritize…              ║
-║ ENERGY    1040                     ║  ║ Helios… -> Mars… | Requesting      ║
-║ FOOD      400                      ║  ║ assistance with dust…              ║
-║ MATERIALS 50                       ║  ╚════════════════════════════════════╝
-╚════════════════════════════════════╝                                        
+║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Solar       ║
+║ WATER     545                      ║  ║ activity is currently…             ║
+║ ENERGY    1040                     ║  ║ Helios… -> all… | We recommend     ║
+║ FOOD      400                      ║  ║ scouting expeditions…              ║
+║ MATERIALS 50                       ║  ║ Ares Systems -> all… | Reminder:   ║
+╚════════════════════════════════════╝  ║ maintain water…                    ║
+                                        ╚════════════════════════════════════╝
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Sol 18 on Mars is marked by a      ║  ║ 00:18 | AI directive: Persistent…  ║
-║ relentless dust storm severely     ║  ║ 12:15 | Sol 18: A severe dust      ║
-║ impacting solar energy production. ║  ║ storm…                             ║
-║ Colonies are focusing on           ║  ║ 06:35 | Martian day 18 has begun   ║
-║ protective measures and optimizing ║  ║ 00:19 | AI directive: Solar…       ║
-║ water recycling to sustain their   ║  ║ 00:18 | A massive solar flare is…  ║
-║ operations. Resource management    ║  ╚════════════════════════════════════╝
-║ remains critical as temperatures   ║                                        
-║ remain low during early s…         ║                                        
-║ Sol 18: A severe dust storm is     ║                                        
-║ active, forcing all solar panels   ║                                        
-║ offline for the next 6 hours.      ║                                        
-║ Expect reduced power availability  ║                                        
-║ during this period.                ║                                        
+║ Early spring on Mars brings a      ║  ║ 00:20 | AI directive: Unexpected…  ║
+║ solar energy surge, boosting power ║  ║ 12:08 | Solar activity spiked to…  ║
+║ generation across all colonies.    ║  ║ 06:21 | Martian day 19 has begun   ║
+║ With temperatures remaining low,   ║  ║ 00:18 | AI directive: Persistent…  ║
+║ maintaining water recycling        ║  ║ 12:15 | Sol 18: A severe dust      ║
+║ systems is critical to resource    ║  ║ storm…                             ║
+║ management. Several colonies       ║  ╚════════════════════════════════════╝
+║ prepare scouting missions to       ║                                        
+║ locate additional material depo…   ║                                        
+║ Solar activity spiked to 150%,     ║                                        
+║ triggering a massive flare. All    ║                                        
+║ personnel must take immediate      ║                                        
+║ radiation shelter; energy output   ║                                        
+║ increased by 50% for the next      ║                                        
+║ cycle.                             ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
