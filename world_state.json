@@ -1,14 +1,14 @@
 {
-  "day": 19,
-  "mars_date": "Sol 19",
+  "day": 20,
+  "mars_date": "Sol 20",
   "season": "Early Spring",
-  "solar_activity": 150,
+  "solar_activity": 74,
   "dust_storm_active": false,
-  "temperature": -68,
+  "temperature": -63,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Massive Solar Flare Detected",
-  "last_updated": "2026-04-12T00:20:18.865288",
+  "current_event": null,
+  "last_updated": "2026-04-12T06:31:16.914636",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 2458,
+      "score": 2485,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 2216,
+      "score": 2249,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 1616,
+      "score": 1646,
       "colonists": 1,
       "buildings": 2
     }
@@ -239,6 +239,10 @@
     {
       "time": "2026-04-12T00:20:18.865288",
       "event": "AI directive: Unexpected Solar Boost Increases Energy Yield"
+    },
+    {
+      "time": "2026-04-12T06:31:16.914677",
+      "event": "Martian day 20 has begun"
     }
   ],
   "market": {
@@ -306,26 +310,7 @@
       }
     ],
     "news_summary": "Early spring on Mars brings a solar energy surge, boosting power generation across all colonies. With temperatures remaining low, maintaining water recycling systems is critical to resource management. Several colonies prepare scouting missions to locate additional material depo\u2026",
-    "event_flavor": {
-      "event_key": "solar_flare",
-      "headline": "Massive Solar Flare Detected",
-      "broadcast": "Solar activity spiked to 150%, triggering a massive flare. All personnel must take immediate radiation shelter; energy output increased by 50% for the next cycle.",
-      "source": "github_models",
-      "generated_at": "2026-04-11T12:08:59.877398",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-04-12T00:20:18.865288",
     "last_generated_sol": "Sol 19",
     "last_diagnostics": {
