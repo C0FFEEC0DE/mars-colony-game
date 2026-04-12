@@ -7,14 +7,14 @@
   "temperature": -63,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Earth Trading Vessel Arrives at Mars Base",
   "last_updated": "2026-04-12T06:31:16.914636",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
     "energy": 1040,
-    "food": 400,
-    "materials": 50
+    "food": 500,
+    "materials": 100
   },
   "leaderboard": [
     {
@@ -243,6 +243,10 @@
     {
       "time": "2026-04-12T06:31:16.914677",
       "event": "Martian day 20 has begun"
+    },
+    {
+      "time": "2026-04-12T12:10:03.857759",
+      "event": "A trading ship from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's global reserves. Operations proceed smoothly under stable conditions on Sol 20."
     }
   ],
   "market": {
@@ -310,7 +314,26 @@
       }
     ],
     "news_summary": "Early spring on Mars brings a solar energy surge, boosting power generation across all colonies. With temperatures remaining low, maintaining water recycling systems is critical to resource management. Several colonies prepare scouting missions to locate additional material depo\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "traders",
+      "headline": "Earth Trading Vessel Arrives at Mars Base",
+      "broadcast": "A trading ship from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's global reserves. Operations proceed smoothly under stable conditions on Sol 20.",
+      "source": "github_models",
+      "generated_at": "2026-04-12T12:10:03.857747",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-12T00:20:18.865288",
     "last_generated_sol": "Sol 19",
     "last_diagnostics": {
