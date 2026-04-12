@@ -8,7 +8,7 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Massive Solar Flare Detected",
-  "last_updated": "2026-04-11T06:21:23.705795",
+  "last_updated": "2026-04-12T00:20:18.865288",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-03-30T11:05:03.630608",
-      "event": "Martian day 2 has begun"
-    },
-    {
-      "time": "2026-03-30T11:17:57.131451",
-      "event": "Martian day 3 has begun"
-    },
-    {
-      "time": "2026-03-30T11:22:44.682023",
-      "event": "Martian day 4 has begun"
-    },
     {
       "time": "2026-03-30T11:22:44.726538",
       "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
@@ -247,6 +235,10 @@
     {
       "time": "2026-04-11T12:08:59.877409",
       "event": "Solar activity spiked to 150%, triggering a massive flare. All personnel must take immediate radiation shelter; energy output increased by 50% for the next cycle."
+    },
+    {
+      "time": "2026-04-12T00:20:18.865288",
+      "event": "AI directive: Unexpected Solar Boost Increases Energy Yield"
     }
   ],
   "market": {
@@ -257,51 +249,63 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Persistent Dust Storm Limits Solar Power",
-      "summary": "A severe dust storm continues to blanket the colony, reducing solar energy generation and straining resource management.",
+      "headline": "Unexpected Solar Boost Increases Energy Yield",
+      "summary": "Solar activity has surged to 150%, providing a significant energy bonus for all colonies today.",
       "effect": {
-        "type": "cold_snap",
-        "magnitude": 3,
+        "type": "solar_boost",
+        "magnitude": 5,
         "result": {
-          "label": "Cold snap",
-          "target": "temperature",
-          "delta": -3,
-          "before": -32,
-          "after": -35
+          "label": "Solar boost",
+          "target": "solar_activity",
+          "delta": 0,
+          "before": 150,
+          "after": 150
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-11T00:18:01.024695"
+      "generated_at": "2026-04-12T00:20:18.865288"
     },
     "missions": [
       {
-        "title": "Deploy Dust Shields",
-        "briefing": "Protect solar panels from dust accumulation to improve energy intake during the storm.",
-        "objective": "Install dust shields on solar arrays at Helios Prospecting and Dustline Agro.",
-        "reward_hint": "Increased energy efficiency for affected colonies.",
-        "risk": "Exposure to harsh storm conditions may damage equipment."
+        "title": "Optimize Solar Arrays",
+        "briefing": "With solar activity peaking, now is the time to maximize energy capture across your colony.",
+        "objective": "Adjust and recalibrate solar panels to increase energy generation by 10%.",
+        "reward_hint": "Energy reserves increased significantly.",
+        "risk": "Minimal risk of electrical overload if not carefully manage\u2026"
       },
       {
-        "title": "Water Recycling Optimization",
-        "briefing": "Maximize water recovery from current reserves during the resource strain caused by the storm.",
-        "objective": "Upgrade water recycling systems at Ares Systems base.",
-        "reward_hint": "Improved water availability for colony use.",
-        "risk": "System upgrades may temporarily reduce water output."
+        "title": "Water Recycling System Maintenance",
+        "briefing": "Ensure the colony's water recycling units are operating at peak efficiency to conserve resources during the early spring cold.",
+        "objective": "Perform diagnostics and repairs on water recycling units to reduce water loss by 15%.",
+        "reward_hint": "Water reserves stabilized.",
+        "risk": "Minor risk of system downtime during maintenance."
+      },
+      {
+        "title": "Scout Nearby Material Deposits",
+        "briefing": "Early spring conditions allow for safer scouting missions to identify material caches near the colony perimeter.",
+        "objective": "Explore designated zones to locate and report any accessible material deposits.",
+        "reward_hint": "Potential material resource increase.",
+        "risk": "Exposure to harsh cold and terrain hazards."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Dust storm persists; prioritize energy conservation and safety protocols."
+        "message": "Solar activity is currently elevated; all colonies advised to optimize solar energy collection systems."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Mars Control",
-        "message": "Requesting assistance with dust shield materials; current stock critically low."
+        "recipient": "all colonies",
+        "message": "We recommend scouting expeditions to capitalize on improved spring conditions for material gathering."
+      },
+      {
+        "sender": "Ares Systems",
+        "recipient": "all colonies",
+        "message": "Reminder: maintain water recycling units to ensure sustainability during temperature fluctuations."
       }
     ],
-    "news_summary": "Sol 18 on Mars is marked by a relentless dust storm severely impacting solar energy production. Colonies are focusing on protective measures and optimizing water recycling to sustain their operations. Resource management remains critical as temperatures remain low during early s\u2026",
+    "news_summary": "Early spring on Mars brings a solar energy surge, boosting power generation across all colonies. With temperatures remaining low, maintaining water recycling systems is critical to resource management. Several colonies prepare scouting missions to locate additional material depo\u2026",
     "event_flavor": {
       "event_key": "solar_flare",
       "headline": "Massive Solar Flare Detected",
@@ -322,8 +326,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-11T00:18:01.024695",
-    "last_generated_sol": "Sol 18",
+    "last_generated": "2026-04-12T00:20:18.865288",
+    "last_generated_sol": "Sol 19",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
