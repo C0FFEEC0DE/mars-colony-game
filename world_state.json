@@ -2,12 +2,12 @@
   "day": 21,
   "mars_date": "Sol 21",
   "season": "Early Spring",
-  "solar_activity": 62,
-  "dust_storm_active": false,
+  "solar_activity": 0,
+  "dust_storm_active": true,
   "temperature": -56,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Sol 21: Massive Sandstorm Disrupts Power",
   "last_updated": "2026-04-13T06:41:43.920182",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-04-13T06:41:43.920201",
       "event": "Martian day 21 has begun"
+    },
+    {
+      "time": "2026-04-13T12:20:50.788651",
+      "event": "A severe sandstorm is currently active, forcing all solar panels offline for the next 6 hours. Expect reduced power availability until clearance."
     }
   ],
   "market": {
@@ -310,7 +314,26 @@
       }
     ],
     "news_summary": "Sol 20 brings a moderate solar boost enhancing energy production across Mars colonies. Water and materials remain critical priorities with ongoing efforts to optimize recycling and resource allocation. Colonists prepare for improved agricultural yields as early spring progresses.",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "sandstorm",
+      "headline": "Sol 21: Massive Sandstorm Disrupts Power",
+      "broadcast": "A severe sandstorm is currently active, forcing all solar panels offline for the next 6 hours. Expect reduced power availability until clearance.",
+      "source": "github_models",
+      "generated_at": "2026-04-13T12:20:50.788638",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-13T00:21:11.986297",
     "last_generated_sol": "Sol 20",
     "last_diagnostics": {
