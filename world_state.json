@@ -2,13 +2,13 @@
   "day": 20,
   "mars_date": "Sol 20",
   "season": "Early Spring",
-  "solar_activity": 74,
+  "solar_activity": 79,
   "dust_storm_active": false,
   "temperature": -63,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Earth Trading Vessel Arrives at Mars Base",
-  "last_updated": "2026-04-12T06:31:16.914636",
+  "last_updated": "2026-04-13T00:21:11.986297",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-03-30T11:22:44.726538",
-      "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
-    },
-    {
-      "time": "2026-03-30T12:16:44.991521",
-      "event": "\ud83c\udf20 METEOR SHOWER!"
-    },
-    {
-      "time": "2026-03-30T14:26:48.016025",
-      "event": "AI directive: Operations drift into a new rhythm"
-    },
     {
       "time": "2026-03-30T12:31:36.184965",
       "event": "Martian day 5 has begun"
@@ -247,6 +235,10 @@
     {
       "time": "2026-04-12T12:10:03.857759",
       "event": "A trading ship from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's global reserves. Operations proceed smoothly under stable conditions on Sol 20."
+    },
+    {
+      "time": "2026-04-13T00:21:11.986297",
+      "event": "AI directive: Early Spring Solar Boost"
     }
   ],
   "market": {
@@ -257,63 +249,63 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Unexpected Solar Boost Increases Energy Yield",
-      "summary": "Solar activity has surged to 150%, providing a significant energy bonus for all colonies today.",
+      "headline": "Early Spring Solar Boost",
+      "summary": "Solar activity is at 74%, providing a moderate boost to energy generation across all colonies.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
         "result": {
           "label": "Solar boost",
           "target": "solar_activity",
-          "delta": 0,
-          "before": 150,
-          "after": 150
+          "delta": 5,
+          "before": 74,
+          "after": 79
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-12T00:20:18.865288"
+      "generated_at": "2026-04-13T00:21:11.986297"
     },
     "missions": [
       {
-        "title": "Optimize Solar Arrays",
-        "briefing": "With solar activity peaking, now is the time to maximize energy capture across your colony.",
-        "objective": "Adjust and recalibrate solar panels to increase energy generation by 10%.",
-        "reward_hint": "Energy reserves increased significantly.",
-        "risk": "Minimal risk of electrical overload if not carefully manage\u2026"
+        "title": "Optimize Solar Panels",
+        "briefing": "With increased solar activity, improving panel efficiency will maximize energy intake.",
+        "objective": "Calibrate solar arrays to increase energy output by 10%.",
+        "reward_hint": "Gain additional energy resources.",
+        "risk": "Potential minor system overload during calibration."
       },
       {
-        "title": "Water Recycling System Maintenance",
-        "briefing": "Ensure the colony's water recycling units are operating at peak efficiency to conserve resources during the early spring cold.",
-        "objective": "Perform diagnostics and repairs on water recycling units to reduce water loss by 15%.",
-        "reward_hint": "Water reserves stabilized.",
-        "risk": "Minor risk of system downtime during maintenance."
+        "title": "Water Recycling Check",
+        "briefing": "Water is a precious resource. Ensure systems are running optimally to prevent losses.",
+        "objective": "Inspect and repair water recycling units to reduce leakage by 5%.",
+        "reward_hint": "Preserve existing water reserves.",
+        "risk": "Time-consuming repairs could divert resources."
       },
       {
-        "title": "Scout Nearby Material Deposits",
-        "briefing": "Early spring conditions allow for safer scouting missions to identify material caches near the colony perimeter.",
-        "objective": "Explore designated zones to locate and report any accessible material deposits.",
-        "reward_hint": "Potential material resource increase.",
-        "risk": "Exposure to harsh cold and terrain hazards."
+        "title": "Material Inventory and Reallocation",
+        "briefing": "Materials are limited; a thorough inventory will identify stockpiles for redistribution.",
+        "objective": "Complete materials audit and reallocate to critical systems.",
+        "reward_hint": "Better materials availability for urgent repairs.",
+        "risk": "Misallocation could delay construction projects."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity is currently elevated; all colonies advised to optimize solar energy collection systems."
+        "message": "Solar activity increased; optimize energy generation systems accordingly."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "all colonies",
-        "message": "We recommend scouting expeditions to capitalize on improved spring conditions for material gathering."
+        "recipient": "Irina Vale",
+        "message": "Report any anomalies in water recycling systems to improve efficiency."
       },
       {
-        "sender": "Ares Systems",
-        "recipient": "all colonies",
-        "message": "Reminder: maintain water recycling units to ensure sustainability during temperature fluctuations."
+        "sender": "Dustline Agro",
+        "recipient": "Marco Quinn",
+        "message": "Crop growth expected to improve; prepare for increased agricultural output."
       }
     ],
-    "news_summary": "Early spring on Mars brings a solar energy surge, boosting power generation across all colonies. With temperatures remaining low, maintaining water recycling systems is critical to resource management. Several colonies prepare scouting missions to locate additional material depo\u2026",
+    "news_summary": "Sol 20 brings a moderate solar boost enhancing energy production across Mars colonies. Water and materials remain critical priorities with ongoing efforts to optimize recycling and resource allocation. Colonists prepare for improved agricultural yields as early spring progresses.",
     "event_flavor": {
       "event_key": "traders",
       "headline": "Earth Trading Vessel Arrives at Mars Base",
@@ -334,8 +326,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-12T00:20:18.865288",
-    "last_generated_sol": "Sol 19",
+    "last_generated": "2026-04-13T00:21:11.986297",
+    "last_generated_sol": "Sol 20",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
