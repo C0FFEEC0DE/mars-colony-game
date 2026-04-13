@@ -1,14 +1,14 @@
 {
-  "day": 20,
-  "mars_date": "Sol 20",
+  "day": 21,
+  "mars_date": "Sol 21",
   "season": "Early Spring",
-  "solar_activity": 79,
+  "solar_activity": 62,
   "dust_storm_active": false,
-  "temperature": -63,
+  "temperature": -56,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Earth Trading Vessel Arrives at Mars Base",
-  "last_updated": "2026-04-13T00:21:11.986297",
+  "current_event": null,
+  "last_updated": "2026-04-13T06:41:43.920182",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 2518,
+      "score": 2530,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 2300,
+      "score": 2318,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 1688,
+      "score": 1703,
       "colonists": 1,
       "buildings": 2
     }
@@ -239,6 +239,10 @@
     {
       "time": "2026-04-13T00:21:11.986297",
       "event": "AI directive: Early Spring Solar Boost"
+    },
+    {
+      "time": "2026-04-13T06:41:43.920201",
+      "event": "Martian day 21 has begun"
     }
   ],
   "market": {
@@ -306,26 +310,7 @@
       }
     ],
     "news_summary": "Sol 20 brings a moderate solar boost enhancing energy production across Mars colonies. Water and materials remain critical priorities with ongoing efforts to optimize recycling and resource allocation. Colonists prepare for improved agricultural yields as early spring progresses.",
-    "event_flavor": {
-      "event_key": "traders",
-      "headline": "Earth Trading Vessel Arrives at Mars Base",
-      "broadcast": "A trading ship from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's global reserves. Operations proceed smoothly under stable conditions on Sol 20.",
-      "source": "github_models",
-      "generated_at": "2026-04-12T12:10:03.857747",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-04-13T00:21:11.986297",
     "last_generated_sol": "Sol 20",
     "last_diagnostics": {
