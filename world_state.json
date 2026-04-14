@@ -4,11 +4,11 @@
   "season": "Early Spring",
   "solar_activity": 0,
   "dust_storm_active": true,
-  "temperature": -56,
+  "temperature": -59,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Microbial Signature Found in Soil Sample",
-  "last_updated": "2026-04-13T06:41:43.920182",
+  "last_updated": "2026-04-14T00:24:10.586016",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,22 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-03-30T12:31:36.184965",
-      "event": "Martian day 5 has begun"
-    },
-    {
-      "time": "2026-03-30T12:31:37.314795",
-      "event": "AI directive: Operations drift into a new rhythm"
-    },
-    {
-      "time": "2026-03-30T12:39:56.762403",
-      "event": "Science crews are locking the site down for analysis: \ud83d\udce1 Strange signal on 1420 MHz detected."
-    },
-    {
-      "time": "2026-03-30T12:39:57.598851",
-      "event": "Martian day 6 has begun"
-    },
     {
       "time": "2026-03-30T12:39:58.394061",
       "event": "AI directive: Operations drift into a new rhythm"
@@ -251,6 +235,10 @@
     {
       "time": "2026-04-14T00:24:04.103833",
       "event": "On Sol 21, analysis detected unknown bacterial presence in Martian soil amid ongoing dust storm. Sample integrity maintained; further study required."
+    },
+    {
+      "time": "2026-04-14T00:24:10.586016",
+      "event": "AI directive: Persistent Dust Storm Limits Solar Output"
     }
   ],
   "market": {
@@ -261,63 +249,58 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Early Spring Solar Boost",
-      "summary": "Solar activity is at 74%, providing a moderate boost to energy generation across all colonies.",
+      "headline": "Persistent Dust Storm Limits Solar Output",
+      "summary": "A continuing dust storm on Sol 21 severely reduces solar energy generation, straining colony power reserves.",
       "effect": {
-        "type": "solar_boost",
-        "magnitude": 5,
+        "type": "cold_snap",
+        "magnitude": 3,
         "result": {
-          "label": "Solar boost",
-          "target": "solar_activity",
-          "delta": 5,
-          "before": 74,
-          "after": 79
+          "label": "Cold snap",
+          "target": "temperature",
+          "delta": -3,
+          "before": -56,
+          "after": -59
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-13T00:21:11.986297"
+      "generated_at": "2026-04-14T00:24:10.586016"
     },
     "missions": [
       {
-        "title": "Optimize Solar Panels",
-        "briefing": "With increased solar activity, improving panel efficiency will maximize energy intake.",
-        "objective": "Calibrate solar arrays to increase energy output by 10%.",
-        "reward_hint": "Gain additional energy resources.",
-        "risk": "Potential minor system overload during calibration."
+        "title": "Emergency Power Conservation",
+        "briefing": "Solar panels are underperforming due to the dust storm. Power reserves must be carefully managed to sustain life support.",
+        "objective": "Implement energy-saving protocols and reduce non-essential power usage for 3 sols.",
+        "reward_hint": "Improved energy efficiency and small energy reserve boost",
+        "risk": "Colony systems may fail if power drops too low"
       },
       {
-        "title": "Water Recycling Check",
-        "briefing": "Water is a precious resource. Ensure systems are running optimally to prevent losses.",
-        "objective": "Inspect and repair water recycling units to reduce leakage by 5%.",
-        "reward_hint": "Preserve existing water reserves.",
-        "risk": "Time-consuming repairs could divert resources."
+        "title": "Dust Storm Sensor Maintenance",
+        "briefing": "Sensors monitoring atmospheric conditions are at risk of malfunction due to dust accumulation.",
+        "objective": "Perform exterior sensor cleaning and recalibration despite harsh weather.",
+        "reward_hint": "Improved environmental data accuracy",
+        "risk": "Exposure to hazardous conditions"
       },
       {
-        "title": "Material Inventory and Reallocation",
-        "briefing": "Materials are limited; a thorough inventory will identify stockpiles for redistribution.",
-        "objective": "Complete materials audit and reallocate to critical systems.",
-        "reward_hint": "Better materials availability for urgent repairs.",
-        "risk": "Misallocation could delay construction projects."
+        "title": "Water Recycling System Check",
+        "briefing": "Water reserves are limited and must be preserved. The recycling system needs inspection to prevent leaks.",
+        "objective": "Inspect and repair water recycling units to prevent resource loss.",
+        "reward_hint": "Prevent water loss and maintain current reserves",
+        "risk": "Potential system failure if repairs are incomplete"
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity increased; optimize energy generation systems accordingly."
+        "message": "Dust storm conditions persist. Prioritize energy conservation and system checks to maintain colony stability."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Irina Vale",
-        "message": "Report any anomalies in water recycling systems to improve efficiency."
-      },
-      {
-        "sender": "Dustline Agro",
-        "recipient": "Marco Quinn",
-        "message": "Crop growth expected to improve; prepare for increased agricultural output."
+        "recipient": "all colonies",
+        "message": "Sharing sensor maintenance protocols to help colonies manage dust impact."
       }
     ],
-    "news_summary": "Sol 20 brings a moderate solar boost enhancing energy production across Mars colonies. Water and materials remain critical priorities with ongoing efforts to optimize recycling and resource allocation. Colonists prepare for improved agricultural yields as early spring progresses.",
+    "news_summary": "On Sol 21, a persistent dust storm has severely reduced solar energy production, forcing colonies to implement strict power conservation measures. Sensor maintenance and water recycling system checks are critical to maintaining operational stability in early spring's harsh condi\u2026",
     "event_flavor": {
       "event_key": "discovery",
       "headline": "Microbial Signature Found in Soil Sample",
@@ -338,8 +321,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-13T00:21:11.986297",
-    "last_generated_sol": "Sol 20",
+    "last_generated": "2026-04-14T00:24:10.586016",
+    "last_generated_sol": "Sol 21",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
