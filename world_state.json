@@ -1,14 +1,14 @@
 {
-  "day": 21,
-  "mars_date": "Sol 21",
+  "day": 22,
+  "mars_date": "Sol 22",
   "season": "Early Spring",
-  "solar_activity": 0,
-  "dust_storm_active": true,
-  "temperature": -59,
+  "solar_activity": 76,
+  "dust_storm_active": false,
+  "temperature": -66,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Microbial Signature Found in Soil Sample",
-  "last_updated": "2026-04-14T00:24:10.586016",
+  "current_event": null,
+  "last_updated": "2026-04-14T06:35:02.850394",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,14 +20,14 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 2533,
+      "score": 2530,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 2339,
+      "score": 2342,
       "colonists": 1,
       "buildings": 4
     },
@@ -239,6 +239,10 @@
     {
       "time": "2026-04-14T00:24:10.586016",
       "event": "AI directive: Persistent Dust Storm Limits Solar Output"
+    },
+    {
+      "time": "2026-04-14T06:35:02.850413",
+      "event": "Martian day 22 has begun"
     }
   ],
   "market": {
@@ -301,26 +305,7 @@
       }
     ],
     "news_summary": "On Sol 21, a persistent dust storm has severely reduced solar energy production, forcing colonies to implement strict power conservation measures. Sensor maintenance and water recycling system checks are critical to maintaining operational stability in early spring's harsh condi\u2026",
-    "event_flavor": {
-      "event_key": "discovery",
-      "headline": "Microbial Signature Found in Soil Sample",
-      "broadcast": "On Sol 21, analysis detected unknown bacterial presence in Martian soil amid ongoing dust storm. Sample integrity maintained; further study required.",
-      "source": "github_models",
-      "generated_at": "2026-04-14T00:24:04.103819",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-04-14T00:24:10.586016",
     "last_generated_sol": "Sol 21",
     "last_diagnostics": {
