@@ -7,14 +7,14 @@
   "temperature": -66,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Trading Ship Arrives with Vital Supplies",
   "last_updated": "2026-04-14T06:35:02.850394",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
     "energy": 1040,
-    "food": 500,
-    "materials": 100
+    "food": 600,
+    "materials": 150
   },
   "leaderboard": [
     {
@@ -243,6 +243,10 @@
     {
       "time": "2026-04-14T06:35:02.850413",
       "event": "Martian day 22 has begun"
+    },
+    {
+      "time": "2026-04-14T12:19:09.747521",
+      "event": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the global reserves. Colony stores replenished as operations continue under stable conditions."
     }
   ],
   "market": {
@@ -305,7 +309,26 @@
       }
     ],
     "news_summary": "On Sol 21, a persistent dust storm has severely reduced solar energy production, forcing colonies to implement strict power conservation measures. Sensor maintenance and water recycling system checks are critical to maintaining operational stability in early spring's harsh condi\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "traders",
+      "headline": "Trading Ship Arrives with Vital Supplies",
+      "broadcast": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the global reserves. Colony stores replenished as operations continue under stable conditions.",
+      "source": "github_models",
+      "generated_at": "2026-04-14T12:19:09.747510",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-14T00:24:10.586016",
     "last_generated_sol": "Sol 21",
     "last_diagnostics": {
