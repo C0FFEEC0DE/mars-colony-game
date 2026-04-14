@@ -7,7 +7,7 @@
   "temperature": -56,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Sol 21: Massive Sandstorm Disrupts Power",
+  "current_event": "Microbial Signature Found in Soil Sample",
   "last_updated": "2026-04-13T06:41:43.920182",
   "global_resources": {
     "oxygen": 1000,
@@ -247,6 +247,10 @@
     {
       "time": "2026-04-13T12:20:50.788651",
       "event": "A severe sandstorm is currently active, forcing all solar panels offline for the next 6 hours. Expect reduced power availability until clearance."
+    },
+    {
+      "time": "2026-04-14T00:24:04.103833",
+      "event": "On Sol 21, analysis detected unknown bacterial presence in Martian soil amid ongoing dust storm. Sample integrity maintained; further study required."
     }
   ],
   "market": {
@@ -315,11 +319,11 @@
     ],
     "news_summary": "Sol 20 brings a moderate solar boost enhancing energy production across Mars colonies. Water and materials remain critical priorities with ongoing efforts to optimize recycling and resource allocation. Colonists prepare for improved agricultural yields as early spring progresses.",
     "event_flavor": {
-      "event_key": "sandstorm",
-      "headline": "Sol 21: Massive Sandstorm Disrupts Power",
-      "broadcast": "A severe sandstorm is currently active, forcing all solar panels offline for the next 6 hours. Expect reduced power availability until clearance.",
+      "event_key": "discovery",
+      "headline": "Microbial Signature Found in Soil Sample",
+      "broadcast": "On Sol 21, analysis detected unknown bacterial presence in Martian soil amid ongoing dust storm. Sample integrity maintained; further study required.",
       "source": "github_models",
-      "generated_at": "2026-04-13T12:20:50.788638",
+      "generated_at": "2026-04-14T00:24:04.103819",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
