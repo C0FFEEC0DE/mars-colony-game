@@ -7,7 +7,7 @@
   "temperature": -66,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Trading Ship Arrives with Vital Supplies",
+  "current_event": "Meteor Shower Boosts Resource Recovery",
   "last_updated": "2026-04-14T06:35:02.850394",
   "global_resources": {
     "oxygen": 1000,
@@ -247,6 +247,10 @@
     {
       "time": "2026-04-14T12:19:09.747521",
       "event": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the global reserves. Colony stores replenished as operations continue under stable conditions."
+    },
+    {
+      "time": "2026-04-15T00:24:21.495801",
+      "event": "On Sol 22, a meteor shower enabled Irina Vale and Marco Quinn to salvage 8 and 19 additional materials respectively, enhancing our resource stockpile amid stable conditions."
     }
   ],
   "market": {
@@ -310,11 +314,11 @@
     ],
     "news_summary": "On Sol 21, a persistent dust storm has severely reduced solar energy production, forcing colonies to implement strict power conservation measures. Sensor maintenance and water recycling system checks are critical to maintaining operational stability in early spring's harsh condi\u2026",
     "event_flavor": {
-      "event_key": "traders",
-      "headline": "Trading Ship Arrives with Vital Supplies",
-      "broadcast": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the global reserves. Colony stores replenished as operations continue under stable conditions.",
+      "event_key": "meteor_shower",
+      "headline": "Meteor Shower Boosts Resource Recovery",
+      "broadcast": "On Sol 22, a meteor shower enabled Irina Vale and Marco Quinn to salvage 8 and 19 additional materials respectively, enhancing our resource stockpile amid stable conditions.",
       "source": "github_models",
-      "generated_at": "2026-04-14T12:19:09.747510",
+      "generated_at": "2026-04-15T00:24:21.495788",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
