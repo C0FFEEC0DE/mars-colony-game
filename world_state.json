@@ -1,14 +1,14 @@
 {
-  "day": 22,
-  "mars_date": "Sol 22",
+  "day": 23,
+  "mars_date": "Sol 23",
   "season": "Early Spring",
-  "solar_activity": 81,
+  "solar_activity": 64,
   "dust_storm_active": false,
-  "temperature": -66,
+  "temperature": -54,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Meteor Shower Boosts Resource Recovery",
-  "last_updated": "2026-04-15T00:24:27.553456",
+  "current_event": null,
+  "last_updated": "2026-04-15T06:35:28.707069",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 2661,
+      "score": 2674,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 2396,
+      "score": 2415,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 1800,
+      "score": 1816,
       "colonists": 1,
       "buildings": 2
     }
@@ -239,6 +239,10 @@
     {
       "time": "2026-04-15T00:24:27.553456",
       "event": "AI directive: Mild Solar Boost Increases Power Output"
+    },
+    {
+      "time": "2026-04-15T06:35:28.707086",
+      "event": "Martian day 23 has begun"
     }
   ],
   "market": {
@@ -294,26 +298,7 @@
       }
     ],
     "news_summary": "Sol 22 on Mars enters early spring with temperatures at -66C and no dust storms active. Solar activity increases energy availability across colonies, prompting missions to optimize solar arrays and conserve water. Colonists remain vigilant as resources balance remains stable.",
-    "event_flavor": {
-      "event_key": "meteor_shower",
-      "headline": "Meteor Shower Boosts Resource Recovery",
-      "broadcast": "On Sol 22, a meteor shower enabled Irina Vale and Marco Quinn to salvage 8 and 19 additional materials respectively, enhancing our resource stockpile amid stable conditions.",
-      "source": "github_models",
-      "generated_at": "2026-04-15T00:24:21.495788",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-04-15T00:24:27.553456",
     "last_generated_sol": "Sol 22",
     "last_diagnostics": {
