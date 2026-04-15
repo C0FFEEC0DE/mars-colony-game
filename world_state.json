@@ -2,13 +2,13 @@
   "day": 22,
   "mars_date": "Sol 22",
   "season": "Early Spring",
-  "solar_activity": 76,
+  "solar_activity": 81,
   "dust_storm_active": false,
   "temperature": -66,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Meteor Shower Boosts Resource Recovery",
-  "last_updated": "2026-04-14T06:35:02.850394",
+  "last_updated": "2026-04-15T00:24:27.553456",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,22 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-03-30T12:39:58.394061",
-      "event": "AI directive: Operations drift into a new rhythm"
-    },
-    {
-      "time": "2026-03-30T12:45:27.759588",
-      "event": "Martian day 7 has begun"
-    },
-    {
-      "time": "2026-03-30T12:45:35.810976",
-      "event": "AI directive: Solar Activity Boosts Power Systems"
-    },
-    {
-      "time": "2026-03-31T00:18:31.724240",
-      "event": "On Sol 7, analysis revealed unknown bacteria in the Martian soil sample. This discovery may provide new insights into Mars' past habitability."
-    },
     {
       "time": "2026-03-31T06:27:38.996531",
       "event": "Martian day 8 has begun"
@@ -251,6 +235,10 @@
     {
       "time": "2026-04-15T00:24:21.495801",
       "event": "On Sol 22, a meteor shower enabled Irina Vale and Marco Quinn to salvage 8 and 19 additional materials respectively, enhancing our resource stockpile amid stable conditions."
+    },
+    {
+      "time": "2026-04-15T00:24:27.553456",
+      "event": "AI directive: Mild Solar Boost Increases Power Output"
     }
   ],
   "market": {
@@ -261,58 +249,51 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Persistent Dust Storm Limits Solar Output",
-      "summary": "A continuing dust storm on Sol 21 severely reduces solar energy generation, straining colony power reserves.",
+      "headline": "Mild Solar Boost Increases Power Output",
+      "summary": "Solar activity reaches 76%, enhancing energy generation efficiency for all colonies today.",
       "effect": {
-        "type": "cold_snap",
-        "magnitude": 3,
+        "type": "solar_boost",
+        "magnitude": 5,
         "result": {
-          "label": "Cold snap",
-          "target": "temperature",
-          "delta": -3,
-          "before": -56,
-          "after": -59
+          "label": "Solar boost",
+          "target": "solar_activity",
+          "delta": 5,
+          "before": 76,
+          "after": 81
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-14T00:24:10.586016"
+      "generated_at": "2026-04-15T00:24:27.553456"
     },
     "missions": [
       {
-        "title": "Emergency Power Conservation",
-        "briefing": "Solar panels are underperforming due to the dust storm. Power reserves must be carefully managed to sustain life support.",
-        "objective": "Implement energy-saving protocols and reduce non-essential power usage for 3 sols.",
-        "reward_hint": "Improved energy efficiency and small energy reserve boost",
-        "risk": "Colony systems may fail if power drops too low"
+        "title": "Optimize Solar Arrays",
+        "briefing": "Take advantage of increased solar activity by adjusting solar panels for maximum efficiency.",
+        "objective": "Recalibrate solar arrays to boost energy collection by 10%.",
+        "reward_hint": "Increased daily energy reserves.",
+        "risk": "Minimal risk of equipment wear during recalibration."
       },
       {
-        "title": "Dust Storm Sensor Maintenance",
-        "briefing": "Sensors monitoring atmospheric conditions are at risk of malfunction due to dust accumulation.",
-        "objective": "Perform exterior sensor cleaning and recalibration despite harsh weather.",
-        "reward_hint": "Improved environmental data accuracy",
-        "risk": "Exposure to hazardous conditions"
-      },
-      {
-        "title": "Water Recycling System Check",
-        "briefing": "Water reserves are limited and must be preserved. The recycling system needs inspection to prevent leaks.",
-        "objective": "Inspect and repair water recycling units to prevent resource loss.",
-        "reward_hint": "Prevent water loss and maintain current reserves",
-        "risk": "Potential system failure if repairs are incomplete"
+        "title": "Water Conservation Initiative",
+        "briefing": "Water levels are moderate but must be preserved against upcoming colder nights.",
+        "objective": "Implement stricter water usage protocols and repair minor leaks in the water recycling system.",
+        "reward_hint": "Improved water reserves and sustainability.",
+        "risk": "Potential minor resource expenditure during repairs."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Dust storm conditions persist. Prioritize energy conservation and system checks to maintain colony stability."
+        "message": "Solar activity is expected to remain high for the next sols; optimize energy harvesting."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "all colonies",
-        "message": "Sharing sensor maintenance protocols to help colonies manage dust impact."
+        "recipient": "Irina Vale",
+        "message": "New prospecting data suggests slight material deposits near your location; consider a scouting mission."
       }
     ],
-    "news_summary": "On Sol 21, a persistent dust storm has severely reduced solar energy production, forcing colonies to implement strict power conservation measures. Sensor maintenance and water recycling system checks are critical to maintaining operational stability in early spring's harsh condi\u2026",
+    "news_summary": "Sol 22 on Mars enters early spring with temperatures at -66C and no dust storms active. Solar activity increases energy availability across colonies, prompting missions to optimize solar arrays and conserve water. Colonists remain vigilant as resources balance remains stable.",
     "event_flavor": {
       "event_key": "meteor_shower",
       "headline": "Meteor Shower Boosts Resource Recovery",
@@ -333,8 +314,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-14T00:24:10.586016",
-    "last_generated_sol": "Sol 21",
+    "last_generated": "2026-04-15T00:24:27.553456",
+    "last_generated_sol": "Sol 22",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
