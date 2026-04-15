@@ -4,8 +4,8 @@
   "resources": {
     "oxygen": 0,
     "water": 1,
-    "energy": 1013,
-    "food": 368,
+    "energy": 1025,
+    "food": 367,
     "materials": 61
   },
   "buildings": [
