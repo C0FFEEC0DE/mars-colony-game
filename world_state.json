@@ -7,7 +7,7 @@
   "temperature": -54,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Meteor Shower Boosts Resource Salvage",
   "last_updated": "2026-04-15T06:35:28.707069",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-04-15T06:35:28.707086",
       "event": "Martian day 23 has begun"
+    },
+    {
+      "time": "2026-04-15T12:18:36.870907",
+      "event": "On Sol 23, a meteor shower provided unexpected salvage opportunities. Irina Vale recovered 15 additional materials under stable conditions with -54C temperature and 64% solar activity."
     }
   ],
   "market": {
@@ -298,7 +302,26 @@
       }
     ],
     "news_summary": "Sol 22 on Mars enters early spring with temperatures at -66C and no dust storms active. Solar activity increases energy availability across colonies, prompting missions to optimize solar arrays and conserve water. Colonists remain vigilant as resources balance remains stable.",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "meteor_shower",
+      "headline": "Meteor Shower Boosts Resource Salvage",
+      "broadcast": "On Sol 23, a meteor shower provided unexpected salvage opportunities. Irina Vale recovered 15 additional materials under stable conditions with -54C temperature and 64% solar activity.",
+      "source": "github_models",
+      "generated_at": "2026-04-15T12:18:36.870894",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-15T00:24:27.553456",
     "last_generated_sol": "Sol 22",
     "last_diagnostics": {
