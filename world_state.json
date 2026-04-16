@@ -7,7 +7,7 @@
   "temperature": -31,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Unidentified Bacteria Detected in Soil Sample",
   "last_updated": "2026-04-16T06:36:04.333482",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-04-16T06:36:04.333500",
       "event": "Martian day 24 has begun"
+    },
+    {
+      "time": "2026-04-16T12:20:32.118239",
+      "event": "On Sol 24, analysis revealed unknown bacterial presence in Martian soil. Further study underway to assess biological and environmental implications."
     }
   ],
   "market": {
@@ -298,7 +302,26 @@
       }
     ],
     "news_summary": "On Sol 23 of early spring, Mars colonies experience a mild increase in solar activity enhancing power generation. Water reserves remain stable, prompting maintenance missions to sustain supply. Cooperation between Helios Prospecting and Dustline Agro suggests potential resource\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "discovery",
+      "headline": "Unidentified Bacteria Detected in Soil Sample",
+      "broadcast": "On Sol 24, analysis revealed unknown bacterial presence in Martian soil. Further study underway to assess biological and environmental implications.",
+      "source": "github_models",
+      "generated_at": "2026-04-16T12:20:32.118227",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-16T00:24:41.109681",
     "last_generated_sol": "Sol 23",
     "last_diagnostics": {
