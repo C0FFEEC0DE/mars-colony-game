@@ -2,13 +2,13 @@
   "day": 23,
   "mars_date": "Sol 23",
   "season": "Early Spring",
-  "solar_activity": 64,
+  "solar_activity": 69,
   "dust_storm_active": false,
   "temperature": -54,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Meteor Shower Boosts Resource Salvage",
-  "last_updated": "2026-04-15T06:35:28.707069",
+  "last_updated": "2026-04-16T00:24:41.109681",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-03-31T06:27:38.996531",
-      "event": "Martian day 8 has begun"
-    },
-    {
-      "time": "2026-03-31T12:16:53.197174",
-      "event": "A trading ship from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's reserves. This shipment bolsters our survival resources as Sol 8 unfolds under stable conditions."
-    },
-    {
-      "time": "2026-04-01T00:20:13.640812",
-      "event": "AI directive: Solar Activity Boosts Power Grid"
-    },
     {
       "time": "2026-04-01T06:33:07.786243",
       "event": "Martian day 9 has begun"
@@ -247,6 +235,10 @@
     {
       "time": "2026-04-15T12:18:36.870907",
       "event": "On Sol 23, a meteor shower provided unexpected salvage opportunities. Irina Vale recovered 15 additional materials under stable conditions with -54C temperature and 64% solar activity."
+    },
+    {
+      "time": "2026-04-16T00:24:41.109681",
+      "event": "AI directive: Mild Solar Activity Increase"
     }
   ],
   "market": {
@@ -257,8 +249,8 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Mild Solar Boost Increases Power Output",
-      "summary": "Solar activity reaches 76%, enhancing energy generation efficiency for all colonies today.",
+      "headline": "Mild Solar Activity Increase",
+      "summary": "Solar activity has risen to 64%, providing a modest boost to solar power generation across the colonies.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
@@ -266,42 +258,42 @@
           "label": "Solar boost",
           "target": "solar_activity",
           "delta": 5,
-          "before": 76,
-          "after": 81
+          "before": 64,
+          "after": 69
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-15T00:24:27.553456"
+      "generated_at": "2026-04-16T00:24:41.109681"
     },
     "missions": [
       {
-        "title": "Optimize Solar Arrays",
-        "briefing": "Take advantage of increased solar activity by adjusting solar panels for maximum efficiency.",
-        "objective": "Recalibrate solar arrays to boost energy collection by 10%.",
-        "reward_hint": "Increased daily energy reserves.",
-        "risk": "Minimal risk of equipment wear during recalibration."
+        "title": "Optimize Solar Panel Arrays",
+        "briefing": "With the recent solar activity increase, colonies can enhance energy intake by recalibrating solar panels.",
+        "objective": "Adjust and optimize solar panel angles to maximize energy absorption today.",
+        "reward_hint": "Gain additional energy units for your colony.",
+        "risk": "Minimal risk; minor equipment wear possible."
       },
       {
-        "title": "Water Conservation Initiative",
-        "briefing": "Water levels are moderate but must be preserved against upcoming colder nights.",
-        "objective": "Implement stricter water usage protocols and repair minor leaks in the water recycling system.",
-        "reward_hint": "Improved water reserves and sustainability.",
-        "risk": "Potential minor resource expenditure during repairs."
+        "title": "Water Recycling System Check",
+        "briefing": "Water reserves are moderate; ensuring recycling systems function properly is vital for sustainability.",
+        "objective": "Perform diagnostics and maintenance on the water recycling system to prevent leaks and inefficiencies.",
+        "reward_hint": "Preserve water resources and potentially increase available\u2026",
+        "risk": "Possible minor system downtime during checks."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity is expected to remain high for the next sols; optimize energy harvesting."
+        "message": "Solar activity levels rising slightly; recommend recalibrating solar arrays to optimize energy capture."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Irina Vale",
-        "message": "New prospecting data suggests slight material deposits near your location; consider a scouting mission."
+        "recipient": "Marco Quinn",
+        "message": "Sharing recent findings on underground ice deposits near your agro sector; coordinate if interested."
       }
     ],
-    "news_summary": "Sol 22 on Mars enters early spring with temperatures at -66C and no dust storms active. Solar activity increases energy availability across colonies, prompting missions to optimize solar arrays and conserve water. Colonists remain vigilant as resources balance remains stable.",
+    "news_summary": "On Sol 23 of early spring, Mars colonies experience a mild increase in solar activity enhancing power generation. Water reserves remain stable, prompting maintenance missions to sustain supply. Cooperation between Helios Prospecting and Dustline Agro suggests potential resource\u2026",
     "event_flavor": {
       "event_key": "meteor_shower",
       "headline": "Meteor Shower Boosts Resource Salvage",
@@ -322,8 +314,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-15T00:24:27.553456",
-    "last_generated_sol": "Sol 22",
+    "last_generated": "2026-04-16T00:24:41.109681",
+    "last_generated_sol": "Sol 23",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
