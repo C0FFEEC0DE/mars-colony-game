@@ -2,13 +2,13 @@
   "day": 24,
   "mars_date": "Sol 24",
   "season": "Early Spring",
-  "solar_activity": 73,
+  "solar_activity": 78,
   "dust_storm_active": false,
   "temperature": -31,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Unidentified Bacteria Detected in Soil Sample",
-  "last_updated": "2026-04-16T06:36:04.333482",
+  "last_updated": "2026-04-17T00:23:11.070206",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-01T06:33:07.786243",
-      "event": "Martian day 9 has begun"
-    },
-    {
-      "time": "2026-04-01T12:16:43.821239",
-      "event": "A powerful solar flare is impacting Mars with 150% solar activity. Energy levels rise by 50% next turn; all personnel must seek radiation shelter immediately."
-    },
-    {
-      "time": "2026-04-02T00:16:57.829923",
-      "event": "Team members Irina Vale, Marco Quinn, and Zoya Kade have secured vital water reserves, gaining 42, 20, and 47 units respectively, boosting colony sustainability."
-    },
     {
       "time": "2026-04-02T00:17:05.132851",
       "event": "AI directive: Solar Activity Surge Powers Up Systems"
@@ -247,6 +235,10 @@
     {
       "time": "2026-04-16T12:20:32.118239",
       "event": "On Sol 24, analysis revealed unknown bacterial presence in Martian soil. Further study underway to assess biological and environmental implications."
+    },
+    {
+      "time": "2026-04-17T00:23:11.070206",
+      "event": "AI directive: Solar Activity Boosts Energy Output"
     }
   ],
   "market": {
@@ -257,8 +249,8 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Mild Solar Activity Increase",
-      "summary": "Solar activity has risen to 64%, providing a modest boost to solar power generation across the colonies.",
+      "headline": "Solar Activity Boosts Energy Output",
+      "summary": "Solar activity has increased to 73%, enhancing solar panel efficiency across the colony.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
@@ -266,42 +258,49 @@
           "label": "Solar boost",
           "target": "solar_activity",
           "delta": 5,
-          "before": 64,
-          "after": 69
+          "before": 73,
+          "after": 78
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-16T00:24:41.109681"
+      "generated_at": "2026-04-17T00:23:11.070206"
     },
     "missions": [
       {
-        "title": "Optimize Solar Panel Arrays",
-        "briefing": "With the recent solar activity increase, colonies can enhance energy intake by recalibrating solar panels.",
-        "objective": "Adjust and optimize solar panel angles to maximize energy absorption today.",
-        "reward_hint": "Gain additional energy units for your colony.",
-        "risk": "Minimal risk; minor equipment wear possible."
+        "title": "Optimize Solar Arrays",
+        "briefing": "With higher solar activity, fine-tuning solar panels can maximize energy intake.",
+        "objective": "Adjust and recalibrate solar arrays for peak performance.",
+        "reward_hint": "Increased energy reserves",
+        "risk": "Minor equipment wear"
       },
       {
-        "title": "Water Recycling System Check",
-        "briefing": "Water reserves are moderate; ensuring recycling systems function properly is vital for sustainability.",
-        "objective": "Perform diagnostics and maintenance on the water recycling system to prevent leaks and inefficiencies.",
-        "reward_hint": "Preserve water resources and potentially increase available\u2026",
-        "risk": "Possible minor system downtime during checks."
+        "title": "Water Recycling Maintenance",
+        "briefing": "Water reserves are limited; improving recycling systems is critical to sustain the colony.",
+        "objective": "Perform maintenance on water recycling units to improve efficiency.",
+        "reward_hint": "Enhanced water availability",
+        "risk": "Temporary minor water loss during repairs"
+      },
+      {
+        "title": "Scout Nearby Materials Cache",
+        "briefing": "Early Spring thaw may expose new material deposits nearby.",
+        "objective": "Send a scout mission to locate and secure materials.",
+        "reward_hint": "Additional raw materials",
+        "risk": "Exposure to cold and terrain hazards"
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity levels rising slightly; recommend recalibrating solar arrays to optimize energy capture."
+        "message": "Solar activity increased, expect higher energy efficiency today."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Marco Quinn",
-        "message": "Sharing recent findings on underground ice deposits near your agro sector; coordinate if interested."
+        "recipient": "all colonies",
+        "message": "Offering trade in materials for oxygen; contact if interested."
       }
     ],
-    "news_summary": "On Sol 23 of early spring, Mars colonies experience a mild increase in solar activity enhancing power generation. Water reserves remain stable, prompting maintenance missions to sustain supply. Cooperation between Helios Prospecting and Dustline Agro suggests potential resource\u2026",
+    "news_summary": "Sol 24 of early spring on Mars sees a solar activity rise to 73%, boosting energy production across colonies. Water remains limited, prompting maintenance efforts. Scouts prepare to explore newly accessible materials as the thaw progresses.",
     "event_flavor": {
       "event_key": "discovery",
       "headline": "Unidentified Bacteria Detected in Soil Sample",
@@ -322,8 +321,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-16T00:24:41.109681",
-    "last_generated_sol": "Sol 23",
+    "last_generated": "2026-04-17T00:23:11.070206",
+    "last_generated_sol": "Sol 24",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
