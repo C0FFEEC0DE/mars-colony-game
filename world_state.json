@@ -2,12 +2,12 @@
   "day": 25,
   "mars_date": "Sol 25",
   "season": "Early Spring",
-  "solar_activity": 64,
-  "dust_storm_active": false,
+  "solar_activity": 0,
+  "dust_storm_active": true,
   "temperature": -56,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Trading Vessel Docked: Supplies Restocked",
+  "current_event": "Massive Sandstorm Forces Solar Shutdown",
   "last_updated": "2026-04-17T06:35:47.364286",
   "global_resources": {
     "oxygen": 1000,
@@ -247,6 +247,10 @@
     {
       "time": "2026-04-17T12:17:49.699742",
       "event": "A trading ship from Earth has successfully docked on Sol 25, delivering 100 units of food and 50 units of materials to the colony's reserves."
+    },
+    {
+      "time": "2026-04-18T00:20:32.112674",
+      "event": "A severe sandstorm is underway on Sol 25, knocking all solar panels offline for the next 6 hours. Prepare for reduced power availability."
     }
   ],
   "market": {
@@ -310,11 +314,11 @@
     ],
     "news_summary": "Sol 24 of early spring on Mars sees a solar activity rise to 73%, boosting energy production across colonies. Water remains limited, prompting maintenance efforts. Scouts prepare to explore newly accessible materials as the thaw progresses.",
     "event_flavor": {
-      "event_key": "traders",
-      "headline": "Trading Vessel Docked: Supplies Restocked",
-      "broadcast": "A trading ship from Earth has successfully docked on Sol 25, delivering 100 units of food and 50 units of materials to the colony's reserves.",
+      "event_key": "sandstorm",
+      "headline": "Massive Sandstorm Forces Solar Shutdown",
+      "broadcast": "A severe sandstorm is underway on Sol 25, knocking all solar panels offline for the next 6 hours. Prepare for reduced power availability.",
       "source": "github_models",
-      "generated_at": "2026-04-17T12:17:49.699731",
+      "generated_at": "2026-04-18T00:20:32.112662",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
