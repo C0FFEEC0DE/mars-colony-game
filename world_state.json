@@ -2,12 +2,12 @@
   "day": 26,
   "mars_date": "Sol 26",
   "season": "Early Spring",
-  "solar_activity": 70,
+  "solar_activity": 150,
   "dust_storm_active": false,
   "temperature": -65,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Massive Solar Flare Detected",
   "last_updated": "2026-04-18T06:24:20.647286",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-04-18T06:24:20.647305",
       "event": "Martian day 26 has begun"
+    },
+    {
+      "time": "2026-04-18T12:09:59.174019",
+      "event": "A significant solar flare has increased radiation levels by 50% for the next cycle. All personnel are advised to seek shelter immediately to minimize exposure."
     }
   ],
   "market": {
@@ -305,7 +309,26 @@
       }
     ],
     "news_summary": "Sol 25 on Mars brings continuing challenges as a severe dust storm reduces solar energy generation and visibility. Colonies focus on reinforcing dust shields, maintaining water recycling, and conserving oxygen to mitigate the impacts. Resource management remains critical as Mars\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "solar_flare",
+      "headline": "Massive Solar Flare Detected",
+      "broadcast": "A significant solar flare has increased radiation levels by 50% for the next cycle. All personnel are advised to seek shelter immediately to minimize exposure.",
+      "source": "github_models",
+      "generated_at": "2026-04-18T12:09:59.174006",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-18T00:20:39.151182",
     "last_generated_sol": "Sol 25",
     "last_diagnostics": {
