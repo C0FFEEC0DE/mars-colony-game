@@ -8,59 +8,61 @@
 ## LIVE WORLD SNAPSHOT
 
 <!-- WORLD_SUMMARY:START -->
-_Auto-updated daily. Last world update: 2026-04-17T00:23:11.070206_
+_Auto-updated daily. Last world update: 2026-04-18T00:20:39.151182_
 
 ```text
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
-║ [SOL] Sol 24 | [SEASON] Early      ║  ║ Solar Activity Boosts Energy       ║
-║ Spring                             ║  ║ Output                             ║
-║ [TEMP] -31C | [SUN] 78% | [STORM]  ║  ║ Solar activity has increased to    ║
-║ NO                                 ║  ║ 73%, enhancing solar panel         ║
-║ [EVENT] Unidentified Bacteria      ║  ║ efficiency across the colony.      ║
-║ Detected in Soil Sample            ║  ║ EFFECT solar_boost |               ║
-║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ solar_activity +5                  ║
-║ [O2] 1000 | [H2O] 545 | [E] 1040   ║  ╚════════════════════════════════════╝
-║ [FOOD] 600 | [MAT] 150             ║                                        
+║ [SOL] Sol 25 | [SEASON] Early      ║  ║ Persistent Dust Storm Hampers      ║
+║ Spring                             ║  ║ Solar Output                       ║
+║ [TEMP] -56C | [SUN] 0% | [STORM]   ║  ║ A severe dust storm continues to   ║
+║ YES                                ║  ║ blanket the colony, reducing solar ║
+║ [EVENT] Massive Sandstorm Forces   ║  ║ energy generation and visibility   ║
+║ Solar Shutdown                     ║  ║ across all sectors.                ║
+║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT energy_surge | energy +20   ║
+║ [O2] 1000 | [H2O] 545 | [E] 1060   ║  ╚════════════════════════════════════╝
+║ [FOOD] 700 | [MAT] 200             ║                                        
 ║ [MKT] O2 0 H2O 0 F 0 M 0           ║                                        
-║ [AI] Solar Activity Boosts Energy  ║                                        
-║ Output | solar_activity +5         ║                                        
+║ [AI] Persistent Dust Storm Hampers ║                                        
+║ Solar Output | energy +20          ║                                        
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
-║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Arrays           ║
-║    Dustline Agro | P1 B3 | S2744   ║  ║    Adjust and recalibrate solar…   ║
-║ 2. Zoya Kade                       ║  ║ 2. Water Recycling Maintenance     ║
-║    Ares Systems | P1 B4 | S2527    ║  ║    Perform maintenance on water…   ║
-║ 3. Irina Vale                      ║  ║ 3. Scout Nearby Materials Cache    ║
-║    Helios… | P1 B2 | S1982         ║  ║    Send a scout mission to locate… ║
+║ 1. Marco Quinn                     ║  ║ 1. Dust Storm Shield…              ║
+║    Dustline Agro | P1 B3 | S2783   ║  ║    Use materials to strengthen…    ║
+║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System…         ║
+║    Ares Systems | P1 B4 | S2590    ║  ║    Perform diagnostics and minor…  ║
+║ 3. Irina Vale                      ║  ║ 3. Oxygen Conservation Protocol    ║
+║    Helios… | P1 B2 | S2033         ║  ║    Coordinate with colony members… ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
-║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Solar       ║
-║ WATER     545                      ║  ║ activity increased, expect…        ║
-║ ENERGY    1040                     ║  ║ Helios… -> all… | Offering trade   ║
-║ FOOD      600                      ║  ║ in materials for…                  ║
-║ MATERIALS 150                      ║  ╚════════════════════════════════════╝
+║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Dust storm  ║
+║ WATER     545                      ║  ║ severity remains high;…            ║
+║ ENERGY    1060                     ║  ║ Helios… -> Mars… | Requesting      ║
+║ FOOD      700                      ║  ║ materials resupply due…            ║
+║ MATERIALS 200                      ║  ╚════════════════════════════════════╝
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Sol 24 of early spring on Mars     ║  ║ 00:23 | AI directive: Solar…       ║
-║ sees a solar activity rise to 73%, ║  ║ 12:20 | On Sol 24, analysis…       ║
-║ boosting energy production across  ║  ║ 06:36 | Martian day 24 has begun   ║
-║ colonies. Water remains limited,   ║  ║ 00:24 | AI directive: Mild Solar…  ║
-║ prompting maintenance efforts.     ║  ║ 12:18 | On Sol 23, a meteor        ║
-║ Scouts prepare to explore newly    ║  ║ shower…                            ║
-║ accessible materials as the thaw   ║  ╚════════════════════════════════════╝
-║ progresses.                        ║                                        
-║ On Sol 24, analysis revealed       ║                                        
-║ unknown bacterial presence in      ║                                        
-║ Martian soil. Further study        ║                                        
-║ underway to assess biological and  ║                                        
-║ environmental implications.        ║                                        
+║ Sol 25 on Mars brings continuing   ║  ║ 00:20 | AI directive: Persistent…  ║
+║ challenges as a severe dust storm  ║  ║ 00:20 | A severe sandstorm is…     ║
+║ reduces solar energy generation    ║  ║ 12:17 | A trading ship from Earth… ║
+║ and visibility. Colonies focus on  ║  ║ 06:35 | Martian day 25 has begun   ║
+║ reinforcing dust shields,          ║  ║ 00:23 | AI directive: Solar…       ║
+║ maintaining water recycling, and   ║  ╚════════════════════════════════════╝
+║ conserving oxygen to mitigate the  ║                                        
+║ impacts. Resource management       ║                                        
+║ remains critical as Mars…          ║                                        
+║ A severe sandstorm is underway on  ║                                        
+║ Sol 25, knocking all solar panels  ║                                        
+║ offline for the next 6 hours.      ║                                        
+║ Prepare for reduced power          ║                                        
+║ availability.                      ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
