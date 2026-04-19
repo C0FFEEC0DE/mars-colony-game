@@ -8,7 +8,7 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Massive Solar Flare Detected",
-  "last_updated": "2026-04-18T06:24:20.647286",
+  "last_updated": "2026-04-19T00:21:26.965652",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-03T00:19:49.705594",
-      "event": "AI directive: Solar Flare Boosts Energy Output"
-    },
-    {
-      "time": "2026-04-03T06:24:39.317676",
-      "event": "Martian day 11 has begun"
-    },
-    {
-      "time": "2026-04-03T12:11:04.572300",
-      "event": "Underground ice was confirmed today, boosting water reserves for Irina (+39), Marco (+46), and Zoya (+44). This discovery enhances our hydration capacity amid -50\u00b0C conditions."
-    },
     {
       "time": "2026-04-04T00:17:25.820114",
       "event": "Excavation teams led by Irina, Marco, and Zoya have successfully extracted significant underground ice, boosting water reserves by 114 units total."
@@ -247,6 +235,10 @@
     {
       "time": "2026-04-18T12:09:59.174019",
       "event": "A significant solar flare has increased radiation levels by 50% for the next cycle. All personnel are advised to seek shelter immediately to minimize exposure."
+    },
+    {
+      "time": "2026-04-19T00:21:26.965652",
+      "event": "AI directive: Increased Solar Activity Boosts Energy Output"
     }
   ],
   "market": {
@@ -257,58 +249,51 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Persistent Dust Storm Hampers Solar Output",
-      "summary": "A severe dust storm continues to blanket the colony, reducing solar energy generation and visibility across all sectors.",
+      "headline": "Increased Solar Activity Boosts Energy Output",
+      "summary": "Solar activity has risen to 150%, providing a natural energy surge across Mars colonies today.",
       "effect": {
-        "type": "energy_surge",
-        "magnitude": 20,
+        "type": "solar_boost",
+        "magnitude": 5,
         "result": {
-          "label": "Grid surge",
-          "target": "energy",
-          "delta": 20,
-          "before": 1040,
-          "after": 1060
+          "label": "Solar boost",
+          "target": "solar_activity",
+          "delta": 0,
+          "before": 150,
+          "after": 150
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-18T00:20:39.151182"
+      "generated_at": "2026-04-19T00:21:26.965652"
     },
     "missions": [
       {
-        "title": "Dust Storm Shield Reinforcement",
-        "briefing": "The ongoing dust storm threatens solar panels and habitats. Reinforce protective shielding to reduce damage and improve energy retention.",
-        "objective": "Use materials to strengthen dust shields around solar arrays and living quarters.",
-        "reward_hint": "Improved energy stability during storms.",
-        "risk": "Expenditure of limited materials may reduce other repair ca\u2026"
+        "title": "Optimize Solar Arrays",
+        "briefing": "With increased solar activity, adjusting solar panels can maximize energy intake.",
+        "objective": "Recalibrate and realign solar arrays to increase energy generation by 10%.",
+        "reward_hint": "Gain additional energy resources.",
+        "risk": "Potential equipment strain if improperly adjusted."
       },
       {
-        "title": "Water Recycling System Maintenance",
-        "briefing": "Water reserves are critical during dust storms as resupply is impossible. Check and repair recycling systems to maximize water recovery.",
-        "objective": "Perform diagnostics and minor repairs on water recycling units.",
-        "reward_hint": "Increased water availability.",
-        "risk": "Time spent on maintenance may delay other urgent tasks."
-      },
-      {
-        "title": "Oxygen Conservation Protocol",
-        "briefing": "Oxygen resources are unevenly distributed among colonies. Implement conservation measures to extend supply during the storm.",
-        "objective": "Coordinate with colony members to reduce oxygen consumption and monitor levels closely.",
-        "reward_hint": "Prolonged oxygen availability.",
-        "risk": "Reduced activity may impact colony morale and productivity."
+        "title": "Water Recycling Efficiency Check",
+        "briefing": "Water remains limited; improving recycling systems will sustain colony needs longer.",
+        "objective": "Inspect and enhance the water recycling systems to reduce losses by 5%.",
+        "reward_hint": "Preserve water resources.",
+        "risk": "System downtime during maintenance."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Dust storm severity remains high; prioritize energy and life support system integrity. Report status every Sol."
+        "message": "Solar flare activity has increased; take advantage of enhanced energy but monitor systems closely."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Mars Control",
-        "message": "Requesting materials resupply due to shielding repairs underway. Current water reserves critical."
+        "recipient": "Irina Vale",
+        "message": "Resource survey indicates potential material deposits nearby; consider exploration."
       }
     ],
-    "news_summary": "Sol 25 on Mars brings continuing challenges as a severe dust storm reduces solar energy generation and visibility. Colonies focus on reinforcing dust shields, maintaining water recycling, and conserving oxygen to mitigate the impacts. Resource management remains critical as Mars\u2026",
+    "news_summary": "Mars experiences a surge in solar activity, increasing energy availability for all colonies. Colonies focus on optimizing solar arrays and improving water recycling to capitalize on the conditions. Resource exploration remains a priority to bolster materials stockpiles.",
     "event_flavor": {
       "event_key": "solar_flare",
       "headline": "Massive Solar Flare Detected",
@@ -329,8 +314,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-18T00:20:39.151182",
-    "last_generated_sol": "Sol 25",
+    "last_generated": "2026-04-19T00:21:26.965652",
+    "last_generated_sol": "Sol 26",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
