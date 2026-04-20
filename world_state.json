@@ -7,7 +7,7 @@
   "temperature": -77,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Meteor Shower Yields Critical Materials Amid Minor Damage",
   "last_updated": "2026-04-20T06:42:42.488411",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-04-20T06:42:42.488451",
       "event": "Martian day 28 has begun"
+    },
+    {
+      "time": "2026-04-20T12:22:16.627827",
+      "event": "During Sol 28's meteor shower, Irina Vale and Marco Quinn salvaged 30 materials combined. Irina also reported structural damage under ongoing -77C conditions with 64% solar activity."
     }
   ],
   "market": {
@@ -310,7 +314,26 @@
       }
     ],
     "news_summary": "Mars colonies experience a beneficial solar boost, enhancing energy production amid early spring cold. Stable conditions allow teams to focus on optimizing solar arrays, maintaining water recycling systems, and salvaging materials. Coordination between colonies is active to maxi\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "meteor_shower",
+      "headline": "Meteor Shower Yields Critical Materials Amid Minor Damage",
+      "broadcast": "During Sol 28's meteor shower, Irina Vale and Marco Quinn salvaged 30 materials combined. Irina also reported structural damage under ongoing -77C conditions with 64% solar activity.",
+      "source": "github_models",
+      "generated_at": "2026-04-20T12:22:16.627817",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-20T00:21:54.222518",
     "last_generated_sol": "Sol 27",
     "last_diagnostics": {
