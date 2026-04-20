@@ -2,13 +2,13 @@
   "day": 27,
   "mars_date": "Sol 27",
   "season": "Early Spring",
-  "solar_activity": 65,
+  "solar_activity": 70,
   "dust_storm_active": false,
   "temperature": -47,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Underground Ice Deposit Secured",
-  "last_updated": "2026-04-19T06:33:16.212351",
+  "last_updated": "2026-04-20T00:21:54.222518",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-04T00:17:25.820114",
-      "event": "Excavation teams led by Irina, Marco, and Zoya have successfully extracted significant underground ice, boosting water reserves by 114 units total."
-    },
-    {
-      "time": "2026-04-04T00:17:29.593831",
-      "event": "AI directive: Solar Flare Boosts Power Systems"
-    },
-    {
-      "time": "2026-04-04T06:20:20.949253",
-      "event": "Martian day 12 has begun"
-    },
     {
       "time": "2026-04-05T00:18:34.946177",
       "event": "A severe dust storm on Sol 12 has forced all solar panels offline for the next 6 hours. Power conservation protocols are now in effect."
@@ -247,6 +235,10 @@
     {
       "time": "2026-04-20T00:21:46.188596",
       "event": "Sol 27: Subsurface ice located beneath the northern ridge. Water reserves updated\u2014Irina +25L, Marco +41L, Zoya +36L."
+    },
+    {
+      "time": "2026-04-20T00:21:54.222518",
+      "event": "AI directive: Solar Activity Boosts Energy Output"
     }
   ],
   "market": {
@@ -257,51 +249,63 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Increased Solar Activity Boosts Energy Output",
-      "summary": "Solar activity has risen to 150%, providing a natural energy surge across Mars colonies today.",
+      "headline": "Solar Activity Boosts Energy Output",
+      "summary": "Solar activity at 65% increases solar panel efficiency, enhancing energy generation across colonies.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
         "result": {
           "label": "Solar boost",
           "target": "solar_activity",
-          "delta": 0,
-          "before": 150,
-          "after": 150
+          "delta": 5,
+          "before": 65,
+          "after": 70
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-19T00:21:26.965652"
+      "generated_at": "2026-04-20T00:21:54.222518"
     },
     "missions": [
       {
         "title": "Optimize Solar Arrays",
-        "briefing": "With increased solar activity, adjusting solar panels can maximize energy intake.",
-        "objective": "Recalibrate and realign solar arrays to increase energy generation by 10%.",
-        "reward_hint": "Gain additional energy resources.",
-        "risk": "Potential equipment strain if improperly adjusted."
+        "briefing": "Take advantage of elevated solar activity to recalibrate and optimize solar panels for maximum energy output.",
+        "objective": "Recalibrate solar arrays to increase energy collection efficiency by 10%.",
+        "reward_hint": "Boost in daily energy supply.",
+        "risk": "Minimal risk of equipment malfunction during recalibration."
       },
       {
-        "title": "Water Recycling Efficiency Check",
-        "briefing": "Water remains limited; improving recycling systems will sustain colony needs longer.",
-        "objective": "Inspect and enhance the water recycling systems to reduce losses by 5%.",
-        "reward_hint": "Preserve water resources.",
-        "risk": "System downtime during maintenance."
+        "title": "Water Recycling System Check",
+        "briefing": "Ensure the water recycling systems are functioning at peak efficiency during the cold early spring season.",
+        "objective": "Inspect and repair water recycling units to prevent water loss.",
+        "reward_hint": "Improved water retention and supply.",
+        "risk": "Potential minor system downtime during maintenance."
+      },
+      {
+        "title": "Material Inventory and Salvage",
+        "briefing": "With stable weather conditions, conduct a small-scale materials salvage operation near the colony perimeter.",
+        "objective": "Collect at least 20 units of usable materials from nearby debris or old structures.",
+        "reward_hint": "Additional construction materials.",
+        "risk": "Low risk of minor injury from handling debris."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar flare activity has increased; take advantage of enhanced energy but monitor systems closely."
+        "message": "Solar activity is currently favorable. Optimize energy systems to maximize output."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Irina Vale",
-        "message": "Resource survey indicates potential material deposits nearby; consider exploration."
+        "recipient": "Mars Control",
+        "message": "Requesting support for water recycling system upgrades to improve efficiency during early spring."
+      },
+      {
+        "sender": "Dustline Agro",
+        "recipient": "Ares Systems",
+        "message": "Sharing data on energy optimization techniques during current solar boost."
       }
     ],
-    "news_summary": "Mars experiences a surge in solar activity, increasing energy availability for all colonies. Colonies focus on optimizing solar arrays and improving water recycling to capitalize on the conditions. Resource exploration remains a priority to bolster materials stockpiles.",
+    "news_summary": "Mars colonies experience a beneficial solar boost, enhancing energy production amid early spring cold. Stable conditions allow teams to focus on optimizing solar arrays, maintaining water recycling systems, and salvaging materials. Coordination between colonies is active to maxi\u2026",
     "event_flavor": {
       "event_key": "ice_discovery",
       "headline": "Underground Ice Deposit Secured",
@@ -322,8 +326,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-19T00:21:26.965652",
-    "last_generated_sol": "Sol 26",
+    "last_generated": "2026-04-20T00:21:54.222518",
+    "last_generated_sol": "Sol 27",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
