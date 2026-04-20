@@ -7,7 +7,7 @@
   "temperature": -47,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Underground Ice Deposit Secured",
   "last_updated": "2026-04-19T06:33:16.212351",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-04-19T06:33:16.212366",
       "event": "Martian day 27 has begun"
+    },
+    {
+      "time": "2026-04-20T00:21:46.188596",
+      "event": "Sol 27: Subsurface ice located beneath the northern ridge. Water reserves updated\u2014Irina +25L, Marco +41L, Zoya +36L."
     }
   ],
   "market": {
@@ -298,7 +302,26 @@
       }
     ],
     "news_summary": "Mars experiences a surge in solar activity, increasing energy availability for all colonies. Colonies focus on optimizing solar arrays and improving water recycling to capitalize on the conditions. Resource exploration remains a priority to bolster materials stockpiles.",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "ice_discovery",
+      "headline": "Underground Ice Deposit Secured",
+      "broadcast": "Sol 27: Subsurface ice located beneath the northern ridge. Water reserves updated\u2014Irina +25L, Marco +41L, Zoya +36L.",
+      "source": "github_models",
+      "generated_at": "2026-04-20T00:21:46.188583",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-19T00:21:26.965652",
     "last_generated_sol": "Sol 26",
     "last_diagnostics": {
