@@ -2,13 +2,13 @@
   "day": 28,
   "mars_date": "Sol 28",
   "season": "Early Spring",
-  "solar_activity": 64,
+  "solar_activity": 69,
   "dust_storm_active": false,
   "temperature": -77,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Meteor Shower Yields Critical Materials Amid Minor Damage",
-  "last_updated": "2026-04-20T06:42:42.488411",
+  "last_updated": "2026-04-21T00:23:33.825097",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-05T00:18:34.946177",
-      "event": "A severe dust storm on Sol 12 has forced all solar panels offline for the next 6 hours. Power conservation protocols are now in effect."
-    },
-    {
-      "time": "2026-04-05T00:18:39.728217",
-      "event": "AI directive: Persistent Dust Storm Limits Solar Power"
-    },
-    {
-      "time": "2026-04-05T06:25:14.818964",
-      "event": "Martian day 13 has begun"
-    },
     {
       "time": "2026-04-06T00:19:05.622637",
       "event": "AI directive: Unexpected Solar Boost Enhances Energy Output"
@@ -247,6 +235,10 @@
     {
       "time": "2026-04-20T12:22:16.627827",
       "event": "During Sol 28's meteor shower, Irina Vale and Marco Quinn salvaged 30 materials combined. Irina also reported structural damage under ongoing -77C conditions with 64% solar activity."
+    },
+    {
+      "time": "2026-04-21T00:23:33.825097",
+      "event": "AI directive: Mild Solar Activity Boost"
     }
   ],
   "market": {
@@ -257,8 +249,8 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Activity Boosts Energy Output",
-      "summary": "Solar activity at 65% increases solar panel efficiency, enhancing energy generation across colonies.",
+      "headline": "Mild Solar Activity Boost",
+      "summary": "Solar activity has increased to 64%, providing a modest boost to energy generation across all colonies.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
@@ -266,54 +258,49 @@
           "label": "Solar boost",
           "target": "solar_activity",
           "delta": 5,
-          "before": 65,
-          "after": 70
+          "before": 64,
+          "after": 69
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-20T00:21:54.222518"
+      "generated_at": "2026-04-21T00:23:33.825097"
     },
     "missions": [
       {
         "title": "Optimize Solar Arrays",
-        "briefing": "Take advantage of elevated solar activity to recalibrate and optimize solar panels for maximum energy output.",
-        "objective": "Recalibrate solar arrays to increase energy collection efficiency by 10%.",
-        "reward_hint": "Boost in daily energy supply.",
-        "risk": "Minimal risk of equipment malfunction during recalibration."
+        "briefing": "With increased solar activity, colonies can maximize energy collection to prepare for upcoming colder days.",
+        "objective": "Adjust and calibrate solar panels to increase energy output by at least 10%.",
+        "reward_hint": "Additional energy resources.",
+        "risk": "Minor equipment strain during adjustments."
       },
       {
-        "title": "Water Recycling System Check",
-        "briefing": "Ensure the water recycling systems are functioning at peak efficiency during the cold early spring season.",
-        "objective": "Inspect and repair water recycling units to prevent water loss.",
-        "reward_hint": "Improved water retention and supply.",
-        "risk": "Potential minor system downtime during maintenance."
+        "title": "Water Conservation Protocol",
+        "briefing": "Water reserves are limited; implementing conservation measures is critical during early spring's dry conditions.",
+        "objective": "Install and test water recycling units to reduce consumption by 15%.",
+        "reward_hint": "Improved water reserves.",
+        "risk": "Temporary reduction in water supply during installation."
       },
       {
-        "title": "Material Inventory and Salvage",
-        "briefing": "With stable weather conditions, conduct a small-scale materials salvage operation near the colony perimeter.",
-        "objective": "Collect at least 20 units of usable materials from nearby debris or old structures.",
+        "title": "Material Salvage Operation",
+        "briefing": "Early spring winds have uncovered usable materials near Helios Prospecting site.",
+        "objective": "Collect at least 20 units of raw materials from exposed terrain.",
         "reward_hint": "Additional construction materials.",
-        "risk": "Low risk of minor injury from handling debris."
+        "risk": "Exposure to cold and dust hazards."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity is currently favorable. Optimize energy systems to maximize output."
+        "message": "Solar activity is favorable today; optimize energy systems to capitalize on increased output."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Mars Control",
-        "message": "Requesting support for water recycling system upgrades to improve efficiency during early spring."
-      },
-      {
-        "sender": "Dustline Agro",
-        "recipient": "Ares Systems",
-        "message": "Sharing data on energy optimization techniques during current solar boost."
+        "recipient": "Marco Quinn",
+        "message": "Reports indicate potential material deposits near your sector. Opportunity for collaboration."
       }
     ],
-    "news_summary": "Mars colonies experience a beneficial solar boost, enhancing energy production amid early spring cold. Stable conditions allow teams to focus on optimizing solar arrays, maintaining water recycling systems, and salvaging materials. Coordination between colonies is active to maxi\u2026",
+    "news_summary": "On Sol 28 of Mars' early spring, colonies experience a mild solar activity boost enhancing energy production. Water conservation remains a priority due to limited reserves, while material salvage missions offer opportunities to bolster construction resources. Colonists coordinat\u2026",
     "event_flavor": {
       "event_key": "meteor_shower",
       "headline": "Meteor Shower Yields Critical Materials Amid Minor Damage",
@@ -334,8 +321,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-20T00:21:54.222518",
-    "last_generated_sol": "Sol 27",
+    "last_generated": "2026-04-21T00:23:33.825097",
+    "last_generated_sol": "Sol 28",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
