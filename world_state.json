@@ -1,14 +1,14 @@
 {
-  "day": 29,
-  "mars_date": "Sol 29",
+  "day": 30,
+  "mars_date": "Sol 30",
   "season": "Early Spring",
-  "solar_activity": 77,
-  "dust_storm_active": false,
-  "temperature": -47,
+  "solar_activity": 85,
+  "dust_storm_active": true,
+  "temperature": -76,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": null,
-  "last_updated": "2026-04-22T00:20:50.577388",
+  "last_updated": "2026-04-22T06:36:08.153814",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 3325,
+      "score": 3296,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 2958,
+      "score": 2942,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 2381,
+      "score": 2368,
       "colonists": 1,
       "buildings": 2
     }
@@ -239,6 +239,14 @@
     {
       "time": "2026-04-22T00:20:50.577388",
       "event": "AI directive: Mild Solar Boost Enhances Energy Output"
+    },
+    {
+      "time": "2026-04-22T06:36:08.153830",
+      "event": "Martian day 30 has begun"
+    },
+    {
+      "time": "2026-04-22T06:36:08.206258",
+      "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
     }
   ],
   "market": {
