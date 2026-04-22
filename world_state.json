@@ -2,13 +2,13 @@
   "day": 29,
   "mars_date": "Sol 29",
   "season": "Early Spring",
-  "solar_activity": 72,
+  "solar_activity": 77,
   "dust_storm_active": false,
   "temperature": -47,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": null,
-  "last_updated": "2026-04-21T06:35:57.590099",
+  "last_updated": "2026-04-22T00:20:50.577388",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,14 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-06T00:19:05.622637",
-      "event": "AI directive: Unexpected Solar Boost Enhances Energy Output"
-    },
-    {
-      "time": "2026-04-06T06:35:16.018482",
-      "event": "Martian day 14 has begun"
-    },
     {
       "time": "2026-04-06T12:15:21.533632",
       "event": "On Sol 14, a meteor shower resulted in +16 materials salvaged by Zoya Kade, who also reported structural damage to habitat modules."
@@ -243,6 +235,10 @@
     {
       "time": "2026-04-21T06:35:57.590117",
       "event": "Martian day 29 has begun"
+    },
+    {
+      "time": "2026-04-22T00:20:50.577388",
+      "event": "AI directive: Mild Solar Boost Enhances Energy Output"
     }
   ],
   "market": {
@@ -253,8 +249,8 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Mild Solar Activity Boost",
-      "summary": "Solar activity has increased to 64%, providing a modest boost to energy generation across all colonies.",
+      "headline": "Mild Solar Boost Enhances Energy Output",
+      "summary": "Solar activity remains steady at 72%, providing a slight increase in energy generation across all solar arrays.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
@@ -262,52 +258,52 @@
           "label": "Solar boost",
           "target": "solar_activity",
           "delta": 5,
-          "before": 64,
-          "after": 69
+          "before": 72,
+          "after": 77
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-21T00:23:33.825097"
+      "generated_at": "2026-04-22T00:20:50.577388"
     },
     "missions": [
       {
-        "title": "Optimize Solar Arrays",
-        "briefing": "With increased solar activity, colonies can maximize energy collection to prepare for upcoming colder days.",
-        "objective": "Adjust and calibrate solar panels to increase energy output by at least 10%.",
-        "reward_hint": "Additional energy resources.",
-        "risk": "Minor equipment strain during adjustments."
+        "title": "Optimize Solar Panels",
+        "briefing": "With solar activity stable, we can improve panel alignment for better energy capture.",
+        "objective": "Adjust and calibrate solar arrays to maximize energy input.",
+        "reward_hint": "Increased daily energy yield.",
+        "risk": "Minimal risk of equipment damage during adjustment."
       },
       {
-        "title": "Water Conservation Protocol",
-        "briefing": "Water reserves are limited; implementing conservation measures is critical during early spring's dry conditions.",
-        "objective": "Install and test water recycling units to reduce consumption by 15%.",
-        "reward_hint": "Improved water reserves.",
-        "risk": "Temporary reduction in water supply during installation."
+        "title": "Water Recycling System Maintenance",
+        "briefing": "Water reserves are moderate but should be conserved carefully during early spring.",
+        "objective": "Inspect and repair water recycling systems to reduce loss.",
+        "reward_hint": "Improved water efficiency.",
+        "risk": "Potential minor leaks if repairs are rushed."
       },
       {
-        "title": "Material Salvage Operation",
-        "briefing": "Early spring winds have uncovered usable materials near Helios Prospecting site.",
-        "objective": "Collect at least 20 units of raw materials from exposed terrain.",
-        "reward_hint": "Additional construction materials.",
-        "risk": "Exposure to cold and dust hazards."
+        "title": "Material Inventory and Redistribution",
+        "briefing": "Materials are limited; a thorough inventory can help allocate resources more efficiently.",
+        "objective": "Conduct a materials audit and redistribute supplies as needed.",
+        "reward_hint": "Better resource management and potential discovery of overl\u2026",
+        "risk": "Low risk; time-consuming."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity is favorable today; optimize energy systems to capitalize on increased output."
+        "message": "Solar activity stable with a mild boost expected today. Optimize solar panels to capitalize."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Marco Quinn",
-        "message": "Reports indicate potential material deposits near your sector. Opportunity for collaboration."
+        "recipient": "Mars Control",
+        "message": "Requesting additional oxygen supplies due to low reserves at Helios Prospecting."
       }
     ],
-    "news_summary": "On Sol 28 of Mars' early spring, colonies experience a mild solar activity boost enhancing energy production. Water conservation remains a priority due to limited reserves, while material salvage missions offer opportunities to bolster construction resources. Colonists coordinat\u2026",
+    "news_summary": "On Sol 29 of early spring, Mars experiences a mild solar boost enhancing energy production. Colonies focus on optimizing solar panels and maintaining water recycling systems to conserve resources. Oxygen shortages are reported at Helios Prospecting, highlighting the ongoing chal\u2026",
     "event_flavor": {},
-    "last_generated": "2026-04-21T00:23:33.825097",
-    "last_generated_sol": "Sol 28",
+    "last_generated": "2026-04-22T00:20:50.577388",
+    "last_generated_sol": "Sol 29",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
