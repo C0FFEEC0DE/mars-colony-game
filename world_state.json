@@ -8,11 +8,11 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": null,
-  "last_updated": "2026-04-22T06:36:08.153814",
+  "last_updated": "2026-04-23T00:25:59.774022",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
-    "energy": 1060,
+    "energy": 1080,
     "food": 700,
     "materials": 200
   },
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-06T12:15:21.533632",
-      "event": "On Sol 14, a meteor shower resulted in +16 materials salvaged by Zoya Kade, who also reported structural damage to habitat modules."
-    },
-    {
-      "time": "2026-04-07T00:19:30.234090",
-      "event": "AI directive: Early Spring Solar Boost"
-    },
-    {
-      "time": "2026-04-07T06:29:47.921859",
-      "event": "Martian day 15 has begun"
-    },
     {
       "time": "2026-04-07T06:29:47.977616",
       "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
@@ -247,6 +235,10 @@
     {
       "time": "2026-04-22T06:36:08.206258",
       "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
+    },
+    {
+      "time": "2026-04-23T00:25:59.774022",
+      "event": "AI directive: Persistent Dust Storm Reduces Solar Efficiency"
     }
   ],
   "market": {
@@ -257,61 +249,54 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Mild Solar Boost Enhances Energy Output",
-      "summary": "Solar activity remains steady at 72%, providing a slight increase in energy generation across all solar arrays.",
+      "headline": "Persistent Dust Storm Reduces Solar Efficiency",
+      "summary": "A dust storm continues across Mars, reducing solar panel output despite high solar activity.",
       "effect": {
-        "type": "solar_boost",
-        "magnitude": 5,
+        "type": "energy_surge",
+        "magnitude": 20,
         "result": {
-          "label": "Solar boost",
-          "target": "solar_activity",
-          "delta": 5,
-          "before": 72,
-          "after": 77
+          "label": "Grid surge",
+          "target": "energy",
+          "delta": 20,
+          "before": 1060,
+          "after": 1080
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-22T00:20:50.577388"
+      "generated_at": "2026-04-23T00:25:59.774022"
     },
     "missions": [
       {
-        "title": "Optimize Solar Panels",
-        "briefing": "With solar activity stable, we can improve panel alignment for better energy capture.",
-        "objective": "Adjust and calibrate solar arrays to maximize energy input.",
-        "reward_hint": "Increased daily energy yield.",
-        "risk": "Minimal risk of equipment damage during adjustment."
+        "title": "Dust Storm Shield Reinforcement",
+        "briefing": "With the ongoing dust storm, solar arrays are at risk of damage. Reinforce protective shields to maintain energy production.",
+        "objective": "Deploy and reinforce dust shields around solar panels.",
+        "reward_hint": "Improved energy stability during storms.",
+        "risk": "Exposure to harsh storm conditions may damage equipment."
       },
       {
-        "title": "Water Recycling System Maintenance",
-        "briefing": "Water reserves are moderate but should be conserved carefully during early spring.",
-        "objective": "Inspect and repair water recycling systems to reduce loss.",
-        "reward_hint": "Improved water efficiency.",
-        "risk": "Potential minor leaks if repairs are rushed."
-      },
-      {
-        "title": "Material Inventory and Redistribution",
-        "briefing": "Materials are limited; a thorough inventory can help allocate resources more efficiently.",
-        "objective": "Conduct a materials audit and redistribute supplies as needed.",
-        "reward_hint": "Better resource management and potential discovery of overl\u2026",
-        "risk": "Low risk; time-consuming."
+        "title": "Water Recycling System Check",
+        "briefing": "Water reserves are critical this season. Conduct maintenance on recycling units to maximize water recovery under storm conditions.",
+        "objective": "Inspect and repair water recycling systems to optimize efficiency.",
+        "reward_hint": "Increased water recovery rate.",
+        "risk": "Potential minor leaks during system testing."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity stable with a mild boost expected today. Optimize solar panels to capitalize."
+        "message": "Dust storm alert remains active. Prioritize energy and water system maintenance to sustain operations."
       },
       {
         "sender": "Helios Prospecting",
         "recipient": "Mars Control",
-        "message": "Requesting additional oxygen supplies due to low reserves at Helios Prospecting."
+        "message": "Requesting additional materials for shield reinforcement. Current stocks are low amid severe dust conditions."
       }
     ],
-    "news_summary": "On Sol 29 of early spring, Mars experiences a mild solar boost enhancing energy production. Colonies focus on optimizing solar panels and maintaining water recycling systems to conserve resources. Oxygen shortages are reported at Helios Prospecting, highlighting the ongoing chal\u2026",
+    "news_summary": "Mars experiences a persistent dust storm limiting solar energy despite high solar activity. Colonies focus on shielding solar arrays and maintaining water recycling systems to sustain operations. Resource management remains critical as conditions challenge energy and water avail\u2026",
     "event_flavor": {},
-    "last_generated": "2026-04-22T00:20:50.577388",
-    "last_generated_sol": "Sol 29",
+    "last_generated": "2026-04-23T00:25:59.774022",
+    "last_generated_sol": "Sol 30",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
