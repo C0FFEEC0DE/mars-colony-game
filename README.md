@@ -8,54 +8,55 @@
 ## LIVE WORLD SNAPSHOT
 
 <!-- WORLD_SUMMARY:START -->
-_Auto-updated daily. Last world update: 2026-04-22T00:20:50.577388_
+_Auto-updated daily. Last world update: 2026-04-23T00:25:59.774022_
 
 ```text
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
-║ [SOL] Sol 29 | [SEASON] Early      ║  ║ Mild Solar Boost Enhances Energy   ║
-║ Spring                             ║  ║ Output                             ║
-║ [TEMP] -47C | [SUN] 77% | [STORM]  ║  ║ Solar activity remains steady at   ║
-║ NO                                 ║  ║ 72%, providing a slight increase   ║
-║ [EVENT] None                       ║  ║ in energy generation across all    ║
-║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ solar arrays.                      ║
-║ [O2] 1000 | [H2O] 545 | [E] 1060   ║  ║ EFFECT solar_boost |               ║
-║ [FOOD] 700 | [MAT] 200             ║  ║ solar_activity +5                  ║
-║ [MKT] O2 0 H2O 0 F 0 M 0           ║  ╚════════════════════════════════════╝
-║ [AI] Mild Solar Boost Enhances     ║                                        
-║ Energy Output | solar_activity +5  ║                                        
+║ [SOL] Sol 30 | [SEASON] Early      ║  ║ Persistent Dust Storm Reduces      ║
+║ Spring                             ║  ║ Solar Efficiency                   ║
+║ [TEMP] -76C | [SUN] 85% | [STORM]  ║  ║ A dust storm continues across      ║
+║ YES                                ║  ║ Mars, reducing solar panel output  ║
+║ [EVENT] None                       ║  ║ despite high solar activity.       ║
+║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT energy_surge | energy +20   ║
+║ [O2] 1000 | [H2O] 545 | [E] 1080   ║  ╚════════════════════════════════════╝
+║ [FOOD] 700 | [MAT] 200             ║                                        
+║ [MKT] O2 0 H2O 0 F 0 M 0           ║                                        
+║ [AI] Persistent Dust Storm Reduces ║                                        
+║ Solar Efficiency | energy +20      ║                                        
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
-║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Panels           ║
-║    Dustline Agro | P1 B3 | S3325   ║  ║    Adjust and calibrate solar…     ║
-║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System…         ║
-║    Ares Systems | P1 B4 | S2958    ║  ║    Inspect and repair water…       ║
-║ 3. Irina Vale                      ║  ║ 3. Material Inventory and…         ║
-║    Helios… | P1 B2 | S2381         ║  ║    Conduct a materials audit and…  ║
-╚════════════════════════════════════╝  ╚════════════════════════════════════╝
+║ 1. Marco Quinn                     ║  ║ 1. Dust Storm Shield…              ║
+║    Dustline Agro | P1 B3 | S3287   ║  ║    Deploy and reinforce dust…      ║
+║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System Check    ║
+║    Ares Systems | P1 B4 | S2951    ║  ║    Inspect and repair water…       ║
+║ 3. Irina Vale                      ║  ╚════════════════════════════════════╝
+║    Helios… | P1 B2 | S2368         ║                                        
+╚════════════════════════════════════╝                                        
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
-║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Solar       ║
-║ WATER     545                      ║  ║ activity stable with a mild…       ║
-║ ENERGY    1060                     ║  ║ Helios… -> Mars… | Requesting      ║
-║ FOOD      700                      ║  ║ additional oxygen…                 ║
+║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Dust storm  ║
+║ WATER     545                      ║  ║ alert remains active.…             ║
+║ ENERGY    1080                     ║  ║ Helios… -> Mars… | Requesting      ║
+║ FOOD      700                      ║  ║ additional materials…              ║
 ║ MATERIALS 200                      ║  ╚════════════════════════════════════╝
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ On Sol 29 of early spring, Mars    ║  ║ 00:20 | AI directive: Mild Solar…  ║
-║ experiences a mild solar boost     ║  ║ 06:35 | Martian day 29 has begun   ║
-║ enhancing energy production.       ║  ║ 00:23 | AI directive: Mild Solar…  ║
-║ Colonies focus on optimizing solar ║  ║ 12:22 | During Sol 28's meteor…    ║
-║ panels and maintaining water       ║  ║ 06:42 | Martian day 28 has begun   ║
-║ recycling systems to conserve      ║  ╚════════════════════════════════════╝
-║ resources. Oxygen shortages are    ║                                        
-║ reported at Helios Prospecting,    ║                                        
-║ highlighting the ongoing chal…     ║                                        
+║ Mars experiences a persistent dust ║  ║ 00:25 | AI directive: Persistent…  ║
+║ storm limiting solar energy        ║  ║ 06:36 | 🌪️ Dust storm damaged…     ║
+║ despite high solar activity.       ║  ║ 06:36 | Martian day 30 has begun   ║
+║ Colonies focus on shielding solar  ║  ║ 00:20 | AI directive: Mild Solar…  ║
+║ arrays and maintaining water       ║  ║ 06:35 | Martian day 29 has begun   ║
+║ recycling systems to sustain       ║  ╚════════════════════════════════════╝
+║ operations. Resource management    ║                                        
+║ remains critical as conditions     ║                                        
+║ challenge energy and water avail…  ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
