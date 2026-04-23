@@ -1,14 +1,14 @@
 {
-  "day": 30,
-  "mars_date": "Sol 30",
+  "day": 31,
+  "mars_date": "Sol 31",
   "season": "Early Spring",
-  "solar_activity": 85,
-  "dust_storm_active": true,
-  "temperature": -76,
+  "solar_activity": 83,
+  "dust_storm_active": false,
+  "temperature": -80,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": null,
-  "last_updated": "2026-04-23T00:25:59.774022",
+  "last_updated": "2026-04-23T06:36:41.003971",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,14 +20,14 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 3287,
+      "score": 3284,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 2951,
+      "score": 2954,
       "colonists": 1,
       "buildings": 4
     },
@@ -239,6 +239,10 @@
     {
       "time": "2026-04-23T00:25:59.774022",
       "event": "AI directive: Persistent Dust Storm Reduces Solar Efficiency"
+    },
+    {
+      "time": "2026-04-23T06:36:41.003989",
+      "event": "Martian day 31 has begun"
     }
   ],
   "market": {
