@@ -7,7 +7,7 @@
   "temperature": -80,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "New Underground Caverns Mapped on Sol 31",
   "last_updated": "2026-04-23T06:36:41.003971",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-04-23T06:36:41.003989",
       "event": "Martian day 31 has begun"
+    },
+    {
+      "time": "2026-04-23T12:20:00.279228",
+      "event": "Exploration teams have located stable underground caverns, providing potential shelter options. Current conditions remain harsh with -80C temperatures and moderate solar activity at 83%."
     }
   ],
   "market": {
@@ -298,7 +302,26 @@
       }
     ],
     "news_summary": "Mars experiences a persistent dust storm limiting solar energy despite high solar activity. Colonies focus on shielding solar arrays and maintaining water recycling systems to sustain operations. Resource management remains critical as conditions challenge energy and water avail\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "discovery",
+      "headline": "New Underground Caverns Mapped on Sol 31",
+      "broadcast": "Exploration teams have located stable underground caverns, providing potential shelter options. Current conditions remain harsh with -80C temperatures and moderate solar activity at 83%.",
+      "source": "github_models",
+      "generated_at": "2026-04-23T12:20:00.279215",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-23T00:25:59.774022",
     "last_generated_sol": "Sol 30",
     "last_diagnostics": {
