@@ -2,13 +2,13 @@
   "day": 31,
   "mars_date": "Sol 31",
   "season": "Early Spring",
-  "solar_activity": 83,
+  "solar_activity": 88,
   "dust_storm_active": false,
   "temperature": -80,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "New Underground Caverns Mapped on Sol 31",
-  "last_updated": "2026-04-23T06:36:41.003971",
+  "last_updated": "2026-04-24T00:25:31.606024",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-07T06:29:47.977616",
-      "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
-    },
-    {
-      "time": "2026-04-08T00:20:10.568475",
-      "event": "AI directive: Dust Storm Disrupts Solar Arrays"
-    },
-    {
-      "time": "2026-04-08T06:30:45.760166",
-      "event": "Martian day 16 has begun"
-    },
     {
       "time": "2026-04-09T00:16:19.135630",
       "event": "Teams led by Irina Vale, Marco Quinn, and Zoya Kade have extracted a combined total of 102 units of water from subsurface ice deposits, bolstering colony reserves."
@@ -247,6 +235,10 @@
     {
       "time": "2026-04-23T12:20:00.279228",
       "event": "Exploration teams have located stable underground caverns, providing potential shelter options. Current conditions remain harsh with -80C temperatures and moderate solar activity at 83%."
+    },
+    {
+      "time": "2026-04-24T00:25:31.606024",
+      "event": "AI directive: Solar Activity Boosts Energy Output"
     }
   ],
   "market": {
@@ -257,51 +249,58 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Persistent Dust Storm Reduces Solar Efficiency",
-      "summary": "A dust storm continues across Mars, reducing solar panel output despite high solar activity.",
+      "headline": "Solar Activity Boosts Energy Output",
+      "summary": "With solar activity at 83%, colonies experience a moderate increase in solar panel efficiency, improving energy generation today.",
       "effect": {
-        "type": "energy_surge",
-        "magnitude": 20,
+        "type": "solar_boost",
+        "magnitude": 5,
         "result": {
-          "label": "Grid surge",
-          "target": "energy",
-          "delta": 20,
-          "before": 1060,
-          "after": 1080
+          "label": "Solar boost",
+          "target": "solar_activity",
+          "delta": 5,
+          "before": 83,
+          "after": 88
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-23T00:25:59.774022"
+      "generated_at": "2026-04-24T00:25:31.606024"
     },
     "missions": [
       {
-        "title": "Dust Storm Shield Reinforcement",
-        "briefing": "With the ongoing dust storm, solar arrays are at risk of damage. Reinforce protective shields to maintain energy production.",
-        "objective": "Deploy and reinforce dust shields around solar panels.",
-        "reward_hint": "Improved energy stability during storms.",
-        "risk": "Exposure to harsh storm conditions may damage equipment."
+        "title": "Optimize Solar Arrays",
+        "briefing": "The high solar activity presents an opportunity to recalibrate solar panels for maximum efficiency.",
+        "objective": "Recalibrate solar arrays at your colony to increase energy production by 10%.",
+        "reward_hint": "Increased daily energy reserves.",
+        "risk": "Minimal risk of system overload during recalibration."
       },
       {
-        "title": "Water Recycling System Check",
-        "briefing": "Water reserves are critical this season. Conduct maintenance on recycling units to maximize water recovery under storm conditions.",
-        "objective": "Inspect and repair water recycling systems to optimize efficiency.",
-        "reward_hint": "Increased water recovery rate.",
-        "risk": "Potential minor leaks during system testing."
+        "title": "Water Conservation Initiative",
+        "briefing": "Water reserves are moderate but limited; improving conservation is critical as Early Spring temperatures remain low.",
+        "objective": "Implement water recycling protocols and repair any minor leaks in the habitat's plumbing.",
+        "reward_hint": "Saves 50 units of water over the next week.",
+        "risk": "Low risk; minor disruption during repair work."
+      },
+      {
+        "title": "Early Spring Crop Assessment",
+        "briefing": "Food stores are adequate but could be improved by assessing and supporting early spring crops in greenhouses.",
+        "objective": "Inspect greenhouse crops for damage and optimize growth conditions to boost yield.",
+        "reward_hint": "Increased food production by 10%.",
+        "risk": "Possible minor contamination from dust or cold stress."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Dust storm alert remains active. Prioritize energy and water system maintenance to sustain operations."
+        "message": "Solar activity is higher than average today; all colonies are advised to optimize energy capture systems."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Mars Control",
-        "message": "Requesting additional materials for shield reinforcement. Current stocks are low amid severe dust conditions."
+        "recipient": "Marco Quinn",
+        "message": "Requesting collaboration on material scouting to replenish shared resources."
       }
     ],
-    "news_summary": "Mars experiences a persistent dust storm limiting solar energy despite high solar activity. Colonies focus on shielding solar arrays and maintaining water recycling systems to sustain operations. Resource management remains critical as conditions challenge energy and water avail\u2026",
+    "news_summary": "On Sol 31 of Early Spring, Mars colonies benefit from heightened solar activity, improving energy yields. Despite cold temperatures, resource management remains stable with coordinated efforts to optimize water and food supplies. Colonists are focusing on maximizing renewable en\u2026",
     "event_flavor": {
       "event_key": "discovery",
       "headline": "New Underground Caverns Mapped on Sol 31",
@@ -322,8 +321,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-23T00:25:59.774022",
-    "last_generated_sol": "Sol 30",
+    "last_generated": "2026-04-24T00:25:31.606024",
+    "last_generated_sol": "Sol 31",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
