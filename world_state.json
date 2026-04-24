@@ -1,14 +1,14 @@
 {
-  "day": 31,
-  "mars_date": "Sol 31",
+  "day": 32,
+  "mars_date": "Sol 32",
   "season": "Early Spring",
-  "solar_activity": 88,
+  "solar_activity": 78,
   "dust_storm_active": false,
-  "temperature": -80,
+  "temperature": -48,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "New Underground Caverns Mapped on Sol 31",
-  "last_updated": "2026-04-24T00:25:31.606024",
+  "current_event": null,
+  "last_updated": "2026-04-24T06:37:30.182683",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 3323,
+      "score": 3337,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 3011,
+      "score": 3031,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 2416,
+      "score": 2433,
       "colonists": 1,
       "buildings": 2
     }
@@ -239,6 +239,10 @@
     {
       "time": "2026-04-24T00:25:31.606024",
       "event": "AI directive: Solar Activity Boosts Energy Output"
+    },
+    {
+      "time": "2026-04-24T06:37:30.182696",
+      "event": "Martian day 32 has begun"
     }
   ],
   "market": {
@@ -301,26 +305,7 @@
       }
     ],
     "news_summary": "On Sol 31 of Early Spring, Mars colonies benefit from heightened solar activity, improving energy yields. Despite cold temperatures, resource management remains stable with coordinated efforts to optimize water and food supplies. Colonists are focusing on maximizing renewable en\u2026",
-    "event_flavor": {
-      "event_key": "discovery",
-      "headline": "New Underground Caverns Mapped on Sol 31",
-      "broadcast": "Exploration teams have located stable underground caverns, providing potential shelter options. Current conditions remain harsh with -80C temperatures and moderate solar activity at 83%.",
-      "source": "github_models",
-      "generated_at": "2026-04-23T12:20:00.279215",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-04-24T00:25:31.606024",
     "last_generated_sol": "Sol 31",
     "last_diagnostics": {
