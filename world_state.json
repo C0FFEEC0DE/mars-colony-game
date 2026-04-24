@@ -7,7 +7,7 @@
   "temperature": -48,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Underground Ice Deposit Confirmed on Sol 32",
   "last_updated": "2026-04-24T06:37:30.182683",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-04-24T06:37:30.182696",
       "event": "Martian day 32 has begun"
+    },
+    {
+      "time": "2026-04-24T12:19:18.272581",
+      "event": "Exploration team located a viable underground ice source. Irina Vale extracted 34 units, Marco Quinn 32, and Zoya Kade 27 units of water for colony reserves."
     }
   ],
   "market": {
@@ -305,7 +309,26 @@
       }
     ],
     "news_summary": "On Sol 31 of Early Spring, Mars colonies benefit from heightened solar activity, improving energy yields. Despite cold temperatures, resource management remains stable with coordinated efforts to optimize water and food supplies. Colonists are focusing on maximizing renewable en\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "ice_discovery",
+      "headline": "Underground Ice Deposit Confirmed on Sol 32",
+      "broadcast": "Exploration team located a viable underground ice source. Irina Vale extracted 34 units, Marco Quinn 32, and Zoya Kade 27 units of water for colony reserves.",
+      "source": "github_models",
+      "generated_at": "2026-04-24T12:19:18.272569",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-24T00:25:31.606024",
     "last_generated_sol": "Sol 31",
     "last_diagnostics": {
