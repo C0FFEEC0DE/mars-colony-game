@@ -3,9 +3,9 @@
   "corporation": "Dustline Agro",
   "resources": {
     "oxygen": 0,
-    "water": 9,
-    "energy": 1531,
-    "food": 456,
+    "water": 4,
+    "energy": 1545,
+    "food": 465,
     "materials": 81
   },
   "buildings": [
