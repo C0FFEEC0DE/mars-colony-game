@@ -2,13 +2,13 @@
   "day": 33,
   "mars_date": "Sol 33",
   "season": "Early Spring",
-  "solar_activity": 73,
+  "solar_activity": 78,
   "dust_storm_active": false,
   "temperature": -37,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": null,
-  "last_updated": "2026-04-25T06:29:24.488858",
+  "last_updated": "2026-04-26T00:23:11.541982",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,14 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-09T12:18:34.449439",
-      "event": "A massive solar flare is increasing energy levels by 50% for the next cycle. Ensure all personnel take shelter to minimize radiation exposure."
-    },
-    {
-      "time": "2026-04-10T00:18:56.489740",
-      "event": "A massive solar flare is impacting Mars with 150% solar activity. Increase radiation shielding protocols and limit EVA exposure during the next cycle."
-    },
     {
       "time": "2026-04-10T00:19:04.203200",
       "event": "AI directive: Solar Activity Peaks at 150%"
@@ -243,6 +235,10 @@
     {
       "time": "2026-04-25T06:29:24.488874",
       "event": "Martian day 33 has begun"
+    },
+    {
+      "time": "2026-04-26T00:23:11.541982",
+      "event": "AI directive: Moderate Solar Boost Enhances Energy Output"
     }
   ],
   "market": {
@@ -253,8 +249,8 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Flare Boosts Energy Output",
-      "summary": "A moderate solar flare increases solar panel efficiency by 15%, temporarily boosting energy generation across all colonies.",
+      "headline": "Moderate Solar Boost Enhances Energy Output",
+      "summary": "Solar activity has risen to 73%, providing a modest increase in solar panel efficiency across all colonies.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
@@ -262,45 +258,52 @@
           "label": "Solar boost",
           "target": "solar_activity",
           "delta": 5,
-          "before": 78,
-          "after": 83
+          "before": 73,
+          "after": 78
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-25T00:22:04.485093"
+      "generated_at": "2026-04-26T00:23:11.541982"
     },
     "missions": [
       {
-        "title": "Optimize Solar Arrays",
-        "briefing": "Take advantage of the solar flare to recalibrate and optimize solar arrays for maximum energy absorption.",
-        "objective": "Perform system diagnostics and realign solar panels to increase energy output by at least 10%.",
-        "reward_hint": "Improved energy reserves and system efficiency.",
-        "risk": "Minor system overloads if recalibration is not precise."
+        "title": "Optimize Solar Panel Arrays",
+        "briefing": "With increased solar activity, recalibrating solar panels can maximize energy gain.",
+        "objective": "Adjust and clean solar panels to improve energy collection efficiency.",
+        "reward_hint": "Gain additional energy resources.",
+        "risk": "Minimal risk of minor equipment wear."
       },
       {
-        "title": "Water Recycling System Check",
-        "briefing": "Ensure water recycling systems are fully operational to maintain water supplies through the seasonal transition.",
-        "objective": "Inspect and repair any leaks or malfunctions in water recycling units within the habitat.",
-        "reward_hint": "Preserved water resources for colony sustainability.",
-        "risk": "Potential water loss if issues are missed."
+        "title": "Water Recycling System Maintenance",
+        "briefing": "Water reserves are sufficient but conserving is critical during early spring.",
+        "objective": "Inspect and repair water recycling units to prevent leaks and increase efficiency.",
+        "reward_hint": "Increase water resource retention.",
+        "risk": "Risk of temporary water supply disruption."
+      },
+      {
+        "title": "Spring Crop Planning",
+        "briefing": "Early spring is ideal for planning agro-domes to boost food production.",
+        "objective": "Design and plant new crops adapted to current temperature conditions.",
+        "reward_hint": "Future increase in food supplies.",
+        "risk": "Crops may fail if conditions worsen unexpectedly."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar flare detected. Recommended to maximize solar array efficiency to benefit from increased energy influx."
+        "message": "Solar activity levels are favorable today; maximize energy harvesting efforts."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "all colonies",
-        "message": "Early spring conditions stable. No dust storms expected. Proceed with scheduled surface operations."
+        "recipient": "Marco Quinn",
+        "message": "Requesting collaboration on water recycling tech improvements."
       }
     ],
-    "news_summary": "On Sol 32, Mars colonies benefit from a moderate solar flare increasing energy generation. Early spring weather remains stable with no dust storms. Colonies focus on optimizing solar arrays and maintaining essential water recycling systems to sustain operations.",
+    "news_summary": "Mars enters early spring with a moderate solar boost improving energy collection. Colonies focus on optimizing resources with missions targeting solar panel efficiency and water recycling. Collaborative efforts begin between key factions to enhance sustainability.",
     "event_flavor": {},
-    "last_generated": "2026-04-25T00:22:04.485093",
-    "last_generated_sol": "Sol 32",
+    "last_generated": "2026-04-26T00:23:11.541982",
+    "last_generated_sol": "Sol 33",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
