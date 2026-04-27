@@ -2,13 +2,13 @@
   "day": 34,
   "mars_date": "Sol 34",
   "season": "Early Spring",
-  "solar_activity": 67,
+  "solar_activity": 72,
   "dust_storm_active": false,
   "temperature": -78,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Trading Ship Arrives with Vital Supplies",
-  "last_updated": "2026-04-26T06:36:47.505892",
+  "last_updated": "2026-04-27T00:24:08.013780",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-10T00:19:04.203200",
-      "event": "AI directive: Solar Activity Peaks at 150%"
-    },
-    {
-      "time": "2026-04-10T06:35:08.854233",
-      "event": "Martian day 18 has begun"
-    },
-    {
-      "time": "2026-04-10T12:15:07.001182",
-      "event": "Sol 18: A severe dust storm is active, forcing all solar panels offline for the next 6 hours. Expect reduced power availability during this period."
-    },
     {
       "time": "2026-04-11T00:18:01.024695",
       "event": "AI directive: Persistent Dust Storm Limits Solar Power"
@@ -247,6 +235,10 @@
     {
       "time": "2026-04-27T00:24:02.161873",
       "event": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's global reserves. This influx bolsters our resource pool as Mars Sol 34 progresses under stable conditions."
+    },
+    {
+      "time": "2026-04-27T00:24:08.013780",
+      "event": "AI directive: Solar Activity Boosts Power Output"
     }
   ],
   "market": {
@@ -257,8 +249,8 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Moderate Solar Boost Enhances Energy Output",
-      "summary": "Solar activity has risen to 73%, providing a modest increase in solar panel efficiency across all colonies.",
+      "headline": "Solar Activity Boosts Power Output",
+      "summary": "Solar activity has increased to 67%, providing a modest boost in energy generation across all colonies.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
@@ -266,49 +258,49 @@
           "label": "Solar boost",
           "target": "solar_activity",
           "delta": 5,
-          "before": 73,
-          "after": 78
+          "before": 67,
+          "after": 72
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-26T00:23:11.541982"
+      "generated_at": "2026-04-27T00:24:08.013780"
     },
     "missions": [
       {
-        "title": "Optimize Solar Panel Arrays",
-        "briefing": "With increased solar activity, recalibrating solar panels can maximize energy gain.",
-        "objective": "Adjust and clean solar panels to improve energy collection efficiency.",
-        "reward_hint": "Gain additional energy resources.",
-        "risk": "Minimal risk of minor equipment wear."
+        "title": "Optimize Solar Panel Alignment",
+        "briefing": "With solar activity on the rise, adjusting solar panels can maximize energy capture.",
+        "objective": "Calibrate and realign solar panels to improve energy efficiency by at least 5%.",
+        "reward_hint": "Increased energy reserves for your colony.",
+        "risk": "Minimal risk; routine maintenance with minor exposure to ou\u2026"
       },
       {
-        "title": "Water Recycling System Maintenance",
-        "briefing": "Water reserves are sufficient but conserving is critical during early spring.",
-        "objective": "Inspect and repair water recycling units to prevent leaks and increase efficiency.",
-        "reward_hint": "Increase water resource retention.",
-        "risk": "Risk of temporary water supply disruption."
+        "title": "Water Pipe Inspection",
+        "briefing": "Early spring thaw increases risk of water pipe leaks within habitat systems.",
+        "objective": "Inspect and repair any leaks in water piping to prevent resource loss.",
+        "reward_hint": "Preservation of water supplies and improved habitat stabili\u2026",
+        "risk": "Possible exposure to cold temperatures during external insp\u2026"
       },
       {
-        "title": "Spring Crop Planning",
-        "briefing": "Early spring is ideal for planning agro-domes to boost food production.",
-        "objective": "Design and plant new crops adapted to current temperature conditions.",
-        "reward_hint": "Future increase in food supplies.",
-        "risk": "Crops may fail if conditions worsen unexpectedly."
+        "title": "Prospect for Construction Materials",
+        "briefing": "Materials are limited; scouting nearby outcrops may yield usable resources.",
+        "objective": "Survey local terrain and collect at least 30 units of raw materials.",
+        "reward_hint": "Additional building materials to support colony expansion.",
+        "risk": "Moderate risk due to terrain navigation and dust exposure."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity levels are favorable today; maximize energy harvesting efforts."
+        "message": "Solar activity is currently elevated. Colonies are advised to capitalize on increased energy availability."
       },
       {
         "sender": "Helios Prospecting",
         "recipient": "Marco Quinn",
-        "message": "Requesting collaboration on water recycling tech improvements."
+        "message": "Offering trade: surplus materials for water reserves. Let us know if interested."
       }
     ],
-    "news_summary": "Mars enters early spring with a moderate solar boost improving energy collection. Colonies focus on optimizing resources with missions targeting solar panel efficiency and water recycling. Collaborative efforts begin between key factions to enhance sustainability.",
+    "news_summary": "Mars is experiencing early spring conditions with temperatures averaging -78C. Solar activity has increased, benefiting energy production across all colonies. Resource management remains critical as colonies prepare for the seasonal transition.",
     "event_flavor": {
       "event_key": "traders",
       "headline": "Trading Ship Arrives with Vital Supplies",
@@ -329,8 +321,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-26T00:23:11.541982",
-    "last_generated_sol": "Sol 33",
+    "last_generated": "2026-04-27T00:24:08.013780",
+    "last_generated_sol": "Sol 34",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
