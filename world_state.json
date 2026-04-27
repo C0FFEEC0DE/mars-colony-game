@@ -7,14 +7,14 @@
   "temperature": -31,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Trading Ship Arrives Amid Dust Storm",
   "last_updated": "2026-04-27T06:50:45.208614",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
     "energy": 1080,
-    "food": 800,
-    "materials": 250
+    "food": 900,
+    "materials": 300
   },
   "leaderboard": [
     {
@@ -247,6 +247,10 @@
     {
       "time": "2026-04-27T06:50:45.251027",
       "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
+    },
+    {
+      "time": "2026-04-27T12:29:39.692110",
+      "event": "Despite the ongoing dust storm, a trading ship from Earth has docked successfully, delivering +100 units of food and +50 units of materials to our global reserves."
     }
   ],
   "market": {
@@ -309,7 +313,26 @@
       }
     ],
     "news_summary": "Mars is experiencing early spring conditions with temperatures averaging -78C. Solar activity has increased, benefiting energy production across all colonies. Resource management remains critical as colonies prepare for the seasonal transition.",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "traders",
+      "headline": "Trading Ship Arrives Amid Dust Storm",
+      "broadcast": "Despite the ongoing dust storm, a trading ship from Earth has docked successfully, delivering +100 units of food and +50 units of materials to our global reserves.",
+      "source": "github_models",
+      "generated_at": "2026-04-27T12:29:39.692098",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-27T00:24:08.013780",
     "last_generated_sol": "Sol 34",
     "last_diagnostics": {
