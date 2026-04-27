@@ -1,14 +1,14 @@
 {
-  "day": 34,
-  "mars_date": "Sol 34",
+  "day": 35,
+  "mars_date": "Sol 35",
   "season": "Early Spring",
-  "solar_activity": 72,
-  "dust_storm_active": false,
-  "temperature": -78,
+  "solar_activity": 100,
+  "dust_storm_active": true,
+  "temperature": -31,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Trading Ship Arrives with Vital Supplies",
-  "last_updated": "2026-04-27T00:24:08.013780",
+  "current_event": null,
+  "last_updated": "2026-04-27T06:50:45.208614",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 3645,
+      "score": 3630,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 3275,
+      "score": 3262,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 2658,
+      "score": 2627,
       "colonists": 1,
       "buildings": 2
     }
@@ -239,6 +239,14 @@
     {
       "time": "2026-04-27T00:24:08.013780",
       "event": "AI directive: Solar Activity Boosts Power Output"
+    },
+    {
+      "time": "2026-04-27T06:50:45.208632",
+      "event": "Martian day 35 has begun"
+    },
+    {
+      "time": "2026-04-27T06:50:45.251027",
+      "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
     }
   ],
   "market": {
@@ -301,26 +309,7 @@
       }
     ],
     "news_summary": "Mars is experiencing early spring conditions with temperatures averaging -78C. Solar activity has increased, benefiting energy production across all colonies. Resource management remains critical as colonies prepare for the seasonal transition.",
-    "event_flavor": {
-      "event_key": "traders",
-      "headline": "Trading Ship Arrives with Vital Supplies",
-      "broadcast": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's global reserves. This influx bolsters our resource pool as Mars Sol 34 progresses under stable conditions.",
-      "source": "github_models",
-      "generated_at": "2026-04-27T00:24:02.161864",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-04-27T00:24:08.013780",
     "last_generated_sol": "Sol 34",
     "last_diagnostics": {
