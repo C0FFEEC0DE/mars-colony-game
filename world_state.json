@@ -13,8 +13,8 @@
     "oxygen": 1000,
     "water": 545,
     "energy": 1080,
-    "food": 900,
-    "materials": 300
+    "food": 1000,
+    "materials": 350
   },
   "leaderboard": [
     {
@@ -251,6 +251,10 @@
     {
       "time": "2026-04-27T12:29:39.692110",
       "event": "Despite the ongoing dust storm, a trading ship from Earth has docked successfully, delivering +100 units of food and +50 units of materials to our global reserves."
+    },
+    {
+      "time": "2026-04-28T00:27:05.562663",
+      "event": "On Sol 35, despite active dust storm and -31C temperatures, the Earth trading ship docked successfully, delivering +100 food and +50 materials to the colony reserves."
     }
   ],
   "market": {
@@ -316,9 +320,9 @@
     "event_flavor": {
       "event_key": "traders",
       "headline": "Trading Ship Arrives Amid Dust Storm",
-      "broadcast": "Despite the ongoing dust storm, a trading ship from Earth has docked successfully, delivering +100 units of food and +50 units of materials to our global reserves.",
+      "broadcast": "On Sol 35, despite active dust storm and -31C temperatures, the Earth trading ship docked successfully, delivering +100 food and +50 materials to the colony reserves.",
       "source": "github_models",
-      "generated_at": "2026-04-27T12:29:39.692098",
+      "generated_at": "2026-04-28T00:27:05.562644",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
