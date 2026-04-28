@@ -8,61 +8,63 @@
 ## LIVE WORLD SNAPSHOT
 
 <!-- WORLD_SUMMARY:START -->
-_Auto-updated daily. Last world update: 2026-04-27T00:24:08.013780_
+_Auto-updated daily. Last world update: 2026-04-28T00:27:13.721844_
 
 ```text
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
-║ [SOL] Sol 34 | [SEASON] Early      ║  ║ Solar Activity Boosts Power Output ║
-║ Spring                             ║  ║ Solar activity has increased to    ║
-║ [TEMP] -78C | [SUN] 72% | [STORM]  ║  ║ 67%, providing a modest boost in   ║
-║ NO                                 ║  ║ energy generation across all       ║
-║ [EVENT] Trading Ship Arrives with  ║  ║ colonies.                          ║
-║ Vital Supplies                     ║  ║ EFFECT solar_boost |               ║
-║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ solar_activity +5                  ║
-║ [O2] 1000 | [H2O] 545 | [E] 1080   ║  ╚════════════════════════════════════╝
-║ [FOOD] 800 | [MAT] 250             ║                                        
+║ [SOL] Sol 35 | [SEASON] Early      ║  ║ Ongoing Dust Storm Limits Solar    ║
+║ Spring                             ║  ║ Efficiency                         ║
+║ [TEMP] -31C | [SUN] 100% | [STORM] ║  ║ The persistent dust storm          ║
+║ YES                                ║  ║ continues to reduce solar panel    ║
+║ [EVENT] Trading Ship Arrives Amid  ║  ║ output despite peak solar          ║
+║ Dust Storm                         ║  ║ activity, straining energy         ║
+║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ reserves.                          ║
+║ [O2] 1000 | [H2O] 545 | [E] 1100   ║  ║ EFFECT energy_surge | energy +20   ║
+║ [FOOD] 1000 | [MAT] 350            ║  ╚════════════════════════════════════╝
 ║ [MKT] O2 0 H2O 0 F 0 M 0           ║                                        
-║ [AI] Solar Activity Boosts Power   ║                                        
-║ Output | solar_activity +5         ║                                        
+║ [AI] Ongoing Dust Storm Limits     ║                                        
+║ Solar Efficiency | energy +20      ║                                        
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
-║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Panel Alignment  ║
-║    Dustline Agro | P1 B3 | S3645   ║  ║    Calibrate and realign solar…    ║
-║ 2. Zoya Kade                       ║  ║ 2. Water Pipe Inspection           ║
-║    Ares Systems | P1 B4 | S3275    ║  ║    Inspect and repair any leaks…   ║
-║ 3. Irina Vale                      ║  ║ 3. Prospect for Construction…      ║
-║    Helios… | P1 B2 | S2658         ║  ║    Survey local terrain and…       ║
+║ 1. Marco Quinn                     ║  ║ 1. Dust Storm Energy Optimization  ║
+║    Dustline Agro | P1 B3 | S3621   ║  ║    Reduce nonessential energy use… ║
+║ 2. Zoya Kade                       ║  ║ 2. Water Recovery from…            ║
+║    Ares Systems | P1 B4 | S3271    ║  ║    Deploy and maintain…            ║
+║ 3. Irina Vale                      ║  ║ 3. Oxygen Recycling System…        ║
+║    Helios… | P1 B2 | S2627         ║  ║    Inspect and repair oxygen…      ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
-║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Solar       ║
-║ WATER     545                      ║  ║ activity is currently…             ║
-║ ENERGY    1080                     ║  ║ Helios… -> Marco… | Offering       ║
-║ FOOD      800                      ║  ║ trade: surplus materials…          ║
-║ MATERIALS 250                      ║  ╚════════════════════════════════════╝
-╚════════════════════════════════════╝                                        
+║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Dust storm  ║
+║ WATER     545                      ║  ║ expected to persist…               ║
+║ ENERGY    1100                     ║  ║ Helios… -> Mars… | Requesting      ║
+║ FOOD      1000                     ║  ║ assistance with oxygen…            ║
+║ MATERIALS 350                      ║  ║ Ares Systems -> all… | Sharing     ║
+╚════════════════════════════════════╝  ║ updated protocols for…             ║
+                                        ╚════════════════════════════════════╝
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Mars is experiencing early spring  ║  ║ 00:24 | AI directive: Solar…       ║
-║ conditions with temperatures       ║  ║ 00:24 | A trading vessel from      ║
-║ averaging -78C. Solar activity has ║  ║ Earth…                             ║
-║ increased, benefiting energy       ║  ║ 06:36 | Martian day 34 has begun   ║
-║ production across all colonies.    ║  ║ 00:23 | AI directive: Moderate…    ║
-║ Resource management remains        ║  ║ 06:29 | Martian day 33 has begun   ║
-║ critical as colonies prepare for   ║  ╚════════════════════════════════════╝
-║ the seasonal transition.           ║                                        
-║ A trading vessel from Earth has    ║                                        
-║ docked, delivering 100 units of    ║                                        
-║ food and 50 units of materials to  ║                                        
-║ the colony's global reserves. This ║                                        
-║ influx bolsters our resource pool  ║                                        
-║ as Mars Sol 34 progresses under    ║                                        
-║ stable conditions.                 ║                                        
+║ Sol 35 on Mars sees a persistent   ║  ║ 00:27 | AI directive: Ongoing      ║
+║ dust storm continuing to hamper    ║  ║ Dust…                              ║
+║ solar energy production despite    ║  ║ 00:27 | On Sol 35, despite active… ║
+║ peak solar activity. Colonies face ║  ║ 12:29 | Despite the ongoing dust…  ║
+║ challenges in maintaining energy   ║  ║ 06:50 | 🌪️ Dust storm damaged…     ║
+║ and water supplies, prompting      ║  ║ 06:50 | Martian day 35 has begun   ║
+║ urgent missions focused on         ║  ╚════════════════════════════════════╝
+║ optimization and resource          ║                                        
+║ harvesting. Communication betwe…   ║                                        
+║ On Sol 35, despite active dust     ║                                        
+║ storm and -31C temperatures, the   ║                                        
+║ Earth trading ship docked          ║                                        
+║ successfully, delivering +100 food ║                                        
+║ and +50 materials to the colony    ║                                        
+║ reserves.                          ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
