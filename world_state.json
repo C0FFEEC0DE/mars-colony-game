@@ -8,11 +8,11 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Trading Ship Arrives Amid Dust Storm",
-  "last_updated": "2026-04-27T06:50:45.208614",
+  "last_updated": "2026-04-28T00:27:13.721844",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
-    "energy": 1080,
+    "energy": 1100,
     "food": 1000,
     "materials": 350
   },
@@ -40,26 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-11T00:18:01.024695",
-      "event": "AI directive: Persistent Dust Storm Limits Solar Power"
-    },
-    {
-      "time": "2026-04-11T06:21:23.705815",
-      "event": "Martian day 19 has begun"
-    },
-    {
-      "time": "2026-04-11T12:08:59.877409",
-      "event": "Solar activity spiked to 150%, triggering a massive flare. All personnel must take immediate radiation shelter; energy output increased by 50% for the next cycle."
-    },
-    {
-      "time": "2026-04-12T00:20:18.865288",
-      "event": "AI directive: Unexpected Solar Boost Increases Energy Yield"
-    },
-    {
-      "time": "2026-04-12T06:31:16.914677",
-      "event": "Martian day 20 has begun"
-    },
     {
       "time": "2026-04-12T12:10:03.857759",
       "event": "A trading ship from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's global reserves. Operations proceed smoothly under stable conditions on Sol 20."
@@ -255,6 +235,10 @@
     {
       "time": "2026-04-28T00:27:05.562663",
       "event": "On Sol 35, despite active dust storm and -31C temperatures, the Earth trading ship docked successfully, delivering +100 food and +50 materials to the colony reserves."
+    },
+    {
+      "time": "2026-04-28T00:27:13.721844",
+      "event": "AI directive: Ongoing Dust Storm Limits Solar Efficiency"
     }
   ],
   "market": {
@@ -265,58 +249,63 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Activity Boosts Power Output",
-      "summary": "Solar activity has increased to 67%, providing a modest boost in energy generation across all colonies.",
+      "headline": "Ongoing Dust Storm Limits Solar Efficiency",
+      "summary": "The persistent dust storm continues to reduce solar panel output despite peak solar activity, straining energy reserves.",
       "effect": {
-        "type": "solar_boost",
-        "magnitude": 5,
+        "type": "energy_surge",
+        "magnitude": 20,
         "result": {
-          "label": "Solar boost",
-          "target": "solar_activity",
-          "delta": 5,
-          "before": 67,
-          "after": 72
+          "label": "Grid surge",
+          "target": "energy",
+          "delta": 20,
+          "before": 1080,
+          "after": 1100
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-27T00:24:08.013780"
+      "generated_at": "2026-04-28T00:27:13.721844"
     },
     "missions": [
       {
-        "title": "Optimize Solar Panel Alignment",
-        "briefing": "With solar activity on the rise, adjusting solar panels can maximize energy capture.",
-        "objective": "Calibrate and realign solar panels to improve energy efficiency by at least 5%.",
-        "reward_hint": "Increased energy reserves for your colony.",
-        "risk": "Minimal risk; routine maintenance with minor exposure to ou\u2026"
+        "title": "Dust Storm Energy Optimization",
+        "briefing": "The dust storm is reducing solar panel efficiency. Optimize energy consumption and reroute power to critical systems.",
+        "objective": "Reduce nonessential energy use by 20% for 3 sols",
+        "reward_hint": "Energy reserves boost",
+        "risk": "System failures from energy rationing"
       },
       {
-        "title": "Water Pipe Inspection",
-        "briefing": "Early spring thaw increases risk of water pipe leaks within habitat systems.",
-        "objective": "Inspect and repair any leaks in water piping to prevent resource loss.",
-        "reward_hint": "Preservation of water supplies and improved habitat stabili\u2026",
-        "risk": "Possible exposure to cold temperatures during external insp\u2026"
+        "title": "Water Recovery from Atmospheric Moisture",
+        "briefing": "With water reserves limited and dust storm reducing supply runs, capture moisture from the atmosphere.",
+        "objective": "Deploy and maintain atmospheric water capture units for 2 sols",
+        "reward_hint": "Water resource increase",
+        "risk": "Equipment damage from dust"
       },
       {
-        "title": "Prospect for Construction Materials",
-        "briefing": "Materials are limited; scouting nearby outcrops may yield usable resources.",
-        "objective": "Survey local terrain and collect at least 30 units of raw materials.",
-        "reward_hint": "Additional building materials to support colony expansion.",
-        "risk": "Moderate risk due to terrain navigation and dust exposure."
+        "title": "Oxygen Recycling System Maintenance",
+        "briefing": "Oxygen supplies are stable but low in some colonies. Perform maintenance to prevent leaks and improve system efficiency.",
+        "objective": "Inspect and repair oxygen recycling units",
+        "reward_hint": "Oxygen supply stabilization",
+        "risk": "Exposure to dust and cold"
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity is currently elevated. Colonies are advised to capitalize on increased energy availability."
+        "message": "Dust storm expected to persist for several sols. Prioritize energy conservation and equipment maintenance."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Marco Quinn",
-        "message": "Offering trade: surplus materials for water reserves. Let us know if interested."
+        "recipient": "Mars Control",
+        "message": "Requesting assistance with oxygen system maintenance due to low reserves."
+      },
+      {
+        "sender": "Ares Systems",
+        "recipient": "all colonies",
+        "message": "Sharing updated protocols for atmospheric water capture under dust storm conditions."
       }
     ],
-    "news_summary": "Mars is experiencing early spring conditions with temperatures averaging -78C. Solar activity has increased, benefiting energy production across all colonies. Resource management remains critical as colonies prepare for the seasonal transition.",
+    "news_summary": "Sol 35 on Mars sees a persistent dust storm continuing to hamper solar energy production despite peak solar activity. Colonies face challenges in maintaining energy and water supplies, prompting urgent missions focused on optimization and resource harvesting. Communication betwe\u2026",
     "event_flavor": {
       "event_key": "traders",
       "headline": "Trading Ship Arrives Amid Dust Storm",
@@ -337,8 +326,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-27T00:24:08.013780",
-    "last_generated_sol": "Sol 34",
+    "last_generated": "2026-04-28T00:27:13.721844",
+    "last_generated_sol": "Sol 35",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
