@@ -1,14 +1,14 @@
 {
-  "day": 36,
-  "mars_date": "Sol 36",
+  "day": 37,
+  "mars_date": "Sol 37",
   "season": "Early Spring",
-  "solar_activity": 150,
+  "solar_activity": 61,
   "dust_storm_active": false,
-  "temperature": -54,
+  "temperature": -62,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Massive Solar Flare Detected, Radiation Risk Up",
-  "last_updated": "2026-04-29T00:28:30.965253",
+  "current_event": null,
+  "last_updated": "2026-04-29T06:47:52.562543",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 3645,
+      "score": 3672,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 3319,
+      "score": 3352,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 2663,
+      "score": 2693,
       "colonists": 1,
       "buildings": 2
     }
@@ -239,6 +239,10 @@
     {
       "time": "2026-04-29T00:28:30.965253",
       "event": "AI directive: Solar Flare Boosts Energy Output"
+    },
+    {
+      "time": "2026-04-29T06:47:52.562556",
+      "event": "Martian day 37 has begun"
     }
   ],
   "market": {
@@ -301,26 +305,7 @@
       }
     ],
     "news_summary": "On Sol 36, Mars experiences a solar flare that temporarily boosts energy production, aiding all colonies. Early Spring conditions remain cold but stable, allowing maintenance and exploration missions. Colonies are focusing on maximizing energy efficiency and scouting material re\u2026",
-    "event_flavor": {
-      "event_key": "solar_flare",
-      "headline": "Massive Solar Flare Detected, Radiation Risk Up",
-      "broadcast": "A massive solar flare has increased energy output by 50% for the next cycle. All crew advised to take shelter to minimize radiation exposure.",
-      "source": "github_models",
-      "generated_at": "2026-04-29T00:28:23.656633",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-04-29T00:28:30.965253",
     "last_generated_sol": "Sol 36",
     "last_diagnostics": {
