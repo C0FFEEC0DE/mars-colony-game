@@ -2,12 +2,12 @@
   "day": 36,
   "mars_date": "Sol 36",
   "season": "Early Spring",
-  "solar_activity": 63,
+  "solar_activity": 150,
   "dust_storm_active": false,
   "temperature": -54,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Massive Solar Flare Detected, Radiation Risk Up",
   "last_updated": "2026-04-28T06:52:29.235904",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-04-28T06:52:29.235924",
       "event": "Martian day 36 has begun"
+    },
+    {
+      "time": "2026-04-29T00:28:23.656644",
+      "event": "A massive solar flare has increased energy output by 50% for the next cycle. All crew advised to take shelter to minimize radiation exposure."
     }
   ],
   "market": {
@@ -310,7 +314,26 @@
       }
     ],
     "news_summary": "Sol 35 on Mars sees a persistent dust storm continuing to hamper solar energy production despite peak solar activity. Colonies face challenges in maintaining energy and water supplies, prompting urgent missions focused on optimization and resource harvesting. Communication betwe\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "solar_flare",
+      "headline": "Massive Solar Flare Detected, Radiation Risk Up",
+      "broadcast": "A massive solar flare has increased energy output by 50% for the next cycle. All crew advised to take shelter to minimize radiation exposure.",
+      "source": "github_models",
+      "generated_at": "2026-04-29T00:28:23.656633",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-28T00:27:13.721844",
     "last_generated_sol": "Sol 35",
     "last_diagnostics": {
