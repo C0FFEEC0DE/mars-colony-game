@@ -7,14 +7,14 @@
   "temperature": -62,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Trading Ship Arrives with Vital Supplies",
   "last_updated": "2026-04-29T06:47:52.562543",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
     "energy": 1100,
-    "food": 1000,
-    "materials": 350
+    "food": 1100,
+    "materials": 400
   },
   "leaderboard": [
     {
@@ -243,6 +243,10 @@
     {
       "time": "2026-04-29T06:47:52.562556",
       "event": "Martian day 37 has begun"
+    },
+    {
+      "time": "2026-04-29T12:30:09.892333",
+      "event": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's global reserves. This shipment boosts our resource stockpiles amid current Martian conditions."
     }
   ],
   "market": {
@@ -305,7 +309,26 @@
       }
     ],
     "news_summary": "On Sol 36, Mars experiences a solar flare that temporarily boosts energy production, aiding all colonies. Early Spring conditions remain cold but stable, allowing maintenance and exploration missions. Colonies are focusing on maximizing energy efficiency and scouting material re\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "traders",
+      "headline": "Trading Ship Arrives with Vital Supplies",
+      "broadcast": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's global reserves. This shipment boosts our resource stockpiles amid current Martian conditions.",
+      "source": "github_models",
+      "generated_at": "2026-04-29T12:30:09.892323",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-04-29T00:28:30.965253",
     "last_generated_sol": "Sol 36",
     "last_diagnostics": {
