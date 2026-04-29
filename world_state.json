@@ -8,7 +8,7 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Massive Solar Flare Detected, Radiation Risk Up",
-  "last_updated": "2026-04-28T06:52:29.235904",
+  "last_updated": "2026-04-29T00:28:30.965253",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-12T12:10:03.857759",
-      "event": "A trading ship from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's global reserves. Operations proceed smoothly under stable conditions on Sol 20."
-    },
-    {
-      "time": "2026-04-13T00:21:11.986297",
-      "event": "AI directive: Early Spring Solar Boost"
-    },
-    {
-      "time": "2026-04-13T06:41:43.920201",
-      "event": "Martian day 21 has begun"
-    },
     {
       "time": "2026-04-13T12:20:50.788651",
       "event": "A severe sandstorm is currently active, forcing all solar panels offline for the next 6 hours. Expect reduced power availability until clearance."
@@ -247,6 +235,10 @@
     {
       "time": "2026-04-29T00:28:23.656644",
       "event": "A massive solar flare has increased energy output by 50% for the next cycle. All crew advised to take shelter to minimize radiation exposure."
+    },
+    {
+      "time": "2026-04-29T00:28:30.965253",
+      "event": "AI directive: Solar Flare Boosts Energy Output"
     }
   ],
   "market": {
@@ -257,63 +249,58 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Ongoing Dust Storm Limits Solar Efficiency",
-      "summary": "The persistent dust storm continues to reduce solar panel output despite peak solar activity, straining energy reserves.",
+      "headline": "Solar Flare Boosts Energy Output",
+      "summary": "A surge in solar activity has increased solar panel efficiency across Mars, providing a temporary energy boost for all colonies.",
       "effect": {
-        "type": "energy_surge",
-        "magnitude": 20,
+        "type": "solar_boost",
+        "magnitude": 5,
         "result": {
-          "label": "Grid surge",
-          "target": "energy",
-          "delta": 20,
-          "before": 1080,
-          "after": 1100
+          "label": "Solar boost",
+          "target": "solar_activity",
+          "delta": 0,
+          "before": 150,
+          "after": 150
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-28T00:27:13.721844"
+      "generated_at": "2026-04-29T00:28:30.965253"
     },
     "missions": [
       {
-        "title": "Dust Storm Energy Optimization",
-        "briefing": "The dust storm is reducing solar panel efficiency. Optimize energy consumption and reroute power to critical systems.",
-        "objective": "Reduce nonessential energy use by 20% for 3 sols",
-        "reward_hint": "Energy reserves boost",
-        "risk": "System failures from energy rationing"
+        "title": "Optimize Solar Array Output",
+        "briefing": "With the solar flare increasing energy availability, adjust and recalibrate your solar arrays to maximize energy intake.",
+        "objective": "Reconfigure solar panels and monitor output for 2 sols.",
+        "reward_hint": "Increased energy reserves",
+        "risk": "Potential overload of battery systems"
       },
       {
-        "title": "Water Recovery from Atmospheric Moisture",
-        "briefing": "With water reserves limited and dust storm reducing supply runs, capture moisture from the atmosphere.",
-        "objective": "Deploy and maintain atmospheric water capture units for 2 sols",
-        "reward_hint": "Water resource increase",
-        "risk": "Equipment damage from dust"
+        "title": "Water Recycling System Maintenance",
+        "briefing": "Early Spring temperatures are still harsh. Ensure water recycling systems are operating efficiently to conserve water.",
+        "objective": "Inspect and repair water recycling units to prevent leaks and inefficiency.",
+        "reward_hint": "Improved water retention",
+        "risk": "Minor exposure to cold during repairs"
       },
       {
-        "title": "Oxygen Recycling System Maintenance",
-        "briefing": "Oxygen supplies are stable but low in some colonies. Perform maintenance to prevent leaks and improve system efficiency.",
-        "objective": "Inspect and repair oxygen recycling units",
-        "reward_hint": "Oxygen supply stabilization",
-        "risk": "Exposure to dust and cold"
+        "title": "Prospect for Material Deposits",
+        "briefing": "Early Spring conditions allow for safe scouting. Locate and map new material deposits near the colony perimeter.",
+        "objective": "Survey designated sectors and report material findings.",
+        "reward_hint": "New material resource locations",
+        "risk": "Dust exposure and rough terrain"
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Dust storm expected to persist for several sols. Prioritize energy conservation and equipment maintenance."
+        "message": "Solar flare activity detected; expect temporary energy surges. Optimize power systems accordingly."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Mars Control",
-        "message": "Requesting assistance with oxygen system maintenance due to low reserves."
-      },
-      {
-        "sender": "Ares Systems",
         "recipient": "all colonies",
-        "message": "Sharing updated protocols for atmospheric water capture under dust storm conditions."
+        "message": "Sharing data on promising new material deposits near Sol 36 coordinates."
       }
     ],
-    "news_summary": "Sol 35 on Mars sees a persistent dust storm continuing to hamper solar energy production despite peak solar activity. Colonies face challenges in maintaining energy and water supplies, prompting urgent missions focused on optimization and resource harvesting. Communication betwe\u2026",
+    "news_summary": "On Sol 36, Mars experiences a solar flare that temporarily boosts energy production, aiding all colonies. Early Spring conditions remain cold but stable, allowing maintenance and exploration missions. Colonies are focusing on maximizing energy efficiency and scouting material re\u2026",
     "event_flavor": {
       "event_key": "solar_flare",
       "headline": "Massive Solar Flare Detected, Radiation Risk Up",
@@ -334,8 +321,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-28T00:27:13.721844",
-    "last_generated_sol": "Sol 35",
+    "last_generated": "2026-04-29T00:28:30.965253",
+    "last_generated_sol": "Sol 36",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
