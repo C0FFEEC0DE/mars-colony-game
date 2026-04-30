@@ -2,13 +2,13 @@
   "day": 37,
   "mars_date": "Sol 37",
   "season": "Early Spring",
-  "solar_activity": 61,
+  "solar_activity": 66,
   "dust_storm_active": false,
   "temperature": -62,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "New subterranean caverns mapped beneath the colony",
-  "last_updated": "2026-04-29T06:47:52.562543",
+  "last_updated": "2026-04-30T00:28:16.833176",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,22 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-13T12:20:50.788651",
-      "event": "A severe sandstorm is currently active, forcing all solar panels offline for the next 6 hours. Expect reduced power availability until clearance."
-    },
-    {
-      "time": "2026-04-14T00:24:04.103833",
-      "event": "On Sol 21, analysis detected unknown bacterial presence in Martian soil amid ongoing dust storm. Sample integrity maintained; further study required."
-    },
-    {
-      "time": "2026-04-14T00:24:10.586016",
-      "event": "AI directive: Persistent Dust Storm Limits Solar Output"
-    },
-    {
-      "time": "2026-04-14T06:35:02.850413",
-      "event": "Martian day 22 has begun"
-    },
     {
       "time": "2026-04-14T12:19:09.747521",
       "event": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the global reserves. Colony stores replenished as operations continue under stable conditions."
@@ -251,6 +235,10 @@
     {
       "time": "2026-04-30T00:28:10.457252",
       "event": "Exploration teams have located underground caverns near the habitat perimeter. These formations may provide stable thermal conditions for future expansion."
+    },
+    {
+      "time": "2026-04-30T00:28:16.833176",
+      "event": "AI directive: Moderate Solar Boost Enhances Energy Output"
     }
   ],
   "market": {
@@ -261,58 +249,51 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Flare Boosts Energy Output",
-      "summary": "A surge in solar activity has increased solar panel efficiency across Mars, providing a temporary energy boost for all colonies.",
+      "headline": "Moderate Solar Boost Enhances Energy Output",
+      "summary": "Solar activity has increased to 61%, providing a mild boost to solar panel efficiency across Mars colonies.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
         "result": {
           "label": "Solar boost",
           "target": "solar_activity",
-          "delta": 0,
-          "before": 150,
-          "after": 150
+          "delta": 5,
+          "before": 61,
+          "after": 66
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-29T00:28:30.965253"
+      "generated_at": "2026-04-30T00:28:16.833176"
     },
     "missions": [
       {
-        "title": "Optimize Solar Array Output",
-        "briefing": "With the solar flare increasing energy availability, adjust and recalibrate your solar arrays to maximize energy intake.",
-        "objective": "Reconfigure solar panels and monitor output for 2 sols.",
-        "reward_hint": "Increased energy reserves",
-        "risk": "Potential overload of battery systems"
+        "title": "Optimize Solar Arrays",
+        "briefing": "With the recent solar boost, your colony can maximize energy collection by fine-tuning solar arrays.",
+        "objective": "Adjust and calibrate solar panels to increase energy intake by 15% within 24 hours.",
+        "reward_hint": "Improved daily energy yield",
+        "risk": "Potential minor equipment wear during adjustments"
       },
       {
         "title": "Water Recycling System Maintenance",
-        "briefing": "Early Spring temperatures are still harsh. Ensure water recycling systems are operating efficiently to conserve water.",
-        "objective": "Inspect and repair water recycling units to prevent leaks and inefficiency.",
-        "reward_hint": "Improved water retention",
-        "risk": "Minor exposure to cold during repairs"
-      },
-      {
-        "title": "Prospect for Material Deposits",
-        "briefing": "Early Spring conditions allow for safe scouting. Locate and map new material deposits near the colony perimeter.",
-        "objective": "Survey designated sectors and report material findings.",
-        "reward_hint": "New material resource locations",
-        "risk": "Dust exposure and rough terrain"
+        "briefing": "Early spring temperatures still cause water scarcity; maintaining recycling systems is critical.",
+        "objective": "Inspect and repair water recycling units to secure stable water supply for 3 sols.",
+        "reward_hint": "Steady water availability",
+        "risk": "Temporary water supply disruption during repairs"
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar flare activity detected; expect temporary energy surges. Optimize power systems accordingly."
+        "message": "Solar activity is trending upward; recommend optimizing energy systems to capitalize on increased solar influx."
       },
       {
         "sender": "Helios Prospecting",
         "recipient": "all colonies",
-        "message": "Sharing data on promising new material deposits near Sol 36 coordinates."
+        "message": "Sharing data on effective water recycling methods during early spring conditions to improve colony sustainability."
       }
     ],
-    "news_summary": "On Sol 36, Mars experiences a solar flare that temporarily boosts energy production, aiding all colonies. Early Spring conditions remain cold but stable, allowing maintenance and exploration missions. Colonies are focusing on maximizing energy efficiency and scouting material re\u2026",
+    "news_summary": "On Sol 37, Mars colonies experience a moderate solar boost amid early spring's cold temperatures. Energy systems are primed for optimization while water recycling remains essential due to ongoing scarcity. Colonists focus on maintaining critical infrastructure to sustain their r\u2026",
     "event_flavor": {
       "event_key": "discovery",
       "headline": "New subterranean caverns mapped beneath the colony",
@@ -333,8 +314,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-29T00:28:30.965253",
-    "last_generated_sol": "Sol 36",
+    "last_generated": "2026-04-30T00:28:16.833176",
+    "last_generated_sol": "Sol 37",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
