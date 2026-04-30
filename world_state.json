@@ -7,7 +7,7 @@
   "temperature": -62,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Trading Ship Arrives with Vital Supplies",
+  "current_event": "New subterranean caverns mapped beneath the colony",
   "last_updated": "2026-04-29T06:47:52.562543",
   "global_resources": {
     "oxygen": 1000,
@@ -247,6 +247,10 @@
     {
       "time": "2026-04-29T12:30:09.892333",
       "event": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's global reserves. This shipment boosts our resource stockpiles amid current Martian conditions."
+    },
+    {
+      "time": "2026-04-30T00:28:10.457252",
+      "event": "Exploration teams have located underground caverns near the habitat perimeter. These formations may provide stable thermal conditions for future expansion."
     }
   ],
   "market": {
@@ -310,11 +314,11 @@
     ],
     "news_summary": "On Sol 36, Mars experiences a solar flare that temporarily boosts energy production, aiding all colonies. Early Spring conditions remain cold but stable, allowing maintenance and exploration missions. Colonies are focusing on maximizing energy efficiency and scouting material re\u2026",
     "event_flavor": {
-      "event_key": "traders",
-      "headline": "Trading Ship Arrives with Vital Supplies",
-      "broadcast": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's global reserves. This shipment boosts our resource stockpiles amid current Martian conditions.",
+      "event_key": "discovery",
+      "headline": "New subterranean caverns mapped beneath the colony",
+      "broadcast": "Exploration teams have located underground caverns near the habitat perimeter. These formations may provide stable thermal conditions for future expansion.",
       "source": "github_models",
-      "generated_at": "2026-04-29T12:30:09.892323",
+      "generated_at": "2026-04-30T00:28:10.457237",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
