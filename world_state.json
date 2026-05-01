@@ -1,14 +1,14 @@
 {
-  "day": 38,
-  "mars_date": "Sol 38",
+  "day": 39,
+  "mars_date": "Sol 39",
   "season": "Early Spring",
-  "solar_activity": 150,
+  "solar_activity": 69,
   "dust_storm_active": false,
-  "temperature": -76,
+  "temperature": -52,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Massive Solar Flare Detected",
-  "last_updated": "2026-05-01T00:29:38.715857",
+  "current_event": null,
+  "last_updated": "2026-05-01T06:52:52.340508",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 3777,
+      "score": 3804,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 3499,
+      "score": 3532,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 2819,
+      "score": 2849,
       "colonists": 1,
       "buildings": 2
     }
@@ -239,6 +239,10 @@
     {
       "time": "2026-05-01T00:29:38.715857",
       "event": "AI directive: Solar Activity Peaks"
+    },
+    {
+      "time": "2026-05-01T06:52:52.340532",
+      "event": "Martian day 39 has begun"
     }
   ],
   "market": {
@@ -301,26 +305,7 @@
       }
     ],
     "news_summary": "On Sol 38 during early spring, Mars experiences a peak in solar activity enhancing energy generation capabilities. Colonies focus on optimizing solar panel arrays and maintaining water recycling systems amid cold temperatures. Material salvage missions are underway to sustain co\u2026",
-    "event_flavor": {
-      "event_key": "solar_flare",
-      "headline": "Massive Solar Flare Detected",
-      "broadcast": "A powerful solar flare has increased radiation levels by 50% for the next cycle. All crew must take immediate shelter to minimize exposure.",
-      "source": "github_models",
-      "generated_at": "2026-04-30T12:30:14.017201",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-05-01T00:29:38.715857",
     "last_generated_sol": "Sol 38",
     "last_diagnostics": {
