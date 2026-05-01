@@ -8,7 +8,7 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Massive Solar Flare Detected",
-  "last_updated": "2026-04-30T06:50:47.781102",
+  "last_updated": "2026-05-01T00:29:38.715857",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-14T12:19:09.747521",
-      "event": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the global reserves. Colony stores replenished as operations continue under stable conditions."
-    },
-    {
-      "time": "2026-04-15T00:24:21.495801",
-      "event": "On Sol 22, a meteor shower enabled Irina Vale and Marco Quinn to salvage 8 and 19 additional materials respectively, enhancing our resource stockpile amid stable conditions."
-    },
-    {
-      "time": "2026-04-15T00:24:27.553456",
-      "event": "AI directive: Mild Solar Boost Increases Power Output"
-    },
     {
       "time": "2026-04-15T06:35:28.707086",
       "event": "Martian day 23 has begun"
@@ -247,6 +235,10 @@
     {
       "time": "2026-04-30T12:30:14.017212",
       "event": "A powerful solar flare has increased radiation levels by 50% for the next cycle. All crew must take immediate shelter to minimize exposure."
+    },
+    {
+      "time": "2026-05-01T00:29:38.715857",
+      "event": "AI directive: Solar Activity Peaks"
     }
   ],
   "market": {
@@ -257,51 +249,58 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Moderate Solar Boost Enhances Energy Output",
-      "summary": "Solar activity has increased to 61%, providing a mild boost to solar panel efficiency across Mars colonies.",
+      "headline": "Solar Activity Peaks",
+      "summary": "Solar activity has increased to 150%, providing enhanced energy generation potential across Mars habitats.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
         "result": {
           "label": "Solar boost",
           "target": "solar_activity",
-          "delta": 5,
-          "before": 61,
-          "after": 66
+          "delta": 0,
+          "before": 150,
+          "after": 150
         }
       },
       "source": "github_models",
-      "generated_at": "2026-04-30T00:28:16.833176"
+      "generated_at": "2026-05-01T00:29:38.715857"
     },
     "missions": [
       {
-        "title": "Optimize Solar Arrays",
-        "briefing": "With the recent solar boost, your colony can maximize energy collection by fine-tuning solar arrays.",
-        "objective": "Adjust and calibrate solar panels to increase energy intake by 15% within 24 hours.",
-        "reward_hint": "Improved daily energy yield",
-        "risk": "Potential minor equipment wear during adjustments"
+        "title": "Optimize Solar Panels",
+        "briefing": "With increased solar activity, your colony can maximize energy intake by recalibrating solar arrays.",
+        "objective": "Adjust and optimize solar panel alignment for maximum energy capture.",
+        "reward_hint": "Boost colony energy reserves.",
+        "risk": "Minimal risk of equipment wear during adjustments."
       },
       {
-        "title": "Water Recycling System Maintenance",
-        "briefing": "Early spring temperatures still cause water scarcity; maintaining recycling systems is critical.",
-        "objective": "Inspect and repair water recycling units to secure stable water supply for 3 sols.",
-        "reward_hint": "Steady water availability",
-        "risk": "Temporary water supply disruption during repairs"
+        "title": "Water Recycling System Check",
+        "briefing": "Water reserves are stable but must be conserved carefully during early spring's cold snap.",
+        "objective": "Inspect and repair water recycling units to prevent leaks and maximize recovery.",
+        "reward_hint": "Increase water efficiency and reserves.",
+        "risk": "Potential minor leaks if repairs are rushed."
+      },
+      {
+        "title": "Material Inventory and Salvage",
+        "briefing": "Materials are limited; conducting a salvage operation in nearby terrain could replenish stocks.",
+        "objective": "Send a scout to identify and collect usable materials from safe locations nearby.",
+        "reward_hint": "Gain additional materials for construction and repairs.",
+        "risk": "Exposure to cold and terrain hazards."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity is trending upward; recommend optimizing energy systems to capitalize on increased solar influx."
+        "message": "Solar activity is peaking today; optimize your energy systems accordingly."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "all colonies",
-        "message": "Sharing data on effective water recycling methods during early spring conditions to improve colony sustainability."
+        "recipient": "Marco Quinn",
+        "message": "Irina reports stable water supplies; consider coordinating on resource sharing for efficiency."
       }
     ],
-    "news_summary": "On Sol 37, Mars colonies experience a moderate solar boost amid early spring's cold temperatures. Energy systems are primed for optimization while water recycling remains essential due to ongoing scarcity. Colonists focus on maintaining critical infrastructure to sustain their r\u2026",
+    "news_summary": "On Sol 38 during early spring, Mars experiences a peak in solar activity enhancing energy generation capabilities. Colonies focus on optimizing solar panel arrays and maintaining water recycling systems amid cold temperatures. Material salvage missions are underway to sustain co\u2026",
     "event_flavor": {
       "event_key": "solar_flare",
       "headline": "Massive Solar Flare Detected",
@@ -322,8 +321,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-04-30T00:28:16.833176",
-    "last_generated_sol": "Sol 37",
+    "last_generated": "2026-05-01T00:29:38.715857",
+    "last_generated_sol": "Sol 38",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
