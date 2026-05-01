@@ -8,61 +8,62 @@
 ## LIVE WORLD SNAPSHOT
 
 <!-- WORLD_SUMMARY:START -->
-_Auto-updated daily. Last world update: 2026-04-30T00:28:16.833176_
+_Auto-updated daily. Last world update: 2026-05-01T00:29:38.715857_
 
 ```text
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
-║ [SOL] Sol 37 | [SEASON] Early      ║  ║ Moderate Solar Boost Enhances      ║
-║ Spring                             ║  ║ Energy Output                      ║
-║ [TEMP] -62C | [SUN] 66% | [STORM]  ║  ║ Solar activity has increased to    ║
-║ NO                                 ║  ║ 61%, providing a mild boost to     ║
-║ [EVENT] New subterranean caverns   ║  ║ solar panel efficiency across Mars ║
-║ mapped beneath the colony          ║  ║ colonies.                          ║
-║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT solar_boost |               ║
-║ [O2] 1000 | [H2O] 545 | [E] 1100   ║  ║ solar_activity +5                  ║
-║ [FOOD] 1100 | [MAT] 400            ║  ╚════════════════════════════════════╝
+║ [SOL] Sol 38 | [SEASON] Early      ║  ║ Solar Activity Peaks               ║
+║ Spring                             ║  ║ Solar activity has increased to    ║
+║ [TEMP] -76C | [SUN] 150% | [STORM] ║  ║ 150%, providing enhanced energy    ║
+║ NO                                 ║  ║ generation potential across Mars   ║
+║ [EVENT] Massive Solar Flare        ║  ║ habitats.                          ║
+║ Detected                           ║  ║ EFFECT solar_boost |               ║
+║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ solar_activity +0                  ║
+║ [O2] 1000 | [H2O] 545 | [E] 1100   ║  ╚════════════════════════════════════╝
+║ [FOOD] 1100 | [MAT] 400            ║                                        
 ║ [MKT] O2 0 H2O 0 F 0 M 0           ║                                        
-║ [AI] Moderate Solar Boost Enhances ║                                        
-║ Energy Output | solar_activity +5  ║                                        
+║ [AI] Solar Activity Peaks |        ║                                        
+║ solar_activity +0                  ║                                        
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
-║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Arrays           ║
-║    Dustline Agro | P1 B3 | S3699   ║  ║    Adjust and calibrate solar…     ║
-║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System…         ║
-║    Ares Systems | P1 B4 | S3397    ║  ║    Inspect and repair water…       ║
-║ 3. Irina Vale                      ║  ╚════════════════════════════════════╝
-║    Helios… | P1 B2 | S2729         ║                                        
-╚════════════════════════════════════╝                                        
+║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Panels           ║
+║    Dustline Agro | P1 B3 | S3777   ║  ║    Adjust and optimize solar…      ║
+║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System Check    ║
+║    Ares Systems | P1 B4 | S3499    ║  ║    Inspect and repair water…       ║
+║ 3. Irina Vale                      ║  ║ 3. Material Inventory and Salvage  ║
+║    Helios… | P1 B2 | S2819         ║  ║    Send a scout to identify and…   ║
+╚════════════════════════════════════╝  ╚════════════════════════════════════╝
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
 ║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Solar       ║
-║ WATER     545                      ║  ║ activity is trending…              ║
-║ ENERGY    1100                     ║  ║ Helios… -> all… | Sharing data on  ║
-║ FOOD      1100                     ║  ║ effective water…                   ║
+║ WATER     545                      ║  ║ activity is peaking today;…        ║
+║ ENERGY    1100                     ║  ║ Helios… -> Marco… | Irina reports  ║
+║ FOOD      1100                     ║  ║ stable water…                      ║
 ║ MATERIALS 400                      ║  ╚════════════════════════════════════╝
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ On Sol 37, Mars colonies           ║  ║ 00:28 | AI directive: Moderate…    ║
-║ experience a moderate solar boost  ║  ║ 00:28 | Exploration teams have…    ║
-║ amid early spring's cold           ║  ║ 12:30 | A trading vessel from      ║
-║ temperatures. Energy systems are   ║  ║ Earth…                             ║
-║ primed for optimization while      ║  ║ 06:47 | Martian day 37 has begun   ║
-║ water recycling remains essential  ║  ║ 00:28 | AI directive: Solar Flare… ║
-║ due to ongoing scarcity. Colonists ║  ╚════════════════════════════════════╝
-║ focus on maintaining critical      ║                                        
-║ infrastructure to sustain their r… ║                                        
-║ Exploration teams have located     ║                                        
-║ underground caverns near the       ║                                        
-║ habitat perimeter. These           ║                                        
-║ formations may provide stable      ║                                        
-║ thermal conditions for future      ║                                        
-║ expansion.                         ║                                        
+║ On Sol 38 during early spring,     ║  ║ 00:29 | AI directive: Solar…       ║
+║ Mars experiences a peak in solar   ║  ║ 12:30 | A powerful solar flare     ║
+║ activity enhancing energy          ║  ║ has…                               ║
+║ generation capabilities. Colonies  ║  ║ 06:50 | Martian day 38 has begun   ║
+║ focus on optimizing solar panel    ║  ║ 00:28 | AI directive: Moderate…    ║
+║ arrays and maintaining water       ║  ║ 00:28 | Exploration teams have…    ║
+║ recycling systems amid cold        ║  ╚════════════════════════════════════╝
+║ temperatures. Material salvage     ║                                        
+║ missions are underway to sustain   ║                                        
+║ co…                                ║                                        
+║ A powerful solar flare has         ║                                        
+║ increased radiation levels by 50%  ║                                        
+║ for the next cycle. All crew must  ║                                        
+║ take immediate shelter to minimize ║                                        
+║ exposure.                          ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
