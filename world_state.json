@@ -7,7 +7,7 @@
   "temperature": -52,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Massive Solar Flare Detected",
+  "current_event": "Underground Ice Deposit Secured on Sol 39",
   "last_updated": "2026-05-01T06:52:52.340508",
   "global_resources": {
     "oxygen": 1000,
@@ -247,6 +247,10 @@
     {
       "time": "2026-05-01T12:18:37.731055",
       "event": "A powerful solar flare has increased radiation levels by 50% for the next cycle. All personnel must seek shelter to minimize exposure."
+    },
+    {
+      "time": "2026-05-02T00:27:01.579297",
+      "event": "Field teams led by Irina Vale have confirmed a significant underground ice source, adding 88 units of water to colony reserves. Marco Quinn and Zoya Kade contributed to extraction efforts, ensuring improved hydration su\u2026"
     }
   ],
   "market": {
@@ -310,11 +314,11 @@
     ],
     "news_summary": "On Sol 38 during early spring, Mars experiences a peak in solar activity enhancing energy generation capabilities. Colonies focus on optimizing solar panel arrays and maintaining water recycling systems amid cold temperatures. Material salvage missions are underway to sustain co\u2026",
     "event_flavor": {
-      "event_key": "solar_flare",
-      "headline": "Massive Solar Flare Detected",
-      "broadcast": "A powerful solar flare has increased radiation levels by 50% for the next cycle. All personnel must seek shelter to minimize exposure.",
+      "event_key": "ice_discovery",
+      "headline": "Underground Ice Deposit Secured on Sol 39",
+      "broadcast": "Field teams led by Irina Vale have confirmed a significant underground ice source, adding 88 units of water to colony reserves. Marco Quinn and Zoya Kade contributed to extraction efforts, ensuring improved hydration su\u2026",
       "source": "github_models",
-      "generated_at": "2026-05-01T12:18:37.731043",
+      "generated_at": "2026-05-02T00:27:01.579283",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
