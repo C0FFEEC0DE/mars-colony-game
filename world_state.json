@@ -1,14 +1,14 @@
 {
-  "day": 39,
-  "mars_date": "Sol 39",
+  "day": 40,
+  "mars_date": "Sol 40",
   "season": "Early Spring",
-  "solar_activity": 150,
+  "solar_activity": 94,
   "dust_storm_active": false,
-  "temperature": -52,
+  "temperature": -50,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Underground Ice Deposit Secured on Sol 39",
-  "last_updated": "2026-05-02T00:27:12.834401",
+  "current_event": null,
+  "last_updated": "2026-05-02T06:37:42.469605",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 3908,
+      "score": 3955,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 3672,
+      "score": 3705,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 3000,
+      "score": 3030,
       "colonists": 1,
       "buildings": 2
     }
@@ -239,6 +239,10 @@
     {
       "time": "2026-05-02T00:27:12.834401",
       "event": "AI directive: Solar Flare Boost Increases Energy Output"
+    },
+    {
+      "time": "2026-05-02T06:37:42.469625",
+      "event": "Martian day 40 has begun"
     }
   ],
   "market": {
@@ -294,26 +298,7 @@
       }
     ],
     "news_summary": "Mars colonies experience a boost in energy production thanks to a solar flare increasing solar panel efficiency. Colonies are advised to optimize energy capture and maintain water systems to conserve resources during early spring. Collaborative resource exchanges are being propo\u2026",
-    "event_flavor": {
-      "event_key": "ice_discovery",
-      "headline": "Underground Ice Deposit Secured on Sol 39",
-      "broadcast": "Field teams led by Irina Vale have confirmed a significant underground ice source, adding 88 units of water to colony reserves. Marco Quinn and Zoya Kade contributed to extraction efforts, ensuring improved hydration su\u2026",
-      "source": "github_models",
-      "generated_at": "2026-05-02T00:27:01.579283",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-05-02T00:27:12.834401",
     "last_generated_sol": "Sol 39",
     "last_diagnostics": {
