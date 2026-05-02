@@ -8,7 +8,7 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Underground Ice Deposit Secured on Sol 39",
-  "last_updated": "2026-05-01T06:52:52.340508",
+  "last_updated": "2026-05-02T00:27:12.834401",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,22 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-15T06:35:28.707086",
-      "event": "Martian day 23 has begun"
-    },
-    {
-      "time": "2026-04-15T12:18:36.870907",
-      "event": "On Sol 23, a meteor shower provided unexpected salvage opportunities. Irina Vale recovered 15 additional materials under stable conditions with -54C temperature and 64% solar activity."
-    },
-    {
-      "time": "2026-04-16T00:24:41.109681",
-      "event": "AI directive: Mild Solar Activity Increase"
-    },
-    {
-      "time": "2026-04-16T06:36:04.333500",
-      "event": "Martian day 24 has begun"
-    },
     {
       "time": "2026-04-16T12:20:32.118239",
       "event": "On Sol 24, analysis revealed unknown bacterial presence in Martian soil. Further study underway to assess biological and environmental implications."
@@ -251,6 +235,10 @@
     {
       "time": "2026-05-02T00:27:01.579297",
       "event": "Field teams led by Irina Vale have confirmed a significant underground ice source, adding 88 units of water to colony reserves. Marco Quinn and Zoya Kade contributed to extraction efforts, ensuring improved hydration su\u2026"
+    },
+    {
+      "time": "2026-05-02T00:27:12.834401",
+      "event": "AI directive: Solar Flare Boost Increases Energy Output"
     }
   ],
   "market": {
@@ -261,8 +249,8 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Activity Peaks",
-      "summary": "Solar activity has increased to 150%, providing enhanced energy generation potential across Mars habitats.",
+      "headline": "Solar Flare Boost Increases Energy Output",
+      "summary": "A surge in solar activity has temporarily increased solar panel efficiency across all colonies, boosting energy generation by 15%.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
@@ -275,44 +263,37 @@
         }
       },
       "source": "github_models",
-      "generated_at": "2026-05-01T00:29:38.715857"
+      "generated_at": "2026-05-02T00:27:12.834401"
     },
     "missions": [
       {
-        "title": "Optimize Solar Panels",
-        "briefing": "With increased solar activity, your colony can maximize energy intake by recalibrating solar arrays.",
-        "objective": "Adjust and optimize solar panel alignment for maximum energy capture.",
-        "reward_hint": "Boost colony energy reserves.",
-        "risk": "Minimal risk of equipment wear during adjustments."
+        "title": "Optimize Solar Arrays",
+        "briefing": "Harness the current solar flare to maximize energy capture and storage for your colony.",
+        "objective": "Recalibrate solar panel angles and upgrade battery storage within 2 sols.",
+        "reward_hint": "Increased energy reserves",
+        "risk": "Equipment strain may cause minor system failures"
       },
       {
-        "title": "Water Recycling System Check",
-        "briefing": "Water reserves are stable but must be conserved carefully during early spring's cold snap.",
-        "objective": "Inspect and repair water recycling units to prevent leaks and maximize recovery.",
-        "reward_hint": "Increase water efficiency and reserves.",
-        "risk": "Potential minor leaks if repairs are rushed."
-      },
-      {
-        "title": "Material Inventory and Salvage",
-        "briefing": "Materials are limited; conducting a salvage operation in nearby terrain could replenish stocks.",
-        "objective": "Send a scout to identify and collect usable materials from safe locations nearby.",
-        "reward_hint": "Gain additional materials for construction and repairs.",
-        "risk": "Exposure to cold and terrain hazards."
+        "title": "Water Purification Maintenance",
+        "briefing": "Ensure water recycling units run efficiently during early spring to conserve precious water.",
+        "objective": "Inspect and repair filtration units to prevent water loss over 3 sols.",
+        "reward_hint": "Improved water retention",
+        "risk": "Potential chemical exposure during maintenance"
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity is peaking today; optimize your energy systems accordingly."
+        "message": "Solar flare event detected. Take advantage of increased solar efficiency but monitor energy systems closely."
       },
       {
         "sender": "Helios Prospecting",
         "recipient": "Marco Quinn",
-        "message": "Irina reports stable water supplies; consider coordinating on resource sharing for efficiency."
+        "message": "Considering a resource exchange to balance oxygen and materials. Respond if interested."
       }
     ],
-    "news_summary": "On Sol 38 during early spring, Mars experiences a peak in solar activity enhancing energy generation capabilities. Colonies focus on optimizing solar panel arrays and maintaining water recycling systems amid cold temperatures. Material salvage missions are underway to sustain co\u2026",
+    "news_summary": "Mars colonies experience a boost in energy production thanks to a solar flare increasing solar panel efficiency. Colonies are advised to optimize energy capture and maintain water systems to conserve resources during early spring. Collaborative resource exchanges are being propo\u2026",
     "event_flavor": {
       "event_key": "ice_discovery",
       "headline": "Underground Ice Deposit Secured on Sol 39",
@@ -333,8 +314,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-05-01T00:29:38.715857",
-    "last_generated_sol": "Sol 38",
+    "last_generated": "2026-05-02T00:27:12.834401",
+    "last_generated_sol": "Sol 39",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
