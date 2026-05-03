@@ -2,13 +2,13 @@
   "day": 40,
   "mars_date": "Sol 40",
   "season": "Early Spring",
-  "solar_activity": 94,
+  "solar_activity": 99,
   "dust_storm_active": false,
   "temperature": -50,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": null,
-  "last_updated": "2026-05-02T06:37:42.469605",
+  "last_updated": "2026-05-03T00:27:05.177709",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,14 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-16T12:20:32.118239",
-      "event": "On Sol 24, analysis revealed unknown bacterial presence in Martian soil. Further study underway to assess biological and environmental implications."
-    },
-    {
-      "time": "2026-04-17T00:23:11.070206",
-      "event": "AI directive: Solar Activity Boosts Energy Output"
-    },
     {
       "time": "2026-04-17T06:35:47.364310",
       "event": "Martian day 25 has begun"
@@ -243,6 +235,10 @@
     {
       "time": "2026-05-02T06:37:42.469625",
       "event": "Martian day 40 has begun"
+    },
+    {
+      "time": "2026-05-03T00:27:05.177709",
+      "event": "AI directive: Moderate Solar Boost Enhances Energy Output"
     }
   ],
   "market": {
@@ -253,54 +249,61 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Flare Boost Increases Energy Output",
-      "summary": "A surge in solar activity has temporarily increased solar panel efficiency across all colonies, boosting energy generation by 15%.",
+      "headline": "Moderate Solar Boost Enhances Energy Output",
+      "summary": "Solar activity remains high at 94%, providing a modest increase in energy generation across all colonies.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
         "result": {
           "label": "Solar boost",
           "target": "solar_activity",
-          "delta": 0,
-          "before": 150,
-          "after": 150
+          "delta": 5,
+          "before": 94,
+          "after": 99
         }
       },
       "source": "github_models",
-      "generated_at": "2026-05-02T00:27:12.834401"
+      "generated_at": "2026-05-03T00:27:05.177709"
     },
     "missions": [
       {
-        "title": "Optimize Solar Arrays",
-        "briefing": "Harness the current solar flare to maximize energy capture and storage for your colony.",
-        "objective": "Recalibrate solar panel angles and upgrade battery storage within 2 sols.",
-        "reward_hint": "Increased energy reserves",
-        "risk": "Equipment strain may cause minor system failures"
+        "title": "Optimize Solar Panel Arrays",
+        "briefing": "With solar activity elevated, fine-tuning solar arrays can maximize energy intake.",
+        "objective": "Adjust and recalibrate solar panel angles to increase energy efficiency by 10%.",
+        "reward_hint": "Gain additional energy resources.",
+        "risk": "Minor equipment wear during adjustments."
       },
       {
-        "title": "Water Purification Maintenance",
-        "briefing": "Ensure water recycling units run efficiently during early spring to conserve precious water.",
-        "objective": "Inspect and repair filtration units to prevent water loss over 3 sols.",
-        "reward_hint": "Improved water retention",
-        "risk": "Potential chemical exposure during maintenance"
+        "title": "Water Recycling System Maintenance",
+        "briefing": "Water reserves are moderate; improving recycling efficiency will sustain colony needs.",
+        "objective": "Inspect and repair water recycling units to reduce water loss by 5%.",
+        "reward_hint": "Preserve and increase available water supplies.",
+        "risk": "Potential exposure to system contaminants."
+      },
+      {
+        "title": "Material Salvage from Old Equipment",
+        "briefing": "Materials are limited; salvaging unused or damaged equipment can replenish stocks.",
+        "objective": "Collect and process scrap materials from decommissioned hardware for reuse.",
+        "reward_hint": "Increase materials inventory.",
+        "risk": "Risk of minor injuries during dismantling."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar flare event detected. Take advantage of increased solar efficiency but monitor energy systems closely."
+        "message": "Solar activity remains high; optimize energy systems and maintain vigilance for any dust activity."
       },
       {
-        "sender": "Helios Prospecting",
-        "recipient": "Marco Quinn",
-        "message": "Considering a resource exchange to balance oxygen and materials. Respond if interested."
+        "sender": "Helios Prospecting HQ",
+        "recipient": "Irina Vale",
+        "message": "Prioritize water recycling maintenance to extend operational capacity during early spring."
       }
     ],
-    "news_summary": "Mars colonies experience a boost in energy production thanks to a solar flare increasing solar panel efficiency. Colonies are advised to optimize energy capture and maintain water systems to conserve resources during early spring. Collaborative resource exchanges are being propo\u2026",
+    "news_summary": "Sol 40 on Mars sees continued high solar activity boosting energy production modestly. Colonies focus on optimizing energy systems and maintaining water recycling efficiency amid cold early spring temperatures. Resource management remains critical with limited dust storm activit\u2026",
     "event_flavor": {},
-    "last_generated": "2026-05-02T00:27:12.834401",
-    "last_generated_sol": "Sol 39",
+    "last_generated": "2026-05-03T00:27:05.177709",
+    "last_generated_sol": "Sol 40",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
