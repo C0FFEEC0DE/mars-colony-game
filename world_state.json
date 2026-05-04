@@ -2,12 +2,12 @@
   "day": 41,
   "mars_date": "Sol 41",
   "season": "Early Spring",
-  "solar_activity": 63,
+  "solar_activity": 150,
   "dust_storm_active": false,
   "temperature": -59,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Massive Solar Flare Increases Radiation Levels",
   "last_updated": "2026-05-03T06:49:35.510675",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-05-03T06:49:35.510693",
       "event": "Martian day 41 has begun"
+    },
+    {
+      "time": "2026-05-04T00:26:57.694905",
+      "event": "A powerful solar flare has increased energy output by 50% for the next cycle. All personnel must take cover to minimize radiation exposure."
     }
   ],
   "market": {
@@ -305,7 +309,26 @@
       }
     ],
     "news_summary": "Sol 40 on Mars sees continued high solar activity boosting energy production modestly. Colonies focus on optimizing energy systems and maintaining water recycling efficiency amid cold early spring temperatures. Resource management remains critical with limited dust storm activit\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "solar_flare",
+      "headline": "Massive Solar Flare Increases Radiation Levels",
+      "broadcast": "A powerful solar flare has increased energy output by 50% for the next cycle. All personnel must take cover to minimize radiation exposure.",
+      "source": "github_models",
+      "generated_at": "2026-05-04T00:26:57.694892",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-05-03T00:27:05.177709",
     "last_generated_sol": "Sol 40",
     "last_diagnostics": {
