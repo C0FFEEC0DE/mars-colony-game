@@ -7,7 +7,7 @@
   "temperature": -69,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Meteor Shower Strikes Colony Infrastructure",
   "last_updated": "2026-05-04T06:59:30.186442",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-05-04T06:59:30.186460",
       "event": "Martian day 42 has begun"
+    },
+    {
+      "time": "2026-05-04T12:31:35.544839",
+      "event": "On Sol 42, a meteor shower caused minor building damage reported by Irina Vale. Salvage operations by Marco Quinn and Zoya Kade recovered 21 materials total."
     }
   ],
   "market": {
@@ -298,7 +302,26 @@
       }
     ],
     "news_summary": "On Sol 41 of early spring, Mars experiences a significant solar activity surge, enhancing energy production capabilities. Colonies are advised to capitalize on the increased solar input by optimizing their solar arrays. Water reserves remain a critical resource, with ongoing mai\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "meteor_shower",
+      "headline": "Meteor Shower Strikes Colony Infrastructure",
+      "broadcast": "On Sol 42, a meteor shower caused minor building damage reported by Irina Vale. Salvage operations by Marco Quinn and Zoya Kade recovered 21 materials total.",
+      "source": "github_models",
+      "generated_at": "2026-05-04T12:31:35.544826",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-05-04T00:27:02.649537",
     "last_generated_sol": "Sol 41",
     "last_diagnostics": {
