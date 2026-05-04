@@ -8,7 +8,7 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Massive Solar Flare Increases Radiation Levels",
-  "last_updated": "2026-05-03T06:49:35.510675",
+  "last_updated": "2026-05-04T00:27:02.649537",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-17T06:35:47.364310",
-      "event": "Martian day 25 has begun"
-    },
-    {
-      "time": "2026-04-17T12:17:49.699742",
-      "event": "A trading ship from Earth has successfully docked on Sol 25, delivering 100 units of food and 50 units of materials to the colony's reserves."
-    },
-    {
-      "time": "2026-04-18T00:20:32.112674",
-      "event": "A severe sandstorm is underway on Sol 25, knocking all solar panels offline for the next 6 hours. Prepare for reduced power availability."
-    },
     {
       "time": "2026-04-18T00:20:39.151182",
       "event": "AI directive: Persistent Dust Storm Hampers Solar Output"
@@ -247,6 +235,10 @@
     {
       "time": "2026-05-04T00:26:57.694905",
       "event": "A powerful solar flare has increased energy output by 50% for the next cycle. All personnel must take cover to minimize radiation exposure."
+    },
+    {
+      "time": "2026-05-04T00:27:02.649537",
+      "event": "AI directive: Solar Activity Peaks"
     }
   ],
   "market": {
@@ -257,58 +249,51 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Moderate Solar Boost Enhances Energy Output",
-      "summary": "Solar activity remains high at 94%, providing a modest increase in energy generation across all colonies.",
+      "headline": "Solar Activity Peaks",
+      "summary": "Solar activity has surged to 150%, boosting solar panel efficiency across the planet.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
         "result": {
           "label": "Solar boost",
           "target": "solar_activity",
-          "delta": 5,
-          "before": 94,
-          "after": 99
+          "delta": 0,
+          "before": 150,
+          "after": 150
         }
       },
       "source": "github_models",
-      "generated_at": "2026-05-03T00:27:05.177709"
+      "generated_at": "2026-05-04T00:27:02.649537"
     },
     "missions": [
       {
-        "title": "Optimize Solar Panel Arrays",
-        "briefing": "With solar activity elevated, fine-tuning solar arrays can maximize energy intake.",
-        "objective": "Adjust and recalibrate solar panel angles to increase energy efficiency by 10%.",
-        "reward_hint": "Gain additional energy resources.",
-        "risk": "Minor equipment wear during adjustments."
+        "title": "Optimize Solar Arrays",
+        "briefing": "With solar activity peaking, now is the time to optimize energy collection systems.",
+        "objective": "Upgrade and recalibrate solar panels to maximize energy absorption during this solar surge.",
+        "reward_hint": "Increased daily energy yield",
+        "risk": "Minimal risk of equipment overload if not properly managed"
       },
       {
-        "title": "Water Recycling System Maintenance",
-        "briefing": "Water reserves are moderate; improving recycling efficiency will sustain colony needs.",
-        "objective": "Inspect and repair water recycling units to reduce water loss by 5%.",
-        "reward_hint": "Preserve and increase available water supplies.",
-        "risk": "Potential exposure to system contaminants."
-      },
-      {
-        "title": "Material Salvage from Old Equipment",
-        "briefing": "Materials are limited; salvaging unused or damaged equipment can replenish stocks.",
-        "objective": "Collect and process scrap materials from decommissioned hardware for reuse.",
-        "reward_hint": "Increase materials inventory.",
-        "risk": "Risk of minor injuries during dismantling."
+        "title": "Water Recycling Maintenance",
+        "briefing": "Water reserves are stable but limited; maintenance of recycling units is critical.",
+        "objective": "Inspect and repair water recycling units to prevent losses and improve efficiency.",
+        "reward_hint": "Improved water resource retention",
+        "risk": "Potential minor exposure to contaminated water if repairs a\u2026"
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity remains high; optimize energy systems and maintain vigilance for any dust activity."
+        "message": "Solar activity is at a high. Prioritize energy harvesting and monitor equipment for overload."
       },
       {
-        "sender": "Helios Prospecting HQ",
-        "recipient": "Irina Vale",
-        "message": "Prioritize water recycling maintenance to extend operational capacity during early spring."
+        "sender": "Helios Prospecting",
+        "recipient": "Marco Quinn",
+        "message": "We are low on oxygen resources; collaboration on sharing may be necessary soon."
       }
     ],
-    "news_summary": "Sol 40 on Mars sees continued high solar activity boosting energy production modestly. Colonies focus on optimizing energy systems and maintaining water recycling efficiency amid cold early spring temperatures. Resource management remains critical with limited dust storm activit\u2026",
+    "news_summary": "On Sol 41 of early spring, Mars experiences a significant solar activity surge, enhancing energy production capabilities. Colonies are advised to capitalize on the increased solar input by optimizing their solar arrays. Water reserves remain a critical resource, with ongoing mai\u2026",
     "event_flavor": {
       "event_key": "solar_flare",
       "headline": "Massive Solar Flare Increases Radiation Levels",
@@ -329,8 +314,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-05-03T00:27:05.177709",
-    "last_generated_sol": "Sol 40",
+    "last_generated": "2026-05-04T00:27:02.649537",
+    "last_generated_sol": "Sol 41",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
