@@ -2,13 +2,13 @@
   "day": 42,
   "mars_date": "Sol 42",
   "season": "Early Spring",
-  "solar_activity": 95,
+  "solar_activity": 100,
   "dust_storm_active": false,
   "temperature": -69,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Meteor Shower Strikes Colony Infrastructure",
-  "last_updated": "2026-05-04T06:59:30.186442",
+  "last_updated": "2026-05-05T00:27:57.185943",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-18T00:20:39.151182",
-      "event": "AI directive: Persistent Dust Storm Hampers Solar Output"
-    },
-    {
-      "time": "2026-04-18T06:24:20.647305",
-      "event": "Martian day 26 has begun"
-    },
-    {
-      "time": "2026-04-18T12:09:59.174019",
-      "event": "A significant solar flare has increased radiation levels by 50% for the next cycle. All personnel are advised to seek shelter immediately to minimize exposure."
-    },
     {
       "time": "2026-04-19T00:21:26.965652",
       "event": "AI directive: Increased Solar Activity Boosts Energy Output"
@@ -247,6 +235,10 @@
     {
       "time": "2026-05-04T12:31:35.544839",
       "event": "On Sol 42, a meteor shower caused minor building damage reported by Irina Vale. Salvage operations by Marco Quinn and Zoya Kade recovered 21 materials total."
+    },
+    {
+      "time": "2026-05-05T00:27:57.185943",
+      "event": "AI directive: Solar Activity Peaks"
     }
   ],
   "market": {
@@ -258,50 +250,50 @@
   "ai": {
     "daily_event": {
       "headline": "Solar Activity Peaks",
-      "summary": "Solar activity has surged to 150%, boosting solar panel efficiency across the planet.",
+      "summary": "Solar activity has reached 95%, providing increased energy input across the colony's solar arrays.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
         "result": {
           "label": "Solar boost",
           "target": "solar_activity",
-          "delta": 0,
-          "before": 150,
-          "after": 150
+          "delta": 5,
+          "before": 95,
+          "after": 100
         }
       },
       "source": "github_models",
-      "generated_at": "2026-05-04T00:27:02.649537"
+      "generated_at": "2026-05-05T00:27:57.185943"
     },
     "missions": [
       {
-        "title": "Optimize Solar Arrays",
-        "briefing": "With solar activity peaking, now is the time to optimize energy collection systems.",
-        "objective": "Upgrade and recalibrate solar panels to maximize energy absorption during this solar surge.",
-        "reward_hint": "Increased daily energy yield",
-        "risk": "Minimal risk of equipment overload if not properly managed"
+        "title": "Upgrade Solar Panels",
+        "briefing": "With the current solar surge, it is critical to upgrade existing solar panels to maximize energy capture.",
+        "objective": "Install enhanced solar capture modules on all arrays.",
+        "reward_hint": "Increased energy efficiency and reserves.",
+        "risk": "Exposure to harsh external conditions during installation."
       },
       {
-        "title": "Water Recycling Maintenance",
-        "briefing": "Water reserves are stable but limited; maintenance of recycling units is critical.",
-        "objective": "Inspect and repair water recycling units to prevent losses and improve efficiency.",
-        "reward_hint": "Improved water resource retention",
-        "risk": "Potential minor exposure to contaminated water if repairs a\u2026"
+        "title": "Water Recycling System Check",
+        "briefing": "Water reserves are moderate but must be carefully managed during early spring to avoid shortages.",
+        "objective": "Inspect and repair any leaks in the water recycling system.",
+        "reward_hint": "Improved water conservation and supply stability.",
+        "risk": "Possible system downtime during repairs."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity is at a high. Prioritize energy harvesting and monitor equipment for overload."
+        "message": "Solar activity is peaking today; optimize your energy systems to capitalize on the boost."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Marco Quinn",
-        "message": "We are low on oxygen resources; collaboration on sharing may be necessary soon."
+        "recipient": "Irina Vale",
+        "message": "Keep monitoring oxygen levels closely; we have zero reserves currently."
       }
     ],
-    "news_summary": "On Sol 41 of early spring, Mars experiences a significant solar activity surge, enhancing energy production capabilities. Colonies are advised to capitalize on the increased solar input by optimizing their solar arrays. Water reserves remain a critical resource, with ongoing mai\u2026",
+    "news_summary": "On Sol 42 of early spring, Mars colonies experience a solar energy surge boosting power availability. Water supplies remain stable but require maintenance to prevent loss. Colonies are advised to optimize energy infrastructure and maintain critical life support systems to ensure\u2026",
     "event_flavor": {
       "event_key": "meteor_shower",
       "headline": "Meteor Shower Strikes Colony Infrastructure",
@@ -322,8 +314,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-05-04T00:27:02.649537",
-    "last_generated_sol": "Sol 41",
+    "last_generated": "2026-05-05T00:27:57.185943",
+    "last_generated_sol": "Sol 42",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
