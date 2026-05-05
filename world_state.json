@@ -1,14 +1,14 @@
 {
-  "day": 42,
-  "mars_date": "Sol 42",
+  "day": 43,
+  "mars_date": "Sol 43",
   "season": "Early Spring",
-  "solar_activity": 100,
+  "solar_activity": 64,
   "dust_storm_active": false,
-  "temperature": -69,
+  "temperature": -35,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Meteor Shower Strikes Colony Infrastructure",
-  "last_updated": "2026-05-05T00:27:57.185943",
+  "current_event": null,
+  "last_updated": "2026-05-05T06:43:51.265620",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 4243,
+      "score": 4260,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 3974,
+      "score": 3997,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 3226,
+      "score": 3246,
       "colonists": 1,
       "buildings": 2
     }
@@ -239,6 +239,10 @@
     {
       "time": "2026-05-05T00:27:57.185943",
       "event": "AI directive: Solar Activity Peaks"
+    },
+    {
+      "time": "2026-05-05T06:43:51.265641",
+      "event": "Martian day 43 has begun"
     }
   ],
   "market": {
@@ -294,26 +298,7 @@
       }
     ],
     "news_summary": "On Sol 42 of early spring, Mars colonies experience a solar energy surge boosting power availability. Water supplies remain stable but require maintenance to prevent loss. Colonies are advised to optimize energy infrastructure and maintain critical life support systems to ensure\u2026",
-    "event_flavor": {
-      "event_key": "meteor_shower",
-      "headline": "Meteor Shower Strikes Colony Infrastructure",
-      "broadcast": "On Sol 42, a meteor shower caused minor building damage reported by Irina Vale. Salvage operations by Marco Quinn and Zoya Kade recovered 21 materials total.",
-      "source": "github_models",
-      "generated_at": "2026-05-04T12:31:35.544826",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-05-05T00:27:57.185943",
     "last_generated_sol": "Sol 42",
     "last_diagnostics": {
