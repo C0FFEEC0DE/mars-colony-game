@@ -2,12 +2,12 @@
   "day": 44,
   "mars_date": "Sol 44",
   "season": "Early Spring",
-  "solar_activity": 60,
-  "dust_storm_active": false,
+  "solar_activity": 0,
+  "dust_storm_active": true,
   "temperature": -46,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Sol 44: Massive Sandstorm Disrupts Power",
   "last_updated": "2026-05-06T06:52:40.396279",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-05-06T06:52:40.396298",
       "event": "Martian day 44 has begun"
+    },
+    {
+      "time": "2026-05-06T12:34:46.230984",
+      "event": "A severe sandstorm is underway, forcing all solar panels offline for the next 6 hours. Prepare for limited power availability and adjust operations accordingly."
     }
   ],
   "market": {
@@ -298,7 +302,26 @@
       }
     ],
     "news_summary": "On Sol 43, Mars experiences a moderate solar activity boost, enhancing energy generation capabilities across colonies. Temperatures remain low at -35C in early spring, with no dust storms reported. Colonies are focusing on optimizing energy use and conserving water to maintain s\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "sandstorm",
+      "headline": "Sol 44: Massive Sandstorm Disrupts Power",
+      "broadcast": "A severe sandstorm is underway, forcing all solar panels offline for the next 6 hours. Prepare for limited power availability and adjust operations accordingly.",
+      "source": "github_models",
+      "generated_at": "2026-05-06T12:34:46.230971",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-05-06T00:27:34.094397",
     "last_generated_sol": "Sol 43",
     "last_diagnostics": {
