@@ -7,7 +7,7 @@
   "temperature": -64,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Rare Mineral Deposits Identified on Sol 45",
   "last_updated": "2026-05-07T06:57:45.097676",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-05-07T06:57:45.097696",
       "event": "Martian day 45 has begun"
+    },
+    {
+      "time": "2026-05-07T12:35:14.410932",
+      "event": "Geological survey reports discovery of valuable mineral veins. Extraction protocols to be evaluated for mission resource planning."
     }
   ],
   "market": {
@@ -298,7 +302,26 @@
       }
     ],
     "news_summary": "Mars is enduring a persistent dust storm during early spring on Sol 44, significantly reducing solar power generation. Colonies are adapting by conducting urgent repairs and optimizing life support systems to maintain essential supplies. Mars Control has issued warnings to conse\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "discovery",
+      "headline": "Rare Mineral Deposits Identified on Sol 45",
+      "broadcast": "Geological survey reports discovery of valuable mineral veins. Extraction protocols to be evaluated for mission resource planning.",
+      "source": "github_models",
+      "generated_at": "2026-05-07T12:35:14.410919",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-05-07T00:27:46.925622",
     "last_generated_sol": "Sol 44",
     "last_diagnostics": {
