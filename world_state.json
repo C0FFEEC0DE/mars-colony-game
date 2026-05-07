@@ -1,14 +1,14 @@
 {
-  "day": 44,
-  "mars_date": "Sol 44",
+  "day": 45,
+  "mars_date": "Sol 45",
   "season": "Early Spring",
-  "solar_activity": 0,
-  "dust_storm_active": true,
-  "temperature": -49,
+  "solar_activity": 60,
+  "dust_storm_active": false,
+  "temperature": -64,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Underground Ice Deposit Found Amid Dust Storm",
-  "last_updated": "2026-05-07T00:27:46.925622",
+  "current_event": null,
+  "last_updated": "2026-05-07T06:57:45.097676",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,14 +20,14 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 4399,
+      "score": 4416,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 4172,
+      "score": 4175,
       "colonists": 1,
       "buildings": 4
     },
@@ -239,6 +239,10 @@
     {
       "time": "2026-05-07T00:27:46.925622",
       "event": "AI directive: Persistent Dust Storm Reduces Solar Efficiency"
+    },
+    {
+      "time": "2026-05-07T06:57:45.097696",
+      "event": "Martian day 45 has begun"
     }
   ],
   "market": {
@@ -294,26 +298,7 @@
       }
     ],
     "news_summary": "Mars is enduring a persistent dust storm during early spring on Sol 44, significantly reducing solar power generation. Colonies are adapting by conducting urgent repairs and optimizing life support systems to maintain essential supplies. Mars Control has issued warnings to conse\u2026",
-    "event_flavor": {
-      "event_key": "ice_discovery",
-      "headline": "Underground Ice Deposit Found Amid Dust Storm",
-      "broadcast": "Sol 44: Despite active dust storms, the crew located significant underground ice. Irina Vale, Marco Quinn, and Zoya Kade secured a combined 128 units of water to support ongoing operations.",
-      "source": "github_models",
-      "generated_at": "2026-05-07T00:27:38.778987",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-05-07T00:27:46.925622",
     "last_generated_sol": "Sol 44",
     "last_diagnostics": {
