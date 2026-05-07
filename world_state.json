@@ -7,7 +7,7 @@
   "temperature": -46,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Sol 44: Massive Sandstorm Disrupts Power",
+  "current_event": "Underground Ice Deposit Found Amid Dust Storm",
   "last_updated": "2026-05-06T06:52:40.396279",
   "global_resources": {
     "oxygen": 1000,
@@ -247,6 +247,10 @@
     {
       "time": "2026-05-06T12:34:46.230984",
       "event": "A severe sandstorm is underway, forcing all solar panels offline for the next 6 hours. Prepare for limited power availability and adjust operations accordingly."
+    },
+    {
+      "time": "2026-05-07T00:27:38.779003",
+      "event": "Sol 44: Despite active dust storms, the crew located significant underground ice. Irina Vale, Marco Quinn, and Zoya Kade secured a combined 128 units of water to support ongoing operations."
     }
   ],
   "market": {
@@ -303,11 +307,11 @@
     ],
     "news_summary": "On Sol 43, Mars experiences a moderate solar activity boost, enhancing energy generation capabilities across colonies. Temperatures remain low at -35C in early spring, with no dust storms reported. Colonies are focusing on optimizing energy use and conserving water to maintain s\u2026",
     "event_flavor": {
-      "event_key": "sandstorm",
-      "headline": "Sol 44: Massive Sandstorm Disrupts Power",
-      "broadcast": "A severe sandstorm is underway, forcing all solar panels offline for the next 6 hours. Prepare for limited power availability and adjust operations accordingly.",
+      "event_key": "ice_discovery",
+      "headline": "Underground Ice Deposit Found Amid Dust Storm",
+      "broadcast": "Sol 44: Despite active dust storms, the crew located significant underground ice. Irina Vale, Marco Quinn, and Zoya Kade secured a combined 128 units of water to support ongoing operations.",
       "source": "github_models",
-      "generated_at": "2026-05-06T12:34:46.230971",
+      "generated_at": "2026-05-07T00:27:38.778987",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
