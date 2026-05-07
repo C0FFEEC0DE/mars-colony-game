@@ -4,11 +4,11 @@
   "season": "Early Spring",
   "solar_activity": 0,
   "dust_storm_active": true,
-  "temperature": -46,
+  "temperature": -49,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Underground Ice Deposit Found Amid Dust Storm",
-  "last_updated": "2026-05-06T06:52:40.396279",
+  "last_updated": "2026-05-07T00:27:46.925622",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,22 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-20T00:21:46.188596",
-      "event": "Sol 27: Subsurface ice located beneath the northern ridge. Water reserves updated\u2014Irina +25L, Marco +41L, Zoya +36L."
-    },
-    {
-      "time": "2026-04-20T00:21:54.222518",
-      "event": "AI directive: Solar Activity Boosts Energy Output"
-    },
-    {
-      "time": "2026-04-20T06:42:42.488451",
-      "event": "Martian day 28 has begun"
-    },
-    {
-      "time": "2026-04-20T12:22:16.627827",
-      "event": "During Sol 28's meteor shower, Irina Vale and Marco Quinn salvaged 30 materials combined. Irina also reported structural damage under ongoing -77C conditions with 64% solar activity."
-    },
     {
       "time": "2026-04-21T00:23:33.825097",
       "event": "AI directive: Mild Solar Activity Boost"
@@ -251,6 +235,10 @@
     {
       "time": "2026-05-07T00:27:38.779003",
       "event": "Sol 44: Despite active dust storms, the crew located significant underground ice. Irina Vale, Marco Quinn, and Zoya Kade secured a combined 128 units of water to support ongoing operations."
+    },
+    {
+      "time": "2026-05-07T00:27:46.925622",
+      "event": "AI directive: Persistent Dust Storm Reduces Solar Efficiency"
     }
   ],
   "market": {
@@ -261,51 +249,51 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Moderate Solar Activity Boost",
-      "summary": "Solar activity has increased to 64%, providing a modest energy surge across the colony installations.",
+      "headline": "Persistent Dust Storm Reduces Solar Efficiency",
+      "summary": "A continuing dust storm is limiting solar energy generation, impacting colony power reserves.",
       "effect": {
-        "type": "energy_surge",
-        "magnitude": 20,
+        "type": "cold_snap",
+        "magnitude": 3,
         "result": {
-          "label": "Grid surge",
-          "target": "energy",
-          "delta": 20,
-          "before": 1100,
-          "after": 1120
+          "label": "Cold snap",
+          "target": "temperature",
+          "delta": -3,
+          "before": -46,
+          "after": -49
         }
       },
       "source": "github_models",
-      "generated_at": "2026-05-06T00:27:34.094397"
+      "generated_at": "2026-05-07T00:27:46.925622"
     },
     "missions": [
       {
-        "title": "Optimize Solar Arrays",
-        "briefing": "With increased solar activity, adjust and optimize solar arrays to maximize energy intake.",
-        "objective": "Calibrate solar panels to increase energy output by at least 5%.",
-        "reward_hint": "Gain extra energy resources.",
-        "risk": "Potential minor equipment malfunction during recalibration."
+        "title": "Repair Solar Panel Arrays",
+        "briefing": "The ongoing dust storm has deposited debris on solar panels, reducing energy output.",
+        "objective": "Clear dust and repair 3 solar panel arrays to restore energy efficiency.",
+        "reward_hint": "Energy reserves replenished.",
+        "risk": "Exposure to harsh conditions during repairs."
       },
       {
-        "title": "Water Conservation Initiative",
-        "briefing": "Water reserves are moderate but must be managed carefully during early spring to avoid shortages.",
-        "objective": "Implement water recycling protocols to reduce water consumption by 10%.",
-        "reward_hint": "Preserve water supplies for longer-term use.",
-        "risk": "Temporary reduction in water availability during system adj\u2026"
+        "title": "Emergency Oxygen Recycling Optimization",
+        "briefing": "Oxygen levels are low in the colony. Optimizing recycling systems is critical to maintain breathable air.",
+        "objective": "Upgrade oxygen recycling unit to increase output by 15%.",
+        "reward_hint": "Improved oxygen supply.",
+        "risk": "Technical failures could reduce oxygen temporarily."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity rising; recommend scheduling maintenance to leverage increased energy."
+        "message": "Dust storm is forecasted to persist. Prioritize energy conservation and safety protocols."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Marco Quinn",
-        "message": "Request collaboration on mineral extraction techniques to improve material yields."
+        "recipient": "Mars Control",
+        "message": "Requesting additional oxygen supplies to sustain Helios team amid current shortages."
       }
     ],
-    "news_summary": "On Sol 43, Mars experiences a moderate solar activity boost, enhancing energy generation capabilities across colonies. Temperatures remain low at -35C in early spring, with no dust storms reported. Colonies are focusing on optimizing energy use and conserving water to maintain s\u2026",
+    "news_summary": "Mars is enduring a persistent dust storm during early spring on Sol 44, significantly reducing solar power generation. Colonies are adapting by conducting urgent repairs and optimizing life support systems to maintain essential supplies. Mars Control has issued warnings to conse\u2026",
     "event_flavor": {
       "event_key": "ice_discovery",
       "headline": "Underground Ice Deposit Found Amid Dust Storm",
@@ -326,8 +314,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-05-06T00:27:34.094397",
-    "last_generated_sol": "Sol 43",
+    "last_generated": "2026-05-07T00:27:46.925622",
+    "last_generated_sol": "Sol 44",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
