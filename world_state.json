@@ -2,12 +2,12 @@
   "day": 45,
   "mars_date": "Sol 45",
   "season": "Early Spring",
-  "solar_activity": 60,
+  "solar_activity": 150,
   "dust_storm_active": false,
   "temperature": -64,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Rare Mineral Deposits Identified on Sol 45",
+  "current_event": "Massive Solar Flare Detected",
   "last_updated": "2026-05-07T06:57:45.097676",
   "global_resources": {
     "oxygen": 1000,
@@ -247,6 +247,10 @@
     {
       "time": "2026-05-07T12:35:14.410932",
       "event": "Geological survey reports discovery of valuable mineral veins. Extraction protocols to be evaluated for mission resource planning."
+    },
+    {
+      "time": "2026-05-08T00:27:44.809316",
+      "event": "A significant solar flare has been recorded, increasing energy levels by 50% for the next cycle. All personnel should take necessary radiation shielding precautions."
     }
   ],
   "market": {
@@ -303,11 +307,11 @@
     ],
     "news_summary": "Mars is enduring a persistent dust storm during early spring on Sol 44, significantly reducing solar power generation. Colonies are adapting by conducting urgent repairs and optimizing life support systems to maintain essential supplies. Mars Control has issued warnings to conse\u2026",
     "event_flavor": {
-      "event_key": "discovery",
-      "headline": "Rare Mineral Deposits Identified on Sol 45",
-      "broadcast": "Geological survey reports discovery of valuable mineral veins. Extraction protocols to be evaluated for mission resource planning.",
+      "event_key": "solar_flare",
+      "headline": "Massive Solar Flare Detected",
+      "broadcast": "A significant solar flare has been recorded, increasing energy levels by 50% for the next cycle. All personnel should take necessary radiation shielding precautions.",
       "source": "github_models",
-      "generated_at": "2026-05-07T12:35:14.410919",
+      "generated_at": "2026-05-08T00:27:44.809305",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
