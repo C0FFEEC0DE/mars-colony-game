@@ -8,7 +8,7 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Massive Solar Flare Detected",
-  "last_updated": "2026-05-07T06:57:45.097676",
+  "last_updated": "2026-05-08T00:27:51.651470",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,22 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-21T00:23:33.825097",
-      "event": "AI directive: Mild Solar Activity Boost"
-    },
-    {
-      "time": "2026-04-21T06:35:57.590117",
-      "event": "Martian day 29 has begun"
-    },
-    {
-      "time": "2026-04-22T00:20:50.577388",
-      "event": "AI directive: Mild Solar Boost Enhances Energy Output"
-    },
-    {
-      "time": "2026-04-22T06:36:08.153830",
-      "event": "Martian day 30 has begun"
-    },
     {
       "time": "2026-04-22T06:36:08.206258",
       "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
@@ -251,6 +235,10 @@
     {
       "time": "2026-05-08T00:27:44.809316",
       "event": "A significant solar flare has been recorded, increasing energy levels by 50% for the next cycle. All personnel should take necessary radiation shielding precautions."
+    },
+    {
+      "time": "2026-05-08T00:27:51.651470",
+      "event": "AI directive: Solar Output Peaks Early Spring"
     }
   ],
   "market": {
@@ -261,51 +249,58 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Persistent Dust Storm Reduces Solar Efficiency",
-      "summary": "A continuing dust storm is limiting solar energy generation, impacting colony power reserves.",
+      "headline": "Solar Output Peaks Early Spring",
+      "summary": "Solar activity has surged to 150%, increasing energy availability across the colony network.",
       "effect": {
-        "type": "cold_snap",
-        "magnitude": 3,
+        "type": "solar_boost",
+        "magnitude": 5,
         "result": {
-          "label": "Cold snap",
-          "target": "temperature",
-          "delta": -3,
-          "before": -46,
-          "after": -49
+          "label": "Solar boost",
+          "target": "solar_activity",
+          "delta": 0,
+          "before": 150,
+          "after": 150
         }
       },
       "source": "github_models",
-      "generated_at": "2026-05-07T00:27:46.925622"
+      "generated_at": "2026-05-08T00:27:51.651470"
     },
     "missions": [
       {
-        "title": "Repair Solar Panel Arrays",
-        "briefing": "The ongoing dust storm has deposited debris on solar panels, reducing energy output.",
-        "objective": "Clear dust and repair 3 solar panel arrays to restore energy efficiency.",
-        "reward_hint": "Energy reserves replenished.",
-        "risk": "Exposure to harsh conditions during repairs."
+        "title": "Expand Solar Array Capacity",
+        "briefing": "With increased solar activity, now is the time to expand solar arrays to capitalize on the energy surge.",
+        "objective": "Construct additional solar panels using available materials to boost colony energy reserves.",
+        "reward_hint": "Increased energy production capacity",
+        "risk": "Material shortages and construction delays"
       },
       {
-        "title": "Emergency Oxygen Recycling Optimization",
-        "briefing": "Oxygen levels are low in the colony. Optimizing recycling systems is critical to maintain breathable air.",
-        "objective": "Upgrade oxygen recycling unit to increase output by 15%.",
-        "reward_hint": "Improved oxygen supply.",
-        "risk": "Technical failures could reduce oxygen temporarily."
+        "title": "Inspect Water Reservoir Integrity",
+        "briefing": "Water reserves are critical as temperatures remain low; inspect and repair any potential leaks in water storage units.",
+        "objective": "Perform a full inspection and repair leaks in water tanks to prevent loss of water resources.",
+        "reward_hint": "Preserved water supply",
+        "risk": "Exposure to cold may damage equipment"
+      },
+      {
+        "title": "Optimize Oxygen Recycling Systems",
+        "briefing": "Oxygen levels are stable but can be improved to support future colony expansion.",
+        "objective": "Upgrade oxygen recycling modules to increase efficiency and reduce loss.",
+        "reward_hint": "Higher oxygen production efficiency",
+        "risk": "System malfunctions during upgrades"
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Dust storm is forecasted to persist. Prioritize energy conservation and safety protocols."
+        "message": "Solar activity is at a seasonal peak, take advantage to maximize energy harvesting."
       },
       {
-        "sender": "Helios Prospecting",
-        "recipient": "Mars Control",
-        "message": "Requesting additional oxygen supplies to sustain Helios team amid current shortages."
+        "sender": "Ares Systems",
+        "recipient": "Zoya Kade",
+        "message": "Support available for upgrading your oxygen recycling systems; coordinate with HQ for supplies."
       }
     ],
-    "news_summary": "Mars is enduring a persistent dust storm during early spring on Sol 44, significantly reducing solar power generation. Colonies are adapting by conducting urgent repairs and optimizing life support systems to maintain essential supplies. Mars Control has issued warnings to conse\u2026",
+    "news_summary": "On Sol 45 in early Martian spring, solar activity reached 150%, providing a natural energy boost to all colonies. Temperatures remain low at -64C, requiring careful resource management. Colonies are focusing on expanding energy infrastructure and securing water and oxygen suppli\u2026",
     "event_flavor": {
       "event_key": "solar_flare",
       "headline": "Massive Solar Flare Detected",
@@ -326,8 +321,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-05-07T00:27:46.925622",
-    "last_generated_sol": "Sol 44",
+    "last_generated": "2026-05-08T00:27:51.651470",
+    "last_generated_sol": "Sol 45",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
