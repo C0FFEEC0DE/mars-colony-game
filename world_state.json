@@ -2,13 +2,13 @@
   "day": 46,
   "mars_date": "Sol 46",
   "season": "Early Spring",
-  "solar_activity": 98,
+  "solar_activity": 103,
   "dust_storm_active": false,
   "temperature": -41,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": null,
-  "last_updated": "2026-05-08T06:34:29.345397",
+  "last_updated": "2026-05-09T00:29:08.501314",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,14 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-22T06:36:08.206258",
-      "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
-    },
-    {
-      "time": "2026-04-23T00:25:59.774022",
-      "event": "AI directive: Persistent Dust Storm Reduces Solar Efficiency"
-    },
     {
       "time": "2026-04-23T06:36:41.003989",
       "event": "Martian day 31 has begun"
@@ -243,6 +235,10 @@
     {
       "time": "2026-05-08T06:34:29.345418",
       "event": "Martian day 46 has begun"
+    },
+    {
+      "time": "2026-05-09T00:29:08.501314",
+      "event": "AI directive: Solar Activity Boosts Energy Output"
     }
   ],
   "market": {
@@ -253,61 +249,54 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Output Peaks Early Spring",
-      "summary": "Solar activity has surged to 150%, increasing energy availability across the colony network.",
+      "headline": "Solar Activity Boosts Energy Output",
+      "summary": "High solar activity today increases solar panel efficiency, providing a temporary boost in energy generation across all colonies.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
         "result": {
           "label": "Solar boost",
           "target": "solar_activity",
-          "delta": 0,
-          "before": 150,
-          "after": 150
+          "delta": 5,
+          "before": 98,
+          "after": 103
         }
       },
       "source": "github_models",
-      "generated_at": "2026-05-08T00:27:51.651470"
+      "generated_at": "2026-05-09T00:29:08.501314"
     },
     "missions": [
       {
-        "title": "Expand Solar Array Capacity",
-        "briefing": "With increased solar activity, now is the time to expand solar arrays to capitalize on the energy surge.",
-        "objective": "Construct additional solar panels using available materials to boost colony energy reserves.",
-        "reward_hint": "Increased energy production capacity",
-        "risk": "Material shortages and construction delays"
+        "title": "Optimize Solar Panels",
+        "briefing": "Leverage today's high solar activity to maximize energy capture by adjusting solar panel angles and clearing dust.",
+        "objective": "Increase colony energy reserves by 10% within the sol.",
+        "reward_hint": "Gain extra energy resources.",
+        "risk": "Low risk of minor equipment wear."
       },
       {
-        "title": "Inspect Water Reservoir Integrity",
-        "briefing": "Water reserves are critical as temperatures remain low; inspect and repair any potential leaks in water storage units.",
-        "objective": "Perform a full inspection and repair leaks in water tanks to prevent loss of water resources.",
-        "reward_hint": "Preserved water supply",
-        "risk": "Exposure to cold may damage equipment"
-      },
-      {
-        "title": "Optimize Oxygen Recycling Systems",
-        "briefing": "Oxygen levels are stable but can be improved to support future colony expansion.",
-        "objective": "Upgrade oxygen recycling modules to increase efficiency and reduce loss.",
-        "reward_hint": "Higher oxygen production efficiency",
-        "risk": "System malfunctions during upgrades"
+        "title": "Water Conservation Initiative",
+        "briefing": "Early spring melting could increase water availability, but careful management is needed to avoid waste.",
+        "objective": "Implement water recycling protocols to save 5 units of water.",
+        "reward_hint": "Improved water reserves for future use.",
+        "risk": "Moderate risk of reduced efficiency if protocols are not fo\u2026"
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity is at a seasonal peak, take advantage to maximize energy harvesting."
+        "message": "Solar activity levels are at 98%, optimize solar arrays accordingly to maximize energy gains."
       },
       {
-        "sender": "Ares Systems",
-        "recipient": "Zoya Kade",
-        "message": "Support available for upgrading your oxygen recycling systems; coordinate with HQ for supplies."
+        "sender": "Helios Prospecting",
+        "recipient": "Irina Vale",
+        "message": "Increased solar flux today; recommend scheduling outdoor maintenance to capitalize on energy surplus."
       }
     ],
-    "news_summary": "On Sol 45 in early Martian spring, solar activity reached 150%, providing a natural energy boost to all colonies. Temperatures remain low at -64C, requiring careful resource management. Colonies are focusing on expanding energy infrastructure and securing water and oxygen suppli\u2026",
+    "news_summary": "Mars is experiencing early spring with temperatures averaging -41C and high solar activity at 98%. No dust storms are reported, allowing colonies to optimize solar energy production. Water conservation remains critical as melting ice begins to augment water availability.",
     "event_flavor": {},
-    "last_generated": "2026-05-08T00:27:51.651470",
-    "last_generated_sol": "Sol 45",
+    "last_generated": "2026-05-09T00:29:08.501314",
+    "last_generated_sol": "Sol 46",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
