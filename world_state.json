@@ -1,14 +1,14 @@
 {
-  "day": 46,
-  "mars_date": "Sol 46",
+  "day": 47,
+  "mars_date": "Sol 47",
   "season": "Early Spring",
-  "solar_activity": 103,
+  "solar_activity": 72,
   "dust_storm_active": false,
-  "temperature": -41,
+  "temperature": -42,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": null,
-  "last_updated": "2026-05-09T00:29:08.501314",
+  "last_updated": "2026-05-09T06:41:53.861654",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 4658,
+      "score": 4695,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 4319,
+      "score": 4342,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 3491,
+      "score": 3511,
       "colonists": 1,
       "buildings": 2
     }
@@ -239,6 +239,10 @@
     {
       "time": "2026-05-09T00:29:08.501314",
       "event": "AI directive: Solar Activity Boosts Energy Output"
+    },
+    {
+      "time": "2026-05-09T06:41:53.861668",
+      "event": "Martian day 47 has begun"
     }
   ],
   "market": {
