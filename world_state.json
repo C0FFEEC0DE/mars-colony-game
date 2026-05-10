@@ -2,13 +2,13 @@
   "day": 47,
   "mars_date": "Sol 47",
   "season": "Early Spring",
-  "solar_activity": 72,
+  "solar_activity": 77,
   "dust_storm_active": false,
   "temperature": -42,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Trading Ship Arrives with Vital Supplies",
-  "last_updated": "2026-05-09T06:41:53.861654",
+  "last_updated": "2026-05-10T00:28:48.301065",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-23T06:36:41.003989",
-      "event": "Martian day 31 has begun"
-    },
-    {
-      "time": "2026-04-23T12:20:00.279228",
-      "event": "Exploration teams have located stable underground caverns, providing potential shelter options. Current conditions remain harsh with -80C temperatures and moderate solar activity at 83%."
-    },
-    {
-      "time": "2026-04-24T00:25:31.606024",
-      "event": "AI directive: Solar Activity Boosts Energy Output"
-    },
     {
       "time": "2026-04-24T06:37:30.182696",
       "event": "Martian day 32 has begun"
@@ -247,6 +235,10 @@
     {
       "time": "2026-05-10T00:28:41.671740",
       "event": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's reserves. Operations continue smoothly under stable conditions."
+    },
+    {
+      "time": "2026-05-10T00:28:48.301065",
+      "event": "AI directive: Solar Activity Boost Enhances Energy Output"
     }
   ],
   "market": {
@@ -257,8 +249,8 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Activity Boosts Energy Output",
-      "summary": "High solar activity today increases solar panel efficiency, providing a temporary boost in energy generation across all colonies.",
+      "headline": "Solar Activity Boost Enhances Energy Output",
+      "summary": "Solar activity has risen to 72%, improving solar panel efficiency and increasing energy availability across all colonies.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
@@ -266,42 +258,49 @@
           "label": "Solar boost",
           "target": "solar_activity",
           "delta": 5,
-          "before": 98,
-          "after": 103
+          "before": 72,
+          "after": 77
         }
       },
       "source": "github_models",
-      "generated_at": "2026-05-09T00:29:08.501314"
+      "generated_at": "2026-05-10T00:28:48.301065"
     },
     "missions": [
       {
-        "title": "Optimize Solar Panels",
-        "briefing": "Leverage today's high solar activity to maximize energy capture by adjusting solar panel angles and clearing dust.",
-        "objective": "Increase colony energy reserves by 10% within the sol.",
-        "reward_hint": "Gain extra energy resources.",
-        "risk": "Low risk of minor equipment wear."
+        "title": "Optimize Solar Panel Arrays",
+        "briefing": "With the recent solar activity surge, colonies can capitalize on increased solar energy generation by recalibrating and cleaning panels.",
+        "objective": "Perform maintenance and recalibration on solar panels to boost energy output by 10%.",
+        "reward_hint": "Increase in daily energy generation.",
+        "risk": "Minimal risk of equipment damage during maintenance."
       },
       {
-        "title": "Water Conservation Initiative",
-        "briefing": "Early spring melting could increase water availability, but careful management is needed to avoid waste.",
-        "objective": "Implement water recycling protocols to save 5 units of water.",
-        "reward_hint": "Improved water reserves for future use.",
-        "risk": "Moderate risk of reduced efficiency if protocols are not fo\u2026"
+        "title": "Water Conservation Protocol",
+        "briefing": "Water resources remain critical. Implementing stricter conservation measures will ensure longer sustainability.",
+        "objective": "Establish water recycling and rationing procedures to reduce water consumption by 15%.",
+        "reward_hint": "Preserved water resources for future use.",
+        "risk": "Possible minor discomfort for colonists adjusting to strict\u2026"
+      },
+      {
+        "title": "Materials Inventory Audit",
+        "briefing": "Materials stockpiles need auditing to identify unused or surplus items that could be repurposed or redistributed.",
+        "objective": "Conduct a full materials inventory and report opportunities for reuse or redistribution.",
+        "reward_hint": "Improved materials efficiency and potential resource gains.",
+        "risk": "Time-consuming task that may delay other activities."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity levels are at 98%, optimize solar arrays accordingly to maximize energy gains."
+        "message": "Solar activity levels have increased. Colonies are advised to maximize energy harvesting and report any system anomalies."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Irina Vale",
-        "message": "Increased solar flux today; recommend scheduling outdoor maintenance to capitalize on energy surplus."
+        "recipient": "Marco Quinn",
+        "message": "Requesting assistance with materials transfer to balance resources for upcoming projects."
       }
     ],
-    "news_summary": "Mars is experiencing early spring with temperatures averaging -41C and high solar activity at 98%. No dust storms are reported, allowing colonies to optimize solar energy production. Water conservation remains critical as melting ice begins to augment water availability.",
+    "news_summary": "As Mars enters early spring on Sol 47, solar activity has increased, boosting energy generation potential for all colonies. Water conservation remains a priority due to limited reserves. Colonies are focusing on resource optimization to sustain operations amid the cold condition\u2026",
     "event_flavor": {
       "event_key": "traders",
       "headline": "Trading Ship Arrives with Vital Supplies",
@@ -322,8 +321,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-05-09T00:29:08.501314",
-    "last_generated_sol": "Sol 46",
+    "last_generated": "2026-05-10T00:28:48.301065",
+    "last_generated_sol": "Sol 47",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
