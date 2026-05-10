@@ -7,14 +7,14 @@
   "temperature": -42,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Trading Ship Arrives with Vital Supplies",
   "last_updated": "2026-05-09T06:41:53.861654",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
     "energy": 1120,
-    "food": 1100,
-    "materials": 400
+    "food": 1200,
+    "materials": 450
   },
   "leaderboard": [
     {
@@ -243,6 +243,10 @@
     {
       "time": "2026-05-09T06:41:53.861668",
       "event": "Martian day 47 has begun"
+    },
+    {
+      "time": "2026-05-10T00:28:41.671740",
+      "event": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's reserves. Operations continue smoothly under stable conditions."
     }
   ],
   "market": {
@@ -298,7 +302,26 @@
       }
     ],
     "news_summary": "Mars is experiencing early spring with temperatures averaging -41C and high solar activity at 98%. No dust storms are reported, allowing colonies to optimize solar energy production. Water conservation remains critical as melting ice begins to augment water availability.",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "traders",
+      "headline": "Trading Ship Arrives with Vital Supplies",
+      "broadcast": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's reserves. Operations continue smoothly under stable conditions.",
+      "source": "github_models",
+      "generated_at": "2026-05-10T00:28:41.671730",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-05-09T00:29:08.501314",
     "last_generated_sol": "Sol 46",
     "last_diagnostics": {
