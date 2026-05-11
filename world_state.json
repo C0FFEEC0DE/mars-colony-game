@@ -7,7 +7,7 @@
   "temperature": -55,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Massive Solar Flare Detected",
+  "current_event": "Meteor Shower Impacts Colony Structures",
   "last_updated": "2026-05-10T06:53:03.940285",
   "global_resources": {
     "oxygen": 1000,
@@ -247,6 +247,10 @@
     {
       "time": "2026-05-10T12:16:54.509552",
       "event": "A solar flare has increased radiation levels by 50% for the next cycle. All personnel must take appropriate cover to minimize exposure."
+    },
+    {
+      "time": "2026-05-11T00:29:13.089087",
+      "event": "On Sol 48, a meteor shower caused minor building damage reported by Irina Vale. No dust storm present; temperature steady at -55C with elevated solar activity at 150%."
     }
   ],
   "market": {
@@ -310,11 +314,11 @@
     ],
     "news_summary": "As Mars enters early spring on Sol 47, solar activity has increased, boosting energy generation potential for all colonies. Water conservation remains a priority due to limited reserves. Colonies are focusing on resource optimization to sustain operations amid the cold condition\u2026",
     "event_flavor": {
-      "event_key": "solar_flare",
-      "headline": "Massive Solar Flare Detected",
-      "broadcast": "A solar flare has increased radiation levels by 50% for the next cycle. All personnel must take appropriate cover to minimize exposure.",
+      "event_key": "meteor_shower",
+      "headline": "Meteor Shower Impacts Colony Structures",
+      "broadcast": "On Sol 48, a meteor shower caused minor building damage reported by Irina Vale. No dust storm present; temperature steady at -55C with elevated solar activity at 150%.",
       "source": "github_models",
-      "generated_at": "2026-05-10T12:16:54.509536",
+      "generated_at": "2026-05-11T00:29:13.089072",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
