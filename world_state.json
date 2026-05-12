@@ -7,7 +7,7 @@
   "temperature": -48,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Underground Ice Deposit Secured on Sol 49",
   "last_updated": "2026-05-12T06:55:54.568507",
   "global_resources": {
     "oxygen": 1000,
@@ -247,6 +247,10 @@
     {
       "time": "2026-05-12T06:55:54.568526",
       "event": "Martian day 49 has begun"
+    },
+    {
+      "time": "2026-05-12T12:37:57.039542",
+      "event": "Teams report the discovery of underground ice reserves, adding +44 water to Irina Vale, +29 to Marco Quinn, and +45 to Zoya Kade's supplies. This boosts colony hydration capabilities amid stable conditions."
     }
   ],
   "market": {
@@ -314,7 +318,26 @@
       }
     ],
     "news_summary": "On Sol 48 of early spring, Mars experiences a solar activity surge enhancing energy generation potential. Colonies are advised to optimize solar arrays and secure additional water supplies from subsurface ice. Oxygen recycling system maintenance remains a priority to prevent sho\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "ice_discovery",
+      "headline": "Underground Ice Deposit Secured on Sol 49",
+      "broadcast": "Teams report the discovery of underground ice reserves, adding +44 water to Irina Vale, +29 to Marco Quinn, and +45 to Zoya Kade's supplies. This boosts colony hydration capabilities amid stable conditions.",
+      "source": "github_models",
+      "generated_at": "2026-05-12T12:37:57.039529",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-05-11T00:29:19.148754",
     "last_generated_sol": "Sol 48",
     "last_diagnostics": {
