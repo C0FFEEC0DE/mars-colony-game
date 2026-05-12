@@ -7,7 +7,7 @@
   "temperature": -55,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Meteor Shower Impacts Colony Structures",
+  "current_event": "Underground Ice Deposit Secured on Sol 48",
   "last_updated": "2026-05-11T00:29:19.148754",
   "global_resources": {
     "oxygen": 1000,
@@ -239,6 +239,10 @@
     {
       "time": "2026-05-11T00:29:19.148754",
       "event": "AI directive: Solar Flare Boosts Energy Output"
+    },
+    {
+      "time": "2026-05-12T00:28:48.693067",
+      "event": "Teams have confirmed a new underground ice source; Irina, Marco, and Zoya's water reserves increased accordingly, boosting our hydration capacity amid stable conditions."
     }
   ],
   "market": {
@@ -307,11 +311,11 @@
     ],
     "news_summary": "On Sol 48 of early spring, Mars experiences a solar activity surge enhancing energy generation potential. Colonies are advised to optimize solar arrays and secure additional water supplies from subsurface ice. Oxygen recycling system maintenance remains a priority to prevent sho\u2026",
     "event_flavor": {
-      "event_key": "meteor_shower",
-      "headline": "Meteor Shower Impacts Colony Structures",
-      "broadcast": "On Sol 48, a meteor shower caused minor building damage reported by Irina Vale. No dust storm present; temperature steady at -55C with elevated solar activity at 150%.",
+      "event_key": "ice_discovery",
+      "headline": "Underground Ice Deposit Secured on Sol 48",
+      "broadcast": "Teams have confirmed a new underground ice source; Irina, Marco, and Zoya's water reserves increased accordingly, boosting our hydration capacity amid stable conditions.",
       "source": "github_models",
-      "generated_at": "2026-05-11T00:29:13.089072",
+      "generated_at": "2026-05-12T00:28:48.693054",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
