@@ -7,7 +7,7 @@
   "temperature": -39,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Microbial Discovery in Martian Soil",
   "last_updated": "2026-05-13T06:59:57.957032",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-05-13T06:59:57.957050",
       "event": "Martian day 50 has begun"
+    },
+    {
+      "time": "2026-05-13T12:40:40.584600",
+      "event": "On Sol 50, analysis reveals presence of unknown bacteria in soil sample. Further study scheduled to assess implications for planetary protection."
     }
   ],
   "market": {
@@ -298,7 +302,26 @@
       }
     ],
     "news_summary": "On Sol 49 of early spring, Mars experiences a solar activity peak enhancing energy production. Colonies are advised to perform solar array maintenance to take advantage of the energy surge. Additionally, water collection missions near ice deposits present an opportunity to bolst\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "discovery",
+      "headline": "Microbial Discovery in Martian Soil",
+      "broadcast": "On Sol 50, analysis reveals presence of unknown bacteria in soil sample. Further study scheduled to assess implications for planetary protection.",
+      "source": "github_models",
+      "generated_at": "2026-05-13T12:40:40.584582",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-05-13T00:31:49.753495",
     "last_generated_sol": "Sol 49",
     "last_diagnostics": {
