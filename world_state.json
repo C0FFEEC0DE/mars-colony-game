@@ -1,14 +1,14 @@
 {
-  "day": 49,
-  "mars_date": "Sol 49",
+  "day": 50,
+  "mars_date": "Sol 50",
   "season": "Early Spring",
-  "solar_activity": 100,
+  "solar_activity": 91,
   "dust_storm_active": false,
-  "temperature": -48,
+  "temperature": -39,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Subsurface Ice Deposit Uncovered on Sol 49",
-  "last_updated": "2026-05-13T00:31:49.753495",
+  "current_event": null,
+  "last_updated": "2026-05-13T06:59:57.957032",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 5325,
+      "score": 5362,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 4898,
+      "score": 4921,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 4074,
+      "score": 4094,
       "colonists": 1,
       "buildings": 2
     }
@@ -239,6 +239,10 @@
     {
       "time": "2026-05-13T00:31:49.753495",
       "event": "AI directive: Solar Activity Peaks"
+    },
+    {
+      "time": "2026-05-13T06:59:57.957050",
+      "event": "Martian day 50 has begun"
     }
   ],
   "market": {
@@ -294,26 +298,7 @@
       }
     ],
     "news_summary": "On Sol 49 of early spring, Mars experiences a solar activity peak enhancing energy production. Colonies are advised to perform solar array maintenance to take advantage of the energy surge. Additionally, water collection missions near ice deposits present an opportunity to bolst\u2026",
-    "event_flavor": {
-      "event_key": "ice_discovery",
-      "headline": "Subsurface Ice Deposit Uncovered on Sol 49",
-      "broadcast": "Exploration teams Irina Vale, Marco Quinn, and Zoya Kade successfully extracted a total of 120 liters of underground water ice today, bolstering colony reserves amid stable conditions.",
-      "source": "github_models",
-      "generated_at": "2026-05-13T00:31:43.948527",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-05-13T00:31:49.753495",
     "last_generated_sol": "Sol 49",
     "last_diagnostics": {
