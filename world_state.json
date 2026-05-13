@@ -2,13 +2,13 @@
   "day": 49,
   "mars_date": "Sol 49",
   "season": "Early Spring",
-  "solar_activity": 95,
+  "solar_activity": 100,
   "dust_storm_active": false,
   "temperature": -48,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Subsurface Ice Deposit Uncovered on Sol 49",
-  "last_updated": "2026-05-12T06:55:54.568507",
+  "last_updated": "2026-05-13T00:31:49.753495",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,26 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-26T00:23:11.541982",
-      "event": "AI directive: Moderate Solar Boost Enhances Energy Output"
-    },
-    {
-      "time": "2026-04-26T06:36:47.505911",
-      "event": "Martian day 34 has begun"
-    },
-    {
-      "time": "2026-04-27T00:24:02.161873",
-      "event": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's global reserves. This influx bolsters our resource pool as Mars Sol 34 progresses under stable conditions."
-    },
-    {
-      "time": "2026-04-27T00:24:08.013780",
-      "event": "AI directive: Solar Activity Boosts Power Output"
-    },
-    {
-      "time": "2026-04-27T06:50:45.208632",
-      "event": "Martian day 35 has begun"
-    },
     {
       "time": "2026-04-27T06:50:45.251027",
       "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
@@ -255,6 +235,10 @@
     {
       "time": "2026-05-13T00:31:43.948540",
       "event": "Exploration teams Irina Vale, Marco Quinn, and Zoya Kade successfully extracted a total of 120 liters of underground water ice today, bolstering colony reserves amid stable conditions."
+    },
+    {
+      "time": "2026-05-13T00:31:49.753495",
+      "event": "AI directive: Solar Activity Peaks"
     }
   ],
   "market": {
@@ -265,63 +249,51 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Flare Boosts Energy Output",
-      "summary": "Solar activity has surged to 150%, increasing potential energy generation across all colonies.",
+      "headline": "Solar Activity Peaks",
+      "summary": "A surge in solar activity has increased energy availability across Mars, improving solar panel efficiency.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
         "result": {
           "label": "Solar boost",
           "target": "solar_activity",
-          "delta": 0,
-          "before": 150,
-          "after": 150
+          "delta": 5,
+          "before": 95,
+          "after": 100
         }
       },
       "source": "github_models",
-      "generated_at": "2026-05-11T00:29:19.148754"
+      "generated_at": "2026-05-13T00:31:49.753495"
     },
     "missions": [
       {
-        "title": "Maximize Solar Array Efficiency",
-        "briefing": "With increased solar activity, boost your colony's energy reserves by optimizing solar array performance.",
-        "objective": "Perform maintenance and recalibration of solar panels to increase energy collection by 15%.",
-        "reward_hint": "Energy reserves will increase significantly.",
-        "risk": "Minor risk of equipment overload if not carefully managed."
+        "title": "Optimize Solar Arrays",
+        "briefing": "With the solar boost, colonies should maximize energy capture by cleaning and calibrating solar panels.",
+        "objective": "Perform maintenance on solar arrays to increase energy production by 10%.",
+        "reward_hint": "Boosted energy reserves for all colonies.",
+        "risk": "Minimal risk from dust accumulation during cleaning."
       },
       {
-        "title": "Secure Water Reserves from Subsurface Ice",
-        "briefing": "Early spring thaw may reveal accessible subsurface ice deposits near your colony site.",
-        "objective": "Deploy excavation equipment to extract at least 50 units of water from subsurface ice pockets.",
-        "reward_hint": "Water reserves will be replenished, improving colony sustai\u2026",
-        "risk": "Equipment may be damaged by unstable terrain."
-      },
-      {
-        "title": "Repair Oxygen Recycling Systems",
-        "briefing": "Oxygen levels in some colonies are low. Ensuring the recycling system is fully operational is critical.",
-        "objective": "Inspect and repair oxygen recycling units to restore oxygen production capacity by at least 20%.",
-        "reward_hint": "Oxygen supplies will increase, reducing risk of shortages.",
-        "risk": "Potential exposure to low-oxygen environments during repair\u2026"
+        "title": "Secure Water Cache",
+        "briefing": "Early Spring meltwater can be collected from exposed ice pockets near Helios Prospecting.",
+        "objective": "Collect and store 50 units of water from nearby ice deposits.",
+        "reward_hint": "Additional water supplies for colony use.",
+        "risk": "Risk of exposure to cold temperatures during collection."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity at 150% has increased energy generation opportunities. Optimize solar arrays immediately."
+        "message": "Solar activity has peaked. Recommend immediate solar array maintenance to capitalize on energy gains."
       },
       {
         "sender": "Helios Prospecting",
         "recipient": "Marco Quinn",
-        "message": "Irina reports promising subsurface ice deposits near your sector. Consider joint water extraction efforts."
-      },
-      {
-        "sender": "Ares Systems",
-        "recipient": "all colonies",
-        "message": "Reminder: early spring conditions may cause fluctuating temperatures. Prepare for thermal regulation challenges."
+        "message": "Identified water pockets nearby. Coordination for collection operations advised."
       }
     ],
-    "news_summary": "On Sol 48 of early spring, Mars experiences a solar activity surge enhancing energy generation potential. Colonies are advised to optimize solar arrays and secure additional water supplies from subsurface ice. Oxygen recycling system maintenance remains a priority to prevent sho\u2026",
+    "news_summary": "On Sol 49 of early spring, Mars experiences a solar activity peak enhancing energy production. Colonies are advised to perform solar array maintenance to take advantage of the energy surge. Additionally, water collection missions near ice deposits present an opportunity to bolst\u2026",
     "event_flavor": {
       "event_key": "ice_discovery",
       "headline": "Subsurface Ice Deposit Uncovered on Sol 49",
@@ -342,19 +314,20 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-05-11T00:29:19.148754",
-    "last_generated_sol": "Sol 48",
+    "last_generated": "2026-05-13T00:31:49.753495",
+    "last_generated_sol": "Sol 49",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
       "api_url": "https://models.github.ai/inference/chat/completions",
       "disabled": false,
-      "token_present": false,
-      "token_source": "none",
-      "status": "cached",
-      "http_status": null,
-      "reason": "daily content already generated for Sol 48",
-      "response_excerpt": ""
+      "token_present": true,
+      "token_source": "GITHUB_TOKEN",
+      "status": "ok",
+      "http_status": 200,
+      "reason": "request succeeded",
+      "response_excerpt": "",
+      "fallback": false
     }
   }
 }
