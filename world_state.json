@@ -2,13 +2,13 @@
   "day": 50,
   "mars_date": "Sol 50",
   "season": "Early Spring",
-  "solar_activity": 91,
+  "solar_activity": 96,
   "dust_storm_active": false,
   "temperature": -39,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Microbial Discovery in Martian Soil",
-  "last_updated": "2026-05-13T06:59:57.957032",
+  "last_updated": "2026-05-14T00:32:55.420868",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-27T06:50:45.251027",
-      "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
-    },
-    {
-      "time": "2026-04-27T12:29:39.692110",
-      "event": "Despite the ongoing dust storm, a trading ship from Earth has docked successfully, delivering +100 units of food and +50 units of materials to our global reserves."
-    },
-    {
-      "time": "2026-04-28T00:27:05.562663",
-      "event": "On Sol 35, despite active dust storm and -31C temperatures, the Earth trading ship docked successfully, delivering +100 food and +50 materials to the colony reserves."
-    },
     {
       "time": "2026-04-28T00:27:13.721844",
       "event": "AI directive: Ongoing Dust Storm Limits Solar Efficiency"
@@ -247,6 +235,10 @@
     {
       "time": "2026-05-13T12:40:40.584600",
       "event": "On Sol 50, analysis reveals presence of unknown bacteria in soil sample. Further study scheduled to assess implications for planetary protection."
+    },
+    {
+      "time": "2026-05-14T00:32:55.420868",
+      "event": "AI directive: Moderate Solar Boost Enhances Energy Output"
     }
   ],
   "market": {
@@ -257,8 +249,8 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Activity Peaks",
-      "summary": "A surge in solar activity has increased energy availability across Mars, improving solar panel efficiency.",
+      "headline": "Moderate Solar Boost Enhances Energy Output",
+      "summary": "Solar activity has increased to 91%, providing a mild boost to solar panel efficiency across the colony.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
@@ -266,42 +258,42 @@
           "label": "Solar boost",
           "target": "solar_activity",
           "delta": 5,
-          "before": 95,
-          "after": 100
+          "before": 91,
+          "after": 96
         }
       },
       "source": "github_models",
-      "generated_at": "2026-05-13T00:31:49.753495"
+      "generated_at": "2026-05-14T00:32:55.420868"
     },
     "missions": [
       {
-        "title": "Optimize Solar Arrays",
-        "briefing": "With the solar boost, colonies should maximize energy capture by cleaning and calibrating solar panels.",
-        "objective": "Perform maintenance on solar arrays to increase energy production by 10%.",
-        "reward_hint": "Boosted energy reserves for all colonies.",
-        "risk": "Minimal risk from dust accumulation during cleaning."
+        "title": "Optimize Solar Panel Arrays",
+        "briefing": "The recent solar activity surge offers an opportunity to recalibrate solar panels for improved energy capture.",
+        "objective": "Adjust and fine-tune solar panel alignments to maximize energy absorption.",
+        "reward_hint": "Increased daily energy generation.",
+        "risk": "Minor equipment wear during recalibration."
       },
       {
-        "title": "Secure Water Cache",
-        "briefing": "Early Spring meltwater can be collected from exposed ice pockets near Helios Prospecting.",
-        "objective": "Collect and store 50 units of water from nearby ice deposits.",
-        "reward_hint": "Additional water supplies for colony use.",
-        "risk": "Risk of exposure to cold temperatures during collection."
+        "title": "Water Recycling System Check",
+        "briefing": "With limited water reserves, ensuring the recycling system operates at peak efficiency is critical.",
+        "objective": "Perform maintenance and diagnostics on the water recycling units.",
+        "reward_hint": "Improved water recovery rate.",
+        "risk": "Potential temporary water supply disruption."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity has peaked. Recommend immediate solar array maintenance to capitalize on energy gains."
+        "message": "Solar activity is elevated; colonies should leverage this period to optimize energy systems."
       },
       {
-        "sender": "Helios Prospecting",
-        "recipient": "Marco Quinn",
-        "message": "Identified water pockets nearby. Coordination for collection operations advised."
+        "sender": "Ares Systems",
+        "recipient": "Zoya Kade",
+        "message": "Requesting status update on oxygen systems given current reserves."
       }
     ],
-    "news_summary": "On Sol 49 of early spring, Mars experiences a solar activity peak enhancing energy production. Colonies are advised to perform solar array maintenance to take advantage of the energy surge. Additionally, water collection missions near ice deposits present an opportunity to bolst\u2026",
+    "news_summary": "On Sol 50 of early spring, Mars experiences a mild solar activity boost enhancing energy generation potential. Colonies focus on optimizing solar panels and maintaining critical water recycling systems amid cold temperatures. Resource management remains key for survival as dust\u2026",
     "event_flavor": {
       "event_key": "discovery",
       "headline": "Microbial Discovery in Martian Soil",
@@ -322,8 +314,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-05-13T00:31:49.753495",
-    "last_generated_sol": "Sol 49",
+    "last_generated": "2026-05-14T00:32:55.420868",
+    "last_generated_sol": "Sol 50",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
