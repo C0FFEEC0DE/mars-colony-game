@@ -1,14 +1,14 @@
 {
-  "day": 50,
-  "mars_date": "Sol 50",
+  "day": 51,
+  "mars_date": "Sol 51",
   "season": "Early Spring",
-  "solar_activity": 96,
+  "solar_activity": 81,
   "dust_storm_active": false,
-  "temperature": -39,
+  "temperature": -58,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Microbial Discovery in Martian Soil",
-  "last_updated": "2026-05-14T00:32:55.420868",
+  "current_event": null,
+  "last_updated": "2026-05-14T06:58:37.084778",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 5467,
+      "score": 5503,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 4984,
+      "score": 5006,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 4148,
+      "score": 4167,
       "colonists": 1,
       "buildings": 2
     }
@@ -239,6 +239,10 @@
     {
       "time": "2026-05-14T00:32:55.420868",
       "event": "AI directive: Moderate Solar Boost Enhances Energy Output"
+    },
+    {
+      "time": "2026-05-14T06:58:37.084797",
+      "event": "Martian day 51 has begun"
     }
   ],
   "market": {
@@ -294,26 +298,7 @@
       }
     ],
     "news_summary": "On Sol 50 of early spring, Mars experiences a mild solar activity boost enhancing energy generation potential. Colonies focus on optimizing solar panels and maintaining critical water recycling systems amid cold temperatures. Resource management remains key for survival as dust\u2026",
-    "event_flavor": {
-      "event_key": "discovery",
-      "headline": "Microbial Discovery in Martian Soil",
-      "broadcast": "On Sol 50, analysis reveals presence of unknown bacteria in soil sample. Further study scheduled to assess implications for planetary protection.",
-      "source": "github_models",
-      "generated_at": "2026-05-13T12:40:40.584582",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-05-14T00:32:55.420868",
     "last_generated_sol": "Sol 50",
     "last_diagnostics": {
