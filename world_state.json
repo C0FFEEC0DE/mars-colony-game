@@ -2,13 +2,13 @@
   "day": 51,
   "mars_date": "Sol 51",
   "season": "Early Spring",
-  "solar_activity": 81,
+  "solar_activity": 86,
   "dust_storm_active": false,
   "temperature": -58,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Sol 51 Meteor Shower Yields Critical Salvage",
-  "last_updated": "2026-05-14T06:58:37.084778",
+  "last_updated": "2026-05-15T00:30:18.542802",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-28T00:27:13.721844",
-      "event": "AI directive: Ongoing Dust Storm Limits Solar Efficiency"
-    },
-    {
-      "time": "2026-04-28T06:52:29.235924",
-      "event": "Martian day 36 has begun"
-    },
-    {
-      "time": "2026-04-29T00:28:23.656644",
-      "event": "A massive solar flare has increased energy output by 50% for the next cycle. All crew advised to take shelter to minimize radiation exposure."
-    },
     {
       "time": "2026-04-29T00:28:30.965253",
       "event": "AI directive: Solar Flare Boosts Energy Output"
@@ -247,6 +235,10 @@
     {
       "time": "2026-05-14T12:34:40.946814",
       "event": "A meteor shower passed overhead with solar activity at 81%. Irina Vale successfully salvaged 20 units of materials during the event. Temperature steady at -58C; no dust storm detected."
+    },
+    {
+      "time": "2026-05-15T00:30:18.542802",
+      "event": "AI directive: Mild Solar Boost Enhances Energy Output"
     }
   ],
   "market": {
@@ -257,8 +249,8 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Moderate Solar Boost Enhances Energy Output",
-      "summary": "Solar activity has increased to 91%, providing a mild boost to solar panel efficiency across the colony.",
+      "headline": "Mild Solar Boost Enhances Energy Output",
+      "summary": "Solar activity remains high at 81%, providing a modest increase in energy generation across colonies.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
@@ -266,42 +258,49 @@
           "label": "Solar boost",
           "target": "solar_activity",
           "delta": 5,
-          "before": 91,
-          "after": 96
+          "before": 81,
+          "after": 86
         }
       },
       "source": "github_models",
-      "generated_at": "2026-05-14T00:32:55.420868"
+      "generated_at": "2026-05-15T00:30:18.542802"
     },
     "missions": [
       {
         "title": "Optimize Solar Panel Arrays",
-        "briefing": "The recent solar activity surge offers an opportunity to recalibrate solar panels for improved energy capture.",
-        "objective": "Adjust and fine-tune solar panel alignments to maximize energy absorption.",
-        "reward_hint": "Increased daily energy generation.",
-        "risk": "Minor equipment wear during recalibration."
+        "briefing": "With solar activity at a seasonal peak, recalibrating panel angles can maximize energy absorption.",
+        "objective": "Adjust and clean solar panels to increase energy output by 10%.",
+        "reward_hint": "Gain additional energy resources.",
+        "risk": "Minimal risk; potential minor equipment wear."
       },
       {
-        "title": "Water Recycling System Check",
-        "briefing": "With limited water reserves, ensuring the recycling system operates at peak efficiency is critical.",
-        "objective": "Perform maintenance and diagnostics on the water recycling units.",
-        "reward_hint": "Improved water recovery rate.",
-        "risk": "Potential temporary water supply disruption."
+        "title": "Check Oxygen Recycling Systems",
+        "briefing": "Irina Vale's colony shows zero oxygen reserves; ensure life support systems are functioning properly.",
+        "objective": "Inspect and repair oxygen recyclers to restore oxygen levels to at least 100 units.",
+        "reward_hint": "Secure critical oxygen supplies.",
+        "risk": "Exposure to low oxygen environment during repairs."
+      },
+      {
+        "title": "Water Conservation Protocol",
+        "briefing": "Water reserves vary widely; implement conservation measures to stabilize supplies during early spring.",
+        "objective": "Deploy water-saving technology and monitor usage for 3 sols.",
+        "reward_hint": "Prevent water shortages and maintain colony stability.",
+        "risk": "Reduced water availability might impact routine tasks tempo\u2026"
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity is elevated; colonies should leverage this period to optimize energy systems."
+        "message": "Solar activity is favorable; prioritize energy generation and system checks to optimize resource use."
       },
       {
-        "sender": "Ares Systems",
-        "recipient": "Zoya Kade",
-        "message": "Requesting status update on oxygen systems given current reserves."
+        "sender": "Helios Prospecting",
+        "recipient": "Irina Vale",
+        "message": "Urgent: Oxygen reserves critically low. Immediate system diagnostics recommended."
       }
     ],
-    "news_summary": "On Sol 50 of early spring, Mars experiences a mild solar activity boost enhancing energy generation potential. Colonies focus on optimizing solar panels and maintaining critical water recycling systems amid cold temperatures. Resource management remains key for survival as dust\u2026",
+    "news_summary": "On Sol 51, Mars colonies benefit from a mild solar boost, improving energy generation. Early spring temperatures remain frigid at -58C, but no dust storms are present. Attention focuses on oxygen recycling and water conservation as resource levels vary across colonies.",
     "event_flavor": {
       "event_key": "meteor_shower",
       "headline": "Sol 51 Meteor Shower Yields Critical Salvage",
@@ -322,8 +321,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-05-14T00:32:55.420868",
-    "last_generated_sol": "Sol 50",
+    "last_generated": "2026-05-15T00:30:18.542802",
+    "last_generated_sol": "Sol 51",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
