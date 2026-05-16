@@ -2,12 +2,12 @@
   "day": 51,
   "mars_date": "Sol 51",
   "season": "Early Spring",
-  "solar_activity": 86,
+  "solar_activity": 150,
   "dust_storm_active": false,
   "temperature": -58,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Sol 51 Meteor Shower Yields Critical Salvage",
+  "current_event": "Massive Solar Flare Detected",
   "last_updated": "2026-05-15T00:30:18.542802",
   "global_resources": {
     "oxygen": 1000,
@@ -239,6 +239,10 @@
     {
       "time": "2026-05-15T00:30:18.542802",
       "event": "AI directive: Mild Solar Boost Enhances Energy Output"
+    },
+    {
+      "time": "2026-05-16T00:28:20.692103",
+      "event": "A massive solar flare has increased energy levels by 50% for the next cycle. All personnel must take cover to minimize radiation exposure."
     }
   ],
   "market": {
@@ -302,11 +306,11 @@
     ],
     "news_summary": "On Sol 51, Mars colonies benefit from a mild solar boost, improving energy generation. Early spring temperatures remain frigid at -58C, but no dust storms are present. Attention focuses on oxygen recycling and water conservation as resource levels vary across colonies.",
     "event_flavor": {
-      "event_key": "meteor_shower",
-      "headline": "Sol 51 Meteor Shower Yields Critical Salvage",
-      "broadcast": "A meteor shower passed overhead with solar activity at 81%. Irina Vale successfully salvaged 20 units of materials during the event. Temperature steady at -58C; no dust storm detected.",
+      "event_key": "solar_flare",
+      "headline": "Massive Solar Flare Detected",
+      "broadcast": "A massive solar flare has increased energy levels by 50% for the next cycle. All personnel must take cover to minimize radiation exposure.",
       "source": "github_models",
-      "generated_at": "2026-05-14T12:34:40.946785",
+      "generated_at": "2026-05-16T00:28:20.692089",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
