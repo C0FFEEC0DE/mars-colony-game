@@ -7,14 +7,14 @@
   "temperature": -66,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Trading Ship Arrives Amid Dust Storm",
   "last_updated": "2026-05-17T06:55:42.212965",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
     "energy": 1120,
-    "food": 1200,
-    "materials": 450
+    "food": 1300,
+    "materials": 500
   },
   "leaderboard": [
     {
@@ -247,6 +247,10 @@
     {
       "time": "2026-05-17T06:55:42.262257",
       "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
+    },
+    {
+      "time": "2026-05-17T12:18:05.913722",
+      "event": "On Sol 53, despite active dust storm and -66\u00b0C temperatures, the Earth trading ship docked successfully, replenishing food by 100 units and materials by 50 units in the global pool."
     }
   ],
   "market": {
@@ -302,7 +306,26 @@
       }
     ],
     "news_summary": "Solar activity has increased to 150%, providing an energy boost for all colonies on Sol 52 during early spring. Colonies are encouraged to optimize their solar arrays to capitalize on this surge. Water remains a critical resource, with conservation efforts recommended as tempera\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "traders",
+      "headline": "Trading Ship Arrives Amid Dust Storm",
+      "broadcast": "On Sol 53, despite active dust storm and -66\u00b0C temperatures, the Earth trading ship docked successfully, replenishing food by 100 units and materials by 50 units in the global pool.",
+      "source": "github_models",
+      "generated_at": "2026-05-17T12:18:05.913708",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-05-17T00:30:03.146905",
     "last_generated_sol": "Sol 52",
     "last_diagnostics": {
