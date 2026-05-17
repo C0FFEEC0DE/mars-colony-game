@@ -8,7 +8,7 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Massive Solar Flare Detected on Sol 52",
-  "last_updated": "2026-05-16T06:44:47.897911",
+  "last_updated": "2026-05-17T00:30:03.146905",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,22 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-29T00:28:30.965253",
-      "event": "AI directive: Solar Flare Boosts Energy Output"
-    },
-    {
-      "time": "2026-04-29T06:47:52.562556",
-      "event": "Martian day 37 has begun"
-    },
-    {
-      "time": "2026-04-29T12:30:09.892333",
-      "event": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's global reserves. This shipment boosts our resource stockpiles amid current Martian conditions."
-    },
-    {
-      "time": "2026-04-30T00:28:10.457252",
-      "event": "Exploration teams have located underground caverns near the habitat perimeter. These formations may provide stable thermal conditions for future expansion."
-    },
     {
       "time": "2026-04-30T00:28:16.833176",
       "event": "AI directive: Moderate Solar Boost Enhances Energy Output"
@@ -251,6 +235,10 @@
     {
       "time": "2026-05-17T00:29:58.682595",
       "event": "A massive solar flare has increased energy levels by 50% for the next turn. All personnel must take cover to minimize radiation exposure."
+    },
+    {
+      "time": "2026-05-17T00:30:03.146905",
+      "event": "AI directive: Solar Flare Boosts Energy Output"
     }
   ],
   "market": {
@@ -261,58 +249,51 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Mild Solar Boost Enhances Energy Output",
-      "summary": "Solar activity remains high at 81%, providing a modest increase in energy generation across colonies.",
+      "headline": "Solar Flare Boosts Energy Output",
+      "summary": "A surge in solar activity has increased energy generation by 20% across all solar panels, improving power reserves on Mars.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
         "result": {
           "label": "Solar boost",
           "target": "solar_activity",
-          "delta": 5,
-          "before": 81,
-          "after": 86
+          "delta": 0,
+          "before": 150,
+          "after": 150
         }
       },
       "source": "github_models",
-      "generated_at": "2026-05-15T00:30:18.542802"
+      "generated_at": "2026-05-17T00:30:03.146905"
     },
     "missions": [
       {
-        "title": "Optimize Solar Panel Arrays",
-        "briefing": "With solar activity at a seasonal peak, recalibrating panel angles can maximize energy absorption.",
-        "objective": "Adjust and clean solar panels to increase energy output by 10%.",
-        "reward_hint": "Gain additional energy resources.",
-        "risk": "Minimal risk; potential minor equipment wear."
-      },
-      {
-        "title": "Check Oxygen Recycling Systems",
-        "briefing": "Irina Vale's colony shows zero oxygen reserves; ensure life support systems are functioning properly.",
-        "objective": "Inspect and repair oxygen recyclers to restore oxygen levels to at least 100 units.",
-        "reward_hint": "Secure critical oxygen supplies.",
-        "risk": "Exposure to low oxygen environment during repairs."
+        "title": "Optimize Solar Panel Alignment",
+        "briefing": "With the solar flare increasing energy potential, adjust solar panels to maximize power intake.",
+        "objective": "Recalibrate solar arrays for peak efficiency.",
+        "reward_hint": "Increased energy reserves.",
+        "risk": "Minor equipment wear during recalibration."
       },
       {
         "title": "Water Conservation Protocol",
-        "briefing": "Water reserves vary widely; implement conservation measures to stabilize supplies during early spring.",
-        "objective": "Deploy water-saving technology and monitor usage for 3 sols.",
-        "reward_hint": "Prevent water shortages and maintain colony stability.",
-        "risk": "Reduced water availability might impact routine tasks tempo\u2026"
+        "briefing": "Water stores are sufficient but limited; implement conservation measures to extend supply through early spring.",
+        "objective": "Reduce water consumption by 10% over the next sol.",
+        "reward_hint": "Preserved water resources.",
+        "risk": "Possible reduced hygiene or crop yield."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity is favorable; prioritize energy generation and system checks to optimize resource use."
+        "message": "Solar activity is heightened; optimize energy collection systems accordingly."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Irina Vale",
-        "message": "Urgent: Oxygen reserves critically low. Immediate system diagnostics recommended."
+        "recipient": "all colonies",
+        "message": "Sharing recent findings on subsurface ice deposits; coordinate mining efforts to boost water reserves."
       }
     ],
-    "news_summary": "On Sol 51, Mars colonies benefit from a mild solar boost, improving energy generation. Early spring temperatures remain frigid at -58C, but no dust storms are present. Attention focuses on oxygen recycling and water conservation as resource levels vary across colonies.",
+    "news_summary": "Solar activity has increased to 150%, providing an energy boost for all colonies on Sol 52 during early spring. Colonies are encouraged to optimize their solar arrays to capitalize on this surge. Water remains a critical resource, with conservation efforts recommended as tempera\u2026",
     "event_flavor": {
       "event_key": "solar_flare",
       "headline": "Massive Solar Flare Detected on Sol 52",
@@ -333,19 +314,20 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-05-15T00:30:18.542802",
-    "last_generated_sol": "Sol 51",
+    "last_generated": "2026-05-17T00:30:03.146905",
+    "last_generated_sol": "Sol 52",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
       "api_url": "https://models.github.ai/inference/chat/completions",
       "disabled": false,
-      "token_present": false,
-      "token_source": "none",
-      "status": "cached",
-      "http_status": null,
-      "reason": "daily content already generated for Sol 51",
-      "response_excerpt": ""
+      "token_present": true,
+      "token_source": "GITHUB_TOKEN",
+      "status": "ok",
+      "http_status": 200,
+      "reason": "request succeeded",
+      "response_excerpt": "",
+      "fallback": false
     }
   }
 }
