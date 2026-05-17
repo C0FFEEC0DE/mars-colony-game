@@ -1,14 +1,14 @@
 {
-  "day": 52,
-  "mars_date": "Sol 52",
+  "day": 53,
+  "mars_date": "Sol 53",
   "season": "Early Spring",
-  "solar_activity": 150,
-  "dust_storm_active": false,
-  "temperature": -67,
+  "solar_activity": 71,
+  "dust_storm_active": true,
+  "temperature": -66,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Massive Solar Flare Detected on Sol 52",
-  "last_updated": "2026-05-17T00:30:03.146905",
+  "current_event": null,
+  "last_updated": "2026-05-17T06:55:42.212965",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 5878,
+      "score": 5880,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 5227,
+      "score": 5221,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 4455,
+      "score": 4454,
       "colonists": 1,
       "buildings": 2
     }
@@ -239,6 +239,14 @@
     {
       "time": "2026-05-17T00:30:03.146905",
       "event": "AI directive: Solar Flare Boosts Energy Output"
+    },
+    {
+      "time": "2026-05-17T06:55:42.212980",
+      "event": "Martian day 53 has begun"
+    },
+    {
+      "time": "2026-05-17T06:55:42.262257",
+      "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
     }
   ],
   "market": {
@@ -294,26 +302,7 @@
       }
     ],
     "news_summary": "Solar activity has increased to 150%, providing an energy boost for all colonies on Sol 52 during early spring. Colonies are encouraged to optimize their solar arrays to capitalize on this surge. Water remains a critical resource, with conservation efforts recommended as tempera\u2026",
-    "event_flavor": {
-      "event_key": "solar_flare",
-      "headline": "Massive Solar Flare Detected on Sol 52",
-      "broadcast": "A massive solar flare has increased energy levels by 50% for the next turn. All personnel must take cover to minimize radiation exposure.",
-      "source": "github_models",
-      "generated_at": "2026-05-17T00:29:58.682581",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-05-17T00:30:03.146905",
     "last_generated_sol": "Sol 52",
     "last_diagnostics": {
