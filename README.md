@@ -8,60 +8,62 @@
 ## LIVE WORLD SNAPSHOT
 
 <!-- WORLD_SUMMARY:START -->
-_Auto-updated daily. Last world update: 2026-05-17T00:30:03.146905_
+_Auto-updated daily. Last world update: 2026-05-18T00:31:51.585127_
 
 ```text
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
-║ [SOL] Sol 52 | [SEASON] Early      ║  ║ Solar Flare Boosts Energy Output   ║
-║ Spring                             ║  ║ A surge in solar activity has      ║
-║ [TEMP] -67C | [SUN] 150% | [STORM] ║  ║ increased energy generation by 20% ║
-║ NO                                 ║  ║ across all solar panels, improving ║
-║ [EVENT] Massive Solar Flare        ║  ║ power reserves on Mars.            ║
-║ Detected on Sol 52                 ║  ║ EFFECT solar_boost |               ║
-║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ solar_activity +0                  ║
-║ [O2] 1000 | [H2O] 545 | [E] 1120   ║  ╚════════════════════════════════════╝
-║ [FOOD] 1200 | [MAT] 450            ║                                        
+║ [SOL] Sol 53 | [SEASON] Early      ║  ║ Dust Storm Disrupts Solar Panels   ║
+║ Spring                             ║  ║ A persistent dust storm reduces    ║
+║ [TEMP] -66C | [SUN] 71% | [STORM]  ║  ║ solar energy generation efficiency ║
+║ YES                                ║  ║ across Mars colonies.              ║
+║ [EVENT] Trading Ship Arrives Amid  ║  ║ EFFECT energy_surge | energy +20   ║
+║ Dust Storm                         ║  ╚════════════════════════════════════╝
+║ [POP] 3 | [BLD] 9 | [PLY] 3        ║                                        
+║ [O2] 1000 | [H2O] 545 | [E] 1140   ║                                        
+║ [FOOD] 1300 | [MAT] 500            ║                                        
 ║ [MKT] O2 0 H2O 0 F 0 M 0           ║                                        
-║ [AI] Solar Flare Boosts Energy     ║                                        
-║ Output | solar_activity +0         ║                                        
+║ [AI] Dust Storm Disrupts Solar     ║                                        
+║ Panels | energy +20                ║                                        
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
-║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Panel Alignment  ║
-║    Dustline Agro | P1 B3 | S5878   ║  ║    Recalibrate solar arrays for…   ║
-║ 2. Zoya Kade                       ║  ║ 2. Water Conservation Protocol     ║
-║    Ares Systems | P1 B4 | S5227    ║  ║    Reduce water consumption by…    ║
-║ 3. Irina Vale                      ║  ╚════════════════════════════════════╝
-║    Helios… | P1 B2 | S4455         ║                                        
-╚════════════════════════════════════╝                                        
+║ 1. Marco Quinn                     ║  ║ 1. Dust Storm Panel Maintenance    ║
+║    Dustline Agro | P1 B3 | S5931   ║  ║    Clean and inspect solar panels… ║
+║ 2. Zoya Kade                       ║  ║ 2. Water Recycling Optimization    ║
+║    Ares Systems | P1 B4 | S5230    ║  ║    Upgrade water recycling…        ║
+║ 3. Irina Vale                      ║  ║ 3. Emergency Oxygen…               ║
+║    Helios… | P1 B2 | S4454         ║  ║    Transfer at least 150 units of… ║
+╚════════════════════════════════════╝  ╚════════════════════════════════════╝
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
-║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Solar       ║
-║ WATER     545                      ║  ║ activity is heightened;…           ║
-║ ENERGY    1120                     ║  ║ Helios… -> all… | Sharing recent   ║
-║ FOOD      1200                     ║  ║ findings on…                       ║
-║ MATERIALS 450                      ║  ╚════════════════════════════════════╝
+║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Dust storm  ║
+║ WATER     545                      ║  ║ ongoing. Prioritize…               ║
+║ ENERGY    1140                     ║  ║ Helios… -> Mars… | Requesting      ║
+║ FOOD      1300                     ║  ║ additional oxygen…                 ║
+║ MATERIALS 500                      ║  ╚════════════════════════════════════╝
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Solar activity has increased to    ║  ║ 00:30 | AI directive: Solar Flare… ║
-║ 150%, providing an energy boost    ║  ║ 00:29 | A massive solar flare has… ║
-║ for all colonies on Sol 52 during  ║  ║ 06:44 | Martian day 52 has begun   ║
-║ early spring. Colonies are         ║  ║ 00:28 | A massive solar flare has… ║
-║ encouraged to optimize their solar ║  ║ 00:30 | AI directive: Mild Solar…  ║
-║ arrays to capitalize on this       ║  ╚════════════════════════════════════╝
-║ surge. Water remains a critical    ║                                        
-║ resource, with conservation        ║                                        
-║ efforts recommended as tempera…    ║                                        
-║ A massive solar flare has          ║                                        
-║ increased energy levels by 50% for ║                                        
-║ the next turn. All personnel must  ║                                        
-║ take cover to minimize radiation   ║                                        
-║ exposure.                          ║                                        
+║ Mars is currently experiencing a   ║  ║ 00:31 | AI directive: Dust Storm…  ║
+║ strong dust storm reducing solar   ║  ║ 12:18 | On Sol 53, despite active… ║
+║ energy production and complicating ║  ║ 06:55 | 🌪️ Dust storm damaged…     ║
+║ resource management. Colonies are  ║  ║ 06:55 | Martian day 53 has begun   ║
+║ focusing on maintaining solar      ║  ║ 00:30 | AI directive: Solar Flare… ║
+║ arrays, optimizing water           ║  ╚════════════════════════════════════╝
+║ recycling, and balancing oxygen    ║                                        
+║ supplies to sustain life during    ║                                        
+║ these harsh conditions.            ║                                        
+║ On Sol 53, despite active dust     ║                                        
+║ storm and -66°C temperatures, the  ║                                        
+║ Earth trading ship docked          ║                                        
+║ successfully, replenishing food by ║                                        
+║ 100 units and materials by 50      ║                                        
+║ units in the global pool.          ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
