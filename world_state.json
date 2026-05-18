@@ -8,11 +8,11 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Trading Ship Arrives Amid Dust Storm",
-  "last_updated": "2026-05-17T06:55:42.212965",
+  "last_updated": "2026-05-18T00:31:51.585127",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
-    "energy": 1120,
+    "energy": 1140,
     "food": 1300,
     "materials": 500
   },
@@ -40,22 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-04-30T00:28:16.833176",
-      "event": "AI directive: Moderate Solar Boost Enhances Energy Output"
-    },
-    {
-      "time": "2026-04-30T06:50:47.781120",
-      "event": "Martian day 38 has begun"
-    },
-    {
-      "time": "2026-04-30T12:30:14.017212",
-      "event": "A powerful solar flare has increased radiation levels by 50% for the next cycle. All crew must take immediate shelter to minimize exposure."
-    },
-    {
-      "time": "2026-05-01T00:29:38.715857",
-      "event": "AI directive: Solar Activity Peaks"
-    },
     {
       "time": "2026-05-01T06:52:52.340532",
       "event": "Martian day 39 has begun"
@@ -251,6 +235,10 @@
     {
       "time": "2026-05-17T12:18:05.913722",
       "event": "On Sol 53, despite active dust storm and -66\u00b0C temperatures, the Earth trading ship docked successfully, replenishing food by 100 units and materials by 50 units in the global pool."
+    },
+    {
+      "time": "2026-05-18T00:31:51.585127",
+      "event": "AI directive: Dust Storm Disrupts Solar Panels"
     }
   ],
   "market": {
@@ -261,51 +249,58 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Flare Boosts Energy Output",
-      "summary": "A surge in solar activity has increased energy generation by 20% across all solar panels, improving power reserves on Mars.",
+      "headline": "Dust Storm Disrupts Solar Panels",
+      "summary": "A persistent dust storm reduces solar energy generation efficiency across Mars colonies.",
       "effect": {
-        "type": "solar_boost",
-        "magnitude": 5,
+        "type": "energy_surge",
+        "magnitude": 20,
         "result": {
-          "label": "Solar boost",
-          "target": "solar_activity",
-          "delta": 0,
-          "before": 150,
-          "after": 150
+          "label": "Grid surge",
+          "target": "energy",
+          "delta": 20,
+          "before": 1120,
+          "after": 1140
         }
       },
       "source": "github_models",
-      "generated_at": "2026-05-17T00:30:03.146905"
+      "generated_at": "2026-05-18T00:31:51.585127"
     },
     "missions": [
       {
-        "title": "Optimize Solar Panel Alignment",
-        "briefing": "With the solar flare increasing energy potential, adjust solar panels to maximize power intake.",
-        "objective": "Recalibrate solar arrays for peak efficiency.",
-        "reward_hint": "Increased energy reserves.",
-        "risk": "Minor equipment wear during recalibration."
+        "title": "Dust Storm Panel Maintenance",
+        "briefing": "The ongoing dust storm has coated solar panels with dust, reducing energy output. Your team must clean and inspect panels to restore efficiency.",
+        "objective": "Clean and inspect solar panels to regain at least 15% energy efficiency.",
+        "reward_hint": "Energy reserves boost",
+        "risk": "Exposure to abrasive dust and limited visibility"
       },
       {
-        "title": "Water Conservation Protocol",
-        "briefing": "Water stores are sufficient but limited; implement conservation measures to extend supply through early spring.",
-        "objective": "Reduce water consumption by 10% over the next sol.",
-        "reward_hint": "Preserved water resources.",
-        "risk": "Possible reduced hygiene or crop yield."
+        "title": "Water Recycling Optimization",
+        "briefing": "With dust storms limiting water resupply, optimizing recycling systems is critical to maintain colony hydration.",
+        "objective": "Upgrade water recycling systems to increase water recovery by 10%.",
+        "reward_hint": "Increased water resources",
+        "risk": "System malfunctions during upgrade"
+      },
+      {
+        "title": "Emergency Oxygen Redistribution",
+        "briefing": "Some colonies are running low on oxygen due to system strain from the storm. Coordinate oxygen transfers to stabilize life support.",
+        "objective": "Transfer at least 150 units of oxygen between colonies to balance supply.",
+        "reward_hint": "Improved oxygen stability",
+        "risk": "Logistical delays and equipment failure"
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity is heightened; optimize energy collection systems accordingly."
+        "message": "Dust storm ongoing. Prioritize equipment maintenance and resource conservation."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "all colonies",
-        "message": "Sharing recent findings on subsurface ice deposits; coordinate mining efforts to boost water reserves."
+        "recipient": "Mars Control",
+        "message": "Requesting additional oxygen supply due to current reserves being critically low."
       }
     ],
-    "news_summary": "Solar activity has increased to 150%, providing an energy boost for all colonies on Sol 52 during early spring. Colonies are encouraged to optimize their solar arrays to capitalize on this surge. Water remains a critical resource, with conservation efforts recommended as tempera\u2026",
+    "news_summary": "Mars is currently experiencing a strong dust storm reducing solar energy production and complicating resource management. Colonies are focusing on maintaining solar arrays, optimizing water recycling, and balancing oxygen supplies to sustain life during these harsh conditions.",
     "event_flavor": {
       "event_key": "traders",
       "headline": "Trading Ship Arrives Amid Dust Storm",
@@ -326,8 +321,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-05-17T00:30:03.146905",
-    "last_generated_sol": "Sol 52",
+    "last_generated": "2026-05-18T00:31:51.585127",
+    "last_generated_sol": "Sol 53",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
