@@ -2,12 +2,12 @@
   "day": 53,
   "mars_date": "Sol 53",
   "season": "Early Spring",
-  "solar_activity": 71,
+  "solar_activity": 0,
   "dust_storm_active": true,
   "temperature": -66,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Trading Ship Arrives Amid Dust Storm",
+  "current_event": "Sol 53: Massive Sandstorm Disables Solar Arrays",
   "last_updated": "2026-05-18T00:31:51.585127",
   "global_resources": {
     "oxygen": 1000,
@@ -239,6 +239,10 @@
     {
       "time": "2026-05-18T00:31:51.585127",
       "event": "AI directive: Dust Storm Disrupts Solar Panels"
+    },
+    {
+      "time": "2026-05-19T00:33:45.358418",
+      "event": "A severe dust storm is currently active, causing all solar panels to be offline for the next 6 hours. Expect reduced power availability until conditions improve."
     }
   ],
   "market": {
@@ -302,11 +306,11 @@
     ],
     "news_summary": "Mars is currently experiencing a strong dust storm reducing solar energy production and complicating resource management. Colonies are focusing on maintaining solar arrays, optimizing water recycling, and balancing oxygen supplies to sustain life during these harsh conditions.",
     "event_flavor": {
-      "event_key": "traders",
-      "headline": "Trading Ship Arrives Amid Dust Storm",
-      "broadcast": "On Sol 53, despite active dust storm and -66\u00b0C temperatures, the Earth trading ship docked successfully, replenishing food by 100 units and materials by 50 units in the global pool.",
+      "event_key": "sandstorm",
+      "headline": "Sol 53: Massive Sandstorm Disables Solar Arrays",
+      "broadcast": "A severe dust storm is currently active, causing all solar panels to be offline for the next 6 hours. Expect reduced power availability until conditions improve.",
       "source": "github_models",
-      "generated_at": "2026-05-17T12:18:05.913708",
+      "generated_at": "2026-05-19T00:33:45.358404",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
