@@ -7,7 +7,7 @@
   "temperature": -66,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Sol 53: Massive Sandstorm Disables Solar Arrays",
+  "current_event": "Massive Sandstorm Forces Solar Shutdown",
   "last_updated": "2026-05-18T00:31:51.585127",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-05-19T00:33:45.358418",
       "event": "A severe dust storm is currently active, causing all solar panels to be offline for the next 6 hours. Expect reduced power availability until conditions improve."
+    },
+    {
+      "time": "2026-05-20T12:48:49.226780",
+      "event": "A severe sandstorm is active on Sol 53, reducing solar activity to zero. All solar panels are offline for the next 6 hours, impacting power generation."
     }
   ],
   "market": {
@@ -307,10 +311,10 @@
     "news_summary": "Mars is currently experiencing a strong dust storm reducing solar energy production and complicating resource management. Colonies are focusing on maintaining solar arrays, optimizing water recycling, and balancing oxygen supplies to sustain life during these harsh conditions.",
     "event_flavor": {
       "event_key": "sandstorm",
-      "headline": "Sol 53: Massive Sandstorm Disables Solar Arrays",
-      "broadcast": "A severe dust storm is currently active, causing all solar panels to be offline for the next 6 hours. Expect reduced power availability until conditions improve.",
+      "headline": "Massive Sandstorm Forces Solar Shutdown",
+      "broadcast": "A severe sandstorm is active on Sol 53, reducing solar activity to zero. All solar panels are offline for the next 6 hours, impacting power generation.",
       "source": "github_models",
-      "generated_at": "2026-05-19T00:33:45.358404",
+      "generated_at": "2026-05-20T12:48:49.226768",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
