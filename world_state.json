@@ -7,7 +7,7 @@
   "temperature": -66,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Trading Ship Arrival Boosts Supplies Amid Dust Storm",
+  "current_event": "Meteor Shower Hits Mars Colony Amid Dust Storm",
   "last_updated": "2026-05-18T00:31:51.585127",
   "global_resources": {
     "oxygen": 1000,
@@ -251,6 +251,10 @@
     {
       "time": "2026-05-21T00:34:52.627608",
       "event": "On Sol 53, a trading vessel from Earth has delivered critical supplies despite the ongoing dust storm. Food stocks increased by 100 units and materials by 50, enhancing colony resilience in harsh conditions."
+    },
+    {
+      "time": "2026-05-22T00:32:57.647121",
+      "event": "On Sol 53, a meteor shower struck during a dust storm. Irina Vale and Zoya Kade salvaged 14 and 5 materials respectively but reported building damage; Marco Quinn recovered 13 materials."
     }
   ],
   "market": {
@@ -314,11 +318,11 @@
     ],
     "news_summary": "Mars is currently experiencing a strong dust storm reducing solar energy production and complicating resource management. Colonies are focusing on maintaining solar arrays, optimizing water recycling, and balancing oxygen supplies to sustain life during these harsh conditions.",
     "event_flavor": {
-      "event_key": "traders",
-      "headline": "Trading Ship Arrival Boosts Supplies Amid Dust Storm",
-      "broadcast": "On Sol 53, a trading vessel from Earth has delivered critical supplies despite the ongoing dust storm. Food stocks increased by 100 units and materials by 50, enhancing colony resilience in harsh conditions.",
+      "event_key": "meteor_shower",
+      "headline": "Meteor Shower Hits Mars Colony Amid Dust Storm",
+      "broadcast": "On Sol 53, a meteor shower struck during a dust storm. Irina Vale and Zoya Kade salvaged 14 and 5 materials respectively but reported building damage; Marco Quinn recovered 13 materials.",
       "source": "github_models",
-      "generated_at": "2026-05-21T00:34:52.627591",
+      "generated_at": "2026-05-22T00:32:57.647108",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
