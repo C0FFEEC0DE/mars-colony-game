@@ -16,8 +16,8 @@ _Auto-updated daily. Last world update: 2026-05-18T00:31:51.585127_
 ║ Spring                             ║  ║ A persistent dust storm reduces    ║
 ║ [TEMP] -66C | [SUN] 0% | [STORM]   ║  ║ solar energy generation efficiency ║
 ║ YES                                ║  ║ across Mars colonies.              ║
-║ [EVENT] Trading Ship Arrival       ║  ║ EFFECT energy_surge | energy +20   ║
-║ Boosts Supplies Amid Dust Storm    ║  ╚════════════════════════════════════╝
+║ [EVENT] Meteor Shower Hits Mars    ║  ║ EFFECT energy_surge | energy +20   ║
+║ Colony Amid Dust Storm             ║  ╚════════════════════════════════════╝
 ║ [POP] 3 | [BLD] 9 | [PLY] 3        ║                                        
 ║ [O2] 1000 | [H2O] 545 | [E] 1140   ║                                        
 ║ [FOOD] 1400 | [MAT] 550            ║                                        
@@ -28,11 +28,11 @@ _Auto-updated daily. Last world update: 2026-05-18T00:31:51.585127_
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
 ║ 1. Marco Quinn                     ║  ║ 1. Dust Storm Panel Maintenance    ║
-║    Dustline Agro | P1 B3 | S5895   ║  ║    Clean and inspect solar panels… ║
+║    Dustline Agro | P1 B3 | S5948   ║  ║    Clean and inspect solar panels… ║
 ║ 2. Zoya Kade                       ║  ║ 2. Water Recycling Optimization    ║
-║    Ares Systems | P1 B4 | S5266    ║  ║    Upgrade water recycling…        ║
+║    Ares Systems | P1 B4 | S5303    ║  ║    Upgrade water recycling…        ║
 ║ 3. Irina Vale                      ║  ║ 3. Emergency Oxygen…               ║
-║    Helios… | P1 B2 | S4454         ║  ║    Transfer at least 150 units of… ║
+║    Helios… | P1 B2 | S4524         ║  ║    Transfer at least 150 units of… ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
@@ -44,26 +44,26 @@ _Auto-updated daily. Last world update: 2026-05-18T00:31:51.585127_
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Mars is currently experiencing a   ║  ║ 00:34 | On Sol 53, a trading       ║
-║ strong dust storm reducing solar   ║  ║ vessel…                            ║
-║ energy production and complicating ║  ║ 12:48 | A severe sandstorm is…     ║
-║ resource management. Colonies are  ║  ║ 00:33 | A severe dust storm is…    ║
-║ focusing on maintaining solar      ║  ║ 00:31 | AI directive: Dust Storm…  ║
-║ arrays, optimizing water           ║  ║ 12:18 | On Sol 53, despite active… ║
-║ recycling, and balancing oxygen    ║  ╚════════════════════════════════════╝
-║ supplies to sustain life during    ║                                        
+║ Mars is currently experiencing a   ║  ║ 00:32 | On Sol 53, a meteor        ║
+║ strong dust storm reducing solar   ║  ║ shower…                            ║
+║ energy production and complicating ║  ║ 00:34 | On Sol 53, a trading       ║
+║ resource management. Colonies are  ║  ║ vessel…                            ║
+║ focusing on maintaining solar      ║  ║ 12:48 | A severe sandstorm is…     ║
+║ arrays, optimizing water           ║  ║ 00:33 | A severe dust storm is…    ║
+║ recycling, and balancing oxygen    ║  ║ 00:31 | AI directive: Dust Storm…  ║
+║ supplies to sustain life during    ║  ╚════════════════════════════════════╝
 ║ these harsh conditions.            ║                                        
-║ On Sol 53, a trading vessel from   ║                                        
-║ Earth has delivered critical       ║                                        
-║ supplies despite the ongoing dust  ║                                        
-║ storm. Food stocks increased by    ║                                        
-║ 100 units and materials by 50,     ║                                        
-║ enhancing colony resilience in     ║                                        
-║ harsh conditions.                  ║                                        
+║ On Sol 53, a meteor shower struck  ║                                        
+║ during a dust storm. Irina Vale    ║                                        
+║ and Zoya Kade salvaged 14 and 5    ║                                        
+║ materials respectively but         ║                                        
+║ reported building damage; Marco    ║                                        
+║ Quinn recovered 13 materials.      ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
