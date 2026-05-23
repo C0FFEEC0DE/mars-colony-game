@@ -7,7 +7,7 @@
   "temperature": -77,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Subsurface Ice Deposit Found on Sol 54",
   "last_updated": "2026-05-23T06:53:19.464670",
   "global_resources": {
     "oxygen": 1000,
@@ -263,6 +263,10 @@
     {
       "time": "2026-05-23T06:53:19.464685",
       "event": "Martian day 54 has begun"
+    },
+    {
+      "time": "2026-05-23T12:18:25.318788",
+      "event": "Underground ice pockets have been confirmed, supplying Irina Vale with 21, Zoya Kade with 26, and Marco Quinn with 31 units of water to support colony sustainability."
     }
   ],
   "market": {
@@ -325,7 +329,26 @@
       }
     ],
     "news_summary": "Mars is currently experiencing a strong dust storm reducing solar energy production and complicating resource management. Colonies are focusing on maintaining solar arrays, optimizing water recycling, and balancing oxygen supplies to sustain life during these harsh conditions.",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "ice_discovery",
+      "headline": "Subsurface Ice Deposit Found on Sol 54",
+      "broadcast": "Underground ice pockets have been confirmed, supplying Irina Vale with 21, Zoya Kade with 26, and Marco Quinn with 31 units of water to support colony sustainability.",
+      "source": "github_models",
+      "generated_at": "2026-05-23T12:18:25.318775",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-05-18T00:31:51.585127",
     "last_generated_sol": "Sol 53",
     "last_diagnostics": {
