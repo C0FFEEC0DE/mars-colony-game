@@ -1,14 +1,14 @@
 {
-  "day": 53,
-  "mars_date": "Sol 53",
+  "day": 54,
+  "mars_date": "Sol 54",
   "season": "Early Spring",
-  "solar_activity": 0,
-  "dust_storm_active": true,
-  "temperature": -66,
+  "solar_activity": 89,
+  "dust_storm_active": false,
+  "temperature": -77,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "New Subsurface Caverns Mapped Amid Dust Storm",
-  "last_updated": "2026-05-18T00:31:51.585127",
+  "current_event": null,
+  "last_updated": "2026-05-23T06:53:19.464670",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,14 +20,14 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 5936,
+      "score": 5933,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 5315,
+      "score": 5318,
       "colonists": 1,
       "buildings": 4
     },
@@ -259,6 +259,10 @@
     {
       "time": "2026-05-22T12:45:47.419873",
       "event": "On Sol 53, despite ongoing dust storm conditions and -66\u00b0C temperatures, rover sensors have confirmed the presence of underground caverns, offering potential new sites for habitat expansion."
+    },
+    {
+      "time": "2026-05-23T06:53:19.464685",
+      "event": "Martian day 54 has begun"
     }
   ],
   "market": {
@@ -321,26 +325,7 @@
       }
     ],
     "news_summary": "Mars is currently experiencing a strong dust storm reducing solar energy production and complicating resource management. Colonies are focusing on maintaining solar arrays, optimizing water recycling, and balancing oxygen supplies to sustain life during these harsh conditions.",
-    "event_flavor": {
-      "event_key": "discovery",
-      "headline": "New Subsurface Caverns Mapped Amid Dust Storm",
-      "broadcast": "On Sol 53, despite ongoing dust storm conditions and -66\u00b0C temperatures, rover sensors have confirmed the presence of underground caverns, offering potential new sites for habitat expansion.",
-      "source": "github_models",
-      "generated_at": "2026-05-22T12:45:47.419860",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-05-18T00:31:51.585127",
     "last_generated_sol": "Sol 53",
     "last_diagnostics": {
