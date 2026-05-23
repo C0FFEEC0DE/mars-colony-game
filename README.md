@@ -16,8 +16,8 @@ _Auto-updated daily. Last world update: 2026-05-18T00:31:51.585127_
 ║ Spring                             ║  ║ A persistent dust storm reduces    ║
 ║ [TEMP] -66C | [SUN] 0% | [STORM]   ║  ║ solar energy generation efficiency ║
 ║ YES                                ║  ║ across Mars colonies.              ║
-║ [EVENT] Meteor Shower Hits Mars    ║  ║ EFFECT energy_surge | energy +20   ║
-║ Colony Amid Dust Storm             ║  ╚════════════════════════════════════╝
+║ [EVENT] New Subsurface Caverns     ║  ║ EFFECT energy_surge | energy +20   ║
+║ Mapped Amid Dust Storm             ║  ╚════════════════════════════════════╝
 ║ [POP] 3 | [BLD] 9 | [PLY] 3        ║                                        
 ║ [O2] 1000 | [H2O] 545 | [E] 1140   ║                                        
 ║ [FOOD] 1400 | [MAT] 550            ║                                        
@@ -28,9 +28,9 @@ _Auto-updated daily. Last world update: 2026-05-18T00:31:51.585127_
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
 ║ 1. Marco Quinn                     ║  ║ 1. Dust Storm Panel Maintenance    ║
-║    Dustline Agro | P1 B3 | S5948   ║  ║    Clean and inspect solar panels… ║
+║    Dustline Agro | P1 B3 | S5936   ║  ║    Clean and inspect solar panels… ║
 ║ 2. Zoya Kade                       ║  ║ 2. Water Recycling Optimization    ║
-║    Ares Systems | P1 B4 | S5303    ║  ║    Upgrade water recycling…        ║
+║    Ares Systems | P1 B4 | S5315    ║  ║    Upgrade water recycling…        ║
 ║ 3. Irina Vale                      ║  ║ 3. Emergency Oxygen…               ║
 ║    Helios… | P1 B2 | S4524         ║  ║    Transfer at least 150 units of… ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
@@ -44,25 +44,27 @@ _Auto-updated daily. Last world update: 2026-05-18T00:31:51.585127_
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Mars is currently experiencing a   ║  ║ 00:32 | On Sol 53, a meteor        ║
-║ strong dust storm reducing solar   ║  ║ shower…                            ║
-║ energy production and complicating ║  ║ 00:34 | On Sol 53, a trading       ║
-║ resource management. Colonies are  ║  ║ vessel…                            ║
-║ focusing on maintaining solar      ║  ║ 12:48 | A severe sandstorm is…     ║
-║ arrays, optimizing water           ║  ║ 00:33 | A severe dust storm is…    ║
-║ recycling, and balancing oxygen    ║  ║ 00:31 | AI directive: Dust Storm…  ║
-║ supplies to sustain life during    ║  ╚════════════════════════════════════╝
-║ these harsh conditions.            ║                                        
-║ On Sol 53, a meteor shower struck  ║                                        
-║ during a dust storm. Irina Vale    ║                                        
-║ and Zoya Kade salvaged 14 and 5    ║                                        
-║ materials respectively but         ║                                        
-║ reported building damage; Marco    ║                                        
-║ Quinn recovered 13 materials.      ║                                        
+║ Mars is currently experiencing a   ║  ║ 12:45 | On Sol 53, despite         ║
+║ strong dust storm reducing solar   ║  ║ ongoing…                           ║
+║ energy production and complicating ║  ║ 00:32 | On Sol 53, a meteor        ║
+║ resource management. Colonies are  ║  ║ shower…                            ║
+║ focusing on maintaining solar      ║  ║ 00:34 | On Sol 53, a trading       ║
+║ arrays, optimizing water           ║  ║ vessel…                            ║
+║ recycling, and balancing oxygen    ║  ║ 12:48 | A severe sandstorm is…     ║
+║ supplies to sustain life during    ║  ║ 00:33 | A severe dust storm is…    ║
+║ these harsh conditions.            ║  ╚════════════════════════════════════╝
+║ On Sol 53, despite ongoing dust    ║                                        
+║ storm conditions and -66°C         ║                                        
+║ temperatures, rover sensors have   ║                                        
+║ confirmed the presence of          ║                                        
+║ underground caverns, offering      ║                                        
+║ potential new sites for habitat    ║                                        
+║ expansion.                         ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
