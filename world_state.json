@@ -2,12 +2,12 @@
   "day": 54,
   "mars_date": "Sol 54",
   "season": "Early Spring",
-  "solar_activity": 94,
+  "solar_activity": 150,
   "dust_storm_active": false,
   "temperature": -77,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Subsurface Ice Deposit Found on Sol 54",
+  "current_event": "Massive Solar Flare Increases Radiation Levels",
   "last_updated": "2026-05-24T00:32:21.073109",
   "global_resources": {
     "oxygen": 1000,
@@ -239,6 +239,10 @@
     {
       "time": "2026-05-24T00:32:21.073109",
       "event": "AI directive: Solar Activity Boosts Energy Output"
+    },
+    {
+      "time": "2026-05-24T12:21:11.360963",
+      "event": "A massive solar flare is underway, boosting energy output by 50% for the next cycle. All personnel advised to seek radiation shelter immediately."
     }
   ],
   "market": {
@@ -302,11 +306,11 @@
     ],
     "news_summary": "On Sol 54, Mars experiences elevated solar activity boosting energy production potential. Colonies are encouraged to optimize solar arrays and maintain critical systems like water recycling. Salvage operations offer opportunities to replenish material stocks despite cold tempera\u2026",
     "event_flavor": {
-      "event_key": "ice_discovery",
-      "headline": "Subsurface Ice Deposit Found on Sol 54",
-      "broadcast": "Underground ice pockets have been confirmed, supplying Irina Vale with 21, Zoya Kade with 26, and Marco Quinn with 31 units of water to support colony sustainability.",
+      "event_key": "solar_flare",
+      "headline": "Massive Solar Flare Increases Radiation Levels",
+      "broadcast": "A massive solar flare is underway, boosting energy output by 50% for the next cycle. All personnel advised to seek radiation shelter immediately.",
       "source": "github_models",
-      "generated_at": "2026-05-23T12:18:25.318775",
+      "generated_at": "2026-05-24T12:21:11.360949",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
