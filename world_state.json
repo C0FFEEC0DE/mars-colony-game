@@ -2,13 +2,13 @@
   "day": 54,
   "mars_date": "Sol 54",
   "season": "Early Spring",
-  "solar_activity": 89,
+  "solar_activity": 94,
   "dust_storm_active": false,
   "temperature": -77,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Subsurface Ice Deposit Found on Sol 54",
-  "last_updated": "2026-05-23T06:53:19.464670",
+  "last_updated": "2026-05-24T00:32:21.073109",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,38 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-05-01T06:52:52.340532",
-      "event": "Martian day 39 has begun"
-    },
-    {
-      "time": "2026-05-01T12:18:37.731055",
-      "event": "A powerful solar flare has increased radiation levels by 50% for the next cycle. All personnel must seek shelter to minimize exposure."
-    },
-    {
-      "time": "2026-05-02T00:27:01.579297",
-      "event": "Field teams led by Irina Vale have confirmed a significant underground ice source, adding 88 units of water to colony reserves. Marco Quinn and Zoya Kade contributed to extraction efforts, ensuring improved hydration su\u2026"
-    },
-    {
-      "time": "2026-05-02T00:27:12.834401",
-      "event": "AI directive: Solar Flare Boost Increases Energy Output"
-    },
-    {
-      "time": "2026-05-02T06:37:42.469625",
-      "event": "Martian day 40 has begun"
-    },
-    {
-      "time": "2026-05-03T00:27:05.177709",
-      "event": "AI directive: Moderate Solar Boost Enhances Energy Output"
-    },
-    {
-      "time": "2026-05-03T06:49:35.510693",
-      "event": "Martian day 41 has begun"
-    },
-    {
-      "time": "2026-05-04T00:26:57.694905",
-      "event": "A powerful solar flare has increased energy output by 50% for the next cycle. All personnel must take cover to minimize radiation exposure."
-    },
     {
       "time": "2026-05-04T00:27:02.649537",
       "event": "AI directive: Solar Activity Peaks"
@@ -267,6 +235,10 @@
     {
       "time": "2026-05-23T12:18:25.318788",
       "event": "Underground ice pockets have been confirmed, supplying Irina Vale with 21, Zoya Kade with 26, and Marco Quinn with 31 units of water to support colony sustainability."
+    },
+    {
+      "time": "2026-05-24T00:32:21.073109",
+      "event": "AI directive: Solar Activity Boosts Energy Output"
     }
   ],
   "market": {
@@ -277,58 +249,58 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Dust Storm Disrupts Solar Panels",
-      "summary": "A persistent dust storm reduces solar energy generation efficiency across Mars colonies.",
+      "headline": "Solar Activity Boosts Energy Output",
+      "summary": "Solar activity has surged to 89%, enhancing solar panel efficiency across all colonies today.",
       "effect": {
-        "type": "energy_surge",
-        "magnitude": 20,
+        "type": "solar_boost",
+        "magnitude": 5,
         "result": {
-          "label": "Grid surge",
-          "target": "energy",
-          "delta": 20,
-          "before": 1120,
-          "after": 1140
+          "label": "Solar boost",
+          "target": "solar_activity",
+          "delta": 5,
+          "before": 89,
+          "after": 94
         }
       },
       "source": "github_models",
-      "generated_at": "2026-05-18T00:31:51.585127"
+      "generated_at": "2026-05-24T00:32:21.073109"
     },
     "missions": [
       {
-        "title": "Dust Storm Panel Maintenance",
-        "briefing": "The ongoing dust storm has coated solar panels with dust, reducing energy output. Your team must clean and inspect panels to restore efficiency.",
-        "objective": "Clean and inspect solar panels to regain at least 15% energy efficiency.",
-        "reward_hint": "Energy reserves boost",
-        "risk": "Exposure to abrasive dust and limited visibility"
+        "title": "Optimize Solar Panel Arrays",
+        "briefing": "With increased solar activity, your colony can maximize energy intake by fine-tuning solar panels.",
+        "objective": "Calibrate and realign solar panels to increase energy production by 15%.",
+        "reward_hint": "Energy reserves will increase significantly.",
+        "risk": "Minor equipment wear during adjustments."
       },
       {
-        "title": "Water Recycling Optimization",
-        "briefing": "With dust storms limiting water resupply, optimizing recycling systems is critical to maintain colony hydration.",
-        "objective": "Upgrade water recycling systems to increase water recovery by 10%.",
-        "reward_hint": "Increased water resources",
-        "risk": "System malfunctions during upgrade"
+        "title": "Water Recycling System Maintenance",
+        "briefing": "Water supplies are limited; ensure recycling systems operate at peak efficiency to conserve water.",
+        "objective": "Perform routine maintenance and repair leaks in water recycling units.",
+        "reward_hint": "Water reserves will stabilize or increase slightly.",
+        "risk": "Small chance of system downtime during repairs."
       },
       {
-        "title": "Emergency Oxygen Redistribution",
-        "briefing": "Some colonies are running low on oxygen due to system strain from the storm. Coordinate oxygen transfers to stabilize life support.",
-        "objective": "Transfer at least 150 units of oxygen between colonies to balance supply.",
-        "reward_hint": "Improved oxygen stability",
-        "risk": "Logistical delays and equipment failure"
+        "title": "Material Salvage from Past Missions",
+        "briefing": "Local terrain holds remnants of previous missions that can be salvaged for materials.",
+        "objective": "Conduct a short expedition to recover at least 50 units of materials.",
+        "reward_hint": "Materials stockpile will increase.",
+        "risk": "Exposure to cold and dust conditions."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Dust storm ongoing. Prioritize equipment maintenance and resource conservation."
+        "message": "Solar activity is at a seasonal high; adjust energy systems accordingly."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Mars Control",
-        "message": "Requesting additional oxygen supply due to current reserves being critically low."
+        "recipient": "Marco Quinn",
+        "message": "Irina reports stable water recycling performance; recommend similar checks for Dustline Agro."
       }
     ],
-    "news_summary": "Mars is currently experiencing a strong dust storm reducing solar energy production and complicating resource management. Colonies are focusing on maintaining solar arrays, optimizing water recycling, and balancing oxygen supplies to sustain life during these harsh conditions.",
+    "news_summary": "On Sol 54, Mars experiences elevated solar activity boosting energy production potential. Colonies are encouraged to optimize solar arrays and maintain critical systems like water recycling. Salvage operations offer opportunities to replenish material stocks despite cold tempera\u2026",
     "event_flavor": {
       "event_key": "ice_discovery",
       "headline": "Subsurface Ice Deposit Found on Sol 54",
@@ -349,19 +321,20 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-05-18T00:31:51.585127",
-    "last_generated_sol": "Sol 53",
+    "last_generated": "2026-05-24T00:32:21.073109",
+    "last_generated_sol": "Sol 54",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
       "api_url": "https://models.github.ai/inference/chat/completions",
       "disabled": false,
-      "token_present": false,
-      "token_source": "none",
-      "status": "cached",
-      "http_status": null,
-      "reason": "daily content already generated for Sol 53",
-      "response_excerpt": ""
+      "token_present": true,
+      "token_source": "GITHUB_TOKEN",
+      "status": "ok",
+      "http_status": 200,
+      "reason": "request succeeded",
+      "response_excerpt": "",
+      "fallback": false
     }
   }
 }
