@@ -8,62 +8,62 @@
 ## LIVE WORLD SNAPSHOT
 
 <!-- WORLD_SUMMARY:START -->
-_Auto-updated daily. Last world update: 2026-05-18T00:31:51.585127_
+_Auto-updated daily. Last world update: 2026-05-24T00:32:21.073109_
 
 ```text
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
-║ [SOL] Sol 53 | [SEASON] Early      ║  ║ Dust Storm Disrupts Solar Panels   ║
-║ Spring                             ║  ║ A persistent dust storm reduces    ║
-║ [TEMP] -66C | [SUN] 0% | [STORM]   ║  ║ solar energy generation efficiency ║
-║ YES                                ║  ║ across Mars colonies.              ║
-║ [EVENT] New Subsurface Caverns     ║  ║ EFFECT energy_surge | energy +20   ║
-║ Mapped Amid Dust Storm             ║  ╚════════════════════════════════════╝
-║ [POP] 3 | [BLD] 9 | [PLY] 3        ║                                        
-║ [O2] 1000 | [H2O] 545 | [E] 1140   ║                                        
+║ [SOL] Sol 54 | [SEASON] Early      ║  ║ Solar Activity Boosts Energy       ║
+║ Spring                             ║  ║ Output                             ║
+║ [TEMP] -77C | [SUN] 94% | [STORM]  ║  ║ Solar activity has surged to 89%,  ║
+║ NO                                 ║  ║ enhancing solar panel efficiency   ║
+║ [EVENT] Subsurface Ice Deposit     ║  ║ across all colonies today.         ║
+║ Found on Sol 54                    ║  ║ EFFECT solar_boost |               ║
+║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ solar_activity +5                  ║
+║ [O2] 1000 | [H2O] 545 | [E] 1140   ║  ╚════════════════════════════════════╝
 ║ [FOOD] 1400 | [MAT] 550            ║                                        
 ║ [MKT] O2 0 H2O 0 F 0 M 0           ║                                        
-║ [AI] Dust Storm Disrupts Solar     ║                                        
-║ Panels | energy +20                ║                                        
+║ [AI] Solar Activity Boosts Energy  ║                                        
+║ Output | solar_activity +5         ║                                        
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
-║ 1. Marco Quinn                     ║  ║ 1. Dust Storm Panel Maintenance    ║
-║    Dustline Agro | P1 B3 | S5936   ║  ║    Clean and inspect solar panels… ║
-║ 2. Zoya Kade                       ║  ║ 2. Water Recycling Optimization    ║
-║    Ares Systems | P1 B4 | S5315    ║  ║    Upgrade water recycling…        ║
-║ 3. Irina Vale                      ║  ║ 3. Emergency Oxygen…               ║
-║    Helios… | P1 B2 | S4524         ║  ║    Transfer at least 150 units of… ║
+║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Panel Arrays     ║
+║    Dustline Agro | P1 B3 | S6077   ║  ║    Calibrate and realign solar…    ║
+║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System…         ║
+║    Ares Systems | P1 B4 | S5430    ║  ║    Perform routine maintenance…    ║
+║ 3. Irina Vale                      ║  ║ 3. Material Salvage from Past…     ║
+║    Helios… | P1 B2 | S4617         ║  ║    Conduct a short expedition to…  ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
-║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Dust storm  ║
-║ WATER     545                      ║  ║ ongoing. Prioritize…               ║
-║ ENERGY    1140                     ║  ║ Helios… -> Mars… | Requesting      ║
-║ FOOD      1400                     ║  ║ additional oxygen…                 ║
+║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Solar       ║
+║ WATER     545                      ║  ║ activity is at a seasonal…         ║
+║ ENERGY    1140                     ║  ║ Helios… -> Marco… | Irina reports  ║
+║ FOOD      1400                     ║  ║ stable water…                      ║
 ║ MATERIALS 550                      ║  ╚════════════════════════════════════╝
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Mars is currently experiencing a   ║  ║ 12:45 | On Sol 53, despite         ║
-║ strong dust storm reducing solar   ║  ║ ongoing…                           ║
-║ energy production and complicating ║  ║ 00:32 | On Sol 53, a meteor        ║
-║ resource management. Colonies are  ║  ║ shower…                            ║
-║ focusing on maintaining solar      ║  ║ 00:34 | On Sol 53, a trading       ║
-║ arrays, optimizing water           ║  ║ vessel…                            ║
-║ recycling, and balancing oxygen    ║  ║ 12:48 | A severe sandstorm is…     ║
-║ supplies to sustain life during    ║  ║ 00:33 | A severe dust storm is…    ║
-║ these harsh conditions.            ║  ╚════════════════════════════════════╝
-║ On Sol 53, despite ongoing dust    ║                                        
-║ storm conditions and -66°C         ║                                        
-║ temperatures, rover sensors have   ║                                        
-║ confirmed the presence of          ║                                        
-║ underground caverns, offering      ║                                        
-║ potential new sites for habitat    ║                                        
-║ expansion.                         ║                                        
+║ On Sol 54, Mars experiences        ║  ║ 00:32 | AI directive: Solar…       ║
+║ elevated solar activity boosting   ║  ║ 12:18 | Underground ice pockets…   ║
+║ energy production potential.       ║  ║ 06:53 | Martian day 54 has begun   ║
+║ Colonies are encouraged to         ║  ║ 12:45 | On Sol 53, despite         ║
+║ optimize solar arrays and maintain ║  ║ ongoing…                           ║
+║ critical systems like water        ║  ║ 00:32 | On Sol 53, a meteor        ║
+║ recycling. Salvage operations      ║  ║ shower…                            ║
+║ offer opportunities to replenish   ║  ╚════════════════════════════════════╝
+║ material stocks despite cold       ║                                        
+║ tempera…                           ║                                        
+║ Underground ice pockets have been  ║                                        
+║ confirmed, supplying Irina Vale    ║                                        
+║ with 21, Zoya Kade with 26, and    ║                                        
+║ Marco Quinn with 31 units of water ║                                        
+║ to support colony sustainability.  ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
