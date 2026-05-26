@@ -7,14 +7,14 @@
   "temperature": -77,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Trading Ship Arrival Boosts Resources",
+  "current_event": "Trading Ship Arrives with Vital Supplies",
   "last_updated": "2026-05-24T00:32:21.073109",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
     "energy": 1140,
-    "food": 1500,
-    "materials": 600
+    "food": 1600,
+    "materials": 650
   },
   "leaderboard": [
     {
@@ -247,6 +247,10 @@
     {
       "time": "2026-05-25T00:33:11.490552",
       "event": "A trading vessel from Earth has docked, delivering +100 food and +50 materials to the colony's global reserves. Resource levels are stabilizing ahead of Sol 55."
+    },
+    {
+      "time": "2026-05-26T00:32:34.719338",
+      "event": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's reserves. Operations continue smoothly under clear skies and elevated solar activity."
     }
   ],
   "market": {
@@ -311,10 +315,10 @@
     "news_summary": "On Sol 54, Mars experiences elevated solar activity boosting energy production potential. Colonies are encouraged to optimize solar arrays and maintain critical systems like water recycling. Salvage operations offer opportunities to replenish material stocks despite cold tempera\u2026",
     "event_flavor": {
       "event_key": "traders",
-      "headline": "Trading Ship Arrival Boosts Resources",
-      "broadcast": "A trading vessel from Earth has docked, delivering +100 food and +50 materials to the colony's global reserves. Resource levels are stabilizing ahead of Sol 55.",
+      "headline": "Trading Ship Arrives with Vital Supplies",
+      "broadcast": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's reserves. Operations continue smoothly under clear skies and elevated solar activity.",
       "source": "github_models",
-      "generated_at": "2026-05-25T00:33:11.490535",
+      "generated_at": "2026-05-26T00:32:34.719326",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
