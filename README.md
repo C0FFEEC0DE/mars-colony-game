@@ -28,11 +28,11 @@ _Auto-updated daily. Last world update: 2026-05-24T00:32:21.073109_
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
 ║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Panel Arrays     ║
-║    Dustline Agro | P1 B3 | S6457   ║  ║    Calibrate and realign solar…    ║
+║    Dustline Agro | P1 B3 | S6565   ║  ║    Calibrate and realign solar…    ║
 ║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System…         ║
-║    Ares Systems | P1 B4 | S5802    ║  ║    Perform routine maintenance…    ║
+║    Ares Systems | P1 B4 | S5934    ║  ║    Perform routine maintenance…    ║
 ║ 3. Irina Vale                      ║  ║ 3. Material Salvage from Past…     ║
-║    Helios… | P1 B2 | S4953         ║  ║    Conduct a short expedition to…  ║
+║    Helios… | P1 B2 | S5073         ║  ║    Conduct a short expedition to…  ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
@@ -64,6 +64,7 @@ _Auto-updated daily. Last world update: 2026-05-24T00:32:21.073109_
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
