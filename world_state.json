@@ -1,14 +1,14 @@
 {
-  "day": 54,
-  "mars_date": "Sol 54",
+  "day": 55,
+  "mars_date": "Sol 55",
   "season": "Early Spring",
-  "solar_activity": 150,
+  "solar_activity": 98,
   "dust_storm_active": false,
-  "temperature": -77,
+  "temperature": -48,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Meteor Shower Yields Valuable Salvage",
-  "last_updated": "2026-05-24T00:32:21.073109",
+  "current_event": null,
+  "last_updated": "2026-05-30T06:58:31.051359",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 6836,
+      "score": 6863,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 6198,
+      "score": 6231,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 5408,
+      "score": 5438,
       "colonists": 1,
       "buildings": 2
     }
@@ -255,6 +255,10 @@
     {
       "time": "2026-05-30T00:33:28.058362",
       "event": "On Sol 54, a meteor shower provided unexpected materials. Marco Quinn and Irina Vale successfully salvaged 11 and 19 units respectively, boosting colony resources."
+    },
+    {
+      "time": "2026-05-30T06:58:31.051383",
+      "event": "Martian day 55 has begun"
     }
   ],
   "market": {
@@ -317,26 +321,7 @@
       }
     ],
     "news_summary": "On Sol 54, Mars experiences elevated solar activity boosting energy production potential. Colonies are encouraged to optimize solar arrays and maintain critical systems like water recycling. Salvage operations offer opportunities to replenish material stocks despite cold tempera\u2026",
-    "event_flavor": {
-      "event_key": "meteor_shower",
-      "headline": "Meteor Shower Yields Valuable Salvage",
-      "broadcast": "On Sol 54, a meteor shower provided unexpected materials. Marco Quinn and Irina Vale successfully salvaged 11 and 19 units respectively, boosting colony resources.",
-      "source": "github_models",
-      "generated_at": "2026-05-30T00:33:28.058347",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-05-24T00:32:21.073109",
     "last_generated_sol": "Sol 54",
     "last_diagnostics": {
