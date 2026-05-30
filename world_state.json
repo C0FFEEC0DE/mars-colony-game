@@ -7,7 +7,7 @@
   "temperature": -77,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Trading Ship Arrives with Vital Supplies",
+  "current_event": "Meteor Shower Yields Valuable Salvage",
   "last_updated": "2026-05-24T00:32:21.073109",
   "global_resources": {
     "oxygen": 1000,
@@ -251,6 +251,10 @@
     {
       "time": "2026-05-26T00:32:34.719338",
       "event": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's reserves. Operations continue smoothly under clear skies and elevated solar activity."
+    },
+    {
+      "time": "2026-05-30T00:33:28.058362",
+      "event": "On Sol 54, a meteor shower provided unexpected materials. Marco Quinn and Irina Vale successfully salvaged 11 and 19 units respectively, boosting colony resources."
     }
   ],
   "market": {
@@ -314,11 +318,11 @@
     ],
     "news_summary": "On Sol 54, Mars experiences elevated solar activity boosting energy production potential. Colonies are encouraged to optimize solar arrays and maintain critical systems like water recycling. Salvage operations offer opportunities to replenish material stocks despite cold tempera\u2026",
     "event_flavor": {
-      "event_key": "traders",
-      "headline": "Trading Ship Arrives with Vital Supplies",
-      "broadcast": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's reserves. Operations continue smoothly under clear skies and elevated solar activity.",
+      "event_key": "meteor_shower",
+      "headline": "Meteor Shower Yields Valuable Salvage",
+      "broadcast": "On Sol 54, a meteor shower provided unexpected materials. Marco Quinn and Irina Vale successfully salvaged 11 and 19 units respectively, boosting colony resources.",
       "source": "github_models",
-      "generated_at": "2026-05-26T00:32:34.719326",
+      "generated_at": "2026-05-30T00:33:28.058347",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
