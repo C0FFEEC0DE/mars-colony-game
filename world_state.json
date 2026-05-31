@@ -2,13 +2,13 @@
   "day": 55,
   "mars_date": "Sol 55",
   "season": "Early Spring",
-  "solar_activity": 98,
+  "solar_activity": 103,
   "dust_storm_active": false,
   "temperature": -48,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Microbial Anomaly Detected in Soil Sample",
-  "last_updated": "2026-05-30T06:58:31.051359",
+  "last_updated": "2026-05-31T00:35:03.857859",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,38 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-05-04T00:27:02.649537",
-      "event": "AI directive: Solar Activity Peaks"
-    },
-    {
-      "time": "2026-05-04T06:59:30.186460",
-      "event": "Martian day 42 has begun"
-    },
-    {
-      "time": "2026-05-04T12:31:35.544839",
-      "event": "On Sol 42, a meteor shower caused minor building damage reported by Irina Vale. Salvage operations by Marco Quinn and Zoya Kade recovered 21 materials total."
-    },
-    {
-      "time": "2026-05-05T00:27:57.185943",
-      "event": "AI directive: Solar Activity Peaks"
-    },
-    {
-      "time": "2026-05-05T06:43:51.265641",
-      "event": "Martian day 43 has begun"
-    },
-    {
-      "time": "2026-05-06T00:27:34.094397",
-      "event": "AI directive: Moderate Solar Activity Boost"
-    },
-    {
-      "time": "2026-05-06T06:52:40.396298",
-      "event": "Martian day 44 has begun"
-    },
-    {
-      "time": "2026-05-06T12:34:46.230984",
-      "event": "A severe sandstorm is underway, forcing all solar panels offline for the next 6 hours. Prepare for limited power availability and adjust operations accordingly."
-    },
     {
       "time": "2026-05-07T00:27:38.779003",
       "event": "Sol 44: Despite active dust storms, the crew located significant underground ice. Irina Vale, Marco Quinn, and Zoya Kade secured a combined 128 units of water to support ongoing operations."
@@ -267,6 +235,10 @@
     {
       "time": "2026-05-31T00:34:58.847197",
       "event": "On Sol 55, analysis revealed unknown bacteria within Martian soil. Further study underway to assess implications for colony biosecurity and planetary science."
+    },
+    {
+      "time": "2026-05-31T00:35:03.857859",
+      "event": "AI directive: Solar Flare Boosts Energy Output"
     }
   ],
   "market": {
@@ -277,8 +249,8 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Activity Boosts Energy Output",
-      "summary": "Solar activity has surged to 89%, enhancing solar panel efficiency across all colonies today.",
+      "headline": "Solar Flare Boosts Energy Output",
+      "summary": "A surge in solar activity has increased energy generation capacity across all colonies, improving power availability for critical systems.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
@@ -286,49 +258,49 @@
           "label": "Solar boost",
           "target": "solar_activity",
           "delta": 5,
-          "before": 89,
-          "after": 94
+          "before": 98,
+          "after": 103
         }
       },
       "source": "github_models",
-      "generated_at": "2026-05-24T00:32:21.073109"
+      "generated_at": "2026-05-31T00:35:03.857859"
     },
     "missions": [
       {
-        "title": "Optimize Solar Panel Arrays",
-        "briefing": "With increased solar activity, your colony can maximize energy intake by fine-tuning solar panels.",
-        "objective": "Calibrate and realign solar panels to increase energy production by 15%.",
-        "reward_hint": "Energy reserves will increase significantly.",
-        "risk": "Minor equipment wear during adjustments."
+        "title": "Optimize Solar Arrays",
+        "briefing": "Leverage the heightened solar activity to maximize energy collection by recalibrating solar panels.",
+        "objective": "Adjust and optimize solar panel angles to increase energy generation efficiency.",
+        "reward_hint": "Energy reserves boost",
+        "risk": "Exposure to solar radiation during maintenance"
       },
       {
-        "title": "Water Recycling System Maintenance",
-        "briefing": "Water supplies are limited; ensure recycling systems operate at peak efficiency to conserve water.",
-        "objective": "Perform routine maintenance and repair leaks in water recycling units.",
-        "reward_hint": "Water reserves will stabilize or increase slightly.",
-        "risk": "Small chance of system downtime during repairs."
+        "title": "Water Recycling System Check",
+        "briefing": "Ensure water recycling systems are operating at peak efficiency to conserve scarce water resources.",
+        "objective": "Perform diagnostics and minor repairs on water recycling units.",
+        "reward_hint": "Improved water availability",
+        "risk": "System malfunction leading to water loss"
       },
       {
-        "title": "Material Salvage from Past Missions",
-        "briefing": "Local terrain holds remnants of previous missions that can be salvaged for materials.",
-        "objective": "Conduct a short expedition to recover at least 50 units of materials.",
-        "reward_hint": "Materials stockpile will increase.",
-        "risk": "Exposure to cold and dust conditions."
+        "title": "Material Inventory and Salvage",
+        "briefing": "Conduct an inventory and salvage operation to recover unused or damaged materials for reuse.",
+        "objective": "Survey storage and salvage usable materials from scrap.",
+        "reward_hint": "Additional materials for construction",
+        "risk": "Injury during handling of sharp or heavy objects"
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity is at a seasonal high; adjust energy systems accordingly."
+        "message": "Solar flare activity is currently at 98%, all colonies advised to optimize solar infrastructure for maximum benefit."
       },
       {
-        "sender": "Helios Prospecting",
-        "recipient": "Marco Quinn",
-        "message": "Irina reports stable water recycling performance; recommend similar checks for Dustline Agro."
+        "sender": "Ares Systems",
+        "recipient": "Zoya Kade",
+        "message": "Requesting status update on water recycling improvements following recent system check mission."
       }
     ],
-    "news_summary": "On Sol 54, Mars experiences elevated solar activity boosting energy production potential. Colonies are encouraged to optimize solar arrays and maintain critical systems like water recycling. Salvage operations offer opportunities to replenish material stocks despite cold tempera\u2026",
+    "news_summary": "Sol 55 on Mars brings a significant solar boost, increasing energy availability across all colonies. Colonists are tasked with optimizing solar arrays and maintaining critical life support systems to take advantage of favorable conditions. Resource management remains a priority\u2026",
     "event_flavor": {
       "event_key": "discovery",
       "headline": "Microbial Anomaly Detected in Soil Sample",
@@ -349,19 +321,20 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-05-24T00:32:21.073109",
-    "last_generated_sol": "Sol 54",
+    "last_generated": "2026-05-31T00:35:03.857859",
+    "last_generated_sol": "Sol 55",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
       "api_url": "https://models.github.ai/inference/chat/completions",
       "disabled": false,
-      "token_present": false,
-      "token_source": "none",
-      "status": "cached",
-      "http_status": null,
-      "reason": "daily content already generated for Sol 54",
-      "response_excerpt": ""
+      "token_present": true,
+      "token_source": "GITHUB_TOKEN",
+      "status": "ok",
+      "http_status": 200,
+      "reason": "request succeeded",
+      "response_excerpt": "",
+      "fallback": false
     }
   }
 }
