@@ -8,62 +8,62 @@
 ## LIVE WORLD SNAPSHOT
 
 <!-- WORLD_SUMMARY:START -->
-_Auto-updated daily. Last world update: 2026-05-24T00:32:21.073109_
+_Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 
 ```text
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
-║ [SOL] Sol 54 | [SEASON] Early      ║  ║ Solar Activity Boosts Energy       ║
-║ Spring                             ║  ║ Output                             ║
-║ [TEMP] -77C | [SUN] 150% | [STORM] ║  ║ Solar activity has surged to 89%,  ║
-║ NO                                 ║  ║ enhancing solar panel efficiency   ║
-║ [EVENT] Meteor Shower Yields       ║  ║ across all colonies today.         ║
-║ Valuable Salvage                   ║  ║ EFFECT solar_boost |               ║
-║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ solar_activity +5                  ║
-║ [O2] 1000 | [H2O] 545 | [E] 1140   ║  ╚════════════════════════════════════╝
-║ [FOOD] 1600 | [MAT] 650            ║                                        
+║ [SOL] Sol 55 | [SEASON] Early      ║  ║ Solar Flare Boosts Energy Output   ║
+║ Spring                             ║  ║ A surge in solar activity has      ║
+║ [TEMP] -48C | [SUN] 103% | [STORM] ║  ║ increased energy generation        ║
+║ NO                                 ║  ║ capacity across all colonies,      ║
+║ [EVENT] Microbial Anomaly Detected ║  ║ improving power availability for   ║
+║ in Soil Sample                     ║  ║ critical systems.                  ║
+║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT solar_boost |               ║
+║ [O2] 1000 | [H2O] 545 | [E] 1140   ║  ║ solar_activity +5                  ║
+║ [FOOD] 1700 | [MAT] 700            ║  ╚════════════════════════════════════╝
 ║ [MKT] O2 0 H2O 0 F 0 M 0           ║                                        
-║ [AI] Solar Activity Boosts Energy  ║                                        
+║ [AI] Solar Flare Boosts Energy     ║                                        
 ║ Output | solar_activity +5         ║                                        
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
-║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Panel Arrays     ║
-║    Dustline Agro | P1 B3 | S6836   ║  ║    Calibrate and realign solar…    ║
-║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System…         ║
-║    Ares Systems | P1 B4 | S6198    ║  ║    Perform routine maintenance…    ║
-║ 3. Irina Vale                      ║  ║ 3. Material Salvage from Past…     ║
-║    Helios… | P1 B2 | S5408         ║  ║    Conduct a short expedition to…  ║
+║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Arrays           ║
+║    Dustline Agro | P1 B3 | S6911   ║  ║    Adjust and optimize solar…      ║
+║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System Check    ║
+║    Ares Systems | P1 B4 | S6297    ║  ║    Perform diagnostics and minor…  ║
+║ 3. Irina Vale                      ║  ║ 3. Material Inventory and Salvage  ║
+║    Helios… | P1 B2 | S5495         ║  ║    Survey storage and salvage…     ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
-║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Solar       ║
-║ WATER     545                      ║  ║ activity is at a seasonal…         ║
-║ ENERGY    1140                     ║  ║ Helios… -> Marco… | Irina reports  ║
-║ FOOD      1600                     ║  ║ stable water…                      ║
-║ MATERIALS 650                      ║  ╚════════════════════════════════════╝
+║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Solar flare ║
+║ WATER     545                      ║  ║ activity is currently…             ║
+║ ENERGY    1140                     ║  ║ Ares Systems -> Zoya Kade |        ║
+║ FOOD      1700                     ║  ║ Requesting status update on water… ║
+║ MATERIALS 700                      ║  ╚════════════════════════════════════╝
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ On Sol 54, Mars experiences        ║  ║ 00:33 | On Sol 54, a meteor        ║
-║ elevated solar activity boosting   ║  ║ shower…                            ║
-║ energy production potential.       ║  ║ 00:32 | A trading vessel from      ║
-║ Colonies are encouraged to         ║  ║ Earth…                             ║
-║ optimize solar arrays and maintain ║  ║ 00:33 | A trading vessel from      ║
-║ critical systems like water        ║  ║ Earth…                             ║
-║ recycling. Salvage operations      ║  ║ 12:21 | A massive solar flare is…  ║
-║ offer opportunities to replenish   ║  ║ 00:32 | AI directive: Solar…       ║
-║ material stocks despite cold       ║  ╚════════════════════════════════════╝
-║ tempera…                           ║                                        
-║ On Sol 54, a meteor shower         ║                                        
-║ provided unexpected materials.     ║                                        
-║ Marco Quinn and Irina Vale         ║                                        
-║ successfully salvaged 11 and 19    ║                                        
-║ units respectively, boosting       ║                                        
-║ colony resources.                  ║                                        
+║ Sol 55 on Mars brings a            ║  ║ 00:35 | AI directive: Solar Flare… ║
+║ significant solar boost,           ║  ║ 00:34 | On Sol 55, analysis…       ║
+║ increasing energy availability     ║  ║ 12:23 | A cargo ship from Earth    ║
+║ across all colonies. Colonists are ║  ║ has…                               ║
+║ tasked with optimizing solar       ║  ║ 06:58 | Martian day 55 has begun   ║
+║ arrays and maintaining critical    ║  ║ 00:33 | On Sol 54, a meteor        ║
+║ life support systems to take       ║  ║ shower…                            ║
+║ advantage of favorable conditions. ║  ╚════════════════════════════════════╝
+║ Resource management remains a      ║                                        
+║ priority…                          ║                                        
+║ On Sol 55, analysis revealed       ║                                        
+║ unknown bacteria within Martian    ║                                        
+║ soil. Further study underway to    ║                                        
+║ assess implications for colony     ║                                        
+║ biosecurity and planetary science. ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
