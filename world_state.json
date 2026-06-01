@@ -7,7 +7,7 @@
   "temperature": -48,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Microbial Anomaly Detected in Soil Sample",
+  "current_event": "Unidentified Signal Detected at 1420 MHz",
   "last_updated": "2026-05-31T00:35:03.857859",
   "global_resources": {
     "oxygen": 1000,
@@ -239,6 +239,10 @@
     {
       "time": "2026-05-31T00:35:03.857859",
       "event": "AI directive: Solar Flare Boosts Energy Output"
+    },
+    {
+      "time": "2026-06-01T00:36:15.235096",
+      "event": "On Sol 55, our arrays picked up a strange transmission at 1420 MHz. Analysis is underway to determine its origin and significance."
     }
   ],
   "market": {
@@ -303,10 +307,10 @@
     "news_summary": "Sol 55 on Mars brings a significant solar boost, increasing energy availability across all colonies. Colonists are tasked with optimizing solar arrays and maintaining critical life support systems to take advantage of favorable conditions. Resource management remains a priority\u2026",
     "event_flavor": {
       "event_key": "discovery",
-      "headline": "Microbial Anomaly Detected in Soil Sample",
-      "broadcast": "On Sol 55, analysis revealed unknown bacteria within Martian soil. Further study underway to assess implications for colony biosecurity and planetary science.",
+      "headline": "Unidentified Signal Detected at 1420 MHz",
+      "broadcast": "On Sol 55, our arrays picked up a strange transmission at 1420 MHz. Analysis is underway to determine its origin and significance.",
       "source": "github_models",
-      "generated_at": "2026-05-31T00:34:58.847184",
+      "generated_at": "2026-06-01T00:36:15.235084",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
