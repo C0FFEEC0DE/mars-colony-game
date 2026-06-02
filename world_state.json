@@ -2,12 +2,12 @@
   "day": 55,
   "mars_date": "Sol 55",
   "season": "Early Spring",
-  "solar_activity": 103,
-  "dust_storm_active": false,
+  "solar_activity": 0,
+  "dust_storm_active": true,
   "temperature": -48,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Unidentified Signal Detected at 1420 MHz",
+  "current_event": "Sol 55 Sandstorm Disrupts Solar Power",
   "last_updated": "2026-05-31T00:35:03.857859",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-06-01T00:36:15.235096",
       "event": "On Sol 55, our arrays picked up a strange transmission at 1420 MHz. Analysis is underway to determine its origin and significance."
+    },
+    {
+      "time": "2026-06-02T00:39:09.038933",
+      "event": "A massive sandstorm is active on Mars, forcing all solar panels offline for the next 6 hours. Expect reduced power availability during this period."
     }
   ],
   "market": {
@@ -306,11 +310,11 @@
     ],
     "news_summary": "Sol 55 on Mars brings a significant solar boost, increasing energy availability across all colonies. Colonists are tasked with optimizing solar arrays and maintaining critical life support systems to take advantage of favorable conditions. Resource management remains a priority\u2026",
     "event_flavor": {
-      "event_key": "discovery",
-      "headline": "Unidentified Signal Detected at 1420 MHz",
-      "broadcast": "On Sol 55, our arrays picked up a strange transmission at 1420 MHz. Analysis is underway to determine its origin and significance.",
+      "event_key": "sandstorm",
+      "headline": "Sol 55 Sandstorm Disrupts Solar Power",
+      "broadcast": "A massive sandstorm is active on Mars, forcing all solar panels offline for the next 6 hours. Expect reduced power availability during this period.",
       "source": "github_models",
-      "generated_at": "2026-06-01T00:36:15.235084",
+      "generated_at": "2026-06-02T00:39:09.038914",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
