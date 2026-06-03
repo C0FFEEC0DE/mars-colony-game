@@ -7,7 +7,7 @@
   "temperature": -48,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Sol 55 Sandstorm Disrupts Solar Power",
+  "current_event": "Underground Ice Deposit Uncovered Amid Dust Storm",
   "last_updated": "2026-05-31T00:35:03.857859",
   "global_resources": {
     "oxygen": 1000,
@@ -247,6 +247,10 @@
     {
       "time": "2026-06-02T00:39:09.038933",
       "event": "A massive sandstorm is active on Mars, forcing all solar panels offline for the next 6 hours. Expect reduced power availability during this period."
+    },
+    {
+      "time": "2026-06-03T00:44:06.111882",
+      "event": "On Sol 55, despite ongoing dust storm and -48C temperatures, crew members Zoya Kade, Marco Quinn, and Irina Vale successfully extracted underground ice, securing vital water reserves."
     }
   ],
   "market": {
@@ -310,11 +314,11 @@
     ],
     "news_summary": "Sol 55 on Mars brings a significant solar boost, increasing energy availability across all colonies. Colonists are tasked with optimizing solar arrays and maintaining critical life support systems to take advantage of favorable conditions. Resource management remains a priority\u2026",
     "event_flavor": {
-      "event_key": "sandstorm",
-      "headline": "Sol 55 Sandstorm Disrupts Solar Power",
-      "broadcast": "A massive sandstorm is active on Mars, forcing all solar panels offline for the next 6 hours. Expect reduced power availability during this period.",
+      "event_key": "ice_discovery",
+      "headline": "Underground Ice Deposit Uncovered Amid Dust Storm",
+      "broadcast": "On Sol 55, despite ongoing dust storm and -48C temperatures, crew members Zoya Kade, Marco Quinn, and Irina Vale successfully extracted underground ice, securing vital water reserves.",
       "source": "github_models",
-      "generated_at": "2026-06-02T00:39:09.038914",
+      "generated_at": "2026-06-03T00:44:06.111862",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
