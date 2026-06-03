@@ -16,8 +16,8 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ║ Spring                             ║  ║ A surge in solar activity has      ║
 ║ [TEMP] -48C | [SUN] 0% | [STORM]   ║  ║ increased energy generation        ║
 ║ YES                                ║  ║ capacity across all colonies,      ║
-║ [EVENT] Sol 55 Sandstorm Disrupts  ║  ║ improving power availability for   ║
-║ Solar Power                        ║  ║ critical systems.                  ║
+║ [EVENT] Underground Ice Deposit    ║  ║ improving power availability for   ║
+║ Uncovered Amid Dust Storm          ║  ║ critical systems.                  ║
 ║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT solar_boost |               ║
 ║ [O2] 1000 | [H2O] 545 | [E] 1140   ║  ║ solar_activity +5                  ║
 ║ [FOOD] 1700 | [MAT] 700            ║  ╚════════════════════════════════════╝
@@ -28,11 +28,11 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
 ║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Arrays           ║
-║    Dustline Agro | P1 B3 | S7047   ║  ║    Adjust and optimize solar…      ║
+║    Dustline Agro | P1 B3 | S7111   ║  ║    Adjust and optimize solar…      ║
 ║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System Check    ║
-║    Ares Systems | P1 B4 | S6481    ║  ║    Perform diagnostics and minor…  ║
+║    Ares Systems | P1 B4 | S6553    ║  ║    Perform diagnostics and minor…  ║
 ║ 3. Irina Vale                      ║  ║ 3. Material Inventory and Salvage  ║
-║    Helios… | P1 B2 | S5655         ║  ║    Survey storage and salvage…     ║
+║    Helios… | P1 B2 | S5721         ║  ║    Survey storage and salvage…     ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
@@ -44,25 +44,27 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Sol 55 on Mars brings a            ║  ║ 00:39 | A massive sandstorm is…    ║
-║ significant solar boost,           ║  ║ 00:36 | On Sol 55, our arrays…     ║
-║ increasing energy availability     ║  ║ 00:35 | AI directive: Solar Flare… ║
-║ across all colonies. Colonists are ║  ║ 00:34 | On Sol 55, analysis…       ║
-║ tasked with optimizing solar       ║  ║ 12:23 | A cargo ship from Earth    ║
-║ arrays and maintaining critical    ║  ║ has…                               ║
+║ Sol 55 on Mars brings a            ║  ║ 00:44 | On Sol 55, despite         ║
+║ significant solar boost,           ║  ║ ongoing…                           ║
+║ increasing energy availability     ║  ║ 00:39 | A massive sandstorm is…    ║
+║ across all colonies. Colonists are ║  ║ 00:36 | On Sol 55, our arrays…     ║
+║ tasked with optimizing solar       ║  ║ 00:35 | AI directive: Solar Flare… ║
+║ arrays and maintaining critical    ║  ║ 00:34 | On Sol 55, analysis…       ║
 ║ life support systems to take       ║  ╚════════════════════════════════════╝
 ║ advantage of favorable conditions. ║                                        
 ║ Resource management remains a      ║                                        
 ║ priority…                          ║                                        
-║ A massive sandstorm is active on   ║                                        
-║ Mars, forcing all solar panels     ║                                        
-║ offline for the next 6 hours.      ║                                        
-║ Expect reduced power availability  ║                                        
-║ during this period.                ║                                        
+║ On Sol 55, despite ongoing dust    ║                                        
+║ storm and -48C temperatures, crew  ║                                        
+║ members Zoya Kade, Marco Quinn,    ║                                        
+║ and Irina Vale successfully        ║                                        
+║ extracted underground ice,         ║                                        
+║ securing vital water reserves.     ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
