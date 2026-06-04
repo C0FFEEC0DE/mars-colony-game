@@ -7,7 +7,7 @@
   "temperature": -48,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Underground Ice Deposit Uncovered Amid Dust Storm",
+  "current_event": "Potential Archaeological Site Detected Amid Dust Storm",
   "last_updated": "2026-05-31T00:35:03.857859",
   "global_resources": {
     "oxygen": 1000,
@@ -251,6 +251,10 @@
     {
       "time": "2026-06-03T00:44:06.111882",
       "event": "On Sol 55, despite ongoing dust storm and -48C temperatures, crew members Zoya Kade, Marco Quinn, and Irina Vale successfully extracted underground ice, securing vital water reserves."
+    },
+    {
+      "time": "2026-06-04T12:59:58.777595",
+      "event": "During ongoing dust storm conditions, rover imaging identified formations resembling ancient ruins. Further analysis required to confirm geological or artificial origin."
     }
   ],
   "market": {
@@ -314,11 +318,11 @@
     ],
     "news_summary": "Sol 55 on Mars brings a significant solar boost, increasing energy availability across all colonies. Colonists are tasked with optimizing solar arrays and maintaining critical life support systems to take advantage of favorable conditions. Resource management remains a priority\u2026",
     "event_flavor": {
-      "event_key": "ice_discovery",
-      "headline": "Underground Ice Deposit Uncovered Amid Dust Storm",
-      "broadcast": "On Sol 55, despite ongoing dust storm and -48C temperatures, crew members Zoya Kade, Marco Quinn, and Irina Vale successfully extracted underground ice, securing vital water reserves.",
+      "event_key": "discovery",
+      "headline": "Potential Archaeological Site Detected Amid Dust Storm",
+      "broadcast": "During ongoing dust storm conditions, rover imaging identified formations resembling ancient ruins. Further analysis required to confirm geological or artificial origin.",
       "source": "github_models",
-      "generated_at": "2026-06-03T00:44:06.111862",
+      "generated_at": "2026-06-04T12:59:58.777582",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
