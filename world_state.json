@@ -2,12 +2,12 @@
   "day": 55,
   "mars_date": "Sol 55",
   "season": "Early Spring",
-  "solar_activity": 0,
+  "solar_activity": 150,
   "dust_storm_active": true,
   "temperature": -48,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Potential Archaeological Site Detected Amid Dust Storm",
+  "current_event": "Massive Solar Flare Detected \u2013 Radiation Alert",
   "last_updated": "2026-05-31T00:35:03.857859",
   "global_resources": {
     "oxygen": 1000,
@@ -255,6 +255,10 @@
     {
       "time": "2026-06-04T12:59:58.777595",
       "event": "During ongoing dust storm conditions, rover imaging identified formations resembling ancient ruins. Further analysis required to confirm geological or artificial origin."
+    },
+    {
+      "time": "2026-06-05T00:36:51.161339",
+      "event": "A powerful solar flare is underway, increasing radiation levels by 50% this turn. Seek shelter immediately to minimize exposure."
     }
   ],
   "market": {
@@ -318,11 +322,11 @@
     ],
     "news_summary": "Sol 55 on Mars brings a significant solar boost, increasing energy availability across all colonies. Colonists are tasked with optimizing solar arrays and maintaining critical life support systems to take advantage of favorable conditions. Resource management remains a priority\u2026",
     "event_flavor": {
-      "event_key": "discovery",
-      "headline": "Potential Archaeological Site Detected Amid Dust Storm",
-      "broadcast": "During ongoing dust storm conditions, rover imaging identified formations resembling ancient ruins. Further analysis required to confirm geological or artificial origin.",
+      "event_key": "solar_flare",
+      "headline": "Massive Solar Flare Detected \u2013 Radiation Alert",
+      "broadcast": "A powerful solar flare is underway, increasing radiation levels by 50% this turn. Seek shelter immediately to minimize exposure.",
       "source": "github_models",
-      "generated_at": "2026-06-04T12:59:58.777582",
+      "generated_at": "2026-06-05T00:36:51.161323",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
