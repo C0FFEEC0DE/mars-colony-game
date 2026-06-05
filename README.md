@@ -14,10 +14,10 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
 ║ [SOL] Sol 55 | [SEASON] Early      ║  ║ Solar Flare Boosts Energy Output   ║
 ║ Spring                             ║  ║ A surge in solar activity has      ║
-║ [TEMP] -48C | [SUN] 0% | [STORM]   ║  ║ increased energy generation        ║
+║ [TEMP] -48C | [SUN] 150% | [STORM] ║  ║ increased energy generation        ║
 ║ YES                                ║  ║ capacity across all colonies,      ║
-║ [EVENT] Underground Ice Deposit    ║  ║ improving power availability for   ║
-║ Uncovered Amid Dust Storm          ║  ║ critical systems.                  ║
+║ [EVENT] Massive Solar Flare        ║  ║ improving power availability for   ║
+║ Detected – Radiation Alert         ║  ║ critical systems.                  ║
 ║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT solar_boost |               ║
 ║ [O2] 1000 | [H2O] 545 | [E] 1140   ║  ║ solar_activity +5                  ║
 ║ [FOOD] 1700 | [MAT] 700            ║  ╚════════════════════════════════════╝
@@ -28,9 +28,9 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
 ║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Arrays           ║
-║    Dustline Agro | P1 B3 | S7179   ║  ║    Adjust and optimize solar…      ║
+║    Dustline Agro | P1 B3 | S7247   ║  ║    Adjust and optimize solar…      ║
 ║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System Check    ║
-║    Ares Systems | P1 B4 | S6565    ║  ║    Perform diagnostics and minor…  ║
+║    Ares Systems | P1 B4 | S6577    ║  ║    Perform diagnostics and minor…  ║
 ║ 3. Irina Vale                      ║  ║ 3. Material Inventory and Salvage  ║
 ║    Helios… | P1 B2 | S5721         ║  ║    Survey storage and salvage…     ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
@@ -44,26 +44,26 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Sol 55 on Mars brings a            ║  ║ 00:44 | On Sol 55, despite         ║
-║ significant solar boost,           ║  ║ ongoing…                           ║
-║ increasing energy availability     ║  ║ 00:39 | A massive sandstorm is…    ║
-║ across all colonies. Colonists are ║  ║ 00:36 | On Sol 55, our arrays…     ║
-║ tasked with optimizing solar       ║  ║ 00:35 | AI directive: Solar Flare… ║
-║ arrays and maintaining critical    ║  ║ 00:34 | On Sol 55, analysis…       ║
+║ Sol 55 on Mars brings a            ║  ║ 00:36 | A powerful solar flare is… ║
+║ significant solar boost,           ║  ║ 12:59 | During ongoing dust storm… ║
+║ increasing energy availability     ║  ║ 00:44 | On Sol 55, despite         ║
+║ across all colonies. Colonists are ║  ║ ongoing…                           ║
+║ tasked with optimizing solar       ║  ║ 00:39 | A massive sandstorm is…    ║
+║ arrays and maintaining critical    ║  ║ 00:36 | On Sol 55, our arrays…     ║
 ║ life support systems to take       ║  ╚════════════════════════════════════╝
 ║ advantage of favorable conditions. ║                                        
 ║ Resource management remains a      ║                                        
 ║ priority…                          ║                                        
-║ On Sol 55, despite ongoing dust    ║                                        
-║ storm and -48C temperatures, crew  ║                                        
-║ members Zoya Kade, Marco Quinn,    ║                                        
-║ and Irina Vale successfully        ║                                        
-║ extracted underground ice,         ║                                        
-║ securing vital water reserves.     ║                                        
+║ A powerful solar flare is          ║                                        
+║ underway, increasing radiation     ║                                        
+║ levels by 50% this turn. Seek      ║                                        
+║ shelter immediately to minimize    ║                                        
+║ exposure.                          ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
