@@ -2,12 +2,12 @@
   "day": 55,
   "mars_date": "Sol 55",
   "season": "Early Spring",
-  "solar_activity": 150,
+  "solar_activity": 0,
   "dust_storm_active": true,
   "temperature": -48,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Massive Solar Flare Detected \u2013 Radiation Alert",
+  "current_event": "Massive Sandstorm Disrupts Solar Power",
   "last_updated": "2026-05-31T00:35:03.857859",
   "global_resources": {
     "oxygen": 1000,
@@ -259,6 +259,10 @@
     {
       "time": "2026-06-05T00:36:51.161339",
       "event": "A powerful solar flare is underway, increasing radiation levels by 50% this turn. Seek shelter immediately to minimize exposure."
+    },
+    {
+      "time": "2026-06-06T12:25:21.801025",
+      "event": "A severe dust storm is currently active on Sol 55, forcing all solar panels offline for the next 6 hours. Prepare for reduced power availability during this period."
     }
   ],
   "market": {
@@ -322,11 +326,11 @@
     ],
     "news_summary": "Sol 55 on Mars brings a significant solar boost, increasing energy availability across all colonies. Colonists are tasked with optimizing solar arrays and maintaining critical life support systems to take advantage of favorable conditions. Resource management remains a priority\u2026",
     "event_flavor": {
-      "event_key": "solar_flare",
-      "headline": "Massive Solar Flare Detected \u2013 Radiation Alert",
-      "broadcast": "A powerful solar flare is underway, increasing radiation levels by 50% this turn. Seek shelter immediately to minimize exposure.",
+      "event_key": "sandstorm",
+      "headline": "Massive Sandstorm Disrupts Solar Power",
+      "broadcast": "A severe dust storm is currently active on Sol 55, forcing all solar panels offline for the next 6 hours. Prepare for reduced power availability during this period.",
       "source": "github_models",
-      "generated_at": "2026-06-05T00:36:51.161323",
+      "generated_at": "2026-06-06T12:25:21.801013",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
