@@ -14,13 +14,13 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
 ║ [SOL] Sol 55 | [SEASON] Early      ║  ║ Solar Flare Boosts Energy Output   ║
 ║ Spring                             ║  ║ A surge in solar activity has      ║
-║ [TEMP] -48C | [SUN] 150% | [STORM] ║  ║ increased energy generation        ║
+║ [TEMP] -48C | [SUN] 0% | [STORM]   ║  ║ increased energy generation        ║
 ║ YES                                ║  ║ capacity across all colonies,      ║
-║ [EVENT] Massive Solar Flare        ║  ║ improving power availability for   ║
-║ Detected – Radiation Alert         ║  ║ critical systems.                  ║
+║ [EVENT] Trading Ship Arrives Amid  ║  ║ improving power availability for   ║
+║ Dust Storm                         ║  ║ critical systems.                  ║
 ║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT solar_boost |               ║
 ║ [O2] 1000 | [H2O] 545 | [E] 1140   ║  ║ solar_activity +5                  ║
-║ [FOOD] 1700 | [MAT] 700            ║  ╚════════════════════════════════════╝
+║ [FOOD] 1800 | [MAT] 750            ║  ╚════════════════════════════════════╝
 ║ [MKT] O2 0 H2O 0 F 0 M 0           ║                                        
 ║ [AI] Solar Flare Boosts Energy     ║                                        
 ║ Output | solar_activity +5         ║                                        
@@ -28,9 +28,9 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
 ║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Arrays           ║
-║    Dustline Agro | P1 B3 | S7235   ║  ║    Adjust and optimize solar…      ║
+║    Dustline Agro | P1 B3 | S7223   ║  ║    Adjust and optimize solar…      ║
 ║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System Check    ║
-║    Ares Systems | P1 B4 | S6589    ║  ║    Perform diagnostics and minor…  ║
+║    Ares Systems | P1 B4 | S6601    ║  ║    Perform diagnostics and minor…  ║
 ║ 3. Irina Vale                      ║  ║ 3. Material Inventory and Salvage  ║
 ║    Helios… | P1 B2 | S5721         ║  ║    Survey storage and salvage…     ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
@@ -39,30 +39,31 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Solar flare ║
 ║ WATER     545                      ║  ║ activity is currently…             ║
 ║ ENERGY    1140                     ║  ║ Ares Systems -> Zoya Kade |        ║
-║ FOOD      1700                     ║  ║ Requesting status update on water… ║
-║ MATERIALS 700                      ║  ╚════════════════════════════════════╝
+║ FOOD      1800                     ║  ║ Requesting status update on water… ║
+║ MATERIALS 750                      ║  ╚════════════════════════════════════╝
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Sol 55 on Mars brings a            ║  ║ 00:36 | A powerful solar flare is… ║
-║ significant solar boost,           ║  ║ 12:59 | During ongoing dust storm… ║
-║ increasing energy availability     ║  ║ 00:44 | On Sol 55, despite         ║
-║ across all colonies. Colonists are ║  ║ ongoing…                           ║
-║ tasked with optimizing solar       ║  ║ 00:39 | A massive sandstorm is…    ║
-║ arrays and maintaining critical    ║  ║ 00:36 | On Sol 55, our arrays…     ║
-║ life support systems to take       ║  ╚════════════════════════════════════╝
-║ advantage of favorable conditions. ║                                        
+║ Sol 55 on Mars brings a            ║  ║ 00:36 | Despite ongoing dust       ║
+║ significant solar boost,           ║  ║ storm…                             ║
+║ increasing energy availability     ║  ║ 12:25 | A severe dust storm is…    ║
+║ across all colonies. Colonists are ║  ║ 00:36 | A powerful solar flare is… ║
+║ tasked with optimizing solar       ║  ║ 12:59 | During ongoing dust storm… ║
+║ arrays and maintaining critical    ║  ║ 00:44 | On Sol 55, despite         ║
+║ life support systems to take       ║  ║ ongoing…                           ║
+║ advantage of favorable conditions. ║  ╚════════════════════════════════════╝
 ║ Resource management remains a      ║                                        
 ║ priority…                          ║                                        
-║ A powerful solar flare is          ║                                        
-║ underway, increasing radiation     ║                                        
-║ levels by 50% this turn. Seek      ║                                        
-║ shelter immediately to minimize    ║                                        
-║ exposure.                          ║                                        
+║ Despite ongoing dust storm and     ║                                        
+║ zero solar activity on Sol 55, the ║                                        
+║ Earth trading vessel has delivered ║                                        
+║ +100 food and +50 materials to the ║                                        
+║ colony reserves.                   ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
