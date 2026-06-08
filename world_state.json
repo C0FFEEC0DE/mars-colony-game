@@ -2,12 +2,12 @@
   "day": 55,
   "mars_date": "Sol 55",
   "season": "Early Spring",
-  "solar_activity": 0,
+  "solar_activity": 150,
   "dust_storm_active": true,
   "temperature": -48,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Sol 55: Massive Sandstorm Disables Solar Panels",
+  "current_event": "Massive Solar Flare Detected \u2013 Radiation Alert",
   "last_updated": "2026-05-31T00:35:03.857859",
   "global_resources": {
     "oxygen": 1000,
@@ -271,6 +271,10 @@
     {
       "time": "2026-06-07T12:30:27.496639",
       "event": "A severe dust storm is currently active, forcing all solar panels offline for the next 6 hours. Prepare for reduced power availability during this period."
+    },
+    {
+      "time": "2026-06-08T00:38:01.179303",
+      "event": "A massive solar flare is impacting Mars with 150% solar activity. Energy levels will rise by 50% next turn; all personnel must seek radiation shelter immediately."
     }
   ],
   "market": {
@@ -334,11 +338,11 @@
     ],
     "news_summary": "Sol 55 on Mars brings a significant solar boost, increasing energy availability across all colonies. Colonists are tasked with optimizing solar arrays and maintaining critical life support systems to take advantage of favorable conditions. Resource management remains a priority\u2026",
     "event_flavor": {
-      "event_key": "sandstorm",
-      "headline": "Sol 55: Massive Sandstorm Disables Solar Panels",
-      "broadcast": "A severe dust storm is currently active, forcing all solar panels offline for the next 6 hours. Prepare for reduced power availability during this period.",
+      "event_key": "solar_flare",
+      "headline": "Massive Solar Flare Detected \u2013 Radiation Alert",
+      "broadcast": "A massive solar flare is impacting Mars with 150% solar activity. Energy levels will rise by 50% next turn; all personnel must seek radiation shelter immediately.",
       "source": "github_models",
-      "generated_at": "2026-06-07T12:30:27.496622",
+      "generated_at": "2026-06-08T00:38:01.179288",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
