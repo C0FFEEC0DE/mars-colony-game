@@ -7,7 +7,7 @@
   "temperature": -48,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Massive Solar Flare Detected \u2013 Radiation Alert",
+  "current_event": "Intense Meteor Shower Hits Mars Colony",
   "last_updated": "2026-05-31T00:35:03.857859",
   "global_resources": {
     "oxygen": 1000,
@@ -275,6 +275,10 @@
     {
       "time": "2026-06-08T00:38:01.179303",
       "event": "A massive solar flare is impacting Mars with 150% solar activity. Energy levels will rise by 50% next turn; all personnel must seek radiation shelter immediately."
+    },
+    {
+      "time": "2026-06-09T00:32:03.343628",
+      "event": "On Sol 55, a meteor shower intensified under 150% solar activity amid the ongoing dust storm. Engineer Irina Vale successfully salvaged 14 additional materials from the debris."
     }
   ],
   "market": {
@@ -338,11 +342,11 @@
     ],
     "news_summary": "Sol 55 on Mars brings a significant solar boost, increasing energy availability across all colonies. Colonists are tasked with optimizing solar arrays and maintaining critical life support systems to take advantage of favorable conditions. Resource management remains a priority\u2026",
     "event_flavor": {
-      "event_key": "solar_flare",
-      "headline": "Massive Solar Flare Detected \u2013 Radiation Alert",
-      "broadcast": "A massive solar flare is impacting Mars with 150% solar activity. Energy levels will rise by 50% next turn; all personnel must seek radiation shelter immediately.",
+      "event_key": "meteor_shower",
+      "headline": "Intense Meteor Shower Hits Mars Colony",
+      "broadcast": "On Sol 55, a meteor shower intensified under 150% solar activity amid the ongoing dust storm. Engineer Irina Vale successfully salvaged 14 additional materials from the debris.",
       "source": "github_models",
-      "generated_at": "2026-06-08T00:38:01.179288",
+      "generated_at": "2026-06-09T00:32:03.343613",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
