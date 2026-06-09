@@ -2,12 +2,12 @@
   "day": 55,
   "mars_date": "Sol 55",
   "season": "Early Spring",
-  "solar_activity": 150,
+  "solar_activity": 0,
   "dust_storm_active": true,
   "temperature": -48,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Intense Meteor Shower Hits Mars Colony",
+  "current_event": "Massive Sandstorm Shuts Down Solar Arrays",
   "last_updated": "2026-05-31T00:35:03.857859",
   "global_resources": {
     "oxygen": 1000,
@@ -279,6 +279,10 @@
     {
       "time": "2026-06-09T00:32:03.343628",
       "event": "On Sol 55, a meteor shower intensified under 150% solar activity amid the ongoing dust storm. Engineer Irina Vale successfully salvaged 14 additional materials from the debris."
+    },
+    {
+      "time": "2026-06-09T12:57:00.464782",
+      "event": "A severe dust storm on Sol 55 has taken all solar panels offline for the next 6 hours. Expect reduced power availability until the storm subsides."
     }
   ],
   "market": {
@@ -342,11 +346,11 @@
     ],
     "news_summary": "Sol 55 on Mars brings a significant solar boost, increasing energy availability across all colonies. Colonists are tasked with optimizing solar arrays and maintaining critical life support systems to take advantage of favorable conditions. Resource management remains a priority\u2026",
     "event_flavor": {
-      "event_key": "meteor_shower",
-      "headline": "Intense Meteor Shower Hits Mars Colony",
-      "broadcast": "On Sol 55, a meteor shower intensified under 150% solar activity amid the ongoing dust storm. Engineer Irina Vale successfully salvaged 14 additional materials from the debris.",
+      "event_key": "sandstorm",
+      "headline": "Massive Sandstorm Shuts Down Solar Arrays",
+      "broadcast": "A severe dust storm on Sol 55 has taken all solar panels offline for the next 6 hours. Expect reduced power availability until the storm subsides.",
       "source": "github_models",
-      "generated_at": "2026-06-09T00:32:03.343613",
+      "generated_at": "2026-06-09T12:57:00.464766",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
