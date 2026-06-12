@@ -16,8 +16,8 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ║ Spring                             ║  ║ A surge in solar activity has      ║
 ║ [TEMP] -48C | [SUN] 0% | [STORM]   ║  ║ increased energy generation        ║
 ║ YES                                ║  ║ capacity across all colonies,      ║
-║ [EVENT] Massive Sandstorm Shuts    ║  ║ improving power availability for   ║
-║ Down Solar Arrays                  ║  ║ critical systems.                  ║
+║ [EVENT] Unidentified Signal        ║  ║ improving power availability for   ║
+║ Detected Amid Dust Storm           ║  ║ critical systems.                  ║
 ║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT solar_boost |               ║
 ║ [O2] 1000 | [H2O] 545 | [E] 1140   ║  ║ solar_activity +5                  ║
 ║ [FOOD] 1800 | [MAT] 750            ║  ╚════════════════════════════════════╝
@@ -28,9 +28,9 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
 ║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Arrays           ║
-║    Dustline Agro | P1 B3 | S7175   ║  ║    Adjust and optimize solar…      ║
+║    Dustline Agro | P1 B3 | S7163   ║  ║    Adjust and optimize solar…      ║
 ║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System Check    ║
-║    Ares Systems | P1 B4 | S6649    ║  ║    Perform diagnostics and minor…  ║
+║    Ares Systems | P1 B4 | S6661    ║  ║    Perform diagnostics and minor…  ║
 ║ 3. Irina Vale                      ║  ║ 3. Material Inventory and Salvage  ║
 ║    Helios… | P1 B2 | S5791         ║  ║    Survey storage and salvage…     ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
@@ -44,25 +44,27 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Sol 55 on Mars brings a            ║  ║ 12:57 | A severe dust storm on     ║
-║ significant solar boost,           ║  ║ Sol…                               ║
-║ increasing energy availability     ║  ║ 00:32 | On Sol 55, a meteor        ║
-║ across all colonies. Colonists are ║  ║ shower…                            ║
-║ tasked with optimizing solar       ║  ║ 00:38 | A massive solar flare is…  ║
-║ arrays and maintaining critical    ║  ║ 12:30 | A severe dust storm is…    ║
-║ life support systems to take       ║  ║ 00:36 | Despite ongoing dust       ║
-║ advantage of favorable conditions. ║  ║ storm…                             ║
-║ Resource management remains a      ║  ╚════════════════════════════════════╝
+║ Sol 55 on Mars brings a            ║  ║ 00:40 | On Sol 55, a faint…        ║
+║ significant solar boost,           ║  ║ 12:57 | A severe dust storm on     ║
+║ increasing energy availability     ║  ║ Sol…                               ║
+║ across all colonies. Colonists are ║  ║ 00:32 | On Sol 55, a meteor        ║
+║ tasked with optimizing solar       ║  ║ shower…                            ║
+║ arrays and maintaining critical    ║  ║ 00:38 | A massive solar flare is…  ║
+║ life support systems to take       ║  ║ 12:30 | A severe dust storm is…    ║
+║ advantage of favorable conditions. ║  ╚════════════════════════════════════╝
+║ Resource management remains a      ║                                        
 ║ priority…                          ║                                        
-║ A severe dust storm on Sol 55 has  ║                                        
-║ taken all solar panels offline for ║                                        
-║ the next 6 hours. Expect reduced   ║                                        
-║ power availability until the storm ║                                        
-║ subsides.                          ║                                        
+║ On Sol 55, a faint transmission at ║                                        
+║ 1420 MHz was captured despite      ║                                        
+║ ongoing dust storm conditions and  ║                                        
+║ zero solar activity. Analysis is   ║                                        
+║ underway to determine the source   ║                                        
+║ of the anomaly.                    ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
