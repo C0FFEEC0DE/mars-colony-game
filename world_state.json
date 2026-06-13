@@ -7,7 +7,7 @@
   "temperature": -48,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Unidentified Signal Detected Amid Dust Storm",
+  "current_event": "Microbial Life Detected Amidst Dust Storm",
   "last_updated": "2026-05-31T00:35:03.857859",
   "global_resources": {
     "oxygen": 1000,
@@ -287,6 +287,10 @@
     {
       "time": "2026-06-12T00:40:04.916694",
       "event": "On Sol 55, a faint transmission at 1420 MHz was captured despite ongoing dust storm conditions and zero solar activity. Analysis is underway to determine the source of the anomaly."
+    },
+    {
+      "time": "2026-06-13T12:33:44.074620",
+      "event": "During Sol 55, analysis of soil samples revealed unknown bacterial presence. Despite ongoing dust storm and zero solar activity, the discovery offers new insights into Martian microbiology."
     }
   ],
   "market": {
@@ -351,10 +355,10 @@
     "news_summary": "Sol 55 on Mars brings a significant solar boost, increasing energy availability across all colonies. Colonists are tasked with optimizing solar arrays and maintaining critical life support systems to take advantage of favorable conditions. Resource management remains a priority\u2026",
     "event_flavor": {
       "event_key": "discovery",
-      "headline": "Unidentified Signal Detected Amid Dust Storm",
-      "broadcast": "On Sol 55, a faint transmission at 1420 MHz was captured despite ongoing dust storm conditions and zero solar activity. Analysis is underway to determine the source of the anomaly.",
+      "headline": "Microbial Life Detected Amidst Dust Storm",
+      "broadcast": "During Sol 55, analysis of soil samples revealed unknown bacterial presence. Despite ongoing dust storm and zero solar activity, the discovery offers new insights into Martian microbiology.",
       "source": "github_models",
-      "generated_at": "2026-06-12T00:40:04.916680",
+      "generated_at": "2026-06-13T12:33:44.074606",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
