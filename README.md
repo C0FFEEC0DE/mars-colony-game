@@ -16,8 +16,8 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ║ Spring                             ║  ║ A surge in solar activity has      ║
 ║ [TEMP] -48C | [SUN] 150% | [STORM] ║  ║ increased energy generation        ║
 ║ YES                                ║  ║ capacity across all colonies,      ║
-║ [EVENT] Massive Solar Flare        ║  ║ improving power availability for   ║
-║ Detected                           ║  ║ critical systems.                  ║
+║ [EVENT] Rare Mineral Deposits      ║  ║ improving power availability for   ║
+║ Detected Amidst Dust Storm         ║  ║ critical systems.                  ║
 ║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT solar_boost |               ║
 ║ [O2] 1000 | [H2O] 545 | [E] 1140   ║  ║ solar_activity +5                  ║
 ║ [FOOD] 1800 | [MAT] 750            ║  ╚════════════════════════════════════╝
@@ -28,9 +28,9 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
 ║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Arrays           ║
-║    Dustline Agro | P1 B3 | S7139   ║  ║    Adjust and optimize solar…      ║
+║    Dustline Agro | P1 B3 | S7127   ║  ║    Adjust and optimize solar…      ║
 ║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System Check    ║
-║    Ares Systems | P1 B4 | S6685    ║  ║    Perform diagnostics and minor…  ║
+║    Ares Systems | P1 B4 | S6697    ║  ║    Perform diagnostics and minor…  ║
 ║ 3. Irina Vale                      ║  ║ 3. Material Inventory and Salvage  ║
 ║    Helios… | P1 B2 | S5791         ║  ║    Survey storage and salvage…     ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
@@ -44,26 +44,27 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Sol 55 on Mars brings a            ║  ║ 00:38 | A massive solar flare is…  ║
-║ significant solar boost,           ║  ║ 12:33 | During Sol 55, analysis    ║
-║ increasing energy availability     ║  ║ of…                                ║
-║ across all colonies. Colonists are ║  ║ 00:40 | On Sol 55, a faint…        ║
-║ tasked with optimizing solar       ║  ║ 12:57 | A severe dust storm on     ║
-║ arrays and maintaining critical    ║  ║ Sol…                               ║
-║ life support systems to take       ║  ║ 00:32 | On Sol 55, a meteor        ║
-║ advantage of favorable conditions. ║  ║ shower…                            ║
-║ Resource management remains a      ║  ╚════════════════════════════════════╝
+║ Sol 55 on Mars brings a            ║  ║ 00:40 | On Sol 55, despite active… ║
+║ significant solar boost,           ║  ║ 12:36 | On Sol 55, during high…    ║
+║ increasing energy availability     ║  ║ 00:38 | A massive solar flare is…  ║
+║ across all colonies. Colonists are ║  ║ 12:33 | During Sol 55, analysis    ║
+║ tasked with optimizing solar       ║  ║ of…                                ║
+║ arrays and maintaining critical    ║  ║ 00:40 | On Sol 55, a faint…        ║
+║ life support systems to take       ║  ╚════════════════════════════════════╝
+║ advantage of favorable conditions. ║                                        
+║ Resource management remains a      ║                                        
 ║ priority…                          ║                                        
-║ A massive solar flare is impacting ║                                        
-║ Mars with 150% solar activity. All ║                                        
-║ crew advised to seek radiation     ║                                        
-║ shelter immediately; energy levels ║                                        
-║ will increase by 50% for the next  ║                                        
-║ cycle.                             ║                                        
+║ On Sol 55, despite active dust     ║                                        
+║ storm and high solar activity,     ║                                        
+║ sensors identified rare mineral    ║                                        
+║ deposits beneath the regolith.     ║                                        
+║ Extraction protocols under review  ║                                        
+║ to leverage new resources.         ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
