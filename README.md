@@ -16,8 +16,8 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ║ Spring                             ║  ║ A surge in solar activity has      ║
 ║ [TEMP] -48C | [SUN] 150% | [STORM] ║  ║ increased energy generation        ║
 ║ YES                                ║  ║ capacity across all colonies,      ║
-║ [EVENT] Massive Solar Flare        ║  ║ improving power availability for   ║
-║ Detected – Radiation Alert         ║  ║ critical systems.                  ║
+║ [EVENT] Subsurface Caverns Found   ║  ║ improving power availability for   ║
+║ Beneath Mars Surface               ║  ║ critical systems.                  ║
 ║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT solar_boost |               ║
 ║ [O2] 1000 | [H2O] 545 | [E] 1140   ║  ║ solar_activity +5                  ║
 ║ [FOOD] 1800 | [MAT] 750            ║  ╚════════════════════════════════════╝
@@ -28,9 +28,9 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
 ║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Arrays           ║
-║    Dustline Agro | P1 B3 | S7091   ║  ║    Adjust and optimize solar…      ║
+║    Dustline Agro | P1 B3 | S7079   ║  ║    Adjust and optimize solar…      ║
 ║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System Check    ║
-║    Ares Systems | P1 B4 | S6733    ║  ║    Perform diagnostics and minor…  ║
+║    Ares Systems | P1 B4 | S6745    ║  ║    Perform diagnostics and minor…  ║
 ║ 3. Irina Vale                      ║  ║ 3. Material Inventory and Salvage  ║
 ║    Helios… | P1 B2 | S5791         ║  ║    Survey storage and salvage…     ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
@@ -44,26 +44,27 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Sol 55 on Mars brings a            ║  ║ 00:41 | A massive solar flare is…  ║
-║ significant solar boost,           ║  ║ 00:40 | On Sol 55, despite active… ║
-║ increasing energy availability     ║  ║ 12:36 | On Sol 55, during high…    ║
-║ across all colonies. Colonists are ║  ║ 00:38 | A massive solar flare is…  ║
-║ tasked with optimizing solar       ║  ║ 12:33 | During Sol 55, analysis    ║
-║ arrays and maintaining critical    ║  ║ of…                                ║
-║ life support systems to take       ║  ╚════════════════════════════════════╝
+║ Sol 55 on Mars brings a            ║  ║ 00:44 | On Sol 55, sensors…        ║
+║ significant solar boost,           ║  ║ 00:41 | A massive solar flare is…  ║
+║ increasing energy availability     ║  ║ 00:40 | On Sol 55, despite active… ║
+║ across all colonies. Colonists are ║  ║ 12:36 | On Sol 55, during high…    ║
+║ tasked with optimizing solar       ║  ║ 00:38 | A massive solar flare is…  ║
+║ arrays and maintaining critical    ║  ╚════════════════════════════════════╝
+║ life support systems to take       ║                                        
 ║ advantage of favorable conditions. ║                                        
 ║ Resource management remains a      ║                                        
 ║ priority…                          ║                                        
-║ A massive solar flare is impacting ║                                        
-║ Mars with energy levels increased  ║                                        
-║ by 50% for the next cycle. All     ║                                        
-║ crew must take cover to minimize   ║                                        
-║ radiation exposure amid ongoing    ║                                        
-║ dust storm conditions.             ║                                        
+║ On Sol 55, sensors confirmed       ║                                        
+║ underground caverns despite        ║                                        
+║ ongoing dust storm and elevated    ║                                        
+║ solar activity at 150%. These      ║                                        
+║ formations may offer new shelter   ║                                        
+║ opportunities.                     ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
