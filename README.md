@@ -14,10 +14,10 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
 ║ [SOL] Sol 55 | [SEASON] Early      ║  ║ Solar Flare Boosts Energy Output   ║
 ║ Spring                             ║  ║ A surge in solar activity has      ║
-║ [TEMP] -48C | [SUN] 150% | [STORM] ║  ║ increased energy generation        ║
+║ [TEMP] -48C | [SUN] 0% | [STORM]   ║  ║ increased energy generation        ║
 ║ YES                                ║  ║ capacity across all colonies,      ║
-║ [EVENT] Massive Solar Flare        ║  ║ improving power availability for   ║
-║ Detected                           ║  ║ critical systems.                  ║
+║ [EVENT] Sol 55: Mars Colony Faces  ║  ║ improving power availability for   ║
+║ Severe Sandstorm                   ║  ║ critical systems.                  ║
 ║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT solar_boost |               ║
 ║ [O2] 1000 | [H2O] 545 | [E] 1140   ║  ║ solar_activity +5                  ║
 ║ [FOOD] 1800 | [MAT] 750            ║  ╚════════════════════════════════════╝
@@ -28,9 +28,9 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
 ║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Arrays           ║
-║    Dustline Agro | P1 B3 | S7055   ║  ║    Adjust and optimize solar…      ║
+║    Dustline Agro | P1 B3 | S7043   ║  ║    Adjust and optimize solar…      ║
 ║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System Check    ║
-║    Ares Systems | P1 B4 | S6769    ║  ║    Perform diagnostics and minor…  ║
+║    Ares Systems | P1 B4 | S6781    ║  ║    Perform diagnostics and minor…  ║
 ║ 3. Irina Vale                      ║  ║ 3. Material Inventory and Salvage  ║
 ║    Helios… | P1 B2 | S5791         ║  ║    Survey storage and salvage…     ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
@@ -44,26 +44,26 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Sol 55 on Mars brings a            ║  ║ 12:34 | A massive solar flare is…  ║
-║ significant solar boost,           ║  ║ 00:44 | On Sol 55, sensors…        ║
-║ increasing energy availability     ║  ║ 00:41 | A massive solar flare is…  ║
-║ across all colonies. Colonists are ║  ║ 00:40 | On Sol 55, despite active… ║
-║ tasked with optimizing solar       ║  ║ 12:36 | On Sol 55, during high…    ║
+║ Sol 55 on Mars brings a            ║  ║ 00:38 | A massive sandstorm is…    ║
+║ significant solar boost,           ║  ║ 12:34 | A massive solar flare is…  ║
+║ increasing energy availability     ║  ║ 00:44 | On Sol 55, sensors…        ║
+║ across all colonies. Colonists are ║  ║ 00:41 | A massive solar flare is…  ║
+║ tasked with optimizing solar       ║  ║ 00:40 | On Sol 55, despite active… ║
 ║ arrays and maintaining critical    ║  ╚════════════════════════════════════╝
 ║ life support systems to take       ║                                        
 ║ advantage of favorable conditions. ║                                        
 ║ Resource management remains a      ║                                        
 ║ priority…                          ║                                        
-║ A massive solar flare is impacting ║                                        
-║ Mars with 150% solar activity.     ║                                        
-║ Energy levels will increase by 50% ║                                        
-║ next turn; all personnel should    ║                                        
-║ take cover from radiation          ║                                        
-║ immediately.                       ║                                        
+║ A massive sandstorm is currently   ║                                        
+║ active with zero solar activity.   ║                                        
+║ All solar panels are offline and   ║                                        
+║ expected to remain so for the next ║                                        
+║ 6 hours.                           ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
