@@ -7,7 +7,7 @@
   "temperature": -48,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Trading Ship Arrives Amid Duststorm",
+  "current_event": "Meteor Shower Yields Valuable Salvage Amid Dust Storm",
   "last_updated": "2026-05-31T00:35:03.857859",
   "global_resources": {
     "oxygen": 1000,
@@ -323,6 +323,10 @@
     {
       "time": "2026-06-23T00:35:54.668640",
       "event": "Despite ongoing dust storm and zero solar activity, Earth trading vessel docks, delivering +100 food and +50 materials to colony reserves."
+    },
+    {
+      "time": "2026-06-23T12:54:24.506938",
+      "event": "On Sol 55, a meteor shower provided a rare resource boost despite ongoing dust storm conditions. Irina Vale and Marco Quinn successfully salvaged 14 and 12 materials respectively."
     }
   ],
   "market": {
@@ -386,11 +390,11 @@
     ],
     "news_summary": "Sol 55 on Mars brings a significant solar boost, increasing energy availability across all colonies. Colonists are tasked with optimizing solar arrays and maintaining critical life support systems to take advantage of favorable conditions. Resource management remains a priority\u2026",
     "event_flavor": {
-      "event_key": "traders",
-      "headline": "Trading Ship Arrives Amid Duststorm",
-      "broadcast": "Despite ongoing dust storm and zero solar activity, Earth trading vessel docks, delivering +100 food and +50 materials to colony reserves.",
+      "event_key": "meteor_shower",
+      "headline": "Meteor Shower Yields Valuable Salvage Amid Dust Storm",
+      "broadcast": "On Sol 55, a meteor shower provided a rare resource boost despite ongoing dust storm conditions. Irina Vale and Marco Quinn successfully salvaged 14 and 12 materials respectively.",
       "source": "github_models",
-      "generated_at": "2026-06-23T00:35:54.668629",
+      "generated_at": "2026-06-23T12:54:24.506924",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
