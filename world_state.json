@@ -7,14 +7,14 @@
   "temperature": -48,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Sol 55: Mars Colony Faces Severe Sandstorm",
+  "current_event": "Trading Ship Arrives Amid Duststorm",
   "last_updated": "2026-05-31T00:35:03.857859",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
     "energy": 1140,
-    "food": 1800,
-    "materials": 750
+    "food": 1900,
+    "materials": 800
   },
   "leaderboard": [
     {
@@ -319,6 +319,10 @@
     {
       "time": "2026-06-22T00:38:51.460850",
       "event": "A massive sandstorm is currently active with zero solar activity. All solar panels are offline and expected to remain so for the next 6 hours."
+    },
+    {
+      "time": "2026-06-23T00:35:54.668640",
+      "event": "Despite ongoing dust storm and zero solar activity, Earth trading vessel docks, delivering +100 food and +50 materials to colony reserves."
     }
   ],
   "market": {
@@ -382,11 +386,11 @@
     ],
     "news_summary": "Sol 55 on Mars brings a significant solar boost, increasing energy availability across all colonies. Colonists are tasked with optimizing solar arrays and maintaining critical life support systems to take advantage of favorable conditions. Resource management remains a priority\u2026",
     "event_flavor": {
-      "event_key": "sandstorm",
-      "headline": "Sol 55: Mars Colony Faces Severe Sandstorm",
-      "broadcast": "A massive sandstorm is currently active with zero solar activity. All solar panels are offline and expected to remain so for the next 6 hours.",
+      "event_key": "traders",
+      "headline": "Trading Ship Arrives Amid Duststorm",
+      "broadcast": "Despite ongoing dust storm and zero solar activity, Earth trading vessel docks, delivering +100 food and +50 materials to colony reserves.",
       "source": "github_models",
-      "generated_at": "2026-06-22T00:38:51.460837",
+      "generated_at": "2026-06-23T00:35:54.668629",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
