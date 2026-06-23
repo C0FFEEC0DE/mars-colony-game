@@ -16,11 +16,11 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ║ Spring                             ║  ║ A surge in solar activity has      ║
 ║ [TEMP] -48C | [SUN] 0% | [STORM]   ║  ║ increased energy generation        ║
 ║ YES                                ║  ║ capacity across all colonies,      ║
-║ [EVENT] Sol 55: Mars Colony Faces  ║  ║ improving power availability for   ║
-║ Severe Sandstorm                   ║  ║ critical systems.                  ║
+║ [EVENT] Trading Ship Arrives Amid  ║  ║ improving power availability for   ║
+║ Duststorm                          ║  ║ critical systems.                  ║
 ║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT solar_boost |               ║
 ║ [O2] 1000 | [H2O] 545 | [E] 1140   ║  ║ solar_activity +5                  ║
-║ [FOOD] 1800 | [MAT] 750            ║  ╚════════════════════════════════════╝
+║ [FOOD] 1900 | [MAT] 800            ║  ╚════════════════════════════════════╝
 ║ [MKT] O2 0 H2O 0 F 0 M 0           ║                                        
 ║ [AI] Solar Flare Boosts Energy     ║                                        
 ║ Output | solar_activity +5         ║                                        
@@ -28,9 +28,9 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
 ║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Arrays           ║
-║    Dustline Agro | P1 B3 | S7043   ║  ║    Adjust and optimize solar…      ║
+║    Dustline Agro | P1 B3 | S7031   ║  ║    Adjust and optimize solar…      ║
 ║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System Check    ║
-║    Ares Systems | P1 B4 | S6781    ║  ║    Perform diagnostics and minor…  ║
+║    Ares Systems | P1 B4 | S6793    ║  ║    Perform diagnostics and minor…  ║
 ║ 3. Irina Vale                      ║  ║ 3. Material Inventory and Salvage  ║
 ║    Helios… | P1 B2 | S5791         ║  ║    Survey storage and salvage…     ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
@@ -39,30 +39,31 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Solar flare ║
 ║ WATER     545                      ║  ║ activity is currently…             ║
 ║ ENERGY    1140                     ║  ║ Ares Systems -> Zoya Kade |        ║
-║ FOOD      1800                     ║  ║ Requesting status update on water… ║
-║ MATERIALS 750                      ║  ╚════════════════════════════════════╝
+║ FOOD      1900                     ║  ║ Requesting status update on water… ║
+║ MATERIALS 800                      ║  ╚════════════════════════════════════╝
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Sol 55 on Mars brings a            ║  ║ 00:38 | A massive sandstorm is…    ║
-║ significant solar boost,           ║  ║ 12:34 | A massive solar flare is…  ║
-║ increasing energy availability     ║  ║ 00:44 | On Sol 55, sensors…        ║
-║ across all colonies. Colonists are ║  ║ 00:41 | A massive solar flare is…  ║
-║ tasked with optimizing solar       ║  ║ 00:40 | On Sol 55, despite active… ║
-║ arrays and maintaining critical    ║  ╚════════════════════════════════════╝
-║ life support systems to take       ║                                        
+║ Sol 55 on Mars brings a            ║  ║ 00:35 | Despite ongoing dust       ║
+║ significant solar boost,           ║  ║ storm…                             ║
+║ increasing energy availability     ║  ║ 00:38 | A massive sandstorm is…    ║
+║ across all colonies. Colonists are ║  ║ 12:34 | A massive solar flare is…  ║
+║ tasked with optimizing solar       ║  ║ 00:44 | On Sol 55, sensors…        ║
+║ arrays and maintaining critical    ║  ║ 00:41 | A massive solar flare is…  ║
+║ life support systems to take       ║  ╚════════════════════════════════════╝
 ║ advantage of favorable conditions. ║                                        
 ║ Resource management remains a      ║                                        
 ║ priority…                          ║                                        
-║ A massive sandstorm is currently   ║                                        
-║ active with zero solar activity.   ║                                        
-║ All solar panels are offline and   ║                                        
-║ expected to remain so for the next ║                                        
-║ 6 hours.                           ║                                        
+║ Despite ongoing dust storm and     ║                                        
+║ zero solar activity, Earth trading ║                                        
+║ vessel docks, delivering +100 food ║                                        
+║ and +50 materials to colony        ║                                        
+║ reserves.                          ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
