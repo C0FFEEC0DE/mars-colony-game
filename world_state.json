@@ -7,7 +7,7 @@
   "temperature": -48,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Microbial Discovery Amid Martian Dust Storm",
+  "current_event": "Unidentified Signal Detected Amid Martian Dust Storm",
   "last_updated": "2026-05-31T00:35:03.857859",
   "global_resources": {
     "oxygen": 1000,
@@ -331,6 +331,10 @@
     {
       "time": "2026-06-24T00:30:51.403766",
       "event": "During Sol 55, analysis of soil samples revealed unknown bacterial presence despite ongoing dust storm and zero solar activity, signaling potential bio-signatures beneath Mars' surface."
+    },
+    {
+      "time": "2026-06-24T12:41:34.844196",
+      "event": "On Sol 55, amid a persistent dust storm and zero solar activity, sensors recorded a strange 1420 MHz signal. Analysis is underway to determine its origin and significance."
     }
   ],
   "market": {
@@ -395,10 +399,10 @@
     "news_summary": "Sol 55 on Mars brings a significant solar boost, increasing energy availability across all colonies. Colonists are tasked with optimizing solar arrays and maintaining critical life support systems to take advantage of favorable conditions. Resource management remains a priority\u2026",
     "event_flavor": {
       "event_key": "discovery",
-      "headline": "Microbial Discovery Amid Martian Dust Storm",
-      "broadcast": "During Sol 55, analysis of soil samples revealed unknown bacterial presence despite ongoing dust storm and zero solar activity, signaling potential bio-signatures beneath Mars' surface.",
+      "headline": "Unidentified Signal Detected Amid Martian Dust Storm",
+      "broadcast": "On Sol 55, amid a persistent dust storm and zero solar activity, sensors recorded a strange 1420 MHz signal. Analysis is underway to determine its origin and significance.",
       "source": "github_models",
-      "generated_at": "2026-06-24T00:30:51.403750",
+      "generated_at": "2026-06-24T12:41:34.844182",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
