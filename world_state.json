@@ -7,14 +7,14 @@
   "temperature": -48,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Unidentified Signal Detected Amidst Dust Storm",
+  "current_event": "Trading Ship Arrives Amidst Dust Storm",
   "last_updated": "2026-05-31T00:35:03.857859",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
     "energy": 1140,
-    "food": 1900,
-    "materials": 800
+    "food": 2000,
+    "materials": 850
   },
   "leaderboard": [
     {
@@ -343,6 +343,10 @@
     {
       "time": "2026-06-27T12:25:13.341670",
       "event": "On Sol 55, during ongoing dust storm conditions and zero solar activity, a strange signal at 1420 MHz was detected. Analysis is underway to determine its origin."
+    },
+    {
+      "time": "2026-06-28T00:34:34.530384",
+      "event": "Despite the ongoing dust storm and zero solar activity, the trading ship from Earth has docked successfully, delivering +100 food and +50 materials to the colony's reserves."
     }
   ],
   "market": {
@@ -406,11 +410,11 @@
     ],
     "news_summary": "Sol 55 on Mars brings a significant solar boost, increasing energy availability across all colonies. Colonists are tasked with optimizing solar arrays and maintaining critical life support systems to take advantage of favorable conditions. Resource management remains a priority\u2026",
     "event_flavor": {
-      "event_key": "discovery",
-      "headline": "Unidentified Signal Detected Amidst Dust Storm",
-      "broadcast": "On Sol 55, during ongoing dust storm conditions and zero solar activity, a strange signal at 1420 MHz was detected. Analysis is underway to determine its origin.",
+      "event_key": "traders",
+      "headline": "Trading Ship Arrives Amidst Dust Storm",
+      "broadcast": "Despite the ongoing dust storm and zero solar activity, the trading ship from Earth has docked successfully, delivering +100 food and +50 materials to the colony's reserves.",
       "source": "github_models",
-      "generated_at": "2026-06-27T12:25:13.341657",
+      "generated_at": "2026-06-28T00:34:34.530370",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
