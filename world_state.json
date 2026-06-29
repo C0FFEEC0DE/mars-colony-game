@@ -2,12 +2,12 @@
   "day": 55,
   "mars_date": "Sol 55",
   "season": "Early Spring",
-  "solar_activity": 0,
+  "solar_activity": 150,
   "dust_storm_active": true,
   "temperature": -48,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Trading Ship Arrives Amidst Dust Storm",
+  "current_event": "Massive Solar Flare Detected \u2014 Radiation Alert",
   "last_updated": "2026-05-31T00:35:03.857859",
   "global_resources": {
     "oxygen": 1000,
@@ -347,6 +347,10 @@
     {
       "time": "2026-06-28T00:34:34.530384",
       "event": "Despite the ongoing dust storm and zero solar activity, the trading ship from Earth has docked successfully, delivering +100 food and +50 materials to the colony's reserves."
+    },
+    {
+      "time": "2026-06-29T00:36:10.592897",
+      "event": "A massive solar flare has increased energy output by 50% for the next cycle. All personnel must seek radiation shelter immediately."
     }
   ],
   "market": {
@@ -410,11 +414,11 @@
     ],
     "news_summary": "Sol 55 on Mars brings a significant solar boost, increasing energy availability across all colonies. Colonists are tasked with optimizing solar arrays and maintaining critical life support systems to take advantage of favorable conditions. Resource management remains a priority\u2026",
     "event_flavor": {
-      "event_key": "traders",
-      "headline": "Trading Ship Arrives Amidst Dust Storm",
-      "broadcast": "Despite the ongoing dust storm and zero solar activity, the trading ship from Earth has docked successfully, delivering +100 food and +50 materials to the colony's reserves.",
+      "event_key": "solar_flare",
+      "headline": "Massive Solar Flare Detected \u2014 Radiation Alert",
+      "broadcast": "A massive solar flare has increased energy output by 50% for the next cycle. All personnel must seek radiation shelter immediately.",
       "source": "github_models",
-      "generated_at": "2026-06-28T00:34:34.530370",
+      "generated_at": "2026-06-29T00:36:10.592887",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
