@@ -14,10 +14,10 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
 ║ [SOL] Sol 55 | [SEASON] Early      ║  ║ Solar Flare Boosts Energy Output   ║
 ║ Spring                             ║  ║ A surge in solar activity has      ║
-║ [TEMP] -48C | [SUN] 150% | [STORM] ║  ║ increased energy generation        ║
+║ [TEMP] -48C | [SUN] 0% | [STORM]   ║  ║ increased energy generation        ║
 ║ YES                                ║  ║ capacity across all colonies,      ║
-║ [EVENT] Massive Solar Flare        ║  ║ improving power availability for   ║
-║ Detected — Radiation Alert         ║  ║ critical systems.                  ║
+║ [EVENT] Sandstorm Forces Solar     ║  ║ improving power availability for   ║
+║ Panel Shutdown                     ║  ║ critical systems.                  ║
 ║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT solar_boost |               ║
 ║ [O2] 1000 | [H2O] 545 | [E] 1140   ║  ║ solar_activity +5                  ║
 ║ [FOOD] 2000 | [MAT] 850            ║  ╚════════════════════════════════════╝
@@ -28,9 +28,9 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
 ║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Arrays           ║
-║    Dustline Agro | P1 B3 | S7019   ║  ║    Adjust and optimize solar…      ║
+║    Dustline Agro | P1 B3 | S7007   ║  ║    Adjust and optimize solar…      ║
 ║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System Check    ║
-║    Ares Systems | P1 B4 | S6865    ║  ║    Perform diagnostics and minor…  ║
+║    Ares Systems | P1 B4 | S6877    ║  ║    Perform diagnostics and minor…  ║
 ║ 3. Irina Vale                      ║  ║ 3. Material Inventory and Salvage  ║
 ║    Helios… | P1 B2 | S5861         ║  ║    Survey storage and salvage…     ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
@@ -44,25 +44,27 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Sol 55 on Mars brings a            ║  ║ 00:36 | A massive solar flare has… ║
-║ significant solar boost,           ║  ║ 00:34 | Despite the ongoing dust…  ║
-║ increasing energy availability     ║  ║ 12:25 | On Sol 55, during ongoing… ║
-║ across all colonies. Colonists are ║  ║ 12:40 | A severe dust storm is…    ║
-║ tasked with optimizing solar       ║  ║ 12:41 | On Sol 55, amid a…         ║
+║ Sol 55 on Mars brings a            ║  ║ 00:34 | A massive dust storm is…   ║
+║ significant solar boost,           ║  ║ 00:36 | A massive solar flare has… ║
+║ increasing energy availability     ║  ║ 00:34 | Despite the ongoing dust…  ║
+║ across all colonies. Colonists are ║  ║ 12:25 | On Sol 55, during ongoing… ║
+║ tasked with optimizing solar       ║  ║ 12:40 | A severe dust storm is…    ║
 ║ arrays and maintaining critical    ║  ╚════════════════════════════════════╝
 ║ life support systems to take       ║                                        
 ║ advantage of favorable conditions. ║                                        
 ║ Resource management remains a      ║                                        
 ║ priority…                          ║                                        
-║ A massive solar flare has          ║                                        
-║ increased energy output by 50% for ║                                        
-║ the next cycle. All personnel must ║                                        
-║ seek radiation shelter             ║                                        
-║ immediately.                       ║                                        
+║ A massive dust storm is active on  ║                                        
+║ Sol 55, causing all solar panels   ║                                        
+║ to go offline for the next 6       ║                                        
+║ hours. Expect reduced power        ║                                        
+║ availability until conditions      ║                                        
+║ improve.                           ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
