@@ -16,8 +16,8 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ║ Spring                             ║  ║ A surge in solar activity has      ║
 ║ [TEMP] -48C | [SUN] 0% | [STORM]   ║  ║ increased energy generation        ║
 ║ YES                                ║  ║ capacity across all colonies,      ║
-║ [EVENT] Subsurface Ice Found Amid  ║  ║ improving power availability for   ║
-║ Storm                              ║  ║ critical systems.                  ║
+║ [EVENT] Massive Sandstorm Disables ║  ║ improving power availability for   ║
+║ Solar Arrays                       ║  ║ critical systems.                  ║
 ║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT solar_boost |               ║
 ║ [O2] 1000 | [H2O] 545 | [E] 1140   ║  ║ solar_activity +5                  ║
 ║ [FOOD] 2000 | [MAT] 850            ║  ╚════════════════════════════════════╝
@@ -28,9 +28,9 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
 ║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Arrays           ║
-║    Dustline Agro | P1 B3 | S7147   ║  ║    Adjust and optimize solar…      ║
+║    Dustline Agro | P1 B3 | S7215   ║  ║    Adjust and optimize solar…      ║
 ║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System Check    ║
-║    Ares Systems | P1 B4 | S6947    ║  ║    Perform diagnostics and minor…  ║
+║    Ares Systems | P1 B4 | S6959    ║  ║    Perform diagnostics and minor…  ║
 ║ 3. Irina Vale                      ║  ║ 3. Material Inventory and Salvage  ║
 ║    Helios… | P1 B2 | S5925         ║  ║    Survey storage and salvage…     ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
@@ -44,26 +44,26 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Sol 55 on Mars brings a            ║  ║ 00:36 | During Sol 55's ongoing…   ║
-║ significant solar boost,           ║  ║ 00:34 | A massive dust storm is…   ║
-║ increasing energy availability     ║  ║ 00:36 | A massive solar flare has… ║
-║ across all colonies. Colonists are ║  ║ 00:34 | Despite the ongoing dust…  ║
-║ tasked with optimizing solar       ║  ║ 12:25 | On Sol 55, during ongoing… ║
+║ Sol 55 on Mars brings a            ║  ║ 00:29 | Sol 55 update: A severe…   ║
+║ significant solar boost,           ║  ║ 00:36 | During Sol 55's ongoing…   ║
+║ increasing energy availability     ║  ║ 00:34 | A massive dust storm is…   ║
+║ across all colonies. Colonists are ║  ║ 00:36 | A massive solar flare has… ║
+║ tasked with optimizing solar       ║  ║ 00:34 | Despite the ongoing dust…  ║
 ║ arrays and maintaining critical    ║  ╚════════════════════════════════════╝
 ║ life support systems to take       ║                                        
 ║ advantage of favorable conditions. ║                                        
 ║ Resource management remains a      ║                                        
 ║ priority…                          ║                                        
-║ During Sol 55's ongoing dust storm ║                                        
-║ and zero solar activity, teams     ║                                        
-║ located underground ice deposits.  ║                                        
-║ Zoya Kade, Irina Vale, and Marco   ║                                        
-║ Quinn secured critical water       ║                                        
-║ resources totaling 97 units.       ║                                        
+║ Sol 55 update: A severe sandstorm  ║                                        
+║ is underway, forcing all solar     ║                                        
+║ panels offline for the next 6      ║                                        
+║ hours. Prepare for reduced power   ║                                        
+║ availability.                      ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
