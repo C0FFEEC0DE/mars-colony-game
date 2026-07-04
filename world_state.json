@@ -1,14 +1,14 @@
 {
-  "day": 55,
-  "mars_date": "Sol 55",
+  "day": 56,
+  "mars_date": "Sol 56",
   "season": "Early Spring",
-  "solar_activity": 0,
+  "solar_activity": 74,
   "dust_storm_active": true,
-  "temperature": -48,
+  "temperature": -51,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Underground Ice Deposit Secured on Sol 55",
-  "last_updated": "2026-05-31T00:35:03.857859",
+  "current_event": null,
+  "last_updated": "2026-07-04T06:58:51.666497",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 7333,
+      "score": 7326,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 7029,
+      "score": 7000,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 6009,
+      "score": 5962,
       "colonists": 1,
       "buildings": 2
     }
@@ -367,6 +367,14 @@
     {
       "time": "2026-07-03T12:36:21.983170",
       "event": "Despite ongoing dust storm and zero solar activity, team members Zoya, Irina, and Marco successfully extracted 116 units of water from a newly discovered underground ice reservoir."
+    },
+    {
+      "time": "2026-07-04T06:58:51.666514",
+      "event": "Martian day 56 has begun"
+    },
+    {
+      "time": "2026-07-04T06:58:51.716109",
+      "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
     }
   ],
   "market": {
@@ -429,26 +437,7 @@
       }
     ],
     "news_summary": "Sol 55 on Mars brings a significant solar boost, increasing energy availability across all colonies. Colonists are tasked with optimizing solar arrays and maintaining critical life support systems to take advantage of favorable conditions. Resource management remains a priority\u2026",
-    "event_flavor": {
-      "event_key": "ice_discovery",
-      "headline": "Underground Ice Deposit Secured on Sol 55",
-      "broadcast": "Despite ongoing dust storm and zero solar activity, team members Zoya, Irina, and Marco successfully extracted 116 units of water from a newly discovered underground ice reservoir.",
-      "source": "github_models",
-      "generated_at": "2026-07-03T12:36:21.983155",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-05-31T00:35:03.857859",
     "last_generated_sol": "Sol 55",
     "last_diagnostics": {
