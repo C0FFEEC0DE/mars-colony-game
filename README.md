@@ -16,8 +16,8 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ║ Spring                             ║  ║ A surge in solar activity has      ║
 ║ [TEMP] -48C | [SUN] 0% | [STORM]   ║  ║ increased energy generation        ║
 ║ YES                                ║  ║ capacity across all colonies,      ║
-║ [EVENT] Massive Sandstorm Disables ║  ║ improving power availability for   ║
-║ Solar Arrays                       ║  ║ critical systems.                  ║
+║ [EVENT] Underground Ice Deposit    ║  ║ improving power availability for   ║
+║ Secured on Sol 55                  ║  ║ critical systems.                  ║
 ║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT solar_boost |               ║
 ║ [O2] 1000 | [H2O] 545 | [E] 1140   ║  ║ solar_activity +5                  ║
 ║ [FOOD] 2000 | [MAT] 850            ║  ╚════════════════════════════════════╝
@@ -28,11 +28,11 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
 ║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Arrays           ║
-║    Dustline Agro | P1 B3 | S7215   ║  ║    Adjust and optimize solar…      ║
+║    Dustline Agro | P1 B3 | S7333   ║  ║    Adjust and optimize solar…      ║
 ║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System Check    ║
-║    Ares Systems | P1 B4 | S6959    ║  ║    Perform diagnostics and minor…  ║
+║    Ares Systems | P1 B4 | S7029    ║  ║    Perform diagnostics and minor…  ║
 ║ 3. Irina Vale                      ║  ║ 3. Material Inventory and Salvage  ║
-║    Helios… | P1 B2 | S5925         ║  ║    Survey storage and salvage…     ║
+║    Helios… | P1 B2 | S6009         ║  ║    Survey storage and salvage…     ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
@@ -44,25 +44,27 @@ _Auto-updated daily. Last world update: 2026-05-31T00:35:03.857859_
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Sol 55 on Mars brings a            ║  ║ 00:29 | Sol 55 update: A severe…   ║
-║ significant solar boost,           ║  ║ 00:36 | During Sol 55's ongoing…   ║
-║ increasing energy availability     ║  ║ 00:34 | A massive dust storm is…   ║
-║ across all colonies. Colonists are ║  ║ 00:36 | A massive solar flare has… ║
-║ tasked with optimizing solar       ║  ║ 00:34 | Despite the ongoing dust…  ║
-║ arrays and maintaining critical    ║  ╚════════════════════════════════════╝
-║ life support systems to take       ║                                        
+║ Sol 55 on Mars brings a            ║  ║ 12:36 | Despite ongoing dust       ║
+║ significant solar boost,           ║  ║ storm…                             ║
+║ increasing energy availability     ║  ║ 00:29 | Sol 55 update: A severe…   ║
+║ across all colonies. Colonists are ║  ║ 00:36 | During Sol 55's ongoing…   ║
+║ tasked with optimizing solar       ║  ║ 00:34 | A massive dust storm is…   ║
+║ arrays and maintaining critical    ║  ║ 00:36 | A massive solar flare has… ║
+║ life support systems to take       ║  ╚════════════════════════════════════╝
 ║ advantage of favorable conditions. ║                                        
 ║ Resource management remains a      ║                                        
 ║ priority…                          ║                                        
-║ Sol 55 update: A severe sandstorm  ║                                        
-║ is underway, forcing all solar     ║                                        
-║ panels offline for the next 6      ║                                        
-║ hours. Prepare for reduced power   ║                                        
-║ availability.                      ║                                        
+║ Despite ongoing dust storm and     ║                                        
+║ zero solar activity, team members  ║                                        
+║ Zoya, Irina, and Marco             ║                                        
+║ successfully extracted 116 units   ║                                        
+║ of water from a newly discovered   ║                                        
+║ underground ice reservoir.         ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
