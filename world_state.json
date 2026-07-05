@@ -4,11 +4,11 @@
   "season": "Early Spring",
   "solar_activity": 0,
   "dust_storm_active": true,
-  "temperature": -51,
+  "temperature": -54,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Sol 56: Sandstorm Disrupts Solar Operations",
-  "last_updated": "2026-07-04T06:58:51.666497",
+  "last_updated": "2026-07-05T00:30:09.673783",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,150 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-05-07T00:27:38.779003",
-      "event": "Sol 44: Despite active dust storms, the crew located significant underground ice. Irina Vale, Marco Quinn, and Zoya Kade secured a combined 128 units of water to support ongoing operations."
-    },
-    {
-      "time": "2026-05-07T00:27:46.925622",
-      "event": "AI directive: Persistent Dust Storm Reduces Solar Efficiency"
-    },
-    {
-      "time": "2026-05-07T06:57:45.097696",
-      "event": "Martian day 45 has begun"
-    },
-    {
-      "time": "2026-05-07T12:35:14.410932",
-      "event": "Geological survey reports discovery of valuable mineral veins. Extraction protocols to be evaluated for mission resource planning."
-    },
-    {
-      "time": "2026-05-08T00:27:44.809316",
-      "event": "A significant solar flare has been recorded, increasing energy levels by 50% for the next cycle. All personnel should take necessary radiation shielding precautions."
-    },
-    {
-      "time": "2026-05-08T00:27:51.651470",
-      "event": "AI directive: Solar Output Peaks Early Spring"
-    },
-    {
-      "time": "2026-05-08T06:34:29.345418",
-      "event": "Martian day 46 has begun"
-    },
-    {
-      "time": "2026-05-09T00:29:08.501314",
-      "event": "AI directive: Solar Activity Boosts Energy Output"
-    },
-    {
-      "time": "2026-05-09T06:41:53.861668",
-      "event": "Martian day 47 has begun"
-    },
-    {
-      "time": "2026-05-10T00:28:41.671740",
-      "event": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's reserves. Operations continue smoothly under stable conditions."
-    },
-    {
-      "time": "2026-05-10T00:28:48.301065",
-      "event": "AI directive: Solar Activity Boost Enhances Energy Output"
-    },
-    {
-      "time": "2026-05-10T06:53:03.940303",
-      "event": "Martian day 48 has begun"
-    },
-    {
-      "time": "2026-05-10T12:16:54.509552",
-      "event": "A solar flare has increased radiation levels by 50% for the next cycle. All personnel must take appropriate cover to minimize exposure."
-    },
-    {
-      "time": "2026-05-11T00:29:13.089087",
-      "event": "On Sol 48, a meteor shower caused minor building damage reported by Irina Vale. No dust storm present; temperature steady at -55C with elevated solar activity at 150%."
-    },
-    {
-      "time": "2026-05-11T00:29:19.148754",
-      "event": "AI directive: Solar Flare Boosts Energy Output"
-    },
-    {
-      "time": "2026-05-12T00:28:48.693067",
-      "event": "Teams have confirmed a new underground ice source; Irina, Marco, and Zoya's water reserves increased accordingly, boosting our hydration capacity amid stable conditions."
-    },
-    {
-      "time": "2026-05-12T06:55:54.568526",
-      "event": "Martian day 49 has begun"
-    },
-    {
-      "time": "2026-05-12T12:37:57.039542",
-      "event": "Teams report the discovery of underground ice reserves, adding +44 water to Irina Vale, +29 to Marco Quinn, and +45 to Zoya Kade's supplies. This boosts colony hydration capabilities amid stable conditions."
-    },
-    {
-      "time": "2026-05-13T00:31:43.948540",
-      "event": "Exploration teams Irina Vale, Marco Quinn, and Zoya Kade successfully extracted a total of 120 liters of underground water ice today, bolstering colony reserves amid stable conditions."
-    },
-    {
-      "time": "2026-05-13T00:31:49.753495",
-      "event": "AI directive: Solar Activity Peaks"
-    },
-    {
-      "time": "2026-05-13T06:59:57.957050",
-      "event": "Martian day 50 has begun"
-    },
-    {
-      "time": "2026-05-13T12:40:40.584600",
-      "event": "On Sol 50, analysis reveals presence of unknown bacteria in soil sample. Further study scheduled to assess implications for planetary protection."
-    },
-    {
-      "time": "2026-05-14T00:32:55.420868",
-      "event": "AI directive: Moderate Solar Boost Enhances Energy Output"
-    },
-    {
-      "time": "2026-05-14T06:58:37.084797",
-      "event": "Martian day 51 has begun"
-    },
-    {
-      "time": "2026-05-14T12:34:40.946814",
-      "event": "A meteor shower passed overhead with solar activity at 81%. Irina Vale successfully salvaged 20 units of materials during the event. Temperature steady at -58C; no dust storm detected."
-    },
-    {
-      "time": "2026-05-15T00:30:18.542802",
-      "event": "AI directive: Mild Solar Boost Enhances Energy Output"
-    },
-    {
-      "time": "2026-05-16T00:28:20.692103",
-      "event": "A massive solar flare has increased energy levels by 50% for the next cycle. All personnel must take cover to minimize radiation exposure."
-    },
-    {
-      "time": "2026-05-16T06:44:47.897925",
-      "event": "Martian day 52 has begun"
-    },
-    {
-      "time": "2026-05-17T00:29:58.682595",
-      "event": "A massive solar flare has increased energy levels by 50% for the next turn. All personnel must take cover to minimize radiation exposure."
-    },
-    {
-      "time": "2026-05-17T00:30:03.146905",
-      "event": "AI directive: Solar Flare Boosts Energy Output"
-    },
-    {
-      "time": "2026-05-17T06:55:42.212980",
-      "event": "Martian day 53 has begun"
-    },
-    {
-      "time": "2026-05-17T06:55:42.262257",
-      "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
-    },
-    {
-      "time": "2026-05-17T12:18:05.913722",
-      "event": "On Sol 53, despite active dust storm and -66\u00b0C temperatures, the Earth trading ship docked successfully, replenishing food by 100 units and materials by 50 units in the global pool."
-    },
-    {
-      "time": "2026-05-18T00:31:51.585127",
-      "event": "AI directive: Dust Storm Disrupts Solar Panels"
-    },
-    {
-      "time": "2026-05-19T00:33:45.358418",
-      "event": "A severe dust storm is currently active, causing all solar panels to be offline for the next 6 hours. Expect reduced power availability until conditions improve."
-    },
-    {
-      "time": "2026-05-20T12:48:49.226780",
-      "event": "A severe sandstorm is active on Sol 53, reducing solar activity to zero. All solar panels are offline for the next 6 hours, impacting power generation."
-    },
     {
       "time": "2026-05-21T00:34:52.627608",
       "event": "On Sol 53, a trading vessel from Earth has delivered critical supplies despite the ongoing dust storm. Food stocks increased by 100 units and materials by 50, enhancing colony resilience in harsh conditions."
@@ -379,6 +235,10 @@
     {
       "time": "2026-07-05T00:30:00.040897",
       "event": "A massive dust storm is active, forcing all solar panels offline for the next 6 hours. Expect power constraints until the storm subsides."
+    },
+    {
+      "time": "2026-07-05T00:30:09.673783",
+      "event": "AI directive: Severe Dust Storm Suppresses Solar Output"
     }
   ],
   "market": {
@@ -389,58 +249,51 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Flare Boosts Energy Output",
-      "summary": "A surge in solar activity has increased energy generation capacity across all colonies, improving power availability for critical systems.",
+      "headline": "Severe Dust Storm Suppresses Solar Output",
+      "summary": "A persistent dust storm is blocking sunlight, causing a 0% solar activity and reducing energy generation across Mars.",
       "effect": {
-        "type": "solar_boost",
-        "magnitude": 5,
+        "type": "cold_snap",
+        "magnitude": 3,
         "result": {
-          "label": "Solar boost",
-          "target": "solar_activity",
-          "delta": 5,
-          "before": 98,
-          "after": 103
+          "label": "Cold snap",
+          "target": "temperature",
+          "delta": -3,
+          "before": -51,
+          "after": -54
         }
       },
       "source": "github_models",
-      "generated_at": "2026-05-31T00:35:03.857859"
+      "generated_at": "2026-07-05T00:30:09.673783"
     },
     "missions": [
       {
-        "title": "Optimize Solar Arrays",
-        "briefing": "Leverage the heightened solar activity to maximize energy collection by recalibrating solar panels.",
-        "objective": "Adjust and optimize solar panel angles to increase energy generation efficiency.",
-        "reward_hint": "Energy reserves boost",
-        "risk": "Exposure to solar radiation during maintenance"
+        "title": "Dust Storm Resource Redistribution",
+        "briefing": "With solar energy production halted, colonies must share critical energy and oxygen resources to maintain life support.",
+        "objective": "Coordinate resource transfers between colonies to balance oxygen and energy reserves.",
+        "reward_hint": "Stabilized life support and improved inter-colony cooperati\u2026",
+        "risk": "Potential resource shortages if transfers fail or are delay\u2026"
       },
       {
-        "title": "Water Recycling System Check",
-        "briefing": "Ensure water recycling systems are operating at peak efficiency to conserve scarce water resources.",
-        "objective": "Perform diagnostics and minor repairs on water recycling units.",
-        "reward_hint": "Improved water availability",
-        "risk": "System malfunction leading to water loss"
-      },
-      {
-        "title": "Material Inventory and Salvage",
-        "briefing": "Conduct an inventory and salvage operation to recover unused or damaged materials for reuse.",
-        "objective": "Survey storage and salvage usable materials from scrap.",
-        "reward_hint": "Additional materials for construction",
-        "risk": "Injury during handling of sharp or heavy objects"
+        "title": "Stormproof Habitat Maintenance",
+        "briefing": "Dust accumulation threatens habitat integrity and solar panel efficiency during the storm.",
+        "objective": "Deploy maintenance drones to clean and reinforce habitat surfaces and solar arrays.",
+        "reward_hint": "Improved habitat safety and partial recovery of solar energ\u2026",
+        "risk": "Exposure to dust storm conditions may damage equipment."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar flare activity is currently at 98%, all colonies advised to optimize solar infrastructure for maximum benefit."
+        "message": "Dust storm ongoing. Prioritize energy conservation and report habitat status regularly."
       },
       {
-        "sender": "Ares Systems",
-        "recipient": "Zoya Kade",
-        "message": "Requesting status update on water recycling improvements following recent system check mission."
+        "sender": "Helios Prospecting (Irina Vale)",
+        "recipient": "Dustline Agro (Marco Quinn)",
+        "message": "Requesting oxygen transfer to offset local shortages during storm conditions."
       }
     ],
-    "news_summary": "Sol 55 on Mars brings a significant solar boost, increasing energy availability across all colonies. Colonists are tasked with optimizing solar arrays and maintaining critical life support systems to take advantage of favorable conditions. Resource management remains a priority\u2026",
+    "news_summary": "Mars is experiencing a severe dust storm during early spring, causing solar activity to drop to zero and energy shortages across colonies. Critical resource sharing and habitat maintenance missions are underway to mitigate the impacts. Leaders Marco Quinn, Zoya Kade, and Irina V\u2026",
     "event_flavor": {
       "event_key": "sandstorm",
       "headline": "Sol 56: Sandstorm Disrupts Solar Operations",
@@ -461,19 +314,20 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-05-31T00:35:03.857859",
-    "last_generated_sol": "Sol 55",
+    "last_generated": "2026-07-05T00:30:09.673783",
+    "last_generated_sol": "Sol 56",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
       "api_url": "https://models.github.ai/inference/chat/completions",
       "disabled": false,
-      "token_present": false,
-      "token_source": "none",
-      "status": "cached",
-      "http_status": null,
-      "reason": "daily content already generated for Sol 55",
-      "response_excerpt": ""
+      "token_present": true,
+      "token_source": "GITHUB_TOKEN",
+      "status": "ok",
+      "http_status": 200,
+      "reason": "request succeeded",
+      "response_excerpt": "",
+      "fallback": false
     }
   }
 }
