@@ -7,14 +7,14 @@
   "temperature": -54,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Sol 56: Sandstorm Disrupts Solar Operations",
+  "current_event": "Trading Ship Arrives Amid Dust Storm",
   "last_updated": "2026-07-05T00:30:09.673783",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
     "energy": 1140,
-    "food": 2000,
-    "materials": 850
+    "food": 2100,
+    "materials": 900
   },
   "leaderboard": [
     {
@@ -239,6 +239,10 @@
     {
       "time": "2026-07-05T00:30:09.673783",
       "event": "AI directive: Severe Dust Storm Suppresses Solar Output"
+    },
+    {
+      "time": "2026-07-05T12:27:06.409751",
+      "event": "Despite the ongoing dust storm and zero solar activity, the Earth trading ship has docked successfully, delivering +100 food units and +50 materials to our global reserves."
     }
   ],
   "market": {
@@ -295,11 +299,11 @@
     ],
     "news_summary": "Mars is experiencing a severe dust storm during early spring, causing solar activity to drop to zero and energy shortages across colonies. Critical resource sharing and habitat maintenance missions are underway to mitigate the impacts. Leaders Marco Quinn, Zoya Kade, and Irina V\u2026",
     "event_flavor": {
-      "event_key": "sandstorm",
-      "headline": "Sol 56: Sandstorm Disrupts Solar Operations",
-      "broadcast": "A massive dust storm is active, forcing all solar panels offline for the next 6 hours. Expect power constraints until the storm subsides.",
+      "event_key": "traders",
+      "headline": "Trading Ship Arrives Amid Dust Storm",
+      "broadcast": "Despite the ongoing dust storm and zero solar activity, the Earth trading ship has docked successfully, delivering +100 food units and +50 materials to our global reserves.",
       "source": "github_models",
-      "generated_at": "2026-07-05T00:30:00.040885",
+      "generated_at": "2026-07-05T12:27:06.409739",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
