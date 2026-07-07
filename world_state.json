@@ -7,7 +7,7 @@
   "temperature": -54,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Trading Ship Arrives Amid Dust Storm",
+  "current_event": "Unidentified Structures Detected Amid Dust Storm",
   "last_updated": "2026-07-05T00:30:09.673783",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-07-05T12:27:06.409751",
       "event": "Despite the ongoing dust storm and zero solar activity, the Earth trading ship has docked successfully, delivering +100 food units and +50 materials to our global reserves."
+    },
+    {
+      "time": "2026-07-07T00:31:19.350827",
+      "event": "Sol 56 report: Rover imaging reveals unusual rock formations resembling ancient ruins. Analysis ongoing despite current dust storm conditions."
     }
   ],
   "market": {
@@ -299,11 +303,11 @@
     ],
     "news_summary": "Mars is experiencing a severe dust storm during early spring, causing solar activity to drop to zero and energy shortages across colonies. Critical resource sharing and habitat maintenance missions are underway to mitigate the impacts. Leaders Marco Quinn, Zoya Kade, and Irina V\u2026",
     "event_flavor": {
-      "event_key": "traders",
-      "headline": "Trading Ship Arrives Amid Dust Storm",
-      "broadcast": "Despite the ongoing dust storm and zero solar activity, the Earth trading ship has docked successfully, delivering +100 food units and +50 materials to our global reserves.",
+      "event_key": "discovery",
+      "headline": "Unidentified Structures Detected Amid Dust Storm",
+      "broadcast": "Sol 56 report: Rover imaging reveals unusual rock formations resembling ancient ruins. Analysis ongoing despite current dust storm conditions.",
       "source": "github_models",
-      "generated_at": "2026-07-05T12:27:06.409739",
+      "generated_at": "2026-07-07T00:31:19.350813",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
