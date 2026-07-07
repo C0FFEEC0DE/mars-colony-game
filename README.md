@@ -16,8 +16,8 @@ _Auto-updated daily. Last world update: 2026-07-05T00:30:09.673783_
 ║ Spring                             ║  ║ Output                             ║
 ║ [TEMP] -54C | [SUN] 0% | [STORM]   ║  ║ A persistent dust storm is         ║
 ║ YES                                ║  ║ blocking sunlight, causing a 0%    ║
-║ [EVENT] Trading Ship Arrives Amid  ║  ║ solar activity and reducing energy ║
-║ Dust Storm                         ║  ║ generation across Mars.            ║
+║ [EVENT] Unidentified Structures    ║  ║ solar activity and reducing energy ║
+║ Detected Amid Dust Storm           ║  ║ generation across Mars.            ║
 ║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT cold_snap | temperature -3  ║
 ║ [O2] 1000 | [H2O] 545 | [E] 1140   ║  ╚════════════════════════════════════╝
 ║ [FOOD] 2100 | [MAT] 900            ║                                        
@@ -28,9 +28,9 @@ _Auto-updated daily. Last world update: 2026-07-05T00:30:09.673783_
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
 ║ 1. Marco Quinn                     ║  ║ 1. Dust Storm Resource…            ║
-║    Dustline Agro | P1 B3 | S7425   ║  ║    Coordinate resource transfers…  ║
+║    Dustline Agro | P1 B3 | S7413   ║  ║    Coordinate resource transfers…  ║
 ║ 2. Zoya Kade                       ║  ║ 2. Stormproof Habitat Maintenance  ║
-║    Ares Systems | P1 B4 | S7021    ║  ║    Deploy maintenance drones to…   ║
+║    Ares Systems | P1 B4 | S7023    ║  ║    Deploy maintenance drones to…   ║
 ║ 3. Irina Vale                      ║  ╚════════════════════════════════════╝
 ║    Helios… | P1 B2 | S5962         ║                                        
 ╚════════════════════════════════════╝                                        
@@ -44,25 +44,25 @@ _Auto-updated daily. Last world update: 2026-07-05T00:30:09.673783_
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Mars is experiencing a severe dust ║  ║ 12:27 | Despite the ongoing dust…  ║
-║ storm during early spring, causing ║  ║ 00:30 | AI directive: Severe Dust… ║
-║ solar activity to drop to zero and ║  ║ 00:30 | A massive dust storm is…   ║
-║ energy shortages across colonies.  ║  ║ 06:58 | 🌪️ Dust storm damaged…     ║
-║ Critical resource sharing and      ║  ║ 06:58 | Martian day 56 has begun   ║
+║ Mars is experiencing a severe dust ║  ║ 00:31 | Sol 56 report: Rover…      ║
+║ storm during early spring, causing ║  ║ 12:27 | Despite the ongoing dust…  ║
+║ solar activity to drop to zero and ║  ║ 00:30 | AI directive: Severe Dust… ║
+║ energy shortages across colonies.  ║  ║ 00:30 | A massive dust storm is…   ║
+║ Critical resource sharing and      ║  ║ 06:58 | 🌪️ Dust storm damaged…     ║
 ║ habitat maintenance missions are   ║  ╚════════════════════════════════════╝
 ║ underway to mitigate the impacts.  ║                                        
 ║ Leaders Marco Quinn, Zoya Kade,    ║                                        
 ║ and Irina V…                       ║                                        
-║ Despite the ongoing dust storm and ║                                        
-║ zero solar activity, the Earth     ║                                        
-║ trading ship has docked            ║                                        
-║ successfully, delivering +100 food ║                                        
-║ units and +50 materials to our     ║                                        
-║ global reserves.                   ║                                        
+║ Sol 56 report: Rover imaging       ║                                        
+║ reveals unusual rock formations    ║                                        
+║ resembling ancient ruins. Analysis ║                                        
+║ ongoing despite current dust storm ║                                        
+║ conditions.                        ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
