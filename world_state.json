@@ -1,14 +1,14 @@
 {
-  "day": 56,
-  "mars_date": "Sol 56",
+  "day": 57,
+  "mars_date": "Sol 57",
   "season": "Early Spring",
-  "solar_activity": 0,
+  "solar_activity": 75,
   "dust_storm_active": true,
-  "temperature": -54,
+  "temperature": -42,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Unidentified Structures Detected Amid Dust Storm",
-  "last_updated": "2026-07-05T00:30:09.673783",
+  "current_event": null,
+  "last_updated": "2026-07-08T06:48:11.945728",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 7401,
+      "score": 7367,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 7015,
+      "score": 7010,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 5962,
+      "score": 5938,
       "colonists": 1,
       "buildings": 2
     }
@@ -247,6 +247,14 @@
     {
       "time": "2026-07-07T00:31:19.350827",
       "event": "Sol 56 report: Rover imaging reveals unusual rock formations resembling ancient ruins. Analysis ongoing despite current dust storm conditions."
+    },
+    {
+      "time": "2026-07-08T06:48:11.945750",
+      "event": "Martian day 57 has begun"
+    },
+    {
+      "time": "2026-07-08T06:48:11.999813",
+      "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
     }
   ],
   "market": {
@@ -302,26 +310,7 @@
       }
     ],
     "news_summary": "Mars is experiencing a severe dust storm during early spring, causing solar activity to drop to zero and energy shortages across colonies. Critical resource sharing and habitat maintenance missions are underway to mitigate the impacts. Leaders Marco Quinn, Zoya Kade, and Irina V\u2026",
-    "event_flavor": {
-      "event_key": "discovery",
-      "headline": "Unidentified Structures Detected Amid Dust Storm",
-      "broadcast": "Sol 56 report: Rover imaging reveals unusual rock formations resembling ancient ruins. Analysis ongoing despite current dust storm conditions.",
-      "source": "github_models",
-      "generated_at": "2026-07-07T00:31:19.350813",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-07-05T00:30:09.673783",
     "last_generated_sol": "Sol 56",
     "last_diagnostics": {
