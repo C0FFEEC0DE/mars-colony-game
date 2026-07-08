@@ -28,9 +28,9 @@ _Auto-updated daily. Last world update: 2026-07-05T00:30:09.673783_
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
 ║ 1. Marco Quinn                     ║  ║ 1. Dust Storm Resource…            ║
-║    Dustline Agro | P1 B3 | S7413   ║  ║    Coordinate resource transfers…  ║
+║    Dustline Agro | P1 B3 | S7401   ║  ║    Coordinate resource transfers…  ║
 ║ 2. Zoya Kade                       ║  ║ 2. Stormproof Habitat Maintenance  ║
-║    Ares Systems | P1 B4 | S7023    ║  ║    Deploy maintenance drones to…   ║
+║    Ares Systems | P1 B4 | S7015    ║  ║    Deploy maintenance drones to…   ║
 ║ 3. Irina Vale                      ║  ╚════════════════════════════════════╝
 ║    Helios… | P1 B2 | S5962         ║                                        
 ╚════════════════════════════════════╝                                        
@@ -62,6 +62,7 @@ _Auto-updated daily. Last world update: 2026-07-05T00:30:09.673783_
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
