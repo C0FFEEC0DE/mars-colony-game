@@ -8,11 +8,11 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": null,
-  "last_updated": "2026-07-08T06:48:11.945728",
+  "last_updated": "2026-07-09T00:29:16.937257",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
-    "energy": 1140,
+    "energy": 1160,
     "food": 2100,
     "materials": 900
   },
@@ -40,26 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-05-21T00:34:52.627608",
-      "event": "On Sol 53, a trading vessel from Earth has delivered critical supplies despite the ongoing dust storm. Food stocks increased by 100 units and materials by 50, enhancing colony resilience in harsh conditions."
-    },
-    {
-      "time": "2026-05-22T00:32:57.647121",
-      "event": "On Sol 53, a meteor shower struck during a dust storm. Irina Vale and Zoya Kade salvaged 14 and 5 materials respectively but reported building damage; Marco Quinn recovered 13 materials."
-    },
-    {
-      "time": "2026-05-22T12:45:47.419873",
-      "event": "On Sol 53, despite ongoing dust storm conditions and -66\u00b0C temperatures, rover sensors have confirmed the presence of underground caverns, offering potential new sites for habitat expansion."
-    },
-    {
-      "time": "2026-05-23T06:53:19.464685",
-      "event": "Martian day 54 has begun"
-    },
-    {
-      "time": "2026-05-23T12:18:25.318788",
-      "event": "Underground ice pockets have been confirmed, supplying Irina Vale with 21, Zoya Kade with 26, and Marco Quinn with 31 units of water to support colony sustainability."
-    },
     {
       "time": "2026-05-24T00:32:21.073109",
       "event": "AI directive: Solar Activity Boosts Energy Output"
@@ -255,6 +235,10 @@
     {
       "time": "2026-07-08T06:48:11.999813",
       "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
+    },
+    {
+      "time": "2026-07-09T00:29:16.937257",
+      "event": "AI directive: Dust Storm Reduces Solar Efficiency"
     }
   ],
   "market": {
@@ -265,65 +249,73 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Severe Dust Storm Suppresses Solar Output",
-      "summary": "A persistent dust storm is blocking sunlight, causing a 0% solar activity and reducing energy generation across Mars.",
+      "headline": "Dust Storm Reduces Solar Efficiency",
+      "summary": "A persistent dust storm has lowered solar panel output, reducing energy availability across all colonies.",
       "effect": {
-        "type": "cold_snap",
-        "magnitude": 3,
+        "type": "energy_surge",
+        "magnitude": 20,
         "result": {
-          "label": "Cold snap",
-          "target": "temperature",
-          "delta": -3,
-          "before": -51,
-          "after": -54
+          "label": "Grid surge",
+          "target": "energy",
+          "delta": 20,
+          "before": 1140,
+          "after": 1160
         }
       },
       "source": "github_models",
-      "generated_at": "2026-07-05T00:30:09.673783"
+      "generated_at": "2026-07-09T00:29:16.937257"
     },
     "missions": [
       {
-        "title": "Dust Storm Resource Redistribution",
-        "briefing": "With solar energy production halted, colonies must share critical energy and oxygen resources to maintain life support.",
-        "objective": "Coordinate resource transfers between colonies to balance oxygen and energy reserves.",
-        "reward_hint": "Stabilized life support and improved inter-colony cooperati\u2026",
-        "risk": "Potential resource shortages if transfers fail or are delay\u2026"
+        "title": "Dust Storm Shield Reinforcement",
+        "briefing": "Reinforce solar panel shields to protect against ongoing dust storm abrasion.",
+        "objective": "Use materials to strengthen solar panel covers and minimize energy loss.",
+        "reward_hint": "Improved energy efficiency during storm periods.",
+        "risk": "Exposure to harsh conditions may damage equipment."
       },
       {
-        "title": "Stormproof Habitat Maintenance",
-        "briefing": "Dust accumulation threatens habitat integrity and solar panel efficiency during the storm.",
-        "objective": "Deploy maintenance drones to clean and reinforce habitat surfaces and solar arrays.",
-        "reward_hint": "Improved habitat safety and partial recovery of solar energ\u2026",
-        "risk": "Exposure to dust storm conditions may damage equipment."
+        "title": "Water Recycling Optimization",
+        "briefing": "Water reserves are limited and critical; optimize recycling systems to conserve supplies.",
+        "objective": "Adjust and repair water reclamation units to increase water recovery rate.",
+        "reward_hint": "Increase in available water resources.",
+        "risk": "System errors could temporarily reduce water availability."
+      },
+      {
+        "title": "Oxygen Reserve Transfer",
+        "briefing": "Coordinate transfer of oxygen reserves between colonies to balance life support supplies.",
+        "objective": "Organize and execute oxygen shipments using available transport resources.",
+        "reward_hint": "Stabilized oxygen levels among colonies.",
+        "risk": "Transport delays or losses due to storm conditions."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Dust storm ongoing. Prioritize energy conservation and report habitat status regularly."
+        "message": "Dust storms expected to persist for several sols. Prioritize energy conservation and equipment maintenance."
       },
       {
-        "sender": "Helios Prospecting (Irina Vale)",
-        "recipient": "Dustline Agro (Marco Quinn)",
-        "message": "Requesting oxygen transfer to offset local shortages during storm conditions."
+        "sender": "Helios Prospecting",
+        "recipient": "Mars Control",
+        "message": "Requesting additional materials to reinforce solar shielding amid current dust storm."
       }
     ],
-    "news_summary": "Mars is experiencing a severe dust storm during early spring, causing solar activity to drop to zero and energy shortages across colonies. Critical resource sharing and habitat maintenance missions are underway to mitigate the impacts. Leaders Marco Quinn, Zoya Kade, and Irina V\u2026",
+    "news_summary": "Sol 57 marks a challenging period for all Mars colonies as an ongoing dust storm decreases solar energy production and complicates resource management. Colonies are focusing on reinforcing infrastructure and optimizing water recycling to mitigate environmental impacts. Coordinat\u2026",
     "event_flavor": {},
-    "last_generated": "2026-07-05T00:30:09.673783",
-    "last_generated_sol": "Sol 56",
+    "last_generated": "2026-07-09T00:29:16.937257",
+    "last_generated_sol": "Sol 57",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
       "api_url": "https://models.github.ai/inference/chat/completions",
       "disabled": false,
-      "token_present": false,
-      "token_source": "none",
-      "status": "cached",
-      "http_status": null,
-      "reason": "daily content already generated for Sol 56",
-      "response_excerpt": ""
+      "token_present": true,
+      "token_source": "GITHUB_TOKEN",
+      "status": "ok",
+      "http_status": 200,
+      "reason": "request succeeded",
+      "response_excerpt": "",
+      "fallback": false
     }
   }
 }
