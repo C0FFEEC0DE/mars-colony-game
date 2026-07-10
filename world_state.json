@@ -7,7 +7,7 @@
   "temperature": -42,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Meteor Shower Strikes Colony Amid Active Dust Storm",
+  "current_event": "New Subsurface Caverns Mapped on Sol 57",
   "last_updated": "2026-07-09T00:29:16.937257",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-07-10T00:30:39.761726",
       "event": "On Sol 57, a meteor shower impacted the colony during a 75% solar activity dust storm. Zoya Kade salvaged 15 materials, while Irina Vale and Marco Quinn reported structural damage to habitat modules."
+    },
+    {
+      "time": "2026-07-10T12:43:47.854894",
+      "event": "Exploration teams have confirmed the presence of underground caverns beneath the colony site amid ongoing dust storm conditions. These formations may offer valuable shelter and resource opportunities."
     }
   ],
   "market": {
@@ -306,11 +310,11 @@
     ],
     "news_summary": "Sol 57 marks a challenging period for all Mars colonies as an ongoing dust storm decreases solar energy production and complicates resource management. Colonies are focusing on reinforcing infrastructure and optimizing water recycling to mitigate environmental impacts. Coordinat\u2026",
     "event_flavor": {
-      "event_key": "meteor_shower",
-      "headline": "Meteor Shower Strikes Colony Amid Active Dust Storm",
-      "broadcast": "On Sol 57, a meteor shower impacted the colony during a 75% solar activity dust storm. Zoya Kade salvaged 15 materials, while Irina Vale and Marco Quinn reported structural damage to habitat modules.",
+      "event_key": "discovery",
+      "headline": "New Subsurface Caverns Mapped on Sol 57",
+      "broadcast": "Exploration teams have confirmed the presence of underground caverns beneath the colony site amid ongoing dust storm conditions. These formations may offer valuable shelter and resource opportunities.",
       "source": "github_models",
-      "generated_at": "2026-07-10T00:30:39.761713",
+      "generated_at": "2026-07-10T12:43:47.854882",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
