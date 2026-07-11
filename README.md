@@ -14,10 +14,10 @@ _Auto-updated daily. Last world update: 2026-07-09T00:29:16.937257_
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
 ║ [SOL] Sol 57 | [SEASON] Early      ║  ║ Dust Storm Reduces Solar           ║
 ║ Spring                             ║  ║ Efficiency                         ║
-║ [TEMP] -42C | [SUN] 75% | [STORM]  ║  ║ A persistent dust storm has        ║
+║ [TEMP] -42C | [SUN] 0% | [STORM]   ║  ║ A persistent dust storm has        ║
 ║ YES                                ║  ║ lowered solar panel output,        ║
-║ [EVENT] Meteor Shower Strikes      ║  ║ reducing energy availability       ║
-║ Colony Amid Active Dust Storm      ║  ║ across all colonies.               ║
+║ [EVENT] Sol 57: Massive Sandstorm  ║  ║ reducing energy availability       ║
+║ Disrupts Power                     ║  ║ across all colonies.               ║
 ║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT energy_surge | energy +20   ║
 ║ [O2] 1000 | [H2O] 545 | [E] 1160   ║  ╚════════════════════════════════════╝
 ║ [FOOD] 2100 | [MAT] 900            ║                                        
@@ -28,9 +28,9 @@ _Auto-updated daily. Last world update: 2026-07-09T00:29:16.937257_
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
 ║ 1. Marco Quinn                     ║  ║ 1. Dust Storm Shield…              ║
-║    Dustline Agro | P1 B3 | S7346   ║  ║    Use materials to strengthen…    ║
+║    Dustline Agro | P1 B3 | S7334   ║  ║    Use materials to strengthen…    ║
 ║ 2. Zoya Kade                       ║  ║ 2. Water Recycling Optimization    ║
-║    Ares Systems | P1 B4 | S7071    ║  ║    Adjust and repair water…        ║
+║    Ares Systems | P1 B4 | S7063    ║  ║    Adjust and repair water…        ║
 ║ 3. Irina Vale                      ║  ║ 3. Oxygen Reserve Transfer         ║
 ║    Helios… | P1 B2 | S5938         ║  ║    Organize and execute oxygen…    ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
@@ -44,26 +44,26 @@ _Auto-updated daily. Last world update: 2026-07-09T00:29:16.937257_
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Sol 57 marks a challenging period  ║  ║ 00:30 | On Sol 57, a meteor        ║
-║ for all Mars colonies as an        ║  ║ shower…                            ║
-║ ongoing dust storm decreases solar ║  ║ 00:29 | AI directive: Dust Storm…  ║
-║ energy production and complicates  ║  ║ 06:48 | 🌪️ Dust storm damaged…     ║
-║ resource management. Colonies are  ║  ║ 06:48 | Martian day 57 has begun   ║
-║ focusing on reinforcing            ║  ║ 00:31 | Sol 56 report: Rover…      ║
+║ Sol 57 marks a challenging period  ║  ║ 00:24 | A severe sandstorm is…     ║
+║ for all Mars colonies as an        ║  ║ 12:43 | Exploration teams have…    ║
+║ ongoing dust storm decreases solar ║  ║ 00:30 | On Sol 57, a meteor        ║
+║ energy production and complicates  ║  ║ shower…                            ║
+║ resource management. Colonies are  ║  ║ 00:29 | AI directive: Dust Storm…  ║
+║ focusing on reinforcing            ║  ║ 06:48 | 🌪️ Dust storm damaged…     ║
 ║ infrastructure and optimizing      ║  ╚════════════════════════════════════╝
 ║ water recycling to mitigate        ║                                        
 ║ environmental impacts. Coordinat…  ║                                        
-║ On Sol 57, a meteor shower         ║                                        
-║ impacted the colony during a 75%   ║                                        
-║ solar activity dust storm. Zoya    ║                                        
-║ Kade salvaged 15 materials, while  ║                                        
-║ Irina Vale and Marco Quinn         ║                                        
-║ reported structural damage to      ║                                        
-║ habitat modules.                   ║                                        
+║ A severe sandstorm is underway,    ║                                        
+║ forcing all solar panels offline   ║                                        
+║ for the next 6 hours. Temperatures ║                                        
+║ hold at -42°C with zero solar      ║                                        
+║ activity amid ongoing dust         ║                                        
+║ conditions.                        ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
