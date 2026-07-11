@@ -7,7 +7,7 @@
   "temperature": -74,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Meteor Shower Yields Valuable Salvage",
   "last_updated": "2026-07-11T06:43:33.094731",
   "global_resources": {
     "oxygen": 1000,
@@ -255,6 +255,10 @@
     {
       "time": "2026-07-11T06:43:33.094752",
       "event": "Martian day 58 has begun"
+    },
+    {
+      "time": "2026-07-11T12:16:48.928140",
+      "event": "During Sol 58's meteor shower, Zoya Kade recovered 18 materials and Irina Vale collected 6, reinforcing our resource reserves amid stable conditions."
     }
   ],
   "market": {
@@ -317,7 +321,26 @@
       }
     ],
     "news_summary": "Sol 57 marks a challenging period for all Mars colonies as an ongoing dust storm decreases solar energy production and complicates resource management. Colonies are focusing on reinforcing infrastructure and optimizing water recycling to mitigate environmental impacts. Coordinat\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "meteor_shower",
+      "headline": "Meteor Shower Yields Valuable Salvage",
+      "broadcast": "During Sol 58's meteor shower, Zoya Kade recovered 18 materials and Irina Vale collected 6, reinforcing our resource reserves amid stable conditions.",
+      "source": "github_models",
+      "generated_at": "2026-07-11T12:16:48.928127",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-07-09T00:29:16.937257",
     "last_generated_sol": "Sol 57",
     "last_diagnostics": {
