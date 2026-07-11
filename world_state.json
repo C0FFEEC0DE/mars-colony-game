@@ -2,12 +2,12 @@
   "day": 57,
   "mars_date": "Sol 57",
   "season": "Early Spring",
-  "solar_activity": 75,
+  "solar_activity": 0,
   "dust_storm_active": true,
   "temperature": -42,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "New Subsurface Caverns Mapped on Sol 57",
+  "current_event": "Sol 57: Massive Sandstorm Disrupts Power",
   "last_updated": "2026-07-09T00:29:16.937257",
   "global_resources": {
     "oxygen": 1000,
@@ -247,6 +247,10 @@
     {
       "time": "2026-07-10T12:43:47.854894",
       "event": "Exploration teams have confirmed the presence of underground caverns beneath the colony site amid ongoing dust storm conditions. These formations may offer valuable shelter and resource opportunities."
+    },
+    {
+      "time": "2026-07-11T00:24:32.276232",
+      "event": "A severe sandstorm is underway, forcing all solar panels offline for the next 6 hours. Temperatures hold at -42\u00b0C with zero solar activity amid ongoing dust conditions."
     }
   ],
   "market": {
@@ -310,11 +314,11 @@
     ],
     "news_summary": "Sol 57 marks a challenging period for all Mars colonies as an ongoing dust storm decreases solar energy production and complicates resource management. Colonies are focusing on reinforcing infrastructure and optimizing water recycling to mitigate environmental impacts. Coordinat\u2026",
     "event_flavor": {
-      "event_key": "discovery",
-      "headline": "New Subsurface Caverns Mapped on Sol 57",
-      "broadcast": "Exploration teams have confirmed the presence of underground caverns beneath the colony site amid ongoing dust storm conditions. These formations may offer valuable shelter and resource opportunities.",
+      "event_key": "sandstorm",
+      "headline": "Sol 57: Massive Sandstorm Disrupts Power",
+      "broadcast": "A severe sandstorm is underway, forcing all solar panels offline for the next 6 hours. Temperatures hold at -42\u00b0C with zero solar activity amid ongoing dust conditions.",
       "source": "github_models",
-      "generated_at": "2026-07-10T12:43:47.854882",
+      "generated_at": "2026-07-11T00:24:32.276218",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
