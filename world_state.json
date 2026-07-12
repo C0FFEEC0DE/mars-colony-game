@@ -2,13 +2,13 @@
   "day": 58,
   "mars_date": "Sol 58",
   "season": "Early Spring",
-  "solar_activity": 80,
+  "solar_activity": 85,
   "dust_storm_active": false,
   "temperature": -74,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Sol 58 Meteor Shower Enhances Material Stockpile",
-  "last_updated": "2026-07-11T06:43:33.094731",
+  "last_updated": "2026-07-12T00:25:39.236780",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,34 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-05-24T00:32:21.073109",
-      "event": "AI directive: Solar Activity Boosts Energy Output"
-    },
-    {
-      "time": "2026-05-24T12:21:11.360963",
-      "event": "A massive solar flare is underway, boosting energy output by 50% for the next cycle. All personnel advised to seek radiation shelter immediately."
-    },
-    {
-      "time": "2026-05-25T00:33:11.490552",
-      "event": "A trading vessel from Earth has docked, delivering +100 food and +50 materials to the colony's global reserves. Resource levels are stabilizing ahead of Sol 55."
-    },
-    {
-      "time": "2026-05-26T00:32:34.719338",
-      "event": "A trading vessel from Earth has docked, delivering 100 units of food and 50 units of materials to the colony's reserves. Operations continue smoothly under clear skies and elevated solar activity."
-    },
-    {
-      "time": "2026-05-30T00:33:28.058362",
-      "event": "On Sol 54, a meteor shower provided unexpected materials. Marco Quinn and Irina Vale successfully salvaged 11 and 19 units respectively, boosting colony resources."
-    },
-    {
-      "time": "2026-05-30T06:58:31.051383",
-      "event": "Martian day 55 has begun"
-    },
-    {
-      "time": "2026-05-30T12:23:23.916622",
-      "event": "A cargo ship from Earth has docked, delivering 100 units of food and 50 units of materials to the colony supply pools. Operations continue under stable conditions with 98% solar activity and no dust storms."
-    },
     {
       "time": "2026-05-31T00:34:58.847197",
       "event": "On Sol 55, analysis revealed unknown bacteria within Martian soil. Further study underway to assess implications for colony biosecurity and planetary science."
@@ -263,6 +235,10 @@
     {
       "time": "2026-07-12T00:25:31.837051",
       "event": "A meteor shower was recorded today with no adverse effects. Zoya Kade successfully salvaged 11 extra materials from debris."
+    },
+    {
+      "time": "2026-07-12T00:25:39.236780",
+      "event": "AI directive: Solar Activity Boosts Energy Output"
     }
   ],
   "market": {
@@ -273,58 +249,51 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Dust Storm Reduces Solar Efficiency",
-      "summary": "A persistent dust storm has lowered solar panel output, reducing energy availability across all colonies.",
+      "headline": "Solar Activity Boosts Energy Output",
+      "summary": "A surge in solar activity increases energy generation efficiency across all colonies.",
       "effect": {
-        "type": "energy_surge",
-        "magnitude": 20,
+        "type": "solar_boost",
+        "magnitude": 5,
         "result": {
-          "label": "Grid surge",
-          "target": "energy",
-          "delta": 20,
-          "before": 1140,
-          "after": 1160
+          "label": "Solar boost",
+          "target": "solar_activity",
+          "delta": 5,
+          "before": 80,
+          "after": 85
         }
       },
       "source": "github_models",
-      "generated_at": "2026-07-09T00:29:16.937257"
+      "generated_at": "2026-07-12T00:25:39.236780"
     },
     "missions": [
       {
-        "title": "Dust Storm Shield Reinforcement",
-        "briefing": "Reinforce solar panel shields to protect against ongoing dust storm abrasion.",
-        "objective": "Use materials to strengthen solar panel covers and minimize energy loss.",
-        "reward_hint": "Improved energy efficiency during storm periods.",
-        "risk": "Exposure to harsh conditions may damage equipment."
+        "title": "Optimize Solar Arrays",
+        "briefing": "With increased solar activity, your solar arrays can be recalibrated for maximum efficiency.",
+        "objective": "Upgrade and recalibrate solar panels to increase energy collection by 15%.",
+        "reward_hint": "Energy reserves will be boosted.",
+        "risk": "Minor equipment wear during recalibration."
       },
       {
-        "title": "Water Recycling Optimization",
-        "briefing": "Water reserves are limited and critical; optimize recycling systems to conserve supplies.",
-        "objective": "Adjust and repair water reclamation units to increase water recovery rate.",
-        "reward_hint": "Increase in available water resources.",
-        "risk": "System errors could temporarily reduce water availability."
-      },
-      {
-        "title": "Oxygen Reserve Transfer",
-        "briefing": "Coordinate transfer of oxygen reserves between colonies to balance life support supplies.",
-        "objective": "Organize and execute oxygen shipments using available transport resources.",
-        "reward_hint": "Stabilized oxygen levels among colonies.",
-        "risk": "Transport delays or losses due to storm conditions."
+        "title": "Water Conservation Initiative",
+        "briefing": "Water is still a critical resource. Implement new conservation protocols to extend water supplies.",
+        "objective": "Reduce water consumption colony-wide by 10% over the next Sol.",
+        "reward_hint": "Improved water reserves sustainability.",
+        "risk": "Temporary reduction in some colony functions."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Dust storms expected to persist for several sols. Prioritize energy conservation and equipment maintenance."
+        "message": "Solar activity is favorable today. Adjust your energy systems to take full advantage."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Mars Control",
-        "message": "Requesting additional materials to reinforce solar shielding amid current dust storm."
+        "recipient": "Marco Quinn",
+        "message": "Requesting data on your agro systems\u2019 energy use during solar surge."
       }
     ],
-    "news_summary": "Sol 57 marks a challenging period for all Mars colonies as an ongoing dust storm decreases solar energy production and complicates resource management. Colonies are focusing on reinforcing infrastructure and optimizing water recycling to mitigate environmental impacts. Coordinat\u2026",
+    "news_summary": "Sol 58 brings a welcome solar activity increase, enhancing energy production across Mars colonies. Colonies are focusing efforts on optimizing solar arrays and conserving water as early spring conditions persist. Collaboration between factions remains steady to maximize resource\u2026",
     "event_flavor": {
       "event_key": "meteor_shower",
       "headline": "Sol 58 Meteor Shower Enhances Material Stockpile",
@@ -345,19 +314,20 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-07-09T00:29:16.937257",
-    "last_generated_sol": "Sol 57",
+    "last_generated": "2026-07-12T00:25:39.236780",
+    "last_generated_sol": "Sol 58",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
       "api_url": "https://models.github.ai/inference/chat/completions",
       "disabled": false,
-      "token_present": false,
-      "token_source": "none",
-      "status": "cached",
-      "http_status": null,
-      "reason": "daily content already generated for Sol 57",
-      "response_excerpt": ""
+      "token_present": true,
+      "token_source": "GITHUB_TOKEN",
+      "status": "ok",
+      "http_status": 200,
+      "reason": "request succeeded",
+      "response_excerpt": "",
+      "fallback": false
     }
   }
 }
