@@ -1,14 +1,14 @@
 {
-  "day": 58,
-  "mars_date": "Sol 58",
+  "day": 59,
+  "mars_date": "Sol 59",
   "season": "Early Spring",
-  "solar_activity": 85,
+  "solar_activity": 68,
   "dust_storm_active": false,
-  "temperature": -74,
+  "temperature": -68,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Sol 58 Meteor Shower Enhances Material Stockpile",
-  "last_updated": "2026-07-12T00:25:39.236780",
+  "current_event": null,
+  "last_updated": "2026-07-12T06:51:46.290793",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 7370,
+      "score": 7384,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 7263,
+      "score": 7283,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 6016,
+      "score": 6033,
       "colonists": 1,
       "buildings": 2
     }
@@ -239,6 +239,10 @@
     {
       "time": "2026-07-12T00:25:39.236780",
       "event": "AI directive: Solar Activity Boosts Energy Output"
+    },
+    {
+      "time": "2026-07-12T06:51:46.290812",
+      "event": "Martian day 59 has begun"
     }
   ],
   "market": {
@@ -294,26 +298,7 @@
       }
     ],
     "news_summary": "Sol 58 brings a welcome solar activity increase, enhancing energy production across Mars colonies. Colonies are focusing efforts on optimizing solar arrays and conserving water as early spring conditions persist. Collaboration between factions remains steady to maximize resource\u2026",
-    "event_flavor": {
-      "event_key": "meteor_shower",
-      "headline": "Sol 58 Meteor Shower Enhances Material Stockpile",
-      "broadcast": "A meteor shower was recorded today with no adverse effects. Zoya Kade successfully salvaged 11 extra materials from debris.",
-      "source": "github_models",
-      "generated_at": "2026-07-12T00:25:31.837036",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-07-12T00:25:39.236780",
     "last_generated_sol": "Sol 58",
     "last_diagnostics": {
