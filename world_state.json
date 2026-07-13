@@ -2,13 +2,13 @@
   "day": 59,
   "mars_date": "Sol 59",
   "season": "Early Spring",
-  "solar_activity": 68,
+  "solar_activity": 73,
   "dust_storm_active": false,
   "temperature": -68,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Earth Traders Arrive with Vital Supplies",
-  "last_updated": "2026-07-12T06:51:46.290793",
+  "last_updated": "2026-07-13T00:25:39.267245",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-05-31T00:34:58.847197",
-      "event": "On Sol 55, analysis revealed unknown bacteria within Martian soil. Further study underway to assess implications for colony biosecurity and planetary science."
-    },
-    {
-      "time": "2026-05-31T00:35:03.857859",
-      "event": "AI directive: Solar Flare Boosts Energy Output"
-    },
-    {
-      "time": "2026-06-01T00:36:15.235096",
-      "event": "On Sol 55, our arrays picked up a strange transmission at 1420 MHz. Analysis is underway to determine its origin and significance."
-    },
     {
       "time": "2026-06-02T00:39:09.038933",
       "event": "A massive sandstorm is active on Mars, forcing all solar panels offline for the next 6 hours. Expect reduced power availability during this period."
@@ -247,6 +235,10 @@
     {
       "time": "2026-07-13T00:25:32.576776",
       "event": "A trading ship from Earth has docked, delivering +100 food units and +50 materials to the colony's reserves. Resources boosted as we continue to adapt to Mars' harsh environment."
+    },
+    {
+      "time": "2026-07-13T00:25:39.267245",
+      "event": "AI directive: Unexpected Solar Boost Enhances Energy Production"
     }
   ],
   "market": {
@@ -257,8 +249,8 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Activity Boosts Energy Output",
-      "summary": "A surge in solar activity increases energy generation efficiency across all colonies.",
+      "headline": "Unexpected Solar Boost Enhances Energy Production",
+      "summary": "A moderate increase in solar activity has led to a temporary surge in available energy across Mars colonies.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
@@ -266,42 +258,42 @@
           "label": "Solar boost",
           "target": "solar_activity",
           "delta": 5,
-          "before": 80,
-          "after": 85
+          "before": 68,
+          "after": 73
         }
       },
       "source": "github_models",
-      "generated_at": "2026-07-12T00:25:39.236780"
+      "generated_at": "2026-07-13T00:25:39.267245"
     },
     "missions": [
       {
         "title": "Optimize Solar Arrays",
-        "briefing": "With increased solar activity, your solar arrays can be recalibrated for maximum efficiency.",
-        "objective": "Upgrade and recalibrate solar panels to increase energy collection by 15%.",
-        "reward_hint": "Energy reserves will be boosted.",
-        "risk": "Minor equipment wear during recalibration."
+        "briefing": "Leverage the current solar boost to maximize energy storage and distribution.",
+        "objective": "Increase colony energy reserves by 15%.",
+        "reward_hint": "Improved energy capacity and efficiency.",
+        "risk": "Potential equipment strain from extended high output."
       },
       {
-        "title": "Water Conservation Initiative",
-        "briefing": "Water is still a critical resource. Implement new conservation protocols to extend water supplies.",
-        "objective": "Reduce water consumption colony-wide by 10% over the next Sol.",
-        "reward_hint": "Improved water reserves sustainability.",
-        "risk": "Temporary reduction in some colony functions."
+        "title": "Water Recycling System Maintenance",
+        "briefing": "Ensure water recycling units are operating at peak efficiency during early spring dryness.",
+        "objective": "Perform maintenance to reduce water loss by 10%.",
+        "reward_hint": "Improved water conservation.",
+        "risk": "Minor resource expenditure and equipment downtime."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity is favorable today. Adjust your energy systems to take full advantage."
+        "message": "Solar activity has increased, prioritize energy collection and storage."
       },
       {
         "sender": "Helios Prospecting",
         "recipient": "Marco Quinn",
-        "message": "Requesting data on your agro systems\u2019 energy use during solar surge."
+        "message": "Requesting collaboration on resource exchange to address oxygen shortages."
       }
     ],
-    "news_summary": "Sol 58 brings a welcome solar activity increase, enhancing energy production across Mars colonies. Colonies are focusing efforts on optimizing solar arrays and conserving water as early spring conditions persist. Collaboration between factions remains steady to maximize resource\u2026",
+    "news_summary": "On Sol 59, Mars colonies benefit from a solar boost enhancing energy availability during the early spring season. Leaders are advised to optimize energy collection and maintain vital water recycling systems to sustain colony operations. Collaborative efforts between factions are\u2026",
     "event_flavor": {
       "event_key": "traders",
       "headline": "Earth Traders Arrive with Vital Supplies",
@@ -322,8 +314,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-07-12T00:25:39.236780",
-    "last_generated_sol": "Sol 58",
+    "last_generated": "2026-07-13T00:25:39.267245",
+    "last_generated_sol": "Sol 59",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
