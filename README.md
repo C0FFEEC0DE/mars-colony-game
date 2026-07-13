@@ -8,60 +8,63 @@
 ## LIVE WORLD SNAPSHOT
 
 <!-- WORLD_SUMMARY:START -->
-_Auto-updated daily. Last world update: 2026-07-12T00:25:39.236780_
+_Auto-updated daily. Last world update: 2026-07-13T00:25:39.267245_
 
 ```text
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
-║ [SOL] Sol 58 | [SEASON] Early      ║  ║ Solar Activity Boosts Energy       ║
-║ Spring                             ║  ║ Output                             ║
-║ [TEMP] -74C | [SUN] 85% | [STORM]  ║  ║ A surge in solar activity          ║
-║ NO                                 ║  ║ increases energy generation        ║
-║ [EVENT] Sol 58 Meteor Shower       ║  ║ efficiency across all colonies.    ║
-║ Enhances Material Stockpile        ║  ║ EFFECT solar_boost |               ║
-║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ solar_activity +5                  ║
-║ [O2] 1000 | [H2O] 545 | [E] 1160   ║  ╚════════════════════════════════════╝
-║ [FOOD] 2100 | [MAT] 900            ║                                        
+║ [SOL] Sol 59 | [SEASON] Early      ║  ║ Unexpected Solar Boost Enhances    ║
+║ Spring                             ║  ║ Energy Production                  ║
+║ [TEMP] -68C | [SUN] 73% | [STORM]  ║  ║ A moderate increase in solar       ║
+║ NO                                 ║  ║ activity has led to a temporary    ║
+║ [EVENT] Earth Traders Arrive with  ║  ║ surge in available energy across   ║
+║ Vital Supplies                     ║  ║ Mars colonies.                     ║
+║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT solar_boost |               ║
+║ [O2] 1000 | [H2O] 545 | [E] 1160   ║  ║ solar_activity +5                  ║
+║ [FOOD] 2200 | [MAT] 950            ║  ╚════════════════════════════════════╝
 ║ [MKT] O2 0 H2O 0 F 0 M 0           ║                                        
-║ [AI] Solar Activity Boosts Energy  ║                                        
-║ Output | solar_activity +5         ║                                        
+║ [AI] Unexpected Solar Boost        ║                                        
+║ Enhances Energy Production |       ║                                        
+║ solar_activity +5                  ║                                        
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
 ║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Arrays           ║
-║    Dustline Agro | P1 B3 | S7370   ║  ║    Upgrade and recalibrate solar…  ║
-║ 2. Zoya Kade                       ║  ║ 2. Water Conservation Initiative   ║
-║    Ares Systems | P1 B4 | S7263    ║  ║    Reduce water consumption…       ║
+║    Dustline Agro | P1 B3 | S7414   ║  ║    Increase colony energy…         ║
+║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System…         ║
+║    Ares Systems | P1 B4 | S7331    ║  ║    Perform maintenance to reduce…  ║
 ║ 3. Irina Vale                      ║  ╚════════════════════════════════════╝
-║    Helios… | P1 B2 | S6016         ║                                        
+║    Helios… | P1 B2 | S6072         ║                                        
 ╚════════════════════════════════════╝                                        
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
 ║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Solar       ║
-║ WATER     545                      ║  ║ activity is favorable…             ║
+║ WATER     545                      ║  ║ activity has increased,…           ║
 ║ ENERGY    1160                     ║  ║ Helios… -> Marco… | Requesting     ║
-║ FOOD      2100                     ║  ║ data on your agro…                 ║
-║ MATERIALS 900                      ║  ╚════════════════════════════════════╝
+║ FOOD      2200                     ║  ║ collaboration on…                  ║
+║ MATERIALS 950                      ║  ╚════════════════════════════════════╝
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Sol 58 brings a welcome solar      ║  ║ 00:25 | AI directive: Solar…       ║
-║ activity increase, enhancing       ║  ║ 00:25 | A meteor shower was…       ║
-║ energy production across Mars      ║  ║ 12:16 | During Sol 58's meteor…    ║
-║ colonies. Colonies are focusing    ║  ║ 06:43 | Martian day 58 has begun   ║
-║ efforts on optimizing solar arrays ║  ║ 00:24 | A severe sandstorm is…     ║
-║ and conserving water as early      ║  ╚════════════════════════════════════╝
-║ spring conditions persist.         ║                                        
-║ Collaboration between factions     ║                                        
-║ remains steady to maximize         ║                                        
-║ resource…                          ║                                        
-║ A meteor shower was recorded today ║                                        
-║ with no adverse effects. Zoya Kade ║                                        
-║ successfully salvaged 11 extra     ║                                        
-║ materials from debris.             ║                                        
+║ On Sol 59, Mars colonies benefit   ║  ║ 00:25 | AI directive: Unexpected…  ║
+║ from a solar boost enhancing       ║  ║ 00:25 | A trading ship from Earth… ║
+║ energy availability during the     ║  ║ 06:51 | Martian day 59 has begun   ║
+║ early spring season. Leaders are   ║  ║ 00:25 | AI directive: Solar…       ║
+║ advised to optimize energy         ║  ║ 00:25 | A meteor shower was…       ║
+║ collection and maintain vital      ║  ╚════════════════════════════════════╝
+║ water recycling systems to sustain ║                                        
+║ colony operations. Collaborative   ║                                        
+║ efforts between factions are…      ║                                        
+║ A trading ship from Earth has      ║                                        
+║ docked, delivering +100 food units ║                                        
+║ and +50 materials to the colony's  ║                                        
+║ reserves. Resources boosted as we  ║                                        
+║ continue to adapt to Mars' harsh   ║                                        
+║ environment.                       ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
