@@ -7,14 +7,14 @@
   "temperature": -68,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Earth Traders Arrive with Vital Supplies",
   "last_updated": "2026-07-12T06:51:46.290793",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
     "energy": 1160,
-    "food": 2100,
-    "materials": 900
+    "food": 2200,
+    "materials": 950
   },
   "leaderboard": [
     {
@@ -243,6 +243,10 @@
     {
       "time": "2026-07-12T06:51:46.290812",
       "event": "Martian day 59 has begun"
+    },
+    {
+      "time": "2026-07-13T00:25:32.576776",
+      "event": "A trading ship from Earth has docked, delivering +100 food units and +50 materials to the colony's reserves. Resources boosted as we continue to adapt to Mars' harsh environment."
     }
   ],
   "market": {
@@ -298,7 +302,26 @@
       }
     ],
     "news_summary": "Sol 58 brings a welcome solar activity increase, enhancing energy production across Mars colonies. Colonies are focusing efforts on optimizing solar arrays and conserving water as early spring conditions persist. Collaboration between factions remains steady to maximize resource\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "traders",
+      "headline": "Earth Traders Arrive with Vital Supplies",
+      "broadcast": "A trading ship from Earth has docked, delivering +100 food units and +50 materials to the colony's reserves. Resources boosted as we continue to adapt to Mars' harsh environment.",
+      "source": "github_models",
+      "generated_at": "2026-07-13T00:25:32.576761",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-07-12T00:25:39.236780",
     "last_generated_sol": "Sol 58",
     "last_diagnostics": {
