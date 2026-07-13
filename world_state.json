@@ -2,12 +2,12 @@
   "day": 59,
   "mars_date": "Sol 59",
   "season": "Early Spring",
-  "solar_activity": 73,
-  "dust_storm_active": false,
+  "solar_activity": 0,
+  "dust_storm_active": true,
   "temperature": -68,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Earth Traders Arrive with Vital Supplies",
+  "current_event": "Massive Sandstorm Shuts Down Solar Arrays",
   "last_updated": "2026-07-13T00:25:39.267245",
   "global_resources": {
     "oxygen": 1000,
@@ -239,6 +239,10 @@
     {
       "time": "2026-07-13T00:25:39.267245",
       "event": "AI directive: Unexpected Solar Boost Enhances Energy Production"
+    },
+    {
+      "time": "2026-07-13T12:47:30.349683",
+      "event": "A severe sandstorm is currently reducing visibility and has forced all solar panels offline for the next 6 hours. Prepare for limited power availability during this period."
     }
   ],
   "market": {
@@ -295,11 +299,11 @@
     ],
     "news_summary": "On Sol 59, Mars colonies benefit from a solar boost enhancing energy availability during the early spring season. Leaders are advised to optimize energy collection and maintain vital water recycling systems to sustain colony operations. Collaborative efforts between factions are\u2026",
     "event_flavor": {
-      "event_key": "traders",
-      "headline": "Earth Traders Arrive with Vital Supplies",
-      "broadcast": "A trading ship from Earth has docked, delivering +100 food units and +50 materials to the colony's reserves. Resources boosted as we continue to adapt to Mars' harsh environment.",
+      "event_key": "sandstorm",
+      "headline": "Massive Sandstorm Shuts Down Solar Arrays",
+      "broadcast": "A severe sandstorm is currently reducing visibility and has forced all solar panels offline for the next 6 hours. Prepare for limited power availability during this period.",
       "source": "github_models",
-      "generated_at": "2026-07-13T00:25:32.576761",
+      "generated_at": "2026-07-13T12:47:30.349670",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
