@@ -1,14 +1,14 @@
 {
-  "day": 59,
-  "mars_date": "Sol 59",
+  "day": 60,
+  "mars_date": "Sol 60",
   "season": "Early Spring",
-  "solar_activity": 0,
-  "dust_storm_active": true,
-  "temperature": -68,
+  "solar_activity": 77,
+  "dust_storm_active": false,
+  "temperature": -49,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Massive Sandstorm Shuts Down Solar Arrays",
-  "last_updated": "2026-07-13T00:25:39.267245",
+  "current_event": null,
+  "last_updated": "2026-07-14T06:42:22.456985",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,14 +20,14 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 7430,
+      "score": 7427,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 7371,
+      "score": 7374,
       "colonists": 1,
       "buildings": 4
     },
@@ -243,6 +243,10 @@
     {
       "time": "2026-07-13T12:47:30.349683",
       "event": "A severe sandstorm is currently reducing visibility and has forced all solar panels offline for the next 6 hours. Prepare for limited power availability during this period."
+    },
+    {
+      "time": "2026-07-14T06:42:22.457002",
+      "event": "Martian day 60 has begun"
     }
   ],
   "market": {
@@ -298,26 +302,7 @@
       }
     ],
     "news_summary": "On Sol 59, Mars colonies benefit from a solar boost enhancing energy availability during the early spring season. Leaders are advised to optimize energy collection and maintain vital water recycling systems to sustain colony operations. Collaborative efforts between factions are\u2026",
-    "event_flavor": {
-      "event_key": "sandstorm",
-      "headline": "Massive Sandstorm Shuts Down Solar Arrays",
-      "broadcast": "A severe sandstorm is currently reducing visibility and has forced all solar panels offline for the next 6 hours. Prepare for limited power availability during this period.",
-      "source": "github_models",
-      "generated_at": "2026-07-13T12:47:30.349670",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-07-13T00:25:39.267245",
     "last_generated_sol": "Sol 59",
     "last_diagnostics": {
