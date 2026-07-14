@@ -14,10 +14,10 @@ _Auto-updated daily. Last world update: 2026-07-13T00:25:39.267245_
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
 ║ [SOL] Sol 59 | [SEASON] Early      ║  ║ Unexpected Solar Boost Enhances    ║
 ║ Spring                             ║  ║ Energy Production                  ║
-║ [TEMP] -68C | [SUN] 73% | [STORM]  ║  ║ A moderate increase in solar       ║
-║ NO                                 ║  ║ activity has led to a temporary    ║
-║ [EVENT] Earth Traders Arrive with  ║  ║ surge in available energy across   ║
-║ Vital Supplies                     ║  ║ Mars colonies.                     ║
+║ [TEMP] -68C | [SUN] 0% | [STORM]   ║  ║ A moderate increase in solar       ║
+║ YES                                ║  ║ activity has led to a temporary    ║
+║ [EVENT] Massive Sandstorm Shuts    ║  ║ surge in available energy across   ║
+║ Down Solar Arrays                  ║  ║ Mars colonies.                     ║
 ║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT solar_boost |               ║
 ║ [O2] 1000 | [H2O] 545 | [E] 1160   ║  ║ solar_activity +5                  ║
 ║ [FOOD] 2200 | [MAT] 950            ║  ╚════════════════════════════════════╝
@@ -29,11 +29,11 @@ _Auto-updated daily. Last world update: 2026-07-13T00:25:39.267245_
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
 ║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Arrays           ║
-║    Dustline Agro | P1 B3 | S7414   ║  ║    Increase colony energy…         ║
+║    Dustline Agro | P1 B3 | S7430   ║  ║    Increase colony energy…         ║
 ║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System…         ║
-║    Ares Systems | P1 B4 | S7331    ║  ║    Perform maintenance to reduce…  ║
+║    Ares Systems | P1 B4 | S7371    ║  ║    Perform maintenance to reduce…  ║
 ║ 3. Irina Vale                      ║  ╚════════════════════════════════════╝
-║    Helios… | P1 B2 | S6072         ║                                        
+║    Helios… | P1 B2 | S6100         ║                                        
 ╚════════════════════════════════════╝                                        
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
@@ -45,25 +45,26 @@ _Auto-updated daily. Last world update: 2026-07-13T00:25:39.267245_
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ On Sol 59, Mars colonies benefit   ║  ║ 00:25 | AI directive: Unexpected…  ║
-║ from a solar boost enhancing       ║  ║ 00:25 | A trading ship from Earth… ║
-║ energy availability during the     ║  ║ 06:51 | Martian day 59 has begun   ║
-║ early spring season. Leaders are   ║  ║ 00:25 | AI directive: Solar…       ║
-║ advised to optimize energy         ║  ║ 00:25 | A meteor shower was…       ║
+║ On Sol 59, Mars colonies benefit   ║  ║ 12:47 | A severe sandstorm is…     ║
+║ from a solar boost enhancing       ║  ║ 00:25 | AI directive: Unexpected…  ║
+║ energy availability during the     ║  ║ 00:25 | A trading ship from Earth… ║
+║ early spring season. Leaders are   ║  ║ 06:51 | Martian day 59 has begun   ║
+║ advised to optimize energy         ║  ║ 00:25 | AI directive: Solar…       ║
 ║ collection and maintain vital      ║  ╚════════════════════════════════════╝
 ║ water recycling systems to sustain ║                                        
 ║ colony operations. Collaborative   ║                                        
 ║ efforts between factions are…      ║                                        
-║ A trading ship from Earth has      ║                                        
-║ docked, delivering +100 food units ║                                        
-║ and +50 materials to the colony's  ║                                        
-║ reserves. Resources boosted as we  ║                                        
-║ continue to adapt to Mars' harsh   ║                                        
-║ environment.                       ║                                        
+║ A severe sandstorm is currently    ║                                        
+║ reducing visibility and has forced ║                                        
+║ all solar panels offline for the   ║                                        
+║ next 6 hours. Prepare for limited  ║                                        
+║ power availability during this     ║                                        
+║ period.                            ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
