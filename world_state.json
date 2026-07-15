@@ -7,7 +7,7 @@
   "temperature": -65,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Unidentified Signal Detected at 1420 MHz",
   "last_updated": "2026-07-15T06:42:55.662001",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-07-15T06:42:55.662019",
       "event": "Martian day 61 has begun"
+    },
+    {
+      "time": "2026-07-15T12:27:32.358022",
+      "event": "On Sol 61, our receivers picked up a strange signal at 1420 MHz with 70% solar activity and stable conditions. Analysis is underway to determine its origin."
     }
   ],
   "market": {
@@ -310,7 +314,26 @@
       }
     ],
     "news_summary": "Mars enters early spring on Sol 60 with temperatures holding steady at -49C and solar activity at 77%, boosting energy availability. Colonies focus on maintenance tasks to optimize water recycling and solar energy capture. Collaboration among factions is increasing to overcome s\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "discovery",
+      "headline": "Unidentified Signal Detected at 1420 MHz",
+      "broadcast": "On Sol 61, our receivers picked up a strange signal at 1420 MHz with 70% solar activity and stable conditions. Analysis is underway to determine its origin.",
+      "source": "github_models",
+      "generated_at": "2026-07-15T12:27:32.358008",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-07-15T00:21:17.778148",
     "last_generated_sol": "Sol 60",
     "last_diagnostics": {
