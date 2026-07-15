@@ -2,13 +2,13 @@
   "day": 60,
   "mars_date": "Sol 60",
   "season": "Early Spring",
-  "solar_activity": 77,
+  "solar_activity": 82,
   "dust_storm_active": false,
   "temperature": -49,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": null,
-  "last_updated": "2026-07-14T06:42:22.456985",
+  "last_updated": "2026-07-15T00:21:17.778148",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-06-02T00:39:09.038933",
-      "event": "A massive sandstorm is active on Mars, forcing all solar panels offline for the next 6 hours. Expect reduced power availability during this period."
-    },
-    {
-      "time": "2026-06-03T00:44:06.111882",
-      "event": "On Sol 55, despite ongoing dust storm and -48C temperatures, crew members Zoya Kade, Marco Quinn, and Irina Vale successfully extracted underground ice, securing vital water reserves."
-    },
-    {
-      "time": "2026-06-04T12:59:58.777595",
-      "event": "During ongoing dust storm conditions, rover imaging identified formations resembling ancient ruins. Further analysis required to confirm geological or artificial origin."
-    },
     {
       "time": "2026-06-05T00:36:51.161339",
       "event": "A powerful solar flare is underway, increasing radiation levels by 50% this turn. Seek shelter immediately to minimize exposure."
@@ -247,6 +235,10 @@
     {
       "time": "2026-07-14T06:42:22.457002",
       "event": "Martian day 60 has begun"
+    },
+    {
+      "time": "2026-07-15T00:21:17.778148",
+      "event": "AI directive: Early Spring Solar Boost"
     }
   ],
   "market": {
@@ -257,8 +249,8 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Unexpected Solar Boost Enhances Energy Production",
-      "summary": "A moderate increase in solar activity has led to a temporary surge in available energy across Mars colonies.",
+      "headline": "Early Spring Solar Boost",
+      "summary": "Solar activity has increased to 77%, providing a mild boost to energy generation across all colonies.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
@@ -266,56 +258,69 @@
           "label": "Solar boost",
           "target": "solar_activity",
           "delta": 5,
-          "before": 68,
-          "after": 73
+          "before": 77,
+          "after": 82
         }
       },
       "source": "github_models",
-      "generated_at": "2026-07-13T00:25:39.267245"
+      "generated_at": "2026-07-15T00:21:17.778148"
     },
     "missions": [
       {
-        "title": "Optimize Solar Arrays",
-        "briefing": "Leverage the current solar boost to maximize energy storage and distribution.",
-        "objective": "Increase colony energy reserves by 15%.",
-        "reward_hint": "Improved energy capacity and efficiency.",
-        "risk": "Potential equipment strain from extended high output."
+        "title": "Solar Panel Maintenance",
+        "briefing": "With increased solar activity, ensuring panels are clean and operational will maximize energy gain.",
+        "objective": "Inspect and clean solar panels at your colony to increase energy efficiency.",
+        "reward_hint": "Gain extra energy production for several sols.",
+        "risk": "Minimal risk of dust exposure during cleaning."
       },
       {
-        "title": "Water Recycling System Maintenance",
-        "briefing": "Ensure water recycling units are operating at peak efficiency during early spring dryness.",
-        "objective": "Perform maintenance to reduce water loss by 10%.",
-        "reward_hint": "Improved water conservation.",
-        "risk": "Minor resource expenditure and equipment downtime."
+        "title": "Water Recycling System Check",
+        "briefing": "Water reserves are stable but could be optimized with maintenance on recycling units.",
+        "objective": "Perform diagnostics and maintenance on water recycling systems to improve yield.",
+        "reward_hint": "Increase water resource recovery rates.",
+        "risk": "Low risk of equipment malfunction."
+      },
+      {
+        "title": "Early Spring Crop Assessment",
+        "briefing": "Temperatures remain low but stable, an opportunity to assess agro-domes for early spring crop viability.",
+        "objective": "Evaluate and report on current crop conditions; adjust environmental controls if needed.",
+        "reward_hint": "Improve future food production forecasts.",
+        "risk": "Risk of minor plant stress due to temperature fluctuations."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity has increased, prioritize energy collection and storage."
+        "message": "Solar activity stable at 77%. Maintain energy systems to capitalize on increased output."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Marco Quinn",
-        "message": "Requesting collaboration on resource exchange to address oxygen shortages."
+        "recipient": "all colonies",
+        "message": "Sharing data on water recycling improvements developed at Helios; open for collaboration."
+      },
+      {
+        "sender": "Ares Systems",
+        "recipient": "Mars Control",
+        "message": "Requesting technical support for minor issues in crop environmental controls due to early spring cold."
       }
     ],
-    "news_summary": "On Sol 59, Mars colonies benefit from a solar boost enhancing energy availability during the early spring season. Leaders are advised to optimize energy collection and maintain vital water recycling systems to sustain colony operations. Collaborative efforts between factions are\u2026",
+    "news_summary": "Mars enters early spring on Sol 60 with temperatures holding steady at -49C and solar activity at 77%, boosting energy availability. Colonies focus on maintenance tasks to optimize water recycling and solar energy capture. Collaboration among factions is increasing to overcome s\u2026",
     "event_flavor": {},
-    "last_generated": "2026-07-13T00:25:39.267245",
-    "last_generated_sol": "Sol 59",
+    "last_generated": "2026-07-15T00:21:17.778148",
+    "last_generated_sol": "Sol 60",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
       "api_url": "https://models.github.ai/inference/chat/completions",
       "disabled": false,
-      "token_present": false,
-      "token_source": "none",
-      "status": "cached",
-      "http_status": null,
-      "reason": "daily content already generated for Sol 59",
-      "response_excerpt": ""
+      "token_present": true,
+      "token_source": "GITHUB_TOKEN",
+      "status": "ok",
+      "http_status": 200,
+      "reason": "request succeeded",
+      "response_excerpt": "",
+      "fallback": false
     }
   }
 }
