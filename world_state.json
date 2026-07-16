@@ -2,12 +2,12 @@
   "day": 61,
   "mars_date": "Sol 61",
   "season": "Early Spring",
-  "solar_activity": 70,
+  "solar_activity": 150,
   "dust_storm_active": false,
   "temperature": -65,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Unidentified Signal Detected at 1420 MHz",
+  "current_event": "Massive Solar Flare Detected on Sol 61",
   "last_updated": "2026-07-15T06:42:55.662001",
   "global_resources": {
     "oxygen": 1000,
@@ -247,6 +247,10 @@
     {
       "time": "2026-07-15T12:27:32.358022",
       "event": "On Sol 61, our receivers picked up a strange signal at 1420 MHz with 70% solar activity and stable conditions. Analysis is underway to determine its origin."
+    },
+    {
+      "time": "2026-07-16T00:24:01.927025",
+      "event": "A massive solar flare has increased energy levels by 50% for the next turn. All personnel advised to take cover from elevated radiation exposure."
     }
   ],
   "market": {
@@ -315,11 +319,11 @@
     ],
     "news_summary": "Mars enters early spring on Sol 60 with temperatures holding steady at -49C and solar activity at 77%, boosting energy availability. Colonies focus on maintenance tasks to optimize water recycling and solar energy capture. Collaboration among factions is increasing to overcome s\u2026",
     "event_flavor": {
-      "event_key": "discovery",
-      "headline": "Unidentified Signal Detected at 1420 MHz",
-      "broadcast": "On Sol 61, our receivers picked up a strange signal at 1420 MHz with 70% solar activity and stable conditions. Analysis is underway to determine its origin.",
+      "event_key": "solar_flare",
+      "headline": "Massive Solar Flare Detected on Sol 61",
+      "broadcast": "A massive solar flare has increased energy levels by 50% for the next turn. All personnel advised to take cover from elevated radiation exposure.",
       "source": "github_models",
-      "generated_at": "2026-07-15T12:27:32.358008",
+      "generated_at": "2026-07-16T00:24:01.927013",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
