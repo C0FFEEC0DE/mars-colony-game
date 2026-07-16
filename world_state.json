@@ -7,7 +7,7 @@
   "temperature": -33,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Underground Ice Deposit Located Near Colony",
   "last_updated": "2026-07-16T06:46:59.379311",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-07-16T06:46:59.379328",
       "event": "Martian day 62 has begun"
+    },
+    {
+      "time": "2026-07-16T12:30:32.307950",
+      "event": "On Sol 62, team members Zoya Kade, Irina Vale, and Marco Quinn successfully extracted underground ice, adding a combined total of 87 units of water to the colony reserves amid stable conditions."
     }
   ],
   "market": {
@@ -298,7 +302,26 @@
       }
     ],
     "news_summary": "On Sol 61 during early spring on Mars, a solar activity spike has enhanced energy production colony-wide. Temperatures remain frigid at -65C with stable conditions and no dust storms. Colonies are focusing on maximizing energy resources and securing water supplies ahead of the s\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "ice_discovery",
+      "headline": "Underground Ice Deposit Located Near Colony",
+      "broadcast": "On Sol 62, team members Zoya Kade, Irina Vale, and Marco Quinn successfully extracted underground ice, adding a combined total of 87 units of water to the colony reserves amid stable conditions.",
+      "source": "github_models",
+      "generated_at": "2026-07-16T12:30:32.307936",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-07-16T00:24:10.428867",
     "last_generated_sol": "Sol 61",
     "last_diagnostics": {
