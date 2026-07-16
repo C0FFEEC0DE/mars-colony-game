@@ -8,55 +8,61 @@
 ## LIVE WORLD SNAPSHOT
 
 <!-- WORLD_SUMMARY:START -->
-_Auto-updated daily. Last world update: 2026-07-15T00:21:17.778148_
+_Auto-updated daily. Last world update: 2026-07-16T00:24:10.428867_
 
 ```text
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
-║ [SOL] Sol 60 | [SEASON] Early      ║  ║ Early Spring Solar Boost           ║
-║ Spring                             ║  ║ Solar activity has increased to    ║
-║ [TEMP] -49C | [SUN] 82% | [STORM]  ║  ║ 77%, providing a mild boost to     ║
-║ NO                                 ║  ║ energy generation across all       ║
-║ [EVENT] None                       ║  ║ colonies.                          ║
+║ [SOL] Sol 61 | [SEASON] Early      ║  ║ Enhanced Solar Activity Boosts     ║
+║ Spring                             ║  ║ Energy                             ║
+║ [TEMP] -65C | [SUN] 150% | [STORM] ║  ║ Solar activity has surged to 150%, ║
+║ NO                                 ║  ║ increasing solar panel efficiency  ║
+║ [EVENT] Massive Solar Flare        ║  ║ across all colonies, providing an  ║
+║ Detected on Sol 61                 ║  ║ unexpected energy surplus today.   ║
 ║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ EFFECT solar_boost |               ║
-║ [O2] 1000 | [H2O] 545 | [E] 1160   ║  ║ solar_activity +5                  ║
+║ [O2] 1000 | [H2O] 545 | [E] 1160   ║  ║ solar_activity +0                  ║
 ║ [FOOD] 2200 | [MAT] 950            ║  ╚════════════════════════════════════╝
 ║ [MKT] O2 0 H2O 0 F 0 M 0           ║                                        
-║ [AI] Early Spring Solar Boost |    ║                                        
-║ solar_activity +5                  ║                                        
+║ [AI] Enhanced Solar Activity       ║                                        
+║ Boosts Energy | solar_activity +0  ║                                        
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
-║ 1. Marco Quinn                     ║  ║ 1. Solar Panel Maintenance         ║
-║    Dustline Agro | P1 B3 | S7463   ║  ║    Inspect and clean solar panels… ║
-║ 2. Zoya Kade                       ║  ║ 2. Water Recycling System Check    ║
-║    Ares Systems | P1 B4 | S7428    ║  ║    Perform diagnostics and…        ║
-║ 3. Irina Vale                      ║  ║ 3. Early Spring Crop Assessment    ║
-║    Helios… | P1 B2 | S6145         ║  ║    Evaluate and report on current… ║
-╚════════════════════════════════════╝  ╚════════════════════════════════════╝
+║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Arrays           ║
+║    Dustline Agro | P1 B3 | S7509   ║  ║    Adjust solar panel…             ║
+║ 2. Zoya Kade                       ║  ║ 2. Water Supply Inspection         ║
+║    Ares Systems | P1 B4 | S7498    ║  ║    Conduct a full inspection and…  ║
+║ 3. Irina Vale                      ║  ╚════════════════════════════════════╝
+║    Helios… | P1 B2 | S6203         ║                                        
+╚════════════════════════════════════╝                                        
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
 ║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Solar       ║
-║ WATER     545                      ║  ║ activity stable at 77%.…           ║
-║ ENERGY    1160                     ║  ║ Helios… -> all… | Sharing data on  ║
-║ FOOD      2200                     ║  ║ water recycling…                   ║
-║ MATERIALS 950                      ║  ║ Ares Systems -> Mars… | Requesting ║
-╚════════════════════════════════════╝  ║ technical support for…             ║
-                                        ╚════════════════════════════════════╝
+║ WATER     545                      ║  ║ activity peak detected.…           ║
+║ ENERGY    1160                     ║  ║ Helios… -> Marco… | Request        ║
+║ FOOD      2200                     ║  ║ collaboration on energy…           ║
+║ MATERIALS 950                      ║  ╚════════════════════════════════════╝
+╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Mars enters early spring on Sol 60 ║  ║ 00:21 | AI directive: Early        ║
-║ with temperatures holding steady   ║  ║ Spring…                            ║
-║ at -49C and solar activity at 77%, ║  ║ 06:42 | Martian day 60 has begun   ║
-║ boosting energy availability.      ║  ║ 12:47 | A severe sandstorm is…     ║
-║ Colonies focus on maintenance      ║  ║ 00:25 | AI directive: Unexpected…  ║
-║ tasks to optimize water recycling  ║  ║ 00:25 | A trading ship from Earth… ║
-║ and solar energy capture.          ║  ╚════════════════════════════════════╝
-║ Collaboration among factions is    ║                                        
-║ increasing to overcome s…          ║                                        
+║ On Sol 61 during early spring on   ║  ║ 00:24 | AI directive: Enhanced…    ║
+║ Mars, a solar activity spike has   ║  ║ 00:24 | A massive solar flare has… ║
+║ enhanced energy production colony- ║  ║ 12:27 | On Sol 61, our receivers…  ║
+║ wide. Temperatures remain frigid   ║  ║ 06:42 | Martian day 61 has begun   ║
+║ at -65C with stable conditions and ║  ║ 00:21 | AI directive: Early        ║
+║ no dust storms. Colonies are       ║  ║ Spring…                            ║
+║ focusing on maximizing energy      ║  ╚════════════════════════════════════╝
+║ resources and securing water       ║                                        
+║ supplies ahead of the s…           ║                                        
+║ A massive solar flare has          ║                                        
+║ increased energy levels by 50% for ║                                        
+║ the next turn. All personnel       ║                                        
+║ advised to take cover from         ║                                        
+║ elevated radiation exposure.       ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
