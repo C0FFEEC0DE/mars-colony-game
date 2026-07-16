@@ -8,7 +8,7 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Massive Solar Flare Detected on Sol 61",
-  "last_updated": "2026-07-15T06:42:55.662001",
+  "last_updated": "2026-07-16T00:24:10.428867",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,22 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-06-05T00:36:51.161339",
-      "event": "A powerful solar flare is underway, increasing radiation levels by 50% this turn. Seek shelter immediately to minimize exposure."
-    },
-    {
-      "time": "2026-06-06T12:25:21.801025",
-      "event": "A severe dust storm is currently active on Sol 55, forcing all solar panels offline for the next 6 hours. Prepare for reduced power availability during this period."
-    },
-    {
-      "time": "2026-06-07T00:36:34.672059",
-      "event": "Despite ongoing dust storm and zero solar activity on Sol 55, the Earth trading vessel has delivered +100 food and +50 materials to the colony reserves."
-    },
-    {
-      "time": "2026-06-07T12:30:27.496639",
-      "event": "A severe dust storm is currently active, forcing all solar panels offline for the next 6 hours. Prepare for reduced power availability during this period."
-    },
     {
       "time": "2026-06-08T00:38:01.179303",
       "event": "A massive solar flare is impacting Mars with 150% solar activity. Energy levels will rise by 50% next turn; all personnel must seek radiation shelter immediately."
@@ -251,6 +235,10 @@
     {
       "time": "2026-07-16T00:24:01.927025",
       "event": "A massive solar flare has increased energy levels by 50% for the next turn. All personnel advised to take cover from elevated radiation exposure."
+    },
+    {
+      "time": "2026-07-16T00:24:10.428867",
+      "event": "AI directive: Enhanced Solar Activity Boosts Energy"
     }
   ],
   "market": {
@@ -261,63 +249,51 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Early Spring Solar Boost",
-      "summary": "Solar activity has increased to 77%, providing a mild boost to energy generation across all colonies.",
+      "headline": "Enhanced Solar Activity Boosts Energy",
+      "summary": "Solar activity has surged to 150%, increasing solar panel efficiency across all colonies, providing an unexpected energy surplus today.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
         "result": {
           "label": "Solar boost",
           "target": "solar_activity",
-          "delta": 5,
-          "before": 77,
-          "after": 82
+          "delta": 0,
+          "before": 150,
+          "after": 150
         }
       },
       "source": "github_models",
-      "generated_at": "2026-07-15T00:21:17.778148"
+      "generated_at": "2026-07-16T00:24:10.428867"
     },
     "missions": [
       {
-        "title": "Solar Panel Maintenance",
-        "briefing": "With increased solar activity, ensuring panels are clean and operational will maximize energy gain.",
-        "objective": "Inspect and clean solar panels at your colony to increase energy efficiency.",
-        "reward_hint": "Gain extra energy production for several sols.",
-        "risk": "Minimal risk of dust exposure during cleaning."
+        "title": "Optimize Solar Arrays",
+        "briefing": "With the current solar surge, recalibrate and optimize your solar panels to maximize energy harvesting.",
+        "objective": "Adjust solar panel orientations and update software to increase daily energy output by 10%.",
+        "reward_hint": "Improved energy reserves for colony operations.",
+        "risk": "Minor equipment wear from recalibration process."
       },
       {
-        "title": "Water Recycling System Check",
-        "briefing": "Water reserves are stable but could be optimized with maintenance on recycling units.",
-        "objective": "Perform diagnostics and maintenance on water recycling systems to improve yield.",
-        "reward_hint": "Increase water resource recovery rates.",
-        "risk": "Low risk of equipment malfunction."
-      },
-      {
-        "title": "Early Spring Crop Assessment",
-        "briefing": "Temperatures remain low but stable, an opportunity to assess agro-domes for early spring crop viability.",
-        "objective": "Evaluate and report on current crop conditions; adjust environmental controls if needed.",
-        "reward_hint": "Improve future food production forecasts.",
-        "risk": "Risk of minor plant stress due to temperature fluctuations."
+        "title": "Water Supply Inspection",
+        "briefing": "Despite stable weather, ensure water storage and delivery systems remain uncontaminated and functional during early spring.",
+        "objective": "Conduct a full inspection and repair any leaks or blockages in water pipelines.",
+        "reward_hint": "Secured water resource reducing future losses.",
+        "risk": "Potential minor water loss during repair."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity stable at 77%. Maintain energy systems to capitalize on increased output."
+        "message": "Solar activity peak detected. Maximize energy intake and report any anomalies in power systems."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "all colonies",
-        "message": "Sharing data on water recycling improvements developed at Helios; open for collaboration."
-      },
-      {
-        "sender": "Ares Systems",
-        "recipient": "Mars Control",
-        "message": "Requesting technical support for minor issues in crop environmental controls due to early spring cold."
+        "recipient": "Marco Quinn",
+        "message": "Request collaboration on energy sharing protocols given current solar surplus."
       }
     ],
-    "news_summary": "Mars enters early spring on Sol 60 with temperatures holding steady at -49C and solar activity at 77%, boosting energy availability. Colonies focus on maintenance tasks to optimize water recycling and solar energy capture. Collaboration among factions is increasing to overcome s\u2026",
+    "news_summary": "On Sol 61 during early spring on Mars, a solar activity spike has enhanced energy production colony-wide. Temperatures remain frigid at -65C with stable conditions and no dust storms. Colonies are focusing on maximizing energy resources and securing water supplies ahead of the s\u2026",
     "event_flavor": {
       "event_key": "solar_flare",
       "headline": "Massive Solar Flare Detected on Sol 61",
@@ -338,8 +314,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-07-15T00:21:17.778148",
-    "last_generated_sol": "Sol 60",
+    "last_generated": "2026-07-16T00:24:10.428867",
+    "last_generated_sol": "Sol 61",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
