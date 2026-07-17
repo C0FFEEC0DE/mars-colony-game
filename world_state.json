@@ -2,13 +2,13 @@
   "day": 62,
   "mars_date": "Sol 62",
   "season": "Early Spring",
-  "solar_activity": 80,
+  "solar_activity": 85,
   "dust_storm_active": false,
   "temperature": -33,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Underground Ice Deposit Located Near Colony",
-  "last_updated": "2026-07-16T06:46:59.379311",
+  "last_updated": "2026-07-17T00:25:53.836741",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-06-08T00:38:01.179303",
-      "event": "A massive solar flare is impacting Mars with 150% solar activity. Energy levels will rise by 50% next turn; all personnel must seek radiation shelter immediately."
-    },
-    {
-      "time": "2026-06-09T00:32:03.343628",
-      "event": "On Sol 55, a meteor shower intensified under 150% solar activity amid the ongoing dust storm. Engineer Irina Vale successfully salvaged 14 additional materials from the debris."
-    },
-    {
-      "time": "2026-06-09T12:57:00.464782",
-      "event": "A severe dust storm on Sol 55 has taken all solar panels offline for the next 6 hours. Expect reduced power availability until the storm subsides."
-    },
     {
       "time": "2026-06-12T00:40:04.916694",
       "event": "On Sol 55, a faint transmission at 1420 MHz was captured despite ongoing dust storm conditions and zero solar activity. Analysis is underway to determine the source of the anomaly."
@@ -247,6 +235,10 @@
     {
       "time": "2026-07-16T12:30:32.307950",
       "event": "On Sol 62, team members Zoya Kade, Irina Vale, and Marco Quinn successfully extracted underground ice, adding a combined total of 87 units of water to the colony reserves amid stable conditions."
+    },
+    {
+      "time": "2026-07-17T00:25:53.836741",
+      "event": "AI directive: Unexpected Solar Boost"
     }
   ],
   "market": {
@@ -257,51 +249,51 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Enhanced Solar Activity Boosts Energy",
-      "summary": "Solar activity has surged to 150%, increasing solar panel efficiency across all colonies, providing an unexpected energy surplus today.",
+      "headline": "Unexpected Solar Boost",
+      "summary": "Solar activity surges to 80%, providing a temporary increase in solar energy input across Mars.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
         "result": {
           "label": "Solar boost",
           "target": "solar_activity",
-          "delta": 0,
-          "before": 150,
-          "after": 150
+          "delta": 5,
+          "before": 80,
+          "after": 85
         }
       },
       "source": "github_models",
-      "generated_at": "2026-07-16T00:24:10.428867"
+      "generated_at": "2026-07-17T00:25:53.836741"
     },
     "missions": [
       {
         "title": "Optimize Solar Arrays",
-        "briefing": "With the current solar surge, recalibrate and optimize your solar panels to maximize energy harvesting.",
-        "objective": "Adjust solar panel orientations and update software to increase daily energy output by 10%.",
-        "reward_hint": "Improved energy reserves for colony operations.",
-        "risk": "Minor equipment wear from recalibration process."
+        "briefing": "With increased solar activity, improve solar panel efficiency to capitalize on the energy surge.",
+        "objective": "Adjust panel angles and clear dust to boost energy output by 10%.",
+        "reward_hint": "Extra energy units for your colony.",
+        "risk": "Minimal risk of equipment wear during adjustments."
       },
       {
-        "title": "Water Supply Inspection",
-        "briefing": "Despite stable weather, ensure water storage and delivery systems remain uncontaminated and functional during early spring.",
-        "objective": "Conduct a full inspection and repair any leaks or blockages in water pipelines.",
-        "reward_hint": "Secured water resource reducing future losses.",
-        "risk": "Potential minor water loss during repair."
+        "title": "Water Conservation Protocol",
+        "briefing": "Early spring temperatures remain low; water resources are critical for upcoming growth cycles.",
+        "objective": "Implement water recycling measures to reduce water consumption by 15%.",
+        "reward_hint": "Preserved water supplies for future use.",
+        "risk": "Slight increase in maintenance workload."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity peak detected. Maximize energy intake and report any anomalies in power systems."
+        "message": "Solar activity has increased; recommend optimizing energy systems to benefit from the surge."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Marco Quinn",
-        "message": "Request collaboration on energy sharing protocols given current solar surplus."
+        "recipient": "all colonies",
+        "message": "Sharing water conservation strategies could benefit all settlements this season."
       }
     ],
-    "news_summary": "On Sol 61 during early spring on Mars, a solar activity spike has enhanced energy production colony-wide. Temperatures remain frigid at -65C with stable conditions and no dust storms. Colonies are focusing on maximizing energy resources and securing water supplies ahead of the s\u2026",
+    "news_summary": "On Sol 62 of early spring, Mars experiences a notable solar activity surge, enhancing energy availability. Colonies are advised to optimize solar infrastructure and conserve water amid low temperatures. Cooperation in resource management remains vital for survival in the harsh M\u2026",
     "event_flavor": {
       "event_key": "ice_discovery",
       "headline": "Underground Ice Deposit Located Near Colony",
@@ -322,8 +314,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-07-16T00:24:10.428867",
-    "last_generated_sol": "Sol 61",
+    "last_generated": "2026-07-17T00:25:53.836741",
+    "last_generated_sol": "Sol 62",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
