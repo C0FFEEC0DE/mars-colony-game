@@ -2,12 +2,12 @@
   "day": 63,
   "mars_date": "Sol 63",
   "season": "Early Spring",
-  "solar_activity": 83,
+  "solar_activity": 150,
   "dust_storm_active": false,
   "temperature": -36,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Solar Flare Surge on Sol 63",
   "last_updated": "2026-07-17T06:45:19.021445",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-07-17T06:45:19.021458",
       "event": "Martian day 63 has begun"
+    },
+    {
+      "time": "2026-07-18T00:23:48.159692",
+      "event": "A massive solar flare increases energy levels by 50% for the next cycle. All personnel must seek radiation shelter immediately."
     }
   ],
   "market": {
@@ -298,7 +302,26 @@
       }
     ],
     "news_summary": "On Sol 62 of early spring, Mars experiences a notable solar activity surge, enhancing energy availability. Colonies are advised to optimize solar infrastructure and conserve water amid low temperatures. Cooperation in resource management remains vital for survival in the harsh M\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "solar_flare",
+      "headline": "Solar Flare Surge on Sol 63",
+      "broadcast": "A massive solar flare increases energy levels by 50% for the next cycle. All personnel must seek radiation shelter immediately.",
+      "source": "github_models",
+      "generated_at": "2026-07-18T00:23:48.159680",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-07-17T00:25:53.836741",
     "last_generated_sol": "Sol 62",
     "last_diagnostics": {
