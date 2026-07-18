@@ -8,7 +8,7 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Solar Flare Surge on Sol 63",
-  "last_updated": "2026-07-17T06:45:19.021445",
+  "last_updated": "2026-07-18T00:23:55.270522",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-06-12T00:40:04.916694",
-      "event": "On Sol 55, a faint transmission at 1420 MHz was captured despite ongoing dust storm conditions and zero solar activity. Analysis is underway to determine the source of the anomaly."
-    },
-    {
-      "time": "2026-06-13T12:33:44.074620",
-      "event": "During Sol 55, analysis of soil samples revealed unknown bacterial presence. Despite ongoing dust storm and zero solar activity, the discovery offers new insights into Martian microbiology."
-    },
-    {
-      "time": "2026-06-14T00:38:27.119529",
-      "event": "A massive solar flare is impacting Mars with 150% solar activity. All crew advised to seek radiation shelter immediately; energy levels will increase by 50% for the next cycle."
-    },
     {
       "time": "2026-06-14T12:36:59.852296",
       "event": "On Sol 55, during high solar activity and ongoing dust storm, sensors detected extensive underground caverns. This discovery may provide crucial shelter options for the colony."
@@ -247,6 +235,10 @@
     {
       "time": "2026-07-18T00:23:48.159692",
       "event": "A massive solar flare increases energy levels by 50% for the next cycle. All personnel must seek radiation shelter immediately."
+    },
+    {
+      "time": "2026-07-18T00:23:55.270522",
+      "event": "AI directive: Solar Activity Peaks at 150%"
     }
   ],
   "market": {
@@ -257,51 +249,51 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Unexpected Solar Boost",
-      "summary": "Solar activity surges to 80%, providing a temporary increase in solar energy input across Mars.",
+      "headline": "Solar Activity Peaks at 150%",
+      "summary": "Mars experiences a significant surge in solar radiation, boosting energy generation across colonies.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
         "result": {
           "label": "Solar boost",
           "target": "solar_activity",
-          "delta": 5,
-          "before": 80,
-          "after": 85
+          "delta": 0,
+          "before": 150,
+          "after": 150
         }
       },
       "source": "github_models",
-      "generated_at": "2026-07-17T00:25:53.836741"
+      "generated_at": "2026-07-18T00:23:55.270522"
     },
     "missions": [
       {
-        "title": "Optimize Solar Arrays",
-        "briefing": "With increased solar activity, improve solar panel efficiency to capitalize on the energy surge.",
-        "objective": "Adjust panel angles and clear dust to boost energy output by 10%.",
-        "reward_hint": "Extra energy units for your colony.",
-        "risk": "Minimal risk of equipment wear during adjustments."
+        "title": "Solar Panel Optimization",
+        "briefing": "With increased solar activity, optimize and recalibrate solar arrays to maximize energy intake.",
+        "objective": "Inspect and adjust solar panels at your habitat to increase energy output by 10%.",
+        "reward_hint": "Energy reserves will see a measurable increase.",
+        "risk": "Minor exposure to solar radiation during maintenance."
       },
       {
-        "title": "Water Conservation Protocol",
-        "briefing": "Early spring temperatures remain low; water resources are critical for upcoming growth cycles.",
-        "objective": "Implement water recycling measures to reduce water consumption by 15%.",
-        "reward_hint": "Preserved water supplies for future use.",
-        "risk": "Slight increase in maintenance workload."
+        "title": "Spring Water Collection",
+        "briefing": "Early spring conditions may have melted subsurface ice; collect and store water reserves.",
+        "objective": "Deploy portable drills and extract at least 50 units of water from identified subsurface pockets.",
+        "reward_hint": "Water supplies will be replenished.",
+        "risk": "Potential drill malfunction or minor dust exposure."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity has increased; recommend optimizing energy systems to benefit from the surge."
+        "message": "Solar activity is at a peak; all stations advised to maximize use of solar power while maintaining safety protocols."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "all colonies",
-        "message": "Sharing water conservation strategies could benefit all settlements this season."
+        "recipient": "Marco Quinn",
+        "message": "Potential water pockets spotted near Dustline Agro base; collaboration could be beneficial."
       }
     ],
-    "news_summary": "On Sol 62 of early spring, Mars experiences a notable solar activity surge, enhancing energy availability. Colonies are advised to optimize solar infrastructure and conserve water amid low temperatures. Cooperation in resource management remains vital for survival in the harsh M\u2026",
+    "news_summary": "On Sol 63, Mars experiences a notable solar energy surge, increasing energy generation potential across colonies. Early spring conditions offer opportunities for water extraction from subsurface ice pockets. Colonies are encouraged to optimize solar infrastructure and prepare fo\u2026",
     "event_flavor": {
       "event_key": "solar_flare",
       "headline": "Solar Flare Surge on Sol 63",
@@ -322,8 +314,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-07-17T00:25:53.836741",
-    "last_generated_sol": "Sol 62",
+    "last_generated": "2026-07-18T00:23:55.270522",
+    "last_generated_sol": "Sol 63",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
