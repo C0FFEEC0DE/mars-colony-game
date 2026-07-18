@@ -8,61 +8,61 @@
 ## LIVE WORLD SNAPSHOT
 
 <!-- WORLD_SUMMARY:START -->
-_Auto-updated daily. Last world update: 2026-07-17T00:25:53.836741_
+_Auto-updated daily. Last world update: 2026-07-18T00:23:55.270522_
 
 ```text
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
-║ [SOL] Sol 62 | [SEASON] Early      ║  ║ Unexpected Solar Boost             ║
-║ Spring                             ║  ║ Solar activity surges to 80%,      ║
-║ [TEMP] -33C | [SUN] 85% | [STORM]  ║  ║ providing a temporary increase in  ║
-║ NO                                 ║  ║ solar energy input across Mars.    ║
-║ [EVENT] Underground Ice Deposit    ║  ║ EFFECT solar_boost |               ║
-║ Located Near Colony                ║  ║ solar_activity +5                  ║
+║ [SOL] Sol 63 | [SEASON] Early      ║  ║ Solar Activity Peaks at 150%       ║
+║ Spring                             ║  ║ Mars experiences a significant     ║
+║ [TEMP] -36C | [SUN] 150% | [STORM] ║  ║ surge in solar radiation, boosting ║
+║ NO                                 ║  ║ energy generation across colonies. ║
+║ [EVENT] Solar Flare Surge on Sol   ║  ║ EFFECT solar_boost |               ║
+║ 63                                 ║  ║ solar_activity +0                  ║
 ║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ╚════════════════════════════════════╝
 ║ [O2] 1000 | [H2O] 545 | [E] 1160   ║                                        
 ║ [FOOD] 2200 | [MAT] 950            ║                                        
 ║ [MKT] O2 0 H2O 0 F 0 M 0           ║                                        
-║ [AI] Unexpected Solar Boost |      ║                                        
-║ solar_activity +5                  ║                                        
+║ [AI] Solar Activity Peaks at 150%  ║                                        
+║ | solar_activity +0                ║                                        
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
-║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Arrays           ║
-║    Dustline Agro | P1 B3 | S7661   ║  ║    Adjust panel angles and clear…  ║
-║ 2. Zoya Kade                       ║  ║ 2. Water Conservation Protocol     ║
-║    Ares Systems | P1 B4 | S7648    ║  ║    Implement water recycling…      ║
+║ 1. Marco Quinn                     ║  ║ 1. Solar Panel Optimization        ║
+║    Dustline Agro | P1 B3 | S7774   ║  ║    Inspect and adjust solar…       ║
+║ 2. Zoya Kade                       ║  ║ 2. Spring Water Collection         ║
+║    Ares Systems | P1 B4 | S7725    ║  ║    Deploy portable drills and…     ║
 ║ 3. Irina Vale                      ║  ╚════════════════════════════════════╝
-║    Helios… | P1 B2 | S6349         ║                                        
+║    Helios… | P1 B2 | S6414         ║                                        
 ╚════════════════════════════════════╝                                        
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
 ║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Solar       ║
-║ WATER     545                      ║  ║ activity has increased;…           ║
-║ ENERGY    1160                     ║  ║ Helios… -> all… | Sharing water    ║
-║ FOOD      2200                     ║  ║ conservation…                      ║
+║ WATER     545                      ║  ║ activity is at a peak; all…        ║
+║ ENERGY    1160                     ║  ║ Helios… -> Marco… | Potential      ║
+║ FOOD      2200                     ║  ║ water pockets spotted…             ║
 ║ MATERIALS 950                      ║  ╚════════════════════════════════════╝
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ On Sol 62 of early spring, Mars    ║  ║ 00:25 | AI directive: Unexpected…  ║
-║ experiences a notable solar        ║  ║ 12:30 | On Sol 62, team members…   ║
-║ activity surge, enhancing energy   ║  ║ 06:46 | Martian day 62 has begun   ║
-║ availability. Colonies are advised ║  ║ 00:24 | AI directive: Enhanced…    ║
-║ to optimize solar infrastructure   ║  ║ 00:24 | A massive solar flare has… ║
-║ and conserve water amid low        ║  ╚════════════════════════════════════╝
-║ temperatures. Cooperation in       ║                                        
-║ resource management remains vital  ║                                        
-║ for survival in the harsh M…       ║                                        
-║ On Sol 62, team members Zoya Kade, ║                                        
-║ Irina Vale, and Marco Quinn        ║                                        
-║ successfully extracted underground ║                                        
-║ ice, adding a combined total of 87 ║                                        
-║ units of water to the colony       ║                                        
-║ reserves amid stable conditions.   ║                                        
+║ On Sol 63, Mars experiences a      ║  ║ 00:23 | AI directive: Solar…       ║
+║ notable solar energy surge,        ║  ║ 00:23 | A massive solar flare…     ║
+║ increasing energy generation       ║  ║ 06:45 | Martian day 63 has begun   ║
+║ potential across colonies. Early   ║  ║ 00:25 | AI directive: Unexpected…  ║
+║ spring conditions offer            ║  ║ 12:30 | On Sol 62, team members…   ║
+║ opportunities for water extraction ║  ╚════════════════════════════════════╝
+║ from subsurface ice pockets.       ║                                        
+║ Colonies are encouraged to         ║                                        
+║ optimize solar infrastructure and  ║                                        
+║ prepare fo…                        ║                                        
+║ A massive solar flare increases    ║                                        
+║ energy levels by 50% for the next  ║                                        
+║ cycle. All personnel must seek     ║                                        
+║ radiation shelter immediately.     ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
