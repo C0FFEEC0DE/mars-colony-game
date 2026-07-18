@@ -1,14 +1,14 @@
 {
-  "day": 63,
-  "mars_date": "Sol 63",
+  "day": 64,
+  "mars_date": "Sol 64",
   "season": "Early Spring",
-  "solar_activity": 150,
+  "solar_activity": 89,
   "dust_storm_active": false,
-  "temperature": -36,
+  "temperature": -53,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Solar Flare Surge on Sol 63",
-  "last_updated": "2026-07-18T00:23:55.270522",
+  "current_event": null,
+  "last_updated": "2026-07-18T06:37:22.917259",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 7774,
+      "score": 7801,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 7725,
+      "score": 7758,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 6414,
+      "score": 6444,
       "colonists": 1,
       "buildings": 2
     }
@@ -239,6 +239,10 @@
     {
       "time": "2026-07-18T00:23:55.270522",
       "event": "AI directive: Solar Activity Peaks at 150%"
+    },
+    {
+      "time": "2026-07-18T06:37:22.917277",
+      "event": "Martian day 64 has begun"
     }
   ],
   "market": {
@@ -294,26 +298,7 @@
       }
     ],
     "news_summary": "On Sol 63, Mars experiences a notable solar energy surge, increasing energy generation potential across colonies. Early spring conditions offer opportunities for water extraction from subsurface ice pockets. Colonies are encouraged to optimize solar infrastructure and prepare fo\u2026",
-    "event_flavor": {
-      "event_key": "solar_flare",
-      "headline": "Solar Flare Surge on Sol 63",
-      "broadcast": "A massive solar flare increases energy levels by 50% for the next cycle. All personnel must seek radiation shelter immediately.",
-      "source": "github_models",
-      "generated_at": "2026-07-18T00:23:48.159680",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-07-18T00:23:55.270522",
     "last_generated_sol": "Sol 63",
     "last_diagnostics": {
