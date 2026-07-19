@@ -1,14 +1,14 @@
 {
-  "day": 64,
-  "mars_date": "Sol 64",
+  "day": 65,
+  "mars_date": "Sol 65",
   "season": "Early Spring",
-  "solar_activity": 94,
-  "dust_storm_active": false,
-  "temperature": -53,
+  "solar_activity": 87,
+  "dust_storm_active": true,
+  "temperature": -69,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Trading Ship Arrives, Boosting Supplies",
-  "last_updated": "2026-07-19T00:24:49.148879",
+  "current_event": null,
+  "last_updated": "2026-07-19T06:49:16.124528",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -18,13 +18,6 @@
   },
   "leaderboard": [
     {
-      "name": "Marco Quinn",
-      "corp": "Dustline Agro",
-      "score": 7843,
-      "colonists": 1,
-      "buildings": 3
-    },
-    {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
       "score": 7818,
@@ -32,9 +25,16 @@
       "buildings": 4
     },
     {
+      "name": "Marco Quinn",
+      "corp": "Dustline Agro",
+      "score": 7812,
+      "colonists": 1,
+      "buildings": 3
+    },
+    {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 6495,
+      "score": 6485,
       "colonists": 1,
       "buildings": 2
     }
@@ -239,6 +239,14 @@
     {
       "time": "2026-07-19T00:24:49.148879",
       "event": "AI directive: Seasonal Solar Boost"
+    },
+    {
+      "time": "2026-07-19T06:49:16.124544",
+      "event": "Martian day 65 has begun"
+    },
+    {
+      "time": "2026-07-19T06:49:16.174766",
+      "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
     }
   ],
   "market": {
@@ -301,26 +309,7 @@
       }
     ],
     "news_summary": "On Sol 64 during early spring, Mars colonies experience a solar boost increasing energy production capabilities. With no dust storms active, conditions allow for resource surveys and salvage operations. Colonies are advised to optimize solar arrays and explore new water and mate\u2026",
-    "event_flavor": {
-      "event_key": "traders",
-      "headline": "Trading Ship Arrives, Boosting Supplies",
-      "broadcast": "A trading ship from Earth has docked, delivering +100 food units and +50 materials to the global pool. Operations anticipate improved resource stability.",
-      "source": "github_models",
-      "generated_at": "2026-07-19T00:24:41.962375",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-07-19T00:24:49.148879",
     "last_generated_sol": "Sol 64",
     "last_diagnostics": {
