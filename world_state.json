@@ -7,14 +7,14 @@
   "temperature": -53,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Trading Ship Arrives, Boosting Supplies",
   "last_updated": "2026-07-18T06:37:22.917259",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
     "energy": 1160,
-    "food": 2200,
-    "materials": 950
+    "food": 2300,
+    "materials": 1000
   },
   "leaderboard": [
     {
@@ -243,6 +243,10 @@
     {
       "time": "2026-07-18T06:37:22.917277",
       "event": "Martian day 64 has begun"
+    },
+    {
+      "time": "2026-07-19T00:24:41.962389",
+      "event": "A trading ship from Earth has docked, delivering +100 food units and +50 materials to the global pool. Operations anticipate improved resource stability."
     }
   ],
   "market": {
@@ -298,7 +302,26 @@
       }
     ],
     "news_summary": "On Sol 63, Mars experiences a notable solar energy surge, increasing energy generation potential across colonies. Early spring conditions offer opportunities for water extraction from subsurface ice pockets. Colonies are encouraged to optimize solar infrastructure and prepare fo\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "traders",
+      "headline": "Trading Ship Arrives, Boosting Supplies",
+      "broadcast": "A trading ship from Earth has docked, delivering +100 food units and +50 materials to the global pool. Operations anticipate improved resource stability.",
+      "source": "github_models",
+      "generated_at": "2026-07-19T00:24:41.962375",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-07-18T00:23:55.270522",
     "last_generated_sol": "Sol 63",
     "last_diagnostics": {
