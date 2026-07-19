@@ -2,13 +2,13 @@
   "day": 64,
   "mars_date": "Sol 64",
   "season": "Early Spring",
-  "solar_activity": 89,
+  "solar_activity": 94,
   "dust_storm_active": false,
   "temperature": -53,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Trading Ship Arrives, Boosting Supplies",
-  "last_updated": "2026-07-18T06:37:22.917259",
+  "last_updated": "2026-07-19T00:24:49.148879",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-06-14T12:36:59.852296",
-      "event": "On Sol 55, during high solar activity and ongoing dust storm, sensors detected extensive underground caverns. This discovery may provide crucial shelter options for the colony."
-    },
-    {
-      "time": "2026-06-15T00:40:00.501845",
-      "event": "On Sol 55, despite active dust storm and high solar activity, sensors identified rare mineral deposits beneath the regolith. Extraction protocols under review to leverage new resources."
-    },
-    {
-      "time": "2026-06-18T00:41:19.295382",
-      "event": "A massive solar flare is impacting Mars with energy levels increased by 50% for the next cycle. All crew must take cover to minimize radiation exposure amid ongoing dust storm conditions."
-    },
     {
       "time": "2026-06-19T00:44:47.777516",
       "event": "On Sol 55, sensors confirmed underground caverns despite ongoing dust storm and elevated solar activity at 150%. These formations may offer new shelter opportunities."
@@ -247,6 +235,10 @@
     {
       "time": "2026-07-19T00:24:41.962389",
       "event": "A trading ship from Earth has docked, delivering +100 food units and +50 materials to the global pool. Operations anticipate improved resource stability."
+    },
+    {
+      "time": "2026-07-19T00:24:49.148879",
+      "event": "AI directive: Seasonal Solar Boost"
     }
   ],
   "market": {
@@ -257,51 +249,58 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Activity Peaks at 150%",
-      "summary": "Mars experiences a significant surge in solar radiation, boosting energy generation across colonies.",
+      "headline": "Seasonal Solar Boost",
+      "summary": "Early spring brings increased solar activity, enhancing solar panel efficiency across all colonies.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
         "result": {
           "label": "Solar boost",
           "target": "solar_activity",
-          "delta": 0,
-          "before": 150,
-          "after": 150
+          "delta": 5,
+          "before": 89,
+          "after": 94
         }
       },
       "source": "github_models",
-      "generated_at": "2026-07-18T00:23:55.270522"
+      "generated_at": "2026-07-19T00:24:49.148879"
     },
     "missions": [
       {
-        "title": "Solar Panel Optimization",
-        "briefing": "With increased solar activity, optimize and recalibrate solar arrays to maximize energy intake.",
-        "objective": "Inspect and adjust solar panels at your habitat to increase energy output by 10%.",
-        "reward_hint": "Energy reserves will see a measurable increase.",
-        "risk": "Minor exposure to solar radiation during maintenance."
+        "title": "Optimize Solar Arrays",
+        "briefing": "With the solar boost underway, colonies can maximize energy intake by recalibrating solar panels.",
+        "objective": "Recalibrate and clean solar panels to increase energy output by 10%.",
+        "reward_hint": "Increased energy reserves for your colony.",
+        "risk": "Minor exposure to low temperatures during maintenance."
       },
       {
-        "title": "Spring Water Collection",
-        "briefing": "Early spring conditions may have melted subsurface ice; collect and store water reserves.",
-        "objective": "Deploy portable drills and extract at least 50 units of water from identified subsurface pockets.",
-        "reward_hint": "Water supplies will be replenished.",
-        "risk": "Potential drill malfunction or minor dust exposure."
+        "title": "Early Spring Water Survey",
+        "briefing": "Warmer temperatures may reveal new shallow water caches near the colony perimeter.",
+        "objective": "Conduct a survey to identify accessible water sources within 1 km radius.",
+        "reward_hint": "Potential increase in water resources.",
+        "risk": "Risk of delayed return due to terrain obstacles."
+      },
+      {
+        "title": "Material Salvage Operation",
+        "briefing": "Materials can be scavenged from recently exposed rocky outcrops as dust storm residue settles.",
+        "objective": "Collect and process 50 units of raw materials from nearby outcrops.",
+        "reward_hint": "Materials for colony construction and repairs.",
+        "risk": "Potential equipment wear from abrasive dust."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity is at a peak; all stations advised to maximize use of solar power while maintaining safety protocols."
+        "message": "Solar activity levels are high; optimize your solar panels to maximize energy intake."
       },
       {
         "sender": "Helios Prospecting",
         "recipient": "Marco Quinn",
-        "message": "Potential water pockets spotted near Dustline Agro base; collaboration could be beneficial."
+        "message": "Irina requests coordination for resource sharing given her low oxygen levels."
       }
     ],
-    "news_summary": "On Sol 63, Mars experiences a notable solar energy surge, increasing energy generation potential across colonies. Early spring conditions offer opportunities for water extraction from subsurface ice pockets. Colonies are encouraged to optimize solar infrastructure and prepare fo\u2026",
+    "news_summary": "On Sol 64 during early spring, Mars colonies experience a solar boost increasing energy production capabilities. With no dust storms active, conditions allow for resource surveys and salvage operations. Colonies are advised to optimize solar arrays and explore new water and mate\u2026",
     "event_flavor": {
       "event_key": "traders",
       "headline": "Trading Ship Arrives, Boosting Supplies",
@@ -322,8 +321,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-07-18T00:23:55.270522",
-    "last_generated_sol": "Sol 63",
+    "last_generated": "2026-07-19T00:24:49.148879",
+    "last_generated_sol": "Sol 64",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
