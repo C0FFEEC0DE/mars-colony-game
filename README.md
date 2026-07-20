@@ -8,60 +8,55 @@
 ## LIVE WORLD SNAPSHOT
 
 <!-- WORLD_SUMMARY:START -->
-_Auto-updated daily. Last world update: 2026-07-19T00:24:49.148879_
+_Auto-updated daily. Last world update: 2026-07-20T00:26:29.673937_
 
 ```text
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
-║ [SOL] Sol 64 | [SEASON] Early      ║  ║ Seasonal Solar Boost               ║
-║ Spring                             ║  ║ Early spring brings increased      ║
-║ [TEMP] -53C | [SUN] 94% | [STORM]  ║  ║ solar activity, enhancing solar    ║
-║ NO                                 ║  ║ panel efficiency across all        ║
-║ [EVENT] Trading Ship Arrives,      ║  ║ colonies.                          ║
-║ Boosting Supplies                  ║  ║ EFFECT solar_boost |               ║
-║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ solar_activity +5                  ║
-║ [O2] 1000 | [H2O] 545 | [E] 1160   ║  ╚════════════════════════════════════╝
-║ [FOOD] 2300 | [MAT] 1000           ║                                        
-║ [MKT] O2 0 H2O 0 F 0 M 0           ║                                        
-║ [AI] Seasonal Solar Boost |        ║                                        
-║ solar_activity +5                  ║                                        
+║ [SOL] Sol 65 | [SEASON] Early      ║  ║ Dust Storm Reduces Solar           ║
+║ Spring                             ║  ║ Efficiency                         ║
+║ [TEMP] -69C | [SUN] 87% | [STORM]  ║  ║ A persistent dust storm is         ║
+║ YES                                ║  ║ limiting solar panel output,       ║
+║ [EVENT] None                       ║  ║ reducing energy generation across  ║
+║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ all colonies despite high solar    ║
+║ [O2] 1000 | [H2O] 545 | [E] 1180   ║  ║ activity.                          ║
+║ [FOOD] 2300 | [MAT] 1000           ║  ║ EFFECT energy_surge | energy +20   ║
+║ [MKT] O2 0 H2O 0 F 0 M 0           ║  ╚════════════════════════════════════╝
+║ [AI] Dust Storm Reduces Solar      ║                                        
+║ Efficiency | energy +20            ║                                        
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
-║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Arrays           ║
-║    Dustline Agro | P1 B3 | S7843   ║  ║    Recalibrate and clean solar…    ║
-║ 2. Zoya Kade                       ║  ║ 2. Early Spring Water Survey       ║
-║    Ares Systems | P1 B4 | S7818    ║  ║    Conduct a survey to identify…   ║
-║ 3. Irina Vale                      ║  ║ 3. Material Salvage Operation      ║
-║    Helios… | P1 B2 | S6495         ║  ║    Collect and process 50 units…   ║
+║ 1. Zoya Kade                       ║  ║ 1. Dust Storm Panel Maintenance    ║
+║    Ares Systems | P1 B4 | S7827    ║  ║    Clear dust from solar panels…   ║
+║ 2. Marco Quinn                     ║  ║ 2. Emergency Oxygen Conservation   ║
+║    Dustline Agro | P1 B3 | S7803   ║  ║    Implement oxygen-saving…        ║
+║ 3. Irina Vale                      ║  ║ 3. Water Recycling Optimization    ║
+║    Helios… | P1 B2 | S6485         ║  ║    Optimize water recycling…       ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
-║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Solar       ║
-║ WATER     545                      ║  ║ activity levels are high;…         ║
-║ ENERGY    1160                     ║  ║ Helios… -> Marco… | Irina requests ║
-║ FOOD      2300                     ║  ║ coordination for…                  ║
+║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Dust storm  ║
+║ WATER     545                      ║  ║ ongoing, expect…                   ║
+║ ENERGY    1180                     ║  ║ Helios… -> Marco… | Requesting     ║
+║ FOOD      2300                     ║  ║ assistance in sharing…             ║
 ║ MATERIALS 1000                     ║  ╚════════════════════════════════════╝
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ On Sol 64 during early spring,     ║  ║ 00:24 | AI directive: Seasonal…    ║
-║ Mars colonies experience a solar   ║  ║ 00:24 | A trading ship from Earth… ║
-║ boost increasing energy production ║  ║ 06:37 | Martian day 64 has begun   ║
-║ capabilities. With no dust storms  ║  ║ 00:23 | AI directive: Solar…       ║
-║ active, conditions allow for       ║  ║ 00:23 | A massive solar flare…     ║
-║ resource surveys and salvage       ║  ╚════════════════════════════════════╝
-║ operations. Colonies are advised   ║                                        
-║ to optimize solar arrays and       ║                                        
-║ explore new water and mate…        ║                                        
-║ A trading ship from Earth has      ║                                        
-║ docked, delivering +100 food units ║                                        
-║ and +50 materials to the global    ║                                        
-║ pool. Operations anticipate        ║                                        
-║ improved resource stability.       ║                                        
+║ Sol 65 on Mars continues under a   ║  ║ 00:26 | AI directive: Dust Storm…  ║
+║ challenging early spring dust      ║  ║ 06:49 | 🌪️ Dust storm damaged…     ║
+║ storm, significantly impacting     ║  ║ 06:49 | Martian day 65 has begun   ║
+║ solar energy production. Colonies  ║  ║ 00:24 | AI directive: Seasonal…    ║
+║ are focusing on maintenance and    ║  ║ 00:24 | A trading ship from Earth… ║
+║ conservation efforts to maintain   ║  ╚════════════════════════════════════╝
+║ vital systems. Collaboration       ║                                        
+║ between colonies is encouraged to  ║                                        
+║ optimize resource manag…           ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
