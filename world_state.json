@@ -8,11 +8,11 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": null,
-  "last_updated": "2026-07-19T06:49:16.124528",
+  "last_updated": "2026-07-20T00:26:29.673937",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
-    "energy": 1160,
+    "energy": 1180,
     "food": 2300,
     "materials": 1000
   },
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-06-19T00:44:47.777516",
-      "event": "On Sol 55, sensors confirmed underground caverns despite ongoing dust storm and elevated solar activity at 150%. These formations may offer new shelter opportunities."
-    },
-    {
-      "time": "2026-06-20T12:34:01.290985",
-      "event": "A massive solar flare is impacting Mars with 150% solar activity. Energy levels will increase by 50% next turn; all personnel should take cover from radiation immediately."
-    },
-    {
-      "time": "2026-06-22T00:38:51.460850",
-      "event": "A massive sandstorm is currently active with zero solar activity. All solar panels are offline and expected to remain so for the next 6 hours."
-    },
     {
       "time": "2026-06-23T00:35:54.668640",
       "event": "Despite ongoing dust storm and zero solar activity, Earth trading vessel docks, delivering +100 food and +50 materials to colony reserves."
@@ -247,6 +235,10 @@
     {
       "time": "2026-07-19T06:49:16.174766",
       "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
+    },
+    {
+      "time": "2026-07-20T00:26:29.673937",
+      "event": "AI directive: Dust Storm Reduces Solar Efficiency"
     }
   ],
   "market": {
@@ -257,61 +249,61 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Seasonal Solar Boost",
-      "summary": "Early spring brings increased solar activity, enhancing solar panel efficiency across all colonies.",
+      "headline": "Dust Storm Reduces Solar Efficiency",
+      "summary": "A persistent dust storm is limiting solar panel output, reducing energy generation across all colonies despite high solar activity.",
       "effect": {
-        "type": "solar_boost",
-        "magnitude": 5,
+        "type": "energy_surge",
+        "magnitude": 20,
         "result": {
-          "label": "Solar boost",
-          "target": "solar_activity",
-          "delta": 5,
-          "before": 89,
-          "after": 94
+          "label": "Grid surge",
+          "target": "energy",
+          "delta": 20,
+          "before": 1160,
+          "after": 1180
         }
       },
       "source": "github_models",
-      "generated_at": "2026-07-19T00:24:49.148879"
+      "generated_at": "2026-07-20T00:26:29.673937"
     },
     "missions": [
       {
-        "title": "Optimize Solar Arrays",
-        "briefing": "With the solar boost underway, colonies can maximize energy intake by recalibrating solar panels.",
-        "objective": "Recalibrate and clean solar panels to increase energy output by 10%.",
-        "reward_hint": "Increased energy reserves for your colony.",
-        "risk": "Minor exposure to low temperatures during maintenance."
+        "title": "Dust Storm Panel Maintenance",
+        "briefing": "The ongoing dust storm has coated solar panels with dust, reducing their efficiency significantly.",
+        "objective": "Clear dust from solar panels to restore 15% of energy generation capacity.",
+        "reward_hint": "Partial recovery of energy production.",
+        "risk": "Exposure to harsh dust and low temperatures during maintena\u2026"
       },
       {
-        "title": "Early Spring Water Survey",
-        "briefing": "Warmer temperatures may reveal new shallow water caches near the colony perimeter.",
-        "objective": "Conduct a survey to identify accessible water sources within 1 km radius.",
-        "reward_hint": "Potential increase in water resources.",
-        "risk": "Risk of delayed return due to terrain obstacles."
+        "title": "Emergency Oxygen Conservation",
+        "briefing": "Oxygen reserves are stable but usage is increasing due to dust storm sheltering protocols.",
+        "objective": "Implement oxygen-saving procedures and recalibrate life support to reduce consumption by 10%.",
+        "reward_hint": "Extended oxygen supply duration.",
+        "risk": "Reduced comfort and potential system recalibration errors."
       },
       {
-        "title": "Material Salvage Operation",
-        "briefing": "Materials can be scavenged from recently exposed rocky outcrops as dust storm residue settles.",
-        "objective": "Collect and process 50 units of raw materials from nearby outcrops.",
-        "reward_hint": "Materials for colony construction and repairs.",
-        "risk": "Potential equipment wear from abrasive dust."
+        "title": "Water Recycling Optimization",
+        "briefing": "Water usage is critical during the dust storm as outdoor collection is impossible.",
+        "objective": "Optimize water recycling systems to increase water recovery by 5%.",
+        "reward_hint": "Slight boost in water reserves.",
+        "risk": "Possible temporary system downtime during optimization."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity levels are high; optimize your solar panels to maximize energy intake."
+        "message": "Dust storm ongoing, expect reduced solar efficiency. Prioritize energy conservation and maintenance."
       },
       {
         "sender": "Helios Prospecting",
         "recipient": "Marco Quinn",
-        "message": "Irina requests coordination for resource sharing given her low oxygen levels."
+        "message": "Requesting assistance in sharing water purification data to improve recycling under storm conditions."
       }
     ],
-    "news_summary": "On Sol 64 during early spring, Mars colonies experience a solar boost increasing energy production capabilities. With no dust storms active, conditions allow for resource surveys and salvage operations. Colonies are advised to optimize solar arrays and explore new water and mate\u2026",
+    "news_summary": "Sol 65 on Mars continues under a challenging early spring dust storm, significantly impacting solar energy production. Colonies are focusing on maintenance and conservation efforts to maintain vital systems. Collaboration between colonies is encouraged to optimize resource manag\u2026",
     "event_flavor": {},
-    "last_generated": "2026-07-19T00:24:49.148879",
-    "last_generated_sol": "Sol 64",
+    "last_generated": "2026-07-20T00:26:29.673937",
+    "last_generated_sol": "Sol 65",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
