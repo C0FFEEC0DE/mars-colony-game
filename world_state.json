@@ -7,14 +7,14 @@
   "temperature": -69,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Trading Vessel Arrives Amid Dust Storm",
   "last_updated": "2026-07-20T00:26:29.673937",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
     "energy": 1180,
-    "food": 2300,
-    "materials": 1000
+    "food": 2400,
+    "materials": 1050
   },
   "leaderboard": [
     {
@@ -239,6 +239,10 @@
     {
       "time": "2026-07-20T00:26:29.673937",
       "event": "AI directive: Dust Storm Reduces Solar Efficiency"
+    },
+    {
+      "time": "2026-07-20T12:41:37.157925",
+      "event": "On Sol 65, a trading ship from Earth has docked despite an active dust storm. Supplies boosted: Food +100, Materials +50 to global reserves."
     }
   ],
   "market": {
@@ -301,7 +305,26 @@
       }
     ],
     "news_summary": "Sol 65 on Mars continues under a challenging early spring dust storm, significantly impacting solar energy production. Colonies are focusing on maintenance and conservation efforts to maintain vital systems. Collaboration between colonies is encouraged to optimize resource manag\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "traders",
+      "headline": "Trading Vessel Arrives Amid Dust Storm",
+      "broadcast": "On Sol 65, a trading ship from Earth has docked despite an active dust storm. Supplies boosted: Food +100, Materials +50 to global reserves.",
+      "source": "github_models",
+      "generated_at": "2026-07-20T12:41:37.157917",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-07-20T00:26:29.673937",
     "last_generated_sol": "Sol 65",
     "last_diagnostics": {
