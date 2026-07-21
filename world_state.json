@@ -2,12 +2,12 @@
   "day": 66,
   "mars_date": "Sol 66",
   "season": "Early Spring",
-  "solar_activity": 99,
+  "solar_activity": 150,
   "dust_storm_active": false,
   "temperature": -41,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Massive Solar Flare Detected",
   "last_updated": "2026-07-21T06:49:11.736552",
   "global_resources": {
     "oxygen": 1000,
@@ -247,6 +247,10 @@
     {
       "time": "2026-07-21T06:49:11.736570",
       "event": "Martian day 66 has begun"
+    },
+    {
+      "time": "2026-07-21T12:31:12.150324",
+      "event": "A massive solar flare has increased radiation levels by 50% for the next cycle. All personnel must seek shelter to minimize exposure."
     }
   ],
   "market": {
@@ -309,7 +313,26 @@
       }
     ],
     "news_summary": "Sol 65 on Mars continues under a challenging early spring dust storm, significantly impacting solar energy production. Colonies are focusing on maintenance and conservation efforts to maintain vital systems. Collaboration between colonies is encouraged to optimize resource manag\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "solar_flare",
+      "headline": "Massive Solar Flare Detected",
+      "broadcast": "A massive solar flare has increased radiation levels by 50% for the next cycle. All personnel must seek shelter to minimize exposure.",
+      "source": "github_models",
+      "generated_at": "2026-07-21T12:31:12.150313",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-07-20T00:26:29.673937",
     "last_generated_sol": "Sol 65",
     "last_diagnostics": {
