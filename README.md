@@ -8,60 +8,61 @@
 ## LIVE WORLD SNAPSHOT
 
 <!-- WORLD_SUMMARY:START -->
-_Auto-updated daily. Last world update: 2026-07-20T00:26:29.673937_
+_Auto-updated daily. Last world update: 2026-07-22T00:24:21.446712_
 
 ```text
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
-║ [SOL] Sol 65 | [SEASON] Early      ║  ║ Dust Storm Reduces Solar           ║
-║ Spring                             ║  ║ Efficiency                         ║
-║ [TEMP] -69C | [SUN] 87% | [STORM]  ║  ║ A persistent dust storm is         ║
-║ YES                                ║  ║ limiting solar panel output,       ║
-║ [EVENT] Trading Vessel Arrives     ║  ║ reducing energy generation across  ║
-║ Amid Dust Storm                    ║  ║ all colonies despite high solar    ║
-║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ activity.                          ║
-║ [O2] 1000 | [H2O] 545 | [E] 1180   ║  ║ EFFECT energy_surge | energy +20   ║
-║ [FOOD] 2400 | [MAT] 1050           ║  ╚════════════════════════════════════╝
+║ [SOL] Sol 66 | [SEASON] Early      ║  ║ Solar Activity Peaks               ║
+║ Spring                             ║  ║ Solar radiation levels have surged ║
+║ [TEMP] -41C | [SUN] 150% | [STORM] ║  ║ to 150%, enhancing energy          ║
+║ NO                                 ║  ║ generation potential across Mars   ║
+║ [EVENT] Underground Ice Deposit    ║  ║ colonies.                          ║
+║ Secured                            ║  ║ EFFECT solar_boost |               ║
+║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ solar_activity +0                  ║
+║ [O2] 1000 | [H2O] 545 | [E] 1180   ║  ╚════════════════════════════════════╝
+║ [FOOD] 2400 | [MAT] 1050           ║                                        
 ║ [MKT] O2 0 H2O 0 F 0 M 0           ║                                        
-║ [AI] Dust Storm Reduces Solar      ║                                        
-║ Efficiency | energy +20            ║                                        
+║ [AI] Solar Activity Peaks |        ║                                        
+║ solar_activity +0                  ║                                        
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
-║ 1. Zoya Kade                       ║  ║ 1. Dust Storm Panel Maintenance    ║
-║    Ares Systems | P1 B4 | S7839    ║  ║    Clear dust from solar panels…   ║
-║ 2. Marco Quinn                     ║  ║ 2. Emergency Oxygen Conservation   ║
-║    Dustline Agro | P1 B3 | S7791   ║  ║    Implement oxygen-saving…        ║
-║ 3. Irina Vale                      ║  ║ 3. Water Recycling Optimization    ║
-║    Helios… | P1 B2 | S6485         ║  ║    Optimize water recycling…       ║
-╚════════════════════════════════════╝  ╚════════════════════════════════════╝
+║ 1. Zoya Kade                       ║  ║ 1. Optimize Solar Arrays           ║
+║    Ares Systems | P1 B4 | S8020    ║  ║    Adjust and optimize solar…      ║
+║ 2. Marco Quinn                     ║  ║ 2. Water Reserve Maintenance       ║
+║    Dustline Agro | P1 B3 | S7908   ║  ║    Inspect and repair water…       ║
+║ 3. Irina Vale                      ║  ╚════════════════════════════════════╝
+║    Helios… | P1 B2 | S6614         ║                                        
+╚════════════════════════════════════╝                                        
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
-║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Dust storm  ║
-║ WATER     545                      ║  ║ ongoing, expect…                   ║
-║ ENERGY    1180                     ║  ║ Helios… -> Marco… | Requesting     ║
-║ FOOD      2400                     ║  ║ assistance in sharing…             ║
+║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Solar flare ║
+║ WATER     545                      ║  ║ alert: Take advantage…             ║
+║ ENERGY    1180                     ║  ║ Helios… -> Marco… | Helios         ║
+║ FOOD      2400                     ║  ║ suggests coordinating…             ║
 ║ MATERIALS 1050                     ║  ╚════════════════════════════════════╝
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Sol 65 on Mars continues under a   ║  ║ 12:41 | On Sol 65, a trading ship… ║
-║ challenging early spring dust      ║  ║ 00:26 | AI directive: Dust Storm…  ║
-║ storm, significantly impacting     ║  ║ 06:49 | 🌪️ Dust storm damaged…     ║
-║ solar energy production. Colonies  ║  ║ 06:49 | Martian day 65 has begun   ║
-║ are focusing on maintenance and    ║  ║ 00:24 | AI directive: Seasonal…    ║
-║ conservation efforts to maintain   ║  ╚════════════════════════════════════╝
-║ vital systems. Collaboration       ║                                        
-║ between colonies is encouraged to  ║                                        
-║ optimize resource manag…           ║                                        
-║ On Sol 65, a trading ship from     ║                                        
-║ Earth has docked despite an active ║                                        
-║ dust storm. Supplies boosted: Food ║                                        
-║ +100, Materials +50 to global      ║                                        
-║ reserves.                          ║                                        
+║ On Sol 66, Mars experiences a      ║  ║ 00:24 | AI directive: Solar…       ║
+║ significant solar activity         ║  ║ 00:24 | On Sol 66, the team…       ║
+║ increase, providing colonies with  ║  ║ 12:31 | A massive solar flare has… ║
+║ an opportunity to enhance energy   ║  ║ 06:49 | Martian day 66 has begun   ║
+║ production. Temperatures remain    ║  ║ 12:41 | On Sol 65, a trading ship… ║
+║ harsh at -41C in early spring,     ║  ╚════════════════════════════════════╝
+║ requiring careful maintenance of   ║                                        
+║ water reserves. Collaboration      ║                                        
+║ among colonies is encouraged…      ║                                        
+║ On Sol 66, the team confirmed a    ║                                        
+║ new underground ice layer,         ║                                        
+║ boosting water reserves by 95      ║                                        
+║ units distributed among Kade,      ║                                        
+║ Vale, and Quinn.                   ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
