@@ -7,7 +7,7 @@
   "temperature": -41,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Massive Solar Flare Detected",
+  "current_event": "Underground Ice Deposit Secured",
   "last_updated": "2026-07-21T06:49:11.736552",
   "global_resources": {
     "oxygen": 1000,
@@ -251,6 +251,10 @@
     {
       "time": "2026-07-21T12:31:12.150324",
       "event": "A massive solar flare has increased radiation levels by 50% for the next cycle. All personnel must seek shelter to minimize exposure."
+    },
+    {
+      "time": "2026-07-22T00:24:11.967103",
+      "event": "On Sol 66, the team confirmed a new underground ice layer, boosting water reserves by 95 units distributed among Kade, Vale, and Quinn."
     }
   ],
   "market": {
@@ -314,11 +318,11 @@
     ],
     "news_summary": "Sol 65 on Mars continues under a challenging early spring dust storm, significantly impacting solar energy production. Colonies are focusing on maintenance and conservation efforts to maintain vital systems. Collaboration between colonies is encouraged to optimize resource manag\u2026",
     "event_flavor": {
-      "event_key": "solar_flare",
-      "headline": "Massive Solar Flare Detected",
-      "broadcast": "A massive solar flare has increased radiation levels by 50% for the next cycle. All personnel must seek shelter to minimize exposure.",
+      "event_key": "ice_discovery",
+      "headline": "Underground Ice Deposit Secured",
+      "broadcast": "On Sol 66, the team confirmed a new underground ice layer, boosting water reserves by 95 units distributed among Kade, Vale, and Quinn.",
       "source": "github_models",
-      "generated_at": "2026-07-21T12:31:12.150313",
+      "generated_at": "2026-07-22T00:24:11.967088",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
