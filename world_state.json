@@ -8,7 +8,7 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Underground Ice Deposit Secured",
-  "last_updated": "2026-07-21T06:49:11.736552",
+  "last_updated": "2026-07-22T00:24:21.446712",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,26 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-06-23T00:35:54.668640",
-      "event": "Despite ongoing dust storm and zero solar activity, Earth trading vessel docks, delivering +100 food and +50 materials to colony reserves."
-    },
-    {
-      "time": "2026-06-23T12:54:24.506938",
-      "event": "On Sol 55, a meteor shower provided a rare resource boost despite ongoing dust storm conditions. Irina Vale and Marco Quinn successfully salvaged 14 and 12 materials respectively."
-    },
-    {
-      "time": "2026-06-24T00:30:51.403766",
-      "event": "During Sol 55, analysis of soil samples revealed unknown bacterial presence despite ongoing dust storm and zero solar activity, signaling potential bio-signatures beneath Mars' surface."
-    },
-    {
-      "time": "2026-06-24T12:41:34.844196",
-      "event": "On Sol 55, amid a persistent dust storm and zero solar activity, sensors recorded a strange 1420 MHz signal. Analysis is underway to determine its origin and significance."
-    },
-    {
-      "time": "2026-06-26T12:40:18.695753",
-      "event": "A severe dust storm is currently active on Sol 55, causing all solar panels to be offline for the next 6 hours. Power management protocols are in effect."
-    },
     {
       "time": "2026-06-27T12:25:13.341670",
       "event": "On Sol 55, during ongoing dust storm conditions and zero solar activity, a strange signal at 1420 MHz was detected. Analysis is underway to determine its origin."
@@ -255,6 +235,10 @@
     {
       "time": "2026-07-22T00:24:11.967103",
       "event": "On Sol 66, the team confirmed a new underground ice layer, boosting water reserves by 95 units distributed among Kade, Vale, and Quinn."
+    },
+    {
+      "time": "2026-07-22T00:24:21.446712",
+      "event": "AI directive: Solar Activity Peaks"
     }
   ],
   "market": {
@@ -265,58 +249,51 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Dust Storm Reduces Solar Efficiency",
-      "summary": "A persistent dust storm is limiting solar panel output, reducing energy generation across all colonies despite high solar activity.",
+      "headline": "Solar Activity Peaks",
+      "summary": "Solar radiation levels have surged to 150%, enhancing energy generation potential across Mars colonies.",
       "effect": {
-        "type": "energy_surge",
-        "magnitude": 20,
+        "type": "solar_boost",
+        "magnitude": 5,
         "result": {
-          "label": "Grid surge",
-          "target": "energy",
-          "delta": 20,
-          "before": 1160,
-          "after": 1180
+          "label": "Solar boost",
+          "target": "solar_activity",
+          "delta": 0,
+          "before": 150,
+          "after": 150
         }
       },
       "source": "github_models",
-      "generated_at": "2026-07-20T00:26:29.673937"
+      "generated_at": "2026-07-22T00:24:21.446712"
     },
     "missions": [
       {
-        "title": "Dust Storm Panel Maintenance",
-        "briefing": "The ongoing dust storm has coated solar panels with dust, reducing their efficiency significantly.",
-        "objective": "Clear dust from solar panels to restore 15% of energy generation capacity.",
-        "reward_hint": "Partial recovery of energy production.",
-        "risk": "Exposure to harsh dust and low temperatures during maintena\u2026"
+        "title": "Optimize Solar Arrays",
+        "briefing": "With heightened solar activity, your colony can maximize energy intake by recalibrating solar panels.",
+        "objective": "Adjust and optimize solar arrays to increase energy output by 10%.",
+        "reward_hint": "Energy reserves boost",
+        "risk": "Potential minor equipment strain during recalibration"
       },
       {
-        "title": "Emergency Oxygen Conservation",
-        "briefing": "Oxygen reserves are stable but usage is increasing due to dust storm sheltering protocols.",
-        "objective": "Implement oxygen-saving procedures and recalibrate life support to reduce consumption by 10%.",
-        "reward_hint": "Extended oxygen supply duration.",
-        "risk": "Reduced comfort and potential system recalibration errors."
-      },
-      {
-        "title": "Water Recycling Optimization",
-        "briefing": "Water usage is critical during the dust storm as outdoor collection is impossible.",
-        "objective": "Optimize water recycling systems to increase water recovery by 5%.",
-        "reward_hint": "Slight boost in water reserves.",
-        "risk": "Possible temporary system downtime during optimization."
+        "title": "Water Reserve Maintenance",
+        "briefing": "Water levels are stable but critical; ensure water storage systems remain fully operational in early spring temperatures.",
+        "objective": "Inspect and repair water storage and recycling units.",
+        "reward_hint": "Prevent water loss, maintain supply",
+        "risk": "Exposure to cold temperatures during repairs"
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Dust storm ongoing, expect reduced solar efficiency. Prioritize energy conservation and maintenance."
+        "message": "Solar flare alert: Take advantage of increased solar radiation to boost energy storage."
       },
       {
         "sender": "Helios Prospecting",
         "recipient": "Marco Quinn",
-        "message": "Requesting assistance in sharing water purification data to improve recycling under storm conditions."
+        "message": "Helios suggests coordinating water resource assessments to maintain supply stability."
       }
     ],
-    "news_summary": "Sol 65 on Mars continues under a challenging early spring dust storm, significantly impacting solar energy production. Colonies are focusing on maintenance and conservation efforts to maintain vital systems. Collaboration between colonies is encouraged to optimize resource manag\u2026",
+    "news_summary": "On Sol 66, Mars experiences a significant solar activity increase, providing colonies with an opportunity to enhance energy production. Temperatures remain harsh at -41C in early spring, requiring careful maintenance of water reserves. Collaboration among colonies is encouraged\u2026",
     "event_flavor": {
       "event_key": "ice_discovery",
       "headline": "Underground Ice Deposit Secured",
@@ -337,19 +314,20 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-07-20T00:26:29.673937",
-    "last_generated_sol": "Sol 65",
+    "last_generated": "2026-07-22T00:24:21.446712",
+    "last_generated_sol": "Sol 66",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
       "api_url": "https://models.github.ai/inference/chat/completions",
       "disabled": false,
-      "token_present": false,
-      "token_source": "none",
-      "status": "cached",
-      "http_status": null,
-      "reason": "daily content already generated for Sol 65",
-      "response_excerpt": ""
+      "token_present": true,
+      "token_source": "GITHUB_TOKEN",
+      "status": "ok",
+      "http_status": 200,
+      "reason": "request succeeded",
+      "response_excerpt": "",
+      "fallback": false
     }
   }
 }
