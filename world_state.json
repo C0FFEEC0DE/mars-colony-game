@@ -1,14 +1,14 @@
 {
-  "day": 67,
-  "mars_date": "Sol 67",
+  "day": 68,
+  "mars_date": "Sol 68",
   "season": "Early Spring",
-  "solar_activity": 101,
+  "solar_activity": 73,
   "dust_storm_active": false,
-  "temperature": -40,
+  "temperature": -79,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Unidentified Structures Detected Near Equatorial Ridge",
-  "last_updated": "2026-07-23T00:26:02.538092",
+  "current_event": null,
+  "last_updated": "2026-07-23T06:48:35.339645",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 8217,
+      "score": 8240,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 8127,
+      "score": 8164,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 6753,
+      "score": 6773,
       "colonists": 1,
       "buildings": 2
     }
@@ -239,6 +239,10 @@
     {
       "time": "2026-07-23T00:26:02.538092",
       "event": "AI directive: Mild Solar Boost Enhances Energy Output"
+    },
+    {
+      "time": "2026-07-23T06:48:35.339662",
+      "event": "Martian day 68 has begun"
     }
   ],
   "market": {
@@ -294,26 +298,7 @@
       }
     ],
     "news_summary": "Mars experiences a mild solar boost on Sol 67 with early spring temperatures around -40C. Colonies are advised to optimize solar energy capture and secure water storage against seasonal changes. Resource levels remain stable with no active dust storms.",
-    "event_flavor": {
-      "event_key": "discovery",
-      "headline": "Unidentified Structures Detected Near Equatorial Ridge",
-      "broadcast": "Sensors have identified formations resembling artificial constructs; analysis ongoing to determine if geological or ancient human activity.",
-      "source": "github_models",
-      "generated_at": "2026-07-23T00:25:53.606597",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-07-23T00:26:02.538092",
     "last_generated_sol": "Sol 67",
     "last_diagnostics": {
