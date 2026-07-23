@@ -7,7 +7,7 @@
   "temperature": -40,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Subsurface Ice Deposit Yields Vital Water",
+  "current_event": "Unidentified Structures Detected Near Equatorial Ridge",
   "last_updated": "2026-07-22T06:50:02.817614",
   "global_resources": {
     "oxygen": 1000,
@@ -247,6 +247,10 @@
     {
       "time": "2026-07-22T12:31:19.855050",
       "event": "On Sol 67, underground ice extraction added 49 units of water to Zoya Kade's reserves, 26 to Irina Vale's, and 32 to Marco Quinn's, enhancing colony hydration amid -40\u00b0C conditions and high solar activity."
+    },
+    {
+      "time": "2026-07-23T00:25:53.606611",
+      "event": "Sensors have identified formations resembling artificial constructs; analysis ongoing to determine if geological or ancient human activity."
     }
   ],
   "market": {
@@ -303,11 +307,11 @@
     ],
     "news_summary": "On Sol 66, Mars experiences a significant solar activity increase, providing colonies with an opportunity to enhance energy production. Temperatures remain harsh at -41C in early spring, requiring careful maintenance of water reserves. Collaboration among colonies is encouraged\u2026",
     "event_flavor": {
-      "event_key": "ice_discovery",
-      "headline": "Subsurface Ice Deposit Yields Vital Water",
-      "broadcast": "On Sol 67, underground ice extraction added 49 units of water to Zoya Kade's reserves, 26 to Irina Vale's, and 32 to Marco Quinn's, enhancing colony hydration amid -40\u00b0C conditions and high solar activity.",
+      "event_key": "discovery",
+      "headline": "Unidentified Structures Detected Near Equatorial Ridge",
+      "broadcast": "Sensors have identified formations resembling artificial constructs; analysis ongoing to determine if geological or ancient human activity.",
       "source": "github_models",
-      "generated_at": "2026-07-22T12:31:19.855037",
+      "generated_at": "2026-07-23T00:25:53.606597",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
