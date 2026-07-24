@@ -7,7 +7,7 @@
   "temperature": -46,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Underground Ice Deposit Secured on Sol 69",
   "last_updated": "2026-07-24T06:48:47.308052",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-07-24T06:48:47.308067",
       "event": "Martian day 69 has begun"
+    },
+    {
+      "time": "2026-07-24T12:28:39.280785",
+      "event": "Exploration team confirmed a significant underground ice discovery. Marco Quinn, Zoya Kade, and Irina Vale each received increased water rations of +42, +32, and +39 units respectively."
     }
   ],
   "market": {
@@ -298,7 +302,26 @@
       }
     ],
     "news_summary": "On Sol 68, Mars experiences a beneficial solar flare enhancing energy production. Colonies are advised to optimize solar arrays to capitalize on the surge. Meanwhile, early spring's cold temperatures necessitate careful maintenance of water systems to ensure stable supplies.",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "ice_discovery",
+      "headline": "Underground Ice Deposit Secured on Sol 69",
+      "broadcast": "Exploration team confirmed a significant underground ice discovery. Marco Quinn, Zoya Kade, and Irina Vale each received increased water rations of +42, +32, and +39 units respectively.",
+      "source": "github_models",
+      "generated_at": "2026-07-24T12:28:39.280772",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-07-24T00:23:51.243921",
     "last_generated_sol": "Sol 68",
     "last_diagnostics": {
