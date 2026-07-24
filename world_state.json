@@ -8,11 +8,11 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Earth Traders Deliver Vital Supplies",
-  "last_updated": "2026-07-23T06:48:35.339645",
+  "last_updated": "2026-07-24T00:23:51.243921",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
-    "energy": 1180,
+    "energy": 1200,
     "food": 2500,
     "materials": 1100
   },
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-07-01T00:36:08.777406",
-      "event": "During Sol 55's ongoing dust storm and zero solar activity, teams located underground ice deposits. Zoya Kade, Irina Vale, and Marco Quinn secured critical water resources totaling 97 units."
-    },
-    {
-      "time": "2026-07-03T00:29:45.427817",
-      "event": "Sol 55 update: A severe sandstorm is underway, forcing all solar panels offline for the next 6 hours. Prepare for reduced power availability."
-    },
-    {
-      "time": "2026-07-03T12:36:21.983170",
-      "event": "Despite ongoing dust storm and zero solar activity, team members Zoya, Irina, and Marco successfully extracted 116 units of water from a newly discovered underground ice reservoir."
-    },
     {
       "time": "2026-07-04T06:58:51.666514",
       "event": "Martian day 56 has begun"
@@ -247,6 +235,10 @@
     {
       "time": "2026-07-23T12:31:01.165999",
       "event": "A trading ship from Earth has docked, boosting our global food reserves by 100 units and materials by 50 units. This influx supports ongoing colony sustainability efforts."
+    },
+    {
+      "time": "2026-07-24T00:23:51.243921",
+      "event": "AI directive: Solar Flare Boosts Energy Output"
     }
   ],
   "market": {
@@ -257,51 +249,51 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Mild Solar Boost Enhances Energy Output",
-      "summary": "A 96% solar activity level has increased available solar energy, providing a modest energy surge for all colonies.",
+      "headline": "Solar Flare Boosts Energy Output",
+      "summary": "A moderate solar flare has increased solar panel efficiency across Mars, providing a temporary energy surge.",
       "effect": {
-        "type": "solar_boost",
-        "magnitude": 5,
+        "type": "energy_surge",
+        "magnitude": 20,
         "result": {
-          "label": "Solar boost",
-          "target": "solar_activity",
-          "delta": 5,
-          "before": 96,
-          "after": 101
+          "label": "Grid surge",
+          "target": "energy",
+          "delta": 20,
+          "before": 1180,
+          "after": 1200
         }
       },
       "source": "github_models",
-      "generated_at": "2026-07-23T00:26:02.538092"
+      "generated_at": "2026-07-24T00:23:51.243921"
     },
     "missions": [
       {
-        "title": "Optimize Solar Arrays for Peak Efficiency",
-        "briefing": "With high solar activity, colonies can maximize energy collection by recalibrating solar panels.",
-        "objective": "Perform maintenance and recalibration on solar arrays to increase energy output by 10%.",
-        "reward_hint": "Increased energy reserves",
-        "risk": "Minor equipment wear during maintenance"
+        "title": "Optimize Solar Arrays",
+        "briefing": "Leverage the current solar flare to maximize energy collection before it subsides.",
+        "objective": "Adjust and fine-tune solar panels for peak efficiency during the surge.",
+        "reward_hint": "Additional energy resources gained.",
+        "risk": "Minimal risk of equipment strain if adjustments are rushed."
       },
       {
-        "title": "Secure Water Reserves Against Early Spring Thaw",
-        "briefing": "Early spring temperatures may cause subtle thawing, risking water cache contamination.",
-        "objective": "Inspect and reinforce water storage to prevent contamination or loss.",
-        "reward_hint": "Preserved water supply",
-        "risk": "Exposure to cold temperatures during inspection"
+        "title": "Water System Maintenance",
+        "briefing": "Ensure water recycling systems operate flawlessly during the seasonal temperature drop.",
+        "objective": "Conduct routine checks and repairs on water filtration and storage units.",
+        "reward_hint": "Sustained water supply and slight resource recovery.",
+        "risk": "Potential minor exposure to cold during repairs."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity remains high; optimize energy systems to capitalize on increased output."
+        "message": "Solar flare detected increasing energy availability. Recommend optimizing solar arrays immediately."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Marco Quinn",
-        "message": "Irina reports water reserves stable; recommend joint inspection to ensure cross-faction safety."
+        "recipient": "Mars Control",
+        "message": "Requesting additional materials to improve water system resilience in early spring conditions."
       }
     ],
-    "news_summary": "Mars experiences a mild solar boost on Sol 67 with early spring temperatures around -40C. Colonies are advised to optimize solar energy capture and secure water storage against seasonal changes. Resource levels remain stable with no active dust storms.",
+    "news_summary": "On Sol 68, Mars experiences a beneficial solar flare enhancing energy production. Colonies are advised to optimize solar arrays to capitalize on the surge. Meanwhile, early spring's cold temperatures necessitate careful maintenance of water systems to ensure stable supplies.",
     "event_flavor": {
       "event_key": "traders",
       "headline": "Earth Traders Deliver Vital Supplies",
@@ -322,8 +314,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-07-23T00:26:02.538092",
-    "last_generated_sol": "Sol 67",
+    "last_generated": "2026-07-24T00:23:51.243921",
+    "last_generated_sol": "Sol 68",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
