@@ -7,7 +7,7 @@
   "temperature": -57,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Meteor Shower Resource Windfall on Sol 70",
   "last_updated": "2026-07-25T06:44:46.307552",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-07-25T06:44:46.307571",
       "event": "Martian day 70 has begun"
+    },
+    {
+      "time": "2026-07-26T12:17:51.635595",
+      "event": "On Sol 70, a meteor shower provided valuable salvage opportunities. Zoya Kade recovered 18 materials and Irina Vale collected 14, boosting colony reserves amid stable conditions and 82% solar activity."
     }
   ],
   "market": {
@@ -305,7 +309,26 @@
       }
     ],
     "news_summary": "On Sol 69 of early spring on Mars, a significant solar boost has enhanced energy production potential across all colonies. Despite cold temperatures of -46C, the absence of dust storms allows for uninterrupted solar array operations. Colonies are focusing on optimizing energy co\u2026",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "meteor_shower",
+      "headline": "Meteor Shower Resource Windfall on Sol 70",
+      "broadcast": "On Sol 70, a meteor shower provided valuable salvage opportunities. Zoya Kade recovered 18 materials and Irina Vale collected 14, boosting colony reserves amid stable conditions and 82% solar activity.",
+      "source": "github_models",
+      "generated_at": "2026-07-26T12:17:51.635583",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-07-25T00:27:19.504664",
     "last_generated_sol": "Sol 69",
     "last_diagnostics": {
