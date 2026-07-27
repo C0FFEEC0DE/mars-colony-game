@@ -7,7 +7,7 @@
   "temperature": -57,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Trading Ship Arrives with Vital Supplies",
+  "current_event": "Underground Ice Deposit Secured on Sol 70",
   "last_updated": "2026-07-25T06:44:46.307552",
   "global_resources": {
     "oxygen": 1000,
@@ -251,6 +251,10 @@
     {
       "time": "2026-07-26T12:21:50.396513",
       "event": "On Sol 70, a trading ship from Earth docked successfully, delivering +100 food units and +50 materials to the colony's global reserves. All systems report stable conditions with no dust storm interference."
+    },
+    {
+      "time": "2026-07-27T00:27:31.242683",
+      "event": "Exploration teams led by Marco Quinn, Zoya Kade, and Irina Vale have located and extracted underground ice, adding a combined 108 units of water to colony reserves amid stable conditions."
     }
   ],
   "market": {
@@ -314,11 +318,11 @@
     ],
     "news_summary": "On Sol 69 of early spring on Mars, a significant solar boost has enhanced energy production potential across all colonies. Despite cold temperatures of -46C, the absence of dust storms allows for uninterrupted solar array operations. Colonies are focusing on optimizing energy co\u2026",
     "event_flavor": {
-      "event_key": "traders",
-      "headline": "Trading Ship Arrives with Vital Supplies",
-      "broadcast": "On Sol 70, a trading ship from Earth docked successfully, delivering +100 food units and +50 materials to the colony's global reserves. All systems report stable conditions with no dust storm interference.",
+      "event_key": "ice_discovery",
+      "headline": "Underground Ice Deposit Secured on Sol 70",
+      "broadcast": "Exploration teams led by Marco Quinn, Zoya Kade, and Irina Vale have located and extracted underground ice, adding a combined 108 units of water to colony reserves amid stable conditions.",
       "source": "github_models",
-      "generated_at": "2026-07-26T12:21:50.396500",
+      "generated_at": "2026-07-27T00:27:31.242669",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
