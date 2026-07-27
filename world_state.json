@@ -18,23 +18,23 @@
   },
   "leaderboard": [
     {
-      "name": "Marco Quinn",
-      "corp": "Dustline Agro",
-      "score": 8613,
-      "colonists": 1,
-      "buildings": 3
-    },
-    {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 8547,
+      "score": 8799,
       "colonists": 1,
       "buildings": 4
     },
     {
+      "name": "Marco Quinn",
+      "corp": "Dustline Agro",
+      "score": 8785,
+      "colonists": 1,
+      "buildings": 3
+    },
+    {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 7022,
+      "score": 7246,
       "colonists": 1,
       "buildings": 2
     }
