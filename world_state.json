@@ -2,13 +2,13 @@
   "day": 70,
   "mars_date": "Sol 70",
   "season": "Early Spring",
-  "solar_activity": 82,
+  "solar_activity": 87,
   "dust_storm_active": false,
   "temperature": -57,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Underground Ice Deposit Secured on Sol 70",
-  "last_updated": "2026-07-25T06:44:46.307552",
+  "last_updated": "2026-07-27T00:27:37.832376",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,26 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-07-05T12:27:06.409751",
-      "event": "Despite the ongoing dust storm and zero solar activity, the Earth trading ship has docked successfully, delivering +100 food units and +50 materials to our global reserves."
-    },
-    {
-      "time": "2026-07-07T00:31:19.350827",
-      "event": "Sol 56 report: Rover imaging reveals unusual rock formations resembling ancient ruins. Analysis ongoing despite current dust storm conditions."
-    },
-    {
-      "time": "2026-07-08T06:48:11.945750",
-      "event": "Martian day 57 has begun"
-    },
-    {
-      "time": "2026-07-08T06:48:11.999813",
-      "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
-    },
-    {
-      "time": "2026-07-09T00:29:16.937257",
-      "event": "AI directive: Dust Storm Reduces Solar Efficiency"
-    },
     {
       "time": "2026-07-10T00:30:39.761726",
       "event": "On Sol 57, a meteor shower impacted the colony during a 75% solar activity dust storm. Zoya Kade salvaged 15 materials, while Irina Vale and Marco Quinn reported structural damage to habitat modules."
@@ -255,6 +235,10 @@
     {
       "time": "2026-07-27T00:27:31.242683",
       "event": "Exploration teams led by Marco Quinn, Zoya Kade, and Irina Vale have located and extracted underground ice, adding a combined 108 units of water to colony reserves amid stable conditions."
+    },
+    {
+      "time": "2026-07-27T00:27:37.832376",
+      "event": "AI directive: Mild Solar Boost Enhances Energy Output"
     }
   ],
   "market": {
@@ -265,8 +249,8 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Unexpected Solar Boost Enhances Energy Output",
-      "summary": "Solar activity has risen to 94%, increasing energy generation efficiency across all colonies today.",
+      "headline": "Mild Solar Boost Enhances Energy Output",
+      "summary": "Solar activity at 82% provides a slight increase in solar panel efficiency, improving energy generation across all colonies.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
@@ -274,49 +258,42 @@
           "label": "Solar boost",
           "target": "solar_activity",
           "delta": 5,
-          "before": 94,
-          "after": 99
+          "before": 82,
+          "after": 87
         }
       },
       "source": "github_models",
-      "generated_at": "2026-07-25T00:27:19.504664"
+      "generated_at": "2026-07-27T00:27:37.832376"
     },
     "missions": [
       {
         "title": "Optimize Solar Arrays",
-        "briefing": "With elevated solar activity, now is the time to calibrate and optimize your solar panels for maximum energy capture.",
-        "objective": "Perform maintenance and realignment on solar arrays to increase energy production by 15%.",
-        "reward_hint": "Boosted energy reserves to support colony operations.",
-        "risk": "Minor equipment wear during recalibration."
+        "briefing": "With the solar boost, now is an ideal time to calibrate solar panels for maximum efficiency.",
+        "objective": "Perform maintenance and recalibration on all solar panels to increase energy output by 10%.",
+        "reward_hint": "Energy reserves will increase steadily over the next sols.",
+        "risk": "Minimal risk of equipment wear during recalibration."
       },
       {
-        "title": "Water Reservoir Inspection",
-        "briefing": "Early spring thaw may cause minor leaks or sediment disturbances in water storage tanks.",
-        "objective": "Inspect and repair water reservoirs to prevent losses and maintain purity levels.",
-        "reward_hint": "Preserved water supplies and reduced contamination risk.",
-        "risk": "Exposure to cold temperatures during inspection."
-      },
-      {
-        "title": "Materials Recycling Initiative",
-        "briefing": "Utilize idle materials and scrap to recycle and repurpose for habitat maintenance and small repairs.",
-        "objective": "Process at least 100 units of scrap materials into usable components.",
-        "reward_hint": "Increased material stockpile for future construction.",
-        "risk": "Operational delays if equipment malfunctions."
+        "title": "Water Recycling System Check",
+        "briefing": "Water reserves remain stable but early spring temperatures require careful system checks to prevent leaks.",
+        "objective": "Inspect and repair the water recycling system to prevent potential loss of water resources.",
+        "reward_hint": "Prevents water loss and secures supply for upcoming sols.",
+        "risk": "Small chance of minor system malfunctions during inspection."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity is currently high; colonies are advised to maximize solar energy harvesting and report any anomalies."
+        "message": "Solar activity is favorable today. Recommend all colonies maximize solar energy collection."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Irina Vale",
-        "message": "Irina, your water reserves look strong, but ensure continued monitoring for seasonal shifts."
+        "recipient": "Marco Quinn",
+        "message": "Irina reports stable conditions in prospecting area, but recommends cautious resource management."
       }
     ],
-    "news_summary": "On Sol 69 of early spring on Mars, a significant solar boost has enhanced energy production potential across all colonies. Despite cold temperatures of -46C, the absence of dust storms allows for uninterrupted solar array operations. Colonies are focusing on optimizing energy co\u2026",
+    "news_summary": "On Sol 70 in early spring, Mars colonies experience a mild solar boost increasing energy production. Temperature remains cold at -57C, with stable resource levels. Colonies are advised to optimize solar infrastructure and maintain water systems to secure resources for the coming\u2026",
     "event_flavor": {
       "event_key": "ice_discovery",
       "headline": "Underground Ice Deposit Secured on Sol 70",
@@ -337,8 +314,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-07-25T00:27:19.504664",
-    "last_generated_sol": "Sol 69",
+    "last_generated": "2026-07-27T00:27:37.832376",
+    "last_generated_sol": "Sol 70",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
