@@ -7,7 +7,7 @@
   "temperature": -57,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Underground Ice Deposit Secured on Sol 70",
+  "current_event": "Meteor Shower Boosts Resource Recovery",
   "last_updated": "2026-07-27T00:27:37.832376",
   "global_resources": {
     "oxygen": 1000,
@@ -239,6 +239,10 @@
     {
       "time": "2026-07-27T00:27:37.832376",
       "event": "AI directive: Mild Solar Boost Enhances Energy Output"
+    },
+    {
+      "time": "2026-07-28T00:24:56.646728",
+      "event": "On Sol 70, a meteor shower provided an unexpected resource windfall. Marco Quinn and Zoya Kade successfully salvaged 17 and 8 materials respectively, enhancing colony reserves."
     }
   ],
   "market": {
@@ -295,11 +299,11 @@
     ],
     "news_summary": "On Sol 70 in early spring, Mars colonies experience a mild solar boost increasing energy production. Temperature remains cold at -57C, with stable resource levels. Colonies are advised to optimize solar infrastructure and maintain water systems to secure resources for the coming\u2026",
     "event_flavor": {
-      "event_key": "ice_discovery",
-      "headline": "Underground Ice Deposit Secured on Sol 70",
-      "broadcast": "Exploration teams led by Marco Quinn, Zoya Kade, and Irina Vale have located and extracted underground ice, adding a combined 108 units of water to colony reserves amid stable conditions.",
+      "event_key": "meteor_shower",
+      "headline": "Meteor Shower Boosts Resource Recovery",
+      "broadcast": "On Sol 70, a meteor shower provided an unexpected resource windfall. Marco Quinn and Zoya Kade successfully salvaged 17 and 8 materials respectively, enhancing colony reserves.",
       "source": "github_models",
-      "generated_at": "2026-07-27T00:27:31.242669",
+      "generated_at": "2026-07-28T00:24:56.646713",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
