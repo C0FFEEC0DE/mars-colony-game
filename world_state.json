@@ -2,12 +2,12 @@
   "day": 72,
   "mars_date": "Sol 72",
   "season": "Early Spring",
-  "solar_activity": 90,
+  "solar_activity": 150,
   "dust_storm_active": false,
   "temperature": -39,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Massive Solar Flare Detected",
   "last_updated": "2026-07-29T06:52:08.428261",
   "global_resources": {
     "oxygen": 1000,
@@ -243,6 +243,10 @@
     {
       "time": "2026-07-29T06:52:08.428280",
       "event": "Martian day 72 has begun"
+    },
+    {
+      "time": "2026-07-29T12:38:57.729523",
+      "event": "A massive solar flare is underway, increasing radiation levels by 50% for the next cycle. All personnel must seek shelter to minimize exposure."
     }
   ],
   "market": {
@@ -298,7 +302,26 @@
       }
     ],
     "news_summary": "On Sol 71 of early spring, Mars colonies experience a mild solar boost increasing energy efficiency. Water resources remain stable but require conservation efforts. Colonies prepare to optimize energy systems and preserve vital resources amid cold temperatures averaging -50C.",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "solar_flare",
+      "headline": "Massive Solar Flare Detected",
+      "broadcast": "A massive solar flare is underway, increasing radiation levels by 50% for the next cycle. All personnel must seek shelter to minimize exposure.",
+      "source": "github_models",
+      "generated_at": "2026-07-29T12:38:57.729508",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "ok",
+        "http_status": 200,
+        "reason": "request succeeded",
+        "response_excerpt": "",
+        "fallback": false
+      }
+    },
     "last_generated": "2026-07-29T00:23:38.509621",
     "last_generated_sol": "Sol 71",
     "last_diagnostics": {
