@@ -2,13 +2,13 @@
   "day": 71,
   "mars_date": "Sol 71",
   "season": "Early Spring",
-  "solar_activity": 89,
+  "solar_activity": 94,
   "dust_storm_active": false,
   "temperature": -50,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Unidentified Signal Detected on 1420 MHz",
-  "last_updated": "2026-07-28T06:50:24.768980",
+  "last_updated": "2026-07-29T00:23:38.509621",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,22 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-07-10T00:30:39.761726",
-      "event": "On Sol 57, a meteor shower impacted the colony during a 75% solar activity dust storm. Zoya Kade salvaged 15 materials, while Irina Vale and Marco Quinn reported structural damage to habitat modules."
-    },
-    {
-      "time": "2026-07-10T12:43:47.854894",
-      "event": "Exploration teams have confirmed the presence of underground caverns beneath the colony site amid ongoing dust storm conditions. These formations may offer valuable shelter and resource opportunities."
-    },
-    {
-      "time": "2026-07-11T00:24:32.276232",
-      "event": "A severe sandstorm is underway, forcing all solar panels offline for the next 6 hours. Temperatures hold at -42\u00b0C with zero solar activity amid ongoing dust conditions."
-    },
-    {
-      "time": "2026-07-11T06:43:33.094752",
-      "event": "Martian day 58 has begun"
-    },
     {
       "time": "2026-07-11T12:16:48.928140",
       "event": "During Sol 58's meteor shower, Zoya Kade recovered 18 materials and Irina Vale collected 6, reinforcing our resource reserves amid stable conditions."
@@ -251,6 +235,10 @@
     {
       "time": "2026-07-28T12:34:31.288840",
       "event": "Mission control confirms reception of a strange signal at 1420 MHz. Analysis underway to determine source and significance."
+    },
+    {
+      "time": "2026-07-29T00:23:38.509621",
+      "event": "AI directive: Mild Solar Boost Increases Energy Output"
     }
   ],
   "market": {
@@ -261,8 +249,8 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Mild Solar Boost Enhances Energy Output",
-      "summary": "Solar activity at 82% provides a slight increase in solar panel efficiency, improving energy generation across all colonies.",
+      "headline": "Mild Solar Boost Increases Energy Output",
+      "summary": "Solar activity is at 89%, providing a modest increase in solar panel efficiency across colonies.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
@@ -270,42 +258,42 @@
           "label": "Solar boost",
           "target": "solar_activity",
           "delta": 5,
-          "before": 82,
-          "after": 87
+          "before": 89,
+          "after": 94
         }
       },
       "source": "github_models",
-      "generated_at": "2026-07-27T00:27:37.832376"
+      "generated_at": "2026-07-29T00:23:38.509621"
     },
     "missions": [
       {
         "title": "Optimize Solar Arrays",
-        "briefing": "With the solar boost, now is an ideal time to calibrate solar panels for maximum efficiency.",
-        "objective": "Perform maintenance and recalibration on all solar panels to increase energy output by 10%.",
-        "reward_hint": "Energy reserves will increase steadily over the next sols.",
-        "risk": "Minimal risk of equipment wear during recalibration."
+        "briefing": "With increased solar activity, optimize your solar panel arrays to maximize energy capture.",
+        "objective": "Adjust and recalibrate solar panels to increase daily energy output by 10%.",
+        "reward_hint": "Gain additional energy reserves to support colony operation\u2026",
+        "risk": "Minimal risk; minor exposure to outdoor environment during\u2026"
       },
       {
-        "title": "Water Recycling System Check",
-        "briefing": "Water reserves remain stable but early spring temperatures require careful system checks to prevent leaks.",
-        "objective": "Inspect and repair the water recycling system to prevent potential loss of water resources.",
-        "reward_hint": "Prevents water loss and secures supply for upcoming sols.",
-        "risk": "Small chance of minor system malfunctions during inspection."
+        "title": "Water Conservation Protocol",
+        "briefing": "Water supplies are moderate; implement conservation measures to extend reserves through early spring.",
+        "objective": "Reduce daily water consumption by 15% through efficient usage and recycling.",
+        "reward_hint": "Preserve water resources for long-term sustainability.",
+        "risk": "Potential minor discomfort from reduced water availability."
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity is favorable today. Recommend all colonies maximize solar energy collection."
+        "message": "Solar activity remains high; recommend optimizing energy systems to capitalize on increased output."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Marco Quinn",
-        "message": "Irina reports stable conditions in prospecting area, but recommends cautious resource management."
+        "recipient": "Irina Vale",
+        "message": "Request status update on resource extraction; current oxygen and food supplies critical."
       }
     ],
-    "news_summary": "On Sol 70 in early spring, Mars colonies experience a mild solar boost increasing energy production. Temperature remains cold at -57C, with stable resource levels. Colonies are advised to optimize solar infrastructure and maintain water systems to secure resources for the coming\u2026",
+    "news_summary": "On Sol 71 of early spring, Mars colonies experience a mild solar boost increasing energy efficiency. Water resources remain stable but require conservation efforts. Colonies prepare to optimize energy systems and preserve vital resources amid cold temperatures averaging -50C.",
     "event_flavor": {
       "event_key": "discovery",
       "headline": "Unidentified Signal Detected on 1420 MHz",
@@ -326,19 +314,20 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-07-27T00:27:37.832376",
-    "last_generated_sol": "Sol 70",
+    "last_generated": "2026-07-29T00:23:38.509621",
+    "last_generated_sol": "Sol 71",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
       "api_url": "https://models.github.ai/inference/chat/completions",
       "disabled": false,
-      "token_present": false,
-      "token_source": "none",
-      "status": "cached",
-      "http_status": null,
-      "reason": "daily content already generated for Sol 70",
-      "response_excerpt": ""
+      "token_present": true,
+      "token_source": "GITHUB_TOKEN",
+      "status": "ok",
+      "http_status": 200,
+      "reason": "request succeeded",
+      "response_excerpt": "",
+      "fallback": false
     }
   }
 }
