@@ -1,14 +1,14 @@
 {
-  "day": 71,
-  "mars_date": "Sol 71",
+  "day": 72,
+  "mars_date": "Sol 72",
   "season": "Early Spring",
-  "solar_activity": 94,
+  "solar_activity": 90,
   "dust_storm_active": false,
-  "temperature": -50,
+  "temperature": -39,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Unidentified Signal Detected on 1420 MHz",
-  "last_updated": "2026-07-29T00:23:38.509621",
+  "current_event": null,
+  "last_updated": "2026-07-29T06:52:08.428261",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 9142,
+      "score": 9177,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 8999,
+      "score": 9020,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 7382,
+      "score": 7400,
       "colonists": 1,
       "buildings": 2
     }
@@ -239,6 +239,10 @@
     {
       "time": "2026-07-29T00:23:38.509621",
       "event": "AI directive: Mild Solar Boost Increases Energy Output"
+    },
+    {
+      "time": "2026-07-29T06:52:08.428280",
+      "event": "Martian day 72 has begun"
     }
   ],
   "market": {
@@ -294,26 +298,7 @@
       }
     ],
     "news_summary": "On Sol 71 of early spring, Mars colonies experience a mild solar boost increasing energy efficiency. Water resources remain stable but require conservation efforts. Colonies prepare to optimize energy systems and preserve vital resources amid cold temperatures averaging -50C.",
-    "event_flavor": {
-      "event_key": "discovery",
-      "headline": "Unidentified Signal Detected on 1420 MHz",
-      "broadcast": "Mission control confirms reception of a strange signal at 1420 MHz. Analysis underway to determine source and significance.",
-      "source": "github_models",
-      "generated_at": "2026-07-28T12:34:31.288826",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-07-29T00:23:38.509621",
     "last_generated_sol": "Sol 71",
     "last_diagnostics": {
