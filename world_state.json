@@ -8,7 +8,7 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "Massive Solar Flare Detected",
-  "last_updated": "2026-07-29T06:52:08.428261",
+  "last_updated": "2026-07-30T00:24:16.582502",
   "global_resources": {
     "oxygen": 1000,
     "water": 545,
@@ -40,22 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-07-11T12:16:48.928140",
-      "event": "During Sol 58's meteor shower, Zoya Kade recovered 18 materials and Irina Vale collected 6, reinforcing our resource reserves amid stable conditions."
-    },
-    {
-      "time": "2026-07-12T00:25:31.837051",
-      "event": "A meteor shower was recorded today with no adverse effects. Zoya Kade successfully salvaged 11 extra materials from debris."
-    },
-    {
-      "time": "2026-07-12T00:25:39.236780",
-      "event": "AI directive: Solar Activity Boosts Energy Output"
-    },
-    {
-      "time": "2026-07-12T06:51:46.290812",
-      "event": "Martian day 59 has begun"
-    },
     {
       "time": "2026-07-13T00:25:32.576776",
       "event": "A trading ship from Earth has docked, delivering +100 food units and +50 materials to the colony's reserves. Resources boosted as we continue to adapt to Mars' harsh environment."
@@ -251,6 +235,10 @@
     {
       "time": "2026-07-30T00:24:08.787666",
       "event": "A powerful solar flare has increased radiation levels by 50% for the next cycle. All personnel must seek radiation shelter immediately."
+    },
+    {
+      "time": "2026-07-30T00:24:16.582502",
+      "event": "AI directive: Solar Activity Spike Boosts Energy Output"
     }
   ],
   "market": {
@@ -261,51 +249,51 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Mild Solar Boost Increases Energy Output",
-      "summary": "Solar activity is at 89%, providing a modest increase in solar panel efficiency across colonies.",
+      "headline": "Solar Activity Spike Boosts Energy Output",
+      "summary": "Solar activity has surged to 150%, increasing energy generation efficiency across all colonies.",
       "effect": {
         "type": "solar_boost",
         "magnitude": 5,
         "result": {
           "label": "Solar boost",
           "target": "solar_activity",
-          "delta": 5,
-          "before": 89,
-          "after": 94
+          "delta": 0,
+          "before": 150,
+          "after": 150
         }
       },
       "source": "github_models",
-      "generated_at": "2026-07-29T00:23:38.509621"
+      "generated_at": "2026-07-30T00:24:16.582502"
     },
     "missions": [
       {
-        "title": "Optimize Solar Arrays",
-        "briefing": "With increased solar activity, optimize your solar panel arrays to maximize energy capture.",
-        "objective": "Adjust and recalibrate solar panels to increase daily energy output by 10%.",
-        "reward_hint": "Gain additional energy reserves to support colony operation\u2026",
-        "risk": "Minimal risk; minor exposure to outdoor environment during\u2026"
+        "title": "Optimize Solar Array Alignment",
+        "briefing": "With heightened solar activity, colonies can improve energy intake by recalibrating solar arrays.",
+        "objective": "Adjust solar panels to maximize energy absorption during peak sunlight hours.",
+        "reward_hint": "Increased energy reserves",
+        "risk": "Extended exposure to radiation during adjustments"
       },
       {
-        "title": "Water Conservation Protocol",
-        "briefing": "Water supplies are moderate; implement conservation measures to extend reserves through early spring.",
-        "objective": "Reduce daily water consumption by 15% through efficient usage and recycling.",
-        "reward_hint": "Preserve water resources for long-term sustainability.",
-        "risk": "Potential minor discomfort from reduced water availability."
+        "title": "Inspect Oxygen Storage Tanks",
+        "briefing": "Ensure oxygen reserves remain stable despite temperature fluctuations in early spring.",
+        "objective": "Perform maintenance checks on oxygen tanks to prevent leaks.",
+        "reward_hint": "Preserved oxygen supply",
+        "risk": "Exposure to low temperatures during inspection"
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
         "recipient": "all colonies",
-        "message": "Solar activity remains high; recommend optimizing energy systems to capitalize on increased output."
+        "message": "Solar activity is high today; optimize your solar arrays to benefit from increased energy output."
       },
       {
         "sender": "Helios Prospecting",
-        "recipient": "Irina Vale",
-        "message": "Request status update on resource extraction; current oxygen and food supplies critical."
+        "recipient": "Marco Quinn",
+        "message": "We have detected promising mineral readings nearby; consider a joint scouting mission."
       }
     ],
-    "news_summary": "On Sol 71 of early spring, Mars colonies experience a mild solar boost increasing energy efficiency. Water resources remain stable but require conservation efforts. Colonies prepare to optimize energy systems and preserve vital resources amid cold temperatures averaging -50C.",
+    "news_summary": "On Sol 72, Mars experiences a spike in solar activity boosting energy generation. Colonies are advised to optimize solar arrays to take advantage. Oxygen supply maintenance remains critical amid cold early spring conditions.",
     "event_flavor": {
       "event_key": "solar_flare",
       "headline": "Massive Solar Flare Detected",
@@ -326,8 +314,8 @@
         "fallback": false
       }
     },
-    "last_generated": "2026-07-29T00:23:38.509621",
-    "last_generated_sol": "Sol 71",
+    "last_generated": "2026-07-30T00:24:16.582502",
+    "last_generated_sol": "Sol 72",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
