@@ -247,6 +247,10 @@
     {
       "time": "2026-07-29T12:38:57.729523",
       "event": "A massive solar flare is underway, increasing radiation levels by 50% for the next cycle. All personnel must seek shelter to minimize exposure."
+    },
+    {
+      "time": "2026-07-30T00:24:08.787666",
+      "event": "A powerful solar flare has increased radiation levels by 50% for the next cycle. All personnel must seek radiation shelter immediately."
     }
   ],
   "market": {
@@ -305,9 +309,9 @@
     "event_flavor": {
       "event_key": "solar_flare",
       "headline": "Massive Solar Flare Detected",
-      "broadcast": "A massive solar flare is underway, increasing radiation levels by 50% for the next cycle. All personnel must seek shelter to minimize exposure.",
+      "broadcast": "A powerful solar flare has increased radiation levels by 50% for the next cycle. All personnel must seek radiation shelter immediately.",
       "source": "github_models",
-      "generated_at": "2026-07-29T12:38:57.729508",
+      "generated_at": "2026-07-30T00:24:08.787651",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
