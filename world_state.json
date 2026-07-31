@@ -2,12 +2,12 @@
   "day": 73,
   "mars_date": "Sol 73",
   "season": "Early Spring",
-  "solar_activity": 150,
-  "dust_storm_active": false,
+  "solar_activity": 0,
+  "dust_storm_active": true,
   "temperature": -43,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Massive Solar Flare Detected",
+  "current_event": "A wall of dust is crossing the grid",
   "last_updated": "2026-07-30T06:50:58.540922",
   "global_resources": {
     "oxygen": 1000,
@@ -247,6 +247,10 @@
     {
       "time": "2026-07-30T12:32:26.553426",
       "event": "A significant solar flare has increased radiation levels by 50% for the next cycle. Secure all personnel in radiation shelters immediately."
+    },
+    {
+      "time": "2026-07-31T00:26:56.756442",
+      "event": "Operations shift to storm posture until visibility returns: \ud83c\udf2a\ufe0f MASSIVE SANDSTORM!; All solar panels offline for 6 hours."
     }
   ],
   "market": {
@@ -303,11 +307,11 @@
     ],
     "news_summary": "On Sol 72, Mars experiences a spike in solar activity boosting energy generation. Colonies are advised to optimize solar arrays to take advantage. Oxygen supply maintenance remains critical amid cold early spring conditions.",
     "event_flavor": {
-      "event_key": "solar_flare",
-      "headline": "Massive Solar Flare Detected",
-      "broadcast": "A significant solar flare has increased radiation levels by 50% for the next cycle. Secure all personnel in radiation shelters immediately.",
-      "source": "github_models",
-      "generated_at": "2026-07-30T12:32:26.553412",
+      "event_key": "sandstorm",
+      "headline": "A wall of dust is crossing the grid",
+      "broadcast": "Operations shift to storm posture until visibility returns: \ud83c\udf2a\ufe0f MASSIVE SANDSTORM!; All solar panels offline for 6 hours.",
+      "source": "fallback",
+      "generated_at": "2026-07-31T00:26:56.756430",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
@@ -315,11 +319,11 @@
         "disabled": false,
         "token_present": true,
         "token_source": "GITHUB_TOKEN",
-        "status": "ok",
-        "http_status": 200,
-        "reason": "request succeeded",
-        "response_excerpt": "",
-        "fallback": false
+        "status": "http_error",
+        "http_status": 410,
+        "reason": "Gone",
+        "response_excerpt": "{\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}\n",
+        "fallback": true
       }
     },
     "last_generated": "2026-07-30T00:24:16.582502",
