@@ -8,9 +8,9 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "A wall of dust is crossing the grid",
-  "last_updated": "2026-07-30T06:50:58.540922",
+  "last_updated": "2026-07-31T00:26:58.427327",
   "global_resources": {
-    "oxygen": 1000,
+    "oxygen": 948,
     "water": 545,
     "energy": 1200,
     "food": 2600,
@@ -40,22 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-07-13T00:25:32.576776",
-      "event": "A trading ship from Earth has docked, delivering +100 food units and +50 materials to the colony's reserves. Resources boosted as we continue to adapt to Mars' harsh environment."
-    },
-    {
-      "time": "2026-07-13T00:25:39.267245",
-      "event": "AI directive: Unexpected Solar Boost Enhances Energy Production"
-    },
-    {
-      "time": "2026-07-13T12:47:30.349683",
-      "event": "A severe sandstorm is currently reducing visibility and has forced all solar panels offline for the next 6 hours. Prepare for limited power availability during this period."
-    },
-    {
-      "time": "2026-07-14T06:42:22.457002",
-      "event": "Martian day 60 has begun"
-    },
     {
       "time": "2026-07-15T00:21:17.778148",
       "event": "AI directive: Early Spring Solar Boost"
@@ -251,6 +235,10 @@
     {
       "time": "2026-07-31T00:26:56.756442",
       "event": "Operations shift to storm posture until visibility returns: \ud83c\udf2a\ufe0f MASSIVE SANDSTORM!; All solar panels offline for 6 hours."
+    },
+    {
+      "time": "2026-07-31T00:26:58.427327",
+      "event": "AI directive: Operations drift into a new rhythm"
     }
   ],
   "market": {
@@ -261,51 +249,58 @@
   },
   "ai": {
     "daily_event": {
-      "headline": "Solar Activity Spike Boosts Energy Output",
-      "summary": "Solar activity has surged to 150%, increasing energy generation efficiency across all colonies.",
+      "headline": "Operations drift into a new rhythm",
+      "summary": "Sol 73 opens with thin margins, nervous operators, and one narrow chance to shift the colony balance before the next weather swing.",
       "effect": {
-        "type": "solar_boost",
-        "magnitude": 5,
+        "type": "oxygen_leak",
+        "magnitude": 52,
         "result": {
-          "label": "Solar boost",
-          "target": "solar_activity",
-          "delta": 0,
-          "before": 150,
-          "after": 150
+          "label": "Oxygen loss",
+          "target": "oxygen",
+          "delta": -52,
+          "before": 1000,
+          "after": 948
         }
       },
-      "source": "github_models",
-      "generated_at": "2026-07-30T00:24:16.582502"
+      "source": "fallback",
+      "generated_at": "2026-07-31T00:26:58.427327"
     },
     "missions": [
       {
-        "title": "Optimize Solar Array Alignment",
-        "briefing": "With heightened solar activity, colonies can improve energy intake by recalibrating solar arrays.",
-        "objective": "Adjust solar panels to maximize energy absorption during peak sunlight hours.",
-        "reward_hint": "Increased energy reserves",
-        "risk": "Extended exposure to radiation during adjustments"
+        "title": "Patch the thermal grid",
+        "briefing": "Heat loss is climbing in the outer utility corridor.",
+        "objective": "Repair or reinforce one weak point before the next cold cycle.",
+        "reward_hint": "Energy stability and spare materials",
+        "risk": "Low risk, high urgency"
       },
       {
-        "title": "Inspect Oxygen Storage Tanks",
-        "briefing": "Ensure oxygen reserves remain stable despite temperature fluctuations in early spring.",
-        "objective": "Perform maintenance checks on oxygen tanks to prevent leaks.",
-        "reward_hint": "Preserved oxygen supply",
-        "risk": "Exposure to low temperatures during inspection"
+        "title": "Secure ridge ice cores",
+        "briefing": "Survey drones marked a shallow ice seam outside the main habitat ring.",
+        "objective": "Bring back intact samples before the sun angle drops.",
+        "reward_hint": "Water and science prestige",
+        "risk": "Moderate exposure and rover wear"
+      },
+      {
+        "title": "Recover a silent beacon",
+        "briefing": "A relay beacon stopped broadcasting west of the colony.",
+        "objective": "Reach the site, recover telemetry, and mark salvageable parts.",
+        "reward_hint": "Materials and map intel",
+        "risk": "Navigation errors in dust"
       }
     ],
     "npc_transmissions": [
       {
         "sender": "Mars Control",
-        "recipient": "all colonies",
-        "message": "Solar activity is high today; optimize your solar arrays to benefit from increased energy output."
+        "recipient": "All colonies",
+        "message": "Keep your reports short and your seals tighter. Conditions are changing faster than forecast."
       },
       {
-        "sender": "Helios Prospecting",
-        "recipient": "Marco Quinn",
-        "message": "We have detected promising mineral readings nearby; consider a joint scouting mission."
+        "sender": "Orbital Relay",
+        "recipient": "Irina Vale",
+        "message": "Your telemetry is the cleanest on the planet today. Do not waste that advantage."
       }
     ],
-    "news_summary": "On Sol 72, Mars experiences a spike in solar activity boosting energy generation. Colonies are advised to optimize solar arrays to take advantage. Oxygen supply maintenance remains critical amid cold early spring conditions.",
+    "news_summary": "Sol 73 begins in Early Spring with 3 active colonies. Temperature holds near -43C, solar activity sits at 0%, and the current leaders are Marco Quinn:9353, Zoya Kade:9140, Irina Vale:7508.",
     "event_flavor": {
       "event_key": "sandstorm",
       "headline": "A wall of dust is crossing the grid",
@@ -326,8 +321,8 @@
         "fallback": true
       }
     },
-    "last_generated": "2026-07-30T00:24:16.582502",
-    "last_generated_sol": "Sol 72",
+    "last_generated": "2026-07-31T00:26:58.427327",
+    "last_generated_sol": "Sol 73",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
@@ -335,11 +330,11 @@
       "disabled": false,
       "token_present": true,
       "token_source": "GITHUB_TOKEN",
-      "status": "ok",
-      "http_status": 200,
-      "reason": "request succeeded",
-      "response_excerpt": "",
-      "fallback": false
+      "status": "http_error",
+      "http_status": 410,
+      "reason": "Gone",
+      "response_excerpt": "{\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}\n",
+      "fallback": true
     }
   }
 }
