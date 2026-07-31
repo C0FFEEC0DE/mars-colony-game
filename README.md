@@ -8,58 +8,57 @@
 ## LIVE WORLD SNAPSHOT
 
 <!-- WORLD_SUMMARY:START -->
-_Auto-updated daily. Last world update: 2026-07-30T00:24:16.582502_
+_Auto-updated daily. Last world update: 2026-07-31T00:26:58.427327_
 
 ```text
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
-║ [SOL] Sol 72 | [SEASON] Early      ║  ║ Solar Activity Spike Boosts Energy ║
-║ Spring                             ║  ║ Output                             ║
-║ [TEMP] -39C | [SUN] 150% | [STORM] ║  ║ Solar activity has surged to 150%, ║
-║ NO                                 ║  ║ increasing energy generation       ║
-║ [EVENT] Massive Solar Flare        ║  ║ efficiency across all colonies.    ║
-║ Detected                           ║  ║ EFFECT solar_boost |               ║
-║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ solar_activity +0                  ║
-║ [O2] 1000 | [H2O] 545 | [E] 1200   ║  ╚════════════════════════════════════╝
+║ [SOL] Sol 73 | [SEASON] Early      ║  ║ Operations drift into a new rhythm ║
+║ Spring                             ║  ║ Sol 73 opens with thin margins,    ║
+║ [TEMP] -43C | [SUN] 0% | [STORM]   ║  ║ nervous operators, and one narrow  ║
+║ YES                                ║  ║ chance to shift the colony balance ║
+║ [EVENT] A wall of dust is crossing ║  ║ before the next weather swing.     ║
+║ the grid                           ║  ║ EFFECT oxygen_leak | oxygen -52    ║
+║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ╚════════════════════════════════════╝
+║ [O2] 948 | [H2O] 545 | [E] 1200    ║                                        
 ║ [FOOD] 2600 | [MAT] 1150           ║                                        
 ║ [MKT] O2 0 H2O 0 F 0 M 0           ║                                        
-║ [AI] Solar Activity Spike Boosts   ║                                        
-║ Energy Output | solar_activity +0  ║                                        
+║ [AI] Operations drift into a new   ║                                        
+║ rhythm | oxygen -52                ║                                        
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
-║ 1. Marco Quinn                     ║  ║ 1. Optimize Solar Array Alignment  ║
-║    Dustline Agro | P1 B3 | S9306   ║  ║    Adjust solar panels to…         ║
-║ 2. Zoya Kade                       ║  ║ 2. Inspect Oxygen Storage Tanks    ║
-║    Ares Systems | P1 B4 | S9107    ║  ║    Perform maintenance checks on…  ║
-║ 3. Irina Vale                      ║  ╚════════════════════════════════════╝
-║    Helios… | P1 B2 | S7478         ║                                        
-╚════════════════════════════════════╝                                        
+║ 1. Marco Quinn                     ║  ║ 1. Patch the thermal grid          ║
+║    Dustline Agro | P1 B3 | S9483   ║  ║    Repair or reinforce one weak…   ║
+║ 2. Zoya Kade                       ║  ║ 2. Secure ridge ice cores          ║
+║    Ares Systems | P1 B4 | S9228    ║  ║    Bring back intact samples…      ║
+║ 3. Irina Vale                      ║  ║ 3. Recover a silent beacon         ║
+║    Helios… | P1 B2 | S7587         ║  ║    Reach the site, recover…        ║
+╚════════════════════════════════════╝  ╚════════════════════════════════════╝
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
-║ OXYGEN    1000                     ║  ║ Mars Control -> all… | Solar       ║
-║ WATER     545                      ║  ║ activity is high today;…           ║
-║ ENERGY    1200                     ║  ║ Helios… -> Marco… | We have        ║
-║ FOOD      2600                     ║  ║ detected promising…                ║
+║ OXYGEN    948                      ║  ║ Mars Control -> All… | Keep your   ║
+║ WATER     545                      ║  ║ reports short and your…            ║
+║ ENERGY    1200                     ║  ║ Orbital Relay -> Irina Vale | Your ║
+║ FOOD      2600                     ║  ║ telemetry is the cleanest on…      ║
 ║ MATERIALS 1150                     ║  ╚════════════════════════════════════╝
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ On Sol 72, Mars experiences a      ║  ║ 00:24 | AI directive: Solar…       ║
-║ spike in solar activity boosting   ║  ║ 00:24 | A powerful solar flare     ║
-║ energy generation. Colonies are    ║  ║ has…                               ║
-║ advised to optimize solar arrays   ║  ║ 12:38 | A massive solar flare is…  ║
-║ to take advantage. Oxygen supply   ║  ║ 06:52 | Martian day 72 has begun   ║
-║ maintenance remains critical amid  ║  ║ 00:23 | AI directive: Mild Solar…  ║
-║ cold early spring conditions.      ║  ╚════════════════════════════════════╝
-║ A powerful solar flare has         ║                                        
-║ increased radiation levels by 50%  ║                                        
-║ for the next cycle. All personnel  ║                                        
-║ must seek radiation shelter        ║                                        
-║ immediately.                       ║                                        
+║ Sol 73 begins in Early Spring with ║  ║ 00:26 | AI directive: Operations…  ║
+║ 3 active colonies. Temperature     ║  ║ 00:26 | Operations shift to storm… ║
+║ holds near -43C, solar activity    ║  ║ 12:32 | A significant solar flare… ║
+║ sits at 0%, and the current        ║  ║ 06:50 | Martian day 73 has begun   ║
+║ leaders are Marco Quinn:9353, Zoya ║  ║ 00:24 | AI directive: Solar…       ║
+║ Kade:9140, Irina Vale:7508.        ║  ╚════════════════════════════════════╝
+║ Operations shift to storm posture  ║                                        
+║ until visibility returns: 🌪️       ║                                        
+║ MASSIVE SANDSTORM!; All solar      ║                                        
+║ panels offline for 6 hours.        ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
