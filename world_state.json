@@ -2,12 +2,12 @@
   "day": 75,
   "mars_date": "Sol 75",
   "season": "Early Spring",
-  "solar_activity": 63,
-  "dust_storm_active": false,
+  "solar_activity": 0,
+  "dust_storm_active": true,
   "temperature": -34,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "A wall of dust is crossing the grid",
   "last_updated": "2026-08-01T06:48:17.512275",
   "global_resources": {
     "oxygen": 948,
@@ -243,6 +243,10 @@
     {
       "time": "2026-08-01T06:48:17.512297",
       "event": "Martian day 75 has begun"
+    },
+    {
+      "time": "2026-08-02T00:27:07.166751",
+      "event": "Operations shift to storm posture until visibility returns: \ud83c\udf2a\ufe0f MASSIVE SANDSTORM!; All solar panels offline for 6 hours."
     }
   ],
   "market": {
@@ -305,7 +309,26 @@
       }
     ],
     "news_summary": "Sol 74 begins in Early Spring with 3 active colonies. Temperature holds near -36C, solar activity sits at 0%, and the current leaders are Marco Quinn:9500, Zoya Kade:9231, Irina Vale:7587.",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "sandstorm",
+      "headline": "A wall of dust is crossing the grid",
+      "broadcast": "Operations shift to storm posture until visibility returns: \ud83c\udf2a\ufe0f MASSIVE SANDSTORM!; All solar panels offline for 6 hours.",
+      "source": "fallback",
+      "generated_at": "2026-08-02T00:27:07.166740",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "http_error",
+        "http_status": 410,
+        "reason": "Gone",
+        "response_excerpt": "{\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}\n",
+        "fallback": true
+      }
+    },
     "last_generated": "2026-08-01T00:25:48.697986",
     "last_generated_sol": "Sol 74",
     "last_diagnostics": {
