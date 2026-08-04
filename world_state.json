@@ -1,14 +1,14 @@
 {
-  "day": 76,
-  "mars_date": "Sol 76",
+  "day": 77,
+  "mars_date": "Sol 77",
   "season": "Early Spring",
-  "solar_activity": 150,
-  "dust_storm_active": true,
-  "temperature": -57,
+  "solar_activity": 64,
+  "dust_storm_active": false,
+  "temperature": -66,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "Radiation monitors spike as the sun lashes the colony",
-  "last_updated": "2026-08-03T00:27:04.152136",
+  "current_event": null,
+  "last_updated": "2026-08-04T06:49:52.487395",
   "global_resources": {
     "oxygen": 948,
     "water": 545,
@@ -20,14 +20,14 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 9704,
+      "score": 9701,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 9429,
+      "score": 9432,
       "colonists": 1,
       "buildings": 4
     },
@@ -243,6 +243,10 @@
     {
       "time": "2026-08-04T00:26:36.913688",
       "event": "Power teams are balancing the surge while shelters stay sealed: \u26a1 MASSIVE SOLAR FLARE!; Energy +50% for next turn; Take cover from radiation."
+    },
+    {
+      "time": "2026-08-04T06:49:52.487410",
+      "event": "Martian day 77 has begun"
     }
   ],
   "market": {
@@ -305,26 +309,7 @@
       }
     ],
     "news_summary": "Sol 76 begins in Early Spring with 3 active colonies. Temperature holds near -57C, solar activity sits at 0%, and the current leaders are Marco Quinn:9686, Zoya Kade:9389, Irina Vale:7717.",
-    "event_flavor": {
-      "event_key": "solar_flare",
-      "headline": "Radiation monitors spike as the sun lashes the colony",
-      "broadcast": "Power teams are balancing the surge while shelters stay sealed: \u26a1 MASSIVE SOLAR FLARE!; Energy +50% for next turn; Take cover from radiation.",
-      "source": "fallback",
-      "generated_at": "2026-08-04T00:26:36.913680",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "http_error",
-        "http_status": 410,
-        "reason": "Gone",
-        "response_excerpt": "{\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}\n",
-        "fallback": true
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-08-03T00:27:04.152136",
     "last_generated_sol": "Sol 76",
     "last_diagnostics": {
