@@ -332,13 +332,12 @@
       "model": "openai/gpt-4.1-mini",
       "api_url": "https://models.github.ai/inference/chat/completions",
       "disabled": false,
-      "token_present": true,
-      "token_source": "GITHUB_TOKEN",
-      "status": "http_error",
-      "http_status": 410,
-      "reason": "Gone",
-      "response_excerpt": "{\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}\n",
-      "fallback": true
+      "token_present": false,
+      "token_source": "none",
+      "status": "cached",
+      "http_status": null,
+      "reason": "daily content already generated for Sol 76",
+      "response_excerpt": ""
     }
   }
 }
