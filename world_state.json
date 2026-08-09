@@ -1,14 +1,14 @@
 {
-  "day": 78,
-  "mars_date": "Sol 78",
+  "day": 79,
+  "mars_date": "Sol 79",
   "season": "Early Spring",
-  "solar_activity": 68,
+  "solar_activity": 98,
   "dust_storm_active": false,
   "temperature": -33,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": null,
-  "last_updated": "2026-08-08T06:37:16.803348",
+  "last_updated": "2026-08-09T06:40:45.515176",
   "global_resources": {
     "oxygen": 948,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 9845,
+      "score": 9885,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 9672,
+      "score": 9736,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 7928,
+      "score": 7980,
       "colonists": 1,
       "buildings": 2
     }
@@ -251,6 +251,10 @@
     {
       "time": "2026-08-08T06:37:16.803363",
       "event": "Martian day 78 has begun"
+    },
+    {
+      "time": "2026-08-09T06:40:45.515191",
+      "event": "Martian day 79 has begun"
     }
   ],
   "market": {
