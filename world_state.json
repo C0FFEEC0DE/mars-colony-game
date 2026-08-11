@@ -1,14 +1,14 @@
 {
-  "day": 79,
-  "mars_date": "Sol 79",
+  "day": 80,
+  "mars_date": "Sol 80",
   "season": "Early Spring",
-  "solar_activity": 98,
+  "solar_activity": 79,
   "dust_storm_active": false,
-  "temperature": -33,
+  "temperature": -67,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "A fresh ice seam opens beneath the regolith",
-  "last_updated": "2026-08-09T06:40:45.515176",
+  "current_event": null,
+  "last_updated": "2026-08-11T06:52:15.310429",
   "global_resources": {
     "oxygen": 948,
     "water": 545,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 9885,
+      "score": 10197,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 9736,
+      "score": 10002,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 7980,
+      "score": 8182,
       "colonists": 1,
       "buildings": 2
     }
@@ -259,6 +259,10 @@
     {
       "time": "2026-08-09T12:32:50.516068",
       "event": "Extraction crews are rerouting drills immediately: \ud83d\udca7 UNDERGROUND ICE DISCOVERED!; Marco Quinn received +32 water; Zoya Kade received +45 water; Irina Vale received +25 water."
+    },
+    {
+      "time": "2026-08-11T06:52:15.310447",
+      "event": "Martian day 80 has begun"
     }
   ],
   "market": {
@@ -321,26 +325,7 @@
       }
     ],
     "news_summary": "Sol 76 begins in Early Spring with 3 active colonies. Temperature holds near -57C, solar activity sits at 0%, and the current leaders are Marco Quinn:9686, Zoya Kade:9389, Irina Vale:7717.",
-    "event_flavor": {
-      "event_key": "ice_discovery",
-      "headline": "A fresh ice seam opens beneath the regolith",
-      "broadcast": "Extraction crews are rerouting drills immediately: \ud83d\udca7 UNDERGROUND ICE DISCOVERED!; Marco Quinn received +32 water; Zoya Kade received +45 water; Irina Vale received +25 water.",
-      "source": "fallback",
-      "generated_at": "2026-08-09T12:32:50.516055",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "http_error",
-        "http_status": 410,
-        "reason": "Gone",
-        "response_excerpt": "{\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}\n",
-        "fallback": true
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-08-03T00:27:04.152136",
     "last_generated_sol": "Sol 76",
     "last_diagnostics": {
