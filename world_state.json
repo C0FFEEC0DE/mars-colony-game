@@ -7,14 +7,14 @@
   "temperature": -67,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "An orbital trader opens an unexpected supply window",
   "last_updated": "2026-08-11T06:52:15.310429",
   "global_resources": {
     "oxygen": 948,
     "water": 545,
     "energy": 1248,
-    "food": 2600,
-    "materials": 1161
+    "food": 2700,
+    "materials": 1211
   },
   "leaderboard": [
     {
@@ -263,6 +263,10 @@
     {
       "time": "2026-08-11T06:52:15.310447",
       "event": "Martian day 80 has begun"
+    },
+    {
+      "time": "2026-08-11T12:44:08.079631",
+      "event": "Cargo handlers move fast before the burn window closes: \ud83d\udef8 TRADING SHIP FROM EARTH!; Food +100 to global pool; Materials +50 to global pool."
     }
   ],
   "market": {
@@ -325,7 +329,26 @@
       }
     ],
     "news_summary": "Sol 76 begins in Early Spring with 3 active colonies. Temperature holds near -57C, solar activity sits at 0%, and the current leaders are Marco Quinn:9686, Zoya Kade:9389, Irina Vale:7717.",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "traders",
+      "headline": "An orbital trader opens an unexpected supply window",
+      "broadcast": "Cargo handlers move fast before the burn window closes: \ud83d\udef8 TRADING SHIP FROM EARTH!; Food +100 to global pool; Materials +50 to global pool.",
+      "source": "fallback",
+      "generated_at": "2026-08-11T12:44:08.079613",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "http_error",
+        "http_status": 410,
+        "reason": "Gone",
+        "response_excerpt": "{\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}\n",
+        "fallback": true
+      }
+    },
     "last_generated": "2026-08-03T00:27:04.152136",
     "last_generated_sol": "Sol 76",
     "last_diagnostics": {
