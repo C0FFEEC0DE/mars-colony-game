@@ -271,6 +271,10 @@
     {
       "time": "2026-08-13T12:51:33.776633",
       "event": "Power teams are balancing the surge while shelters stay sealed: \u26a1 MASSIVE SOLAR FLARE!; Energy +50% for next turn; Take cover from radiation."
+    },
+    {
+      "time": "2026-08-14T12:45:35.843963",
+      "event": "Power teams are balancing the surge while shelters stay sealed: \u26a1 MASSIVE SOLAR FLARE!; Energy +50% for next turn; Take cover from radiation."
     }
   ],
   "market": {
@@ -338,7 +342,7 @@
       "headline": "Radiation monitors spike as the sun lashes the colony",
       "broadcast": "Power teams are balancing the surge while shelters stay sealed: \u26a1 MASSIVE SOLAR FLARE!; Energy +50% for next turn; Take cover from radiation.",
       "source": "fallback",
-      "generated_at": "2026-08-13T12:51:33.776620",
+      "generated_at": "2026-08-14T12:45:35.843947",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
