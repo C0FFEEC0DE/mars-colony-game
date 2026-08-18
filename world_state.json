@@ -2,12 +2,12 @@
   "day": 84,
   "mars_date": "Sol 84",
   "season": "Early Spring",
-  "solar_activity": 61,
+  "solar_activity": 150,
   "dust_storm_active": false,
   "temperature": -53,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": null,
+  "current_event": "Radiation monitors spike as the sun lashes the colony",
   "last_updated": "2026-08-18T06:28:35.045423",
   "global_resources": {
     "oxygen": 948,
@@ -243,6 +243,10 @@
     {
       "time": "2026-08-18T06:28:35.045441",
       "event": "Martian day 84 has begun"
+    },
+    {
+      "time": "2026-08-18T12:28:05.929378",
+      "event": "Power teams are balancing the surge while shelters stay sealed: \u26a1 MASSIVE SOLAR FLARE!; Energy +50% for next turn; Take cover from radiation."
     }
   ],
   "market": {
@@ -305,7 +309,26 @@
       }
     ],
     "news_summary": "Sol 83 begins in Early Spring with 3 active colonies. Temperature holds near -80C, solar activity sits at 86%, and the current leaders are Marco Quinn:10592, Zoya Kade:10541, Irina Vale:8649.",
-    "event_flavor": {},
+    "event_flavor": {
+      "event_key": "solar_flare",
+      "headline": "Radiation monitors spike as the sun lashes the colony",
+      "broadcast": "Power teams are balancing the surge while shelters stay sealed: \u26a1 MASSIVE SOLAR FLARE!; Energy +50% for next turn; Take cover from radiation.",
+      "source": "fallback",
+      "generated_at": "2026-08-18T12:28:05.929363",
+      "diagnostics": {
+        "provider": "github_models",
+        "model": "openai/gpt-4.1-mini",
+        "api_url": "https://models.github.ai/inference/chat/completions",
+        "disabled": false,
+        "token_present": true,
+        "token_source": "GITHUB_TOKEN",
+        "status": "http_error",
+        "http_status": 410,
+        "reason": "Gone",
+        "response_excerpt": "{\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}\n",
+        "fallback": true
+      }
+    },
     "last_generated": "2026-08-18T00:45:21.059959",
     "last_generated_sol": "Sol 83",
     "last_diagnostics": {
