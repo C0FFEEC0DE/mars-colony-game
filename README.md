@@ -8,35 +8,35 @@
 ## LIVE WORLD SNAPSHOT
 
 <!-- WORLD_SUMMARY:START -->
-_Auto-updated daily. Last world update: 2026-08-19T00:45:19.965176_
+_Auto-updated daily. Last world update: 2026-08-20T00:45:26.313579_
 
 ```text
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
-║ [SOL] Sol 84 | [SEASON] Early      ║  ║ Operations drift into a new rhythm ║
-║ Spring                             ║  ║ Sol 84 opens with thin margins,    ║
-║ [TEMP] -53C | [SUN] 150% | [STORM] ║  ║ nervous operators, and one narrow  ║
-║ NO                                 ║  ║ chance to shift the colony balance ║
-║ [EVENT] Research teams report a    ║  ║ before the next weather swing.     ║
-║ discovery worth a second look      ║  ║ EFFECT energy_surge | energy +27   ║
+║ [SOL] Sol 85 | [SEASON] Early      ║  ║ Operations drift into a new rhythm ║
+║ Spring                             ║  ║ Sol 85 opens with thin margins,    ║
+║ [TEMP] -67C | [SUN] 0% | [STORM]   ║  ║ nervous operators, and one narrow  ║
+║ YES                                ║  ║ chance to shift the colony balance ║
+║ [EVENT] A wall of dust is crossing ║  ║ before the next weather swing.     ║
+║ the grid                           ║  ║ EFFECT oxygen_leak | oxygen -57    ║
 ║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ╚════════════════════════════════════╝
-║ [O2] 948 | [H2O] 652 | [E] 1275    ║                                        
+║ [O2] 891 | [H2O] 652 | [E] 1275    ║                                        
 ║ [FOOD] 2729 | [MAT] 1211           ║                                        
 ║ [MKT] O2 0 H2O 0 F 0 M 0           ║                                        
 ║ [AI] Operations drift into a new   ║                                        
-║ rhythm | energy +27                ║                                        
+║ rhythm | oxygen -57                ║                                        
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
-║ 1. Marco Quinn                     ║  ║ 1. Secure ridge ice cores          ║
-║    Dustline Agro | P1 B3 | S10850  ║  ║    Bring back intact samples…      ║
+║ 1. Marco Quinn                     ║  ║ 1. Recover a silent beacon         ║
+║    Dustline Agro | P1 B3 | S10925  ║  ║    Reach the site, recover…        ║
 ║ 2. Zoya Kade                       ║  ║ 2. Patch the thermal grid          ║
-║    Ares Systems | P1 B4 | S10747   ║  ║    Repair or reinforce one weak…   ║
-║ 3. Irina Vale                      ║  ║ 3. Recover a silent beacon         ║
-║    Helios… | P1 B2 | S8848         ║  ║    Reach the site, recover…        ║
+║    Ares Systems | P1 B4 | S10806   ║  ║    Repair or reinforce one weak…   ║
+║ 3. Irina Vale                      ║  ║ 3. Secure ridge ice cores          ║
+║    Helios… | P1 B2 | S8895         ║  ║    Bring back intact samples…      ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
-║ OXYGEN    948                      ║  ║ Mars Control -> All… | Keep your   ║
+║ OXYGEN    891                      ║  ║ Mars Control -> All… | Keep your   ║
 ║ WATER     652                      ║  ║ reports short and your…            ║
 ║ ENERGY    1275                     ║  ║ Orbital Relay -> Irina Vale | Your ║
 ║ FOOD      2729                     ║  ║ telemetry is the cleanest on…      ║
@@ -44,19 +44,21 @@ _Auto-updated daily. Last world update: 2026-08-19T00:45:19.965176_
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Sol 84 begins in Early Spring with ║  ║ 00:45 | AI directive: Operations…  ║
-║ 3 active colonies. Temperature     ║  ║ 00:45 | Science crews are locking… ║
-║ holds near -53C, solar activity    ║  ║ 12:28 | Power teams are balancing… ║
-║ sits at 150%, and the current      ║  ║ 06:28 | Martian day 84 has begun   ║
-║ leaders are Marco Quinn:10727,     ║  ║ 00:45 | AI directive: Operations…  ║
-║ Zoya Kade:10666, Irina Vale:8776.  ║  ╚════════════════════════════════════╝
-║ Science crews are locking the site ║                                        
-║ down for analysis: 🧪 Unknown       ║                                        
-║ bacteria in soil sample.           ║                                        
+║ Sol 85 begins in Early Spring with ║  ║ 00:45 | AI directive: Operations…  ║
+║ 3 active colonies. Temperature     ║  ║ 12:28 | Operations shift to storm… ║
+║ holds near -67C, solar activity    ║  ║ 06:29 | Martian day 85 has begun   ║
+║ sits at 0%, and the current        ║  ║ 00:45 | AI directive: Operations…  ║
+║ leaders are Marco Quinn:10897,     ║  ║ 00:45 | Science crews are locking… ║
+║ Zoya Kade:10780, Irina Vale:8878.  ║  ╚════════════════════════════════════╝
+║ Operations shift to storm posture  ║                                        
+║ until visibility returns: 🌪️       ║                                        
+║ MASSIVE SANDSTORM!; All solar      ║                                        
+║ panels offline for 6 hours.        ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
