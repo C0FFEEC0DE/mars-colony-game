@@ -1,14 +1,14 @@
 {
-  "day": 85,
-  "mars_date": "Sol 85",
+  "day": 86,
+  "mars_date": "Sol 86",
   "season": "Early Spring",
-  "solar_activity": 0,
-  "dust_storm_active": true,
-  "temperature": -67,
+  "solar_activity": 90,
+  "dust_storm_active": false,
+  "temperature": -72,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "A wall of dust is crossing the grid",
-  "last_updated": "2026-08-20T00:45:26.313579",
+  "current_event": null,
+  "last_updated": "2026-08-20T06:30:43.518125",
   "global_resources": {
     "oxygen": 891,
     "water": 652,
@@ -20,14 +20,14 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 10925,
+      "score": 10922,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 10806,
+      "score": 10809,
       "colonists": 1,
       "buildings": 4
     },
@@ -239,6 +239,10 @@
     {
       "time": "2026-08-20T00:45:26.313579",
       "event": "AI directive: Operations drift into a new rhythm"
+    },
+    {
+      "time": "2026-08-20T06:30:43.518141",
+      "event": "Martian day 86 has begun"
     }
   ],
   "market": {
@@ -301,26 +305,7 @@
       }
     ],
     "news_summary": "Sol 85 begins in Early Spring with 3 active colonies. Temperature holds near -67C, solar activity sits at 0%, and the current leaders are Marco Quinn:10897, Zoya Kade:10780, Irina Vale:8878.",
-    "event_flavor": {
-      "event_key": "sandstorm",
-      "headline": "A wall of dust is crossing the grid",
-      "broadcast": "Operations shift to storm posture until visibility returns: \ud83c\udf2a\ufe0f MASSIVE SANDSTORM!; All solar panels offline for 6 hours.",
-      "source": "fallback",
-      "generated_at": "2026-08-19T12:28:34.392567",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "http_error",
-        "http_status": 410,
-        "reason": "Gone",
-        "response_excerpt": "{\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}\n",
-        "fallback": true
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-08-20T00:45:26.313579",
     "last_generated_sol": "Sol 85",
     "last_diagnostics": {
