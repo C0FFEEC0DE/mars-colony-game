@@ -2,13 +2,13 @@
   "day": 88,
   "mars_date": "Sol 88",
   "season": "Early Spring",
-  "solar_activity": 84,
+  "solar_activity": 92,
   "dust_storm_active": false,
   "temperature": -43,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "An orbital trader opens an unexpected supply window",
-  "last_updated": "2026-08-22T06:24:45.327555",
+  "last_updated": "2026-08-23T00:51:08.669218",
   "global_resources": {
     "oxygen": 891,
     "water": 652,
@@ -40,18 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-07-29T12:38:57.729523",
-      "event": "A massive solar flare is underway, increasing radiation levels by 50% for the next cycle. All personnel must seek shelter to minimize exposure."
-    },
-    {
-      "time": "2026-07-30T00:24:08.787666",
-      "event": "A powerful solar flare has increased radiation levels by 50% for the next cycle. All personnel must seek radiation shelter immediately."
-    },
-    {
-      "time": "2026-07-30T00:24:16.582502",
-      "event": "AI directive: Solar Activity Spike Boosts Energy Output"
-    },
     {
       "time": "2026-07-30T06:50:58.540940",
       "event": "Martian day 73 has begun"
@@ -247,6 +235,10 @@
     {
       "time": "2026-08-23T00:51:06.876572",
       "event": "Cargo handlers move fast before the burn window closes: \ud83d\udef8 TRADING SHIP FROM EARTH!; Food +100 to global pool; Materials +50 to global pool."
+    },
+    {
+      "time": "2026-08-23T00:51:08.669218",
+      "event": "AI directive: Operations drift into a new rhythm"
     }
   ],
   "market": {
@@ -258,22 +250,29 @@
   "ai": {
     "daily_event": {
       "headline": "Operations drift into a new rhythm",
-      "summary": "Sol 87 opens with thin margins, nervous operators, and one narrow chance to shift the colony balance before the next weather swing.",
+      "summary": "Sol 88 opens with thin margins, nervous operators, and one narrow chance to shift the colony balance before the next weather swing.",
       "effect": {
         "type": "solar_boost",
-        "magnitude": 12,
+        "magnitude": 8,
         "result": {
           "label": "Solar boost",
           "target": "solar_activity",
-          "delta": 12,
-          "before": 77,
-          "after": 89
+          "delta": 8,
+          "before": 84,
+          "after": 92
         }
       },
       "source": "fallback",
-      "generated_at": "2026-08-22T00:45:28.528733"
+      "generated_at": "2026-08-23T00:51:08.669218"
     },
     "missions": [
+      {
+        "title": "Patch the thermal grid",
+        "briefing": "Heat loss is climbing in the outer utility corridor.",
+        "objective": "Repair or reinforce one weak point before the next cold cycle.",
+        "reward_hint": "Energy stability and spare materials",
+        "risk": "Low risk, high urgency"
+      },
       {
         "title": "Secure ridge ice cores",
         "briefing": "Survey drones marked a shallow ice seam outside the main habitat ring.",
@@ -287,13 +286,6 @@
         "objective": "Reach the site, recover telemetry, and mark salvageable parts.",
         "reward_hint": "Materials and map intel",
         "risk": "Navigation errors in dust"
-      },
-      {
-        "title": "Patch the thermal grid",
-        "briefing": "Heat loss is climbing in the outer utility corridor.",
-        "objective": "Repair or reinforce one weak point before the next cold cycle.",
-        "reward_hint": "Energy stability and spare materials",
-        "risk": "Low risk, high urgency"
       }
     ],
     "npc_transmissions": [
@@ -308,7 +300,7 @@
         "message": "Your telemetry is the cleanest on the planet today. Do not waste that advantage."
       }
     ],
-    "news_summary": "Sol 87 begins in Early Spring with 3 active colonies. Temperature holds near -37C, solar activity sits at 77%, and the current leaders are Marco Quinn:10994, Zoya Kade:10905, Irina Vale:8979.",
+    "news_summary": "Sol 88 begins in Early Spring with 3 active colonies. Temperature holds near -43C, solar activity sits at 84%, and the current leaders are Marco Quinn:11044, Zoya Kade:10979, Irina Vale:9041.",
     "event_flavor": {
       "event_key": "traders",
       "headline": "An orbital trader opens an unexpected supply window",
@@ -329,8 +321,8 @@
         "fallback": true
       }
     },
-    "last_generated": "2026-08-22T00:45:28.528733",
-    "last_generated_sol": "Sol 87",
+    "last_generated": "2026-08-23T00:51:08.669218",
+    "last_generated_sol": "Sol 88",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
