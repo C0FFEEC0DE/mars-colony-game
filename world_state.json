@@ -1,14 +1,14 @@
 {
-  "day": 89,
-  "mars_date": "Sol 89",
+  "day": 90,
+  "mars_date": "Sol 90",
   "season": "Early Spring",
-  "solar_activity": 79,
+  "solar_activity": 73,
   "dust_storm_active": false,
-  "temperature": -31,
+  "temperature": -51,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "A fresh ice seam opens beneath the regolith",
-  "last_updated": "2026-08-24T00:48:19.968922",
+  "current_event": null,
+  "last_updated": "2026-08-24T06:39:11.353199",
   "global_resources": {
     "oxygen": 891,
     "water": 652,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 11222,
+      "score": 11254,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 11159,
+      "score": 11177,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 9222,
+      "score": 9237,
       "colonists": 1,
       "buildings": 2
     }
@@ -239,6 +239,10 @@
     {
       "time": "2026-08-24T00:48:19.968922",
       "event": "AI directive: Operations drift into a new rhythm"
+    },
+    {
+      "time": "2026-08-24T06:39:11.353215",
+      "event": "Martian day 90 has begun"
     }
   ],
   "market": {
@@ -301,26 +305,7 @@
       }
     ],
     "news_summary": "Sol 89 begins in Early Spring with 3 active colonies. Temperature holds near -31C, solar activity sits at 79%, and the current leaders are Marco Quinn:11098, Zoya Kade:11057, Irina Vale:9107.",
-    "event_flavor": {
-      "event_key": "ice_discovery",
-      "headline": "A fresh ice seam opens beneath the regolith",
-      "broadcast": "Extraction crews are rerouting drills immediately: \ud83d\udca7 UNDERGROUND ICE DISCOVERED!; Irina Vale received +35 water; Zoya Kade received +24 water; Marco Quinn received +44 water.",
-      "source": "fallback",
-      "generated_at": "2026-08-24T00:48:18.560947",
-      "diagnostics": {
-        "provider": "github_models",
-        "model": "openai/gpt-4.1-mini",
-        "api_url": "https://models.github.ai/inference/chat/completions",
-        "disabled": false,
-        "token_present": true,
-        "token_source": "GITHUB_TOKEN",
-        "status": "http_error",
-        "http_status": 410,
-        "reason": "Gone",
-        "response_excerpt": "{\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}\n",
-        "fallback": true
-      }
-    },
+    "event_flavor": {},
     "last_generated": "2026-08-24T00:48:19.968922",
     "last_generated_sol": "Sol 89",
     "last_diagnostics": {
