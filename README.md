@@ -8,57 +8,59 @@
 ## LIVE WORLD SNAPSHOT
 
 <!-- WORLD_SUMMARY:START -->
-_Auto-updated daily. Last world update: 2026-08-23T00:51:08.669218_
+_Auto-updated daily. Last world update: 2026-08-24T00:48:19.968922_
 
 ```text
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
-║ [SOL] Sol 88 | [SEASON] Early      ║  ║ Operations drift into a new rhythm ║
-║ Spring                             ║  ║ Sol 88 opens with thin margins,    ║
-║ [TEMP] -43C | [SUN] 92% | [STORM]  ║  ║ nervous operators, and one narrow  ║
+║ [SOL] Sol 89 | [SEASON] Early      ║  ║ Operations drift into a new rhythm ║
+║ Spring                             ║  ║ Sol 89 opens with thin margins,    ║
+║ [TEMP] -31C | [SUN] 79% | [STORM]  ║  ║ nervous operators, and one narrow  ║
 ║ NO                                 ║  ║ chance to shift the colony balance ║
-║ [EVENT] An orbital trader opens an ║  ║ before the next weather swing.     ║
-║ unexpected supply window           ║  ║ EFFECT solar_boost |               ║
-║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ║ solar_activity +8                  ║
-║ [O2] 891 | [H2O] 652 | [E] 1275    ║  ╚════════════════════════════════════╝
+║ [EVENT] A fresh ice seam opens     ║  ║ before the next weather swing.     ║
+║ beneath the regolith               ║  ║ EFFECT energy_surge | energy +52   ║
+║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ╚════════════════════════════════════╝
+║ [O2] 891 | [H2O] 652 | [E] 1327    ║                                        
 ║ [FOOD] 2929 | [MAT] 1335           ║                                        
 ║ [MKT] O2 0 H2O 0 F 0 M 0           ║                                        
 ║ [AI] Operations drift into a new   ║                                        
-║ rhythm | solar_activity +8         ║                                        
+║ rhythm | energy +52                ║                                        
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
-║ 1. Marco Quinn                     ║  ║ 1. Patch the thermal grid          ║
-║    Dustline Agro | P1 B3 | S11083  ║  ║    Repair or reinforce one weak…   ║
+║ 1. Marco Quinn                     ║  ║ 1. Recover a silent beacon         ║
+║    Dustline Agro | P1 B3 | S11222  ║  ║    Reach the site, recover…        ║
 ║ 2. Zoya Kade                       ║  ║ 2. Secure ridge ice cores          ║
-║    Ares Systems | P1 B4 | S11036   ║  ║    Bring back intact samples…      ║
-║ 3. Irina Vale                      ║  ║ 3. Recover a silent beacon         ║
-║    Helios… | P1 B2 | S9089         ║  ║    Reach the site, recover…        ║
+║    Ares Systems | P1 B4 | S11159   ║  ║    Bring back intact samples…      ║
+║ 3. Irina Vale                      ║  ║ 3. Patch the thermal grid          ║
+║    Helios… | P1 B2 | S9222         ║  ║    Repair or reinforce one weak…   ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
 ║ OXYGEN    891                      ║  ║ Mars Control -> All… | Keep your   ║
 ║ WATER     652                      ║  ║ reports short and your…            ║
-║ ENERGY    1275                     ║  ║ Orbital Relay -> Irina Vale | Your ║
+║ ENERGY    1327                     ║  ║ Orbital Relay -> Irina Vale | Your ║
 ║ FOOD      2929                     ║  ║ telemetry is the cleanest on…      ║
 ║ MATERIALS 1335                     ║  ╚════════════════════════════════════╝
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Sol 88 begins in Early Spring with ║  ║ 00:51 | AI directive: Operations…  ║
-║ 3 active colonies. Temperature     ║  ║ 00:51 | Cargo handlers move fast…  ║
-║ holds near -43C, solar activity    ║  ║ 06:24 | Martian day 88 has begun   ║
-║ sits at 84%, and the current       ║  ║ 00:45 | AI directive: Operations…  ║
-║ leaders are Marco Quinn:11044,     ║  ║ 12:29 | Cargo handlers move fast…  ║
-║ Zoya Kade:10979, Irina Vale:9041.  ║  ╚════════════════════════════════════╝
-║ Cargo handlers move fast before    ║                                        
-║ the burn window closes: 🛸 TRADING  ║                                        
-║ SHIP FROM EARTH!; Food +100 to     ║                                        
-║ global pool; Materials +50 to      ║                                        
-║ global pool.                       ║                                        
+║ Sol 89 begins in Early Spring with ║  ║ 00:48 | AI directive: Operations…  ║
+║ 3 active colonies. Temperature     ║  ║ 00:48 | Extraction crews are…      ║
+║ holds near -31C, solar activity    ║  ║ 06:26 | Martian day 89 has begun   ║
+║ sits at 79%, and the current       ║  ║ 00:51 | AI directive: Operations…  ║
+║ leaders are Marco Quinn:11098,     ║  ║ 00:51 | Cargo handlers move fast…  ║
+║ Zoya Kade:11057, Irina Vale:9107.  ║  ╚════════════════════════════════════╝
+║ Extraction crews are rerouting     ║                                        
+║ drills immediately: 💧 UNDERGROUND  ║                                        
+║ ICE DISCOVERED!; Irina Vale        ║                                        
+║ received +35 water; Zoya Kade      ║                                        
+║ received +24 water; Marco Quinn    ║                                        
+║ received +44 water.                ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
