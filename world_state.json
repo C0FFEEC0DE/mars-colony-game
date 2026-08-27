@@ -1,14 +1,14 @@
 {
-  "day": 92,
-  "mars_date": "Sol 92",
+  "day": 93,
+  "mars_date": "Sol 93",
   "season": "Early Spring",
-  "solar_activity": 90,
+  "solar_activity": 87,
   "dust_storm_active": true,
-  "temperature": -69,
+  "temperature": -68,
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": null,
-  "last_updated": "2026-08-26T06:33:34.325192",
+  "last_updated": "2026-08-27T06:21:34.007860",
   "global_resources": {
     "oxygen": 891,
     "water": 652,
@@ -20,21 +20,21 @@
     {
       "name": "Marco Quinn",
       "corp": "Dustline Agro",
-      "score": 11448,
+      "score": 11442,
       "colonists": 1,
       "buildings": 3
     },
     {
       "name": "Zoya Kade",
       "corp": "Ares Systems",
-      "score": 11282,
+      "score": 11257,
       "colonists": 1,
       "buildings": 4
     },
     {
       "name": "Irina Vale",
       "corp": "Helios Prospecting",
-      "score": 9313,
+      "score": 9270,
       "colonists": 1,
       "buildings": 2
     }
@@ -250,6 +250,14 @@
     },
     {
       "time": "2026-08-26T06:33:34.377531",
+      "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
+    },
+    {
+      "time": "2026-08-27T06:21:34.007881",
+      "event": "Martian day 93 has begun"
+    },
+    {
+      "time": "2026-08-27T06:21:34.054853",
       "event": "\ud83c\udf2a\ufe0f Dust storm damaged colonies!"
     }
   ],
