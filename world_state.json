@@ -275,6 +275,10 @@
     {
       "time": "2026-10-07T12:23:28.416184",
       "event": "Operations shift to storm posture until visibility returns: \ud83c\udf2a\ufe0f MASSIVE SANDSTORM!; All solar panels offline for 6 hours."
+    },
+    {
+      "time": "2026-10-08T12:32:50.705135",
+      "event": "Operations shift to storm posture until visibility returns: \ud83c\udf2a\ufe0f MASSIVE SANDSTORM!; All solar panels offline for 6 hours."
     }
   ],
   "market": {
@@ -342,7 +346,7 @@
       "headline": "A wall of dust is crossing the grid",
       "broadcast": "Operations shift to storm posture until visibility returns: \ud83c\udf2a\ufe0f MASSIVE SANDSTORM!; All solar panels offline for 6 hours.",
       "source": "fallback",
-      "generated_at": "2026-10-07T12:23:28.416171",
+      "generated_at": "2026-10-08T12:32:50.705123",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
