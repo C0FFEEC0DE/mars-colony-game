@@ -8,12 +8,12 @@
   "active_colonists": 3,
   "total_buildings": 9,
   "current_event": "An orbital trader opens an unexpected supply window",
-  "last_updated": "2026-10-13T06:08:35.538756",
+  "last_updated": "2026-11-03T00:13:57.492429",
   "global_resources": {
     "oxygen": 891,
     "water": 652,
     "energy": 1389,
-    "food": 3129,
+    "food": 3174,
     "materials": 1435
   },
   "leaderboard": [
@@ -40,66 +40,6 @@
     }
   ],
   "events_log": [
-    {
-      "time": "2026-08-01T00:25:48.697986",
-      "event": "AI directive: Operations drift into a new rhythm"
-    },
-    {
-      "time": "2026-08-01T06:48:17.512297",
-      "event": "Martian day 75 has begun"
-    },
-    {
-      "time": "2026-08-02T00:27:07.166751",
-      "event": "Operations shift to storm posture until visibility returns: \ud83c\udf2a\ufe0f MASSIVE SANDSTORM!; All solar panels offline for 6 hours."
-    },
-    {
-      "time": "2026-08-02T00:27:08.880833",
-      "event": "AI directive: Operations drift into a new rhythm"
-    },
-    {
-      "time": "2026-08-02T06:51:19.304559",
-      "event": "Martian day 76 has begun"
-    },
-    {
-      "time": "2026-08-02T12:20:56.958631",
-      "event": "Operations shift to storm posture until visibility returns: \ud83c\udf2a\ufe0f MASSIVE SANDSTORM!; All solar panels offline for 6 hours."
-    },
-    {
-      "time": "2026-08-03T00:27:04.152136",
-      "event": "AI directive: Operations drift into a new rhythm"
-    },
-    {
-      "time": "2026-08-04T00:26:36.913688",
-      "event": "Power teams are balancing the surge while shelters stay sealed: \u26a1 MASSIVE SOLAR FLARE!; Energy +50% for next turn; Take cover from radiation."
-    },
-    {
-      "time": "2026-08-04T06:49:52.487410",
-      "event": "Martian day 77 has begun"
-    },
-    {
-      "time": "2026-08-08T06:37:16.803363",
-      "event": "Martian day 78 has begun"
-    },
-    {
-      "time": "2026-08-09T06:40:45.515191",
-      "event": "Martian day 79 has begun"
-    },
-    {
-      "time": "2026-08-09T12:32:50.516068",
-      "event": "Extraction crews are rerouting drills immediately: \ud83d\udca7 UNDERGROUND ICE DISCOVERED!; Marco Quinn received +32 water; Zoya Kade received +45 water; Irina Vale received +25 water."
-    },
-    {
-      "time": "2026-08-11T06:52:15.310447",
-      "event": "Martian day 80 has begun"
-    },
-    {
-      "time": "2026-08-11T12:44:08.079631",
-      "event": "Cargo handlers move fast before the burn window closes: \ud83d\udef8 TRADING SHIP FROM EARTH!; Food +100 to global pool; Materials +50 to global pool."
-    },
-    {
-      "time": "2026-08-13T12:51:33.776633",
-      "event": "Power teams are balancing the surge while shelters stay sealed: \u26a1 MASSIVE SOLAR FLARE!; Energy +50% for next turn; Take cover from radiation."
-    },
     {
       "time": "2026-08-14T12:45:35.843963",
       "event": "Power teams are balancing the surge while shelters stay sealed: \u26a1 MASSIVE SOLAR FLARE!; Energy +50% for next turn; Take cover from radiation."
@@ -295,6 +235,10 @@
     {
       "time": "2026-11-03T00:13:56.081535",
       "event": "Cargo handlers move fast before the burn window closes: \ud83d\udef8 TRADING SHIP FROM EARTH!; Food +100 to global pool; Materials +50 to global pool."
+    },
+    {
+      "time": "2026-11-03T00:13:57.492429",
+      "event": "AI directive: Operations drift into a new rhythm"
     }
   ],
   "market": {
@@ -306,22 +250,29 @@
   "ai": {
     "daily_event": {
       "headline": "Operations drift into a new rhythm",
-      "summary": "Sol 90 opens with thin margins, nervous operators, and one narrow chance to shift the colony balance before the next weather swing.",
+      "summary": "Sol 94 opens with thin margins, nervous operators, and one narrow chance to shift the colony balance before the next weather swing.",
       "effect": {
-        "type": "energy_surge",
-        "magnitude": 62,
+        "type": "food_relief",
+        "magnitude": 45,
         "result": {
-          "label": "Grid surge",
-          "target": "energy",
-          "delta": 62,
-          "before": 1327,
-          "after": 1389
+          "label": "Emergency food shipment",
+          "target": "food",
+          "delta": 45,
+          "before": 3129,
+          "after": 3174
         }
       },
       "source": "fallback",
-      "generated_at": "2026-08-25T00:47:37.013166"
+      "generated_at": "2026-11-03T00:13:57.492429"
     },
     "missions": [
+      {
+        "title": "Recover a silent beacon",
+        "briefing": "A relay beacon stopped broadcasting west of the colony.",
+        "objective": "Reach the site, recover telemetry, and mark salvageable parts.",
+        "reward_hint": "Materials and map intel",
+        "risk": "Navigation errors in dust"
+      },
       {
         "title": "Secure ridge ice cores",
         "briefing": "Survey drones marked a shallow ice seam outside the main habitat ring.",
@@ -335,13 +286,6 @@
         "objective": "Repair or reinforce one weak point before the next cold cycle.",
         "reward_hint": "Energy stability and spare materials",
         "risk": "Low risk, high urgency"
-      },
-      {
-        "title": "Recover a silent beacon",
-        "briefing": "A relay beacon stopped broadcasting west of the colony.",
-        "objective": "Reach the site, recover telemetry, and mark salvageable parts.",
-        "reward_hint": "Materials and map intel",
-        "risk": "Navigation errors in dust"
       }
     ],
     "npc_transmissions": [
@@ -356,7 +300,7 @@
         "message": "Your telemetry is the cleanest on the planet today. Do not waste that advantage."
       }
     ],
-    "news_summary": "Sol 90 begins in Early Spring with 3 active colonies. Temperature holds near -51C, solar activity sits at 150%, and the current leaders are Marco Quinn:11254, Zoya Kade:11177, Irina Vale:9237.",
+    "news_summary": "Sol 94 begins in Early Spring with 3 active colonies. Temperature holds near -57C, solar activity sits at 64%, and the current leaders are Zoya Kade:11435, Marco Quinn:11190, Irina Vale:9346.",
     "event_flavor": {
       "event_key": "traders",
       "headline": "An orbital trader opens an unexpected supply window",
@@ -377,8 +321,8 @@
         "fallback": true
       }
     },
-    "last_generated": "2026-08-25T00:47:37.013166",
-    "last_generated_sol": "Sol 90",
+    "last_generated": "2026-11-03T00:13:57.492429",
+    "last_generated_sol": "Sol 94",
     "last_diagnostics": {
       "provider": "github_models",
       "model": "openai/gpt-4.1-mini",
@@ -386,10 +330,10 @@
       "disabled": false,
       "token_present": true,
       "token_source": "GITHUB_TOKEN",
-      "status": "http_error",
-      "http_status": 410,
-      "reason": "Gone",
-      "response_excerpt": "{\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}\n",
+      "status": "decode_error",
+      "http_status": 200,
+      "reason": "Expecting value: line 1 column 1 (char 0)",
+      "response_excerpt": "",
       "fallback": true
     }
   }
