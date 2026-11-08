@@ -7,7 +7,7 @@
   "temperature": -57,
   "active_colonists": 3,
   "total_buildings": 9,
-  "current_event": "A fresh ice seam opens beneath the regolith",
+  "current_event": "Meteor fragments streak across the colony sky",
   "last_updated": "2026-11-03T00:13:57.492429",
   "global_resources": {
     "oxygen": 891,
@@ -243,6 +243,10 @@
     {
       "time": "2026-11-07T12:10:24.609830",
       "event": "Extraction crews are rerouting drills immediately: \ud83d\udca7 UNDERGROUND ICE DISCOVERED!; Zoya Kade received +21 water; Irina Vale received +42 water; Marco Quinn received +30 water."
+    },
+    {
+      "time": "2026-11-08T12:31:01.797499",
+      "event": "Salvage teams report a brief window for collection: \ud83c\udf20 METEOR SHOWER!; Zoya Kade salvaged +17 materials; Irina Vale reported building damage."
     }
   ],
   "market": {
@@ -306,11 +310,11 @@
     ],
     "news_summary": "Sol 94 begins in Early Spring with 3 active colonies. Temperature holds near -57C, solar activity sits at 64%, and the current leaders are Zoya Kade:11435, Marco Quinn:11190, Irina Vale:9346.",
     "event_flavor": {
-      "event_key": "ice_discovery",
-      "headline": "A fresh ice seam opens beneath the regolith",
-      "broadcast": "Extraction crews are rerouting drills immediately: \ud83d\udca7 UNDERGROUND ICE DISCOVERED!; Zoya Kade received +21 water; Irina Vale received +42 water; Marco Quinn received +30 water.",
+      "event_key": "meteor_shower",
+      "headline": "Meteor fragments streak across the colony sky",
+      "broadcast": "Salvage teams report a brief window for collection: \ud83c\udf20 METEOR SHOWER!; Zoya Kade salvaged +17 materials; Irina Vale reported building damage.",
       "source": "fallback",
-      "generated_at": "2026-11-07T12:10:24.609817",
+      "generated_at": "2026-11-08T12:31:01.797487",
       "diagnostics": {
         "provider": "github_models",
         "model": "openai/gpt-4.1-mini",
