@@ -14,10 +14,10 @@ _Auto-updated daily. Last world update: 2026-11-03T00:13:57.492429_
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
 ║ [SOL] Sol 94 | [SEASON] Early      ║  ║ Operations drift into a new rhythm ║
 ║ Spring                             ║  ║ Sol 94 opens with thin margins,    ║
-║ [TEMP] -57C | [SUN] 64% | [STORM]  ║  ║ nervous operators, and one narrow  ║
+║ [TEMP] -57C | [SUN] 150% | [STORM] ║  ║ nervous operators, and one narrow  ║
 ║ NO                                 ║  ║ chance to shift the colony balance ║
-║ [EVENT] An orbital trader opens an ║  ║ before the next weather swing.     ║
-║ unexpected supply window           ║  ║ EFFECT food_relief | food +45      ║
+║ [EVENT] Radiation monitors spike   ║  ║ before the next weather swing.     ║
+║ as the sun lashes the colony       ║  ║ EFFECT food_relief | food +45      ║
 ║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ╚════════════════════════════════════╝
 ║ [O2] 891 | [H2O] 652 | [E] 1389    ║                                        
 ║ [FOOD] 3174 | [MAT] 1435           ║                                        
@@ -28,11 +28,11 @@ _Auto-updated daily. Last world update: 2026-11-03T00:13:57.492429_
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
 ║ 1. Zoya Kade                       ║  ║ 1. Recover a silent beacon         ║
-║    Ares Systems | P1 B4 | S12675   ║  ║    Reach the site, recover…        ║
+║    Ares Systems | P1 B4 | S13526   ║  ║    Reach the site, recover…        ║
 ║ 2. Marco Quinn                     ║  ║ 2. Secure ridge ice cores          ║
-║    Dustline Agro | P1 B3 | S11874  ║  ║    Bring back intact samples…      ║
+║    Dustline Agro | P1 B3 | S12642  ║  ║    Bring back intact samples…      ║
 ║ 3. Irina Vale                      ║  ║ 3. Patch the thermal grid          ║
-║    Helios… | P1 B2 | S10258        ║  ║    Repair or reinforce one weak…   ║
+║    Helios… | P1 B2 | S10930        ║  ║    Repair or reinforce one weak…   ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
@@ -44,21 +44,22 @@ _Auto-updated daily. Last world update: 2026-11-03T00:13:57.492429_
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Sol 94 begins in Early Spring with ║  ║ 00:13 | AI directive: Operations…  ║
-║ 3 active colonies. Temperature     ║  ║ 00:13 | Cargo handlers move fast…  ║
-║ holds near -57C, solar activity    ║  ║ 12:01 | Salvage teams report a…    ║
-║ sits at 64%, and the current       ║  ║ 06:08 | Martian day 94 has begun   ║
-║ leaders are Zoya Kade:11435, Marco ║  ║ 12:20 | Extraction crews are…      ║
+║ Sol 94 begins in Early Spring with ║  ║ 00:16 | Power teams are balancing… ║
+║ 3 active colonies. Temperature     ║  ║ 12:46 | Extraction crews are…      ║
+║ holds near -57C, solar activity    ║  ║ 12:31 | Salvage teams report a…    ║
+║ sits at 64%, and the current       ║  ║ 12:10 | Extraction crews are…      ║
+║ leaders are Zoya Kade:11435, Marco ║  ║ 00:13 | AI directive: Operations…  ║
 ║ Quinn:11190, Irina Vale:9346.      ║  ╚════════════════════════════════════╝
-║ Cargo handlers move fast before    ║                                        
-║ the burn window closes: 🛸 TRADING  ║                                        
-║ SHIP FROM EARTH!; Food +100 to     ║                                        
-║ global pool; Materials +50 to      ║                                        
-║ global pool.                       ║                                        
+║ Power teams are balancing the      ║                                        
+║ surge while shelters stay sealed:  ║                                        
+║ ⚡ MASSIVE SOLAR FLARE!; Energy     ║                                        
+║ +50% for next turn; Take cover     ║                                        
+║ from radiation.                    ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
