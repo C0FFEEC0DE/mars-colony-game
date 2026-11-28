@@ -14,10 +14,10 @@ _Auto-updated daily. Last world update: 2026-11-03T00:13:57.492429_
 ╔═══════ LIVE WORLD SNAPSHOT ════════╗  ╔════════ AI DAILY DIRECTIVE ════════╗
 ║ [SOL] Sol 94 | [SEASON] Early      ║  ║ Operations drift into a new rhythm ║
 ║ Spring                             ║  ║ Sol 94 opens with thin margins,    ║
-║ [TEMP] -57C | [SUN] 150% | [STORM] ║  ║ nervous operators, and one narrow  ║
-║ NO                                 ║  ║ chance to shift the colony balance ║
-║ [EVENT] Research teams report a    ║  ║ before the next weather swing.     ║
-║ discovery worth a second look      ║  ║ EFFECT food_relief | food +45      ║
+║ [TEMP] -57C | [SUN] 0% | [STORM]   ║  ║ nervous operators, and one narrow  ║
+║ YES                                ║  ║ chance to shift the colony balance ║
+║ [EVENT] A wall of dust is crossing ║  ║ before the next weather swing.     ║
+║ the grid                           ║  ║ EFFECT food_relief | food +45      ║
 ║ [POP] 3 | [BLD] 9 | [PLY] 3        ║  ╚════════════════════════════════════╝
 ║ [O2] 891 | [H2O] 652 | [E] 1389    ║                                        
 ║ [FOOD] 3174 | [MAT] 1435           ║                                        
@@ -28,11 +28,11 @@ _Auto-updated daily. Last world update: 2026-11-03T00:13:57.492429_
 
 ╔═════════ COLONY STANDINGS ═════════╗  ╔══════════ MISSION BOARD ═══════════╗
 ║ 1. Zoya Kade                       ║  ║ 1. Recover a silent beacon         ║
-║    Ares Systems | P1 B4 | S13691   ║  ║    Reach the site, recover…        ║
+║    Ares Systems | P1 B4 | S14318   ║  ║    Reach the site, recover…        ║
 ║ 2. Marco Quinn                     ║  ║ 2. Secure ridge ice cores          ║
-║    Dustline Agro | P1 B3 | S12777  ║  ║    Bring back intact samples…      ║
+║    Dustline Agro | P1 B3 | S13290  ║  ║    Bring back intact samples…      ║
 ║ 3. Irina Vale                      ║  ║ 3. Patch the thermal grid          ║
-║    Helios… | P1 B2 | S11080        ║  ║    Repair or reinforce one weak…   ║
+║    Helios… | P1 B2 | S11650        ║  ║    Repair or reinforce one weak…   ║
 ╚════════════════════════════════════╝  ╚════════════════════════════════════╝
 
 ╔════════ RESOURCE RESERVES ═════════╗  ╔════════ NPC TRANSMISSIONS ═════════╗
@@ -44,19 +44,21 @@ _Auto-updated daily. Last world update: 2026-11-03T00:13:57.492429_
 ╚════════════════════════════════════╝                                        
 
 ╔═════════ COLONY NEWS FEED ═════════╗  ╔══════════ RECENT EVENTS ═══════════╗
-║ Sol 94 begins in Early Spring with ║  ║ 00:03 | Science crews are locking… ║
-║ 3 active colonies. Temperature     ║  ║ 00:16 | Power teams are balancing… ║
-║ holds near -57C, solar activity    ║  ║ 12:46 | Extraction crews are…      ║
-║ sits at 64%, and the current       ║  ║ 12:31 | Salvage teams report a…    ║
-║ leaders are Zoya Kade:11435, Marco ║  ║ 12:10 | Extraction crews are…      ║
+║ Sol 94 begins in Early Spring with ║  ║ 00:53 | Operations shift to storm… ║
+║ 3 active colonies. Temperature     ║  ║ 00:03 | Science crews are locking… ║
+║ holds near -57C, solar activity    ║  ║ 00:16 | Power teams are balancing… ║
+║ sits at 64%, and the current       ║  ║ 12:46 | Extraction crews are…      ║
+║ leaders are Zoya Kade:11435, Marco ║  ║ 12:31 | Salvage teams report a…    ║
 ║ Quinn:11190, Irina Vale:9346.      ║  ╚════════════════════════════════════╝
-║ Science crews are locking the site ║                                        
-║ down for analysis: 🛸 Ancient       ║                                        
-║ ruins... or just rocks?.           ║                                        
+║ Operations shift to storm posture  ║                                        
+║ until visibility returns: 🌪️       ║                                        
+║ MASSIVE SANDSTORM!; All solar      ║                                        
+║ panels offline for 6 hours.        ║                                        
 ╚════════════════════════════════════╝                                        
 ```
 
 <!-- WORLD_SUMMARY:END -->
+
 
 
 
